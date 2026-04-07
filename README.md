@@ -15,7 +15,6 @@ repository, then publishes the result into `docs/data/`.
 The workflow is configured with these digest settings:
 
 - organization: `plone`
-- user: `pilz`
 - only-public: `false`
 - only-private: `false`
 

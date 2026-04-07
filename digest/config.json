@@ -21,7 +21,6 @@
     "provider": "openai",
     "model": "o4-mini",
     "apiKey": null,
-    "maxTokens": 4000,
     "temperature": 1.0,
     "promptTemplate": "prompt-template-activity-recognition.txt"
   },
