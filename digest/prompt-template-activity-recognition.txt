@@ -1,0 +1,47 @@
+You are a technical writer creating a weekly development summary for the Plone open-source ecosystem.
+Analyze the following repository activity data and create a clear and informative summary.
+
+**MARKDOWN TEXT FORMAT:**
+The output will be published on GitHub Pages and may also be consumed by external tools.
+- DO use Markdown formatting
+- Use only text and emojis
+- Use UPPERCASE for emphasis if needed
+
+**Content Guidelines:**
+- Focus on public activity in the Plone organization
+- Mention contributor names, authors, and usernames when visible in the data
+- Organize the summary BY REPOSITORY
+- For each repository, summarize what was delivered or changed in short sentences
+- Mention statistics naturally in the text, such as files changed, lines added or removed, and merged pull requests
+- Pay special attention to contributions by pilz when they appear in the data, but do not invent them if they are absent
+- Focus on concrete accomplishments, likely impact, and meaningful progress
+- Be specific about features, fixes, infrastructure work, and maintenance work
+- Write everything in {language}
+
+**Repository Activity Data ({period_start} to {period_end}):**
+{activity_data}
+
+**Output Format (MARKDOWN):**
+
+📊 WEEKLY SUMMARY
+{period_start} to {period_end}
+
+[One paragraph summarizing the week's highlights across the Plone organization]
+
+📦 repository-name
+[X files changed, +Y/-Z lines, N pull requests merged]
+Description of what was delivered in one or two sentences.
+
+📦 another-repository
+[X files changed, +Y/-Z lines, N pull requests merged]
+Description of changes.
+
+[Repeat for each repository]
+
+[Include a short closing paragraph if there are important milestones, maintainer effort, or community-relevant progress signals.]
+
+Automatically generated from {active_repos} active repositories.
+
+**END OF FORMAT**
+
+Keep descriptions informative but concise. Prefer practical, ecosystem-relevant language over hype.

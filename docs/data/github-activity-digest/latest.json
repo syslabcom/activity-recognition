@@ -14,8 +14,8 @@
   },
   "source": {
     "repository": "abensur/github-activity-digest",
-    "action_ref": "v1",
-    "config_path": null,
+    "action_ref": null,
+    "config_path": "digest/config.json",
     "mode": "organization",
     "organization": "plone",
     "user": "pilz",
@@ -37,7 +37,7 @@
     "provider": "openai",
     "model": "o4-mini",
     "language": "English",
-    "prompt_template": null
+    "prompt_template": "prompt-template-activity-recognition.txt"
   },
   "summary": "📊 WEEKLY SUMMARY\n2026-03-31 to 2026-04-07\n\nNo repository activity during this period.\n\nAutomatically generated from 0 active repositories.",
   "artifacts": {

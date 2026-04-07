@@ -5,11 +5,12 @@ organization.
 
 ## First published task
 
-The initial workflow uses the documented GitHub Action integration:
-[`abensur/github-activity-digest@v1`](https://github.com/abensur/github-activity-digest).
+The initial workflow runs the `github-activity-digest` CLI from the upstream
+repository at
+[`abensur/github-activity-digest`](https://github.com/abensur/github-activity-digest).
 
-It runs in organization mode for `plone`, publishes the result into
-`docs/data/`, and keeps a stable JSON contract for external consumers.
+It uses a local config and a local editable prompt template from this
+repository, then publishes the result into `docs/data/`.
 
 The workflow is configured with these digest settings:
 
@@ -18,19 +19,28 @@ The workflow is configured with these digest settings:
 - only-public: `false`
 - only-private: `false`
 
-Note: in the upstream action, `user` is only actively used for `user` mode.
-This repository still records `pilz` in the published metadata so the output
-mirrors your chosen source context.
-
 The published output is available in two forms:
 
 - HTML via GitHub Pages from `docs/index.html`
 - JSON for external clients under `docs/data/`
 
+## Custom prompt
+
+Edit these files to control the digest prompt and run settings:
+
+- `digest/config.json`
+- `digest/prompt-template-activity-recognition.txt`
+
+During the workflow run, those files are copied into the checked-out digest
+tool directory before the CLI is executed.
+
 ## Repository layout
 
 ```text
 .github/workflows/github-activity-digest.yml
+digest/
+  config.json
+  prompt-template-activity-recognition.txt
 docs/
   index.html
   assets/
@@ -41,7 +51,7 @@ scripts/publish_github_activity_digest.py
 ## Required secrets
 
 - `OPENAI_API_KEY`
-  - Required because the workflow uses the digest action with OpenAI.
+  - Required because the current local digest config uses OpenAI.
 
 For public repository data, the workflow uses the built-in GitHub Actions
 `GITHUB_TOKEN`. You do not need to create a separate GitHub token secret for
@@ -72,5 +82,5 @@ After the first successful run, expect these paths in Pages:
 - Run history is kept in `docs/data/github-activity-digest/runs/`.
 - The JSON contract is owned by this repository so external clients can rely
   on a stable structure even if the upstream digest tool evolves.
-- The workflow now follows the upstream README more closely by using the
-  documented `uses: abensur/github-activity-digest@v1` pattern.
+- The prompt file is local to this repository, so you can customize the summary
+  style without modifying the upstream digest project.

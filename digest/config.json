@@ -1,0 +1,32 @@
+{
+  "mode": "organization",
+  "source": {
+    "organization": "plone",
+    "user": "pilz",
+    "topics": [],
+    "repositoriesFile": "",
+    "repositories": []
+  },
+  "filters": {
+    "excludeRepos": [],
+    "includeRepos": [],
+    "onlyPublic": false,
+    "onlyPrivate": false,
+    "maxRepos": 500
+  },
+  "period": {
+    "days": 7
+  },
+  "ai": {
+    "provider": "openai",
+    "model": "o4-mini",
+    "apiKey": null,
+    "maxTokens": 4000,
+    "temperature": 1.0,
+    "promptTemplate": "prompt-template-activity-recognition.txt"
+  },
+  "output": {
+    "archiveDir": "archive",
+    "language": "English"
+  }
+}

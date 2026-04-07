@@ -20,54 +20,53 @@ jobs:
       - name: Checkout activity-recognition
         uses: actions/checkout@v4
 
+      - name: Checkout github-activity-digest source
+        uses: actions/checkout@v4
+        with:
+          repository: abensur/github-activity-digest
+          path: tools/github-activity-digest
+
+      - name: Setup Bun
+        uses: oven-sh/setup-bun@v2
+        with:
+          bun-version: latest
+
       - name: Restore digest cache
         uses: actions/cache@v4
         with:
-          path: .cache
+          path: tools/github-activity-digest/.cache
           key: github-activity-digest-${{ runner.os }}-${{ github.run_id }}
           restore-keys: |
             github-activity-digest-${{ runner.os }}-
 
-      - name: Generate GitHub activity digest
-        id: digest
-        uses: abensur/github-activity-digest@v1
-        with:
-          mode: organization
-          organization: plone
-          user: pilz
-          days: '7'
-          ai-provider: openai
-          ai-model: o4-mini
-          language: English
-          max-repos: '500'
-          only-public: 'false'
-          only-private: 'false'
-          archive-dir: archive
-          output-format: both
+      - name: Install digest dependencies
+        working-directory: tools/github-activity-digest
+        run: bun install --frozen-lockfile
+
+      - name: Apply local digest config and custom prompt
+        run: |
+          cp digest/config.json tools/github-activity-digest/config.json
+          cp digest/prompt-template-activity-recognition.txt tools/github-activity-digest/prompt-template-activity-recognition.txt
+
+      - name: Run github-activity-digest
+        shell: bash
+        working-directory: tools/github-activity-digest
         env:
           GITHUB_TOKEN: ${{ github.token }}
           OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+        run: |
+          set -o pipefail
+          bun run index.ts 2>&1 | tee "$RUNNER_TEMP/github-activity-digest.log"
 
       - name: Publish digest data
         run: |
           python3 scripts/publish_github_activity_digest.py \
-            --summary-file "${{ steps.digest.outputs.summary-file }}" \
-            --upstream-json-file "${{ steps.digest.outputs.json-file }}" \
+            --config-file "digest/config.json" \
+            --summary-file "tools/github-activity-digest/archive/weekly-report-$(date -u +%F).md" \
+            --log-file "$RUNNER_TEMP/github-activity-digest.log" \
             --output-dir "docs/data" \
             --source-repository "abensur/github-activity-digest" \
-            --source-action-ref "v1" \
-            --mode "organization" \
-            --organization "plone" \
-            --user "pilz" \
-            --days "7" \
-            --ai-provider "openai" \
-            --ai-model "o4-mini" \
-            --language "English" \
-            --max-repos "500" \
-            --only-public "false" \
-            --only-private "false" \
-            --repos-processed "${{ steps.digest.outputs.repos-processed }}" \
-            --active-repos "${{ steps.digest.outputs.active-repos }}"
+            --source-config-path "digest/config.json"
 
       - name: Commit published data
         shell: bash
