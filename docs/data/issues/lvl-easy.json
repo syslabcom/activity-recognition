@@ -5,9 +5,8 @@
   "organization": "plone",
   "state": "open",
   "slug": "lvl-easy",
-  "title": "Plone help wanted issues — Level: Easy",
+  "title": "Plone issue list — Level: Easy",
   "required_labels": [
-    "help wanted",
     "41 lvl: easy - beginner-friendly but not trivial"
   ],
   "issue_count": 0,

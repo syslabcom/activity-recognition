@@ -1,19 +1,18 @@
 ---
-title: "Plone help wanted issues — Level: Moderate"
+title: "Plone issue list — Level: Moderate"
 permalink: "/issues/lvl-moderate/"
 generated_at: "2026-04-07T13:52:47Z"
 organization: "plone"
 issue_count: 0
 required_labels:
-  - "help wanted"
   - "42 lvl: moderate"
 ---
 
-# Plone help wanted issues — Level: Moderate
+# Plone issue list — Level: Moderate
 
 Generated: `2026-04-07T13:52:47Z`  
 Organization: `plone`  
-Required labels: `help wanted`, `42 lvl: moderate`  
+Required label: `42 lvl: moderate`  
 Issue count: `0`
 
 No matching open issues were found at generation time.

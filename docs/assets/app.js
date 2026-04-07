@@ -1,5 +1,28 @@
-const INDEX_PATH = './data/index.json';
+const DIGEST_INDEX_PATH = 'data/index.json';
+const DIGEST_LATEST_PATH = 'data/github-activity-digest/latest.json';
 const TASK_SLUG = 'github-activity-digest';
+const ISSUE_LISTS = [
+  {
+    slug: 'good-first-onboarding',
+    title: 'Good first issue onboarding',
+    jsonPath: 'data/issues/good-first-onboarding.json'
+  },
+  {
+    slug: 'lvl-easy',
+    title: 'Level: Easy',
+    jsonPath: 'data/issues/lvl-easy.json'
+  },
+  {
+    slug: 'lvl-moderate',
+    title: 'Level: Moderate',
+    jsonPath: 'data/issues/lvl-moderate.json'
+  },
+  {
+    slug: 'lvl-complex',
+    title: 'Level: Complex',
+    jsonPath: 'data/issues/lvl-complex.json'
+  }
+];
 
 function toHref(path) {
   if (!path) {
@@ -11,6 +34,12 @@ function toHref(path) {
   }
 
   return `./${path.replace(/^\.\//, '')}`;
+}
+
+function withCacheBuster(path) {
+  const url = new URL(toHref(path), window.location.href);
+  url.searchParams.set('_', String(Date.now()));
+  return url.toString();
 }
 
 function formatDateTime(value) {
@@ -34,23 +63,37 @@ function formatCount(value) {
   return typeof value === 'number' ? String(value) : '—';
 }
 
+function issueCountLabel(count) {
+  if (typeof count !== 'number') {
+    return '— issues';
+  }
+
+  return `${count} ${count === 1 ? 'issue' : 'issues'}`;
+}
+
+function createLink(label, href, external = false) {
+  const link = document.createElement('a');
+  link.href = external ? href : toHref(href);
+  link.textContent = label;
+  if (external) {
+    link.target = '_blank';
+    link.rel = 'noreferrer';
+  }
+  return link;
+}
+
 function setEndpointLinks(latest) {
   const container = document.getElementById('endpoint-links');
   container.innerHTML = '';
 
   const links = [
-    { label: 'Task index JSON', href: INDEX_PATH },
-    { label: 'Latest JSON', href: latest?.artifacts?.latest_json_path },
-    { label: 'Latest markdown', href: latest?.artifacts?.latest_markdown_path }
+    { label: 'Task index JSON', href: DIGEST_INDEX_PATH, external: false },
+    { label: 'Latest JSON', href: latest?.artifacts?.latest_json_path, external: false },
+    { label: 'Latest markdown', href: latest?.artifacts?.latest_markdown_path, external: false }
   ].filter((item) => item.href);
 
   for (const item of links) {
-    const link = document.createElement('a');
-    link.href = toHref(item.href);
-    link.textContent = item.label;
-    link.target = '_blank';
-    link.rel = 'noreferrer';
-    container.append(link);
+    container.append(createLink(item.label, item.href, item.external));
   }
 }
 
@@ -82,9 +125,9 @@ function setLatestMeta(latest) {
   }
 }
 
-function setSummary(latest) {
+function setSummary(summaryMarkdown, latest) {
   const summary = document.getElementById('summary-text');
-  summary.textContent = latest?.summary || latest?.message || 'No published summary yet.';
+  summary.textContent = summaryMarkdown || latest?.summary || latest?.message || 'No published summary yet.';
 }
 
 function setStatusMessage(latest, runsCount) {
@@ -126,20 +169,13 @@ function setRunsList(task) {
     links.className = 'links';
 
     const linkData = [
-      { label: 'JSON', href: run.json_path },
-      { label: 'Markdown', href: run.markdown_path },
-      { label: 'Workflow run', href: run.workflow_url }
+      { label: 'JSON', href: run.json_path, external: false },
+      { label: 'Markdown', href: run.markdown_path, external: false },
+      { label: 'Workflow run', href: run.workflow_url, external: true }
     ].filter((entry) => entry.href);
 
     for (const entry of linkData) {
-      const link = document.createElement('a');
-      link.href = toHref(entry.href);
-      link.textContent = entry.label;
-      if (/^https?:\/\//.test(entry.href)) {
-        link.target = '_blank';
-        link.rel = 'noreferrer';
-      }
-      links.append(link);
+      links.append(createLink(entry.label, entry.href, entry.external));
     }
 
     item.append(header, details, excerpt, links);
@@ -147,36 +183,179 @@ function setRunsList(task) {
   }
 }
 
+function renderIssueCards(issuePayloads) {
+  const container = document.getElementById('issue-list-grid');
+  container.innerHTML = '';
+
+  for (const entry of issuePayloads) {
+    const { spec, data, error } = entry;
+    const card = document.createElement('article');
+    card.className = 'issue-card';
+
+    const header = document.createElement('div');
+    header.className = 'issue-card-header';
+
+    const headerText = document.createElement('div');
+    const title = document.createElement('h3');
+    title.textContent = spec.title;
+
+    const label = document.createElement('p');
+    label.className = 'issue-label muted';
+    label.textContent = data?.required_labels?.[0] || 'Issue label';
+
+    headerText.append(title, label);
+
+    const count = document.createElement('span');
+    count.className = 'issue-count';
+    count.textContent = issueCountLabel(data?.issue_count);
+
+    header.append(headerText, count);
+
+    const body = document.createElement('div');
+    body.className = 'issue-card-body';
+
+    if (error) {
+      const message = document.createElement('p');
+      message.className = 'muted';
+      message.textContent = `Failed to load this issue list: ${error}`;
+      body.append(message);
+    } else if (!data || !Array.isArray(data.issues) || data.issues.length === 0) {
+      const message = document.createElement('p');
+      message.className = 'muted';
+      message.textContent = data?.message || 'No matching issues are currently published.';
+      body.append(message);
+    } else {
+      const list = document.createElement('ul');
+      list.className = 'issue-items';
+
+      for (const issue of data.issues) {
+        const item = document.createElement('li');
+        item.className = 'issue-item';
+
+        const link = document.createElement('a');
+        link.className = 'issue-link';
+        link.href = issue.html_url;
+        link.target = '_blank';
+        link.rel = 'noreferrer';
+        link.textContent = `#${issue.number} ${issue.title}`;
+
+        const meta = document.createElement('p');
+        meta.className = 'issue-meta muted';
+        const repository = issue.repository_full_name || 'unknown repository';
+        const author = issue.author?.login ? ` · by ${issue.author.login}` : '';
+        meta.textContent = `${repository} · updated ${formatDateTime(issue.updated_at)}${author}`;
+
+        item.append(link, meta);
+        list.append(item);
+      }
+
+      body.append(list);
+    }
+
+    const footer = document.createElement('div');
+    footer.className = 'issue-card-footer';
+
+    const updated = document.createElement('span');
+    updated.className = 'muted';
+    updated.textContent = `Published: ${formatDateTime(data?.generated_at)}`;
+
+    const links = document.createElement('div');
+    links.className = 'links';
+    links.append(createLink('JSON', spec.jsonPath, false));
+    if (data?.workflow?.url) {
+      links.append(createLink('Workflow run', data.workflow.url, true));
+    }
+
+    footer.append(updated, links);
+    card.append(header, body, footer);
+    container.append(card);
+  }
+}
+
 async function loadJson(path) {
-  const response = await fetch(path, { headers: { Accept: 'application/json' } });
+  const response = await fetch(withCacheBuster(path), {
+    cache: 'no-store',
+    headers: { Accept: 'application/json' }
+  });
+
   if (!response.ok) {
     throw new Error(`Request failed with ${response.status}`);
   }
+
   return response.json();
 }
 
-async function main() {
-  try {
-    const indexData = await loadJson(INDEX_PATH);
-    const task = (indexData.tasks || []).find((item) => item.slug === TASK_SLUG);
+async function loadText(path) {
+  const response = await fetch(withCacheBuster(path), {
+    cache: 'no-store',
+    headers: { Accept: 'text/plain,text/markdown;q=0.9,*/*;q=0.8' }
+  });
 
+  if (!response.ok) {
+    throw new Error(`Request failed with ${response.status}`);
+  }
+
+  return response.text();
+}
+
+async function loadIssuePayloads() {
+  const results = await Promise.all(
+    ISSUE_LISTS.map(async (spec) => {
+      try {
+        const data = await loadJson(spec.jsonPath);
+        return { spec, data, error: null };
+      } catch (error) {
+        return {
+          spec,
+          data: null,
+          error: error instanceof Error ? error.message : String(error)
+        };
+      }
+    })
+  );
+
+  renderIssueCards(results);
+}
+
+async function main() {
+  await loadIssuePayloads();
+
+  try {
+    const [latest, indexData] = await Promise.all([
+      loadJson(DIGEST_LATEST_PATH),
+      loadJson(DIGEST_INDEX_PATH)
+    ]);
+
+    let summaryMarkdown = latest?.summary || latest?.message || 'No published summary yet.';
+    const latestMarkdownPath = latest?.artifacts?.latest_markdown_path;
+
+    if (latestMarkdownPath) {
+      try {
+        const latestMarkdown = await loadText(latestMarkdownPath);
+        if (latestMarkdown.trim()) {
+          summaryMarkdown = latestMarkdown.trim();
+        }
+      } catch (_error) {
+        // Keep JSON summary fallback if the markdown artifact is unavailable.
+      }
+    }
+
+    const task = (indexData.tasks || []).find((item) => item.slug === TASK_SLUG);
     if (!task) {
       throw new Error(`Task '${TASK_SLUG}' not found in index.json`);
     }
 
-    const latestJsonPath = task.latest?.json_path || 'data/github-activity-digest/latest.json';
-    const latest = await loadJson(toHref(latestJsonPath));
-
+    setSummary(summaryMarkdown, latest);
     setEndpointLinks(latest);
     setLatestMeta(latest);
-    setSummary(latest);
     setStatusMessage(latest, task.runs?.length ?? 0);
     setRunsList(task);
   } catch (error) {
     const message = error instanceof Error ? error.message : String(error);
-    document.getElementById('status-message').textContent = `Failed to load published data: ${message}`;
-    document.getElementById('summary-text').textContent = 'Published data is not available yet.';
+    document.getElementById('status-message').textContent = `Failed to load digest data: ${message}`;
+    document.getElementById('summary-text').textContent = 'Published digest data is not available yet.';
     document.getElementById('runs-list').innerHTML = '<li class="muted">No run history available.</li>';
+    document.getElementById('latest-meta').innerHTML = '';
   }
 }
 

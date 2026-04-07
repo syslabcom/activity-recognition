@@ -5,9 +5,8 @@
   "organization": "plone",
   "state": "open",
   "slug": "lvl-complex",
-  "title": "Plone help wanted issues — Level: Complex",
+  "title": "Plone issue list — Level: Complex",
   "required_labels": [
-    "help wanted",
     "43 lvl: complex"
   ],
   "issue_count": 0,

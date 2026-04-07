@@ -3,6 +3,9 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+    <meta http-equiv="Pragma" content="no-cache">
+    <meta http-equiv="Expires" content="0">
     <title>Activity Recognition</title>
     <link rel="stylesheet" href="./assets/styles.css">
   </head>
@@ -17,10 +20,47 @@
         </p>
       </header>
 
+      <section class="panel panel-summary">
+        <div class="panel-header">
+          <div>
+            <h2>Latest AI summary</h2>
+            <p class="muted">
+              The newest published Markdown summary from the GitHub activity
+              digest.
+            </p>
+          </div>
+        </div>
+
+        <pre id="summary-text" class="summary summary-prominent">Loading latest summary…</pre>
+      </section>
+
       <section class="panel">
         <div class="panel-header">
           <div>
-            <h2>Latest GitHub activity digest</h2>
+            <h2>Open issue lists by contribution level</h2>
+            <p class="muted">
+              Each panel loads the newest published results first and scrolls
+              independently.
+            </p>
+          </div>
+        </div>
+
+        <div id="issue-list-grid" class="issue-grid">
+          <article class="issue-card">
+            <div class="issue-card-header">
+              <h3>Loading issue lists…</h3>
+            </div>
+            <div class="issue-card-body">
+              <p class="muted">Published issue data is loading.</p>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="panel">
+        <div class="panel-header">
+          <div>
+            <h2>Digest status and history</h2>
             <p id="status-message" class="muted">Loading published data…</p>
           </div>
           <div class="links" id="endpoint-links"></div>
@@ -28,17 +68,12 @@
 
         <dl class="meta-grid" id="latest-meta"></dl>
 
-        <div class="summary-panel">
-          <h3>Summary</h3>
-          <pre id="summary-text" class="summary">Loading…</pre>
+        <div class="history-panel">
+          <h3>Archived runs</h3>
+          <ul id="runs-list" class="runs-list">
+            <li class="muted">Loading run history…</li>
+          </ul>
         </div>
-      </section>
-
-      <section class="panel">
-        <h2>Archived runs</h2>
-        <ul id="runs-list" class="runs-list">
-          <li class="muted">Loading run history…</li>
-        </ul>
       </section>
     </main>
 

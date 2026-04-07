@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Publish labeled Plone help-wanted issue lists as Markdown and JSON."""
+"""Publish labeled Plone issue lists as Markdown and JSON."""
 
 from __future__ import annotations
 
@@ -15,7 +15,6 @@ from urllib.request import Request, urlopen
 
 API_ACCEPT = "application/vnd.github+json"
 API_VERSION = "2022-11-28"
-COMMON_LABEL = "help wanted"
 DEFAULT_ORG = "plone"
 DEFAULT_STATE = "open"
 INDEX_VERSION = 1
@@ -36,22 +35,22 @@ class IssueListSpec:
 ISSUE_LIST_SPECS = (
     IssueListSpec(
         slug="good-first-onboarding",
-        title="Plone help wanted issues — Good first issue onboarding",
+        title="Plone issue list — Good first issue onboarding",
         label="99 tag: good first issue- onboarding",
     ),
     IssueListSpec(
         slug="lvl-easy",
-        title="Plone help wanted issues — Level: Easy",
+        title="Plone issue list — Level: Easy",
         label="41 lvl: easy - beginner-friendly but not trivial",
     ),
     IssueListSpec(
         slug="lvl-moderate",
-        title="Plone help wanted issues — Level: Moderate",
+        title="Plone issue list — Level: Moderate",
         label="42 lvl: moderate",
     ),
     IssueListSpec(
         slug="lvl-complex",
-        title="Plone help wanted issues — Level: Complex",
+        title="Plone issue list — Level: Complex",
         label="43 lvl: complex",
     ),
 )
@@ -244,7 +243,7 @@ def fetch_issues_for_spec(
     token: str | None,
 ) -> list[dict[str, Any]]:
     """Fetch all issues for a label spec, sorted by last update."""
-    query = f'org:{org} is:issue is:{state} label:"{COMMON_LABEL}" label:"{spec.label}"'
+    query = f'org:{org} is:issue is:{state} label:"{spec.label}"'
 
     issues: list[dict[str, Any]] = []
     page = 1
@@ -307,7 +306,6 @@ def build_front_matter(
         f"organization: {yaml_quoted(org)}",
         f"issue_count: {issue_count}",
         "required_labels:",
-        f"  - {yaml_quoted(COMMON_LABEL)}",
         f"  - {yaml_quoted(spec.label)}",
         "---",
         "",
@@ -328,7 +326,7 @@ def build_markdown_content(
         "",
         f"Generated: `{generated_at}`  ",
         f"Organization: `{org}`  ",
-        f"Required labels: `{COMMON_LABEL}`, `{spec.label}`  ",
+        f"Required label: `{spec.label}`  ",
         f"Issue count: `{len(issues)}`",
         "",
         "Sorted by last updated date, newest first.",
@@ -372,7 +370,7 @@ def build_empty_markdown_content(
         "",
         f"Generated: `{generated_at}`  ",
         f"Organization: `{org}`  ",
-        f"Required labels: `{COMMON_LABEL}`, `{spec.label}`  ",
+        f"Required label: `{spec.label}`  ",
         "Issue count: `0`",
         "",
         "No matching open issues were found at generation time.",
@@ -403,7 +401,7 @@ def build_json_payload(
         "state": DEFAULT_STATE,
         "slug": spec.slug,
         "title": spec.title,
-        "required_labels": [COMMON_LABEL, spec.label],
+        "required_labels": [spec.label],
         "issue_count": len(issues),
         "issues": issues,
         "message": message,

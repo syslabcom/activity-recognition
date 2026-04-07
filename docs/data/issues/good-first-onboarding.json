@@ -5,9 +5,8 @@
   "organization": "plone",
   "state": "open",
   "slug": "good-first-onboarding",
-  "title": "Plone help wanted issues — Good first issue onboarding",
+  "title": "Plone issue list — Good first issue onboarding",
   "required_labels": [
-    "help wanted",
     "99 tag: good first issue- onboarding"
   ],
   "issue_count": 0,

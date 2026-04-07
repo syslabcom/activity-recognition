@@ -5,9 +5,8 @@
   "organization": "plone",
   "state": "open",
   "slug": "lvl-moderate",
-  "title": "Plone help wanted issues — Level: Moderate",
+  "title": "Plone issue list — Level: Moderate",
   "required_labels": [
-    "help wanted",
     "42 lvl: moderate"
   ],
   "issue_count": 0,

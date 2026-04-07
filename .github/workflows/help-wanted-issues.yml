@@ -1,4 +1,4 @@
-name: Publish help wanted issue lists
+name: Publish labeled issue lists
 
 on:
   workflow_dispatch:
@@ -9,7 +9,7 @@ permissions:
   contents: write
 
 concurrency:
-  group: help-wanted-issue-lists-${{ github.ref }}
+  group: labeled-issue-lists-${{ github.ref }}
   cancel-in-progress: false
 
 jobs:
@@ -40,5 +40,5 @@ jobs:
           }
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git commit -m "Update help wanted issue lists"
+          git commit -m "Update labeled issue lists"
           git push
