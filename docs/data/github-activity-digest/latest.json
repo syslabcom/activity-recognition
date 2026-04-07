@@ -9,10 +9,21 @@
   "message": "No digest has been published yet.",
   "period": null,
   "source": {
-    "repository": "plone/github-activity-digest",
-    "config_path": "config.json",
+    "repository": "abensur/github-activity-digest",
+    "action_ref": "v1",
+    "config_path": null,
     "mode": "organization",
-    "organization": "plone"
+    "organization": "plone",
+    "user": "pilz",
+    "topics": [],
+    "repositories": []
+  },
+  "filters": {
+    "exclude_repos": [],
+    "include_repos": [],
+    "only_public": false,
+    "only_private": false,
+    "max_repos": 500
   },
   "counts": {
     "repos_processed": null,
@@ -21,7 +32,8 @@
   "ai": {
     "provider": "openai",
     "model": "o4-mini",
-    "language": "English"
+    "language": "English",
+    "prompt_template": null
   },
   "summary": "No digest has been published yet.",
   "artifacts": {

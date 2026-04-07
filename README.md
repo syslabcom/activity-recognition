@@ -5,10 +5,22 @@ organization.
 
 ## First published task
 
-The initial workflow runs
-[`plone/github-activity-digest`](https://github.com/plone/github-activity-digest)
-with the tested `config.json` from that repository, then publishes the
-result into `docs/data/`.
+The initial workflow uses the documented GitHub Action integration:
+[`abensur/github-activity-digest@v1`](https://github.com/abensur/github-activity-digest).
+
+It runs in organization mode for `plone`, publishes the result into
+`docs/data/`, and keeps a stable JSON contract for external consumers.
+
+The workflow is configured with these digest settings:
+
+- organization: `plone`
+- user: `pilz`
+- only-public: `false`
+- only-private: `false`
+
+Note: in the upstream action, `user` is only actively used for `user` mode.
+This repository still records `pilz` in the published metadata so the output
+mirrors your chosen source context.
 
 The published output is available in two forms:
 
@@ -28,21 +40,12 @@ scripts/publish_github_activity_digest.py
 
 ## Required secrets
 
-- `ACTIVITY_SOURCE_GITHUB_TOKEN`
-  - Recommended token for the digest run itself.
-  - Use a token with `read:org` and, if needed, `repo` so the workflow can
-    inspect the target Plone repositories.
 - `OPENAI_API_KEY`
-  - Required by the current tested digest config.
-- `ANTHROPIC_API_KEY`
-  - Optional fallback if the upstream config is changed to Anthropic later.
-- `DIGEST_REPOSITORY_TOKEN`
-  - Optional.
-  - Only needed if `plone/github-activity-digest` is private or the default
-    workflow token cannot read it.
+  - Required because the workflow uses the digest action with OpenAI.
 
-If `ACTIVITY_SOURCE_GITHUB_TOKEN` is not set, the workflow falls back to the
-repository `GITHUB_TOKEN`, which is usually only sufficient for public data.
+For public repository data, the workflow uses the built-in GitHub Actions
+`GITHUB_TOKEN`. You do not need to create a separate GitHub token secret for
+the current public-only setup.
 
 ## GitHub Pages setup
 
@@ -69,3 +72,5 @@ After the first successful run, expect these paths in Pages:
 - Run history is kept in `docs/data/github-activity-digest/runs/`.
 - The JSON contract is owned by this repository so external clients can rely
   on a stable structure even if the upstream digest tool evolves.
+- The workflow now follows the upstream README more closely by using the
+  documented `uses: abensur/github-activity-digest@v1` pattern.

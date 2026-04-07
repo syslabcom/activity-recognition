@@ -25,11 +25,14 @@ def parse_arguments() -> argparse.Namespace:
     parser = argparse.ArgumentParser(
         description="Publish GitHub Activity Digest output into docs/data."
     )
-    parser.add_argument("--config-file", required=True, help="Path to config.json")
+    parser.add_argument("--config-file", help="Optional path to config.json")
     parser.add_argument(
         "--summary-file",
-        required=True,
-        help="Path to the generated summary markdown file",
+        help="Optional path to the generated summary markdown file",
+    )
+    parser.add_argument(
+        "--upstream-json-file",
+        help="Optional path to the action-generated JSON file",
     )
     parser.add_argument(
         "--output-dir",
@@ -39,19 +42,92 @@ def parse_arguments() -> argparse.Namespace:
     parser.add_argument(
         "--source-repository",
         required=True,
-        help="Repository that owns the digest config and code",
+        help="Repository that owns the digest action or code",
     )
     parser.add_argument(
         "--source-config-path",
-        required=True,
-        help="Config path inside the source repository",
+        help="Optional config path inside the source repository",
+    )
+    parser.add_argument(
+        "--source-action-ref",
+        help="Optional action reference such as v1",
+    )
+    parser.add_argument("--mode", help="Configured digest mode")
+    parser.add_argument("--organization", help="Configured organization")
+    parser.add_argument("--user", help="Configured user")
+    parser.add_argument("--days", help="Configured number of days")
+    parser.add_argument("--ai-provider", help="Configured AI provider")
+    parser.add_argument("--ai-model", help="Configured AI model")
+    parser.add_argument("--language", help="Configured output language")
+    parser.add_argument("--max-repos", help="Configured max repositories")
+    parser.add_argument("--only-public", help="Configured onlyPublic filter")
+    parser.add_argument("--only-private", help="Configured onlyPrivate filter")
+    parser.add_argument(
+        "--repos-processed",
+        help="Optional count from action output",
+    )
+    parser.add_argument(
+        "--active-repos",
+        help="Optional count from action output",
     )
     parser.add_argument(
         "--log-file",
-        required=False,
         help="Optional workflow log file used to extract basic counts",
     )
     return parser.parse_args()
+
+
+def optional_path(value: str | None) -> Path | None:
+    """Convert a nullable string path into a Path or None."""
+    if value is None:
+        return None
+
+    stripped = value.strip()
+    if not stripped:
+        return None
+
+    return Path(stripped)
+
+
+def parse_optional_int(value: str | None) -> int | None:
+    """Parse an optional integer string."""
+    if value is None:
+        return None
+
+    stripped = value.strip()
+    if not stripped:
+        return None
+
+    return int(stripped)
+
+
+def parse_optional_bool(value: str | None) -> bool | None:
+    """Parse an optional boolean string."""
+    if value is None:
+        return None
+
+    stripped = value.strip().lower()
+    if not stripped:
+        return None
+
+    truthy = {"1", "true", "yes", "on"}
+    falsy = {"0", "false", "no", "off"}
+
+    if stripped in truthy:
+        return True
+    if stripped in falsy:
+        return False
+
+    raise ValueError(f"Unsupported boolean value: {value}")
+
+
+def first_value(*values: Any) -> Any:
+    """Return the first non-None value."""
+    for value in values:
+        if value is not None:
+            return value
+
+    return None
 
 
 def load_json(path: Path) -> dict[str, Any]:
@@ -63,6 +139,14 @@ def load_json(path: Path) -> dict[str, Any]:
         raise ValueError(f"Expected an object in {path}")
 
     return data
+
+
+def load_optional_json(path: Path | None) -> dict[str, Any] | None:
+    """Load a JSON file if it exists and contains an object."""
+    if path is None or not path.exists():
+        return None
+
+    return load_json(path)
 
 
 def load_optional_text(path: Path | None) -> str | None:
@@ -222,9 +306,10 @@ def main() -> int:
     """Publish the digest output to the Pages data tree."""
     args = parse_arguments()
 
-    config_path = Path(args.config_file)
-    summary_path = Path(args.summary_file)
-    log_path = Path(args.log_file) if args.log_file else None
+    config_path = optional_path(args.config_file)
+    summary_path = optional_path(args.summary_file)
+    upstream_json_path = optional_path(args.upstream_json_file)
+    log_path = optional_path(args.log_file)
     output_dir = Path(args.output_dir)
     site_root = output_dir.parent
     task_dir = output_dir / TASK_SLUG
@@ -234,21 +319,78 @@ def main() -> int:
     task_dir.mkdir(parents=True, exist_ok=True)
     runs_dir.mkdir(parents=True, exist_ok=True)
 
-    config = load_json(config_path)
+    config = load_json(config_path) if config_path is not None else {}
+    source_config = config.get("source", {})
+    filters_config = config.get("filters", {})
+    period_config = config.get("period", {})
+    ai_config = config.get("ai", {})
+    output_config = config.get("output", {})
+
+    upstream_json = load_optional_json(upstream_json_path)
     now = datetime.now(timezone.utc)
     generated_at = iso_timestamp(now)
     run_stamp = file_timestamp(now)
 
-    days = int(config.get("period", {}).get("days", 7))
+    days = first_value(parse_optional_int(args.days), period_config.get("days"), 7)
     period = compute_period(days, now)
 
     summary_text = load_optional_text(summary_path)
+    if summary_text is None and upstream_json is not None:
+        raw_summary = upstream_json.get("summary")
+        if isinstance(raw_summary, str) and raw_summary.strip():
+            summary_text = raw_summary.strip()
+
     status = "success" if summary_text else "no_activity"
     if summary_text is None:
         summary_text = build_fallback_summary(period)
 
     log_text = load_optional_text(log_path)
-    repos_processed, active_repos = parse_log_counts(log_text)
+    log_repos_processed, log_active_repos = parse_log_counts(log_text)
+    upstream_repos_processed = None
+    upstream_active_repos = None
+    if upstream_json is not None:
+        upstream_repos_processed = upstream_json.get("repos_processed")
+        upstream_active_repos = upstream_json.get("active_repos")
+
+    repos_processed = first_value(
+        parse_optional_int(args.repos_processed),
+        upstream_repos_processed,
+        log_repos_processed,
+    )
+    active_repos = first_value(
+        parse_optional_int(args.active_repos),
+        upstream_active_repos,
+        log_active_repos,
+    )
+
+    mode = first_value(args.mode, config.get("mode"), "organization")
+    organization = first_value(args.organization, source_config.get("organization"))
+    user = first_value(args.user, source_config.get("user"))
+    topics = source_config.get("topics") or []
+    repositories = source_config.get("repositories") or []
+
+    exclude_repos = filters_config.get("excludeRepos") or []
+    include_repos = filters_config.get("includeRepos") or []
+    only_public = first_value(
+        parse_optional_bool(args.only_public),
+        filters_config.get("onlyPublic"),
+        False,
+    )
+    only_private = first_value(
+        parse_optional_bool(args.only_private),
+        filters_config.get("onlyPrivate"),
+        False,
+    )
+    max_repos = first_value(
+        parse_optional_int(args.max_repos),
+        filters_config.get("maxRepos"),
+        500,
+    )
+
+    ai_provider = first_value(args.ai_provider, ai_config.get("provider"))
+    ai_model = first_value(args.ai_model, ai_config.get("model"))
+    language = first_value(args.language, output_config.get("language"), "English")
+    prompt_template = ai_config.get("promptTemplate")
 
     latest_markdown_path = task_dir / "latest.md"
     latest_json_path = task_dir / "latest.json"
@@ -271,29 +413,30 @@ def main() -> int:
         "period": period,
         "source": {
             "repository": args.source_repository,
+            "action_ref": args.source_action_ref,
             "config_path": args.source_config_path,
-            "mode": config.get("mode"),
-            "organization": config.get("source", {}).get("organization"),
-            "user": config.get("source", {}).get("user"),
-            "topics": config.get("source", {}).get("topics") or [],
-            "repositories": config.get("source", {}).get("repositories") or [],
+            "mode": mode,
+            "organization": organization,
+            "user": user,
+            "topics": topics,
+            "repositories": repositories,
         },
         "filters": {
-            "exclude_repos": config.get("filters", {}).get("excludeRepos") or [],
-            "include_repos": config.get("filters", {}).get("includeRepos") or [],
-            "only_public": config.get("filters", {}).get("onlyPublic", False),
-            "only_private": config.get("filters", {}).get("onlyPrivate", False),
-            "max_repos": config.get("filters", {}).get("maxRepos"),
+            "exclude_repos": exclude_repos,
+            "include_repos": include_repos,
+            "only_public": only_public,
+            "only_private": only_private,
+            "max_repos": max_repos,
         },
         "counts": {
             "repos_processed": repos_processed,
             "active_repos": active_repos,
         },
         "ai": {
-            "provider": config.get("ai", {}).get("provider"),
-            "model": config.get("ai", {}).get("model"),
-            "language": config.get("output", {}).get("language"),
-            "prompt_template": config.get("ai", {}).get("promptTemplate"),
+            "provider": ai_provider,
+            "model": ai_model,
+            "language": language,
+            "prompt_template": prompt_template,
         },
         "summary": summary_text,
         "artifacts": {
