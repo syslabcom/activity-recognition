@@ -19,7 +19,7 @@
   },
   "ai": {
     "provider": "openai",
-    "model": "GPT-5 nano",
+    "model": "gpt-5-nano",
     "apiKey": null,
     "temperature": 1.0,
     "promptTemplate": "prompt-template-activity-recognition.txt"
