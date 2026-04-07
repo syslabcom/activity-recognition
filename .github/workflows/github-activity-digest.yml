@@ -1,0 +1,73 @@
+name: Publish GitHub Activity Digest
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '0 7 * * 1'
+
+permissions:
+  contents: write
+
+concurrency:
+  group: github-activity-digest
+  cancel-in-progress: false
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout activity-recognition
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Checkout github-activity-digest
+        uses: actions/checkout@v4
+        with:
+          repository: plone/github-activity-digest
+          path: tools/github-activity-digest
+          token: ${{ secrets.DIGEST_REPOSITORY_TOKEN || github.token }}
+
+      - name: Setup Bun
+        uses: oven-sh/setup-bun@v2
+        with:
+          bun-version: latest
+
+      - name: Install digest dependencies
+        working-directory: tools/github-activity-digest
+        run: bun install --frozen-lockfile
+
+      - name: Run github-activity-digest
+        shell: bash
+        working-directory: tools/github-activity-digest
+        env:
+          GITHUB_TOKEN: ${{ secrets.ACTIVITY_SOURCE_GITHUB_TOKEN || github.token }}
+          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+        run: |
+          set -o pipefail
+          bun run index.ts 2>&1 | tee "$RUNNER_TEMP/github-activity-digest.log"
+
+      - name: Publish digest data
+        run: |
+          python3 scripts/publish_github_activity_digest.py \
+            --config-file "tools/github-activity-digest/config.json" \
+            --summary-file "tools/github-activity-digest/archive/weekly-report-$(date -u +%F).md" \
+            --log-file "$RUNNER_TEMP/github-activity-digest.log" \
+            --output-dir "docs/data" \
+            --source-repository "plone/github-activity-digest" \
+            --source-config-path "config.json"
+
+      - name: Commit published data
+        shell: bash
+        run: |
+          git add docs/data
+          git diff --staged --quiet && {
+            echo "No data changes to commit."
+            exit 0
+          }
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git commit -m "Update GitHub activity digest data"
+          git push

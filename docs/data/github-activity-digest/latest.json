@@ -1,0 +1,39 @@
+{
+  "version": 1,
+  "task": {
+    "slug": "github-activity-digest",
+    "title": "GitHub Activity Digest"
+  },
+  "status": "pending",
+  "generated_at": null,
+  "message": "No digest has been published yet.",
+  "period": null,
+  "source": {
+    "repository": "plone/github-activity-digest",
+    "config_path": "config.json",
+    "mode": "organization",
+    "organization": "plone"
+  },
+  "counts": {
+    "repos_processed": null,
+    "active_repos": null
+  },
+  "ai": {
+    "provider": "openai",
+    "model": "o4-mini",
+    "language": "English"
+  },
+  "summary": "No digest has been published yet.",
+  "artifacts": {
+    "latest_json_path": "data/github-activity-digest/latest.json",
+    "latest_markdown_path": "data/github-activity-digest/latest.md"
+  },
+  "workflow": {
+    "repository": null,
+    "run_id": null,
+    "run_number": null,
+    "attempt": null,
+    "url": null,
+    "sha": null
+  }
+}

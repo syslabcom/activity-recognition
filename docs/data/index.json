@@ -1,0 +1,17 @@
+{
+  "version": 1,
+  "generated_at": null,
+  "tasks": [
+    {
+      "slug": "github-activity-digest",
+      "title": "GitHub Activity Digest",
+      "latest": {
+        "status": "pending",
+        "generated_at": null,
+        "json_path": "data/github-activity-digest/latest.json",
+        "markdown_path": "data/github-activity-digest/latest.md"
+      },
+      "runs": []
+    }
+  ]
+}
