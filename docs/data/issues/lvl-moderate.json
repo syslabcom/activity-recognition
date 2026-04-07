@@ -1,7 +1,7 @@
 {
   "version": 1,
-  "status": "empty_initial",
-  "generated_at": "2026-04-07T13:52:47Z",
+  "status": "success",
+  "generated_at": "2026-04-07T14:32:05Z",
   "organization": "plone",
   "state": "open",
   "slug": "lvl-moderate",
@@ -9,15 +9,1840 @@
   "required_labels": [
     "42 lvl: moderate"
   ],
-  "issue_count": 0,
-  "issues": [],
-  "message": "No matching open issues were found at generation time.",
+  "issue_count": 79,
+  "issues": [
+    {
+      "id": 1096895299,
+      "number": 3394,
+      "title": "Broken ARIA reference in SVG icon",
+      "html_url": "https://github.com/plone/Products.CMFPlone/issues/3394",
+      "repository_full_name": "plone/Products.CMFPlone",
+      "repository_url": "https://api.github.com/repos/plone/Products.CMFPlone",
+      "state": "open",
+      "created_at": "2022-01-08T10:36:46Z",
+      "updated_at": "2026-03-30T08:06:18Z",
+      "comments": 6,
+      "author": {
+        "login": "giulioturetta",
+        "html_url": "https://github.com/giulioturetta"
+      },
+      "assignees": [],
+      "labels": [
+        "99 tag: UX Accessibility",
+        "01 type: bug",
+        "12 prio: high",
+        "21 status: confirmed",
+        "42 lvl: moderate",
+        "51 target: patch"
+      ]
+    },
+    {
+      "id": 1879981321,
+      "number": 3837,
+      "title": "Plone 6.0 Classic-UI: where can I set default pattern options",
+      "html_url": "https://github.com/plone/Products.CMFPlone/issues/3837",
+      "repository_full_name": "plone/Products.CMFPlone",
+      "repository_url": "https://api.github.com/repos/plone/Products.CMFPlone",
+      "state": "open",
+      "created_at": "2023-09-04T10:31:16Z",
+      "updated_at": "2026-03-23T22:38:39Z",
+      "comments": 5,
+      "author": {
+        "login": "fredvd",
+        "html_url": "https://github.com/fredvd"
+      },
+      "assignees": [],
+      "labels": [
+        "01 type: bug",
+        "99 tag: UX Integrator/Themer",
+        "13 prio: normal",
+        "21 status: confirmed",
+        "42 lvl: moderate",
+        "99 tag: resource registry",
+        "99 tag: Plone 6.0"
+      ]
+    },
+    {
+      "id": 1123689944,
+      "number": 3428,
+      "title": "The renderer of sendto_template.pt is corrupting the whitespace",
+      "html_url": "https://github.com/plone/Products.CMFPlone/issues/3428",
+      "repository_full_name": "plone/Products.CMFPlone",
+      "repository_url": "https://api.github.com/repos/plone/Products.CMFPlone",
+      "state": "open",
+      "created_at": "2022-02-04T00:30:41Z",
+      "updated_at": "2026-03-23T21:55:56Z",
+      "comments": 1,
+      "author": {
+        "login": "Rudd-O",
+        "html_url": "https://github.com/Rudd-O"
+      },
+      "assignees": [],
+      "labels": [
+        "01 type: bug",
+        "02 type: regression",
+        "31 needs: help",
+        "42 lvl: moderate"
+      ]
+    },
+    {
+      "id": 107531900,
+      "number": 1056,
+      "title": "Locking icon on toolbar is not clear",
+      "html_url": "https://github.com/plone/Products.CMFPlone/issues/1056",
+      "repository_full_name": "plone/Products.CMFPlone",
+      "repository_url": "https://api.github.com/repos/plone/Products.CMFPlone",
+      "state": "open",
+      "created_at": "2015-09-21T15:01:57Z",
+      "updated_at": "2026-03-23T21:53:57Z",
+      "comments": 7,
+      "author": {
+        "login": "hvelarde",
+        "html_url": "https://github.com/hvelarde"
+      },
+      "assignees": [],
+      "labels": [
+        "01 type: bug",
+        "99 tag: UX Editor",
+        "13 prio: normal",
+        "21 status: confirmed",
+        "42 lvl: moderate",
+        "99 tag: Plone 6.0",
+        "99 tag: Plone 5.2"
+      ]
+    },
+    {
+      "id": 260642338,
+      "number": 2161,
+      "title": "Zope-level language negotiation",
+      "html_url": "https://github.com/plone/Products.CMFPlone/issues/2161",
+      "repository_full_name": "plone/Products.CMFPlone",
+      "repository_url": "https://api.github.com/repos/plone/Products.CMFPlone",
+      "state": "open",
+      "created_at": "2017-09-26T14:21:04Z",
+      "updated_at": "2026-03-23T17:52:19Z",
+      "comments": 2,
+      "author": {
+        "login": "malthe",
+        "html_url": "https://github.com/malthe"
+      },
+      "assignees": [],
+      "labels": [
+        "04 type: enhancement",
+        "31 needs: help",
+        "42 lvl: moderate"
+      ]
+    },
+    {
+      "id": 3460812472,
+      "number": 7409,
+      "title": "Docs - Seven - Release Notes missing",
+      "html_url": "https://github.com/plone/volto/issues/7409",
+      "repository_full_name": "plone/volto",
+      "repository_url": "https://api.github.com/repos/plone/volto",
+      "state": "open",
+      "created_at": "2025-09-27T22:31:22Z",
+      "updated_at": "2026-02-17T05:32:03Z",
+      "comments": 1,
+      "author": {
+        "login": "stevepiercy",
+        "html_url": "https://github.com/stevepiercy"
+      },
+      "assignees": [
+        "stevepiercy",
+        "sneridagh"
+      ],
+      "labels": [
+        "01 type: bug",
+        "33 needs: docs",
+        "42 lvl: moderate",
+        "30 needs: triage"
+      ]
+    },
+    {
+      "id": 2655182802,
+      "number": 1775,
+      "title": "Conceptual guides > Component architecture needs to be completed",
+      "html_url": "https://github.com/plone/documentation/issues/1775",
+      "repository_full_name": "plone/documentation",
+      "repository_url": "https://api.github.com/repos/plone/documentation",
+      "state": "open",
+      "created_at": "2024-11-13T11:30:00Z",
+      "updated_at": "2026-02-10T04:01:36Z",
+      "comments": 6,
+      "author": {
+        "login": "stevepiercy",
+        "html_url": "https://github.com/stevepiercy"
+      },
+      "assignees": [],
+      "labels": [
+        "31 needs: help",
+        "33 needs: docs",
+        "42 lvl: moderate"
+      ]
+    },
+    {
+      "id": 2562726797,
+      "number": 1730,
+      "title": "Migrate content from v5 \"Queries, Search And Indexing\"",
+      "html_url": "https://github.com/plone/documentation/issues/1730",
+      "repository_full_name": "plone/documentation",
+      "repository_url": "https://api.github.com/repos/plone/documentation",
+      "state": "open",
+      "created_at": "2024-10-02T22:21:03Z",
+      "updated_at": "2026-01-29T13:32:03Z",
+      "comments": 5,
+      "author": {
+        "login": "stevepiercy",
+        "html_url": "https://github.com/stevepiercy"
+      },
+      "assignees": [],
+      "labels": [
+        "42 lvl: moderate",
+        "99 tag: Plone 6.x"
+      ]
+    },
+    {
+      "id": 3102884999,
+      "number": 7159,
+      "title": "Build Storybook for a PR preview on `seven` branch",
+      "html_url": "https://github.com/plone/volto/issues/7159",
+      "repository_full_name": "plone/volto",
+      "repository_url": "https://api.github.com/repos/plone/volto",
+      "state": "open",
+      "created_at": "2025-05-30T10:54:47Z",
+      "updated_at": "2026-01-14T00:38:42Z",
+      "comments": 8,
+      "author": {
+        "login": "stevepiercy",
+        "html_url": "https://github.com/stevepiercy"
+      },
+      "assignees": [],
+      "labels": [
+        "04 type: enhancement",
+        "31 needs: help",
+        "33 needs: docs",
+        "42 lvl: moderate"
+      ]
+    },
+    {
+      "id": 3725646159,
+      "number": 7696,
+      "title": "Add deprecation policy or guide to documentation",
+      "html_url": "https://github.com/plone/volto/issues/7696",
+      "repository_full_name": "plone/volto",
+      "repository_url": "https://api.github.com/repos/plone/volto",
+      "state": "open",
+      "created_at": "2025-12-13T07:41:56Z",
+      "updated_at": "2025-12-30T03:08:20Z",
+      "comments": 4,
+      "author": {
+        "login": "stevepiercy",
+        "html_url": "https://github.com/stevepiercy"
+      },
+      "assignees": [],
+      "labels": [
+        "04 type: enhancement",
+        "33 needs: docs",
+        "42 lvl: moderate",
+        "discussion"
+      ]
+    },
+    {
+      "id": 223134795,
+      "number": 8,
+      "title": "Live updates",
+      "html_url": "https://github.com/plone/volto/issues/8",
+      "repository_full_name": "plone/volto",
+      "repository_url": "https://api.github.com/repos/plone/volto",
+      "state": "open",
+      "created_at": "2017-04-20T17:02:24Z",
+      "updated_at": "2025-12-26T16:44:25Z",
+      "comments": 1,
+      "author": {
+        "login": "robgietema",
+        "html_url": "https://github.com/robgietema"
+      },
+      "assignees": [],
+      "labels": [
+        "04 type: enhancement",
+        "14 prio: low",
+        "21 status: confirmed",
+        "42 lvl: moderate"
+      ]
+    },
+    {
+      "id": 1366950401,
+      "number": 1309,
+      "title": "Move the `plone.behavior` readme into `plone/documentation`",
+      "html_url": "https://github.com/plone/documentation/issues/1309",
+      "repository_full_name": "plone/documentation",
+      "repository_url": "https://api.github.com/repos/plone/documentation",
+      "state": "open",
+      "created_at": "2022-09-08T20:29:15Z",
+      "updated_at": "2025-12-19T03:04:13Z",
+      "comments": 4,
+      "author": {
+        "login": "stevepiercy",
+        "html_url": "https://github.com/stevepiercy"
+      },
+      "assignees": [],
+      "labels": [
+        "31 needs: help",
+        "33 needs: docs",
+        "42 lvl: moderate",
+        "99 tag: backend"
+      ]
+    },
+    {
+      "id": 2297234474,
+      "number": 3953,
+      "title": "PLIP: Start separating Classic UI code from the core",
+      "html_url": "https://github.com/plone/Products.CMFPlone/issues/3953",
+      "repository_full_name": "plone/Products.CMFPlone",
+      "repository_url": "https://api.github.com/repos/plone/Products.CMFPlone",
+      "state": "open",
+      "created_at": "2024-05-15T08:40:27Z",
+      "updated_at": "2025-12-12T07:35:27Z",
+      "comments": 14,
+      "author": {
+        "login": "tisto",
+        "html_url": "https://github.com/tisto"
+      },
+      "assignees": [
+        "jensens"
+      ],
+      "labels": [
+        "31 needs: help",
+        "99 tag: cleanup",
+        "03 type: feature (plip)",
+        "13 prio: normal",
+        "42 lvl: moderate",
+        "53 target: major",
+        "99 tag: Classic UI"
+      ]
+    },
+    {
+      "id": 1480563913,
+      "number": 51,
+      "title": "Implement Varnish in the plone.org stack",
+      "html_url": "https://github.com/plone/plone.org/issues/51",
+      "repository_full_name": "plone/plone.org",
+      "repository_url": "https://api.github.com/repos/plone/plone.org",
+      "state": "open",
+      "created_at": "2022-12-07T00:38:10Z",
+      "updated_at": "2025-09-17T14:56:59Z",
+      "comments": 5,
+      "author": {
+        "login": "ericof",
+        "html_url": "https://github.com/ericof"
+      },
+      "assignees": [
+        "jensens"
+      ],
+      "labels": [
+        "04 type: enhancement",
+        "42 lvl: moderate"
+      ]
+    },
+    {
+      "id": 2083233870,
+      "number": 5627,
+      "title": "Update i18n machinery to latest `react-intl`",
+      "html_url": "https://github.com/plone/volto/issues/5627",
+      "repository_full_name": "plone/volto",
+      "repository_url": "https://api.github.com/repos/plone/volto",
+      "state": "open",
+      "created_at": "2024-01-16T07:58:59Z",
+      "updated_at": "2025-09-13T12:27:00Z",
+      "comments": 0,
+      "author": {
+        "login": "sneridagh",
+        "html_url": "https://github.com/sneridagh"
+      },
+      "assignees": [],
+      "labels": [
+        "03 type: feature (plip)",
+        "42 lvl: moderate"
+      ]
+    },
+    {
+      "id": 2189926833,
+      "number": 5883,
+      "title": "Create a page for Volto CI",
+      "html_url": "https://github.com/plone/volto/issues/5883",
+      "repository_full_name": "plone/volto",
+      "repository_url": "https://api.github.com/repos/plone/volto",
+      "state": "open",
+      "created_at": "2024-03-16T11:39:24Z",
+      "updated_at": "2025-03-08T22:21:39Z",
+      "comments": 0,
+      "author": {
+        "login": "stevepiercy",
+        "html_url": "https://github.com/stevepiercy"
+      },
+      "assignees": [],
+      "labels": [
+        "33 needs: docs",
+        "42 lvl: moderate"
+      ]
+    },
+    {
+      "id": 269535330,
+      "number": 931,
+      "title": "Docs on setting the modification date",
+      "html_url": "https://github.com/plone/documentation/issues/931",
+      "repository_full_name": "plone/documentation",
+      "repository_url": "https://api.github.com/repos/plone/documentation",
+      "state": "open",
+      "created_at": "2017-10-30T09:43:07Z",
+      "updated_at": "2025-02-28T20:55:01Z",
+      "comments": 3,
+      "author": {
+        "login": "zopyx",
+        "html_url": "https://github.com/zopyx"
+      },
+      "assignees": [],
+      "labels": [
+        "31 needs: help",
+        "33 needs: docs",
+        "42 lvl: moderate",
+        "99 tag: Plone 6.x"
+      ]
+    },
+    {
+      "id": 2853999327,
+      "number": 157,
+      "title": "varnish container build superfluos - use config feature",
+      "html_url": "https://github.com/plone/cookieplone-templates/issues/157",
+      "repository_full_name": "plone/cookieplone-templates",
+      "repository_url": "https://api.github.com/repos/plone/cookieplone-templates",
+      "state": "open",
+      "created_at": "2025-02-14T15:25:02Z",
+      "updated_at": "2025-02-28T11:14:40Z",
+      "comments": 4,
+      "author": {
+        "login": "jensens",
+        "html_url": "https://github.com/jensens"
+      },
+      "assignees": [],
+      "labels": [
+        "04 type: enhancement",
+        "21 status: confirmed",
+        "33 needs: docs",
+        "42 lvl: moderate"
+      ]
+    },
+    {
+      "id": 2709766134,
+      "number": 972,
+      "title": "Improve README",
+      "html_url": "https://github.com/plone/buildout.coredev/issues/972",
+      "repository_full_name": "plone/buildout.coredev",
+      "repository_url": "https://api.github.com/repos/plone/buildout.coredev",
+      "state": "open",
+      "created_at": "2024-12-01T20:01:43Z",
+      "updated_at": "2025-01-24T06:48:28Z",
+      "comments": 3,
+      "author": {
+        "login": "ramiroluz",
+        "html_url": "https://github.com/ramiroluz"
+      },
+      "assignees": [
+        "ramiroluz"
+      ],
+      "labels": [
+        "04 type: enhancement",
+        "14 prio: low",
+        "33 needs: docs",
+        "41 lvl: easy",
+        "42 lvl: moderate"
+      ]
+    },
+    {
+      "id": 1987894560,
+      "number": 150,
+      "title": "permissions-policy header errors, 404 on loading custom CSS",
+      "html_url": "https://github.com/plone/plone.org/issues/150",
+      "repository_full_name": "plone/plone.org",
+      "repository_url": "https://api.github.com/repos/plone/plone.org",
+      "state": "open",
+      "created_at": "2023-11-10T15:58:06Z",
+      "updated_at": "2024-12-17T09:44:48Z",
+      "comments": 1,
+      "author": {
+        "login": "tkimnguyen",
+        "html_url": "https://github.com/tkimnguyen"
+      },
+      "assignees": [],
+      "labels": [
+        "01 type: bug",
+        "14 prio: low",
+        "42 lvl: moderate"
+      ]
+    },
+    {
+      "id": 2194664319,
+      "number": 5896,
+      "title": "It's confusing how to change my password as a logged in user",
+      "html_url": "https://github.com/plone/volto/issues/5896",
+      "repository_full_name": "plone/volto",
+      "repository_url": "https://api.github.com/repos/plone/volto",
+      "state": "open",
+      "created_at": "2024-03-19T11:06:08Z",
+      "updated_at": "2024-12-17T07:51:18Z",
+      "comments": 9,
+      "author": {
+        "login": "JeffersonBledsoe",
+        "html_url": "https://github.com/JeffersonBledsoe"
+      },
+      "assignees": [],
+      "labels": [
+        "04 type: enhancement",
+        "42 lvl: moderate"
+      ]
+    },
+    {
+      "id": 2083336469,
+      "number": 5630,
+      "title": "Unify the use of the optional `preview_image_link` across Volto",
+      "html_url": "https://github.com/plone/volto/issues/5630",
+      "repository_full_name": "plone/volto",
+      "repository_url": "https://api.github.com/repos/plone/volto",
+      "state": "open",
+      "created_at": "2024-01-16T08:47:42Z",
+      "updated_at": "2024-12-17T07:50:33Z",
+      "comments": 6,
+      "author": {
+        "login": "sneridagh",
+        "html_url": "https://github.com/sneridagh"
+      },
+      "assignees": [],
+      "labels": [
+        "04 type: enhancement",
+        "42 lvl: moderate"
+      ]
+    },
+    {
+      "id": 1435845248,
+      "number": 3834,
+      "title": "Document cypress commands, retrofit them to existing tests",
+      "html_url": "https://github.com/plone/volto/issues/3834",
+      "repository_full_name": "plone/volto",
+      "repository_url": "https://api.github.com/repos/plone/volto",
+      "state": "open",
+      "created_at": "2022-11-04T10:17:43Z",
+      "updated_at": "2024-12-13T22:01:51Z",
+      "comments": 4,
+      "author": {
+        "login": "tiberiuichim",
+        "html_url": "https://github.com/tiberiuichim"
+      },
+      "assignees": [],
+      "labels": [
+        "01 type: bug",
+        "33 needs: docs",
+        "42 lvl: moderate"
+      ]
+    },
+    {
+      "id": 185296197,
+      "number": 707,
+      "title": "plone/content/creating.html outdated for dexterity content (folder restrictions)",
+      "html_url": "https://github.com/plone/documentation/issues/707",
+      "repository_full_name": "plone/documentation",
+      "repository_url": "https://api.github.com/repos/plone/documentation",
+      "state": "open",
+      "created_at": "2016-10-26T04:45:51Z",
+      "updated_at": "2024-11-24T08:35:21Z",
+      "comments": 4,
+      "author": {
+        "login": "zopyx",
+        "html_url": "https://github.com/zopyx"
+      },
+      "assignees": [],
+      "labels": [
+        "31 needs: help",
+        "33 needs: docs",
+        "42 lvl: moderate",
+        "99 tag: Plone 6.x"
+      ]
+    },
+    {
+      "id": 542049022,
+      "number": 1113,
+      "title": "develop/plone/forms/files.rst",
+      "html_url": "https://github.com/plone/documentation/issues/1113",
+      "repository_full_name": "plone/documentation",
+      "repository_url": "https://api.github.com/repos/plone/documentation",
+      "state": "open",
+      "created_at": "2019-12-24T08:47:58Z",
+      "updated_at": "2024-11-24T07:52:58Z",
+      "comments": 1,
+      "author": {
+        "login": "frankar",
+        "html_url": "https://github.com/frankar"
+      },
+      "assignees": [],
+      "labels": [
+        "31 needs: help",
+        "33 needs: docs",
+        "42 lvl: moderate",
+        "99 tag: Plone 6.x"
+      ]
+    },
+    {
+      "id": 449977232,
+      "number": 1083,
+      "title": "Inconsistent case suggests wrong view name in contentlisting docs",
+      "html_url": "https://github.com/plone/documentation/issues/1083",
+      "repository_full_name": "plone/documentation",
+      "repository_url": "https://api.github.com/repos/plone/documentation",
+      "state": "open",
+      "created_at": "2019-05-29T19:17:19Z",
+      "updated_at": "2024-11-24T07:52:13Z",
+      "comments": 5,
+      "author": {
+        "login": "nutjob4life",
+        "html_url": "https://github.com/nutjob4life"
+      },
+      "assignees": [],
+      "labels": [
+        "33 needs: docs",
+        "34 needs: tests",
+        "42 lvl: moderate",
+        "99 tag: Plone 6.x"
+      ]
+    },
+    {
+      "id": 238105336,
+      "number": 893,
+      "title": "z3c.form widgetTemplate manual override example make no sense",
+      "html_url": "https://github.com/plone/documentation/issues/893",
+      "repository_full_name": "plone/documentation",
+      "repository_url": "https://api.github.com/repos/plone/documentation",
+      "state": "open",
+      "created_at": "2017-06-23T10:35:56Z",
+      "updated_at": "2024-11-24T07:31:35Z",
+      "comments": 1,
+      "author": {
+        "login": "keul",
+        "html_url": "https://github.com/keul"
+      },
+      "assignees": [],
+      "labels": [
+        "31 needs: help",
+        "33 needs: docs",
+        "42 lvl: moderate",
+        "99 tag: Plone 6.x"
+      ]
+    },
+    {
+      "id": 194520249,
+      "number": 735,
+      "title": "Update/Include LDAP ",
+      "html_url": "https://github.com/plone/documentation/issues/735",
+      "repository_full_name": "plone/documentation",
+      "repository_url": "https://api.github.com/repos/plone/documentation",
+      "state": "open",
+      "created_at": "2016-12-09T06:00:11Z",
+      "updated_at": "2024-11-24T07:29:55Z",
+      "comments": 0,
+      "author": {
+        "login": "svx",
+        "html_url": "https://github.com/svx"
+      },
+      "assignees": [],
+      "labels": [
+        "04 type: enhancement",
+        "31 needs: help",
+        "33 needs: docs",
+        "42 lvl: moderate",
+        "99 tag: Plone 6.x"
+      ]
+    },
+    {
+      "id": 227368117,
+      "number": 871,
+      "title": "Document Events for Login/Logout",
+      "html_url": "https://github.com/plone/documentation/issues/871",
+      "repository_full_name": "plone/documentation",
+      "repository_url": "https://api.github.com/repos/plone/documentation",
+      "state": "open",
+      "created_at": "2017-05-09T13:32:15Z",
+      "updated_at": "2024-11-24T07:29:29Z",
+      "comments": 2,
+      "author": {
+        "login": "jensens",
+        "html_url": "https://github.com/jensens"
+      },
+      "assignees": [],
+      "labels": [
+        "31 needs: help",
+        "33 needs: docs",
+        "42 lvl: moderate",
+        "99 tag: Plone 6.x"
+      ]
+    },
+    {
+      "id": 213505113,
+      "number": 799,
+      "title": "Troubleshoot: Remove persistent utilties with wildcard.fixpersistentutilities",
+      "html_url": "https://github.com/plone/documentation/issues/799",
+      "repository_full_name": "plone/documentation",
+      "repository_url": "https://api.github.com/repos/plone/documentation",
+      "state": "open",
+      "created_at": "2017-03-11T04:42:00Z",
+      "updated_at": "2024-11-24T07:21:40Z",
+      "comments": 0,
+      "author": {
+        "login": "tkimnguyen",
+        "html_url": "https://github.com/tkimnguyen"
+      },
+      "assignees": [],
+      "labels": [
+        "31 needs: help",
+        "33 needs: docs",
+        "42 lvl: moderate",
+        "99 tag: Plone 6.x"
+      ]
+    },
+    {
+      "id": 203700804,
+      "number": 756,
+      "title": "ZODB database packing configuration",
+      "html_url": "https://github.com/plone/documentation/issues/756",
+      "repository_full_name": "plone/documentation",
+      "repository_url": "https://api.github.com/repos/plone/documentation",
+      "state": "open",
+      "created_at": "2017-01-27T18:02:39Z",
+      "updated_at": "2024-11-24T07:09:50Z",
+      "comments": 6,
+      "author": {
+        "login": "fulv",
+        "html_url": "https://github.com/fulv"
+      },
+      "assignees": [],
+      "labels": [
+        "31 needs: help",
+        "33 needs: docs",
+        "42 lvl: moderate",
+        "99 tag: Plone 6.x"
+      ]
+    },
+    {
+      "id": 201220491,
+      "number": 753,
+      "title": "Workflow events does not document LocalrolesModifiedEvent event",
+      "html_url": "https://github.com/plone/documentation/issues/753",
+      "repository_full_name": "plone/documentation",
+      "repository_url": "https://api.github.com/repos/plone/documentation",
+      "state": "open",
+      "created_at": "2017-01-17T09:43:52Z",
+      "updated_at": "2024-11-24T07:03:24Z",
+      "comments": 0,
+      "author": {
+        "login": "zopyx",
+        "html_url": "https://github.com/zopyx"
+      },
+      "assignees": [],
+      "labels": [
+        "31 needs: help",
+        "33 needs: docs",
+        "42 lvl: moderate",
+        "99 tag: Plone 6.x"
+      ]
+    },
+    {
+      "id": 178618916,
+      "number": 700,
+      "title": "add a section on distributed server environment",
+      "html_url": "https://github.com/plone/documentation/issues/700",
+      "repository_full_name": "plone/documentation",
+      "repository_url": "https://api.github.com/repos/plone/documentation",
+      "state": "open",
+      "created_at": "2016-09-22T14:03:45Z",
+      "updated_at": "2024-11-24T06:37:56Z",
+      "comments": 2,
+      "author": {
+        "login": "tkimnguyen",
+        "html_url": "https://github.com/tkimnguyen"
+      },
+      "assignees": [],
+      "labels": [
+        "31 needs: help",
+        "33 needs: docs",
+        "42 lvl: moderate",
+        "99 tag: Plone 6.x"
+      ]
+    },
+    {
+      "id": 2270775429,
+      "number": 1659,
+      "title": "Upgrade to 6.1: `z3c.form` and `plone.app.z3cform`",
+      "html_url": "https://github.com/plone/documentation/issues/1659",
+      "repository_full_name": "plone/documentation",
+      "repository_url": "https://api.github.com/repos/plone/documentation",
+      "state": "open",
+      "created_at": "2024-04-30T07:56:30Z",
+      "updated_at": "2024-11-24T05:53:28Z",
+      "comments": 0,
+      "author": {
+        "login": "stevepiercy",
+        "html_url": "https://github.com/stevepiercy"
+      },
+      "assignees": [
+        "petschki"
+      ],
+      "labels": [
+        "12 prio: high",
+        "21 status: confirmed",
+        "33 needs: docs",
+        "42 lvl: moderate",
+        "52 target: minor",
+        "99 tag: Plone 6.x",
+        "99 tag: classic-ui"
+      ]
+    },
+    {
+      "id": 2227400292,
+      "number": 1647,
+      "title": "Deployment section needs content",
+      "html_url": "https://github.com/plone/documentation/issues/1647",
+      "repository_full_name": "plone/documentation",
+      "repository_url": "https://api.github.com/repos/plone/documentation",
+      "state": "open",
+      "created_at": "2024-04-05T08:37:20Z",
+      "updated_at": "2024-11-24T05:53:27Z",
+      "comments": 1,
+      "author": {
+        "login": "cekk",
+        "html_url": "https://github.com/cekk"
+      },
+      "assignees": [],
+      "labels": [
+        "21 status: confirmed",
+        "31 needs: help",
+        "33 needs: docs",
+        "42 lvl: moderate",
+        "99 tag: Plone 6.x"
+      ]
+    },
+    {
+      "id": 1567799566,
+      "number": 1434,
+      "title": "Update how to get packages in develop",
+      "html_url": "https://github.com/plone/documentation/issues/1434",
+      "repository_full_name": "plone/documentation",
+      "repository_url": "https://api.github.com/repos/plone/documentation",
+      "state": "open",
+      "created_at": "2023-02-02T10:47:25Z",
+      "updated_at": "2024-11-24T05:50:39Z",
+      "comments": 1,
+      "author": {
+        "login": "stevepiercy",
+        "html_url": "https://github.com/stevepiercy"
+      },
+      "assignees": [],
+      "labels": [
+        "42 lvl: moderate"
+      ]
+    },
+    {
+      "id": 1385786752,
+      "number": 1330,
+      "title": "Migrate `develop/styleguide/*`",
+      "html_url": "https://github.com/plone/documentation/issues/1330",
+      "repository_full_name": "plone/documentation",
+      "repository_url": "https://api.github.com/repos/plone/documentation",
+      "state": "open",
+      "created_at": "2022-09-26T10:03:11Z",
+      "updated_at": "2024-11-24T05:50:36Z",
+      "comments": 3,
+      "author": {
+        "login": "stevepiercy",
+        "html_url": "https://github.com/stevepiercy"
+      },
+      "assignees": [],
+      "labels": [
+        "99 tag: sprint",
+        "33 needs: docs",
+        "42 lvl: moderate"
+      ]
+    },
+    {
+      "id": 105328255,
+      "number": 355,
+      "title": "Integrate missing information about layers and traversing",
+      "html_url": "https://github.com/plone/documentation/issues/355",
+      "repository_full_name": "plone/documentation",
+      "repository_url": "https://api.github.com/repos/plone/documentation",
+      "state": "open",
+      "created_at": "2015-09-08T08:32:20Z",
+      "updated_at": "2024-11-24T03:02:26Z",
+      "comments": 1,
+      "author": {
+        "login": "do3cc",
+        "html_url": "https://github.com/do3cc"
+      },
+      "assignees": [],
+      "labels": [
+        "04 type: enhancement",
+        "99 tag: missing",
+        "42 lvl: moderate",
+        "99 tag: Plone 6.x"
+      ]
+    },
+    {
+      "id": 2028220544,
+      "number": 5499,
+      "title": "Fix LESS syntax highlighting",
+      "html_url": "https://github.com/plone/volto/issues/5499",
+      "repository_full_name": "plone/volto",
+      "repository_url": "https://api.github.com/repos/plone/volto",
+      "state": "open",
+      "created_at": "2023-12-06T10:24:40Z",
+      "updated_at": "2024-11-18T05:47:55Z",
+      "comments": 0,
+      "author": {
+        "login": "stevepiercy",
+        "html_url": "https://github.com/stevepiercy"
+      },
+      "assignees": [],
+      "labels": [
+        "01 type: bug",
+        "33 needs: docs",
+        "42 lvl: moderate"
+      ]
+    },
+    {
+      "id": 733801363,
+      "number": 3204,
+      "title": "Default valid_elements field in pattern options adds 40kb for every RichtTextField on an edit page",
+      "html_url": "https://github.com/plone/Products.CMFPlone/issues/3204",
+      "repository_full_name": "plone/Products.CMFPlone",
+      "repository_url": "https://api.github.com/repos/plone/Products.CMFPlone",
+      "state": "open",
+      "created_at": "2020-10-31T20:26:22Z",
+      "updated_at": "2024-11-13T11:06:55Z",
+      "comments": 5,
+      "author": {
+        "login": "fredvd",
+        "html_url": "https://github.com/fredvd"
+      },
+      "assignees": [
+        "jensens",
+        "thet",
+        "mauritsvanrees",
+        "agitator"
+      ],
+      "labels": [
+        "04 type: enhancement",
+        "31 needs: help",
+        "12 prio: high",
+        "21 status: confirmed",
+        "42 lvl: moderate"
+      ]
+    },
+    {
+      "id": 2019631898,
+      "number": 5466,
+      "title": "Sidebar and toolbar shrink/ expanded functionality should work correctly for screen reader users",
+      "html_url": "https://github.com/plone/volto/issues/5466",
+      "repository_full_name": "plone/volto",
+      "repository_url": "https://api.github.com/repos/plone/volto",
+      "state": "open",
+      "created_at": "2023-11-30T22:43:33Z",
+      "updated_at": "2024-09-26T12:37:18Z",
+      "comments": 6,
+      "author": {
+        "login": "JeffersonBledsoe",
+        "html_url": "https://github.com/JeffersonBledsoe"
+      },
+      "assignees": [],
+      "labels": [
+        "01 type: bug",
+        "42 lvl: moderate",
+        "99 tag: UX Accessibility"
+      ]
+    },
+    {
+      "id": 1740231971,
+      "number": 119,
+      "title": "Store dependency graph as an artifact",
+      "html_url": "https://github.com/plone/meta/issues/119",
+      "repository_full_name": "plone/meta",
+      "repository_url": "https://api.github.com/repos/plone/meta",
+      "state": "open",
+      "created_at": "2023-06-04T08:24:29Z",
+      "updated_at": "2024-09-01T09:15:15Z",
+      "comments": 1,
+      "author": {
+        "login": "gforcada",
+        "html_url": "https://github.com/gforcada"
+      },
+      "assignees": [],
+      "labels": [
+        "04 type: enhancement",
+        "14 prio: low",
+        "42 lvl: moderate"
+      ]
+    },
+    {
+      "id": 182319757,
+      "number": 1791,
+      "title": "IWorkingCopy interface is preserved in copy of an item",
+      "html_url": "https://github.com/plone/Products.CMFPlone/issues/1791",
+      "repository_full_name": "plone/Products.CMFPlone",
+      "repository_url": "https://api.github.com/repos/plone/Products.CMFPlone",
+      "state": "open",
+      "created_at": "2016-10-11T17:04:39Z",
+      "updated_at": "2024-08-12T16:18:49Z",
+      "comments": 3,
+      "author": {
+        "login": "rafaelbco",
+        "html_url": "https://github.com/rafaelbco"
+      },
+      "assignees": [],
+      "labels": [
+        "01 type: bug",
+        "31 needs: help",
+        "14 prio: low",
+        "42 lvl: moderate"
+      ]
+    },
+    {
+      "id": 747283813,
+      "number": 2005,
+      "title": "Document razzle.extend.js",
+      "html_url": "https://github.com/plone/volto/issues/2005",
+      "repository_full_name": "plone/volto",
+      "repository_url": "https://api.github.com/repos/plone/volto",
+      "state": "open",
+      "created_at": "2020-11-20T08:21:26Z",
+      "updated_at": "2024-07-28T09:58:49Z",
+      "comments": 1,
+      "author": {
+        "login": "tiberiuichim",
+        "html_url": "https://github.com/tiberiuichim"
+      },
+      "assignees": [],
+      "labels": [
+        "01 type: bug",
+        "33 needs: docs",
+        "42 lvl: moderate"
+      ]
+    },
+    {
+      "id": 184390540,
+      "number": 1801,
+      "title": "list of plone_scripts to get rid of",
+      "html_url": "https://github.com/plone/Products.CMFPlone/issues/1801",
+      "repository_full_name": "plone/Products.CMFPlone",
+      "repository_url": "https://api.github.com/repos/plone/Products.CMFPlone",
+      "state": "open",
+      "created_at": "2016-10-21T03:16:32Z",
+      "updated_at": "2024-05-17T12:45:44Z",
+      "comments": 10,
+      "author": {
+        "login": "jensens",
+        "html_url": "https://github.com/jensens"
+      },
+      "assignees": [],
+      "labels": [
+        "04 type: enhancement",
+        "31 needs: help",
+        "22 status: in-progress",
+        "14 prio: low",
+        "42 lvl: moderate"
+      ]
+    },
+    {
+      "id": 2167937044,
+      "number": 3915,
+      "title": "Automate inclusion of release notes into Plone 6 documentation",
+      "html_url": "https://github.com/plone/Products.CMFPlone/issues/3915",
+      "repository_full_name": "plone/Products.CMFPlone",
+      "repository_url": "https://api.github.com/repos/plone/Products.CMFPlone",
+      "state": "open",
+      "created_at": "2024-03-04T22:57:25Z",
+      "updated_at": "2024-03-07T12:30:10Z",
+      "comments": 6,
+      "author": {
+        "login": "stevepiercy",
+        "html_url": "https://github.com/stevepiercy"
+      },
+      "assignees": [
+        "stevepiercy",
+        "mauritsvanrees"
+      ],
+      "labels": [
+        "04 type: enhancement",
+        "99 tag: documentation",
+        "33 needs: docs",
+        "42 lvl: moderate"
+      ]
+    },
+    {
+      "id": 1933580552,
+      "number": 138,
+      "title": "We need to recreate the sponsorship form",
+      "html_url": "https://github.com/plone/plone.org/issues/138",
+      "repository_full_name": "plone/plone.org",
+      "repository_url": "https://api.github.com/repos/plone/plone.org",
+      "state": "open",
+      "created_at": "2023-10-09T18:24:58Z",
+      "updated_at": "2024-02-16T16:56:31Z",
+      "comments": 2,
+      "author": {
+        "login": "tkimnguyen",
+        "html_url": "https://github.com/tkimnguyen"
+      },
+      "assignees": [
+        "tkimnguyen",
+        "rioksane"
+      ],
+      "labels": [
+        "04 type: enhancement",
+        "13 prio: normal",
+        "42 lvl: moderate",
+        "60 sites: page content"
+      ]
+    },
+    {
+      "id": 1706266069,
+      "number": 120,
+      "title": "Fix News Items with broken URLs",
+      "html_url": "https://github.com/plone/plone.org/issues/120",
+      "repository_full_name": "plone/plone.org",
+      "repository_url": "https://api.github.com/repos/plone/plone.org",
+      "state": "open",
+      "created_at": "2023-05-11T17:40:25Z",
+      "updated_at": "2024-02-16T16:55:14Z",
+      "comments": 2,
+      "author": {
+        "login": "Fosten",
+        "html_url": "https://github.com/Fosten"
+      },
+      "assignees": [],
+      "labels": [
+        "01 type: bug",
+        "42 lvl: moderate"
+      ]
+    },
+    {
+      "id": 1579972539,
+      "number": 99,
+      "title": "Fix obvious performance issues suggested by Google Lighthouse",
+      "html_url": "https://github.com/plone/plone.org/issues/99",
+      "repository_full_name": "plone/plone.org",
+      "repository_url": "https://api.github.com/repos/plone/plone.org",
+      "state": "open",
+      "created_at": "2023-02-10T16:10:40Z",
+      "updated_at": "2024-02-16T16:53:42Z",
+      "comments": 0,
+      "author": {
+        "login": "rioksane",
+        "html_url": "https://github.com/rioksane"
+      },
+      "assignees": [],
+      "labels": [
+        "04 type: enhancement",
+        "42 lvl: moderate"
+      ]
+    },
+    {
+      "id": 1571438162,
+      "number": 97,
+      "title": "Create get started -documentation for developers",
+      "html_url": "https://github.com/plone/plone.org/issues/97",
+      "repository_full_name": "plone/plone.org",
+      "repository_url": "https://api.github.com/repos/plone/plone.org",
+      "state": "open",
+      "created_at": "2023-02-05T13:48:08Z",
+      "updated_at": "2024-02-16T16:53:31Z",
+      "comments": 1,
+      "author": {
+        "login": "rioksane",
+        "html_url": "https://github.com/rioksane"
+      },
+      "assignees": [
+        "fredvd"
+      ],
+      "labels": [
+        "12 prio: high",
+        "33 needs: docs",
+        "42 lvl: moderate",
+        "60 sites: page content"
+      ]
+    },
+    {
+      "id": 1492168831,
+      "number": 76,
+      "title": "New Plone Release page gets wrong id",
+      "html_url": "https://github.com/plone/plone.org/issues/76",
+      "repository_full_name": "plone/plone.org",
+      "repository_url": "https://api.github.com/repos/plone/plone.org",
+      "state": "open",
+      "created_at": "2022-12-12T15:37:42Z",
+      "updated_at": "2024-02-16T16:50:57Z",
+      "comments": 0,
+      "author": {
+        "login": "mauritsvanrees",
+        "html_url": "https://github.com/mauritsvanrees"
+      },
+      "assignees": [
+        "mauritsvanrees"
+      ],
+      "labels": [
+        "02 type: regression",
+        "42 lvl: moderate"
+      ]
+    },
+    {
+      "id": 1485529863,
+      "number": 59,
+      "title": "Cannot fully edit releasepage in Volto",
+      "html_url": "https://github.com/plone/plone.org/issues/59",
+      "repository_full_name": "plone/plone.org",
+      "repository_url": "https://api.github.com/repos/plone/plone.org",
+      "state": "open",
+      "created_at": "2022-12-08T22:45:36Z",
+      "updated_at": "2024-02-16T16:46:40Z",
+      "comments": 1,
+      "author": {
+        "login": "mauritsvanrees",
+        "html_url": "https://github.com/mauritsvanrees"
+      },
+      "assignees": [],
+      "labels": [
+        "01 type: bug",
+        "42 lvl: moderate"
+      ]
+    },
+    {
+      "id": 2122507111,
+      "number": 5740,
+      "title": "Add global form state docs",
+      "html_url": "https://github.com/plone/volto/issues/5740",
+      "repository_full_name": "plone/volto",
+      "repository_url": "https://api.github.com/repos/plone/volto",
+      "state": "open",
+      "created_at": "2024-02-07T08:57:05Z",
+      "updated_at": "2024-02-07T08:58:04Z",
+      "comments": 0,
+      "author": {
+        "login": "stevepiercy",
+        "html_url": "https://github.com/stevepiercy"
+      },
+      "assignees": [],
+      "labels": [
+        "33 needs: docs",
+        "42 lvl: moderate"
+      ]
+    },
+    {
+      "id": 515404096,
+      "number": 977,
+      "title": "document port/host backend api overrides",
+      "html_url": "https://github.com/plone/volto/issues/977",
+      "repository_full_name": "plone/volto",
+      "repository_url": "https://api.github.com/repos/plone/volto",
+      "state": "open",
+      "created_at": "2019-10-31T12:45:27Z",
+      "updated_at": "2024-02-04T22:09:06Z",
+      "comments": 0,
+      "author": {
+        "login": "fredvd",
+        "html_url": "https://github.com/fredvd"
+      },
+      "assignees": [
+        "robgietema"
+      ],
+      "labels": [
+        "01 type: bug",
+        "33 needs: docs",
+        "42 lvl: moderate"
+      ]
+    },
+    {
+      "id": 1182619493,
+      "number": 3198,
+      "title": "Documenting URL helpers API",
+      "html_url": "https://github.com/plone/volto/issues/3198",
+      "repository_full_name": "plone/volto",
+      "repository_url": "https://api.github.com/repos/plone/volto",
+      "state": "open",
+      "created_at": "2022-03-27T18:26:04Z",
+      "updated_at": "2024-02-04T21:57:56Z",
+      "comments": 1,
+      "author": {
+        "login": "tiberiuichim",
+        "html_url": "https://github.com/tiberiuichim"
+      },
+      "assignees": [],
+      "labels": [
+        "04 type: enhancement",
+        "33 needs: docs",
+        "42 lvl: moderate"
+      ]
+    },
+    {
+      "id": 379404615,
+      "number": 293,
+      "title": "Embed (via iFrame) Block",
+      "html_url": "https://github.com/plone/volto/issues/293",
+      "repository_full_name": "plone/volto",
+      "repository_url": "https://api.github.com/repos/plone/volto",
+      "state": "open",
+      "created_at": "2018-11-10T08:48:39Z",
+      "updated_at": "2024-01-09T07:21:08Z",
+      "comments": 1,
+      "author": {
+        "login": "robgietema",
+        "html_url": "https://github.com/robgietema"
+      },
+      "assignees": [],
+      "labels": [
+        "04 type: enhancement",
+        "14 prio: low",
+        "21 status: confirmed",
+        "42 lvl: moderate"
+      ]
+    },
+    {
+      "id": 1449621795,
+      "number": 1360,
+      "title": "Backend instructions should explain how to add add-ons",
+      "html_url": "https://github.com/plone/documentation/issues/1360",
+      "repository_full_name": "plone/documentation",
+      "repository_url": "https://api.github.com/repos/plone/documentation",
+      "state": "open",
+      "created_at": "2022-11-15T11:24:05Z",
+      "updated_at": "2024-01-08T11:54:06Z",
+      "comments": 3,
+      "author": {
+        "login": "Rudd-O",
+        "html_url": "https://github.com/Rudd-O"
+      },
+      "assignees": [],
+      "labels": [
+        "42 lvl: moderate",
+        "99 tag: backend"
+      ]
+    },
+    {
+      "id": 335082047,
+      "number": 182,
+      "title": "Page transitions for React Router",
+      "html_url": "https://github.com/plone/volto/issues/182",
+      "repository_full_name": "plone/volto",
+      "repository_url": "https://api.github.com/repos/plone/volto",
+      "state": "open",
+      "created_at": "2018-06-23T08:41:50Z",
+      "updated_at": "2023-12-12T17:47:34Z",
+      "comments": 2,
+      "author": {
+        "login": "davisagli",
+        "html_url": "https://github.com/davisagli"
+      },
+      "assignees": [],
+      "labels": [
+        "04 type: enhancement",
+        "13 prio: normal",
+        "21 status: confirmed",
+        "31 needs: help",
+        "42 lvl: moderate"
+      ]
+    },
+    {
+      "id": 1882159071,
+      "number": 173,
+      "title": "Make dependency checker configurable",
+      "html_url": "https://github.com/plone/meta/issues/173",
+      "repository_full_name": "plone/meta",
+      "repository_url": "https://api.github.com/repos/plone/meta",
+      "state": "open",
+      "created_at": "2023-09-05T15:00:38Z",
+      "updated_at": "2023-10-14T13:48:17Z",
+      "comments": 3,
+      "author": {
+        "login": "jensens",
+        "html_url": "https://github.com/jensens"
+      },
+      "assignees": [],
+      "labels": [
+        "04 type: enhancement",
+        "14 prio: low",
+        "42 lvl: moderate"
+      ]
+    },
+    {
+      "id": 1778434053,
+      "number": 153,
+      "title": "Validate that template's markup is valid",
+      "html_url": "https://github.com/plone/meta/issues/153",
+      "repository_full_name": "plone/meta",
+      "repository_url": "https://api.github.com/repos/plone/meta",
+      "state": "open",
+      "created_at": "2023-06-28T08:09:31Z",
+      "updated_at": "2023-10-14T12:19:58Z",
+      "comments": 1,
+      "author": {
+        "login": "gforcada",
+        "html_url": "https://github.com/gforcada"
+      },
+      "assignees": [],
+      "labels": [
+        "04 type: enhancement",
+        "13 prio: normal",
+        "42 lvl: moderate"
+      ]
+    },
+    {
+      "id": 1758554234,
+      "number": 129,
+      "title": "Add basic configuration for `MANIFEST.in`?",
+      "html_url": "https://github.com/plone/meta/issues/129",
+      "repository_full_name": "plone/meta",
+      "repository_url": "https://api.github.com/repos/plone/meta",
+      "state": "open",
+      "created_at": "2023-06-15T10:48:01Z",
+      "updated_at": "2023-06-29T10:46:23Z",
+      "comments": 2,
+      "author": {
+        "login": "gforcada",
+        "html_url": "https://github.com/gforcada"
+      },
+      "assignees": [],
+      "labels": [
+        "04 type: enhancement",
+        "14 prio: low",
+        "42 lvl: moderate"
+      ]
+    },
+    {
+      "id": 1728657212,
+      "number": 97,
+      "title": "Improve coverage reports",
+      "html_url": "https://github.com/plone/meta/issues/97",
+      "repository_full_name": "plone/meta",
+      "repository_url": "https://api.github.com/repos/plone/meta",
+      "state": "open",
+      "created_at": "2023-05-27T11:16:55Z",
+      "updated_at": "2023-05-27T11:16:55Z",
+      "comments": 0,
+      "author": {
+        "login": "gforcada",
+        "html_url": "https://github.com/gforcada"
+      },
+      "assignees": [],
+      "labels": [
+        "04 type: enhancement",
+        "13 prio: normal",
+        "42 lvl: moderate"
+      ]
+    },
+    {
+      "id": 1665299907,
+      "number": 80,
+      "title": "Add GHA to ensure dependency mappings are up-to-date",
+      "html_url": "https://github.com/plone/meta/issues/80",
+      "repository_full_name": "plone/meta",
+      "repository_url": "https://api.github.com/repos/plone/meta",
+      "state": "open",
+      "created_at": "2023-04-12T21:39:44Z",
+      "updated_at": "2023-05-27T10:03:06Z",
+      "comments": 0,
+      "author": {
+        "login": "gforcada",
+        "html_url": "https://github.com/gforcada"
+      },
+      "assignees": [],
+      "labels": [
+        "04 type: enhancement",
+        "14 prio: low",
+        "42 lvl: moderate"
+      ]
+    },
+    {
+      "id": 313287684,
+      "number": 312,
+      "title": "using multilingual content in my tests",
+      "html_url": "https://github.com/plone/plone.app.multilingual/issues/312",
+      "repository_full_name": "plone/plone.app.multilingual",
+      "repository_url": "https://api.github.com/repos/plone/plone.app.multilingual",
+      "state": "open",
+      "created_at": "2018-04-11T11:42:24Z",
+      "updated_at": "2023-03-21T22:13:39Z",
+      "comments": 2,
+      "author": {
+        "login": "iham",
+        "html_url": "https://github.com/iham"
+      },
+      "assignees": [
+        "iham",
+        "jensens",
+        "agitator"
+      ],
+      "labels": [
+        "31 needs: help",
+        "02 type: regression",
+        "13 prio: normal",
+        "21 status: confirmed",
+        "42 lvl: moderate"
+      ]
+    },
+    {
+      "id": 106216920,
+      "number": 972,
+      "title": "Clean up confusing options for comments",
+      "html_url": "https://github.com/plone/Products.CMFPlone/issues/972",
+      "repository_full_name": "plone/Products.CMFPlone",
+      "repository_url": "https://api.github.com/repos/plone/Products.CMFPlone",
+      "state": "open",
+      "created_at": "2015-09-13T13:31:36Z",
+      "updated_at": "2023-03-13T11:45:20Z",
+      "comments": 3,
+      "author": {
+        "login": "pbauer",
+        "html_url": "https://github.com/pbauer"
+      },
+      "assignees": [],
+      "labels": [
+        "04 type: enhancement",
+        "99 tag: UX Editor",
+        "99 tag: UX Site Admin",
+        "31 needs: help",
+        "14 prio: low",
+        "42 lvl: moderate"
+      ]
+    },
+    {
+      "id": 95493120,
+      "number": 700,
+      "title": "Breadcrumb shows 'home' in Site setup and child pages",
+      "html_url": "https://github.com/plone/Products.CMFPlone/issues/700",
+      "repository_full_name": "plone/Products.CMFPlone",
+      "repository_url": "https://api.github.com/repos/plone/Products.CMFPlone",
+      "state": "open",
+      "created_at": "2015-07-16T18:14:45Z",
+      "updated_at": "2023-03-12T15:06:55Z",
+      "comments": 6,
+      "author": {
+        "login": "jaroel",
+        "html_url": "https://github.com/jaroel"
+      },
+      "assignees": [],
+      "labels": [
+        "04 type: enhancement",
+        "31 needs: help",
+        "21 status: confirmed",
+        "42 lvl: moderate"
+      ]
+    },
+    {
+      "id": 95494278,
+      "number": 701,
+      "title": "The 'home' button is selected in 'Site Setup'",
+      "html_url": "https://github.com/plone/Products.CMFPlone/issues/701",
+      "repository_full_name": "plone/Products.CMFPlone",
+      "repository_url": "https://api.github.com/repos/plone/Products.CMFPlone",
+      "state": "open",
+      "created_at": "2015-07-16T18:20:07Z",
+      "updated_at": "2023-03-12T15:05:45Z",
+      "comments": 4,
+      "author": {
+        "login": "jaroel",
+        "html_url": "https://github.com/jaroel"
+      },
+      "assignees": [],
+      "labels": [
+        "04 type: enhancement",
+        "31 needs: help",
+        "14 prio: low",
+        "21 status: confirmed",
+        "42 lvl: moderate"
+      ]
+    },
+    {
+      "id": 123510894,
+      "number": 1298,
+      "title": "Portal default timezone settings should be taken into account for effective/expiration dates",
+      "html_url": "https://github.com/plone/Products.CMFPlone/issues/1298",
+      "repository_full_name": "plone/Products.CMFPlone",
+      "repository_url": "https://api.github.com/repos/plone/Products.CMFPlone",
+      "state": "open",
+      "created_at": "2015-12-22T16:16:08Z",
+      "updated_at": "2023-03-12T14:30:36Z",
+      "comments": 7,
+      "author": {
+        "login": "agitator",
+        "html_url": "https://github.com/agitator"
+      },
+      "assignees": [],
+      "labels": [
+        "01 type: bug",
+        "31 needs: help",
+        "12 prio: high",
+        "42 lvl: moderate"
+      ]
+    },
+    {
+      "id": 94786217,
+      "number": 674,
+      "title": "optionally create more complex demo content for new Plone sites",
+      "html_url": "https://github.com/plone/Products.CMFPlone/issues/674",
+      "repository_full_name": "plone/Products.CMFPlone",
+      "repository_url": "https://api.github.com/repos/plone/Products.CMFPlone",
+      "state": "open",
+      "created_at": "2015-07-13T18:52:14Z",
+      "updated_at": "2023-03-12T14:17:00Z",
+      "comments": 0,
+      "author": {
+        "login": "tkimnguyen",
+        "html_url": "https://github.com/tkimnguyen"
+      },
+      "assignees": [],
+      "labels": [
+        "04 type: enhancement",
+        "31 needs: help",
+        "14 prio: low",
+        "42 lvl: moderate"
+      ]
+    },
+    {
+      "id": 614573796,
+      "number": 1459,
+      "title": "Workflow Manager",
+      "html_url": "https://github.com/plone/volto/issues/1459",
+      "repository_full_name": "plone/volto",
+      "repository_url": "https://api.github.com/repos/plone/volto",
+      "state": "open",
+      "created_at": "2020-05-08T07:50:20Z",
+      "updated_at": "2022-12-03T16:46:53Z",
+      "comments": 1,
+      "author": {
+        "login": "tisto",
+        "html_url": "https://github.com/tisto"
+      },
+      "assignees": [
+        "iRohitSingh"
+      ],
+      "labels": [
+        "04 type: enhancement",
+        "42 lvl: moderate"
+      ]
+    },
+    {
+      "id": 106998535,
+      "number": 1018,
+      "title": "Uploade \"site logo\" not validated ",
+      "html_url": "https://github.com/plone/Products.CMFPlone/issues/1018",
+      "repository_full_name": "plone/Products.CMFPlone",
+      "repository_url": "https://api.github.com/repos/plone/Products.CMFPlone",
+      "state": "open",
+      "created_at": "2015-09-17T14:34:32Z",
+      "updated_at": "2022-08-24T22:02:40Z",
+      "comments": 1,
+      "author": {
+        "login": "zopyx",
+        "html_url": "https://github.com/zopyx"
+      },
+      "assignees": [],
+      "labels": [
+        "01 type: bug",
+        "99 tag: UX Site Admin",
+        "31 needs: help",
+        "14 prio: low",
+        "42 lvl: moderate"
+      ]
+    },
+    {
+      "id": 1145394615,
+      "number": 3095,
+      "title": "Locking Control Panel",
+      "html_url": "https://github.com/plone/volto/issues/3095",
+      "repository_full_name": "plone/volto",
+      "repository_url": "https://api.github.com/repos/plone/volto",
+      "state": "open",
+      "created_at": "2022-02-21T06:56:23Z",
+      "updated_at": "2022-05-02T13:53:11Z",
+      "comments": 0,
+      "author": {
+        "login": "tisto",
+        "html_url": "https://github.com/tisto"
+      },
+      "assignees": [],
+      "labels": [
+        "04 type: enhancement",
+        "42 lvl: moderate"
+      ]
+    },
+    {
+      "id": 1222660800,
+      "number": 196,
+      "title": "Todo: Remove traces of LinguaPlone",
+      "html_url": "https://github.com/plone/plone.app.discussion/issues/196",
+      "repository_full_name": "plone/plone.app.discussion",
+      "repository_url": "https://api.github.com/repos/plone/plone.app.discussion",
+      "state": "open",
+      "created_at": "2022-05-02T09:13:29Z",
+      "updated_at": "2022-05-02T09:13:29Z",
+      "comments": 0,
+      "author": {
+        "login": "jensens",
+        "html_url": "https://github.com/jensens"
+      },
+      "assignees": [],
+      "labels": [
+        "31 needs: help",
+        "04 type: enhancement",
+        "13 prio: normal",
+        "42 lvl: moderate"
+      ]
+    },
+    {
+      "id": 223133204,
+      "number": 4,
+      "title": "Server Side Rendering for forms",
+      "html_url": "https://github.com/plone/volto/issues/4",
+      "repository_full_name": "plone/volto",
+      "repository_url": "https://api.github.com/repos/plone/volto",
+      "state": "open",
+      "created_at": "2017-04-20T16:56:34Z",
+      "updated_at": "2021-01-04T18:57:18Z",
+      "comments": 0,
+      "author": {
+        "login": "robgietema",
+        "html_url": "https://github.com/robgietema"
+      },
+      "assignees": [],
+      "labels": [
+        "04 type: enhancement",
+        "14 prio: low",
+        "21 status: confirmed",
+        "42 lvl: moderate"
+      ]
+    },
+    {
+      "id": 473556372,
+      "number": 35,
+      "title": "Does not build on Windows 10",
+      "html_url": "https://github.com/plone/plone.staticresources/issues/35",
+      "repository_full_name": "plone/plone.staticresources",
+      "repository_url": "https://api.github.com/repos/plone/plone.staticresources",
+      "state": "open",
+      "created_at": "2019-07-26T22:22:35Z",
+      "updated_at": "2020-07-27T07:42:58Z",
+      "comments": 1,
+      "author": {
+        "login": "smcmahon",
+        "html_url": "https://github.com/smcmahon"
+      },
+      "assignees": [],
+      "labels": [
+        "01 type: bug",
+        "31 needs: help",
+        "12 prio: high",
+        "21 status: confirmed",
+        "42 lvl: moderate"
+      ]
+    },
+    {
+      "id": 438972586,
+      "number": 374,
+      "title": "theme_barceloneta: grunt setup broken",
+      "html_url": "https://github.com/plone/bobtemplates.plone/issues/374",
+      "repository_full_name": "plone/bobtemplates.plone",
+      "repository_url": "https://api.github.com/repos/plone/bobtemplates.plone",
+      "state": "open",
+      "created_at": "2019-04-30T20:52:58Z",
+      "updated_at": "2019-05-22T08:12:14Z",
+      "comments": 8,
+      "author": {
+        "login": "djowett",
+        "html_url": "https://github.com/djowett"
+      },
+      "assignees": [],
+      "labels": [
+        "31 needs: help",
+        "13 prio: normal",
+        "42 lvl: moderate"
+      ]
+    },
+    {
+      "id": 272275650,
+      "number": 238,
+      "title": "Improve vocabulary sub template with IContextSourceBinder example",
+      "html_url": "https://github.com/plone/bobtemplates.plone/issues/238",
+      "repository_full_name": "plone/bobtemplates.plone",
+      "repository_url": "https://api.github.com/repos/plone/bobtemplates.plone",
+      "state": "open",
+      "created_at": "2017-11-08T17:05:25Z",
+      "updated_at": "2017-11-08T17:41:54Z",
+      "comments": 1,
+      "author": {
+        "login": "MrTango",
+        "html_url": "https://github.com/MrTango"
+      },
+      "assignees": [],
+      "labels": [
+        "04 type: enhancement",
+        "13 prio: normal",
+        "42 lvl: moderate"
+      ]
+    },
+    {
+      "id": 129219960,
+      "number": 10,
+      "title": "Implement Unicode sandwich convention",
+      "html_url": "https://github.com/plone/Products.CMFDiffTool/issues/10",
+      "repository_full_name": "plone/Products.CMFDiffTool",
+      "repository_url": "https://api.github.com/repos/plone/Products.CMFDiffTool",
+      "state": "open",
+      "created_at": "2016-01-27T17:51:54Z",
+      "updated_at": "2016-01-27T17:51:54Z",
+      "comments": 0,
+      "author": {
+        "login": "do3cc",
+        "html_url": "https://github.com/do3cc"
+      },
+      "assignees": [],
+      "labels": [
+        "04 type: enhancement",
+        "42 lvl: moderate"
+      ]
+    },
+    {
+      "id": 108313727,
+      "number": 9,
+      "title": "Non ASCII characters raise errors when comparing versions of a document",
+      "html_url": "https://github.com/plone/Products.CMFDiffTool/issues/9",
+      "repository_full_name": "plone/Products.CMFDiffTool",
+      "repository_url": "https://api.github.com/repos/plone/Products.CMFDiffTool",
+      "state": "open",
+      "created_at": "2015-09-25T12:16:31Z",
+      "updated_at": "2016-01-27T17:49:44Z",
+      "comments": 0,
+      "author": {
+        "login": "danielhz",
+        "html_url": "https://github.com/danielhz"
+      },
+      "assignees": [],
+      "labels": [
+        "01 type: bug",
+        "42 lvl: moderate"
+      ]
+    }
+  ],
+  "message": null,
   "workflow": {
     "repository": "syslabcom/activity-recognition",
-    "run_id": "24085054360",
-    "run_number": "1",
+    "run_id": "24086944490",
+    "run_number": "2",
     "attempt": "1",
-    "url": "https://github.com/syslabcom/activity-recognition/actions/runs/24085054360",
-    "sha": "69a9d07721b8d38fc759d92134d7af04767414b2"
+    "url": "https://github.com/syslabcom/activity-recognition/actions/runs/24086944490",
+    "sha": "53c745d9a67c6d4dd6bbde53abf33f989dd91940"
   }
 }
