@@ -105,9 +105,6 @@ a {
 }
 
 .summary {
-  font: inherit;
-  white-space: pre-wrap;
-  word-break: break-word;
   overflow-wrap: anywhere;
   background: var(--panel-soft);
   border-radius: 0.75rem;
@@ -119,6 +116,72 @@ a {
   min-height: 20rem;
   font-size: 1.02rem;
   line-height: 1.7;
+}
+
+.markdown-content > :first-child {
+  margin-top: 0;
+}
+
+.markdown-content > :last-child {
+  margin-bottom: 0;
+}
+
+.markdown-content h1,
+.markdown-content h2,
+.markdown-content h3,
+.markdown-content h4 {
+  line-height: 1.25;
+  margin: 1.25rem 0 0.75rem;
+}
+
+.markdown-content p,
+.markdown-content ul,
+.markdown-content ol,
+.markdown-content blockquote,
+.markdown-content pre {
+  margin: 0 0 1rem;
+}
+
+.markdown-content ul,
+.markdown-content ol {
+  padding-left: 1.4rem;
+}
+
+.markdown-content li + li {
+  margin-top: 0.35rem;
+}
+
+.markdown-content code {
+  background: color-mix(in srgb, var(--panel-soft) 80%, var(--panel-border));
+  border-radius: 0.35rem;
+  padding: 0.08rem 0.35rem;
+  font-family: ui-monospace, SFMono-Regular, SFMono-Regular, Menlo, Monaco, Consolas, 'Liberation Mono', monospace;
+  font-size: 0.92em;
+}
+
+.markdown-content pre {
+  overflow-x: auto;
+  background: color-mix(in srgb, var(--panel-soft) 80%, var(--panel-border));
+  border-radius: 0.6rem;
+  padding: 0.9rem 1rem;
+}
+
+.markdown-content pre code {
+  background: transparent;
+  padding: 0;
+}
+
+.markdown-content blockquote {
+  margin-left: 0;
+  padding-left: 1rem;
+  border-left: 3px solid color-mix(in srgb, var(--accent) 35%, var(--panel-border));
+  color: var(--muted);
+}
+
+.markdown-content hr {
+  border: 0;
+  border-top: 1px solid var(--panel-border);
+  margin: 1rem 0;
 }
 
 .issue-grid {

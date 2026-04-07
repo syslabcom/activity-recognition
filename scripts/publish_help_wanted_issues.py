@@ -36,12 +36,12 @@ ISSUE_LIST_SPECS = (
     IssueListSpec(
         slug="good-first-onboarding",
         title="Plone issue list — Good first issue onboarding",
-        label="99 tag: good first issue- onboarding",
+        label="99 tag: good first issue",  # or in volto: First Contribution
     ),
     IssueListSpec(
         slug="lvl-easy",
         title="Plone issue list — Level: Easy",
-        label="41 lvl: easy - beginner-friendly but not trivial",
+        label="41 lvl: easy",  # - beginner-friendly but not trivial
     ),
     IssueListSpec(
         slug="lvl-moderate",

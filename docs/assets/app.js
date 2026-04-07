@@ -63,12 +63,243 @@ function formatCount(value) {
   return typeof value === 'number' ? String(value) : '—';
 }
 
+function toTimestamp(value) {
+  const timestamp = Date.parse(value || '');
+  return Number.isNaN(timestamp) ? 0 : timestamp;
+}
+
+function escapeHtml(value) {
+  return String(value).replace(/[&<>'"]/g, (character) => {
+    switch (character) {
+      case '&':
+        return '&amp;';
+      case '<':
+        return '&lt;';
+      case '>':
+        return '&gt;';
+      case '"':
+        return '&quot;';
+      case '\'':
+        return '&#39;';
+      default:
+        return character;
+    }
+  });
+}
+
+function sanitizeUrl(url) {
+  const trimmed = String(url || '').trim();
+  if (!trimmed) {
+    return '';
+  }
+
+  if (/^(https?:|mailto:)/i.test(trimmed) || /^(\/|\.\/|\.\.\/|#)/.test(trimmed)) {
+    return trimmed;
+  }
+
+  return '';
+}
+
+function renderInlineMarkdown(text) {
+  const placeholders = [];
+  const store = (html) => {
+    const token = `\u0000${placeholders.length}\u0000`;
+    placeholders.push(html);
+    return token;
+  };
+
+  let result = escapeHtml(text);
+
+  result = result.replace(/`([^`]+)`/g, (_match, code) => {
+    return store(`<code>${code}</code>`);
+  });
+
+  result = result.replace(/\[([^\]]+)\]\(([^)]+)\)/g, (_match, label, href) => {
+    const safeHref = sanitizeUrl(href.replace(/^<|>$/g, ''));
+    if (!safeHref) {
+      return label;
+    }
+
+    return store(
+      `<a href="${escapeHtml(safeHref)}" target="_blank" rel="noreferrer">${label}</a>`
+    );
+  });
+
+  result = result.replace(/\*\*([^*]+)\*\*/g, '<strong>$1</strong>');
+  result = result.replace(/__([^_]+)__/g, '<strong>$1</strong>');
+  result = result.replace(/\*([^*]+)\*/g, '<em>$1</em>');
+  result = result.replace(/_([^_]+)_/g, '<em>$1</em>');
+
+  const restored = result.replace(/\u0000(\d+)\u0000/g, (_match, index) => placeholders[Number(index)]);
+  return restored.replace(/\n/g, '<br>');
+}
+
+function renderMarkdown(markdown) {
+  const source = String(markdown || '').replace(/\r\n?/g, '\n').trim();
+  if (!source) {
+    return '<p>No published summary yet.</p>';
+  }
+
+  const lines = source.split('\n');
+  const blocks = [];
+  let index = 0;
+
+  const isBlank = (line) => !line.trim();
+  const isListItem = (line) => /^\s*([-*+] |\d+\. )/.test(line);
+
+  while (index < lines.length) {
+    const line = lines[index];
+
+    if (isBlank(line)) {
+      index += 1;
+      continue;
+    }
+
+    if (/^```/.test(line.trim())) {
+      const codeLines = [];
+      index += 1;
+      while (index < lines.length && !/^```/.test(lines[index].trim())) {
+        codeLines.push(lines[index]);
+        index += 1;
+      }
+      if (index < lines.length) {
+        index += 1;
+      }
+      blocks.push(`<pre><code>${escapeHtml(codeLines.join('\n'))}</code></pre>`);
+      continue;
+    }
+
+    const headingMatch = line.match(/^(#{1,6})\s+(.*)$/);
+    if (headingMatch) {
+      const level = headingMatch[1].length;
+      blocks.push(`<h${level}>${renderInlineMarkdown(headingMatch[2].trim())}</h${level}>`);
+      index += 1;
+      continue;
+    }
+
+    if (/^---+$/.test(line.trim()) || /^\*\*\*+$/.test(line.trim())) {
+      blocks.push('<hr>');
+      index += 1;
+      continue;
+    }
+
+    if (/^>\s?/.test(line)) {
+      const quoteLines = [];
+      while (index < lines.length && /^>\s?/.test(lines[index])) {
+        quoteLines.push(lines[index].replace(/^>\s?/, ''));
+        index += 1;
+      }
+      blocks.push(`<blockquote>${renderMarkdown(quoteLines.join('\n'))}</blockquote>`);
+      continue;
+    }
+
+    if (isListItem(line)) {
+      const ordered = /^\s*\d+\. /.test(line);
+      const tag = ordered ? 'ol' : 'ul';
+      const items = [];
+
+      while (index < lines.length && isListItem(lines[index])) {
+        const itemText = lines[index].replace(/^\s*(?:[-*+] |\d+\. )/, '');
+        items.push(`<li>${renderInlineMarkdown(itemText.trim())}</li>`);
+        index += 1;
+      }
+
+      blocks.push(`<${tag}>${items.join('')}</${tag}>`);
+      continue;
+    }
+
+    const paragraphLines = [];
+    while (
+      index < lines.length &&
+      !isBlank(lines[index]) &&
+      !/^```/.test(lines[index].trim()) &&
+      !/^(#{1,6})\s+/.test(lines[index]) &&
+      !/^>\s?/.test(lines[index]) &&
+      !isListItem(lines[index]) &&
+      !/^---+$/.test(lines[index].trim()) &&
+      !/^\*\*\*+$/.test(lines[index].trim())
+    ) {
+      paragraphLines.push(lines[index].trim());
+      index += 1;
+    }
+
+    blocks.push(`<p>${renderInlineMarkdown(paragraphLines.join('\n'))}</p>`);
+  }
+
+  return blocks.join('\n');
+}
+
 function issueCountLabel(count) {
   if (typeof count !== 'number') {
     return '— issues';
   }
 
   return `${count} ${count === 1 ? 'issue' : 'issues'}`;
+}
+
+function buildSummaryExcerpt(text, limit = 180) {
+  const compact = String(text || '').replace(/\s+/g, ' ').trim();
+  if (!compact) {
+    return 'No summary excerpt available.';
+  }
+
+  if (compact.length <= limit) {
+    return compact;
+  }
+
+  return `${compact.slice(0, limit - 1).trimEnd()}…`;
+}
+
+function buildRunRecordFromLatest(latest) {
+  return {
+    status: latest?.status ?? 'pending',
+    generated_at: latest?.generated_at ?? null,
+    period: latest?.period ?? null,
+    counts: {
+      repos_processed: latest?.counts?.repos_processed ?? null,
+      active_repos: latest?.counts?.active_repos ?? null
+    },
+    json_path: latest?.artifacts?.run_json_path || latest?.artifacts?.latest_json_path || null,
+    markdown_path: latest?.artifacts?.run_markdown_path || latest?.artifacts?.latest_markdown_path || null,
+    workflow_url: latest?.workflow?.url || null,
+    summary_excerpt: buildSummaryExcerpt(latest?.summary || latest?.message)
+  };
+}
+
+function mergeLatestIntoTask(task, latest) {
+  const baseTask = task && typeof task === 'object' ? { ...task } : { slug: TASK_SLUG, title: 'GitHub Activity Digest' };
+  const latestRecord = {
+    status: latest?.status ?? baseTask.latest?.status ?? 'pending',
+    generated_at: latest?.generated_at ?? baseTask.latest?.generated_at ?? null,
+    json_path: latest?.artifacts?.latest_json_path || baseTask.latest?.json_path || DIGEST_LATEST_PATH,
+    markdown_path: latest?.artifacts?.latest_markdown_path || baseTask.latest?.markdown_path || null
+  };
+
+  const latestRun = buildRunRecordFromLatest(latest);
+  const existingRuns = Array.isArray(baseTask.runs) ? [...baseTask.runs] : [];
+  const mergedRuns = existingRuns.filter((run) => {
+    if (!latestRun.generated_at) {
+      return true;
+    }
+
+    if (run?.json_path && latestRun.json_path && run.json_path === latestRun.json_path) {
+      return false;
+    }
+
+    return run?.generated_at !== latestRun.generated_at;
+  });
+
+  if (latestRun.generated_at || latestRun.json_path) {
+    mergedRuns.unshift(latestRun);
+  }
+
+  mergedRuns.sort((left, right) => toTimestamp(right?.generated_at) - toTimestamp(left?.generated_at));
+
+  return {
+    ...baseTask,
+    latest: latestRecord,
+    runs: mergedRuns
+  };
 }
 
 function createLink(label, href, external = false) {
@@ -127,7 +358,8 @@ function setLatestMeta(latest) {
 
 function setSummary(summaryMarkdown, latest) {
   const summary = document.getElementById('summary-text');
-  summary.textContent = summaryMarkdown || latest?.summary || latest?.message || 'No published summary yet.';
+  const source = summaryMarkdown || latest?.summary || latest?.message || 'No published summary yet.';
+  summary.innerHTML = renderMarkdown(source);
 }
 
 function setStatusMessage(latest, runsCount) {
@@ -340,10 +572,8 @@ async function main() {
       }
     }
 
-    const task = (indexData.tasks || []).find((item) => item.slug === TASK_SLUG);
-    if (!task) {
-      throw new Error(`Task '${TASK_SLUG}' not found in index.json`);
-    }
+    const taskFromIndex = (indexData.tasks || []).find((item) => item.slug === TASK_SLUG);
+    const task = mergeLatestIntoTask(taskFromIndex, latest);
 
     setSummary(summaryMarkdown, latest);
     setEndpointLinks(latest);
@@ -353,7 +583,7 @@ async function main() {
   } catch (error) {
     const message = error instanceof Error ? error.message : String(error);
     document.getElementById('status-message').textContent = `Failed to load digest data: ${message}`;
-    document.getElementById('summary-text').textContent = 'Published digest data is not available yet.';
+    document.getElementById('summary-text').innerHTML = renderMarkdown('Published digest data is not available yet.');
     document.getElementById('runs-list').innerHTML = '<li class="muted">No run history available.</li>';
     document.getElementById('latest-meta').innerHTML = '';
   }
