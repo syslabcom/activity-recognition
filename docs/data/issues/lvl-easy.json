@@ -1,0 +1,24 @@
+{
+  "version": 1,
+  "status": "pending",
+  "generated_at": null,
+  "organization": "plone",
+  "state": "open",
+  "slug": "lvl-easy",
+  "title": "Plone help wanted issues — Level: Easy",
+  "required_labels": [
+    "help wanted",
+    "41 lvl: easy - beginner-friendly but not trivial"
+  ],
+  "issue_count": 0,
+  "issues": [],
+  "message": "No published issue list yet.",
+  "workflow": {
+    "repository": null,
+    "run_id": null,
+    "run_number": null,
+    "attempt": null,
+    "url": null,
+    "sha": null
+  }
+}

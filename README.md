@@ -23,6 +23,29 @@ The published output is available in two forms:
 - HTML via GitHub Pages from `docs/index.html`
 - JSON for external clients under `docs/data/`
 
+## Help wanted issue lists
+
+This repository also publishes static lists of Plone issues that:
+
+- are open issues
+- are in the `plone` organization
+- have the label `help wanted`
+- also have one of these type labels:
+  - `99 tag: good first issue- onboarding`
+  - `41 lvl: easy - beginner-friendly but not trivial`
+  - `42 lvl: moderate`
+  - `43 lvl: complex`
+
+The workflow runs hourly and writes:
+
+- Markdown pages under `docs/issues/`
+- JSON files under `docs/data/issues/`
+
+The generated lists are sorted by last updated date, newest first.
+
+To avoid accidental data loss, the workflow does not overwrite an existing
+published file with an empty result set.
+
 ## Custom prompt
 
 Edit these files to control the digest prompt and run settings:
@@ -37,6 +60,7 @@ tool directory before the CLI is executed.
 
 ```text
 .github/workflows/github-activity-digest.yml
+.github/workflows/help-wanted-issues.yml
 digest/
   config.json
   prompt-template-activity-recognition.txt
@@ -44,7 +68,9 @@ docs/
   index.html
   assets/
   data/
+  issues/
 scripts/publish_github_activity_digest.py
+scripts/publish_help_wanted_issues.py
 ```
 
 ## Required secrets
@@ -74,6 +100,14 @@ After the first successful run, expect these paths in Pages:
 - `.../data/index.json`
 - `.../data/github-activity-digest/latest.json`
 - `.../data/github-activity-digest/latest.md`
+- `.../issues/good-first-onboarding/`
+- `.../issues/lvl-easy/`
+- `.../issues/lvl-moderate/`
+- `.../issues/lvl-complex/`
+- `.../data/issues/good-first-onboarding.json`
+- `.../data/issues/lvl-easy.json`
+- `.../data/issues/lvl-moderate.json`
+- `.../data/issues/lvl-complex.json`
 
 ## Notes
 

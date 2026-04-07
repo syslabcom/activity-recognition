@@ -1,0 +1,44 @@
+name: Publish help wanted issue lists
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '0 * * * *'
+
+permissions:
+  contents: write
+
+concurrency:
+  group: help-wanted-issue-lists-${{ github.ref }}
+  cancel-in-progress: false
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout activity-recognition
+        uses: actions/checkout@v4
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.x'
+
+      - name: Generate labeled issue lists
+        env:
+          GITHUB_TOKEN: ${{ github.token }}
+        run: python3 scripts/publish_help_wanted_issues.py
+
+      - name: Commit published issue lists
+        shell: bash
+        run: |
+          git add docs/issues docs/data/issues
+          git diff --staged --quiet && {
+            echo "No issue list changes to commit."
+            exit 0
+          }
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git commit -m "Update help wanted issue lists"
+          git push
