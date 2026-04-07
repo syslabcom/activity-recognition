@@ -1,17 +1,34 @@
 {
   "version": 1,
-  "generated_at": "2026-04-07T13:11:40Z",
+  "generated_at": "2026-04-07T13:23:07Z",
   "tasks": [
     {
       "slug": "github-activity-digest",
       "title": "GitHub Activity Digest",
       "latest": {
         "status": "no_activity",
-        "generated_at": "2026-04-07T13:11:40Z",
+        "generated_at": "2026-04-07T13:23:07Z",
         "json_path": "data/github-activity-digest/latest.json",
         "markdown_path": "data/github-activity-digest/latest.md"
       },
       "runs": [
+        {
+          "status": "no_activity",
+          "generated_at": "2026-04-07T13:23:07Z",
+          "period": {
+            "days": 7,
+            "start": "2026-03-31",
+            "end": "2026-04-07"
+          },
+          "counts": {
+            "repos_processed": null,
+            "active_repos": null
+          },
+          "json_path": "data/github-activity-digest/runs/2026-04-07T13-23-07Z.json",
+          "markdown_path": "data/github-activity-digest/runs/2026-04-07T13-23-07Z.md",
+          "workflow_url": "https://github.com/syslabcom/activity-recognition/actions/runs/24083664425",
+          "summary_excerpt": "📊 WEEKLY SUMMARY 2026-03-31 to 2026-04-07 No repository activity during this period. Automatically generated from 0 active repositories."
+        },
         {
           "status": "no_activity",
           "generated_at": "2026-04-07T13:11:40Z",
