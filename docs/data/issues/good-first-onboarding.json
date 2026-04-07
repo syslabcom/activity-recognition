@@ -1,23 +1,266 @@
 {
   "version": 1,
-  "status": "empty_initial",
-  "generated_at": "2026-04-07T13:52:47Z",
+  "status": "success",
+  "generated_at": "2026-04-07T14:39:37Z",
   "organization": "plone",
   "state": "open",
   "slug": "good-first-onboarding",
   "title": "Plone issue list — Good first issue onboarding",
   "required_labels": [
-    "99 tag: good first issue- onboarding"
+    "99 tag: good first issue"
   ],
-  "issue_count": 0,
-  "issues": [],
-  "message": "No matching open issues were found at generation time.",
+  "issue_count": 10,
+  "issues": [
+    {
+      "id": 4020920049,
+      "number": 2065,
+      "title": "Add Plone documentation to sites that attract first-time contributors",
+      "html_url": "https://github.com/plone/documentation/issues/2065",
+      "repository_full_name": "plone/documentation",
+      "repository_url": "https://api.github.com/repos/plone/documentation",
+      "state": "open",
+      "created_at": "2026-03-04T09:10:56Z",
+      "updated_at": "2026-03-16T00:28:14Z",
+      "comments": 2,
+      "author": {
+        "login": "stevepiercy",
+        "html_url": "https://github.com/stevepiercy"
+      },
+      "assignees": [],
+      "labels": [
+        "33 needs: docs",
+        "41 lvl: easy",
+        "99 tag: good first issue",
+        "99 tag: hacktoberfest"
+      ]
+    },
+    {
+      "id": 3791714358,
+      "number": 2029,
+      "title": "Create a GitHub App that detects first-time comments and responds with links to how to contribute",
+      "html_url": "https://github.com/plone/documentation/issues/2029",
+      "repository_full_name": "plone/documentation",
+      "repository_url": "https://api.github.com/repos/plone/documentation",
+      "state": "open",
+      "created_at": "2026-01-08T07:24:37Z",
+      "updated_at": "2026-03-04T09:06:37Z",
+      "comments": 13,
+      "author": {
+        "login": "stevepiercy",
+        "html_url": "https://github.com/stevepiercy"
+      },
+      "assignees": [],
+      "labels": [
+        "04 type: enhancement",
+        "31 needs: help",
+        "41 lvl: easy",
+        "99 tag: good first issue",
+        "99 tag: hacktoberfest"
+      ]
+    },
+    {
+      "id": 3440477443,
+      "number": 1973,
+      "title": "Add \"Related content\" as the final section in most pages",
+      "html_url": "https://github.com/plone/documentation/issues/1973",
+      "repository_full_name": "plone/documentation",
+      "repository_url": "https://api.github.com/repos/plone/documentation",
+      "state": "open",
+      "created_at": "2025-09-22T11:26:23Z",
+      "updated_at": "2026-03-04T09:06:36Z",
+      "comments": 10,
+      "author": {
+        "login": "stevepiercy",
+        "html_url": "https://github.com/stevepiercy"
+      },
+      "assignees": [],
+      "labels": [
+        "41 lvl: easy",
+        "99 tag: good first issue",
+        "99 tag: hacktoberfest"
+      ]
+    },
+    {
+      "id": 2634531781,
+      "number": 1751,
+      "title": "Replace \"Plone instance\" and \"Zope / Plone instance\" with \"Zope instance\"",
+      "html_url": "https://github.com/plone/documentation/issues/1751",
+      "repository_full_name": "plone/documentation",
+      "repository_url": "https://api.github.com/repos/plone/documentation",
+      "state": "open",
+      "created_at": "2024-11-05T06:20:30Z",
+      "updated_at": "2026-03-04T09:06:35Z",
+      "comments": 3,
+      "author": {
+        "login": "stevepiercy",
+        "html_url": "https://github.com/stevepiercy"
+      },
+      "assignees": [
+        "alizgirl"
+      ],
+      "labels": [
+        "41 lvl: easy",
+        "99 tag: good first issue",
+        "99 tag: hacktoberfest"
+      ]
+    },
+    {
+      "id": 1350425001,
+      "number": 1281,
+      "title": "Overview: Create a dependency diagram using pipforester and pipdeptree",
+      "html_url": "https://github.com/plone/documentation/issues/1281",
+      "repository_full_name": "plone/documentation",
+      "repository_url": "https://api.github.com/repos/plone/documentation",
+      "state": "open",
+      "created_at": "2022-08-25T07:06:53Z",
+      "updated_at": "2026-03-04T09:06:31Z",
+      "comments": 14,
+      "author": {
+        "login": "stevepiercy",
+        "html_url": "https://github.com/stevepiercy"
+      },
+      "assignees": [],
+      "labels": [
+        "31 needs: help",
+        "33 needs: docs",
+        "41 lvl: easy",
+        "99 tag: Plone 6.x",
+        "99 tag: good first issue",
+        "99 tag: hacktoberfest"
+      ]
+    },
+    {
+      "id": 1145241080,
+      "number": 1190,
+      "title": "Improve spellcheck",
+      "html_url": "https://github.com/plone/documentation/issues/1190",
+      "repository_full_name": "plone/documentation",
+      "repository_url": "https://api.github.com/repos/plone/documentation",
+      "state": "open",
+      "created_at": "2022-02-21T02:21:05Z",
+      "updated_at": "2026-03-04T09:06:31Z",
+      "comments": 5,
+      "author": {
+        "login": "stevepiercy",
+        "html_url": "https://github.com/stevepiercy"
+      },
+      "assignees": [],
+      "labels": [
+        "31 needs: help",
+        "33 needs: docs",
+        "41 lvl: easy",
+        "99 tag: Plone 6.x",
+        "99 tag: good first issue",
+        "99 tag: hacktoberfest"
+      ]
+    },
+    {
+      "id": 188974446,
+      "number": 717,
+      "title": "need documentation on customizing print styles",
+      "html_url": "https://github.com/plone/documentation/issues/717",
+      "repository_full_name": "plone/documentation",
+      "repository_url": "https://api.github.com/repos/plone/documentation",
+      "state": "open",
+      "created_at": "2016-11-13T14:56:47Z",
+      "updated_at": "2026-03-04T09:06:30Z",
+      "comments": 4,
+      "author": {
+        "login": "tkimnguyen",
+        "html_url": "https://github.com/tkimnguyen"
+      },
+      "assignees": [],
+      "labels": [
+        "31 needs: help",
+        "33 needs: docs",
+        "41 lvl: easy",
+        "99 tag: Plone 6.x",
+        "99 tag: good first issue",
+        "99 tag: hacktoberfest"
+      ]
+    },
+    {
+      "id": 1108636676,
+      "number": 1147,
+      "title": "Improve SEO with `html_meta` directive.",
+      "html_url": "https://github.com/plone/documentation/issues/1147",
+      "repository_full_name": "plone/documentation",
+      "repository_url": "https://api.github.com/repos/plone/documentation",
+      "state": "open",
+      "created_at": "2022-01-19T22:48:44Z",
+      "updated_at": "2026-03-04T09:06:30Z",
+      "comments": 3,
+      "author": {
+        "login": "stevepiercy",
+        "html_url": "https://github.com/stevepiercy"
+      },
+      "assignees": [],
+      "labels": [
+        "31 needs: help",
+        "33 needs: docs",
+        "41 lvl: easy",
+        "99 tag: Plone 6.x",
+        "99 tag: good first issue",
+        "99 tag: hacktoberfest"
+      ]
+    },
+    {
+      "id": 174787563,
+      "number": 692,
+      "title": "add doc on customizing moment.js date formats",
+      "html_url": "https://github.com/plone/documentation/issues/692",
+      "repository_full_name": "plone/documentation",
+      "repository_url": "https://api.github.com/repos/plone/documentation",
+      "state": "open",
+      "created_at": "2016-09-02T15:33:39Z",
+      "updated_at": "2026-03-04T09:06:28Z",
+      "comments": 4,
+      "author": {
+        "login": "tkimnguyen",
+        "html_url": "https://github.com/tkimnguyen"
+      },
+      "assignees": [],
+      "labels": [
+        "31 needs: help",
+        "33 needs: docs",
+        "41 lvl: easy",
+        "99 tag: Plone 6.x",
+        "99 tag: classic-ui",
+        "99 tag: good first issue",
+        "99 tag: hacktoberfest"
+      ]
+    },
+    {
+      "id": 155527438,
+      "number": 612,
+      "title": "document feature of external links opening in new tab/window",
+      "html_url": "https://github.com/plone/documentation/issues/612",
+      "repository_full_name": "plone/documentation",
+      "repository_url": "https://api.github.com/repos/plone/documentation",
+      "state": "open",
+      "created_at": "2016-05-18T15:11:54Z",
+      "updated_at": "2026-03-04T09:06:27Z",
+      "comments": 14,
+      "author": {
+        "login": "tkimnguyen",
+        "html_url": "https://github.com/tkimnguyen"
+      },
+      "assignees": [],
+      "labels": [
+        "33 needs: docs",
+        "41 lvl: easy",
+        "99 tag: good first issue",
+        "99 tag: hacktoberfest"
+      ]
+    }
+  ],
+  "message": null,
   "workflow": {
     "repository": "syslabcom/activity-recognition",
-    "run_id": "24085054360",
-    "run_number": "1",
+    "run_id": "24087308011",
+    "run_number": "4",
     "attempt": "1",
-    "url": "https://github.com/syslabcom/activity-recognition/actions/runs/24085054360",
-    "sha": "69a9d07721b8d38fc759d92134d7af04767414b2"
+    "url": "https://github.com/syslabcom/activity-recognition/actions/runs/24087308011",
+    "sha": "403835cd5d72ce066832e09a708c464fa1ae4600"
   }
 }
