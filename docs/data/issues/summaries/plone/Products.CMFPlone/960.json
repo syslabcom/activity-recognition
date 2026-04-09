@@ -1,0 +1,34 @@
+{
+  "version": 1,
+  "status": "success",
+  "generated_at": "2026-04-09T19:29:40Z",
+  "source_issue": {
+    "id": 106062948,
+    "number": 960,
+    "title": "Autocomplete widget not normalizing on search",
+    "html_url": "https://github.com/plone/Products.CMFPlone/issues/960",
+    "repository_full_name": "plone/Products.CMFPlone",
+    "updated_at": "2022-08-24T22:13:16Z",
+    "labels": [
+      "04 type: enhancement",
+      "31 needs: help",
+      "13 prio: normal",
+      "21 status: confirmed",
+      "43 lvl: complex"
+    ],
+    "comments": 2
+  },
+  "ai": {
+    "provider": "openai",
+    "model": "gpt-4o-mini"
+  },
+  "summary_markdown": "# Autocomplete widget not normalizing on search\n\n## What this issue is about\nThis issue addresses a problem with the autocomplete widget in Plone that fails to recognize names with accents. For example, typing \"hec...\" does not suggest \"Héctor Velarde\" due to the lack of normalization of accented characters.\n\n## What needs to be done\nWe need to enhance the autocomplete widget to ensure it can return suggestions regardless of accent marks or character variations. This may involve improving how data is indexed and searched within the component.\n\n## Helpful background\nCurrently, it seems that the widget uses a simple keyword index that does not normalize strings. Normalization is the process of converting different forms of a character to a standard form (e.g., treating \"é\" and \"e\" as equivalent). The discussion indicates some uncertainty around existing implementations and their limitations.\n\n## Good first steps\n1. Familiarize yourself with the autocomplete widget in Plone, especially focusing on its indexing mechanism.\n2. Review how normalization is handled in similar components or libraries.\n3. Consider checking existing tests related to the widget and see if enhancements are needed or can be added.\n4. Discuss your findings or proposed changes in the issue comments for feedback before diving into coding.",
+  "workflow": {
+    "repository": "syslabcom/activity-recognition",
+    "run_id": "24209273658",
+    "run_number": "58",
+    "attempt": "1",
+    "url": "https://github.com/syslabcom/activity-recognition/actions/runs/24209273658",
+    "sha": "429caab57cdd9dd6b64f34f16833b4ee533cde77"
+  }
+}

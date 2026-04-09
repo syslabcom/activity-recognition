@@ -1,0 +1,31 @@
+{
+  "version": 1,
+  "status": "success",
+  "generated_at": "2026-04-09T19:29:30Z",
+  "source_issue": {
+    "id": 1409037162,
+    "number": 3762,
+    "title": "Listing block headline should integrate with TOC",
+    "html_url": "https://github.com/plone/volto/issues/3762",
+    "repository_full_name": "plone/volto",
+    "updated_at": "2023-02-28T14:56:46Z",
+    "labels": [
+      "01 type: bug",
+      "41 lvl: easy"
+    ],
+    "comments": 1
+  },
+  "ai": {
+    "provider": "openai",
+    "model": "gpt-4o-mini"
+  },
+  "summary_markdown": "## What this issue is about\nThis issue addresses a bug in the Volto project where the headline of the listing block is not properly integrating with the Table of Contents (TOC). The TOC helps in organizing content, and this integration is important for usability.\n\n## What needs to be done\nThe main task is to update the listing block so that its headline can function correctly with the existing TOC framework. This might involve modifying configurations related to `config.blocks.blocksConfig[block['@type']]?.tocEntry`. \n\n## Helpful background\nThe discussion around this issue includes a pull request (#4436) that may provide insights on potential solutions. As parts of this issue are still being discussed, details or implementation strategies could change, so stay flexible in your approach.\n\n## Good first steps\n1. Check out the pull request linked in the comments for context on potential fixes.\n2. Familiarize yourself with how the listing block and TOC are currently working in Volto.\n3. Start by experimenting with the related code in a local environment to gain hands-on understanding.\n4. Don’t hesitate to ask questions in the issue thread if anything is unclear! Your contributions are welcomed.",
+  "workflow": {
+    "repository": "syslabcom/activity-recognition",
+    "run_id": "24209273658",
+    "run_number": "58",
+    "attempt": "1",
+    "url": "https://github.com/syslabcom/activity-recognition/actions/runs/24209273658",
+    "sha": "429caab57cdd9dd6b64f34f16833b4ee533cde77"
+  }
+}

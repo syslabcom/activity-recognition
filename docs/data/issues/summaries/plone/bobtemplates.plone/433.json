@@ -1,0 +1,33 @@
+{
+  "version": 1,
+  "status": "success",
+  "generated_at": "2026-04-09T19:30:55Z",
+  "source_issue": {
+    "id": 596549701,
+    "number": 433,
+    "title": "Delete content_type/content/__init__.py",
+    "html_url": "https://github.com/plone/bobtemplates.plone/issues/433",
+    "repository_full_name": "plone/bobtemplates.plone",
+    "updated_at": "2020-11-12T14:42:35Z",
+    "labels": [
+      "04 type: enhancement",
+      "31 needs: help",
+      "21 status: confirmed",
+      "41 lvl: easy"
+    ],
+    "comments": 3
+  },
+  "ai": {
+    "provider": "openai",
+    "model": "gpt-4o-mini"
+  },
+  "summary_markdown": "# Issue Summary for #433: Delete `content_type/content/__init__.py`\n\n## What this issue is about\nThis issue addresses a bug where the `__init__.py` file is truncated when creating a new content type using the `mr.bob` tool. The author points out that deleting this file could resolve the problem.\n\n## What needs to be done\nThe proposal is to delete the `__init__.py` file located at `bobtemplates/plone/content_type/content/__init__.py` to prevent truncation issues. There may be alternative solutions involving creating the file using a Python hook, but the discussion is still ongoing and lacks a definitive consensus.\n\n## Helpful background\nThe `__init__.py` file is typically used in Python packages to define aliases for other content types. When `mr.bob` creates a new content type, it can override this `__init__.py`, which disrupts existing code.\n\n## Good first steps\n1. Review the existing code and issues on the [repo](https://github.com/plone/bobtemplates.plone).\n2. Consider trying the proposed deletion of the `__init__.py` file.\n3. If you're interested in contributing further, look into the possibility of implementing the alternative hook-based solution discussed in the comments.\n4. Testing the changes and updating documentation may also be necessary before a pull request (PR) is submitted. \n\nWe're excited to have new contributors join this effort! Feel free to reach out for help if needed.",
+  "workflow": {
+    "repository": "syslabcom/activity-recognition",
+    "run_id": "24209273658",
+    "run_number": "58",
+    "attempt": "1",
+    "url": "https://github.com/syslabcom/activity-recognition/actions/runs/24209273658",
+    "sha": "429caab57cdd9dd6b64f34f16833b4ee533cde77"
+  }
+}

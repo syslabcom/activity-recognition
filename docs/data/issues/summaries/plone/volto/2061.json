@@ -1,0 +1,31 @@
+{
+  "version": 1,
+  "status": "success",
+  "generated_at": "2026-04-09T19:30:44Z",
+  "source_issue": {
+    "id": 763844980,
+    "number": 2061,
+    "title": "Copy&Paste feature overlaps with DX Layout restrictions",
+    "html_url": "https://github.com/plone/volto/issues/2061",
+    "repository_full_name": "plone/volto",
+    "updated_at": "2020-12-13T12:21:51Z",
+    "labels": [
+      "02 type: regression",
+      "43 lvl: complex"
+    ],
+    "comments": 1
+  },
+  "ai": {
+    "provider": "openai",
+    "model": "gpt-4o-mini"
+  },
+  "summary_markdown": "## What this issue is about\nThis issue discusses a problem where the copy and paste feature allows users to bypass layout restrictions meant to prevent the creation of new blocks in Plone's Volto. It suggests a need for a way to limit this feature at the block level.\n\n## What needs to be done\nWe need to develop a method to disable the copy and paste functionality for specific blocks. This will involve creating rules around how these restrictions should work and providing an API for implementation.\n\n## Helpful background\nCurrently, there is some built-in functionality in the `pasteBlocks` method, where blocks can define a `cloneData` function in their configuration. However, it might not be sufficient to enforce copy restrictions effectively. Clear rules must be established for this feature, as the existing discussion indicates some ambiguity around implementation details.\n\n## Good first steps\n1. Review the `pasteBlocks` function and the `cloneData` implementation in the codebase.\n2. Start thinking about what rules should govern the copy/paste functionality for blocks.\n3. Consider drafting a potential API design that could expose these rules for reuse in the platform.\n4. Engage with the community for feedback on your ideas and check for any existing discussions that might help clarify the requirements.",
+  "workflow": {
+    "repository": "syslabcom/activity-recognition",
+    "run_id": "24209273658",
+    "run_number": "58",
+    "attempt": "1",
+    "url": "https://github.com/syslabcom/activity-recognition/actions/runs/24209273658",
+    "sha": "429caab57cdd9dd6b64f34f16833b4ee533cde77"
+  }
+}

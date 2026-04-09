@@ -1,0 +1,34 @@
+{
+  "version": 1,
+  "status": "success",
+  "generated_at": "2026-04-09T19:29:45Z",
+  "source_issue": {
+    "id": 106998535,
+    "number": 1018,
+    "title": "Uploade \"site logo\" not validated ",
+    "html_url": "https://github.com/plone/Products.CMFPlone/issues/1018",
+    "repository_full_name": "plone/Products.CMFPlone",
+    "updated_at": "2022-08-24T22:02:40Z",
+    "labels": [
+      "01 type: bug",
+      "99 tag: UX Site Admin",
+      "31 needs: help",
+      "14 prio: low",
+      "42 lvl: moderate"
+    ],
+    "comments": 1
+  },
+  "ai": {
+    "provider": "openai",
+    "model": "gpt-4o-mini"
+  },
+  "summary_markdown": "## What this issue is about\nThis issue addresses a bug where there is no validation when uploading a site logo in Plone, which allows unsupported file types like PDFs to be uploaded. This behavior is inconsistent with the member portrait upload process, where validation is enforced.\n\n## What needs to be done\nWe need to implement file type validation for the \"site logo\" upload feature, ensuring only appropriate formats, such as images, are accepted. This will align the functionality with existing validation for member portraits.\n\n## Helpful background\nThe issue was originally opened in 2015 and has been confirmed as still relevant in the latest version (Plone 6). Ensuring correct file uploads helps improve user experience and maintain consistency within the platform.\n\n## Good first steps\n1. **Familiarize yourself** with the current upload workflow for the site logo in the codebase.\n2. **Review the existing validation** for member portrait uploads to determine how it can be adapted for the site logo.\n3. **Discuss your approach** in the comments to clarify any uncertainties, as this issue has some outdated or ambiguous points.\n4. **Consider writing tests** for the new validation and prepare documentation if necessary. A review will typically be required before merging any changes. \n\nFeel free to reach out for help if you need it!",
+  "workflow": {
+    "repository": "syslabcom/activity-recognition",
+    "run_id": "24209273658",
+    "run_number": "58",
+    "attempt": "1",
+    "url": "https://github.com/syslabcom/activity-recognition/actions/runs/24209273658",
+    "sha": "429caab57cdd9dd6b64f34f16833b4ee533cde77"
+  }
+}

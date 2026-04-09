@@ -1,0 +1,33 @@
+{
+  "version": 1,
+  "status": "success",
+  "generated_at": "2026-04-09T19:30:22Z",
+  "source_issue": {
+    "id": 922407999,
+    "number": 605,
+    "title": "Plone Image description field is used for alt-attribute but not explained",
+    "html_url": "https://github.com/plone/plone.app.contenttypes/issues/605",
+    "repository_full_name": "plone/plone.app.contenttypes",
+    "updated_at": "2021-06-16T10:05:19Z",
+    "labels": [
+      "04 type: enhancement",
+      "05 type: question",
+      "13 prio: normal",
+      "41 lvl: easy"
+    ],
+    "comments": 0
+  },
+  "ai": {
+    "provider": "openai",
+    "model": "gpt-4o-mini"
+  },
+  "summary_markdown": "```markdown\n## What this issue is about\nThis issue addresses the lack of clarification regarding the \"description\" field for Plone Images. Currently, users don't know that the text entered in this field is also used for the image's alt attribute, which is important for accessibility.\n\n## What needs to be done\nThe proposal is to modify the description text of the Plone Image type's description field. This change would inform editors that the text input serves multiple purposes, including being used as the alternative text for the image.\n\n## Helpful background\nUsing appropriate alt text is crucial for web accessibility. It helps users who rely on screen readers understand the content of images. Clear documentation can assist editors in using this feature effectively.\n\n## Good first steps\n1. Check the existing Plone documentation and contribute any findings on where it may fall short.\n2. Consider drafting a proposed text change for the description field that clearly indicates its use.\n3. Engage with community members for feedback on your proposal, as the discussion is currently open and some details may be ambiguous.\n\nFeel free to reach out for help or guidance as you explore this issue!\n```",
+  "workflow": {
+    "repository": "syslabcom/activity-recognition",
+    "run_id": "24209273658",
+    "run_number": "58",
+    "attempt": "1",
+    "url": "https://github.com/syslabcom/activity-recognition/actions/runs/24209273658",
+    "sha": "429caab57cdd9dd6b64f34f16833b4ee533cde77"
+  }
+}

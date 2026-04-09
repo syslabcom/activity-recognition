@@ -1,0 +1,31 @@
+{
+  "version": 1,
+  "status": "success",
+  "generated_at": "2026-04-09T19:29:34Z",
+  "source_issue": {
+    "id": 614573796,
+    "number": 1459,
+    "title": "Workflow Manager",
+    "html_url": "https://github.com/plone/volto/issues/1459",
+    "repository_full_name": "plone/volto",
+    "updated_at": "2022-12-03T16:46:53Z",
+    "labels": [
+      "04 type: enhancement",
+      "42 lvl: moderate"
+    ],
+    "comments": 1
+  },
+  "ai": {
+    "provider": "openai",
+    "model": "gpt-4o-mini"
+  },
+  "summary_markdown": "## What this issue is about\nThis issue involves enhancing the Workflow Manager in the Plone Volto project. The goal is to improve how workflows are managed within the system, as shown in the accompanying images. Currently, the discussion is open, and there is some ambiguity regarding the specifics of the implementation.\n\n## What needs to be done\nWe aim to enhance workflow management features. However, the detailed requirements and implementation steps are not clearly defined in the issue discussion. Coordination with the current assignee, iRohitSingh, is needed to get an updated status and direction for the work.\n\n## Helpful background\nWorkflow management is crucial for controlling content approval processes in Plone. Understanding how workflows function in the system will be beneficial. You can find more information on Plone's documentation site about workflows and their configurations.\n\n## Good first steps\n1. Review the current Workflow Manager in Volto.\n2. Check out the linked images to understand existing workflows.\n3. Reach out to iRohitSingh for the latest updates and guidance on your contribution.\n4. Consider familiarizing yourself with relevant workflows in the Plone documentation to better understand the context.",
+  "workflow": {
+    "repository": "syslabcom/activity-recognition",
+    "run_id": "24209273658",
+    "run_number": "58",
+    "attempt": "1",
+    "url": "https://github.com/syslabcom/activity-recognition/actions/runs/24209273658",
+    "sha": "429caab57cdd9dd6b64f34f16833b4ee533cde77"
+  }
+}

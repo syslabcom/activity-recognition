@@ -1,0 +1,31 @@
+{
+  "version": 1,
+  "status": "success",
+  "generated_at": "2026-04-09T19:30:27Z",
+  "source_issue": {
+    "id": 749542110,
+    "number": 2017,
+    "title": "Improve folder_contents workflow state for images/files (show \"inherited from parent\" instead of just \"no workflow state\")",
+    "html_url": "https://github.com/plone/volto/issues/2017",
+    "repository_full_name": "plone/volto",
+    "updated_at": "2021-04-30T04:31:51Z",
+    "labels": [
+      "04 type: enhancement",
+      "41 lvl: easy"
+    ],
+    "comments": 10
+  },
+  "ai": {
+    "provider": "openai",
+    "model": "gpt-4o-mini"
+  },
+  "summary_markdown": "## What this issue is about\nThis issue focuses on improving the user experience for editors in the folder_contents view of Plone by changing the “no workflow state” message. The goal is to show an inherited workflow state instead, reducing confusion for users.\n\n## What needs to be done\nWe propose to display the actual workflow state inherited from the parent object, such as “Published (inherited from parent).” While the change is an enhancement rather than essential, it aims to provide clearer information to users.\n\n## Helpful background\nThe current message can be misleading, as it does not convey useful information about the object's workflow status. Discussions have suggested that inferencing the parent's workflow state and providing visual indicators could make this change more user-friendly.\n\n## Good first steps\n1. Review the existing code in the `ContentsItem.jsx` file where the current message is defined.\n2. Consider implementing a simple version of the suggested message.\n3. Participate in discussions regarding the potential for making workflow states configurable.\n4. After coding, please test your changes and prepare documentation for review. Feedback and collaboration are welcome!",
+  "workflow": {
+    "repository": "syslabcom/activity-recognition",
+    "run_id": "24209273658",
+    "run_number": "58",
+    "attempt": "1",
+    "url": "https://github.com/syslabcom/activity-recognition/actions/runs/24209273658",
+    "sha": "429caab57cdd9dd6b64f34f16833b4ee533cde77"
+  }
+}

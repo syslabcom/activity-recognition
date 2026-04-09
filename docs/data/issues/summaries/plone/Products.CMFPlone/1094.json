@@ -1,0 +1,34 @@
+{
+  "version": 1,
+  "status": "success",
+  "generated_at": "2026-04-09T19:29:51Z",
+  "source_issue": {
+    "id": 108453013,
+    "number": 1094,
+    "title": "Inconsistent wrapping between portlets",
+    "html_url": "https://github.com/plone/Products.CMFPlone/issues/1094",
+    "repository_full_name": "plone/Products.CMFPlone",
+    "updated_at": "2022-08-24T09:58:22Z",
+    "labels": [
+      "01 type: bug",
+      "31 needs: help",
+      "14 prio: low",
+      "41 lvl: easy",
+      "99 tag: Plone 6.0"
+    ],
+    "comments": 2
+  },
+  "ai": {
+    "provider": "openai",
+    "model": "gpt-4o-mini"
+  },
+  "summary_markdown": "## What this issue is about\nThis issue addresses an inconsistency in how titles are wrapped in different portlets within Plone. Specifically, long titles in one portlet start on a new line, while in another, they follow the bullet directly, leading to a mismatched appearance.\n\n## What needs to be done\nWe need to investigate the CSS or layout settings for the portlets and ensure consistent behavior for title wrapping across all portlet types. This may involve adjusting the styling or markup.\n\n## Helpful background\nThis issue stems from differences in how stock portlet types render their content. Recent comments indicate that the visual inconsistency persists even in Plone 6, so updates or fixes may be necessary.\n\n## Good first steps\n1. Review the existing portlet code and associated CSS to understand how titles are currently styled.\n2. Experiment with adjustments to the CSS for maintaining consistent wrapping behavior.\n3. Test your changes in different portlets to ensure the fix is effective across the board.\n4. Document any changes you make, noting their impact on different portlet types. Once you're confident in your changes, consider submitting a pull request for review.\n\nIf you're unsure about something, feel free to ask for clarification in the comments!",
+  "workflow": {
+    "repository": "syslabcom/activity-recognition",
+    "run_id": "24209273658",
+    "run_number": "58",
+    "attempt": "1",
+    "url": "https://github.com/syslabcom/activity-recognition/actions/runs/24209273658",
+    "sha": "429caab57cdd9dd6b64f34f16833b4ee533cde77"
+  }
+}

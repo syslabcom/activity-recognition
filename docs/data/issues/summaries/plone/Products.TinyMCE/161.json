@@ -1,0 +1,31 @@
+{
+  "version": 1,
+  "status": "success",
+  "generated_at": "2026-04-09T19:31:02Z",
+  "source_issue": {
+    "id": 732423138,
+    "number": 161,
+    "title": "Blank Lines in HTML Filtering Settings \"Custom attributes\" Breaks TinyMCE",
+    "html_url": "https://github.com/plone/Products.TinyMCE/issues/161",
+    "repository_full_name": "plone/Products.TinyMCE",
+    "updated_at": "2020-10-29T15:47:44Z",
+    "labels": [
+      "01 type: bug",
+      "41 lvl: easy"
+    ],
+    "comments": 0
+  },
+  "ai": {
+    "provider": "openai",
+    "model": "gpt-4o-mini"
+  },
+  "summary_markdown": "## What this issue is about\nThis issue addresses a bug in Plone's TinyMCE editor where adding blank lines in the \"Custom Attributes\" settings causes the functionality to break. When this happens, users encounter a TypeError in the JavaScript console, affecting the mosaic editor.\n\n## What needs to be done\nThe proposed fix is to filter out empty strings from the \"Custom Attributes\" settings. This will prevent the JavaScript from encountering undefined values and throwing errors. Although the ideal solution involves fixing the JavaScript directly, changing the Plone settings is a simpler starting point.\n\n## Helpful background\nThis issue highlights a specific edge case in TinyMCE's JavaScript where multiple blank lines can disrupt the expected functionality. The discussion around this issue does not contain extensive details on alternative solutions, so it is primarily focused on the proposed filtering method.\n\n## Good first steps\n1. Visit the filter control panel (`@@filter-controlpanel`) in Plone and observe the \"Custom Attributes\" section.\n2. Attempt to reproduce the issue by adding blank lines and checking the JavaScript console for errors.\n3. Implement a filtering function to remove empty strings in the settings.\n4. Test your changes to ensure TinyMCE and the mosaic editor work correctly after filtering out the blanks. \n\nFeel free to reach out with any questions or for guidance on your contributions!",
+  "workflow": {
+    "repository": "syslabcom/activity-recognition",
+    "run_id": "24209273658",
+    "run_number": "58",
+    "attempt": "1",
+    "url": "https://github.com/syslabcom/activity-recognition/actions/runs/24209273658",
+    "sha": "429caab57cdd9dd6b64f34f16833b4ee533cde77"
+  }
+}

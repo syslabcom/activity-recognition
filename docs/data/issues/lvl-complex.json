@@ -1,7 +1,7 @@
 {
   "version": 1,
   "status": "success",
-  "generated_at": "2026-04-09T18:23:54Z",
+  "generated_at": "2026-04-09T19:29:25Z",
   "organization": "plone",
   "state": "open",
   "slug": "lvl-complex",
@@ -1519,7 +1519,15 @@
         "13 prio: normal",
         "21 status: confirmed",
         "43 lvl: complex"
-      ]
+      ],
+      "contributor_summary": {
+        "status": "available",
+        "generated_at": "2026-04-09T19:29:40Z",
+        "source_issue_updated_at": "2022-08-24T22:13:16Z",
+        "model": "gpt-4o-mini",
+        "summary_markdown": "# Autocomplete widget not normalizing on search\n\n## What this issue is about\nThis issue addresses a problem with the autocomplete widget in Plone that fails to recognize names with accents. For example, typing \"hec...\" does not suggest \"Héctor Velarde\" due to the lack of normalization of accented characters.\n\n## What needs to be done\nWe need to enhance the autocomplete widget to ensure it can return suggestions regardless of accent marks or character variations. This may involve improving how data is indexed and searched within the component.\n\n## Helpful background\nCurrently, it seems that the widget uses a simple keyword index that does not normalize strings. Normalization is the process of converting different forms of a character to a standard form (e.g., treating \"é\" and \"e\" as equivalent). The discussion indicates some uncertainty around existing implementations and their limitations.\n\n## Good first steps\n1. Familiarize yourself with the autocomplete widget in Plone, especially focusing on its indexing mechanism.\n2. Review how normalization is handled in similar components or libraries.\n3. Consider checking existing tests related to the widget and see if enhancements are needed or can be added.\n4. Discuss your findings or proposed changes in the issue comments for feedback before diving into coding.",
+        "path": "data/issues/summaries/plone/Products.CMFPlone/960.json"
+      }
     },
     {
       "id": 763844980,
@@ -1540,7 +1548,15 @@
       "labels": [
         "02 type: regression",
         "43 lvl: complex"
-      ]
+      ],
+      "contributor_summary": {
+        "status": "available",
+        "generated_at": "2026-04-09T19:30:44Z",
+        "source_issue_updated_at": "2020-12-13T12:21:51Z",
+        "model": "gpt-4o-mini",
+        "summary_markdown": "## What this issue is about\nThis issue discusses a problem where the copy and paste feature allows users to bypass layout restrictions meant to prevent the creation of new blocks in Plone's Volto. It suggests a need for a way to limit this feature at the block level.\n\n## What needs to be done\nWe need to develop a method to disable the copy and paste functionality for specific blocks. This will involve creating rules around how these restrictions should work and providing an API for implementation.\n\n## Helpful background\nCurrently, there is some built-in functionality in the `pasteBlocks` method, where blocks can define a `cloneData` function in their configuration. However, it might not be sufficient to enforce copy restrictions effectively. Clear rules must be established for this feature, as the existing discussion indicates some ambiguity around implementation details.\n\n## Good first steps\n1. Review the `pasteBlocks` function and the `cloneData` implementation in the codebase.\n2. Start thinking about what rules should govern the copy/paste functionality for blocks.\n3. Consider drafting a potential API design that could expose these rules for reuse in the platform.\n4. Engage with the community for feedback on your ideas and check for any existing discussions that might help clarify the requirements.",
+        "path": "data/issues/summaries/plone/volto/2061.json"
+      }
     },
     {
       "id": 124127878,
@@ -1659,10 +1675,10 @@
   "message": null,
   "workflow": {
     "repository": "syslabcom/activity-recognition",
-    "run_id": "24206452870",
-    "run_number": "57",
+    "run_id": "24209273658",
+    "run_number": "58",
     "attempt": "1",
-    "url": "https://github.com/syslabcom/activity-recognition/actions/runs/24206452870",
-    "sha": "773d49b4877d1fa4ce64cd04cc9a9ef9e10799e7"
+    "url": "https://github.com/syslabcom/activity-recognition/actions/runs/24209273658",
+    "sha": "429caab57cdd9dd6b64f34f16833b4ee533cde77"
   }
 }

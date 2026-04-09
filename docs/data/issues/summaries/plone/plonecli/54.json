@@ -1,0 +1,32 @@
+{
+  "version": 1,
+  "status": "success",
+  "generated_at": "2026-04-09T19:30:49Z",
+  "source_issue": {
+    "id": 446086080,
+    "number": 54,
+    "title": "Point the user to the install docs, if \"plonecli build\" fails",
+    "html_url": "https://github.com/plone/plonecli/issues/54",
+    "repository_full_name": "plone/plonecli",
+    "updated_at": "2020-11-20T17:52:31Z",
+    "labels": [
+      "04 type: enhancement",
+      "31 needs: help",
+      "41 lvl: easy"
+    ],
+    "comments": 0
+  },
+  "ai": {
+    "provider": "openai",
+    "model": "gpt-4o-mini"
+  },
+  "summary_markdown": "## What this issue is about\nThis issue suggests enhancing the `plonecli build` command. Currently, if the command fails, users do not receive guidance on where to seek help. The proposal is to direct them to the relevant installation documentation for support.\n\n## What needs to be done\nYou need to implement a feature in `plonecli` that shows a message pointing users to the installation documentation when `plonecli build` encounters an error. Relevant resources include:\n- [Dependencies Documentation](https://github.com/plone/Installers-UnifiedInstaller/blob/master/docs/dependencies.rst)\n- [Plone Installation Guide](https://docs.plone.org/manage/installing/installation.html)\n- [Collective Install Dependencies](https://github.com/collective/install.plone.dependencies)\n\n## Helpful background\nThis issue is classified as an enhancement and is tagged as easy, making it suitable for new contributors. While the core idea is clear, the exact implementation details and error handling cases may require further discussion.\n\n## Good first steps\n1. **Explore the `plonecli` codebase**: Understand where `plonecli build` is defined.\n2. **Identify error handling**: Look at how errors are currently managed in the code.\n3. **Draft your message**: Create a concise message with links to the installation documentation.\n4. **Implement the change and test**: Make sure your modifications inform users when a build fails.\n5. **Consider submitting a draft pull request**: This invites feedback from other contributors.",
+  "workflow": {
+    "repository": "syslabcom/activity-recognition",
+    "run_id": "24209273658",
+    "run_number": "58",
+    "attempt": "1",
+    "url": "https://github.com/syslabcom/activity-recognition/actions/runs/24209273658",
+    "sha": "429caab57cdd9dd6b64f34f16833b4ee533cde77"
+  }
+}

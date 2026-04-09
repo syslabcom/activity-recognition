@@ -1,0 +1,33 @@
+{
+  "version": 1,
+  "status": "success",
+  "generated_at": "2026-04-09T19:30:32Z",
+  "source_issue": {
+    "id": 224720089,
+    "number": 27,
+    "title": "Workflow comment and include contained items",
+    "html_url": "https://github.com/plone/volto/issues/27",
+    "repository_full_name": "plone/volto",
+    "updated_at": "2021-01-04T18:57:52Z",
+    "labels": [
+      "04 type: enhancement",
+      "13 prio: normal",
+      "41 lvl: easy",
+      "26 status: blocked"
+    ],
+    "comments": 0
+  },
+  "ai": {
+    "provider": "openai",
+    "model": "gpt-4o-mini"
+  },
+  "summary_markdown": "## What this issue is about\nThis issue focuses on enhancing the workflow in the Volto project by enabling the inclusion of comments and contained items. This functionality will improve how users interact with and manage items and their comments within the Plone ecosystem.\n\n## What needs to be done\nThe main task is to implement the feature that allows workflow comments to include contained items. However, this enhancement is currently blocked, as noted in the issue description. You can find more details on the blocking issue [here](https://github.com/plone/plone.restapi/issues/333).\n\n## Helpful background\nWorkflow comments are a way to communicate context and status changes about items. Including contained items will allow for a richer interaction model. It's important to familiarize yourself with the existing workflow and comments functionalities in Volto and the Plone REST API.\n\n## Good first steps\n1. Review the existing implementation of workflows and comments in Volto.\n2. Familiarize yourself with the blocking issue (#333) and understand its implications.\n3. Join discussions or seek clarification on the possible approaches to take, as the details of implementation may be ambiguous or outdated.\n4. Consider how you can contribute, whether it's coding, providing feedback, or improving documentation.",
+  "workflow": {
+    "repository": "syslabcom/activity-recognition",
+    "run_id": "24209273658",
+    "run_number": "58",
+    "attempt": "1",
+    "url": "https://github.com/syslabcom/activity-recognition/actions/runs/24209273658",
+    "sha": "429caab57cdd9dd6b64f34f16833b4ee533cde77"
+  }
+}

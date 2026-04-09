@@ -1,0 +1,33 @@
+{
+  "version": 1,
+  "status": "success",
+  "generated_at": "2026-04-09T19:30:38Z",
+  "source_issue": {
+    "id": 223133204,
+    "number": 4,
+    "title": "Server Side Rendering for forms",
+    "html_url": "https://github.com/plone/volto/issues/4",
+    "repository_full_name": "plone/volto",
+    "updated_at": "2021-01-04T18:57:18Z",
+    "labels": [
+      "04 type: enhancement",
+      "14 prio: low",
+      "21 status: confirmed",
+      "42 lvl: moderate"
+    ],
+    "comments": 0
+  },
+  "ai": {
+    "provider": "openai",
+    "model": "gpt-4o-mini"
+  },
+  "summary_markdown": "## What this issue is about\nThis issue addresses enhancements needed for \"Server Side Rendering\" (SSR) of forms in the Volto application. Currently, there are problems where certain features, like tabs, aren't properly supported, and fieldsets are not rendering as expected.\n\n## What needs to be done\n1. Ensure that all fields and fieldsets are rendered correctly during SSR.\n2. Potentially implement a page redirect after form submission. However, this may be dependent on a future upgrade to React Router 4, so timing is uncertain.\n\n## Helpful background\nServer Side Rendering improves performance and SEO by delivering fully rendered pages from the server. Understanding how forms work in Volto will help manage the expected changes. The current implementation is confirmed to have limitations, but further discussion may need to clarify specifics.\n\n## Good first steps\n1. Familiarize yourself with how forms are set up in Volto.\n2. Review the existing implementation to identify areas for improvement regarding SSR.\n3. Consider experimenting with the rendering of tabbed fields and check the output.\n4. Join the conversation for insights on how SSR is currently functioning and any ongoing updates related to React Router 4.",
+  "workflow": {
+    "repository": "syslabcom/activity-recognition",
+    "run_id": "24209273658",
+    "run_number": "58",
+    "attempt": "1",
+    "url": "https://github.com/syslabcom/activity-recognition/actions/runs/24209273658",
+    "sha": "429caab57cdd9dd6b64f34f16833b4ee533cde77"
+  }
+}

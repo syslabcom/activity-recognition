@@ -1,7 +1,7 @@
 {
   "version": 1,
   "status": "success",
-  "generated_at": "2026-04-09T18:23:54Z",
+  "generated_at": "2026-04-09T19:29:25Z",
   "organization": "plone",
   "state": "open",
   "slug": "lvl-moderate",
@@ -2184,7 +2184,15 @@
       "labels": [
         "04 type: enhancement",
         "42 lvl: moderate"
-      ]
+      ],
+      "contributor_summary": {
+        "status": "available",
+        "generated_at": "2026-04-09T19:29:34Z",
+        "source_issue_updated_at": "2022-12-03T16:46:53Z",
+        "model": "gpt-4o-mini",
+        "summary_markdown": "## What this issue is about\nThis issue involves enhancing the Workflow Manager in the Plone Volto project. The goal is to improve how workflows are managed within the system, as shown in the accompanying images. Currently, the discussion is open, and there is some ambiguity regarding the specifics of the implementation.\n\n## What needs to be done\nWe aim to enhance workflow management features. However, the detailed requirements and implementation steps are not clearly defined in the issue discussion. Coordination with the current assignee, iRohitSingh, is needed to get an updated status and direction for the work.\n\n## Helpful background\nWorkflow management is crucial for controlling content approval processes in Plone. Understanding how workflows function in the system will be beneficial. You can find more information on Plone's documentation site about workflows and their configurations.\n\n## Good first steps\n1. Review the current Workflow Manager in Volto.\n2. Check out the linked images to understand existing workflows.\n3. Reach out to iRohitSingh for the latest updates and guidance on your contribution.\n4. Consider familiarizing yourself with relevant workflows in the Plone documentation to better understand the context.",
+        "path": "data/issues/summaries/plone/volto/1459.json"
+      }
     },
     {
       "id": 106998535,
@@ -2208,7 +2216,15 @@
         "31 needs: help",
         "14 prio: low",
         "42 lvl: moderate"
-      ]
+      ],
+      "contributor_summary": {
+        "status": "available",
+        "generated_at": "2026-04-09T19:29:45Z",
+        "source_issue_updated_at": "2022-08-24T22:02:40Z",
+        "model": "gpt-4o-mini",
+        "summary_markdown": "## What this issue is about\nThis issue addresses a bug where there is no validation when uploading a site logo in Plone, which allows unsupported file types like PDFs to be uploaded. This behavior is inconsistent with the member portrait upload process, where validation is enforced.\n\n## What needs to be done\nWe need to implement file type validation for the \"site logo\" upload feature, ensuring only appropriate formats, such as images, are accepted. This will align the functionality with existing validation for member portraits.\n\n## Helpful background\nThe issue was originally opened in 2015 and has been confirmed as still relevant in the latest version (Plone 6). Ensuring correct file uploads helps improve user experience and maintain consistency within the platform.\n\n## Good first steps\n1. **Familiarize yourself** with the current upload workflow for the site logo in the codebase.\n2. **Review the existing validation** for member portrait uploads to determine how it can be adapted for the site logo.\n3. **Discuss your approach** in the comments to clarify any uncertainties, as this issue has some outdated or ambiguous points.\n4. **Consider writing tests** for the new validation and prepare documentation if necessary. A review will typically be required before merging any changes. \n\nFeel free to reach out for help if you need it!",
+        "path": "data/issues/summaries/plone/Products.CMFPlone/1018.json"
+      }
     },
     {
       "id": 1145394615,
@@ -2229,7 +2245,15 @@
       "labels": [
         "04 type: enhancement",
         "42 lvl: moderate"
-      ]
+      ],
+      "contributor_summary": {
+        "status": "available",
+        "generated_at": "2026-04-09T19:29:58Z",
+        "source_issue_updated_at": "2022-05-02T13:53:11Z",
+        "model": "gpt-4o-mini",
+        "summary_markdown": "```markdown\n## What this issue is about\nThis issue suggests enhancing the Volto application by adding a Locking Control Panel. Currently, site administrators can release locks on objects using the Zope Management Interface (ZMI), but having this feature in Volto will improve usability and reduce reliance on the classic interface.\n\n## What needs to be done\n- Implement REST API endpoints to retrieve locked content.\n- Create a Volto control panel that displays all locks on a site, allows filtering by path, and provides options to release locks on one or more items.\n\n## Helpful background\nLocks are used to prevent changes to objects in Plone. Currently, this management is accessible through ZMI, but the aim is to make it more user-friendly with a modern interface. While the unlock feature works, the approach for releasing non-stealable locks needs clarification.\n\n## Good first steps\n1. Familiarize yourself with existing REST API implementations in Volto.\n2. Review the current ZMI functionality about locks to understand what is needed in the Volto interface.\n3. Consider proposing how to handle non-stealable locks if you have ideas.\n4. Feel free to ask questions if anything is unclear; community feedback is welcomed!\n```",
+        "path": "data/issues/summaries/plone/volto/3095.json"
+      }
     },
     {
       "id": 1222660800,
@@ -2252,7 +2276,15 @@
         "04 type: enhancement",
         "13 prio: normal",
         "42 lvl: moderate"
-      ]
+      ],
+      "contributor_summary": {
+        "status": "available",
+        "generated_at": "2026-04-09T19:30:05Z",
+        "source_issue_updated_at": "2022-05-02T09:13:29Z",
+        "model": "gpt-4o-mini",
+        "summary_markdown": "## What this issue is about\nThis issue focuses on removing references to LinguaPlone, a translation tool, from the codebase of the Plone discussion package. There is also a need to evaluate whether features previously provided by LinguaPlone are now handled by `plone.app.multilingual` (p.a.multilingual) or if they are still necessary.\n\n## What needs to be done\n- Identify and remove all outdated LinguaPlone traces in the code.\n- Check and document which features were provided by LinguaPlone.\n- Determine if those features are covered by p.a.multilingual or if they still need to be addressed.\n\n## Helpful background\nLinguaPlone was used for multilingual content management, but its functionality may now overlap with p.a.multilingual. Familiarity with both tools will be helpful for understanding the scope of this issue.\n\n## Good first steps\n1. Explore the codebase for any LinguaPlone references.\n2. Review documentation on p.a.multilingual to see if it fulfills the necessary features.\n3. Consider reaching out to the community or referring to past discussions for clarification on any ambiguous areas.\n4. Be ready to test your changes to ensure functionality remains intact after modifications. Documentation updates may also be necessary.",
+        "path": "data/issues/summaries/plone/plone.app.discussion/196.json"
+      }
     },
     {
       "id": 223133204,
@@ -2275,7 +2307,15 @@
         "14 prio: low",
         "21 status: confirmed",
         "42 lvl: moderate"
-      ]
+      ],
+      "contributor_summary": {
+        "status": "available",
+        "generated_at": "2026-04-09T19:30:38Z",
+        "source_issue_updated_at": "2021-01-04T18:57:18Z",
+        "model": "gpt-4o-mini",
+        "summary_markdown": "## What this issue is about\nThis issue addresses enhancements needed for \"Server Side Rendering\" (SSR) of forms in the Volto application. Currently, there are problems where certain features, like tabs, aren't properly supported, and fieldsets are not rendering as expected.\n\n## What needs to be done\n1. Ensure that all fields and fieldsets are rendered correctly during SSR.\n2. Potentially implement a page redirect after form submission. However, this may be dependent on a future upgrade to React Router 4, so timing is uncertain.\n\n## Helpful background\nServer Side Rendering improves performance and SEO by delivering fully rendered pages from the server. Understanding how forms work in Volto will help manage the expected changes. The current implementation is confirmed to have limitations, but further discussion may need to clarify specifics.\n\n## Good first steps\n1. Familiarize yourself with how forms are set up in Volto.\n2. Review the existing implementation to identify areas for improvement regarding SSR.\n3. Consider experimenting with the rendering of tabbed fields and check the output.\n4. Join the conversation for insights on how SSR is currently functioning and any ongoing updates related to React Router 4.",
+        "path": "data/issues/summaries/plone/volto/4.json"
+      }
     },
     {
       "id": 473556372,
@@ -2299,7 +2339,15 @@
         "12 prio: high",
         "21 status: confirmed",
         "42 lvl: moderate"
-      ]
+      ],
+      "contributor_summary": {
+        "status": "available",
+        "generated_at": "2026-04-09T19:31:14Z",
+        "source_issue_updated_at": "2020-07-27T07:42:58Z",
+        "model": "gpt-4o-mini",
+        "summary_markdown": "```markdown\n## What this issue is about\nThis issue involves a problem encountered when trying to install `plone.staticresources` on Windows 10. Users are facing a \"SandboxViolation\" error, indicating that the installation script is trying to modify files outside the allowed build area.\n\n## What needs to be done\nWe need to identify the root cause of the installation failure. Specifically, the errors seem to arise from trying to access certain files during the build process, likely related to dependencies like Bootstrap and Font Awesome. A solution or workaround to allow proper installation in a Windows environment is needed.\n\n## Helpful background\nSeveral users have reported similar errors, which suggest that the issue might be tied to how `buildout` and `EasyInstall` handle file paths and directories on Windows. Understanding the structure of the package and its dependencies may help in diagnosing the issue.\n\n## Good first steps\n1. **Reproduce the Error**: Try to install `plone.staticresources` on Windows 10 using both buildout and pip to confirm the issue.\n2. **Review Logs**: Look into the error messages closely to identify specific files or configurations that are causing the violation.\n3. **Ask for Feedback**: Share your findings in the issue comments to gather input from others who may be familiar with Windows installations.\n4. **Consider Testing Solutions**: If you come up with a potential fix, be ready to test it on Windows and document the results.\n```",
+        "path": "data/issues/summaries/plone/plone.staticresources/35.json"
+      }
     },
     {
       "id": 438972586,
@@ -2321,7 +2369,15 @@
         "31 needs: help",
         "13 prio: normal",
         "42 lvl: moderate"
-      ]
+      ],
+      "contributor_summary": {
+        "status": "available",
+        "generated_at": "2026-04-09T19:31:20Z",
+        "source_issue_updated_at": "2019-05-22T08:12:14Z",
+        "model": "gpt-4o-mini",
+        "summary_markdown": "```markdown\n## What this issue is about\nThis issue addresses a problem with the `theme_barceloneta` setup where CSS is not compiling, leading to a missing theme. The discussion includes potential fixes and uncertainty regarding the correct file structure.\n\n## What needs to be done\nContributors are encouraged to explore the current setup and help resolve the Grunt configuration issues. There are suggestions to move `Gruntfile.js` and `package.json` to the package root, and adjustments may be needed for paths in `theme.less`.\n\n## Helpful background\nDiscussions reveal that the Grunt setup is intended to be outside the theme folder at the package root. There are competing suggestions on the best approach to resolve this, and it’s unclear which solution is most effective. More testing and clarification might be necessary.\n\n## Good first steps\n1. Review the existing project structure and the files mentioned (Gruntfile.js and package.json).\n2. Test moving the configuration files as suggested.\n3. Try editing the paths in `theme.less` and document any changes.\n4. If you feel comfortable, consider creating a pull request (PR) with your findings or fixes.\n5. Engage in the discussion for clarification and updates.\n```",
+        "path": "data/issues/summaries/plone/bobtemplates.plone/374.json"
+      }
     },
     {
       "id": 272275650,
@@ -2391,10 +2447,10 @@
   "message": null,
   "workflow": {
     "repository": "syslabcom/activity-recognition",
-    "run_id": "24206452870",
-    "run_number": "57",
+    "run_id": "24209273658",
+    "run_number": "58",
     "attempt": "1",
-    "url": "https://github.com/syslabcom/activity-recognition/actions/runs/24206452870",
-    "sha": "773d49b4877d1fa4ce64cd04cc9a9ef9e10799e7"
+    "url": "https://github.com/syslabcom/activity-recognition/actions/runs/24209273658",
+    "sha": "429caab57cdd9dd6b64f34f16833b4ee533cde77"
   }
 }
