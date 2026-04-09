@@ -1,7 +1,7 @@
 {
   "version": 1,
   "status": "success",
-  "generated_at": "2026-04-09T17:26:54Z",
+  "generated_at": "2026-04-09T18:23:54Z",
   "organization": "plone",
   "state": "open",
   "slug": "lvl-complex",
@@ -1487,7 +1487,15 @@
         "04 type: enhancement",
         "14 prio: low",
         "43 lvl: complex"
-      ]
+      ],
+      "contributor_summary": {
+        "status": "available",
+        "generated_at": "2026-04-09T18:24:11Z",
+        "source_issue_updated_at": "2023-10-14T12:25:47Z",
+        "model": "gpt-4o-mini",
+        "summary_markdown": "```markdown\n## What this issue is about\nThis issue discusses the need to enforce a clear separation of layers in our codebase as we transition some addons to core-addons. The goal is to limit the use of `plone.api` in certain areas while allowing it in others. To assist with this, the tool **import-linter** may be utilized for automated checks.\n\n## What needs to be done\nWe aim to implement **import-linter** to verify that the correct packages are used within the designated layers. While this discussion is optimistic about using the tool, specific implementation steps, and whether all considerations are covered, still need clarification.\n\n## Helpful background\nThe tool **import-linter** helps manage dependencies and can check both internal and external packages. Some conversations have highlighted its potential beyond just checking imports, but further ideas on additional functionality remain vague.\n\n## Good first steps\n1. Explore the [import-linter documentation](https://import-linter.readthedocs.io/en/stable/index.html) to understand its capabilities.\n2. Review the existing issue comments for insights and further discussion links.\n3. Consider discussing with team members like [gforcada](https://github.com/gforcada) and [jensens](https://github.com/jensens) regarding specific requirements.\n4. Try setting up **import-linter** in a test environment to see how it operates with our codebase.\n```",
+        "path": "data/issues/summaries/plone/meta/167.json"
+      }
     },
     {
       "id": 106062948,
@@ -1651,10 +1659,10 @@
   "message": null,
   "workflow": {
     "repository": "syslabcom/activity-recognition",
-    "run_id": "24203975522",
-    "run_number": "56",
+    "run_id": "24206452870",
+    "run_number": "57",
     "attempt": "1",
-    "url": "https://github.com/syslabcom/activity-recognition/actions/runs/24203975522",
-    "sha": "545d41a532ab38141cd1d0635e792cae331679ae"
+    "url": "https://github.com/syslabcom/activity-recognition/actions/runs/24206452870",
+    "sha": "773d49b4877d1fa4ce64cd04cc9a9ef9e10799e7"
   }
 }

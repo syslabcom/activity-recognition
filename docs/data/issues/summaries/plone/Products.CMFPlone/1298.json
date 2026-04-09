@@ -1,0 +1,33 @@
+{
+  "version": 1,
+  "status": "success",
+  "generated_at": "2026-04-09T18:25:32Z",
+  "source_issue": {
+    "id": 123510894,
+    "number": 1298,
+    "title": "Portal default timezone settings should be taken into account for effective/expiration dates",
+    "html_url": "https://github.com/plone/Products.CMFPlone/issues/1298",
+    "repository_full_name": "plone/Products.CMFPlone",
+    "updated_at": "2023-03-12T14:30:36Z",
+    "labels": [
+      "01 type: bug",
+      "31 needs: help",
+      "12 prio: high",
+      "42 lvl: moderate"
+    ],
+    "comments": 7
+  },
+  "ai": {
+    "provider": "openai",
+    "model": "gpt-4o-mini"
+  },
+  "summary_markdown": "```markdown\n## What this issue is about\nThis issue addresses a bug where the portal's default timezone settings are not considered when determining item effective and expiration dates. This can lead to items being published at the incorrect time, often an hour late, which has caused confusion for users.\n\n## What needs to be done\nThe goal is to ensure that effective and expiration dates are set in alignment with the portal's default timezone. This may involve modifying how these dates are stored and processed, ensuring they remain timezone-aware. The work might align with changes made in the `plone.app.event` package.\n\n## Helpful background\nThere are references to related issues and discussions about how timezone handling should work in Plone. The core idea is to avoid stripping timezone information, thus allowing accurate date handling. Some developers have suggested that this change is not overly complex, but still requires careful implementation.\n\n## Good first steps\n1. Review the discussion and linked resources in the comments for insights.\n2. Familiarize yourself with how datetime handling works in Plone, particularly focusing on the `plone.app.event` and `plone.app.dexterity` packages.\n3. Consider experimenting with a small example to see how timezone data is handled and where it might be going wrong.\n4. Join the conversation in the issue to ask any questions or share your findings!\n```",
+  "workflow": {
+    "repository": "syslabcom/activity-recognition",
+    "run_id": "24206452870",
+    "run_number": "57",
+    "attempt": "1",
+    "url": "https://github.com/syslabcom/activity-recognition/actions/runs/24206452870",
+    "sha": "773d49b4877d1fa4ce64cd04cc9a9ef9e10799e7"
+  }
+}

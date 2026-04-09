@@ -1,0 +1,32 @@
+{
+  "version": 1,
+  "status": "success",
+  "generated_at": "2026-04-09T18:24:05Z",
+  "source_issue": {
+    "id": 1929699414,
+    "number": 175,
+    "title": "New pre-commit hook: teyit",
+    "html_url": "https://github.com/plone/meta/issues/175",
+    "repository_full_name": "plone/meta",
+    "updated_at": "2023-10-14T13:44:22Z",
+    "labels": [
+      "04 type: enhancement",
+      "14 prio: low",
+      "41 lvl: easy"
+    ],
+    "comments": 0
+  },
+  "ai": {
+    "provider": "openai",
+    "model": "gpt-4o-mini"
+  },
+  "summary_markdown": "## What this issue is about\nThis issue discusses adding a new pre-commit hook called \"teyit\" to automate test rewrites for better compliance with testing standards in the Plone codebase. The goal is to help fix errors in the `plone.restapi` and `plone.api` components when running tests on version 3.12.\n\n## What needs to be done\nWe need to implement the \"teyit\" pre-commit hook. This will entail ensuring that it rewrites tests accurately to reduce errors. Specific implementations are not clear from the current discussion, so further exploration might be necessary.\n\n## Helpful background\nThe \"teyit\" tool is available [here](https://github.com/isidentical/teyit). It is designed to help streamline tests, but the exact requirements and results it should achieve are not fully defined in the comments. \n\n## Good first steps\n1. Familiarize yourself with the \"teyit\" tool and its intended functionality.\n2. Review existing pre-commit hooks in the Plone repository for context.\n3. Test out the tool locally to understand how it rewrites tests.\n4. Join the discussion by asking questions or suggesting implementation ideas, as clarity on details is still needed. \n\nYour contributions and insights would be greatly appreciated!",
+  "workflow": {
+    "repository": "syslabcom/activity-recognition",
+    "run_id": "24206452870",
+    "run_number": "57",
+    "attempt": "1",
+    "url": "https://github.com/syslabcom/activity-recognition/actions/runs/24206452870",
+    "sha": "773d49b4877d1fa4ce64cd04cc9a9ef9e10799e7"
+  }
+}

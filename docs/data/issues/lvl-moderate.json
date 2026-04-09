@@ -1,7 +1,7 @@
 {
   "version": 1,
   "status": "success",
-  "generated_at": "2026-04-09T17:26:54Z",
+  "generated_at": "2026-04-09T18:23:54Z",
   "organization": "plone",
   "state": "open",
   "slug": "lvl-moderate",
@@ -1839,7 +1839,15 @@
         "04 type: enhancement",
         "14 prio: low",
         "42 lvl: moderate"
-      ]
+      ],
+      "contributor_summary": {
+        "status": "available",
+        "generated_at": "2026-04-09T18:24:00Z",
+        "source_issue_updated_at": "2023-10-14T13:48:17Z",
+        "model": "gpt-4o-mini",
+        "summary_markdown": "## What this issue is about\nThis issue discusses enhancing the dependency checker in Plone to make it configurable for broader use outside the Zope environment. The goal is to provide options for users to modify or disable the dependency checker as needed.\n\n## What needs to be done\nThe proposed enhancement suggests adding a new setting, potentially named `plone_mappings`, with a default value of `True`, allowing users to set it to `False` to disable the dependency checker. The details of how this should be implemented are still being debated, so clarity and consensus on the final requirements are needed.\n\n## Helpful background\nThe dependency checker helps manage software dependencies but currently has limited configurability. Having this feature would enhance flexibility for users who may not need or want the default settings.\n\n## Good first steps\n1. Read through existing comments for varying opinions on implementing the change, as some suggestions are still in flux.\n2. Familiarize yourself with the existing dependency checker functionality within Plone.\n3. Consider creating a basic implementation or proposal for the `plone_mappings` setting based on discussions so far.\n4. Coordinate with other contributors through comments to align on the final approach.",
+        "path": "data/issues/summaries/plone/meta/173.json"
+      }
     },
     {
       "id": 1778434053,
@@ -1861,7 +1869,15 @@
         "04 type: enhancement",
         "13 prio: normal",
         "42 lvl: moderate"
-      ]
+      ],
+      "contributor_summary": {
+        "status": "available",
+        "generated_at": "2026-04-09T18:24:17Z",
+        "source_issue_updated_at": "2023-10-14T12:19:58Z",
+        "model": "gpt-4o-mini",
+        "summary_markdown": "## What this issue is about\nThis issue addresses the need to ensure that our template's HTML markup is valid. We aim to implement a system that can automatically detect broken HTML, so we can address issues promptly.\n\n## What needs to be done\nWe propose to create a **pre-commit hook** that validates template files for HTML correctness. This hook can be added to the `plone/meta` repository or potentially elsewhere in the Plone ecosystem. The key goal is to catch markup errors before they become a problem.\n\n## Helpful background\nA pre-commit hook is a script that runs automatically before changes are committed to the repository. It helps maintain code quality by enforcing rules, such as validating HTML. Existing resources, like those shared by @petschki, suggest using tools that may not require additional setup beyond what's needed for validation.\n\n## Good first steps\n1. Familiarize yourself with pre-commit hooks, particularly for HTML validation.\n2. Review existing tools linked in the issue discussion [here](https://github.com/Lucas-C/pre-commit-hooks-lxml/tree/master/pre_commit_hooks) and [here](https://github.com/Lucas-C/pre-commit-hooks-java/).\n3. Start drafting a proposal for how to implement the hook, including considerations for testing and documentation.\n\nIf you have questions or need clarification, feel free to ask in the comments!",
+        "path": "data/issues/summaries/plone/meta/153.json"
+      }
     },
     {
       "id": 1758554234,
@@ -1883,7 +1899,15 @@
         "04 type: enhancement",
         "14 prio: low",
         "42 lvl: moderate"
-      ]
+      ],
+      "contributor_summary": {
+        "status": "available",
+        "generated_at": "2026-04-09T18:24:21Z",
+        "source_issue_updated_at": "2023-06-29T10:46:23Z",
+        "model": "gpt-4o-mini",
+        "summary_markdown": "```markdown\n## What this issue is about\nThis issue discusses whether to provide default values for the `MANIFEST.in` configuration file in our project. Currently, we are using `check-manifest`, but there’s uncertainty about the necessity of a default configuration.\n\n## What needs to be done\nWe need to assess and potentially add a basic configuration for `MANIFEST.in`. This may help standardize how files are included in packages, particularly to address inconsistencies noted among various repositories.\n\n## Helpful background\nThe `MANIFEST.in` file defines additional files to include when packaging a Python project. This feature is increasingly relevant as it can prevent issues during package releases. While many Plone packages are functioning well with their current configurations, suggestions for improvement have been made to avoid conflicts in file inclusions.\n\n## Good first steps\n1. Review existing `MANIFEST.in` files in the Plone ecosystem for common patterns and areas of inconsistency.\n2. Discuss potential default configurations with the community to gather input.\n3. Consider running `check-manifest` against a few sample packages for insights on how they handle configurations.\n4. Coordinate with contributors involved in similar discussions, and ensure proper testing and documentation are planned if changes are made.\n```",
+        "path": "data/issues/summaries/plone/meta/129.json"
+      }
     },
     {
       "id": 1728657212,
@@ -1905,7 +1929,15 @@
         "04 type: enhancement",
         "13 prio: normal",
         "42 lvl: moderate"
-      ]
+      ],
+      "contributor_summary": {
+        "status": "available",
+        "generated_at": "2026-04-09T18:24:47Z",
+        "source_issue_updated_at": "2023-05-27T11:16:55Z",
+        "model": "gpt-4o-mini",
+        "summary_markdown": "# Improve coverage reports\n\n## What this issue is about\nThis issue aims to enhance the coverage reports for the Plone project. Improved coverage reports help us understand how much of our code is tested, making it easier to maintain high-quality software.\n\n## What needs to be done\nThe discussion suggests we should look into better tools or methods for generating and reporting code coverage. There is no specific implementation detail provided, so it's essential to explore options mentioned in the linked article: [Ditch Codecov for Python](https://hynek.me/articles/ditch-codecov-python/).\n\n## Helpful background\nCode coverage is a measure of how much of our code is tested by automated tests. The provided article offers insights into alternatives to existing coverage tools that may better fit our needs. The ongoing discussion lacks detailed suggestions, so further exploration and innovation are welcome.\n\n## Good first steps\n1. Read the linked article to understand potential improvements in coverage reporting.\n2. Experiment with different coverage reporting tools or methods mentioned.\n3. Join the discussion to share your findings or propose ideas.\n4. Consider writing tests that help demonstrate improved coverage.\n\nFeel free to reach out if you have questions or need guidance on where to start!",
+        "path": "data/issues/summaries/plone/meta/97.json"
+      }
     },
     {
       "id": 1665299907,
@@ -1927,7 +1959,15 @@
         "04 type: enhancement",
         "14 prio: low",
         "42 lvl: moderate"
-      ]
+      ],
+      "contributor_summary": {
+        "status": "available",
+        "generated_at": "2026-04-09T18:24:51Z",
+        "source_issue_updated_at": "2023-05-27T10:03:06Z",
+        "model": "gpt-4o-mini",
+        "summary_markdown": "## What this issue is about\nThis issue suggests adding a GitHub Action (GHA) to check that the dependency mappings for `Zope`, `Products.CMFCore`, and `plone.base` are current. The goal is to compare these dependencies against what is recorded in the `config/default/pyproject.toml.j2` file. If discrepancies are found, the GHA will trigger a warning.\n\n## What needs to be done\nYou'll need to create a GitHub Action that:\n1. Fetches the current dependencies for the specified projects.\n2. Compares these to the existing entries in `config/default/pyproject.toml.j2`.\n3. Issues a warning if there are any differences.\n\n## Helpful background\nA GitHub Action is a tool to automate workflows in your GitHub repository. This enhancement will help keep our dependencies up-to-date, which is vital for maintaining the stability and security of the project.\n\n## Good first steps\n1. Familiarize yourself with creating GitHub Actions. The [official documentation](https://docs.github.com/en/actions) is a great starting point.\n2. Explore how to fetch dependencies from `Zope`, `Products.CMFCore`, and `plone.base`.\n3. Look at the `config/default/pyproject.toml.j2` to understand the format of the data you'll be comparing against.\n\nFeel free to ask questions if you need clarification!",
+        "path": "data/issues/summaries/plone/meta/80.json"
+      }
     },
     {
       "id": 313287684,
@@ -1955,7 +1995,15 @@
         "13 prio: normal",
         "21 status: confirmed",
         "42 lvl: moderate"
-      ]
+      ],
+      "contributor_summary": {
+        "status": "available",
+        "generated_at": "2026-04-09T18:25:02Z",
+        "source_issue_updated_at": "2023-03-21T22:13:39Z",
+        "model": "gpt-4o-mini",
+        "summary_markdown": "```markdown\n## What this issue is about\nThis issue addresses a problem with testing multilingual content in Plone using the `plone.app.multilingual` package. The author discovered unexpected behavior when trying to create and manage translations in their tests.\n\n## What needs to be done\nThe main task is to investigate why the language setting does not automatically apply to content created in language root folders during tests. Contributors may need to ensure translations are registered correctly and explore the need for additional calls like `processQueue()` to update the content's language context.\n\n## Helpful background\nThe issue revolves around an inconsistency between expected behavior in the Plone UI and the test environment regarding language settings for newly created objects. Current tests might fail due to the requirement of manually setting the language and not receiving the expected translation context.\n\n## Good first steps\n1. Review the provided code snippets to understand the current testing setup.\n2. Explore the `ITranslationManager` and `ILanguage` interfaces for their functionalities.\n3. Test various solutions, such as calling `processQueue()` after registering translations, to see if it resolves the issues.\n4. Engage in discussions on the issue for clarity and advice from others who have faced similar challenges.\n```",
+        "path": "data/issues/summaries/plone/plone.app.multilingual/312.json"
+      }
     },
     {
       "id": 106216920,
@@ -1980,7 +2028,15 @@
         "31 needs: help",
         "14 prio: low",
         "42 lvl: moderate"
-      ]
+      ],
+      "contributor_summary": {
+        "status": "available",
+        "generated_at": "2026-04-09T18:25:09Z",
+        "source_issue_updated_at": "2023-03-13T11:45:20Z",
+        "model": "gpt-4o-mini",
+        "summary_markdown": "```markdown\n## What this issue is about\nThis issue aims to clarify and improve the options available for enabling comments in Plone. The current system is seen as powerful but confusing, especially regarding settings in the @@discussion-controlpanel and @@content-controlpanel.\n\n## What needs to be done\n1. Revise the naming of behaviors related to discussions to make their purpose clearer.\n2. Add helpful descriptions to the existing fields to clarify their function.\n3. Display the default discussion setting from the @@content-controlpanel when editing an item.\n\n## Helpful background\nTo enable comments, global settings must first be configured in the @@discussion-controlpanel. Users can then set default values in the @@content-controlpanel, which can be overridden per item using the IAllowDiscussion behavior. Currently, options like \"No Value\" create confusion, and there's disagreement on how to address this.\n\n## Good first steps\n1. Review the current naming conventions and consider more intuitive alternatives.\n2. Start drafting clearer descriptions for the fields mentioned.\n3. Engage with the comments in the issue for insights and feedback (see contributors like [pbauer](https://github.com/pbauer) and [davilima6](https://github.com/davilima6)).\n4. Familiarize yourself with the existing setup in the Plone framework, as understanding the behavior type will be essential.\n```",
+        "path": "data/issues/summaries/plone/Products.CMFPlone/972.json"
+      }
     },
     {
       "id": 95493120,
@@ -2003,7 +2059,15 @@
         "31 needs: help",
         "21 status: confirmed",
         "42 lvl: moderate"
-      ]
+      ],
+      "contributor_summary": {
+        "status": "available",
+        "generated_at": "2026-04-09T18:25:21Z",
+        "source_issue_updated_at": "2023-03-12T15:06:55Z",
+        "model": "gpt-4o-mini",
+        "summary_markdown": "```markdown\n## What this issue is about\nThis issue focuses on enhancing the breadcrumb navigation in the Site Setup and child pages of Plone. Currently, the breadcrumb shows a 'home' link that might be unnecessary, as the logo directs users to the homepage.\n\n## What needs to be done\nThe aim is to either refine or optionally remove the 'home' link from the breadcrumb trail. If the 'home' link remains, it should lead to “Home > Site Setup > Date and Time Settings.” This change would improve consistency and usability in navigation.\n\n## Helpful background\nBreadcrumbs are navigation aids that show users their location within a website's hierarchy. There are differing opinions on whether the 'home' link is essential, since the site's logo already serves that purpose. Discussions in the comments hint at options for better configurability.\n\n## Good first steps\n1. Review the current implementation of the breadcrumb in the Site Setup and child pages.\n2. Consider the possible approaches discussed (keeping or removing the 'home' link).\n3. Check the project's documentation for any existing guidelines on breadcrumb navigation.\n4. If you’re ready, create a pull request (PR) with your proposed changes for review.\n```",
+        "path": "data/issues/summaries/plone/Products.CMFPlone/700.json"
+      }
     },
     {
       "id": 95494278,
@@ -2027,7 +2091,15 @@
         "14 prio: low",
         "21 status: confirmed",
         "42 lvl: moderate"
-      ]
+      ],
+      "contributor_summary": {
+        "status": "available",
+        "generated_at": "2026-04-09T18:25:26Z",
+        "source_issue_updated_at": "2023-03-12T15:05:45Z",
+        "model": "gpt-4o-mini",
+        "summary_markdown": "## What this issue is about\nThis issue discusses a visual inconsistency in the \"Site Setup\" section of Plone where the \"home\" button appears selected when it shouldn't, impacting the user experience. Screenshots highlight the current and desired state of the interface.\n\n## What needs to be done\nThe goal is to modify the breadcrumb logic for the \"home\" button. It seems this may involve adjusting the code in `plone.app.layout` related to how selected states are determined for URLs that start with `@@` when at the root of a site. The specific line to investigate is noted, but there are uncertainties about the best approach due to potential implications for other browser views.\n\n## Helpful background\nThis issue has been confirmed and discussed over several years, with hints that it may relate to a broader pattern affecting multiple URLs. There is a suggestion that adjustments be made in the existing breadcrumb component.\n\n## Good first steps\n1. Review the existing breadcrumb implementation in `plone.app.layout`.\n2. Test how the \"home\" button behaves across various scenarios in Site Setup.\n3. Consider potential side effects if modifying the breadcrumb logic, particularly relating to other browser views.\n4. Draft a proposal for changes, ensuring to cover any implications for different views, and prepare for review.",
+        "path": "data/issues/summaries/plone/Products.CMFPlone/701.json"
+      }
     },
     {
       "id": 123510894,
@@ -2050,7 +2122,15 @@
         "31 needs: help",
         "12 prio: high",
         "42 lvl: moderate"
-      ]
+      ],
+      "contributor_summary": {
+        "status": "available",
+        "generated_at": "2026-04-09T18:25:32Z",
+        "source_issue_updated_at": "2023-03-12T14:30:36Z",
+        "model": "gpt-4o-mini",
+        "summary_markdown": "```markdown\n## What this issue is about\nThis issue addresses a bug where the portal's default timezone settings are not considered when determining item effective and expiration dates. This can lead to items being published at the incorrect time, often an hour late, which has caused confusion for users.\n\n## What needs to be done\nThe goal is to ensure that effective and expiration dates are set in alignment with the portal's default timezone. This may involve modifying how these dates are stored and processed, ensuring they remain timezone-aware. The work might align with changes made in the `plone.app.event` package.\n\n## Helpful background\nThere are references to related issues and discussions about how timezone handling should work in Plone. The core idea is to avoid stripping timezone information, thus allowing accurate date handling. Some developers have suggested that this change is not overly complex, but still requires careful implementation.\n\n## Good first steps\n1. Review the discussion and linked resources in the comments for insights.\n2. Familiarize yourself with how datetime handling works in Plone, particularly focusing on the `plone.app.event` and `plone.app.dexterity` packages.\n3. Consider experimenting with a small example to see how timezone data is handled and where it might be going wrong.\n4. Join the conversation in the issue to ask any questions or share your findings!\n```",
+        "path": "data/issues/summaries/plone/Products.CMFPlone/1298.json"
+      }
     },
     {
       "id": 94786217,
@@ -2073,7 +2153,15 @@
         "31 needs: help",
         "14 prio: low",
         "42 lvl: moderate"
-      ]
+      ],
+      "contributor_summary": {
+        "status": "available",
+        "generated_at": "2026-04-09T18:25:38Z",
+        "source_issue_updated_at": "2023-03-12T14:17:00Z",
+        "model": "gpt-4o-mini",
+        "summary_markdown": "## What this issue is about\nThis issue focuses on enhancing new Plone sites by optionally creating more complex demo content. The aim is to provide a dummy site that showcases various elements and features, such as an extranet or a private shared area, offering users a richer tour of what Plone can do.\n\n## What needs to be done\nWe need to design and implement a more intricate content setup for new Plone sites. This involves creating a new setup profile that can be selected when initializing a site. The intention is to make it easy for users to see and interact with a fully developed example.\n\n## Helpful background\nThe discussion mentions existing setup profiles that allow for basic content creation, indicating we can enhance this by adding a more detailed option. This will help users better understand the capabilities of Plone through a feature-rich demo.\n\n## Good first steps\n1. Familiarize yourself with the current setup profiles related to content creation in Plone.\n2. Review existing demo content to identify areas for enhancement.\n3. Begin drafting ideas for additional demo content to be included, keeping in mind user navigation and features.\n4. Engage with the community for feedback and suggestions as you progress.\n\nIf you're unsure about any part of this process or the discussions seem incomplete, don’t hesitate to ask questions!",
+        "path": "data/issues/summaries/plone/Products.CMFPlone/674.json"
+      }
     },
     {
       "id": 614573796,
@@ -2303,10 +2391,10 @@
   "message": null,
   "workflow": {
     "repository": "syslabcom/activity-recognition",
-    "run_id": "24203975522",
-    "run_number": "56",
+    "run_id": "24206452870",
+    "run_number": "57",
     "attempt": "1",
-    "url": "https://github.com/syslabcom/activity-recognition/actions/runs/24203975522",
-    "sha": "545d41a532ab38141cd1d0635e792cae331679ae"
+    "url": "https://github.com/syslabcom/activity-recognition/actions/runs/24206452870",
+    "sha": "773d49b4877d1fa4ce64cd04cc9a9ef9e10799e7"
   }
 }

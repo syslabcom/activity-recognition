@@ -1,0 +1,33 @@
+{
+  "version": 1,
+  "status": "success",
+  "generated_at": "2026-04-09T18:25:15Z",
+  "source_issue": {
+    "id": 193826289,
+    "number": 1863,
+    "title": "Putting space in \"Path Identifier\" allows site to  be created; however, site does not function",
+    "html_url": "https://github.com/plone/Products.CMFPlone/issues/1863",
+    "repository_full_name": "plone/Products.CMFPlone",
+    "updated_at": "2023-03-13T10:29:12Z",
+    "labels": [
+      "01 type: bug",
+      "31 needs: help",
+      "14 prio: low",
+      "41 lvl: easy"
+    ],
+    "comments": 12
+  },
+  "ai": {
+    "provider": "openai",
+    "model": "gpt-4o-mini"
+  },
+  "summary_markdown": "```markdown\n## What this issue is about\nThis issue addresses a bug in Plone where using spaces in the \"Path Identifier\" during site creation leads to non-functional sites. While the current guidance states that special characters aren't allowed, spaces can still be used, resulting in many issues afterward.\n\n## What needs to be done\nWe need to improve validation for the \"Path Identifier\" to prohibit spaces and possibly other characters that can break site functionality. Additionally, clarity in the UI regarding allowed characters must be improved, as the current guidance is misleading.\n\n## Helpful background\nThe validation for identifiers currently uses a regular expression that permits characters like spaces and specific symbols, which can cause problems. Several contributors have pointed out that separating the validation logic might be necessary to ensure only safe characters are allowed for the \"Path Identifier.\"\n\n## Good first steps\n1. Review the regex validation code in `ObjectManager.py` to understand its current implementation.\n2. Propose a new regex that bans spaces and potentially unsafe characters for path identifiers.\n3. Update the UI text to include explicit guidance on prohibited characters.\n4. Consider writing tests for the new validation logic to ensure it functions as intended.\n5. Coordinate with others involved in this discussion for guidance and review.\n```",
+  "workflow": {
+    "repository": "syslabcom/activity-recognition",
+    "run_id": "24206452870",
+    "run_number": "57",
+    "attempt": "1",
+    "url": "https://github.com/syslabcom/activity-recognition/actions/runs/24206452870",
+    "sha": "773d49b4877d1fa4ce64cd04cc9a9ef9e10799e7"
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "version": 1,
+  "status": "success",
+  "generated_at": "2026-04-09T18:25:21Z",
+  "source_issue": {
+    "id": 95493120,
+    "number": 700,
+    "title": "Breadcrumb shows 'home' in Site setup and child pages",
+    "html_url": "https://github.com/plone/Products.CMFPlone/issues/700",
+    "repository_full_name": "plone/Products.CMFPlone",
+    "updated_at": "2023-03-12T15:06:55Z",
+    "labels": [
+      "04 type: enhancement",
+      "31 needs: help",
+      "21 status: confirmed",
+      "42 lvl: moderate"
+    ],
+    "comments": 6
+  },
+  "ai": {
+    "provider": "openai",
+    "model": "gpt-4o-mini"
+  },
+  "summary_markdown": "```markdown\n## What this issue is about\nThis issue focuses on enhancing the breadcrumb navigation in the Site Setup and child pages of Plone. Currently, the breadcrumb shows a 'home' link that might be unnecessary, as the logo directs users to the homepage.\n\n## What needs to be done\nThe aim is to either refine or optionally remove the 'home' link from the breadcrumb trail. If the 'home' link remains, it should lead to “Home > Site Setup > Date and Time Settings.” This change would improve consistency and usability in navigation.\n\n## Helpful background\nBreadcrumbs are navigation aids that show users their location within a website's hierarchy. There are differing opinions on whether the 'home' link is essential, since the site's logo already serves that purpose. Discussions in the comments hint at options for better configurability.\n\n## Good first steps\n1. Review the current implementation of the breadcrumb in the Site Setup and child pages.\n2. Consider the possible approaches discussed (keeping or removing the 'home' link).\n3. Check the project's documentation for any existing guidelines on breadcrumb navigation.\n4. If you’re ready, create a pull request (PR) with your proposed changes for review.\n```",
+  "workflow": {
+    "repository": "syslabcom/activity-recognition",
+    "run_id": "24206452870",
+    "run_number": "57",
+    "attempt": "1",
+    "url": "https://github.com/syslabcom/activity-recognition/actions/runs/24206452870",
+    "sha": "773d49b4877d1fa4ce64cd04cc9a9ef9e10799e7"
+  }
+}

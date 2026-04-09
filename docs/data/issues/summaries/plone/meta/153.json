@@ -1,0 +1,32 @@
+{
+  "version": 1,
+  "status": "success",
+  "generated_at": "2026-04-09T18:24:17Z",
+  "source_issue": {
+    "id": 1778434053,
+    "number": 153,
+    "title": "Validate that template's markup is valid",
+    "html_url": "https://github.com/plone/meta/issues/153",
+    "repository_full_name": "plone/meta",
+    "updated_at": "2023-10-14T12:19:58Z",
+    "labels": [
+      "04 type: enhancement",
+      "13 prio: normal",
+      "42 lvl: moderate"
+    ],
+    "comments": 1
+  },
+  "ai": {
+    "provider": "openai",
+    "model": "gpt-4o-mini"
+  },
+  "summary_markdown": "## What this issue is about\nThis issue addresses the need to ensure that our template's HTML markup is valid. We aim to implement a system that can automatically detect broken HTML, so we can address issues promptly.\n\n## What needs to be done\nWe propose to create a **pre-commit hook** that validates template files for HTML correctness. This hook can be added to the `plone/meta` repository or potentially elsewhere in the Plone ecosystem. The key goal is to catch markup errors before they become a problem.\n\n## Helpful background\nA pre-commit hook is a script that runs automatically before changes are committed to the repository. It helps maintain code quality by enforcing rules, such as validating HTML. Existing resources, like those shared by @petschki, suggest using tools that may not require additional setup beyond what's needed for validation.\n\n## Good first steps\n1. Familiarize yourself with pre-commit hooks, particularly for HTML validation.\n2. Review existing tools linked in the issue discussion [here](https://github.com/Lucas-C/pre-commit-hooks-lxml/tree/master/pre_commit_hooks) and [here](https://github.com/Lucas-C/pre-commit-hooks-java/).\n3. Start drafting a proposal for how to implement the hook, including considerations for testing and documentation.\n\nIf you have questions or need clarification, feel free to ask in the comments!",
+  "workflow": {
+    "repository": "syslabcom/activity-recognition",
+    "run_id": "24206452870",
+    "run_number": "57",
+    "attempt": "1",
+    "url": "https://github.com/syslabcom/activity-recognition/actions/runs/24206452870",
+    "sha": "773d49b4877d1fa4ce64cd04cc9a9ef9e10799e7"
+  }
+}

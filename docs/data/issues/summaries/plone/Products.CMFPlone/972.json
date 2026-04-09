@@ -1,0 +1,35 @@
+{
+  "version": 1,
+  "status": "success",
+  "generated_at": "2026-04-09T18:25:09Z",
+  "source_issue": {
+    "id": 106216920,
+    "number": 972,
+    "title": "Clean up confusing options for comments",
+    "html_url": "https://github.com/plone/Products.CMFPlone/issues/972",
+    "repository_full_name": "plone/Products.CMFPlone",
+    "updated_at": "2023-03-13T11:45:20Z",
+    "labels": [
+      "04 type: enhancement",
+      "99 tag: UX Editor",
+      "99 tag: UX Site Admin",
+      "31 needs: help",
+      "14 prio: low",
+      "42 lvl: moderate"
+    ],
+    "comments": 3
+  },
+  "ai": {
+    "provider": "openai",
+    "model": "gpt-4o-mini"
+  },
+  "summary_markdown": "```markdown\n## What this issue is about\nThis issue aims to clarify and improve the options available for enabling comments in Plone. The current system is seen as powerful but confusing, especially regarding settings in the @@discussion-controlpanel and @@content-controlpanel.\n\n## What needs to be done\n1. Revise the naming of behaviors related to discussions to make their purpose clearer.\n2. Add helpful descriptions to the existing fields to clarify their function.\n3. Display the default discussion setting from the @@content-controlpanel when editing an item.\n\n## Helpful background\nTo enable comments, global settings must first be configured in the @@discussion-controlpanel. Users can then set default values in the @@content-controlpanel, which can be overridden per item using the IAllowDiscussion behavior. Currently, options like \"No Value\" create confusion, and there's disagreement on how to address this.\n\n## Good first steps\n1. Review the current naming conventions and consider more intuitive alternatives.\n2. Start drafting clearer descriptions for the fields mentioned.\n3. Engage with the comments in the issue for insights and feedback (see contributors like [pbauer](https://github.com/pbauer) and [davilima6](https://github.com/davilima6)).\n4. Familiarize yourself with the existing setup in the Plone framework, as understanding the behavior type will be essential.\n```",
+  "workflow": {
+    "repository": "syslabcom/activity-recognition",
+    "run_id": "24206452870",
+    "run_number": "57",
+    "attempt": "1",
+    "url": "https://github.com/syslabcom/activity-recognition/actions/runs/24206452870",
+    "sha": "773d49b4877d1fa4ce64cd04cc9a9ef9e10799e7"
+  }
+}

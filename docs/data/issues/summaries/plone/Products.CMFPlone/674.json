@@ -1,0 +1,33 @@
+{
+  "version": 1,
+  "status": "success",
+  "generated_at": "2026-04-09T18:25:38Z",
+  "source_issue": {
+    "id": 94786217,
+    "number": 674,
+    "title": "optionally create more complex demo content for new Plone sites",
+    "html_url": "https://github.com/plone/Products.CMFPlone/issues/674",
+    "repository_full_name": "plone/Products.CMFPlone",
+    "updated_at": "2023-03-12T14:17:00Z",
+    "labels": [
+      "04 type: enhancement",
+      "31 needs: help",
+      "14 prio: low",
+      "42 lvl: moderate"
+    ],
+    "comments": 0
+  },
+  "ai": {
+    "provider": "openai",
+    "model": "gpt-4o-mini"
+  },
+  "summary_markdown": "## What this issue is about\nThis issue focuses on enhancing new Plone sites by optionally creating more complex demo content. The aim is to provide a dummy site that showcases various elements and features, such as an extranet or a private shared area, offering users a richer tour of what Plone can do.\n\n## What needs to be done\nWe need to design and implement a more intricate content setup for new Plone sites. This involves creating a new setup profile that can be selected when initializing a site. The intention is to make it easy for users to see and interact with a fully developed example.\n\n## Helpful background\nThe discussion mentions existing setup profiles that allow for basic content creation, indicating we can enhance this by adding a more detailed option. This will help users better understand the capabilities of Plone through a feature-rich demo.\n\n## Good first steps\n1. Familiarize yourself with the current setup profiles related to content creation in Plone.\n2. Review existing demo content to identify areas for enhancement.\n3. Begin drafting ideas for additional demo content to be included, keeping in mind user navigation and features.\n4. Engage with the community for feedback and suggestions as you progress.\n\nIf you're unsure about any part of this process or the discussions seem incomplete, don’t hesitate to ask questions!",
+  "workflow": {
+    "repository": "syslabcom/activity-recognition",
+    "run_id": "24206452870",
+    "run_number": "57",
+    "attempt": "1",
+    "url": "https://github.com/syslabcom/activity-recognition/actions/runs/24206452870",
+    "sha": "773d49b4877d1fa4ce64cd04cc9a9ef9e10799e7"
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "version": 1,
+  "status": "success",
+  "generated_at": "2026-04-09T18:24:00Z",
+  "source_issue": {
+    "id": 1882159071,
+    "number": 173,
+    "title": "Make dependency checker configurable",
+    "html_url": "https://github.com/plone/meta/issues/173",
+    "repository_full_name": "plone/meta",
+    "updated_at": "2023-10-14T13:48:17Z",
+    "labels": [
+      "04 type: enhancement",
+      "14 prio: low",
+      "42 lvl: moderate"
+    ],
+    "comments": 3
+  },
+  "ai": {
+    "provider": "openai",
+    "model": "gpt-4o-mini"
+  },
+  "summary_markdown": "## What this issue is about\nThis issue discusses enhancing the dependency checker in Plone to make it configurable for broader use outside the Zope environment. The goal is to provide options for users to modify or disable the dependency checker as needed.\n\n## What needs to be done\nThe proposed enhancement suggests adding a new setting, potentially named `plone_mappings`, with a default value of `True`, allowing users to set it to `False` to disable the dependency checker. The details of how this should be implemented are still being debated, so clarity and consensus on the final requirements are needed.\n\n## Helpful background\nThe dependency checker helps manage software dependencies but currently has limited configurability. Having this feature would enhance flexibility for users who may not need or want the default settings.\n\n## Good first steps\n1. Read through existing comments for varying opinions on implementing the change, as some suggestions are still in flux.\n2. Familiarize yourself with the existing dependency checker functionality within Plone.\n3. Consider creating a basic implementation or proposal for the `plone_mappings` setting based on discussions so far.\n4. Coordinate with other contributors through comments to align on the final approach.",
+  "workflow": {
+    "repository": "syslabcom/activity-recognition",
+    "run_id": "24206452870",
+    "run_number": "57",
+    "attempt": "1",
+    "url": "https://github.com/syslabcom/activity-recognition/actions/runs/24206452870",
+    "sha": "773d49b4877d1fa4ce64cd04cc9a9ef9e10799e7"
+  }
+}

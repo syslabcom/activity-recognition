@@ -1,0 +1,34 @@
+{
+  "version": 1,
+  "status": "success",
+  "generated_at": "2026-04-09T18:25:02Z",
+  "source_issue": {
+    "id": 313287684,
+    "number": 312,
+    "title": "using multilingual content in my tests",
+    "html_url": "https://github.com/plone/plone.app.multilingual/issues/312",
+    "repository_full_name": "plone/plone.app.multilingual",
+    "updated_at": "2023-03-21T22:13:39Z",
+    "labels": [
+      "31 needs: help",
+      "02 type: regression",
+      "13 prio: normal",
+      "21 status: confirmed",
+      "42 lvl: moderate"
+    ],
+    "comments": 2
+  },
+  "ai": {
+    "provider": "openai",
+    "model": "gpt-4o-mini"
+  },
+  "summary_markdown": "```markdown\n## What this issue is about\nThis issue addresses a problem with testing multilingual content in Plone using the `plone.app.multilingual` package. The author discovered unexpected behavior when trying to create and manage translations in their tests.\n\n## What needs to be done\nThe main task is to investigate why the language setting does not automatically apply to content created in language root folders during tests. Contributors may need to ensure translations are registered correctly and explore the need for additional calls like `processQueue()` to update the content's language context.\n\n## Helpful background\nThe issue revolves around an inconsistency between expected behavior in the Plone UI and the test environment regarding language settings for newly created objects. Current tests might fail due to the requirement of manually setting the language and not receiving the expected translation context.\n\n## Good first steps\n1. Review the provided code snippets to understand the current testing setup.\n2. Explore the `ITranslationManager` and `ILanguage` interfaces for their functionalities.\n3. Test various solutions, such as calling `processQueue()` after registering translations, to see if it resolves the issues.\n4. Engage in discussions on the issue for clarity and advice from others who have faced similar challenges.\n```",
+  "workflow": {
+    "repository": "syslabcom/activity-recognition",
+    "run_id": "24206452870",
+    "run_number": "57",
+    "attempt": "1",
+    "url": "https://github.com/syslabcom/activity-recognition/actions/runs/24206452870",
+    "sha": "773d49b4877d1fa4ce64cd04cc9a9ef9e10799e7"
+  }
+}

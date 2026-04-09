@@ -1,0 +1,34 @@
+{
+  "version": 1,
+  "status": "success",
+  "generated_at": "2026-04-09T18:25:26Z",
+  "source_issue": {
+    "id": 95494278,
+    "number": 701,
+    "title": "The 'home' button is selected in 'Site Setup'",
+    "html_url": "https://github.com/plone/Products.CMFPlone/issues/701",
+    "repository_full_name": "plone/Products.CMFPlone",
+    "updated_at": "2023-03-12T15:05:45Z",
+    "labels": [
+      "04 type: enhancement",
+      "31 needs: help",
+      "14 prio: low",
+      "21 status: confirmed",
+      "42 lvl: moderate"
+    ],
+    "comments": 4
+  },
+  "ai": {
+    "provider": "openai",
+    "model": "gpt-4o-mini"
+  },
+  "summary_markdown": "## What this issue is about\nThis issue discusses a visual inconsistency in the \"Site Setup\" section of Plone where the \"home\" button appears selected when it shouldn't, impacting the user experience. Screenshots highlight the current and desired state of the interface.\n\n## What needs to be done\nThe goal is to modify the breadcrumb logic for the \"home\" button. It seems this may involve adjusting the code in `plone.app.layout` related to how selected states are determined for URLs that start with `@@` when at the root of a site. The specific line to investigate is noted, but there are uncertainties about the best approach due to potential implications for other browser views.\n\n## Helpful background\nThis issue has been confirmed and discussed over several years, with hints that it may relate to a broader pattern affecting multiple URLs. There is a suggestion that adjustments be made in the existing breadcrumb component.\n\n## Good first steps\n1. Review the existing breadcrumb implementation in `plone.app.layout`.\n2. Test how the \"home\" button behaves across various scenarios in Site Setup.\n3. Consider potential side effects if modifying the breadcrumb logic, particularly relating to other browser views.\n4. Draft a proposal for changes, ensuring to cover any implications for different views, and prepare for review.",
+  "workflow": {
+    "repository": "syslabcom/activity-recognition",
+    "run_id": "24206452870",
+    "run_number": "57",
+    "attempt": "1",
+    "url": "https://github.com/syslabcom/activity-recognition/actions/runs/24206452870",
+    "sha": "773d49b4877d1fa4ce64cd04cc9a9ef9e10799e7"
+  }
+}
