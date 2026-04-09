@@ -1,0 +1,33 @@
+{
+  "version": 1,
+  "status": "success",
+  "generated_at": "2026-04-09T17:28:02Z",
+  "source_issue": {
+    "id": 379404615,
+    "number": 293,
+    "title": "Embed (via iFrame) Block",
+    "html_url": "https://github.com/plone/volto/issues/293",
+    "repository_full_name": "plone/volto",
+    "updated_at": "2024-01-09T07:21:08Z",
+    "labels": [
+      "04 type: enhancement",
+      "14 prio: low",
+      "21 status: confirmed",
+      "42 lvl: moderate"
+    ],
+    "comments": 1
+  },
+  "ai": {
+    "provider": "openai",
+    "model": "gpt-4o-mini"
+  },
+  "summary_markdown": "```markdown\n## What this issue is about\nThis issue is focused on enhancing Volto by creating a new tile that allows users to embed third-party services (like Twitter) via iFrame. The goal is to make it easier for users to integrate external content into their Plone site.\n\n## What needs to be done\nYou will need to design and implement an iFrame embed tile. This includes considering how users can input the necessary embed code for different services. Discussion regarding the potential use of a code editor in edit mode has been suggested but is not fully resolved.\n\n## Helpful background\niFrames are HTML elements that allow you to embed another webpage within your site. This enhancement will make it user-friendly for administrators to add dynamic content. Familiarity with React and Plone would be beneficial, but don’t hesitate to ask questions!\n\n## Good first steps\n1. Review existing embed tiles in Volto to understand current implementations.\n2. Familiarize yourself with the iFrame syntax and the types of service URLs you want to support.\n3. Consider participating in discussions about the code editor feature to understand its viability.\n4. Reach out here if you have questions or need clarity on any points.\n```",
+  "workflow": {
+    "repository": "syslabcom/activity-recognition",
+    "run_id": "24203975522",
+    "run_number": "56",
+    "attempt": "1",
+    "url": "https://github.com/syslabcom/activity-recognition/actions/runs/24203975522",
+    "sha": "545d41a532ab38141cd1d0635e792cae331679ae"
+  }
+}

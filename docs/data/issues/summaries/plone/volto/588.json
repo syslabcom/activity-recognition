@@ -1,0 +1,33 @@
+{
+  "version": 1,
+  "status": "success",
+  "generated_at": "2026-04-09T17:27:31Z",
+  "source_issue": {
+    "id": 394393792,
+    "number": 588,
+    "title": "Resetting the password does not work.",
+    "html_url": "https://github.com/plone/volto/issues/588",
+    "repository_full_name": "plone/volto",
+    "updated_at": "2024-02-06T22:07:26Z",
+    "labels": [
+      "01 type: bug",
+      "12 prio: high",
+      "31 needs: help",
+      "41 lvl: easy"
+    ],
+    "comments": 4
+  },
+  "ai": {
+    "provider": "openai",
+    "model": "gpt-4o-mini"
+  },
+  "summary_markdown": "## What this issue is about\nThis issue reports that the password reset feature in Plone’s Volto application is not functioning. Users are unable to receive password reset emails when they attempt to reset their passwords after registration.\n\n## What needs to be done\nThe underlying issue involves backend adjustments. A solution is needed to ensure password reset emails are sent correctly. Additionally, a Cypress test should be developed to thoroughly verify the password reset process, which is essential for maintaining functionality.\n\n## Helpful background\nThis issue is recognized as complex, requiring backend modifications for a proper fix. Earlier discussions highlighted challenges, including the need for email configuration and addressing multilingual features related to the password reset flow. \n\n## Good first steps\n1. Familiarize yourself with the current code handling the password reset process.\n2. Explore the [Cypress](https://docs.cypress.io/) testing framework if you're interested in helping develop tests.\n3. Review relevant documentation regarding backend email settings in Plone.\n4. Consider discussing potential solutions in the comments if you have ideas or questions.\n\nFeel free to reach out to the issue assignee, [robdayz](https://github.com/robdayz) or engage with other contributors for guidance!",
+  "workflow": {
+    "repository": "syslabcom/activity-recognition",
+    "run_id": "24203975522",
+    "run_number": "56",
+    "attempt": "1",
+    "url": "https://github.com/syslabcom/activity-recognition/actions/runs/24203975522",
+    "sha": "545d41a532ab38141cd1d0635e792cae331679ae"
+  }
+}

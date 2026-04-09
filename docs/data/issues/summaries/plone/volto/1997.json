@@ -1,0 +1,31 @@
+{
+  "version": 1,
+  "status": "success",
+  "generated_at": "2026-04-09T17:28:15Z",
+  "source_issue": {
+    "id": 745429960,
+    "number": 1997,
+    "title": "\"manage-translations\" view can be viewed by anonymous",
+    "html_url": "https://github.com/plone/volto/issues/1997",
+    "repository_full_name": "plone/volto",
+    "updated_at": "2023-12-05T06:20:33Z",
+    "labels": [
+      "01 type: bug",
+      "41 lvl: easy"
+    ],
+    "comments": 6
+  },
+  "ai": {
+    "provider": "openai",
+    "model": "gpt-4o-mini"
+  },
+  "summary_markdown": "## What this issue is about\nThis issue addresses a bug in the `manage-translations` view in Volto, which currently allows anonymous users to access the page without appropriate permissions. Instead, anonymous users should see a 404 error or a login prompt.\n\n## What needs to be done\nThe goal is to restrict access to the `manage-translations` view so that it returns a 404 or redirect to the login page for unauthenticated users. The implementation requires modifying how non-content routes handle permissions.\n\n## Helpful background\nIn Volto, `nonContentRoutes` are special routes that do not load typical Plone content. They handle different functionalities, such as control panels or sitemaps. The discussion highlights uncertainty about expected behaviors for certain routes, particularly whether they should present a homepage or an error message to anonymous users.\n\n## Good first steps\n1. Review the `manage-translations` view code to understand current routing and permission checks.\n2. Investigate other `nonContentRoutes` to identify patterns for handling access permissions.\n3. Consider updating or adding documentation based on findings to help clarify route behaviors for future contributors.\n4. Test your changes to ensure that the intended access restrictions are effective.",
+  "workflow": {
+    "repository": "syslabcom/activity-recognition",
+    "run_id": "24203975522",
+    "run_number": "56",
+    "attempt": "1",
+    "url": "https://github.com/syslabcom/activity-recognition/actions/runs/24203975522",
+    "sha": "545d41a532ab38141cd1d0635e792cae331679ae"
+  }
+}

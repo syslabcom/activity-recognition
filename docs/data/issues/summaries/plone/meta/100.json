@@ -1,0 +1,32 @@
+{
+  "version": 1,
+  "status": "success",
+  "generated_at": "2026-04-09T17:28:30Z",
+  "source_issue": {
+    "id": 1728713439,
+    "number": 100,
+    "title": "Do releases with `tox`",
+    "html_url": "https://github.com/plone/meta/issues/100",
+    "repository_full_name": "plone/meta",
+    "updated_at": "2023-11-17T14:00:27Z",
+    "labels": [
+      "04 type: enhancement",
+      "13 prio: normal",
+      "43 lvl: complex"
+    ],
+    "comments": 0
+  },
+  "ai": {
+    "provider": "openai",
+    "model": "gpt-4o-mini"
+  },
+  "summary_markdown": "## What this issue is about\nThis issue proposes automating the release process for the Plone package using `tox`. The goal is to utilize GitHub Actions to generate package archives and publish them to PyPI securely.\n\n## What needs to be done\n1. Set up GitHub Actions to:\n   - Generate `sdist` and `wheel` archives using the [build-and-inspect-python-package](https://github.com/hynek/build-and-inspect-python-package) action.\n   - Use the [gh-action-pypi-publish](https://github.com/pypa/gh-action-pypi-publish) for publishing the archives to PyPI.\n2. Integrate the \"trusted publishing\" feature on PyPI to keep credentials secure.\n3. Implement a pre-action to update the change log via `towncrier`.\n4. Implement a post-action to update `versions.cfg` and `checkouts.cfg`.\n\n## Helpful background\nWhile the issue has a clear foundational plan, the pre- and post-actions may need further detail. The discussion also hints at potential triggers for the release workflow but lacks definitive consensus on the overall execution.\n\n## Good first steps\n1. Familiarize yourself with the mentioned GitHub Actions and how `tox` integrates with the Plone setup.\n2. Explore the `towncrier` tool for updating change logs.\n3. Review the \"trusted publishers\" feature on PyPI to understand its benefits.\n4. Consider discussing the issue further to clarify any uncertainties around implementation.",
+  "workflow": {
+    "repository": "syslabcom/activity-recognition",
+    "run_id": "24203975522",
+    "run_number": "56",
+    "attempt": "1",
+    "url": "https://github.com/syslabcom/activity-recognition/actions/runs/24203975522",
+    "sha": "545d41a532ab38141cd1d0635e792cae331679ae"
+  }
+}

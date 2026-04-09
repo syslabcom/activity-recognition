@@ -1,7 +1,7 @@
 {
   "version": 1,
   "status": "success",
-  "generated_at": "2026-04-09T16:33:16Z",
+  "generated_at": "2026-04-09T17:26:54Z",
   "organization": "plone",
   "state": "open",
   "slug": "lvl-moderate",
@@ -1504,7 +1504,15 @@
       "labels": [
         "01 type: bug",
         "42 lvl: moderate"
-      ]
+      ],
+      "contributor_summary": {
+        "status": "available",
+        "generated_at": "2026-04-09T17:27:01Z",
+        "source_issue_updated_at": "2024-02-16T16:55:14Z",
+        "model": "gpt-4o-mini",
+        "summary_markdown": "```markdown\n## What this issue is about\nThis issue focuses on fixing broken URLs in news items on [Plone.org](https://plone.org/news-and-events/news/2002). When clicked, these faulty links create an infinite loop, which may stem from a bulk import error.\n\n## What needs to be done\nWe need to identify and correct the broken URLs, possibly by assigning them new valid names. It's also worth running a more thorough check to find any additional problematic links.\n\n## Helpful background\nThe problem appears to be related to the frontend, and upgrading to a newer version of Volto could be a potential solution. Currently, the site is using Volto version 16.25.0, which is relatively new.\n\n## Good first steps\n1. Review the broken URLs and their current functionality.\n2. Check if the issue persists in the latest Volto version or if it has been resolved in recent updates.\n3. Consider running a query to identify other similar broken links on the site.\n4. Once you've made corrections, please test thoroughly to ensure proper functionality before creating a pull request.\n```",
+        "path": "data/issues/summaries/plone/plone.org/120.json"
+      }
     },
     {
       "id": 1579972539,
@@ -1525,7 +1533,15 @@
       "labels": [
         "04 type: enhancement",
         "42 lvl: moderate"
-      ]
+      ],
+      "contributor_summary": {
+        "status": "available",
+        "generated_at": "2026-04-09T17:27:07Z",
+        "source_issue_updated_at": "2024-02-16T16:53:42Z",
+        "model": "gpt-4o-mini",
+        "summary_markdown": "## What this issue is about\nThis issue focuses on improving the performance of the Plone.org website, which currently scores around 75/100 in Google Lighthouse tests. The site excels in accessibility and SEO, but there are clear opportunities for performance enhancements.\n\n## What needs to be done\nYou will work on addressing performance issues highlighted by Google Lighthouse. Key suggestions include:\n- Reducing unused CSS\n- Reducing unused JavaScript\n- Serving static assets with an efficient caching policy\n\n## Helpful background\nGoogle Lighthouse is a tool that assesses web pages for performance, accessibility, and SEO best practices. Performance impacts user experience, so boosting this score can benefit how quickly and efficiently users interact with the Plone.org site.\n\n## Good first steps\n1. Run a Google Lighthouse audit on any Plone.org page to identify specific issues.\n2. Investigate which CSS and JavaScript files are marked as unused; you can find recommendations in the Lighthouse report.\n3. Consider ways to improve caching policies for static assets. \n\nFeel free to ask questions if you're unsure about any of the tasks or concepts—collaboration is encouraged! Remember to document your changes and consider running tests to verify improvements.",
+        "path": "data/issues/summaries/plone/plone.org/99.json"
+      }
     },
     {
       "id": 1571438162,
@@ -1550,7 +1566,15 @@
         "33 needs: docs",
         "42 lvl: moderate",
         "60 sites: page content"
-      ]
+      ],
+      "contributor_summary": {
+        "status": "available",
+        "generated_at": "2026-04-09T17:27:11Z",
+        "source_issue_updated_at": "2024-02-16T16:53:31Z",
+        "model": "gpt-4o-mini",
+        "summary_markdown": "## What this issue is about\nThis issue aims to create step-by-step documentation that helps new developers set up the plone.org site locally, particularly focusing on theming issues. Clear guidance will make it easier for newcomers to contribute to the project.\n\n## What needs to be done\nA documentation page needs to be drafted that outlines the process for building the plone.org site locally with the theme applied. This will involve compiling current information and instructions into an accessible format.\n\n## Helpful background\nWhile there are some instructions available, current discussions suggest that the existing information may need revision or enhancement to ensure clarity and completeness. The goal is to equip developers with the necessary knowledge to tackle theming and other related contributions.\n\n## Good first steps\n1. Review existing README or documentation linked in the comments to gather information about the local setup process.\n2. Draft a preliminary outline for the new documentation, breaking down the setup into easy-to-follow steps.\n3. Consider reaching out to other contributors for input or suggestions to ensure all necessary details are included.\n4. Test the setup yourself to ensure the instructions are accurate and workable. \n\nFeel free to ask questions if anything is unclear or if you’d like coordination on documentation efforts!",
+        "path": "data/issues/summaries/plone/plone.org/97.json"
+      }
     },
     {
       "id": 1492168831,
@@ -1573,7 +1597,15 @@
       "labels": [
         "02 type: regression",
         "42 lvl: moderate"
-      ]
+      ],
+      "contributor_summary": {
+        "status": "available",
+        "generated_at": "2026-04-09T17:27:15Z",
+        "source_issue_updated_at": "2024-02-16T16:50:57Z",
+        "model": "gpt-4o-mini",
+        "summary_markdown": "## What this issue is about\nThis issue relates to a regression in the Plone Release page where the version ID format has changed. Instead of the expected format (e.g., \"6.0.0\"), the new site produces variations like \"plone-6-0.0\" or \"6-0.0\". This can complicate the way releases are listed and referenced.\n\n## What needs to be done\nWe need to resolve the incorrect formatting of the release ID to match the behavior of the old site. Ideally, the ID should reflect the version number directly as \"6.0.0\". \n\n## Helpful background\nThe old site used the version number as the ID, making it straightforward for users. This issue emerged during updates, and while a workaround exists using the Zope Management Interface (ZMI), we should aim to fix the root cause for consistency.\n\n## Good first steps\n1. Familiarize yourself with the code related to release IDs in the Plone codebase.\n2. Check for any relevant tests that cover this functionality.\n3. Explore the possibility of adjusting the ID formatting logic according to the old site's implementation.\n4. As you make changes, please ensure to write or update tests, and coordinate with the project maintainer, Maurits van Rees, for review.",
+        "path": "data/issues/summaries/plone/plone.org/76.json"
+      }
     },
     {
       "id": 1485529863,
@@ -1594,7 +1626,15 @@
       "labels": [
         "01 type: bug",
         "42 lvl: moderate"
-      ]
+      ],
+      "contributor_summary": {
+        "status": "available",
+        "generated_at": "2026-04-09T17:27:21Z",
+        "source_issue_updated_at": "2024-02-16T16:46:40Z",
+        "model": "gpt-4o-mini",
+        "summary_markdown": "## What this issue is about\nThis issue addresses a bug in Volto where the changelog and release notes fields do not function correctly. Users are experiencing problems when attempting to edit these fields, especially when removing or pasting text, leading to visible HTML codes or JavaScript errors.\n\n## What needs to be done\nWe need to investigate and fix the issues with the changelog and release notes fields in Volto. This may involve understanding how reStructuredText is handled and resolving the JavaScript error (`TypeError: undefined is not an object`).\n\n## Helpful background\nThe changelog field is supposed to store information in reStructuredText format, which allows for formatting but might be causing issues when edited. A workaround is to use ClassicUI for editing, but we want to resolve this behavior in Volto to improve user experience.\n\n## Good first steps\n1. Review the issue and try to recreate the problem in your local environment.\n2. Look through existing comments and related issues for context, particularly Issue #45.\n3. Experiment with editing the changelog field and note any specific issues or behaviors.\n4. Familiarize yourself with how reStructuredText works and how Volto implements it.\n5. If you identify a fix, consider writing a test to ensure the issue doesn't come back. \n\nFeel free to reach out in the discussion if you're unsure about any steps!",
+        "path": "data/issues/summaries/plone/plone.org/59.json"
+      }
     },
     {
       "id": 2122507111,
@@ -1615,7 +1655,15 @@
       "labels": [
         "33 needs: docs",
         "42 lvl: moderate"
-      ]
+      ],
+      "contributor_summary": {
+        "status": "available",
+        "generated_at": "2026-04-09T17:27:26Z",
+        "source_issue_updated_at": "2024-02-07T08:58:04Z",
+        "model": "gpt-4o-mini",
+        "summary_markdown": "## What this issue is about\nThis issue focuses on creating documentation for the \"global form state\" feature in Volto. Adding clear, user-friendly documentation will help both new and experienced developers understand how to effectively use this feature.\n\n## What needs to be done\nWe need to draft and finalize documentation that explains the global form state in Volto. This includes detailing the functionality and providing examples of its application. Please note that this task is dependent on confirming how the feature works in practice, which is still being explored. \n\n## Helpful background\nThe global form state allows users to manage form data more efficiently across different components. As of now, there’s some ambiguity regarding its specifics. Engaging in discussions or checking related issues might provide additional insights.\n\n## Good first steps\n1. Familiarize yourself with the global form state by exploring existing discussions and code.\n2. Reach out for clarification on any unclear aspects, especially if you find conflicting information.\n3. Start a draft of the documentation, focusing on clear explanations and examples.\n4. Coordinate with others who may be working on similar documentation to ensure consistency. \n\nFeel free to contribute your thoughts or reach out if you need support!",
+        "path": "data/issues/summaries/plone/volto/5740.json"
+      }
     },
     {
       "id": 515404096,
@@ -1639,7 +1687,15 @@
         "01 type: bug",
         "33 needs: docs",
         "42 lvl: moderate"
-      ]
+      ],
+      "contributor_summary": {
+        "status": "available",
+        "generated_at": "2026-04-09T17:27:35Z",
+        "source_issue_updated_at": "2024-02-04T22:09:06Z",
+        "model": "gpt-4o-mini",
+        "summary_markdown": "```markdown\n## What this issue is about\nThis issue addresses challenges in overriding the frontend port, host, and backend API path in Volto during development. Different behaviors are observed when using Volto from its source repository versus a Volto app created with `create-volto-app`. The main issue is that setting the port via command line appears to conflict with configurations in `src/config.js`.\n\n## What needs to be done\nThe goal is to clarify the usage of environment variables like `PORT` and `RAZZLE_API_PATH` for consistent behavior across setups. It may involve updating documentation to help new developers understand how to properly configure their development environment.\n\n## Helpful background\nVolto uses several settings to configure the frontend and backend during development. Environment variables govern this process, but their interaction with configuration files is not behaving as expected, leading to inconsistent results.\n\n## Good first steps\n1. Review the current behavior of `yarn start` with different configurations in both source and `create-volto-app` environments.\n2. Experiment with different combinations of `PORT` and `RAZZLE_API_PATH` to identify reproducible patterns.\n3. Consider how documentation can be improved to guide new contributors effectively.\n4. If you have feedback or questions, feel free to raise them in this issue; collaboration is encouraged as we work through these complexities.\n```",
+        "path": "data/issues/summaries/plone/volto/977.json"
+      }
     },
     {
       "id": 1182619493,
@@ -1661,7 +1717,15 @@
         "04 type: enhancement",
         "33 needs: docs",
         "42 lvl: moderate"
-      ]
+      ],
+      "contributor_summary": {
+        "status": "available",
+        "generated_at": "2026-04-09T17:27:41Z",
+        "source_issue_updated_at": "2024-02-04T21:57:56Z",
+        "model": "gpt-4o-mini",
+        "summary_markdown": "```markdown\n## What this issue is about\nThis issue focuses on improving the documentation for several URL helper functions in the Plone Volto repository. The current API functions handle various URL conversions for frontend and backend usage but lack clear documentation.\n\n## What needs to be done\nYou will need to document the following API functions:\n- `formatApiUrl(path)`: Converts a given path to a backend URL.\n- `getBaseUrl(url)`: Computes the \"Zope path\" of the context content from a Volto URL.\n- `flattenToAppURL(url)`: Strips URLs to return a base path.\n- `toPublicURL(url)`: Converts a path to a public URL.\n- `addAppURL(url)`: Prepends the API path to a URL.\n\nAdditionally, proposals for new aliases (like `pathToEndpointUrl`) also need to be documented.\n\n## Helpful background\nThe documentation should clarify the distinction between front-end and back-end URL handling. Some comments hint at a need for more clarity in use cases but do not provide further specifics.\n\n## Good first steps\n1. Review the existing functions and their code for understanding.\n2. Draft documentation outlining each function and its purpose.\n3. Add examples illustrating how to use these URL helpers effectively.\n4. Share your draft for feedback from the community before finalizing.\n```",
+        "path": "data/issues/summaries/plone/volto/3198.json"
+      }
     },
     {
       "id": 379404615,
@@ -1684,7 +1748,15 @@
         "14 prio: low",
         "21 status: confirmed",
         "42 lvl: moderate"
-      ]
+      ],
+      "contributor_summary": {
+        "status": "available",
+        "generated_at": "2026-04-09T17:28:02Z",
+        "source_issue_updated_at": "2024-01-09T07:21:08Z",
+        "model": "gpt-4o-mini",
+        "summary_markdown": "```markdown\n## What this issue is about\nThis issue is focused on enhancing Volto by creating a new tile that allows users to embed third-party services (like Twitter) via iFrame. The goal is to make it easier for users to integrate external content into their Plone site.\n\n## What needs to be done\nYou will need to design and implement an iFrame embed tile. This includes considering how users can input the necessary embed code for different services. Discussion regarding the potential use of a code editor in edit mode has been suggested but is not fully resolved.\n\n## Helpful background\niFrames are HTML elements that allow you to embed another webpage within your site. This enhancement will make it user-friendly for administrators to add dynamic content. Familiarity with React and Plone would be beneficial, but don’t hesitate to ask questions!\n\n## Good first steps\n1. Review existing embed tiles in Volto to understand current implementations.\n2. Familiarize yourself with the iFrame syntax and the types of service URLs you want to support.\n3. Consider participating in discussions about the code editor feature to understand its viability.\n4. Reach out here if you have questions or need clarity on any points.\n```",
+        "path": "data/issues/summaries/plone/volto/293.json"
+      }
     },
     {
       "id": 1449621795,
@@ -1705,7 +1777,15 @@
       "labels": [
         "42 lvl: moderate",
         "99 tag: backend"
-      ]
+      ],
+      "contributor_summary": {
+        "status": "available",
+        "generated_at": "2026-04-09T17:28:07Z",
+        "source_issue_updated_at": "2024-01-08T11:54:06Z",
+        "model": "gpt-4o-mini",
+        "summary_markdown": "```markdown\n## What this issue is about\nThis issue addresses a gap in the Plone documentation for version 6.x, specifically regarding how to properly add add-ons to the backend. Currently, the only method described is using the `ADDONS` variable, which is not recommended for production environments.\n\n## What needs to be done\nWe need to enhance the documentation to clarify how to add add-ons effectively, using a proper method that is suitable for production. The suggestion includes including specific Docker commands that facilitate this process.\n\n## Helpful background\nThe issue stems from the lack of clear guidance in the [plone-backend container documentation](https://github.com/plone/documentation/blob/6-dev/docs/install/containers/images/backend.md). Community input suggests that users often look for reliable ways to install add-ons in a production setting, thus making accurate documentation essential.\n\n## Good first steps\n1. Review the existing documentation linked above.\n2. Implement the suggested Docker commands for adding add-ons properly.\n3. Ensure any new documentation is easily understandable, especially for newcomers.\n4. Consider adding examples and testing procedures if applicable.\n5. Submit your changes for review to get feedback and make improvements.\n```",
+        "path": "data/issues/summaries/plone/documentation/1360.json"
+      }
     },
     {
       "id": 335082047,
@@ -1729,7 +1809,15 @@
         "21 status: confirmed",
         "31 needs: help",
         "42 lvl: moderate"
-      ]
+      ],
+      "contributor_summary": {
+        "status": "available",
+        "generated_at": "2026-04-09T17:28:11Z",
+        "source_issue_updated_at": "2023-12-12T17:47:34Z",
+        "model": "gpt-4o-mini",
+        "summary_markdown": "```markdown\n## What this issue is about\nThis issue addresses the lack of visual feedback during page transitions in Volto when using React Router. Currently, there is no spinner or loading indicator, which can make the site feel unresponsive, even though navigation is efficient.\n\n## What needs to be done\nTo improve user experience, we should implement a loading spinner that appears during API requests (page transitions). One suggestion is to replace the logo in the toolbar with the spinner while the new page loads. \n\n## Helpful background\nWhen navigating, the application sends API requests without a browser loading indicator, which can confuse users. Adding a visual cue like a spinner is a common way to signal that a page is loading.\n\n## Good first steps\n1. Review React Router documentation to understand how to integrate a loading spinner.\n2. Examine existing components in the Volto codebase for modifying the toolbar.\n3. Consider creating a simple loading spinner animation for this feature.\n4. If you're unsure about any part of the implementation, feel free to ask for clarification in the comments or check for clarity on the issue’s status, as some discussions may have changed over time.\n5. After implementing, ensure to test the changes thoroughly for a smooth user experience.\n```",
+        "path": "data/issues/summaries/plone/volto/182.json"
+      }
     },
     {
       "id": 1882159071,
@@ -2215,10 +2303,10 @@
   "message": null,
   "workflow": {
     "repository": "syslabcom/activity-recognition",
-    "run_id": "24201611231",
-    "run_number": "55",
+    "run_id": "24203975522",
+    "run_number": "56",
     "attempt": "1",
-    "url": "https://github.com/syslabcom/activity-recognition/actions/runs/24201611231",
-    "sha": "1e07bb4ba3af8a08520069ab7655ab8021928dcc"
+    "url": "https://github.com/syslabcom/activity-recognition/actions/runs/24203975522",
+    "sha": "545d41a532ab38141cd1d0635e792cae331679ae"
   }
 }

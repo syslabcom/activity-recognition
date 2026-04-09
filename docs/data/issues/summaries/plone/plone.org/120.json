@@ -1,0 +1,31 @@
+{
+  "version": 1,
+  "status": "success",
+  "generated_at": "2026-04-09T17:27:01Z",
+  "source_issue": {
+    "id": 1706266069,
+    "number": 120,
+    "title": "Fix News Items with broken URLs",
+    "html_url": "https://github.com/plone/plone.org/issues/120",
+    "repository_full_name": "plone/plone.org",
+    "updated_at": "2024-02-16T16:55:14Z",
+    "labels": [
+      "01 type: bug",
+      "42 lvl: moderate"
+    ],
+    "comments": 2
+  },
+  "ai": {
+    "provider": "openai",
+    "model": "gpt-4o-mini"
+  },
+  "summary_markdown": "```markdown\n## What this issue is about\nThis issue focuses on fixing broken URLs in news items on [Plone.org](https://plone.org/news-and-events/news/2002). When clicked, these faulty links create an infinite loop, which may stem from a bulk import error.\n\n## What needs to be done\nWe need to identify and correct the broken URLs, possibly by assigning them new valid names. It's also worth running a more thorough check to find any additional problematic links.\n\n## Helpful background\nThe problem appears to be related to the frontend, and upgrading to a newer version of Volto could be a potential solution. Currently, the site is using Volto version 16.25.0, which is relatively new.\n\n## Good first steps\n1. Review the broken URLs and their current functionality.\n2. Check if the issue persists in the latest Volto version or if it has been resolved in recent updates.\n3. Consider running a query to identify other similar broken links on the site.\n4. Once you've made corrections, please test thoroughly to ensure proper functionality before creating a pull request.\n```",
+  "workflow": {
+    "repository": "syslabcom/activity-recognition",
+    "run_id": "24203975522",
+    "run_number": "56",
+    "attempt": "1",
+    "url": "https://github.com/syslabcom/activity-recognition/actions/runs/24203975522",
+    "sha": "545d41a532ab38141cd1d0635e792cae331679ae"
+  }
+}

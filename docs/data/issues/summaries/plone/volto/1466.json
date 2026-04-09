@@ -1,0 +1,31 @@
+{
+  "version": 1,
+  "status": "success",
+  "generated_at": "2026-04-09T17:27:51Z",
+  "source_issue": {
+    "id": 614748550,
+    "number": 1466,
+    "title": "Unable to edit frontpage in Volto site without \"Manage portal\" permission",
+    "html_url": "https://github.com/plone/volto/issues/1466",
+    "repository_full_name": "plone/volto",
+    "updated_at": "2024-01-14T10:06:30Z",
+    "labels": [
+      "04 type: enhancement",
+      "43 lvl: complex"
+    ],
+    "comments": 5
+  },
+  "ai": {
+    "provider": "openai",
+    "model": "gpt-4o-mini"
+  },
+  "summary_markdown": "```markdown\n## What this issue is about\nThis issue addresses a limitation in Volto where users need the \"Manage portal\" permission to edit the front page of a Plone site. This requirement seems overly strict, given that the front page isn't a standard content type within Plone.\n\n## What needs to be done\nThe goal is to explore a more user-friendly way to handle editing permissions for the front page. This may involve enhancing how the \"layout\" property from Plone interacts with Volto's content serialization process.\n\n## Helpful background\nCurrently, Volto doesn't treat the Plone site root like typical content, which complicates editing. A proposed solution involves modifying the ContentGet service to serialize additional content linked to the \"default_page\" property, allowing it to be displayed alongside the current content.\n\n## Good first steps\n1. Familiarize yourself with Volto and how it interfaces with Plone.\n2. Review the existing discussions and proposals linked above, especially the pull requests mentioned ([PR 944](https://github.com/plone/plone.restapi/pull/944) and [PR 983](https://github.com/plone/plone.restapi/pull/983)).\n3. Consider how the \"layout\" property could be utilized in a way that makes editing more accessible.\n4. Share your ideas or commits in this issue for feedback and collaboration.\n```",
+  "workflow": {
+    "repository": "syslabcom/activity-recognition",
+    "run_id": "24203975522",
+    "run_number": "56",
+    "attempt": "1",
+    "url": "https://github.com/syslabcom/activity-recognition/actions/runs/24203975522",
+    "sha": "545d41a532ab38141cd1d0635e792cae331679ae"
+  }
+}

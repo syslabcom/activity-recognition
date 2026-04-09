@@ -1,0 +1,32 @@
+{
+  "version": 1,
+  "status": "success",
+  "generated_at": "2026-04-09T17:27:35Z",
+  "source_issue": {
+    "id": 515404096,
+    "number": 977,
+    "title": "document port/host backend api overrides",
+    "html_url": "https://github.com/plone/volto/issues/977",
+    "repository_full_name": "plone/volto",
+    "updated_at": "2024-02-04T22:09:06Z",
+    "labels": [
+      "01 type: bug",
+      "33 needs: docs",
+      "42 lvl: moderate"
+    ],
+    "comments": 0
+  },
+  "ai": {
+    "provider": "openai",
+    "model": "gpt-4o-mini"
+  },
+  "summary_markdown": "```markdown\n## What this issue is about\nThis issue addresses challenges in overriding the frontend port, host, and backend API path in Volto during development. Different behaviors are observed when using Volto from its source repository versus a Volto app created with `create-volto-app`. The main issue is that setting the port via command line appears to conflict with configurations in `src/config.js`.\n\n## What needs to be done\nThe goal is to clarify the usage of environment variables like `PORT` and `RAZZLE_API_PATH` for consistent behavior across setups. It may involve updating documentation to help new developers understand how to properly configure their development environment.\n\n## Helpful background\nVolto uses several settings to configure the frontend and backend during development. Environment variables govern this process, but their interaction with configuration files is not behaving as expected, leading to inconsistent results.\n\n## Good first steps\n1. Review the current behavior of `yarn start` with different configurations in both source and `create-volto-app` environments.\n2. Experiment with different combinations of `PORT` and `RAZZLE_API_PATH` to identify reproducible patterns.\n3. Consider how documentation can be improved to guide new contributors effectively.\n4. If you have feedback or questions, feel free to raise them in this issue; collaboration is encouraged as we work through these complexities.\n```",
+  "workflow": {
+    "repository": "syslabcom/activity-recognition",
+    "run_id": "24203975522",
+    "run_number": "56",
+    "attempt": "1",
+    "url": "https://github.com/syslabcom/activity-recognition/actions/runs/24203975522",
+    "sha": "545d41a532ab38141cd1d0635e792cae331679ae"
+  }
+}

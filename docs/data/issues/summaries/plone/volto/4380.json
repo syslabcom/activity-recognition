@@ -1,0 +1,32 @@
+{
+  "version": 1,
+  "status": "success",
+  "generated_at": "2026-04-09T17:27:46Z",
+  "source_issue": {
+    "id": 1575854434,
+    "number": 4380,
+    "title": "Document openExternalLinkInNewTab config.settings",
+    "html_url": "https://github.com/plone/volto/issues/4380",
+    "repository_full_name": "plone/volto",
+    "updated_at": "2024-01-22T07:49:26Z",
+    "labels": [
+      "01 type: bug",
+      "33 needs: docs",
+      "41 lvl: easy"
+    ],
+    "comments": 2
+  },
+  "ai": {
+    "provider": "openai",
+    "model": "gpt-4o-mini"
+  },
+  "summary_markdown": "## What this issue is about\nThis issue focuses on adding documentation for the `openExternalLinkInNewTab` setting in Volto, which is currently not mentioned in the settings reference. The setting controls whether external links open in a new tab or not.\n\n## What needs to be done\nYou need to update the Volto documentation to include the `openExternalLinkInNewTab` setting. Specifically, this involves adding a clear explanation of what the setting does and how to use it in the documentation file located [here](https://github.com/plone/volto/blob/main/docs/source/configuration/settings-reference.md).\n\n## Helpful background\nThe setting is currently defaulted to `false`, meaning external links do not open in a new tab. Proper documentation will help users understand and configure this setting effectively. If you're unsure about the exact details or how to implement it, feel free to reach out for clarification.\n\n## Good first steps\n1. Review the existing [settings-reference](https://6.docs.plone.org/volto/configuration/settings-reference.html) to see the format and style used.\n2. Create a draft for the new documentation section about `openExternalLinkInNewTab`.\n3. Consider checking if there are any related issues or existing comments for more context.\n4. Once you're ready, submit a pull request for review.\n\nFeel free to ask questions if anything is unclear!",
+  "workflow": {
+    "repository": "syslabcom/activity-recognition",
+    "run_id": "24203975522",
+    "run_number": "56",
+    "attempt": "1",
+    "url": "https://github.com/syslabcom/activity-recognition/actions/runs/24203975522",
+    "sha": "545d41a532ab38141cd1d0635e792cae331679ae"
+  }
+}

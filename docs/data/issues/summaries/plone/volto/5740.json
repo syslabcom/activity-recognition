@@ -1,0 +1,31 @@
+{
+  "version": 1,
+  "status": "success",
+  "generated_at": "2026-04-09T17:27:26Z",
+  "source_issue": {
+    "id": 2122507111,
+    "number": 5740,
+    "title": "Add global form state docs",
+    "html_url": "https://github.com/plone/volto/issues/5740",
+    "repository_full_name": "plone/volto",
+    "updated_at": "2024-02-07T08:58:04Z",
+    "labels": [
+      "33 needs: docs",
+      "42 lvl: moderate"
+    ],
+    "comments": 0
+  },
+  "ai": {
+    "provider": "openai",
+    "model": "gpt-4o-mini"
+  },
+  "summary_markdown": "## What this issue is about\nThis issue focuses on creating documentation for the \"global form state\" feature in Volto. Adding clear, user-friendly documentation will help both new and experienced developers understand how to effectively use this feature.\n\n## What needs to be done\nWe need to draft and finalize documentation that explains the global form state in Volto. This includes detailing the functionality and providing examples of its application. Please note that this task is dependent on confirming how the feature works in practice, which is still being explored. \n\n## Helpful background\nThe global form state allows users to manage form data more efficiently across different components. As of now, there’s some ambiguity regarding its specifics. Engaging in discussions or checking related issues might provide additional insights.\n\n## Good first steps\n1. Familiarize yourself with the global form state by exploring existing discussions and code.\n2. Reach out for clarification on any unclear aspects, especially if you find conflicting information.\n3. Start a draft of the documentation, focusing on clear explanations and examples.\n4. Coordinate with others who may be working on similar documentation to ensure consistency. \n\nFeel free to contribute your thoughts or reach out if you need support!",
+  "workflow": {
+    "repository": "syslabcom/activity-recognition",
+    "run_id": "24203975522",
+    "run_number": "56",
+    "attempt": "1",
+    "url": "https://github.com/syslabcom/activity-recognition/actions/runs/24203975522",
+    "sha": "545d41a532ab38141cd1d0635e792cae331679ae"
+  }
+}

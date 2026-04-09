@@ -1,0 +1,31 @@
+{
+  "version": 1,
+  "status": "success",
+  "generated_at": "2026-04-09T17:27:07Z",
+  "source_issue": {
+    "id": 1579972539,
+    "number": 99,
+    "title": "Fix obvious performance issues suggested by Google Lighthouse",
+    "html_url": "https://github.com/plone/plone.org/issues/99",
+    "repository_full_name": "plone/plone.org",
+    "updated_at": "2024-02-16T16:53:42Z",
+    "labels": [
+      "04 type: enhancement",
+      "42 lvl: moderate"
+    ],
+    "comments": 0
+  },
+  "ai": {
+    "provider": "openai",
+    "model": "gpt-4o-mini"
+  },
+  "summary_markdown": "## What this issue is about\nThis issue focuses on improving the performance of the Plone.org website, which currently scores around 75/100 in Google Lighthouse tests. The site excels in accessibility and SEO, but there are clear opportunities for performance enhancements.\n\n## What needs to be done\nYou will work on addressing performance issues highlighted by Google Lighthouse. Key suggestions include:\n- Reducing unused CSS\n- Reducing unused JavaScript\n- Serving static assets with an efficient caching policy\n\n## Helpful background\nGoogle Lighthouse is a tool that assesses web pages for performance, accessibility, and SEO best practices. Performance impacts user experience, so boosting this score can benefit how quickly and efficiently users interact with the Plone.org site.\n\n## Good first steps\n1. Run a Google Lighthouse audit on any Plone.org page to identify specific issues.\n2. Investigate which CSS and JavaScript files are marked as unused; you can find recommendations in the Lighthouse report.\n3. Consider ways to improve caching policies for static assets. \n\nFeel free to ask questions if you're unsure about any of the tasks or concepts—collaboration is encouraged! Remember to document your changes and consider running tests to verify improvements.",
+  "workflow": {
+    "repository": "syslabcom/activity-recognition",
+    "run_id": "24203975522",
+    "run_number": "56",
+    "attempt": "1",
+    "url": "https://github.com/syslabcom/activity-recognition/actions/runs/24203975522",
+    "sha": "545d41a532ab38141cd1d0635e792cae331679ae"
+  }
+}

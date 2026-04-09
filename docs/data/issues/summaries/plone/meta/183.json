@@ -1,0 +1,32 @@
+{
+  "version": 1,
+  "status": "success",
+  "generated_at": "2026-04-09T17:28:25Z",
+  "source_issue": {
+    "id": 1943279558,
+    "number": 183,
+    "title": "Script: remove `pkg_resources` namespace declarations",
+    "html_url": "https://github.com/plone/meta/issues/183",
+    "repository_full_name": "plone/meta",
+    "updated_at": "2023-11-23T17:36:04Z",
+    "labels": [
+      "04 type: enhancement",
+      "12 prio: high",
+      "43 lvl: complex"
+    ],
+    "comments": 3
+  },
+  "ai": {
+    "provider": "openai",
+    "model": "gpt-4o-mini"
+  },
+  "summary_markdown": "```markdown\n## What this issue is about\nThis issue addresses the need to remove `pkg_resources` namespace declarations from `__init__.py` files in the Plone codebase. As Plone evolves, particularly towards version 7, transitioning to native namespaces would enhance compatibility and performance. \n\n## What needs to be done\nWe should develop a script to automate the removal of these deprecated namespace declarations. The goal is to ensure a smoother transition to native namespaces as outlined in the Python Packaging documentation.\n\n## Helpful background\nCurrently, both old and new namespace package styles can coexist, but using `pkg_resources` is outdated and can complicate editable installs. As per the discussions, it's recommended to remove the namespace-level `__init__.py` files since they are no longer necessary following PEP 420 guidelines.\n\n## Good first steps\n1. Familiarize yourself with the [Python Packaging guidelines](https://packaging.python.org/en/latest/guides/packaging-namespace-packages#native-namespace-packages).\n2. Review the current `__init__.py` files in the Plone repository.\n3. Consider contributing to the script's development by proposing a design or a draft.\n4. Join discussions with project maintainers for coordination, particularly regarding testing and release strategies.\n```",
+  "workflow": {
+    "repository": "syslabcom/activity-recognition",
+    "run_id": "24203975522",
+    "run_number": "56",
+    "attempt": "1",
+    "url": "https://github.com/syslabcom/activity-recognition/actions/runs/24203975522",
+    "sha": "545d41a532ab38141cd1d0635e792cae331679ae"
+  }
+}

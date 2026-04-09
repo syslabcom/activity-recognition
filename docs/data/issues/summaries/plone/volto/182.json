@@ -1,0 +1,34 @@
+{
+  "version": 1,
+  "status": "success",
+  "generated_at": "2026-04-09T17:28:11Z",
+  "source_issue": {
+    "id": 335082047,
+    "number": 182,
+    "title": "Page transitions for React Router",
+    "html_url": "https://github.com/plone/volto/issues/182",
+    "repository_full_name": "plone/volto",
+    "updated_at": "2023-12-12T17:47:34Z",
+    "labels": [
+      "04 type: enhancement",
+      "13 prio: normal",
+      "21 status: confirmed",
+      "31 needs: help",
+      "42 lvl: moderate"
+    ],
+    "comments": 2
+  },
+  "ai": {
+    "provider": "openai",
+    "model": "gpt-4o-mini"
+  },
+  "summary_markdown": "```markdown\n## What this issue is about\nThis issue addresses the lack of visual feedback during page transitions in Volto when using React Router. Currently, there is no spinner or loading indicator, which can make the site feel unresponsive, even though navigation is efficient.\n\n## What needs to be done\nTo improve user experience, we should implement a loading spinner that appears during API requests (page transitions). One suggestion is to replace the logo in the toolbar with the spinner while the new page loads. \n\n## Helpful background\nWhen navigating, the application sends API requests without a browser loading indicator, which can confuse users. Adding a visual cue like a spinner is a common way to signal that a page is loading.\n\n## Good first steps\n1. Review React Router documentation to understand how to integrate a loading spinner.\n2. Examine existing components in the Volto codebase for modifying the toolbar.\n3. Consider creating a simple loading spinner animation for this feature.\n4. If you're unsure about any part of the implementation, feel free to ask for clarification in the comments or check for clarity on the issue’s status, as some discussions may have changed over time.\n5. After implementing, ensure to test the changes thoroughly for a smooth user experience.\n```",
+  "workflow": {
+    "repository": "syslabcom/activity-recognition",
+    "run_id": "24203975522",
+    "run_number": "56",
+    "attempt": "1",
+    "url": "https://github.com/syslabcom/activity-recognition/actions/runs/24203975522",
+    "sha": "545d41a532ab38141cd1d0635e792cae331679ae"
+  }
+}
