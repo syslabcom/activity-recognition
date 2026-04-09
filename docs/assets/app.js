@@ -491,10 +491,19 @@ function renderIssueCards(issuePayloads) {
 
         const contributorSummary = issue.contributor_summary;
         if (contributorSummary?.summary_markdown) {
+          const details = document.createElement('details');
+          details.className = 'issue-summary-details';
+
+          const toggle = document.createElement('summary');
+          toggle.className = 'issue-summary-toggle';
+          toggle.textContent = 'See if this is for you';
+
           const summary = document.createElement('div');
           summary.className = 'issue-summary markdown-content';
           summary.innerHTML = renderMarkdown(contributorSummary.summary_markdown);
-          item.append(summary);
+
+          details.append(toggle, summary);
+          item.append(details);
         }
 
         list.append(item);

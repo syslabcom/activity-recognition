@@ -270,6 +270,19 @@ a {
   line-height: 1.55;
 }
 
+.issue-summary-details {
+  margin-top: 0.6rem;
+}
+
+.issue-summary-toggle {
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.issue-summary-details[open] .issue-summary {
+  margin-top: 0.65rem;
+}
+
 .issue-summary h1,
 .issue-summary h2,
 .issue-summary h3,
