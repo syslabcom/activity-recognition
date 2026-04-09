@@ -1,0 +1,32 @@
+{
+  "version": 1,
+  "status": "success",
+  "generated_at": "2026-04-09T12:25:57Z",
+  "source_issue": {
+    "id": 1228581206,
+    "number": 3344,
+    "title": "[docs] Convert glossary lists to definition lists",
+    "html_url": "https://github.com/plone/volto/issues/3344",
+    "repository_full_name": "plone/volto",
+    "updated_at": "2026-01-29T09:59:57Z",
+    "labels": [
+      "04 type: enhancement",
+      "33 needs: docs",
+      "41 lvl: easy"
+    ],
+    "comments": 2
+  },
+  "ai": {
+    "provider": "openai",
+    "model": "gpt-4o-mini"
+  },
+  "summary_markdown": "```markdown\n## What this issue is about\nThis issue focuses on enhancing the Plone documentation by converting local glossary lists into proper definition lists. This change will improve how terms are presented, making the documentation clearer and more effective.\n\n## What needs to be done\n1. Convert the three local glossaries in the [settings reference document](https://github.com/plone/volto/blob/master/docs/source/configuration/settings-reference.md) to definition lists.\n2. Manually sort the items in the definition lists, as they do not support automatic sorting.\n3. Ensure that any terms that are inline literals are surrounded by backticks (`) to render correctly.\n4. Add any new terms to the global Glossary in the [plone/documentation](https://github.com/plone/documentation).\n\n## Helpful background\nDefinition lists are a specific way to display terms and their definitions, making text more organized. The discussion on this issue is relatively straightforward but may require checking the related documents for any updates or changes.\n\n## Good first steps\n1. Familiarize yourself with how to create definition lists by reviewing the [definition list syntax](https://myst-parser.readthedocs.io/en/latest/syntax/optional.html#definition-lists).\n2. Review the current local glossaries in the settings reference document to understand the context.\n3. You can start working on this issue anytime; just dive in and submit a Pull Request (PR) when ready!\n```",
+  "workflow": {
+    "repository": "syslabcom/activity-recognition",
+    "run_id": "24190027102",
+    "run_number": "51",
+    "attempt": "1",
+    "url": "https://github.com/syslabcom/activity-recognition/actions/runs/24190027102",
+    "sha": "e0c67d2638fe739b442ccf9da44e8d59c9d3ed15"
+  }
+}

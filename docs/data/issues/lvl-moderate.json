@@ -1,7 +1,7 @@
 {
   "version": 1,
   "status": "success",
-  "generated_at": "2026-04-09T11:33:16Z",
+  "generated_at": "2026-04-09T12:25:45Z",
   "organization": "plone",
   "state": "open",
   "slug": "lvl-moderate",
@@ -256,7 +256,15 @@
       "labels": [
         "42 lvl: moderate",
         "99 tag: Plone 6.x"
-      ]
+      ],
+      "contributor_summary": {
+        "status": "available",
+        "generated_at": "2026-04-09T12:25:52Z",
+        "source_issue_updated_at": "2026-01-29T13:32:03Z",
+        "model": "gpt-4o-mini",
+        "summary_markdown": "```markdown\n## What this issue is about\nThis issue focuses on migrating content related to \"Queries, Search And Indexing\" from the Plone 5 documentation to Plone 6. Several specific pages need to be addressed, and some duplicate information needs to be merged for clarity.\n\n## What needs to be done\n1. Review the existing Plone 5 documentation to ensure accuracy for Plone 6.\n2. Update, overhaul, or copy content as needed.\n3. Merge the last two pages mentioned that contain overlapping information.\n4. Continuous review and validation of updates will be required.\n\n## Helpful background\nThe content is available in MyST format on the `5.2-myst` branch. It's essential to familiarize yourself with the differences between Plone 5 and Plone 6; relevant migration resources can be found [here](https://6.docs.plone.org/backend/upgrading/).\n\n## Good first steps\n1. Start by reviewing one of the existing Plone 5 documents listed in the issue.\n2. Check the provided resources to understand the changes from Plone 5 to 6.\n3. Consider splitting longer sections into smaller parts for easier handling and quicker review.\n4. Engage with other contributors for support and feedback as you work on your updates!\n```",
+        "path": "data/issues/summaries/plone/documentation/1730.json"
+      }
     },
     {
       "id": 3102884999,
@@ -279,7 +287,15 @@
         "31 needs: help",
         "33 needs: docs",
         "42 lvl: moderate"
-      ]
+      ],
+      "contributor_summary": {
+        "status": "available",
+        "generated_at": "2026-04-09T12:26:33Z",
+        "source_issue_updated_at": "2026-01-14T00:38:42Z",
+        "model": "gpt-4o-mini",
+        "summary_markdown": "```markdown\n## What this issue is about\nThis issue discusses the potential enhancement of having a Storybook build for pull requests (PRs) targeting the `seven` branch in the Volto project. Currently, the Storybook link redirects to the stable version, which limits the ability to preview changes made in PRs.\n\n## What needs to be done\nThere is a need to configure Storybook so that when there’s a PR to the `seven` branch, it does not redirect to the stable version. This involves conditionally disabling the redirect settings, allowing contributors to view the PR’s Storybook preview without being redirected.\n\n## Helpful background\nStorybook is a tool for developing UI components in isolation. The discussion includes different opinions on how the build can be set to preview changes effectively. Some participants have suggested checking configuration settings, but the final steps are still somewhat unclear and may need refinement.\n\n## Good first steps\n1. Review the existing configurations in the `.readthedocs.yaml` and `conf.py` files located in the repository.\n2. Check if the “build PRs” option is enabled in the Read the Docs (RTD) configuration.\n3. Share any insights or findings in the comments and feel free to ask questions if anything is unclear.\n4. Consider discussing with the Volto Team to clarify the next actions during the next meeting.\n```",
+        "path": "data/issues/summaries/plone/volto/7159.json"
+      }
     },
     {
       "id": 3725646159,
@@ -302,7 +318,15 @@
         "33 needs: docs",
         "42 lvl: moderate",
         "discussion"
-      ]
+      ],
+      "contributor_summary": {
+        "status": "available",
+        "generated_at": "2026-04-09T12:27:24Z",
+        "source_issue_updated_at": "2025-12-30T03:08:20Z",
+        "model": "gpt-4o-mini",
+        "summary_markdown": "```markdown\n## What this issue is about\nThis issue focuses on creating clear deprecation policies and guidelines for Volto developers. Currently, Volto documentation lacks a dedicated guide for deprecating components, which is essential for maintaining clarity during development transitions.\n\n## What needs to be done\nWe need to establish a deprecation policy and how-to guide for Volto. Possible approaches include:\n- Adding a \"Deprecation policy\" reference page.\n- Incorporating a \"How to deprecate\" section with practical examples based on existing Plone 6 guidelines.\n \n### Note\nThe discussion is still ongoing about the best structure for these documents. Internal team conversation is necessary before any substantial work begins.\n\n## Helpful background\nIn a programming context, \"deprecation\" refers to marking a feature as outdated while allowing developers time to transition away from it. Clear guidelines help prevent confusion during updates.\n\n## Good first steps\n1. Familiarize yourself with current [Volto documentation](https://6.docs.plone.org/volto/).\n2. Look at the existing [Version policy](https://6.docs.plone.org/volto/contributing/version-policy.html) and [Upgrade Guide](https://6.docs.plone.org/volto/upgrade-guide/index.html).\n3. Monitor any updates in the ongoing conversation in this GitHub issue for direction on how to contribute.\n```",
+        "path": "data/issues/summaries/plone/volto/7696.json"
+      }
     },
     {
       "id": 223134795,
@@ -325,7 +349,15 @@
         "14 prio: low",
         "21 status: confirmed",
         "42 lvl: moderate"
-      ]
+      ],
+      "contributor_summary": {
+        "status": "available",
+        "generated_at": "2026-04-09T12:27:42Z",
+        "source_issue_updated_at": "2025-12-26T16:44:25Z",
+        "model": "gpt-4o-mini",
+        "summary_markdown": "# Live Updates in Plone Volto\n\n## What this issue is about\nThis issue aims to enhance the Plone Volto project by adding live updates, specifically for features like navigation bar updates when a new item is added. The implementation would utilize WebSockets, a technology that enables real-time communication.\n\n## What needs to be done\nThe main task is to implement the live update functionality using WebSockets. However, the discussion around this issue is somewhat unclear, with no specific design guidelines provided yet. It’s advisable to clarify any design preferences with project maintainers before starting.\n\n## Helpful background\nWebSockets allow for full-duplex communication channels over a single connection, making them suitable for live updates. Understanding how Plone Volto currently handles item updates may provide insight for this enhancement.\n\n## Good first steps\n1. **Explore the existing codebase** to understand how updates are currently managed in Plone Volto.\n2. **Check in with the issue author** ([@robgietema](https://github.com/robgietema)) for clarification on design preferences.\n3. **Consider reaching out** to other contributors for mentorship, as shown by the comment from [Shyam-Raghuwanshi](https://github.com/Shyam-Raghuwanshi). \n\nGetting started with discussions is key—don’t hesitate to ask questions!",
+        "path": "data/issues/summaries/plone/volto/8.json"
+      }
     },
     {
       "id": 1366950401,
@@ -1895,10 +1927,10 @@
   "message": null,
   "workflow": {
     "repository": "syslabcom/activity-recognition",
-    "run_id": "24187949813",
-    "run_number": "49",
+    "run_id": "24190027102",
+    "run_number": "51",
     "attempt": "1",
-    "url": "https://github.com/syslabcom/activity-recognition/actions/runs/24187949813",
-    "sha": "a677a65533a97837746ba09b6941207dd90391a4"
+    "url": "https://github.com/syslabcom/activity-recognition/actions/runs/24190027102",
+    "sha": "e0c67d2638fe739b442ccf9da44e8d59c9d3ed15"
   }
 }

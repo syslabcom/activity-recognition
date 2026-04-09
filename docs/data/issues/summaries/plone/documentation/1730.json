@@ -1,0 +1,31 @@
+{
+  "version": 1,
+  "status": "success",
+  "generated_at": "2026-04-09T12:25:52Z",
+  "source_issue": {
+    "id": 2562726797,
+    "number": 1730,
+    "title": "Migrate content from v5 \"Queries, Search And Indexing\"",
+    "html_url": "https://github.com/plone/documentation/issues/1730",
+    "repository_full_name": "plone/documentation",
+    "updated_at": "2026-01-29T13:32:03Z",
+    "labels": [
+      "42 lvl: moderate",
+      "99 tag: Plone 6.x"
+    ],
+    "comments": 5
+  },
+  "ai": {
+    "provider": "openai",
+    "model": "gpt-4o-mini"
+  },
+  "summary_markdown": "```markdown\n## What this issue is about\nThis issue focuses on migrating content related to \"Queries, Search And Indexing\" from the Plone 5 documentation to Plone 6. Several specific pages need to be addressed, and some duplicate information needs to be merged for clarity.\n\n## What needs to be done\n1. Review the existing Plone 5 documentation to ensure accuracy for Plone 6.\n2. Update, overhaul, or copy content as needed.\n3. Merge the last two pages mentioned that contain overlapping information.\n4. Continuous review and validation of updates will be required.\n\n## Helpful background\nThe content is available in MyST format on the `5.2-myst` branch. It's essential to familiarize yourself with the differences between Plone 5 and Plone 6; relevant migration resources can be found [here](https://6.docs.plone.org/backend/upgrading/).\n\n## Good first steps\n1. Start by reviewing one of the existing Plone 5 documents listed in the issue.\n2. Check the provided resources to understand the changes from Plone 5 to 6.\n3. Consider splitting longer sections into smaller parts for easier handling and quicker review.\n4. Engage with other contributors for support and feedback as you work on your updates!\n```",
+  "workflow": {
+    "repository": "syslabcom/activity-recognition",
+    "run_id": "24190027102",
+    "run_number": "51",
+    "attempt": "1",
+    "url": "https://github.com/syslabcom/activity-recognition/actions/runs/24190027102",
+    "sha": "e0c67d2638fe739b442ccf9da44e8d59c9d3ed15"
+  }
+}

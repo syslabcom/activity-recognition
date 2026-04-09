@@ -1,0 +1,33 @@
+{
+  "version": 1,
+  "status": "success",
+  "generated_at": "2026-04-09T12:26:03Z",
+  "source_issue": {
+    "id": 2984135556,
+    "number": 6967,
+    "title": "Move videos from the User Manual to a CDN or YouTube",
+    "html_url": "https://github.com/plone/volto/issues/6967",
+    "repository_full_name": "plone/volto",
+    "updated_at": "2026-01-28T07:57:48Z",
+    "labels": [
+      "04 type: enhancement",
+      "31 needs: help",
+      "43 lvl: complex",
+      "06 type: plip task"
+    ],
+    "comments": 4
+  },
+  "ai": {
+    "provider": "openai",
+    "model": "gpt-4o-mini"
+  },
+  "summary_markdown": "## What this issue is about\nThis issue discusses moving videos from the Plone user manual to an external hosting solution, like a Content Delivery Network (CDN) or YouTube. This is to reduce the repository's size, which currently contains videos that contribute significant disk usage.\n\n## What needs to be done\n1. **Audit** existing video assets in the documentation.\n2. **Select** a hosting option (CDN or YouTube).\n3. **Update** all references to the videos in the documentation.\n4. **Document** the recommended approach for future video uploads.\n\n## Helpful background\nThe current video storage contributes about 8MB to the repository size, which can hinder development. This issue is marked as a complex PLIP (Product Life-cycle Improvement Proposal) task, meaning it requires careful coordination among various teams within Plone, including Documentation, Admin, and Marketing.\n\n## Good first steps\n1. **Familiarize yourself** with Plone and its documentation systems.\n2. **Join discussions** with other contributors to understand hosting preferences or constraints.\n3. **Explore the GitHub link** on removing large files from history to grasp the complexities involved.\n4. **Be prepared** for potential coordination efforts if you plan to contribute.",
+  "workflow": {
+    "repository": "syslabcom/activity-recognition",
+    "run_id": "24190027102",
+    "run_number": "51",
+    "attempt": "1",
+    "url": "https://github.com/syslabcom/activity-recognition/actions/runs/24190027102",
+    "sha": "e0c67d2638fe739b442ccf9da44e8d59c9d3ed15"
+  }
+}

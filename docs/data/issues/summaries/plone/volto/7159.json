@@ -1,0 +1,33 @@
+{
+  "version": 1,
+  "status": "success",
+  "generated_at": "2026-04-09T12:26:33Z",
+  "source_issue": {
+    "id": 3102884999,
+    "number": 7159,
+    "title": "Build Storybook for a PR preview on `seven` branch",
+    "html_url": "https://github.com/plone/volto/issues/7159",
+    "repository_full_name": "plone/volto",
+    "updated_at": "2026-01-14T00:38:42Z",
+    "labels": [
+      "04 type: enhancement",
+      "31 needs: help",
+      "33 needs: docs",
+      "42 lvl: moderate"
+    ],
+    "comments": 8
+  },
+  "ai": {
+    "provider": "openai",
+    "model": "gpt-4o-mini"
+  },
+  "summary_markdown": "```markdown\n## What this issue is about\nThis issue discusses the potential enhancement of having a Storybook build for pull requests (PRs) targeting the `seven` branch in the Volto project. Currently, the Storybook link redirects to the stable version, which limits the ability to preview changes made in PRs.\n\n## What needs to be done\nThere is a need to configure Storybook so that when there’s a PR to the `seven` branch, it does not redirect to the stable version. This involves conditionally disabling the redirect settings, allowing contributors to view the PR’s Storybook preview without being redirected.\n\n## Helpful background\nStorybook is a tool for developing UI components in isolation. The discussion includes different opinions on how the build can be set to preview changes effectively. Some participants have suggested checking configuration settings, but the final steps are still somewhat unclear and may need refinement.\n\n## Good first steps\n1. Review the existing configurations in the `.readthedocs.yaml` and `conf.py` files located in the repository.\n2. Check if the “build PRs” option is enabled in the Read the Docs (RTD) configuration.\n3. Share any insights or findings in the comments and feel free to ask questions if anything is unclear.\n4. Consider discussing with the Volto Team to clarify the next actions during the next meeting.\n```",
+  "workflow": {
+    "repository": "syslabcom/activity-recognition",
+    "run_id": "24190027102",
+    "run_number": "51",
+    "attempt": "1",
+    "url": "https://github.com/syslabcom/activity-recognition/actions/runs/24190027102",
+    "sha": "e0c67d2638fe739b442ccf9da44e8d59c9d3ed15"
+  }
+}

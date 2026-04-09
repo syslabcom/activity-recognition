@@ -1,7 +1,7 @@
 {
   "version": 1,
   "status": "success",
-  "generated_at": "2026-04-09T11:33:16Z",
+  "generated_at": "2026-04-09T12:25:45Z",
   "organization": "plone",
   "state": "open",
   "slug": "lvl-complex",
@@ -362,7 +362,15 @@
         "31 needs: help",
         "43 lvl: complex",
         "06 type: plip task"
-      ]
+      ],
+      "contributor_summary": {
+        "status": "available",
+        "generated_at": "2026-04-09T12:26:03Z",
+        "source_issue_updated_at": "2026-01-28T07:57:48Z",
+        "model": "gpt-4o-mini",
+        "summary_markdown": "## What this issue is about\nThis issue discusses moving videos from the Plone user manual to an external hosting solution, like a Content Delivery Network (CDN) or YouTube. This is to reduce the repository's size, which currently contains videos that contribute significant disk usage.\n\n## What needs to be done\n1. **Audit** existing video assets in the documentation.\n2. **Select** a hosting option (CDN or YouTube).\n3. **Update** all references to the videos in the documentation.\n4. **Document** the recommended approach for future video uploads.\n\n## Helpful background\nThe current video storage contributes about 8MB to the repository size, which can hinder development. This issue is marked as a complex PLIP (Product Life-cycle Improvement Proposal) task, meaning it requires careful coordination among various teams within Plone, including Documentation, Admin, and Marketing.\n\n## Good first steps\n1. **Familiarize yourself** with Plone and its documentation systems.\n2. **Join discussions** with other contributors to understand hosting preferences or constraints.\n3. **Explore the GitHub link** on removing large files from history to grasp the complexities involved.\n4. **Be prepared** for potential coordination efforts if you plan to contribute.",
+        "path": "data/issues/summaries/plone/volto/6967.json"
+      }
     },
     {
       "id": 3840168551,
@@ -384,7 +392,15 @@
       ],
       "labels": [
         "43 lvl: complex"
-      ]
+      ],
+      "contributor_summary": {
+        "status": "available",
+        "generated_at": "2026-04-09T12:26:22Z",
+        "source_issue_updated_at": "2026-01-23T22:16:41Z",
+        "model": "gpt-4o-mini",
+        "summary_markdown": "## What this issue is about\nThis issue discusses the need to unpin the Sphinx dependency from `sphinx<9` in the `requirements.txt` file. The current pinning is a temporary solution to address an underlying issue that needs resolution. The ultimate goal is to finalize and release Plone Sphinx Theme v2.0.0, removing the dependency on the Sphinx Book Theme.\n\n## What needs to be done\nThe primary task is to remove the version restriction for Sphinx in the `requirements.txt` file once the related work on Plone Sphinx Theme v2.0.0 is complete. However, it's important to note that the specifics of what remains to be done and any contributing guidelines are currently unclear.\n\n## Helpful background\nSphinx is a documentation generator, and pinning it helps avoid potential compatibility issues. The Sphinx Book Theme is an additional theme that complicates the current setup, making it essential to address it to move forward.\n\n## Good first steps\n1. Familiarize yourself with Sphinx and the Plone Sphinx Theme.\n2. Check for current development branches or documentation related to this issue.\n3. Engage with existing discussions for context, but be prepared that the requirements may shift as this is a complex area with an ambiguous roadmap. \n\nFeel free to reach out if you have questions or need guidance!",
+        "path": "data/issues/summaries/plone/documentation/2037.json"
+      }
     },
     {
       "id": 3532029184,
@@ -407,7 +423,15 @@
       "labels": [
         "04 type: enhancement",
         "43 lvl: complex"
-      ]
+      ],
+      "contributor_summary": {
+        "status": "available",
+        "generated_at": "2026-04-09T12:26:57Z",
+        "source_issue_updated_at": "2026-01-07T10:15:16Z",
+        "model": "gpt-4o-mini",
+        "summary_markdown": "## What this issue is about\nThis issue focuses on implementing the view for the Listing block in the Plone Volto project. It is designated as part of a more complex future project known as \"Seven.\"\n\n## What needs to be done\nThe specific tasks for this issue are currently unclear and may involve a particular variation of the Listing block. There are indications that the author, [ebrehault](https://github.com/ebrehault), is already working on it, so coordination with them is essential to avoid duplicated effort.\n\n## Helpful background\nDue to the complexity labeled in this issue, it may not be suitable for first-time contributors. Discussions have pointed out that there are relevant existing issues (e.g., #4478 on listing/teaser styles), but details about these connections remain vague. Familiarity with the overall project and its guidelines is recommended.\n\n## Good first steps\nIf you're interested in contributing:\n1. Review the [First-time contributors](https://6.docs.plone.org/contributing/first-time.html) guidelines.\n2. Familiarize yourself with [Contributing to Plone](https://6.docs.plone.org/contributing/index.html) and [Contributing to Volto](https://6.docs.plone.org/contributing/volto.html).\n3. Consider reaching out to [ebrehault](https://github.com/ebrehault) for insights before proceeding, as clear tasks for this issue may need further clarification.",
+        "path": "data/issues/summaries/plone/volto/7527.json"
+      }
     },
     {
       "id": 3529603774,
@@ -429,7 +453,15 @@
         "01 type: bug",
         "43 lvl: complex",
         "30 needs: triage"
-      ]
+      ],
+      "contributor_summary": {
+        "status": "available",
+        "generated_at": "2026-04-09T12:27:02Z",
+        "source_issue_updated_at": "2026-01-07T08:35:28Z",
+        "model": "gpt-4o-mini",
+        "summary_markdown": "```markdown\n## What this issue is about\nThis issue focuses on making the API suffix in Volto easily configurable via environment variables. Currently, the default suffix (`/++api++`) is hardcoded, which complicates integration with alternative backends like [Nick](https://nickcms.org) or [Guillotina](https://plone.org/why-plone/plone-ecosystem/guillotina).\n\n## What needs to be done\nThe goal is to implement a way for developers to set the API suffix through an environment variable (e.g., `PLONE_API_SUFFIX`). This would allow for easier customization and flexibility when using different Plone RestAPI-compatible backends.\n\n## Helpful background\n- Now, to use backends that don’t rely on the `++api++` prefix, a workaround is needed, such as defining a custom `PloneClient`. \n- There is an existing variable, `RAZZLE_LEGACY_TRAVERSE`, for similar purposes in Volto but it’s unclear if it fully meets the needs for the `@plone/client`.\n\n## Good first steps\n1. Review the current implementation in `@plone/client` to understand how it handles API calls.\n2. Explore how `RAZZLE_LEGACY_TRAVERSE` functions as a reference.\n3. Create a prototype for setting the API suffix through an environment variable.\n4. Make sure to check the [First-Time Contributors Guide](https://6.docs.plone.org/contributing/first-time.html) for guidance on your contributions.\n5. Consider documenting your changes and coordinate with other contributors as needed.\n```",
+        "path": "data/issues/summaries/plone/volto/7519.json"
+      }
     },
     {
       "id": 3279888232,
@@ -449,7 +481,15 @@
       "assignees": [],
       "labels": [
         "43 lvl: complex"
-      ]
+      ],
+      "contributor_summary": {
+        "status": "available",
+        "generated_at": "2026-04-09T12:27:07Z",
+        "source_issue_updated_at": "2026-01-07T08:34:59Z",
+        "model": "gpt-4o-mini",
+        "summary_markdown": "## What this issue is about\nThis issue focuses on implementing non-schema-driven control panels in the Plone Volto project. Control panels are settings interfaces that allow users to manage configuration options without being tied to specific data models (schemas). This could enhance flexibility and user customization.\n\n## What needs to be done\nYou will need to design and implement these control panels to manage different aspects, such as add-ons, users, and groups. Since the issue is open and there is limited detail and no specific guidance in the comments, you might encounter some ambiguity in requirements.\n\n## Helpful background\nUnderstanding control panels in Plone is important for this task. They allow administrators to adjust settings easily. Non-schema-driven panels can provide a more fluid user experience by enabling custom configurations without strict data structures.\n\n## Good first steps\n1. **Familiarize yourself with existing control panels** in the Volto codebase to see how they are currently structured.\n2. **Review the existing documentation** on Plone and Volto to better understand implementation context.\n3. **Reach out to the author, [ksuess](https://github.com/ksuess)**, or the community for clarification on any uncertainties.\n4. **Consider drafting a proposal** for your approach before starting implementation, as this could help clarify expectations.",
+        "path": "data/issues/summaries/plone/volto/7258.json"
+      }
     },
     {
       "id": 623198285,
@@ -473,7 +513,15 @@
         "04 type: enhancement",
         "43 lvl: complex",
         "99 tag: sprint"
-      ]
+      ],
+      "contributor_summary": {
+        "status": "available",
+        "generated_at": "2026-04-09T12:27:12Z",
+        "source_issue_updated_at": "2026-01-07T08:34:47Z",
+        "model": "gpt-4o-mini",
+        "summary_markdown": "```markdown\n## What this issue is about\nThis issue focuses on enhancing Volto by introducing a way to insert document metadata into text blocks. The goal is to allow users to easily display metadata, such as publication dates or tags, within content areas. This could greatly improve how dynamic pages are built.\n\n## What needs to be done\nThe enhancement involves creating a new block type or adding a button in the text block that pulls content from metadata fields. Discussions indicate that integrating this feature into the core would be beneficial, although there are some reservations about adding extra blocks.\n\n## Helpful background\nCurrent discussions mention existing add-ons like [volto-metadata-block](https://github.com/eea/volto-metadata-block) and [volto-slate-metadata-mentions](https://github.com/eea/volto-slate-metadata-mentions), which provide similar features. However, there is a strong sentiment that having metadata functionalities in core would simplify the user experience.\n\n## Good first steps\n1. Familiarize yourself with the existing add-ons mentioned for additional context.\n2. Review the current implementation of text blocks in Volto.\n3. Discuss with other contributors about how best to integrate this feature into the core.\n4. Consider starting by drafting a proposal or mockups for the new block/button functionality.\n```",
+        "path": "data/issues/summaries/plone/volto/1516.json"
+      }
     },
     {
       "id": 1498083485,
@@ -498,7 +546,15 @@
         "33 needs: docs",
         "43 lvl: complex",
         "99 tag: Plone 6.x"
-      ]
+      ],
+      "contributor_summary": {
+        "status": "available",
+        "generated_at": "2026-04-09T12:27:19Z",
+        "source_issue_updated_at": "2026-01-04T08:11:43Z",
+        "model": "gpt-4o-mini",
+        "summary_markdown": "```markdown\n## What this issue is about\nThis issue involves enhancing the Plone documentation by adding detailed explanations of the default behaviors within the system. Current descriptions may be too brief, and there's discussion about possibly separating these details from the general overview of how to use behaviors.\n\n## What needs to be done\nYou will need to write comprehensive descriptions for each of the default behaviors in Plone, explaining what they do and their significance. It's important to ensure these explanations are clear and accessible, especially for those new to Plone.\n\n## Helpful background\nBehaviors in Plone are a way to extend the functionality of content types. This issue is aimed at improving understanding of these features. However, the discussion indicates that a deep understanding of these behaviors is required, as it can be a complex topic.\n\n## Good first steps\n1. Familiarize yourself with Plone's current documentation on behaviors.\n2. Read more about contributing to Plone by following [First-time contributors](https://6.docs.plone.org/contributing/first-time.html).\n3. Reach out for feedback or clarification on any points that seem ambiguous or unclear.\n4. Begin drafting your detailed descriptions for the behaviors once you feel comfortable with the material.\n```",
+        "path": "data/issues/summaries/plone/documentation/1380.json"
+      }
     },
     {
       "id": 1708447709,
@@ -523,7 +579,15 @@
         "01 type: bug",
         "43 lvl: complex",
         "99 tag: Plone 6.x"
-      ]
+      ],
+      "contributor_summary": {
+        "status": "available",
+        "generated_at": "2026-04-09T12:27:30Z",
+        "source_issue_updated_at": "2025-12-28T22:40:00Z",
+        "model": "gpt-4o-mini",
+        "summary_markdown": "```markdown\n## What this issue is about\nThis issue focuses on creating 301 redirects from `docs.plone.org` to `6.docs.plone.org` to help guide users and search engines to the updated documentation. It aims to deal with existing links that might still reference the old documentation.\n\n## What needs to be done\nWe need to set up 301 redirects for various URLs to ensure users are sent to the correct pages on `6.docs.plone.org`. There is also a need to track any resulting 404 errors so we can refine our redirects based on real user data.\n\n## Helpful background\nRedirects are essential for maintaining user experience and SEO when content is moved. A 301 redirect signifies that a page has permanently moved to a new location. Current discussions highlight the importance of tracking which URLs generate 404 errors after the redirects are implemented.\n\n## Good first steps\n1. Familiarize yourself with the current redirects and the URLs needed.\n2. Explore existing discussions for insights on the tracking strategy using Matomo.\n3. Consider testing how to generate 404 errors for URLs that aren't redirected, to gather tracking data effectively.\n4. Collaborate with the assigned contributors, such as @fredvd and @polyester, for guidance on implementation.\n```",
+        "path": "data/issues/summaries/plone/documentation/1496.json"
+      }
     },
     {
       "id": 2637729612,
@@ -1355,10 +1419,10 @@
   "message": null,
   "workflow": {
     "repository": "syslabcom/activity-recognition",
-    "run_id": "24187949813",
-    "run_number": "49",
+    "run_id": "24190027102",
+    "run_number": "51",
     "attempt": "1",
-    "url": "https://github.com/syslabcom/activity-recognition/actions/runs/24187949813",
-    "sha": "a677a65533a97837746ba09b6941207dd90391a4"
+    "url": "https://github.com/syslabcom/activity-recognition/actions/runs/24190027102",
+    "sha": "e0c67d2638fe739b442ccf9da44e8d59c9d3ed15"
   }
 }

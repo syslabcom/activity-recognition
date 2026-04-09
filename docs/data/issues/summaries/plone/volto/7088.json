@@ -1,0 +1,33 @@
+{
+  "version": 1,
+  "status": "success",
+  "generated_at": "2026-04-09T12:26:27Z",
+  "source_issue": {
+    "id": 3073749519,
+    "number": 7088,
+    "title": "unRegisterSlotComponent is in the code, but in the docs it is unregisterSlotComponent",
+    "html_url": "https://github.com/plone/volto/issues/7088",
+    "repository_full_name": "plone/volto",
+    "updated_at": "2026-01-19T08:12:26Z",
+    "labels": [
+      "01 type: bug",
+      "33 needs: docs",
+      "41 lvl: easy",
+      "30 needs: triage"
+    ],
+    "comments": 5
+  },
+  "ai": {
+    "provider": "openai",
+    "model": "gpt-4o-mini"
+  },
+  "summary_markdown": "## What this issue is about\nThis issue addresses a discrepancy in the naming of a function in the Volto codebase. The function is referred to as `unRegisterSlotComponent` in the code, but the correct name should be `unregisterSlotComponent`, as \"un\" should not have an uppercase \"R.\"\n\n## What needs to be done\nWe need to standardize the naming of this function to `unregisterSlotComponent` throughout the codebase. This includes updating any documentation that mentions the incorrect name.\n\n## Helpful background\nCurrently, there is an inconsistency in the references to this function within the code and documentation. The discussion around this issue confirms that \"unregister\" is the grammatically correct term. There may still be some ambiguity in the implementation and scope, so clarity is essential.\n\n## Good first steps\n1. Search the codebase for all instances of `unRegisterSlotComponent` and replace them with `unregisterSlotComponent`.\n2. Review the documentation for any mentions of the incorrect term and update those as well.\n3. After making changes, run any relevant tests to ensure everything works as expected.\n4. Document your changes in a pull request and request a review from the maintainers.\n\nIf you're new, please review the [First-time contributors guide](https://6.docs.plone.org/contributing/first-time.html) to familiarize yourself with the process!",
+  "workflow": {
+    "repository": "syslabcom/activity-recognition",
+    "run_id": "24190027102",
+    "run_number": "51",
+    "attempt": "1",
+    "url": "https://github.com/syslabcom/activity-recognition/actions/runs/24190027102",
+    "sha": "e0c67d2638fe739b442ccf9da44e8d59c9d3ed15"
+  }
+}

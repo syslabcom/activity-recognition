@@ -1,0 +1,33 @@
+{
+  "version": 1,
+  "status": "success",
+  "generated_at": "2026-04-09T12:27:24Z",
+  "source_issue": {
+    "id": 3725646159,
+    "number": 7696,
+    "title": "Add deprecation policy or guide to documentation",
+    "html_url": "https://github.com/plone/volto/issues/7696",
+    "repository_full_name": "plone/volto",
+    "updated_at": "2025-12-30T03:08:20Z",
+    "labels": [
+      "04 type: enhancement",
+      "33 needs: docs",
+      "42 lvl: moderate",
+      "discussion"
+    ],
+    "comments": 4
+  },
+  "ai": {
+    "provider": "openai",
+    "model": "gpt-4o-mini"
+  },
+  "summary_markdown": "```markdown\n## What this issue is about\nThis issue focuses on creating clear deprecation policies and guidelines for Volto developers. Currently, Volto documentation lacks a dedicated guide for deprecating components, which is essential for maintaining clarity during development transitions.\n\n## What needs to be done\nWe need to establish a deprecation policy and how-to guide for Volto. Possible approaches include:\n- Adding a \"Deprecation policy\" reference page.\n- Incorporating a \"How to deprecate\" section with practical examples based on existing Plone 6 guidelines.\n \n### Note\nThe discussion is still ongoing about the best structure for these documents. Internal team conversation is necessary before any substantial work begins.\n\n## Helpful background\nIn a programming context, \"deprecation\" refers to marking a feature as outdated while allowing developers time to transition away from it. Clear guidelines help prevent confusion during updates.\n\n## Good first steps\n1. Familiarize yourself with current [Volto documentation](https://6.docs.plone.org/volto/).\n2. Look at the existing [Version policy](https://6.docs.plone.org/volto/contributing/version-policy.html) and [Upgrade Guide](https://6.docs.plone.org/volto/upgrade-guide/index.html).\n3. Monitor any updates in the ongoing conversation in this GitHub issue for direction on how to contribute.\n```",
+  "workflow": {
+    "repository": "syslabcom/activity-recognition",
+    "run_id": "24190027102",
+    "run_number": "51",
+    "attempt": "1",
+    "url": "https://github.com/syslabcom/activity-recognition/actions/runs/24190027102",
+    "sha": "e0c67d2638fe739b442ccf9da44e8d59c9d3ed15"
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "version": 1,
+  "status": "success",
+  "generated_at": "2026-04-09T12:27:12Z",
+  "source_issue": {
+    "id": 623198285,
+    "number": 1516,
+    "title": "Metadata block or easy way to insert document metadata inside text block",
+    "html_url": "https://github.com/plone/volto/issues/1516",
+    "repository_full_name": "plone/volto",
+    "updated_at": "2026-01-07T08:34:47Z",
+    "labels": [
+      "04 type: enhancement",
+      "43 lvl: complex",
+      "99 tag: sprint"
+    ],
+    "comments": 6
+  },
+  "ai": {
+    "provider": "openai",
+    "model": "gpt-4o-mini"
+  },
+  "summary_markdown": "```markdown\n## What this issue is about\nThis issue focuses on enhancing Volto by introducing a way to insert document metadata into text blocks. The goal is to allow users to easily display metadata, such as publication dates or tags, within content areas. This could greatly improve how dynamic pages are built.\n\n## What needs to be done\nThe enhancement involves creating a new block type or adding a button in the text block that pulls content from metadata fields. Discussions indicate that integrating this feature into the core would be beneficial, although there are some reservations about adding extra blocks.\n\n## Helpful background\nCurrent discussions mention existing add-ons like [volto-metadata-block](https://github.com/eea/volto-metadata-block) and [volto-slate-metadata-mentions](https://github.com/eea/volto-slate-metadata-mentions), which provide similar features. However, there is a strong sentiment that having metadata functionalities in core would simplify the user experience.\n\n## Good first steps\n1. Familiarize yourself with the existing add-ons mentioned for additional context.\n2. Review the current implementation of text blocks in Volto.\n3. Discuss with other contributors about how best to integrate this feature into the core.\n4. Consider starting by drafting a proposal or mockups for the new block/button functionality.\n```",
+  "workflow": {
+    "repository": "syslabcom/activity-recognition",
+    "run_id": "24190027102",
+    "run_number": "51",
+    "attempt": "1",
+    "url": "https://github.com/syslabcom/activity-recognition/actions/runs/24190027102",
+    "sha": "e0c67d2638fe739b442ccf9da44e8d59c9d3ed15"
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "version": 1,
+  "status": "success",
+  "generated_at": "2026-04-09T12:27:42Z",
+  "source_issue": {
+    "id": 223134795,
+    "number": 8,
+    "title": "Live updates",
+    "html_url": "https://github.com/plone/volto/issues/8",
+    "repository_full_name": "plone/volto",
+    "updated_at": "2025-12-26T16:44:25Z",
+    "labels": [
+      "04 type: enhancement",
+      "14 prio: low",
+      "21 status: confirmed",
+      "42 lvl: moderate"
+    ],
+    "comments": 1
+  },
+  "ai": {
+    "provider": "openai",
+    "model": "gpt-4o-mini"
+  },
+  "summary_markdown": "# Live Updates in Plone Volto\n\n## What this issue is about\nThis issue aims to enhance the Plone Volto project by adding live updates, specifically for features like navigation bar updates when a new item is added. The implementation would utilize WebSockets, a technology that enables real-time communication.\n\n## What needs to be done\nThe main task is to implement the live update functionality using WebSockets. However, the discussion around this issue is somewhat unclear, with no specific design guidelines provided yet. It’s advisable to clarify any design preferences with project maintainers before starting.\n\n## Helpful background\nWebSockets allow for full-duplex communication channels over a single connection, making them suitable for live updates. Understanding how Plone Volto currently handles item updates may provide insight for this enhancement.\n\n## Good first steps\n1. **Explore the existing codebase** to understand how updates are currently managed in Plone Volto.\n2. **Check in with the issue author** ([@robgietema](https://github.com/robgietema)) for clarification on design preferences.\n3. **Consider reaching out** to other contributors for mentorship, as shown by the comment from [Shyam-Raghuwanshi](https://github.com/Shyam-Raghuwanshi). \n\nGetting started with discussions is key—don’t hesitate to ask questions!",
+  "workflow": {
+    "repository": "syslabcom/activity-recognition",
+    "run_id": "24190027102",
+    "run_number": "51",
+    "attempt": "1",
+    "url": "https://github.com/syslabcom/activity-recognition/actions/runs/24190027102",
+    "sha": "e0c67d2638fe739b442ccf9da44e8d59c9d3ed15"
+  }
+}

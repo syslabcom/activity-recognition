@@ -1,0 +1,32 @@
+{
+  "version": 1,
+  "status": "success",
+  "generated_at": "2026-04-09T12:27:02Z",
+  "source_issue": {
+    "id": 3529603774,
+    "number": 7519,
+    "title": "[Seven] - Make APISUFFIX configurable via environment variables",
+    "html_url": "https://github.com/plone/volto/issues/7519",
+    "repository_full_name": "plone/volto",
+    "updated_at": "2026-01-07T08:35:28Z",
+    "labels": [
+      "01 type: bug",
+      "43 lvl: complex",
+      "30 needs: triage"
+    ],
+    "comments": 3
+  },
+  "ai": {
+    "provider": "openai",
+    "model": "gpt-4o-mini"
+  },
+  "summary_markdown": "```markdown\n## What this issue is about\nThis issue focuses on making the API suffix in Volto easily configurable via environment variables. Currently, the default suffix (`/++api++`) is hardcoded, which complicates integration with alternative backends like [Nick](https://nickcms.org) or [Guillotina](https://plone.org/why-plone/plone-ecosystem/guillotina).\n\n## What needs to be done\nThe goal is to implement a way for developers to set the API suffix through an environment variable (e.g., `PLONE_API_SUFFIX`). This would allow for easier customization and flexibility when using different Plone RestAPI-compatible backends.\n\n## Helpful background\n- Now, to use backends that don’t rely on the `++api++` prefix, a workaround is needed, such as defining a custom `PloneClient`. \n- There is an existing variable, `RAZZLE_LEGACY_TRAVERSE`, for similar purposes in Volto but it’s unclear if it fully meets the needs for the `@plone/client`.\n\n## Good first steps\n1. Review the current implementation in `@plone/client` to understand how it handles API calls.\n2. Explore how `RAZZLE_LEGACY_TRAVERSE` functions as a reference.\n3. Create a prototype for setting the API suffix through an environment variable.\n4. Make sure to check the [First-Time Contributors Guide](https://6.docs.plone.org/contributing/first-time.html) for guidance on your contributions.\n5. Consider documenting your changes and coordinate with other contributors as needed.\n```",
+  "workflow": {
+    "repository": "syslabcom/activity-recognition",
+    "run_id": "24190027102",
+    "run_number": "51",
+    "attempt": "1",
+    "url": "https://github.com/syslabcom/activity-recognition/actions/runs/24190027102",
+    "sha": "e0c67d2638fe739b442ccf9da44e8d59c9d3ed15"
+  }
+}

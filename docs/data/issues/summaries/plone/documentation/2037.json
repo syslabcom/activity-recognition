@@ -1,0 +1,30 @@
+{
+  "version": 1,
+  "status": "success",
+  "generated_at": "2026-04-09T12:26:22Z",
+  "source_issue": {
+    "id": 3840168551,
+    "number": 2037,
+    "title": "Unpin sphinx in requirements.txt",
+    "html_url": "https://github.com/plone/documentation/issues/2037",
+    "repository_full_name": "plone/documentation",
+    "updated_at": "2026-01-23T22:16:41Z",
+    "labels": [
+      "43 lvl: complex"
+    ],
+    "comments": 4
+  },
+  "ai": {
+    "provider": "openai",
+    "model": "gpt-4o-mini"
+  },
+  "summary_markdown": "## What this issue is about\nThis issue discusses the need to unpin the Sphinx dependency from `sphinx<9` in the `requirements.txt` file. The current pinning is a temporary solution to address an underlying issue that needs resolution. The ultimate goal is to finalize and release Plone Sphinx Theme v2.0.0, removing the dependency on the Sphinx Book Theme.\n\n## What needs to be done\nThe primary task is to remove the version restriction for Sphinx in the `requirements.txt` file once the related work on Plone Sphinx Theme v2.0.0 is complete. However, it's important to note that the specifics of what remains to be done and any contributing guidelines are currently unclear.\n\n## Helpful background\nSphinx is a documentation generator, and pinning it helps avoid potential compatibility issues. The Sphinx Book Theme is an additional theme that complicates the current setup, making it essential to address it to move forward.\n\n## Good first steps\n1. Familiarize yourself with Sphinx and the Plone Sphinx Theme.\n2. Check for current development branches or documentation related to this issue.\n3. Engage with existing discussions for context, but be prepared that the requirements may shift as this is a complex area with an ambiguous roadmap. \n\nFeel free to reach out if you have questions or need guidance!",
+  "workflow": {
+    "repository": "syslabcom/activity-recognition",
+    "run_id": "24190027102",
+    "run_number": "51",
+    "attempt": "1",
+    "url": "https://github.com/syslabcom/activity-recognition/actions/runs/24190027102",
+    "sha": "e0c67d2638fe739b442ccf9da44e8d59c9d3ed15"
+  }
+}

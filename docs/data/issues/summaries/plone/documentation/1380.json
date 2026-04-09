@@ -1,0 +1,35 @@
+{
+  "version": 1,
+  "status": "success",
+  "generated_at": "2026-04-09T12:27:19Z",
+  "source_issue": {
+    "id": 1498083485,
+    "number": 1380,
+    "title": "Add details about each of the default behaviors",
+    "html_url": "https://github.com/plone/documentation/issues/1380",
+    "repository_full_name": "plone/documentation",
+    "updated_at": "2026-01-04T08:11:43Z",
+    "labels": [
+      "04 type: enhancement",
+      "13 prio: normal",
+      "21 status: confirmed",
+      "33 needs: docs",
+      "43 lvl: complex",
+      "99 tag: Plone 6.x"
+    ],
+    "comments": 2
+  },
+  "ai": {
+    "provider": "openai",
+    "model": "gpt-4o-mini"
+  },
+  "summary_markdown": "```markdown\n## What this issue is about\nThis issue involves enhancing the Plone documentation by adding detailed explanations of the default behaviors within the system. Current descriptions may be too brief, and there's discussion about possibly separating these details from the general overview of how to use behaviors.\n\n## What needs to be done\nYou will need to write comprehensive descriptions for each of the default behaviors in Plone, explaining what they do and their significance. It's important to ensure these explanations are clear and accessible, especially for those new to Plone.\n\n## Helpful background\nBehaviors in Plone are a way to extend the functionality of content types. This issue is aimed at improving understanding of these features. However, the discussion indicates that a deep understanding of these behaviors is required, as it can be a complex topic.\n\n## Good first steps\n1. Familiarize yourself with Plone's current documentation on behaviors.\n2. Read more about contributing to Plone by following [First-time contributors](https://6.docs.plone.org/contributing/first-time.html).\n3. Reach out for feedback or clarification on any points that seem ambiguous or unclear.\n4. Begin drafting your detailed descriptions for the behaviors once you feel comfortable with the material.\n```",
+  "workflow": {
+    "repository": "syslabcom/activity-recognition",
+    "run_id": "24190027102",
+    "run_number": "51",
+    "attempt": "1",
+    "url": "https://github.com/syslabcom/activity-recognition/actions/runs/24190027102",
+    "sha": "e0c67d2638fe739b442ccf9da44e8d59c9d3ed15"
+  }
+}

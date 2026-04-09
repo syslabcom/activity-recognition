@@ -1,0 +1,31 @@
+{
+  "version": 1,
+  "status": "success",
+  "generated_at": "2026-04-09T12:26:09Z",
+  "source_issue": {
+    "id": 512847566,
+    "number": 955,
+    "title": "user menu popup is not available on the site setup pages",
+    "html_url": "https://github.com/plone/volto/issues/955",
+    "repository_full_name": "plone/volto",
+    "updated_at": "2026-01-25T06:16:01Z",
+    "labels": [
+      "01 type: bug",
+      "41 lvl: easy"
+    ],
+    "comments": 6
+  },
+  "ai": {
+    "provider": "openai",
+    "model": "gpt-4o-mini"
+  },
+  "summary_markdown": "```markdown\n## What this issue is about\nThis issue addresses a bug where the user menu icon is missing from the left sidebar on the site setup pages in the Volto interface. The user icon typically allows users to access their account settings, but it disappears when navigating to these specific pages.\n\n## What needs to be done\nTo fix this, the condition that hides the icon based on certain page states (related to \"DefaultViewButtons\") needs to be revised. The goal is to ensure the user icon is always visible when the toolbar is present, regardless of the page.\n\n## Helpful background\nThe discussion suggests that simply modifying the existing code to always render the user icon could resolve the issue. A related pull request is open, which provides further context on the proposed solutions, but it has been inactive for some time.\n\n## Good first steps\n1. Review the current state of the existing pull request [here](https://github.com/plone/volto/pull/4565). \n2. Consider how the suggested changes impact the user interface.\n3. Test the existing Volto implementation to replicate the bug.\n4. Follow the [Plone Contribution Guidelines](https://6.docs.plone.org/contributing/index.html), especially regarding opening your pull request against the correct repository (plone/volto).\n5. Don't hesitate to ask questions if you need guidance!\n```",
+  "workflow": {
+    "repository": "syslabcom/activity-recognition",
+    "run_id": "24190027102",
+    "run_number": "51",
+    "attempt": "1",
+    "url": "https://github.com/syslabcom/activity-recognition/actions/runs/24190027102",
+    "sha": "e0c67d2638fe739b442ccf9da44e8d59c9d3ed15"
+  }
+}

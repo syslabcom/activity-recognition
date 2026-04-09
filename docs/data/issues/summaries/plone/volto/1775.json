@@ -1,0 +1,30 @@
+{
+  "version": 1,
+  "status": "success",
+  "generated_at": "2026-04-09T12:26:39Z",
+  "source_issue": {
+    "id": 686107116,
+    "number": 1775,
+    "title": "Auto-generated text-area form fields should have at least 10 lines by default and should increase size as the user types in text",
+    "html_url": "https://github.com/plone/volto/issues/1775",
+    "repository_full_name": "plone/volto",
+    "updated_at": "2026-01-10T10:17:38Z",
+    "labels": [
+      "41 lvl: easy"
+    ],
+    "comments": 16
+  },
+  "ai": {
+    "provider": "openai",
+    "model": "gpt-4o-mini"
+  },
+  "summary_markdown": "```markdown\n## What this issue is about\nThis issue seeks to improve the **textarea form fields** in the Plone Volto project. The goal is to make these fields start with at least **10 lines** by default and allow them to **grow dynamically** as the user types, enhancing user experience by showing more text at once.\n\n## What needs to be done\n1. Implement a textarea component that starts with a minimum of 10 lines.\n2. Ensure the textarea expands as the user types, so they can see their entire input.\n\nThe discussion has indicated potential existing challenges with the current Textarea widget, and there's a suggestion to use the `react-textarea-autosize` module to achieve this effect.\n\n## Helpful background\nThe current Textarea functionality may not accommodate dynamic growth as desired, and existing CSS from Semantic UI might conflict with changes. Therefore, the introduction of `react-textarea-autosize` can provide more flexibility, including a `min-rows` property.\n\n## Good first steps\n1. Review the existing TextareaWidget code in `src/components/manage/Widgets/TextareaWidget.jsx`.\n2. Explore using the `react-textarea-autosize` module (you may need to install it).\n3. Check the project's contribution guidelines to ensure proper practices: [First-time contributors](https://6.docs.plone.org/contributing/first-time.html).\n\nFeel free to ask questions if parts of this issue are unclear!\n```",
+  "workflow": {
+    "repository": "syslabcom/activity-recognition",
+    "run_id": "24190027102",
+    "run_number": "51",
+    "attempt": "1",
+    "url": "https://github.com/syslabcom/activity-recognition/actions/runs/24190027102",
+    "sha": "e0c67d2638fe739b442ccf9da44e8d59c9d3ed15"
+  }
+}

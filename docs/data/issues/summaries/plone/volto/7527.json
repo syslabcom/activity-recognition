@@ -1,0 +1,31 @@
+{
+  "version": 1,
+  "status": "success",
+  "generated_at": "2026-04-09T12:26:57Z",
+  "source_issue": {
+    "id": 3532029184,
+    "number": 7527,
+    "title": "View for Listing block",
+    "html_url": "https://github.com/plone/volto/issues/7527",
+    "repository_full_name": "plone/volto",
+    "updated_at": "2026-01-07T10:15:16Z",
+    "labels": [
+      "04 type: enhancement",
+      "43 lvl: complex"
+    ],
+    "comments": 3
+  },
+  "ai": {
+    "provider": "openai",
+    "model": "gpt-4o-mini"
+  },
+  "summary_markdown": "## What this issue is about\nThis issue focuses on implementing the view for the Listing block in the Plone Volto project. It is designated as part of a more complex future project known as \"Seven.\"\n\n## What needs to be done\nThe specific tasks for this issue are currently unclear and may involve a particular variation of the Listing block. There are indications that the author, [ebrehault](https://github.com/ebrehault), is already working on it, so coordination with them is essential to avoid duplicated effort.\n\n## Helpful background\nDue to the complexity labeled in this issue, it may not be suitable for first-time contributors. Discussions have pointed out that there are relevant existing issues (e.g., #4478 on listing/teaser styles), but details about these connections remain vague. Familiarity with the overall project and its guidelines is recommended.\n\n## Good first steps\nIf you're interested in contributing:\n1. Review the [First-time contributors](https://6.docs.plone.org/contributing/first-time.html) guidelines.\n2. Familiarize yourself with [Contributing to Plone](https://6.docs.plone.org/contributing/index.html) and [Contributing to Volto](https://6.docs.plone.org/contributing/volto.html).\n3. Consider reaching out to [ebrehault](https://github.com/ebrehault) for insights before proceeding, as clear tasks for this issue may need further clarification.",
+  "workflow": {
+    "repository": "syslabcom/activity-recognition",
+    "run_id": "24190027102",
+    "run_number": "51",
+    "attempt": "1",
+    "url": "https://github.com/syslabcom/activity-recognition/actions/runs/24190027102",
+    "sha": "e0c67d2638fe739b442ccf9da44e8d59c9d3ed15"
+  }
+}

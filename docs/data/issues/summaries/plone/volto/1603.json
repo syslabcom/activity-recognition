@@ -1,0 +1,31 @@
+{
+  "version": 1,
+  "status": "success",
+  "generated_at": "2026-04-09T12:26:50Z",
+  "source_issue": {
+    "id": 641819917,
+    "number": 1603,
+    "title": "Use Cypress to determine code coverage",
+    "html_url": "https://github.com/plone/volto/issues/1603",
+    "repository_full_name": "plone/volto",
+    "updated_at": "2026-01-10T08:57:51Z",
+    "labels": [
+      "04 type: enhancement",
+      "41 lvl: easy"
+    ],
+    "comments": 3
+  },
+  "ai": {
+    "provider": "openai",
+    "model": "gpt-4o-mini"
+  },
+  "summary_markdown": "## What this issue is about\nThis issue focuses on enhancing code coverage reporting for our Cypress tests in the Volto project. Cypress is a testing framework, and using it for code coverage helps ensure that our code is well-tested.\n\n## What needs to be done\nThe goal is to implement a way for Cypress tests to report code coverage effectively. There's some existing discussion suggesting potential solutions, and a contributor may already have a proposed approach ready.\n\n## Helpful background\nCode coverage measures how much of your code is tested by automated tests. This is crucial for maintaining high-quality code. For more information on setting this up with Cypress, check out the [Cypress documentation on code coverage](https://docs.cypress.io/guides/tooling/code-coverage.html#E2E-code-coverage).\n\n## Good first steps\n1. Familiarize yourself with the [Contributing to Volto](https://6.docs.plone.org/contributing/volto.html) guidelines.\n2. Review the proposed solution by the assignee, [valentinab25](https://github.com/valentinab25).\n3. Consider reading through related comments for additional context and any unresolved questions.\n4. If you're new, start by exploring simple enhancements or tweaks to existing tests as practice.  \n\nFeel free to ask questions if you're unsure about any part of the process!",
+  "workflow": {
+    "repository": "syslabcom/activity-recognition",
+    "run_id": "24190027102",
+    "run_number": "51",
+    "attempt": "1",
+    "url": "https://github.com/syslabcom/activity-recognition/actions/runs/24190027102",
+    "sha": "e0c67d2638fe739b442ccf9da44e8d59c9d3ed15"
+  }
+}

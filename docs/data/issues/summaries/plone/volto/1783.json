@@ -1,0 +1,31 @@
+{
+  "version": 1,
+  "status": "success",
+  "generated_at": "2026-04-09T12:26:45Z",
+  "source_issue": {
+    "id": 688684749,
+    "number": 1783,
+    "title": "Document SchemaWidget, provide examples",
+    "html_url": "https://github.com/plone/volto/issues/1783",
+    "repository_full_name": "plone/volto",
+    "updated_at": "2026-01-10T09:25:39Z",
+    "labels": [
+      "33 needs: docs",
+      "41 lvl: easy"
+    ],
+    "comments": 5
+  },
+  "ai": {
+    "provider": "openai",
+    "model": "gpt-4o-mini"
+  },
+  "summary_markdown": "```markdown\n## What this issue is about\nThis issue focuses on the `SchemaWidget` in Volto, which currently lacks documentation and examples. It includes functionalities like `onEdit` and `onDelete` properties, but these features are not well understood due to insufficient resources.\n\n## What needs to be done\nThe goal is to create comprehensive documentation for the `SchemaWidget`. This includes both narrative documentation and an example in Storybook. It’s essential to clarify how this widget should be used effectively and highlight its features.\n\n## Helpful background\nFor guidance, you can refer to [this documentation page](https://6.docs.plone.org/volto/contributing/documentation.html). A good reference for the narrative documentation is the `AppExtras` component, which can serve as a model.\n\n## Good first steps\n1. Familiarize yourself with the existing [Volto documentation](https://6.docs.plone.org/contributing/volto.html).\n2. Review the [First-time contributors](https://6.docs.plone.org/contributing/first-time.html) guide, especially the dos and don’ts.\n3. Start drafting documentation or example use cases for the `SchemaWidget`.\n4. Engage with the community to share findings and get feedback!\n\nFeel free to ask questions in the comments if you need help!\n```",
+  "workflow": {
+    "repository": "syslabcom/activity-recognition",
+    "run_id": "24190027102",
+    "run_number": "51",
+    "attempt": "1",
+    "url": "https://github.com/syslabcom/activity-recognition/actions/runs/24190027102",
+    "sha": "e0c67d2638fe739b442ccf9da44e8d59c9d3ed15"
+  }
+}
