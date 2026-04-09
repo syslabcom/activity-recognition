@@ -1,0 +1,33 @@
+{
+  "version": 1,
+  "status": "success",
+  "generated_at": "2026-04-09T14:41:04Z",
+  "source_issue": {
+    "id": 2853999327,
+    "number": 157,
+    "title": "varnish container build superfluos - use config feature",
+    "html_url": "https://github.com/plone/cookieplone-templates/issues/157",
+    "repository_full_name": "plone/cookieplone-templates",
+    "updated_at": "2025-02-28T11:14:40Z",
+    "labels": [
+      "04 type: enhancement",
+      "21 status: confirmed",
+      "33 needs: docs",
+      "42 lvl: moderate"
+    ],
+    "comments": 4
+  },
+  "ai": {
+    "provider": "openai",
+    "model": "gpt-4o-mini"
+  },
+  "summary_markdown": "```markdown\n## What this issue is about\nThis issue discusses the possibility of simplifying the build process for the Varnish container in the `plone/cookieplone-templates` project by using Docker configs instead of creating a separate image. The current method may be unnecessarily complicated.\n\n## What needs to be done\nThe task involves updating the Docker configuration to utilize a config feature for Varnish. This can streamline deployment and reduce the need for image builds.\n\n## Helpful background\nDocker configs allow you to manage configuration files in a simpler way than building images each time. However, updating these configs can be a bit tricky, as they are immutable—meaning you need to change their name when updating. Some helpful practices, like using an environment variable for versioning, have been suggested but are not currently implemented.\n\n## Good first steps\n1. Review the existing Docker configuration to see how Varnish is currently set up.\n2. Experiment with Docker configs based on the suggested syntax.\n3. Collaborate with others in the issue comments to clarify any uncertainties, especially around updating configs and necessary documentation.\n4. Document your findings to help future contributors understand the updated setup better.\n```",
+  "workflow": {
+    "repository": "syslabcom/activity-recognition",
+    "run_id": "24196205718",
+    "run_number": "53",
+    "attempt": "1",
+    "url": "https://github.com/syslabcom/activity-recognition/actions/runs/24196205718",
+    "sha": "4afa5437e3369368f43054c82fcd1ba9bed2967b"
+  }
+}

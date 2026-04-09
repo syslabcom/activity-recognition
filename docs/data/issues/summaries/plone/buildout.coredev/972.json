@@ -1,0 +1,34 @@
+{
+  "version": 1,
+  "status": "success",
+  "generated_at": "2026-04-09T14:41:36Z",
+  "source_issue": {
+    "id": 2709766134,
+    "number": 972,
+    "title": "Improve README",
+    "html_url": "https://github.com/plone/buildout.coredev/issues/972",
+    "repository_full_name": "plone/buildout.coredev",
+    "updated_at": "2025-01-24T06:48:28Z",
+    "labels": [
+      "04 type: enhancement",
+      "14 prio: low",
+      "33 needs: docs",
+      "41 lvl: easy",
+      "42 lvl: moderate"
+    ],
+    "comments": 3
+  },
+  "ai": {
+    "provider": "openai",
+    "model": "gpt-4o-mini"
+  },
+  "summary_markdown": "```markdown\n## What this issue is about\nThis issue focuses on enhancing the README file of the Plone repository. The goal is to improve clarity and accessibility for new users.\n\n## What needs to be done\nHere are the proposed improvements:\n- Convert the existing `README.rst` to `README.md`.\n- Create a new page, `README-devcontainer`, documenting how to set up the development container and GitHub workspace.\n- Ensure links to the official Plone documentation and the new page are included.\n\nSome tasks have been completed, but others remain open for contribution.\n\n## Helpful background\nThe README serves as the first point of contact for users and contributors. Updating it can help newcomers understand how to get started with Plone and its development environment.\n\nThere is ongoing discussion about possibly including tutorial videos in the documentation, although this is not finalized.\n\n## Good first steps\n1. Familiarize yourself with Markdown if you're not familiar—it's a simple formatting language used for README.md files.\n2. Start by converting the existing `README.rst` to `README.md` format.\n3. Look into the steps for setting up the `README-devcontainer` and gather that information.\n\nOnce you've made progress, consider reviewing and coordinating with others on the issue.\n```",
+  "workflow": {
+    "repository": "syslabcom/activity-recognition",
+    "run_id": "24196205718",
+    "run_number": "53",
+    "attempt": "1",
+    "url": "https://github.com/syslabcom/activity-recognition/actions/runs/24196205718",
+    "sha": "4afa5437e3369368f43054c82fcd1ba9bed2967b"
+  }
+}

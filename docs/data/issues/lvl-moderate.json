@@ -1,7 +1,7 @@
 {
   "version": 1,
   "status": "success",
-  "generated_at": "2026-04-09T13:35:57Z",
+  "generated_at": "2026-04-09T14:39:29Z",
   "organization": "plone",
   "state": "open",
   "slug": "lvl-moderate",
@@ -505,7 +505,15 @@
       "labels": [
         "33 needs: docs",
         "42 lvl: moderate"
-      ]
+      ],
+      "contributor_summary": {
+        "status": "available",
+        "generated_at": "2026-04-09T14:40:24Z",
+        "source_issue_updated_at": "2025-03-08T22:21:39Z",
+        "model": "gpt-4o-mini",
+        "summary_markdown": "## What this issue is about\nThis issue proposes creating a dedicated page or section about Continuous Integration (CI) for new contributors to Volto. The current documentation may not provide sufficient clarity for users who are unfamiliar with CI and how to utilize it effectively in their contributions.\n\n## What needs to be done\nWe need to develop a new subsection under the existing \"[Developing Volto](https://6.docs.plone.org/volto/contributing/developing-core.html#developing-volto)\" documentation. This section should explain what CI is and how it can be beneficial for contributors, specifically targeting newcomers to GitHub.\n\n## Helpful background\nContinuous Integration (CI) is a practice that helps developers integrate code changes frequently, allowing for more reliable and efficient development. Many new contributors may lack understanding of this process, making it essential to provide clear documentation.\n\n## Good first steps\n1. Familiarize yourself with the existing documentation on developing Volto.\n2. Research what CI involves, focusing on key concepts that beginners should know.\n3. Draft an outline for the new CI section, considering what information would be most helpful to newcomers.\n4. Create a pull request (PR) for your proposed changes, ensuring clear communication throughout the process. \n\nBy contributing, you’ll help make Volto more accessible to new users!",
+        "path": "data/issues/summaries/plone/volto/5883.json"
+      }
     },
     {
       "id": 269535330,
@@ -528,7 +536,15 @@
         "33 needs: docs",
         "42 lvl: moderate",
         "99 tag: Plone 6.x"
-      ]
+      ],
+      "contributor_summary": {
+        "status": "available",
+        "generated_at": "2026-04-09T14:40:49Z",
+        "source_issue_updated_at": "2025-02-28T20:55:01Z",
+        "model": "gpt-4o-mini",
+        "summary_markdown": "```markdown\n## What this issue is about\nThis issue addresses the documentation for setting the modification date of content in Plone. The existing documentation states that you can explicitly set this date, but it seems to be misleading. Calling `reindexObject()` automatically updates the `modification_date`, making explicit setting difficult.\n\n## What needs to be done\nYou will need to revise the documentation to clarify that modifications to objects automatically trigger an update to the `modification_date` property. It may also involve suggesting any alternative approaches if available.\n\n## Helpful background\nThe relevant documentation is located [here](https://5.docs.plone.org/develop/plone/content/timestamps.html#setting-modification-date-explicitly). Understanding how `reindexObject()` functions and its impact on `modification_date` is crucial for this task. The discussion indicates there's some confusion around these processes, and there's no clear consensus on a straightforward solution.\n\n## Good first steps\n1. Read the linked documentation and familiarize yourself with `reindexObject()`.\n2. Consider possible revisions to enhance clarity in the documentation.\n3. Propose a workable approach or clarification in the comments before drafting a pull request (PR).\n4. Review Plone's contribution guidelines, especially regarding documentation.\n```",
+        "path": "data/issues/summaries/plone/documentation/931.json"
+      }
     },
     {
       "id": 2853999327,
@@ -551,7 +567,15 @@
         "21 status: confirmed",
         "33 needs: docs",
         "42 lvl: moderate"
-      ]
+      ],
+      "contributor_summary": {
+        "status": "available",
+        "generated_at": "2026-04-09T14:41:04Z",
+        "source_issue_updated_at": "2025-02-28T11:14:40Z",
+        "model": "gpt-4o-mini",
+        "summary_markdown": "```markdown\n## What this issue is about\nThis issue discusses the possibility of simplifying the build process for the Varnish container in the `plone/cookieplone-templates` project by using Docker configs instead of creating a separate image. The current method may be unnecessarily complicated.\n\n## What needs to be done\nThe task involves updating the Docker configuration to utilize a config feature for Varnish. This can streamline deployment and reduce the need for image builds.\n\n## Helpful background\nDocker configs allow you to manage configuration files in a simpler way than building images each time. However, updating these configs can be a bit tricky, as they are immutable—meaning you need to change their name when updating. Some helpful practices, like using an environment variable for versioning, have been suggested but are not currently implemented.\n\n## Good first steps\n1. Review the existing Docker configuration to see how Varnish is currently set up.\n2. Experiment with Docker configs based on the suggested syntax.\n3. Collaborate with others in the issue comments to clarify any uncertainties, especially around updating configs and necessary documentation.\n4. Document your findings to help future contributors understand the updated setup better.\n```",
+        "path": "data/issues/summaries/plone/cookieplone-templates/157.json"
+      }
     },
     {
       "id": 2709766134,
@@ -577,7 +601,15 @@
         "33 needs: docs",
         "41 lvl: easy",
         "42 lvl: moderate"
-      ]
+      ],
+      "contributor_summary": {
+        "status": "available",
+        "generated_at": "2026-04-09T14:41:36Z",
+        "source_issue_updated_at": "2025-01-24T06:48:28Z",
+        "model": "gpt-4o-mini",
+        "summary_markdown": "```markdown\n## What this issue is about\nThis issue focuses on enhancing the README file of the Plone repository. The goal is to improve clarity and accessibility for new users.\n\n## What needs to be done\nHere are the proposed improvements:\n- Convert the existing `README.rst` to `README.md`.\n- Create a new page, `README-devcontainer`, documenting how to set up the development container and GitHub workspace.\n- Ensure links to the official Plone documentation and the new page are included.\n\nSome tasks have been completed, but others remain open for contribution.\n\n## Helpful background\nThe README serves as the first point of contact for users and contributors. Updating it can help newcomers understand how to get started with Plone and its development environment.\n\nThere is ongoing discussion about possibly including tutorial videos in the documentation, although this is not finalized.\n\n## Good first steps\n1. Familiarize yourself with Markdown if you're not familiar—it's a simple formatting language used for README.md files.\n2. Start by converting the existing `README.rst` to `README.md` format.\n3. Look into the steps for setting up the `README-devcontainer` and gather that information.\n\nOnce you've made progress, consider reviewing and coordinating with others on the issue.\n```",
+        "path": "data/issues/summaries/plone/buildout.coredev/972.json"
+      }
     },
     {
       "id": 1987894560,
@@ -599,7 +631,15 @@
         "01 type: bug",
         "14 prio: low",
         "42 lvl: moderate"
-      ]
+      ],
+      "contributor_summary": {
+        "status": "available",
+        "generated_at": "2026-04-09T14:41:48Z",
+        "source_issue_updated_at": "2024-12-17T09:44:48Z",
+        "model": "gpt-4o-mini",
+        "summary_markdown": "```markdown\n## What this issue is about\nThis issue addresses errors related to the Permissions-Policy headers on certain Plone.org pages, specifically when loading custom CSS. The errors indicate that specific features are not enabled in the browser, and there’s a 404 error while trying to fetch a custom CSS file.\n\n## What needs to be done\nWe need to investigate and resolve the Permissions-Policy header errors and determine why the custom CSS file isn't loading correctly (404 Not Found). This may involve checking the configuration of the Permissions-Policy and ensuring that the custom CSS file is accessible.\n\n## Helpful background\nPermissions-Policy headers control which features can be used on a site. Errors indicate that certain features aren't enabled in the browser. The 404 error means that the requested resource (custom CSS) could not be found on the server.\n\nFor more guidance on contributing, be sure to check the [Plone contribution guidelines](https://6.docs.plone.org/contributing/index.html).\n\n## Good first steps\n1. Review the issue comments for context and confirm the specific features that need addressing.\n2. Explore the site's Permissions-Policy settings to understand the current configuration.\n3. Check the URL for the custom CSS to find out why it returns a 404 error.\n4. Consider asking for clarification on specific aspects if the discussion appears outdated or ambiguous.\n```",
+        "path": "data/issues/summaries/plone/plone.org/150.json"
+      }
     },
     {
       "id": 2194664319,
@@ -1959,10 +1999,10 @@
   "message": null,
   "workflow": {
     "repository": "syslabcom/activity-recognition",
-    "run_id": "24193140143",
-    "run_number": "52",
+    "run_id": "24196205718",
+    "run_number": "53",
     "attempt": "1",
-    "url": "https://github.com/syslabcom/activity-recognition/actions/runs/24193140143",
-    "sha": "598aa417f24197151040f51e842b398a12c4da37"
+    "url": "https://github.com/syslabcom/activity-recognition/actions/runs/24196205718",
+    "sha": "4afa5437e3369368f43054c82fcd1ba9bed2967b"
   }
 }

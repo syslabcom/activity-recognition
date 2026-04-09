@@ -1,0 +1,30 @@
+{
+  "version": 1,
+  "status": "success",
+  "generated_at": "2026-04-09T14:41:43Z",
+  "source_issue": {
+    "id": 2681409399,
+    "number": 1785,
+    "title": "Switch from `pipx` and `venv` to `uv` and friends",
+    "html_url": "https://github.com/plone/documentation/issues/1785",
+    "repository_full_name": "plone/documentation",
+    "updated_at": "2025-01-07T05:29:12Z",
+    "labels": [
+      "43 lvl: complex"
+    ],
+    "comments": 4
+  },
+  "ai": {
+    "provider": "openai",
+    "model": "gpt-4o-mini"
+  },
+  "summary_markdown": "## What this issue is about\nThis issue is about potentially switching the tools we use for installing packages and creating virtual environments in Plone, moving from `pipx` to `uv` and its tools. However, the discussion is still open regarding this shift.\n\n## What needs to be done\nWe need to explore whether switching to `uv` is beneficial. This involves understanding how these tools work and assessing their impact on the existing setup. It’s important to note that as of now, the issue is not definitively defined and only suggests consideration of the switch.\n\n## Helpful background\nThis topic has been labeled as complex and is not ideal for beginners. It may require coordination with multiple repositories and package maintainers. The current conversation also highlights that the issue is not well defined, with no clear action items presented yet.\n\n## Good first steps\nIf you're interested in this issue, it's best to first read the [First-time contributors guide](https://6.docs.plone.org/contributing/first-time.html#work-with-github-issues) to familiarize yourself with the process. Focus especially on proper issue handling and collaboration. Given the complexity, consider following along rather than jumping in immediately.",
+  "workflow": {
+    "repository": "syslabcom/activity-recognition",
+    "run_id": "24196205718",
+    "run_number": "53",
+    "attempt": "1",
+    "url": "https://github.com/syslabcom/activity-recognition/actions/runs/24196205718",
+    "sha": "4afa5437e3369368f43054c82fcd1ba9bed2967b"
+  }
+}

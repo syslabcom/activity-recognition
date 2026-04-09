@@ -1,7 +1,7 @@
 {
   "version": 1,
   "status": "success",
-  "generated_at": "2026-04-09T13:35:57Z",
+  "generated_at": "2026-04-09T14:39:29Z",
   "organization": "plone",
   "state": "open",
   "slug": "lvl-complex",
@@ -1005,7 +1005,15 @@
       "labels": [
         "03 type: feature (plip)",
         "43 lvl: complex"
-      ]
+      ],
+      "contributor_summary": {
+        "status": "available",
+        "generated_at": "2026-04-09T14:39:43Z",
+        "source_issue_updated_at": "2025-05-09T04:49:55Z",
+        "model": "gpt-4o-mini",
+        "summary_markdown": "```markdown\n## What this issue is about\nThis issue focuses on improving the layout, structure, and usability of the Plone 7 Documentation, utilizing an upgraded Plone Sphinx Theme. Primary goals include creating targeted guides for Users, Developers, and Contributors, and enhancing the documentation's search functionality. \n\n## What needs to be done\n- Release `plone-sphinx-theme` 2.0.0 that utilizes PyData Sphinx Theme.\n- Integrate Nuclia Search for better user experience.\n- Reorganize documentation according to the Diátaxis Framework for clarity.\n- Develop and curate various documentation guides, including those for `@plone` packages.\n\n## Helpful background\nThe current documentation has usability issues due to its complex structure. The Diátaxis Framework offers a structured approach for organizing content, which aims to address these challenges. Plone Sphinx Theme depends on external themes, impacting its development pace.\n\n## Good first steps\n1. Familiarize yourself with the [Diátaxis Framework](https://diataxis.fr/).\n2. Explore the existing Plone documentation to understand current shortcomings.\n3. Check out the existing discussions for ideas on API documentation and structure.\n4. Collaborate on specific documentation pieces or contribute to the theme upgrade.\n5. Consider testing the existing documentation layout as you develop improvements.\n```",
+        "path": "data/issues/summaries/plone/Products.CMFPlone/4097.json"
+      }
     },
     {
       "id": 2709856027,
@@ -1028,7 +1036,15 @@
         "04 type: enhancement",
         "03 type: feature (plip)",
         "43 lvl: complex"
-      ]
+      ],
+      "contributor_summary": {
+        "status": "available",
+        "generated_at": "2026-04-09T14:39:55Z",
+        "source_issue_updated_at": "2025-04-17T13:13:25Z",
+        "model": "gpt-4o-mini",
+        "summary_markdown": "## What this issue is about\nThis issue focuses on implementing Multi-Factor Authentication (MFA) for Plone to enhance security. The aim is to support several MFA methods, including OTOP (Authenticator Apps), FIDO2 hardware tokens, and Passkeys, while offering integration with Single Sign-On (SSO) systems.\n\n## What needs to be done\nWe need to design and implement various MFA schemes. This will involve creating a control panel in Plone for configuring MFA requirements, where users can select settings based on their roles (e.g., optional, enforced for admins, or for all users). The implementation will include both backend and frontend components for Plone's different user interfaces.\n\n## Helpful background\nThere’s ongoing discussion about potentially breaking this large task into smaller, manageable pieces (PLIPs) to make it easier to implement individual MFA systems. UX design considerations are also essential for a seamless experience when integrating the different MFA methods.\n\n## Good first steps\n1. **Familiarize yourself** with Plone's [contributing guidelines](https://6.docs.plone.org/contributing/index.html).\n2. **Read through existing discussions** in this issue about UX design and breakdown suggestions to understand the scope and complexity.\n3. Consider participating in discussions to help clarify requirements or suggest improvements based on user experience.",
+        "path": "data/issues/summaries/plone/Products.CMFPlone/4071.json"
+      }
     },
     {
       "id": 1631010525,
@@ -1053,7 +1069,15 @@
         "33 needs: docs",
         "43 lvl: complex",
         "99 tag: docs-reorg"
-      ]
+      ],
+      "contributor_summary": {
+        "status": "available",
+        "generated_at": "2026-04-09T14:40:30Z",
+        "source_issue_updated_at": "2025-03-08T17:52:50Z",
+        "model": "gpt-4o-mini",
+        "summary_markdown": "## What this issue is about\nThis issue addresses the need to reorganize the deployment documentation for Volto on Plone. Currently, the \"Simple deployment\" section appears before \"Seamless mode,\" which should be prioritized. There are ongoing discussions about how to present this information clearly.\n\n## What needs to be done\n1. Change the order of deployment sections, placing \"Seamless mode\" first in the navigation.\n2. Update the \"Simple deployment\" section to indicate that it's only for older versions of Plone and include a deprecation warning.\n3. Refactor the content to ensure it guides users appropriately, mentioning that \"Simple deployment\" is still valid but secondary.\n\n## Helpful background\n\"Seamless mode\" refers to installing Volto on older Plone versions without needing `plone.restapi` 2.0, while \"Simple deployment\" is becoming outdated. Clarity is needed in the documentation to guide new users effectively.\n\n## Good first steps\n1. Review the deployment documentation linked [here](https://6.docs.plone.org/volto/deploying/index.html).\n2. Discuss proposed changes with the issue author, [tiberiuichim](https://github.com/tiberiuichim), and contributor [stevepiercy](https://github.com/stevepiercy).\n3. Be prepared to write and test any documentation updates and discuss them in the comments for feedback.",
+        "path": "data/issues/summaries/plone/volto/4576.json"
+      }
     },
     {
       "id": 1218934617,
@@ -1076,7 +1100,15 @@
       "labels": [
         "33 needs: docs",
         "43 lvl: complex"
-      ]
+      ],
+      "contributor_summary": {
+        "status": "available",
+        "generated_at": "2026-04-09T14:40:44Z",
+        "source_issue_updated_at": "2025-03-08T17:52:47Z",
+        "model": "gpt-4o-mini",
+        "summary_markdown": "# Trigger 6-dev documentation build on every push to master in Volto\n\n## What this issue is about\nThis issue aims to ensure that the documentation for Volto is automatically built whenever there’s a push to the master branch. This helps keep the documentation up to date with the latest code changes.\n\n## What needs to be done\nThe implementation requires setting up a continuous integration (CI) process to automatically trigger a documentation build. The specifics of how to configure this may need further discussion as there are some ambiguities in the comments.\n\n## Helpful background\nThe initiative is connected to ongoing efforts in the Plone community, as referenced in related documentation issues. Previous attempts to implement this feature encountered problems, which are noted in the discussions.\n\n## Good first steps\n1. **Review the current CI setup** for Volto to understand how builds are currently triggered.\n2. **Read the linked issues** for additional context on previous discussions and possible challenges faced.\n3. **Coordinate with the assignee, @esteele**, regarding any unresolved problems or insights on the implementation.\n4. **Test any changes locally** before proposing them to ensure everything works smoothly. \n\nFeel free to ask questions if you're uncertain about any part of the process!",
+        "path": "data/issues/summaries/plone/volto/3277.json"
+      }
     },
     {
       "id": 2669412772,
@@ -1098,7 +1130,15 @@
         "04 type: enhancement",
         "33 needs: docs",
         "43 lvl: complex"
-      ]
+      ],
+      "contributor_summary": {
+        "status": "available",
+        "generated_at": "2026-04-09T14:40:55Z",
+        "source_issue_updated_at": "2025-02-28T12:20:42Z",
+        "model": "gpt-4o-mini",
+        "summary_markdown": "```markdown\n## What this issue is about\nThis issue addresses a common problem encountered when accessing the Plone frontend from a different machine (not localhost). Users may find that the CSS links are missing from the HTML head, which can lead to styling issues.\n\n## What needs to be done\nWe need to document troubleshooting hints for accessing the Plone frontend from other IP addresses. This documentation should include details about setting the environment variable `HOST` to the correct server IP or domain name and any firewall settings that may need to be adjusted.\n\n## Helpful background\nWhen starting the frontend using `make frontend-start`, if it’s accessed externally, the CSS links might not appear without proper configuration. This issue is related to a ticket in the Cookieplone project (issue [348](https://github.com/plone/cookieplone-templates/issues/348)) which also discusses solutions.\n\n## Good first steps\n1. Review the related Cookieplone issue for more insight.\n2. Check the existing Plone documentation to identify where to add this information.\n3. Draft a proposal for updating the documentation to include these troubleshooting hints.\n4. Participate in discussions to clarify any remaining questions and ensure alignment with other contributions.\n   \nFeel free to raise questions here if you're uncertain about any aspect!\n```",
+        "path": "data/issues/summaries/plone/documentation/1780.json"
+      }
     },
     {
       "id": 2547785360,
@@ -1119,7 +1159,15 @@
       "labels": [
         "03 type: feature (plip)",
         "43 lvl: complex"
-      ]
+      ],
+      "contributor_summary": {
+        "status": "available",
+        "generated_at": "2026-04-09T14:41:09Z",
+        "source_issue_updated_at": "2025-02-04T19:03:13Z",
+        "model": "gpt-4o-mini",
+        "summary_markdown": "```markdown\n## What this issue is about\nThis issue is about upgrading essential libraries (`react-intl` and `redux`) in Volto for the next major release (version 19). These libraries are currently outdated, and updating them is crucial for maintaining the codebase and improving functionality.\n\n## What needs to be done\n1. Upgrade the libraries to their maintained versions.\n2. Modify existing code as necessary to accommodate changes in the new library versions.\n3. Assess if the current tooling around `react-intl` needs adjustment, particularly regarding the .po (Portable Object) files.\n\n## Helpful background\nThe main motivation for this upgrade is to ensure Volto uses modern, supported libraries. The updating process is part of a broader Plone Improvement Proposal (PLIP). Note that some discussions in this issue might be incomplete or ambiguous, so clarifications could be necessary as you proceed.\n\n## Good first steps\n1. Familiarize yourself with the involved libraries (`react-intl` and `redux`) and their latest features.\n2. Review related issues, especially [issue #5627](https://github.com/plone/volto/issues/5627) on `react-intl`.\n3. Look through documentation on contributing to Volto. See [First-time contributors](https://6.docs.plone.org/contributing/first-time.html) for guidelines.\n4. Feel free to ask questions in the comments if you need guidance!\n```",
+        "path": "data/issues/summaries/plone/volto/6327.json"
+      }
     },
     {
       "id": 2815246517,
@@ -1140,7 +1188,15 @@
       "labels": [
         "03 type: feature (plip)",
         "43 lvl: complex"
-      ]
+      ],
+      "contributor_summary": {
+        "status": "available",
+        "generated_at": "2026-04-09T14:41:16Z",
+        "source_issue_updated_at": "2025-02-03T21:16:08Z",
+        "model": "gpt-4o-mini",
+        "summary_markdown": "## What this issue is about\nThis issue focuses on improving the PLIP (Plone Improvement Proposal) process for user interface (UI) and user experience (UX) changes in Volto (Plone's frontend framework). Changes in this area can often be breaking and may require careful planning and expert input.\n\n## What needs to be done\n1. Identify PLIPs that propose UI/UX changes.\n2. Collaborate with UX experts through meetings and sprints to develop solutions.\n3. Implement the agreed-upon proposals and submit for review by the Volto team.\n\n## Helpful background\nThe discussion highlights a current challenge: limited UX participation within the Volto team and community. Suggestions include reaching out directly to UX professionals and facilitating their involvement in the PLIP process. There's also a mention of creating a forum or tagging system for better engagement and feedback.\n\n## Good first steps\n1. Review the [PLIP documentation](https://6.docs.plone.org/contributing/core/plips.html) to understand existing processes.\n2. Consider joining discussions about UX needs and potential platforms for collaboration.\n3. Reach out to other contributors, especially those with UX experience, for guidance and collaboration opportunities.",
+        "path": "data/issues/summaries/plone/volto/6628.json"
+      }
     },
     {
       "id": 1974212604,
@@ -1165,7 +1221,15 @@
         "12 prio: high",
         "43 lvl: complex",
         "53 target: major"
-      ]
+      ],
+      "contributor_summary": {
+        "status": "available",
+        "generated_at": "2026-04-09T14:41:29Z",
+        "source_issue_updated_at": "2025-01-24T20:47:53Z",
+        "model": "gpt-4o-mini",
+        "summary_markdown": "```markdown\n## What this issue is about\nThis issue addresses a bug in `plone.restapi` where the `json_body` function reads the entire request body into memory, causing failures with requests larger than 1MB in Zope 5.8.4+. It can lead to high memory usage and potential denial-of-service threats.\n\n## What needs to be done\nWe need to modify the `json_body` function to avoid reading the full body into memory. Instead, we should explore methods to handle larger data streams effectively and safely. Discussions suggest investigating alternatives like using a streaming approach or changing the serialization format for better handling of uploads.\n\n## Helpful background\nThe issue is tied to environmental limits on memory and has sparked discussions about optimal handling of JSON data in Plone. Temporary fixes, such as adjusting limits in `zope.conf`, have been implemented but are not sustainable.\n\n## Good first steps\n1. Review the current `json_body` implementation and consider alternative approaches, like using the `ijson` library for streaming JSON parsing.\n2. Check how `json_body` is utilized in the codebase to understand the potential impact of changes.\n3. Engage with other contributors in the issue's comments to gather insights and align on potential solutions.\n4. Write tests to ensure the new implementation meets functionality and safety requirements.\n```",
+        "path": "data/issues/summaries/plone/plone.restapi/1730.json"
+      }
     },
     {
       "id": 2681409399,
@@ -1185,7 +1249,15 @@
       "assignees": [],
       "labels": [
         "43 lvl: complex"
-      ]
+      ],
+      "contributor_summary": {
+        "status": "available",
+        "generated_at": "2026-04-09T14:41:43Z",
+        "source_issue_updated_at": "2025-01-07T05:29:12Z",
+        "model": "gpt-4o-mini",
+        "summary_markdown": "## What this issue is about\nThis issue is about potentially switching the tools we use for installing packages and creating virtual environments in Plone, moving from `pipx` to `uv` and its tools. However, the discussion is still open regarding this shift.\n\n## What needs to be done\nWe need to explore whether switching to `uv` is beneficial. This involves understanding how these tools work and assessing their impact on the existing setup. It’s important to note that as of now, the issue is not definitively defined and only suggests consideration of the switch.\n\n## Helpful background\nThis topic has been labeled as complex and is not ideal for beginners. It may require coordination with multiple repositories and package maintainers. The current conversation also highlights that the issue is not well defined, with no clear action items presented yet.\n\n## Good first steps\nIf you're interested in this issue, it's best to first read the [First-time contributors guide](https://6.docs.plone.org/contributing/first-time.html#work-with-github-issues) to familiarize yourself with the process. Focus especially on proper issue handling and collaboration. Given the complexity, consider following along rather than jumping in immediately.",
+        "path": "data/issues/summaries/plone/documentation/1785.json"
+      }
     },
     {
       "id": 192754883,
@@ -1523,10 +1595,10 @@
   "message": null,
   "workflow": {
     "repository": "syslabcom/activity-recognition",
-    "run_id": "24193140143",
-    "run_number": "52",
+    "run_id": "24196205718",
+    "run_number": "53",
     "attempt": "1",
-    "url": "https://github.com/syslabcom/activity-recognition/actions/runs/24193140143",
-    "sha": "598aa417f24197151040f51e842b398a12c4da37"
+    "url": "https://github.com/syslabcom/activity-recognition/actions/runs/24196205718",
+    "sha": "4afa5437e3369368f43054c82fcd1ba9bed2967b"
   }
 }

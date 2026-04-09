@@ -1,0 +1,33 @@
+{
+  "version": 1,
+  "status": "success",
+  "generated_at": "2026-04-09T14:40:49Z",
+  "source_issue": {
+    "id": 269535330,
+    "number": 931,
+    "title": "Docs on setting the modification date",
+    "html_url": "https://github.com/plone/documentation/issues/931",
+    "repository_full_name": "plone/documentation",
+    "updated_at": "2025-02-28T20:55:01Z",
+    "labels": [
+      "31 needs: help",
+      "33 needs: docs",
+      "42 lvl: moderate",
+      "99 tag: Plone 6.x"
+    ],
+    "comments": 3
+  },
+  "ai": {
+    "provider": "openai",
+    "model": "gpt-4o-mini"
+  },
+  "summary_markdown": "```markdown\n## What this issue is about\nThis issue addresses the documentation for setting the modification date of content in Plone. The existing documentation states that you can explicitly set this date, but it seems to be misleading. Calling `reindexObject()` automatically updates the `modification_date`, making explicit setting difficult.\n\n## What needs to be done\nYou will need to revise the documentation to clarify that modifications to objects automatically trigger an update to the `modification_date` property. It may also involve suggesting any alternative approaches if available.\n\n## Helpful background\nThe relevant documentation is located [here](https://5.docs.plone.org/develop/plone/content/timestamps.html#setting-modification-date-explicitly). Understanding how `reindexObject()` functions and its impact on `modification_date` is crucial for this task. The discussion indicates there's some confusion around these processes, and there's no clear consensus on a straightforward solution.\n\n## Good first steps\n1. Read the linked documentation and familiarize yourself with `reindexObject()`.\n2. Consider possible revisions to enhance clarity in the documentation.\n3. Propose a workable approach or clarification in the comments before drafting a pull request (PR).\n4. Review Plone's contribution guidelines, especially regarding documentation.\n```",
+  "workflow": {
+    "repository": "syslabcom/activity-recognition",
+    "run_id": "24196205718",
+    "run_number": "53",
+    "attempt": "1",
+    "url": "https://github.com/syslabcom/activity-recognition/actions/runs/24196205718",
+    "sha": "4afa5437e3369368f43054c82fcd1ba9bed2967b"
+  }
+}

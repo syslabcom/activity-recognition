@@ -1,0 +1,32 @@
+{
+  "version": 1,
+  "status": "success",
+  "generated_at": "2026-04-09T14:40:07Z",
+  "source_issue": {
+    "id": 2981886774,
+    "number": 200,
+    "title": "Support GitLab in `documentation_starter` template",
+    "html_url": "https://github.com/plone/cookieplone-templates/issues/200",
+    "repository_full_name": "plone/cookieplone-templates",
+    "updated_at": "2025-04-09T10:12:23Z",
+    "labels": [
+      "04 type: enhancement",
+      "41 lvl: easy",
+      "52 target: minor"
+    ],
+    "comments": 2
+  },
+  "ai": {
+    "provider": "openai",
+    "model": "gpt-4o-mini"
+  },
+  "summary_markdown": "## What this issue is about\nThis issue seeks to enhance the `documentation_starter` template by adding support for GitLab. Currently, the template supports only GitHub, requiring manual edits for GitLab usage.\n\n## What needs to be done\nWe want to incorporate GitLab functionalities into the `documentation_starter` template. This may involve adjusting variables and structures to ensure compatibility. Collaboration with a GitLab user would be beneficial.\n\n## Helpful background\nThe discussion indicates that some groundwork has been done with the new structure of the `documentation_starter` template, but a complete analysis of the modified template in relation to GitLab is still ongoing. There are insights from past adjustments made by other contributors, which might guide this enhancement.\n\n## Good first steps\n1. Familiarize yourself with the `documentation_starter` template in the [repository](https://github.com/plone/cookieplone-templates).\n2. Reach out to potential collaborators like @erral for insights on variable usage.\n3. Test the current setup if you have a GitLab account, and identify any areas that need updating based on your findings.\n4. Review existing discussions and consider what documentation or examples might be needed for future contributors.",
+  "workflow": {
+    "repository": "syslabcom/activity-recognition",
+    "run_id": "24196205718",
+    "run_number": "53",
+    "attempt": "1",
+    "url": "https://github.com/syslabcom/activity-recognition/actions/runs/24196205718",
+    "sha": "4afa5437e3369368f43054c82fcd1ba9bed2967b"
+  }
+}

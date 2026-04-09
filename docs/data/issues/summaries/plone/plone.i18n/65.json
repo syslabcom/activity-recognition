@@ -1,0 +1,32 @@
+{
+  "version": 1,
+  "status": "success",
+  "generated_at": "2026-04-09T14:40:00Z",
+  "source_issue": {
+    "id": 2370106958,
+    "number": 65,
+    "title": "FileNameNormalizer/URLNormalizer does not support files with long file extensions",
+    "html_url": "https://github.com/plone/plone.i18n/issues/65",
+    "repository_full_name": "plone/plone.i18n",
+    "updated_at": "2025-04-16T20:48:40Z",
+    "labels": [
+      "01 type: bug",
+      "14 prio: low",
+      "41 lvl: easy"
+    ],
+    "comments": 2
+  },
+  "ai": {
+    "provider": "openai",
+    "model": "gpt-4o-mini"
+  },
+  "summary_markdown": "```markdown\n## What this issue is about\nThis issue addresses a bug in the FileNameNormalizer/URLNormalizer for handling files with long extensions (more than 4 characters). For example, uploading a file named `base.geojson` incorrectly results in `base-geosjon` instead of retaining the proper extension in the generated ID.\n\n## What needs to be done\nWe need to update the current regex (regular expression) used in the `FILENAME_REGEX` to properly account for file extensions longer than 4 characters. The proposed change is from:\n```python\nFILENAME_REGEX = re.compile(r\"^(.+)\\.(\\w{,4})$\")\n```\nto:\n```python\nFILENAME_REGEX = re.compile(r\"^(.+)\\.(\\w+)$\")\n```\nAdditionally, we should verify whether the normalizer is being utilized in file downloads.\n\n## Helpful background\nFile extensions help identify the type of file and are important for proper handling. The current regex restricts extensions to a maximum of 4 characters, which can cause issues with files that have common extensions like `woff2` or `geojson`.\n\n## Good first steps\n1. Review the current `FILENAME_REGEX` implementation in the codebase.\n2. Implement the proposed changes to the regex.\n3. Test the changes by uploading files with various long extensions to ensure they normalize correctly.\n4. Check if the FileNameNormalizer is applied during file downloads.\n5. Prepare for code review and make necessary documentation updates based on your findings.\n```",
+  "workflow": {
+    "repository": "syslabcom/activity-recognition",
+    "run_id": "24196205718",
+    "run_number": "53",
+    "attempt": "1",
+    "url": "https://github.com/syslabcom/activity-recognition/actions/runs/24196205718",
+    "sha": "4afa5437e3369368f43054c82fcd1ba9bed2967b"
+  }
+}

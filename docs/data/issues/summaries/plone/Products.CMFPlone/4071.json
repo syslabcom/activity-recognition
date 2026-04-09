@@ -1,0 +1,33 @@
+{
+  "version": 1,
+  "status": "success",
+  "generated_at": "2026-04-09T14:39:55Z",
+  "source_issue": {
+    "id": 2709856027,
+    "number": 4071,
+    "title": "Draft: Plone Multi Factor Authentication ",
+    "html_url": "https://github.com/plone/Products.CMFPlone/issues/4071",
+    "repository_full_name": "plone/Products.CMFPlone",
+    "updated_at": "2025-04-17T13:13:25Z",
+    "labels": [
+      "99 tag: UX Accessibility",
+      "04 type: enhancement",
+      "03 type: feature (plip)",
+      "43 lvl: complex"
+    ],
+    "comments": 4
+  },
+  "ai": {
+    "provider": "openai",
+    "model": "gpt-4o-mini"
+  },
+  "summary_markdown": "## What this issue is about\nThis issue focuses on implementing Multi-Factor Authentication (MFA) for Plone to enhance security. The aim is to support several MFA methods, including OTOP (Authenticator Apps), FIDO2 hardware tokens, and Passkeys, while offering integration with Single Sign-On (SSO) systems.\n\n## What needs to be done\nWe need to design and implement various MFA schemes. This will involve creating a control panel in Plone for configuring MFA requirements, where users can select settings based on their roles (e.g., optional, enforced for admins, or for all users). The implementation will include both backend and frontend components for Plone's different user interfaces.\n\n## Helpful background\nThere’s ongoing discussion about potentially breaking this large task into smaller, manageable pieces (PLIPs) to make it easier to implement individual MFA systems. UX design considerations are also essential for a seamless experience when integrating the different MFA methods.\n\n## Good first steps\n1. **Familiarize yourself** with Plone's [contributing guidelines](https://6.docs.plone.org/contributing/index.html).\n2. **Read through existing discussions** in this issue about UX design and breakdown suggestions to understand the scope and complexity.\n3. Consider participating in discussions to help clarify requirements or suggest improvements based on user experience.",
+  "workflow": {
+    "repository": "syslabcom/activity-recognition",
+    "run_id": "24196205718",
+    "run_number": "53",
+    "attempt": "1",
+    "url": "https://github.com/syslabcom/activity-recognition/actions/runs/24196205718",
+    "sha": "4afa5437e3369368f43054c82fcd1ba9bed2967b"
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "version": 1,
+  "status": "success",
+  "generated_at": "2026-04-09T14:40:55Z",
+  "source_issue": {
+    "id": 2669412772,
+    "number": 1780,
+    "title": "Add troubleshooting hints if frontend is accessed from another machine (not localhost) and missing CSS links in head",
+    "html_url": "https://github.com/plone/documentation/issues/1780",
+    "repository_full_name": "plone/documentation",
+    "updated_at": "2025-02-28T12:20:42Z",
+    "labels": [
+      "04 type: enhancement",
+      "33 needs: docs",
+      "43 lvl: complex"
+    ],
+    "comments": 3
+  },
+  "ai": {
+    "provider": "openai",
+    "model": "gpt-4o-mini"
+  },
+  "summary_markdown": "```markdown\n## What this issue is about\nThis issue addresses a common problem encountered when accessing the Plone frontend from a different machine (not localhost). Users may find that the CSS links are missing from the HTML head, which can lead to styling issues.\n\n## What needs to be done\nWe need to document troubleshooting hints for accessing the Plone frontend from other IP addresses. This documentation should include details about setting the environment variable `HOST` to the correct server IP or domain name and any firewall settings that may need to be adjusted.\n\n## Helpful background\nWhen starting the frontend using `make frontend-start`, if it’s accessed externally, the CSS links might not appear without proper configuration. This issue is related to a ticket in the Cookieplone project (issue [348](https://github.com/plone/cookieplone-templates/issues/348)) which also discusses solutions.\n\n## Good first steps\n1. Review the related Cookieplone issue for more insight.\n2. Check the existing Plone documentation to identify where to add this information.\n3. Draft a proposal for updating the documentation to include these troubleshooting hints.\n4. Participate in discussions to clarify any remaining questions and ensure alignment with other contributions.\n   \nFeel free to raise questions here if you're uncertain about any aspect!\n```",
+  "workflow": {
+    "repository": "syslabcom/activity-recognition",
+    "run_id": "24196205718",
+    "run_number": "53",
+    "attempt": "1",
+    "url": "https://github.com/syslabcom/activity-recognition/actions/runs/24196205718",
+    "sha": "4afa5437e3369368f43054c82fcd1ba9bed2967b"
+  }
+}

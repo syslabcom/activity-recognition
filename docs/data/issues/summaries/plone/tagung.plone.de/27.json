@@ -1,0 +1,32 @@
+{
+  "version": 1,
+  "status": "success",
+  "generated_at": "2026-04-09T14:40:16Z",
+  "source_issue": {
+    "id": 2922353505,
+    "number": 27,
+    "title": "Megamenu selected item markup lines not that nice in the current state.",
+    "html_url": "https://github.com/plone/tagung.plone.de/issues/27",
+    "repository_full_name": "plone/tagung.plone.de",
+    "updated_at": "2025-03-15T17:42:46Z",
+    "labels": [
+      "14 prio: low",
+      "32 needs: review",
+      "41 lvl: easy"
+    ],
+    "comments": 0
+  },
+  "ai": {
+    "provider": "openai",
+    "model": "gpt-4o-mini"
+  },
+  "summary_markdown": "## What this issue is about\nThis issue focuses on improving the appearance of the selected item in the megamenu for the Tagung Plone website. Currently, there is an inconsistency in the thickness of the marker lines for selected and unselected items, making the selected item less visually appealing.\n\n## What needs to be done\nThe task involves modifying the CSS styles to make the marker lines for selected items thicker and more opaque. The goal is to create a more uniform and visually pleasing experience across all menu items.\n\n## Helpful background\nThe initial suggestion indicates that the current design shows a bold line for the selected item, while other items display a thinner line. This can lead to a confusing user experience. The issue is marked as low priority and is considered easy, making it suitable for newcomers.\n\n## Good first steps\n1. Review the current CSS for the megamenu to understand how lines are currently styled.\n2. Experiment with adjusting the thickness and opacity of the lines in your local development environment.\n3. Test your changes to ensure they improve the appearance of the megamenu without introducing new issues.\n4. Be prepared to provide documentation on your changes and coordinate with the maintainers for a review once you’re ready to submit your updates.",
+  "workflow": {
+    "repository": "syslabcom/activity-recognition",
+    "run_id": "24196205718",
+    "run_number": "53",
+    "attempt": "1",
+    "url": "https://github.com/syslabcom/activity-recognition/actions/runs/24196205718",
+    "sha": "4afa5437e3369368f43054c82fcd1ba9bed2967b"
+  }
+}

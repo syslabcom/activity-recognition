@@ -1,0 +1,31 @@
+{
+  "version": 1,
+  "status": "success",
+  "generated_at": "2026-04-09T14:40:24Z",
+  "source_issue": {
+    "id": 2189926833,
+    "number": 5883,
+    "title": "Create a page for Volto CI",
+    "html_url": "https://github.com/plone/volto/issues/5883",
+    "repository_full_name": "plone/volto",
+    "updated_at": "2025-03-08T22:21:39Z",
+    "labels": [
+      "33 needs: docs",
+      "42 lvl: moderate"
+    ],
+    "comments": 0
+  },
+  "ai": {
+    "provider": "openai",
+    "model": "gpt-4o-mini"
+  },
+  "summary_markdown": "## What this issue is about\nThis issue proposes creating a dedicated page or section about Continuous Integration (CI) for new contributors to Volto. The current documentation may not provide sufficient clarity for users who are unfamiliar with CI and how to utilize it effectively in their contributions.\n\n## What needs to be done\nWe need to develop a new subsection under the existing \"[Developing Volto](https://6.docs.plone.org/volto/contributing/developing-core.html#developing-volto)\" documentation. This section should explain what CI is and how it can be beneficial for contributors, specifically targeting newcomers to GitHub.\n\n## Helpful background\nContinuous Integration (CI) is a practice that helps developers integrate code changes frequently, allowing for more reliable and efficient development. Many new contributors may lack understanding of this process, making it essential to provide clear documentation.\n\n## Good first steps\n1. Familiarize yourself with the existing documentation on developing Volto.\n2. Research what CI involves, focusing on key concepts that beginners should know.\n3. Draft an outline for the new CI section, considering what information would be most helpful to newcomers.\n4. Create a pull request (PR) for your proposed changes, ensuring clear communication throughout the process. \n\nBy contributing, you’ll help make Volto more accessible to new users!",
+  "workflow": {
+    "repository": "syslabcom/activity-recognition",
+    "run_id": "24196205718",
+    "run_number": "53",
+    "attempt": "1",
+    "url": "https://github.com/syslabcom/activity-recognition/actions/runs/24196205718",
+    "sha": "4afa5437e3369368f43054c82fcd1ba9bed2967b"
+  }
+}

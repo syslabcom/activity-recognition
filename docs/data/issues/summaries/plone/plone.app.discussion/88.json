@@ -1,0 +1,34 @@
+{
+  "version": 1,
+  "status": "success",
+  "generated_at": "2026-04-09T14:39:37Z",
+  "source_issue": {
+    "id": 140961326,
+    "number": 88,
+    "title": "Сlick Reply -> duplicate fields",
+    "html_url": "https://github.com/plone/plone.app.discussion/issues/88",
+    "repository_full_name": "plone/plone.app.discussion",
+    "updated_at": "2025-06-01T03:07:39Z",
+    "labels": [
+      "31 needs: help",
+      "02 type: regression",
+      "12 prio: high",
+      "21 status: confirmed",
+      "41 lvl: easy"
+    ],
+    "comments": 2
+  },
+  "ai": {
+    "provider": "openai",
+    "model": "gpt-4o-mini"
+  },
+  "summary_markdown": "```markdown\n## What this issue is about\nThis issue involves a UI problem in Plone's discussion feature. When a user clicks \"Reply\" to an existing comment without being logged in, two fields appear instead of one, causing confusion.\n\n## What needs to be done\nThe goal is to improve the user interface so that the extra reply field is hidden when a user clicks \"Reply\" on a comment. Also, clearer labels can be added to distinguish between the reply and adding a new comment.\n\n## Helpful background\nThis issue is categorized as a regression in the UI/UX of Plone's discussion feature. Discussions suggest that although there is a general understanding of the problem, there isn't a consensus on the best approach to fix it. \n\n## Good first steps\n1. Familiarize yourself with the existing UI for replies in Plone’s discussion component.\n2. Review the screenshots and comments to understand user confusion.\n3. Consider how to implement a solution for hiding the bottom field and improving label clarity.\n4. Coordinate with other contributors for feedback and guidance as needed.\n5. Testing should include user experience checks after any changes.\n```",
+  "workflow": {
+    "repository": "syslabcom/activity-recognition",
+    "run_id": "24196205718",
+    "run_number": "53",
+    "attempt": "1",
+    "url": "https://github.com/syslabcom/activity-recognition/actions/runs/24196205718",
+    "sha": "4afa5437e3369368f43054c82fcd1ba9bed2967b"
+  }
+}

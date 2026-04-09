@@ -1,0 +1,31 @@
+{
+  "version": 1,
+  "status": "success",
+  "generated_at": "2026-04-09T14:41:09Z",
+  "source_issue": {
+    "id": 2547785360,
+    "number": 6327,
+    "title": "Library Upgrades for the next major (19).",
+    "html_url": "https://github.com/plone/volto/issues/6327",
+    "repository_full_name": "plone/volto",
+    "updated_at": "2025-02-04T19:03:13Z",
+    "labels": [
+      "03 type: feature (plip)",
+      "43 lvl: complex"
+    ],
+    "comments": 2
+  },
+  "ai": {
+    "provider": "openai",
+    "model": "gpt-4o-mini"
+  },
+  "summary_markdown": "```markdown\n## What this issue is about\nThis issue is about upgrading essential libraries (`react-intl` and `redux`) in Volto for the next major release (version 19). These libraries are currently outdated, and updating them is crucial for maintaining the codebase and improving functionality.\n\n## What needs to be done\n1. Upgrade the libraries to their maintained versions.\n2. Modify existing code as necessary to accommodate changes in the new library versions.\n3. Assess if the current tooling around `react-intl` needs adjustment, particularly regarding the .po (Portable Object) files.\n\n## Helpful background\nThe main motivation for this upgrade is to ensure Volto uses modern, supported libraries. The updating process is part of a broader Plone Improvement Proposal (PLIP). Note that some discussions in this issue might be incomplete or ambiguous, so clarifications could be necessary as you proceed.\n\n## Good first steps\n1. Familiarize yourself with the involved libraries (`react-intl` and `redux`) and their latest features.\n2. Review related issues, especially [issue #5627](https://github.com/plone/volto/issues/5627) on `react-intl`.\n3. Look through documentation on contributing to Volto. See [First-time contributors](https://6.docs.plone.org/contributing/first-time.html) for guidelines.\n4. Feel free to ask questions in the comments if you need guidance!\n```",
+  "workflow": {
+    "repository": "syslabcom/activity-recognition",
+    "run_id": "24196205718",
+    "run_number": "53",
+    "attempt": "1",
+    "url": "https://github.com/syslabcom/activity-recognition/actions/runs/24196205718",
+    "sha": "4afa5437e3369368f43054c82fcd1ba9bed2967b"
+  }
+}

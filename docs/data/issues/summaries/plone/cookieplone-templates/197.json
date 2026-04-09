@@ -1,0 +1,33 @@
+{
+  "version": 1,
+  "status": "success",
+  "generated_at": "2026-04-09T14:39:49Z",
+  "source_issue": {
+    "id": 2976575029,
+    "number": 197,
+    "title": "Add canonical startpoint link to cookieplone make commands docs to the final console output and main READMEs",
+    "html_url": "https://github.com/plone/cookieplone-templates/issues/197",
+    "repository_full_name": "plone/cookieplone-templates",
+    "updated_at": "2025-04-28T07:46:28Z",
+    "labels": [
+      "04 type: enhancement",
+      "31 needs: help",
+      "33 needs: docs",
+      "41 lvl: easy"
+    ],
+    "comments": 2
+  },
+  "ai": {
+    "provider": "openai",
+    "model": "gpt-4o-mini"
+  },
+  "summary_markdown": "## What this issue is about\nThis issue proposes adding a link to the **canonical startpoint documentation** for the `cookieplone make commands` in both the console output after running a command and the main `README.md` file. This aims to help new users quickly find essential information and reduce confusion.\n\n## What needs to be done\n- Include a direct link to the detailed `cookieplone make commands` documentation in the final console output after a run.\n- Add the same link to the main `README.md` file for easy access.\n- Consider user feedback on the suggested implementation, noting that discussions around best practices are ongoing.\n\n## Helpful background\nCurrent documentation for `cookieplone` is still being developed. There are suggestions for improving error messages to guide users better, especially newcomers. Some discussions about whether to link to only the `README.md` file exist to avoid maintaining multiple sources of information.\n\n## Good first steps\n1. Review the existing `README.md` to understand its structure.\n2. Check the console output after running commands to identify where the link can be inserted.\n3. Familiarize yourself with the ongoing discussions and any suggestions made by other contributors.\n4. Create a draft pull request with your proposed changes, and engage in discussions for feedback.",
+  "workflow": {
+    "repository": "syslabcom/activity-recognition",
+    "run_id": "24196205718",
+    "run_number": "53",
+    "attempt": "1",
+    "url": "https://github.com/syslabcom/activity-recognition/actions/runs/24196205718",
+    "sha": "4afa5437e3369368f43054c82fcd1ba9bed2967b"
+  }
+}

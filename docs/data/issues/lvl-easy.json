@@ -1,7 +1,7 @@
 {
   "version": 1,
   "status": "success",
-  "generated_at": "2026-04-09T13:35:57Z",
+  "generated_at": "2026-04-09T14:39:29Z",
   "organization": "plone",
   "state": "open",
   "slug": "lvl-easy",
@@ -1059,7 +1059,15 @@
         "12 prio: high",
         "21 status: confirmed",
         "41 lvl: easy"
-      ]
+      ],
+      "contributor_summary": {
+        "status": "available",
+        "generated_at": "2026-04-09T14:39:37Z",
+        "source_issue_updated_at": "2025-06-01T03:07:39Z",
+        "model": "gpt-4o-mini",
+        "summary_markdown": "```markdown\n## What this issue is about\nThis issue involves a UI problem in Plone's discussion feature. When a user clicks \"Reply\" to an existing comment without being logged in, two fields appear instead of one, causing confusion.\n\n## What needs to be done\nThe goal is to improve the user interface so that the extra reply field is hidden when a user clicks \"Reply\" on a comment. Also, clearer labels can be added to distinguish between the reply and adding a new comment.\n\n## Helpful background\nThis issue is categorized as a regression in the UI/UX of Plone's discussion feature. Discussions suggest that although there is a general understanding of the problem, there isn't a consensus on the best approach to fix it. \n\n## Good first steps\n1. Familiarize yourself with the existing UI for replies in Plone’s discussion component.\n2. Review the screenshots and comments to understand user confusion.\n3. Consider how to implement a solution for hiding the bottom field and improving label clarity.\n4. Coordinate with other contributors for feedback and guidance as needed.\n5. Testing should include user experience checks after any changes.\n```",
+        "path": "data/issues/summaries/plone/plone.app.discussion/88.json"
+      }
     },
     {
       "id": 2976575029,
@@ -1082,7 +1090,15 @@
         "31 needs: help",
         "33 needs: docs",
         "41 lvl: easy"
-      ]
+      ],
+      "contributor_summary": {
+        "status": "available",
+        "generated_at": "2026-04-09T14:39:49Z",
+        "source_issue_updated_at": "2025-04-28T07:46:28Z",
+        "model": "gpt-4o-mini",
+        "summary_markdown": "## What this issue is about\nThis issue proposes adding a link to the **canonical startpoint documentation** for the `cookieplone make commands` in both the console output after running a command and the main `README.md` file. This aims to help new users quickly find essential information and reduce confusion.\n\n## What needs to be done\n- Include a direct link to the detailed `cookieplone make commands` documentation in the final console output after a run.\n- Add the same link to the main `README.md` file for easy access.\n- Consider user feedback on the suggested implementation, noting that discussions around best practices are ongoing.\n\n## Helpful background\nCurrent documentation for `cookieplone` is still being developed. There are suggestions for improving error messages to guide users better, especially newcomers. Some discussions about whether to link to only the `README.md` file exist to avoid maintaining multiple sources of information.\n\n## Good first steps\n1. Review the existing `README.md` to understand its structure.\n2. Check the console output after running commands to identify where the link can be inserted.\n3. Familiarize yourself with the ongoing discussions and any suggestions made by other contributors.\n4. Create a draft pull request with your proposed changes, and engage in discussions for feedback.",
+        "path": "data/issues/summaries/plone/cookieplone-templates/197.json"
+      }
     },
     {
       "id": 2370106958,
@@ -1104,7 +1120,15 @@
         "01 type: bug",
         "14 prio: low",
         "41 lvl: easy"
-      ]
+      ],
+      "contributor_summary": {
+        "status": "available",
+        "generated_at": "2026-04-09T14:40:00Z",
+        "source_issue_updated_at": "2025-04-16T20:48:40Z",
+        "model": "gpt-4o-mini",
+        "summary_markdown": "```markdown\n## What this issue is about\nThis issue addresses a bug in the FileNameNormalizer/URLNormalizer for handling files with long extensions (more than 4 characters). For example, uploading a file named `base.geojson` incorrectly results in `base-geosjon` instead of retaining the proper extension in the generated ID.\n\n## What needs to be done\nWe need to update the current regex (regular expression) used in the `FILENAME_REGEX` to properly account for file extensions longer than 4 characters. The proposed change is from:\n```python\nFILENAME_REGEX = re.compile(r\"^(.+)\\.(\\w{,4})$\")\n```\nto:\n```python\nFILENAME_REGEX = re.compile(r\"^(.+)\\.(\\w+)$\")\n```\nAdditionally, we should verify whether the normalizer is being utilized in file downloads.\n\n## Helpful background\nFile extensions help identify the type of file and are important for proper handling. The current regex restricts extensions to a maximum of 4 characters, which can cause issues with files that have common extensions like `woff2` or `geojson`.\n\n## Good first steps\n1. Review the current `FILENAME_REGEX` implementation in the codebase.\n2. Implement the proposed changes to the regex.\n3. Test the changes by uploading files with various long extensions to ensure they normalize correctly.\n4. Check if the FileNameNormalizer is applied during file downloads.\n5. Prepare for code review and make necessary documentation updates based on your findings.\n```",
+        "path": "data/issues/summaries/plone/plone.i18n/65.json"
+      }
     },
     {
       "id": 2981886774,
@@ -1126,7 +1150,15 @@
         "04 type: enhancement",
         "41 lvl: easy",
         "52 target: minor"
-      ]
+      ],
+      "contributor_summary": {
+        "status": "available",
+        "generated_at": "2026-04-09T14:40:07Z",
+        "source_issue_updated_at": "2025-04-09T10:12:23Z",
+        "model": "gpt-4o-mini",
+        "summary_markdown": "## What this issue is about\nThis issue seeks to enhance the `documentation_starter` template by adding support for GitLab. Currently, the template supports only GitHub, requiring manual edits for GitLab usage.\n\n## What needs to be done\nWe want to incorporate GitLab functionalities into the `documentation_starter` template. This may involve adjusting variables and structures to ensure compatibility. Collaboration with a GitLab user would be beneficial.\n\n## Helpful background\nThe discussion indicates that some groundwork has been done with the new structure of the `documentation_starter` template, but a complete analysis of the modified template in relation to GitLab is still ongoing. There are insights from past adjustments made by other contributors, which might guide this enhancement.\n\n## Good first steps\n1. Familiarize yourself with the `documentation_starter` template in the [repository](https://github.com/plone/cookieplone-templates).\n2. Reach out to potential collaborators like @erral for insights on variable usage.\n3. Test the current setup if you have a GitLab account, and identify any areas that need updating based on your findings.\n4. Review existing discussions and consider what documentation or examples might be needed for future contributors.",
+        "path": "data/issues/summaries/plone/cookieplone-templates/200.json"
+      }
     },
     {
       "id": 2922353505,
@@ -1150,7 +1182,15 @@
         "14 prio: low",
         "32 needs: review",
         "41 lvl: easy"
-      ]
+      ],
+      "contributor_summary": {
+        "status": "available",
+        "generated_at": "2026-04-09T14:40:16Z",
+        "source_issue_updated_at": "2025-03-15T17:42:46Z",
+        "model": "gpt-4o-mini",
+        "summary_markdown": "## What this issue is about\nThis issue focuses on improving the appearance of the selected item in the megamenu for the Tagung Plone website. Currently, there is an inconsistency in the thickness of the marker lines for selected and unselected items, making the selected item less visually appealing.\n\n## What needs to be done\nThe task involves modifying the CSS styles to make the marker lines for selected items thicker and more opaque. The goal is to create a more uniform and visually pleasing experience across all menu items.\n\n## Helpful background\nThe initial suggestion indicates that the current design shows a bold line for the selected item, while other items display a thinner line. This can lead to a confusing user experience. The issue is marked as low priority and is considered easy, making it suitable for newcomers.\n\n## Good first steps\n1. Review the current CSS for the megamenu to understand how lines are currently styled.\n2. Experiment with adjusting the thickness and opacity of the lines in your local development environment.\n3. Test your changes to ensure they improve the appearance of the megamenu without introducing new issues.\n4. Be prepared to provide documentation on your changes and coordinate with the maintainers for a review once you’re ready to submit your updates.",
+        "path": "data/issues/summaries/plone/tagung.plone.de/27.json"
+      }
     },
     {
       "id": 1433738735,
@@ -1172,7 +1212,15 @@
         "31 needs: help",
         "33 needs: docs",
         "41 lvl: easy"
-      ]
+      ],
+      "contributor_summary": {
+        "status": "available",
+        "generated_at": "2026-04-09T14:40:36Z",
+        "source_issue_updated_at": "2025-03-08T17:52:49Z",
+        "model": "gpt-4o-mini",
+        "summary_markdown": "```markdown\n## What this issue is about\nThis issue proposes creating documentation specifically for end-users of the Volto Editor. The goal is to provide guidance within the UI by adding a help icon (❔) that links to relevant documentation, similar to features in other applications like PyCharm.\n\n## What needs to be done\nWe need to develop user-friendly documentation covering the Editor's features and functionalities. The current discussion indicates a need for structure but lacks a finalized format. Contributions can be based on existing discussions and community inputs.\n\n## Helpful background\nPrevious discussions have identified that there are different audiences for Volto documentation, including Developers and Editors. While some initial work has been proposed, there’s uncertainty about the final organization and content details. Familiarizing yourself with the functionality and existing documentation will aid in your contributions.\n\n## Good first steps\n1. Review existing discussions and suggest documentation structures.\n2. Start developing content for specific features of the Volto Editor, using previously shared notes as guidance.\n3. Consider creating a pull request (PR) when you're ready for feedback.\n4. Engage with community members for collaboration or questions on Discord.\n```",
+        "path": "data/issues/summaries/plone/volto/3827.json"
+      }
     },
     {
       "id": 2709766134,
@@ -1198,7 +1246,15 @@
         "33 needs: docs",
         "41 lvl: easy",
         "42 lvl: moderate"
-      ]
+      ],
+      "contributor_summary": {
+        "status": "available",
+        "generated_at": "2026-04-09T14:41:36Z",
+        "source_issue_updated_at": "2025-01-24T06:48:28Z",
+        "model": "gpt-4o-mini",
+        "summary_markdown": "```markdown\n## What this issue is about\nThis issue focuses on enhancing the README file of the Plone repository. The goal is to improve clarity and accessibility for new users.\n\n## What needs to be done\nHere are the proposed improvements:\n- Convert the existing `README.rst` to `README.md`.\n- Create a new page, `README-devcontainer`, documenting how to set up the development container and GitHub workspace.\n- Ensure links to the official Plone documentation and the new page are included.\n\nSome tasks have been completed, but others remain open for contribution.\n\n## Helpful background\nThe README serves as the first point of contact for users and contributors. Updating it can help newcomers understand how to get started with Plone and its development environment.\n\nThere is ongoing discussion about possibly including tutorial videos in the documentation, although this is not finalized.\n\n## Good first steps\n1. Familiarize yourself with Markdown if you're not familiar—it's a simple formatting language used for README.md files.\n2. Start by converting the existing `README.rst` to `README.md` format.\n3. Look into the steps for setting up the `README-devcontainer` and gather that information.\n\nOnce you've made progress, consider reviewing and coordinating with others on the issue.\n```",
+        "path": "data/issues/summaries/plone/buildout.coredev/972.json"
+      }
     },
     {
       "id": 835136338,
@@ -2232,10 +2288,10 @@
   "message": null,
   "workflow": {
     "repository": "syslabcom/activity-recognition",
-    "run_id": "24193140143",
-    "run_number": "52",
+    "run_id": "24196205718",
+    "run_number": "53",
     "attempt": "1",
-    "url": "https://github.com/syslabcom/activity-recognition/actions/runs/24193140143",
-    "sha": "598aa417f24197151040f51e842b398a12c4da37"
+    "url": "https://github.com/syslabcom/activity-recognition/actions/runs/24196205718",
+    "sha": "4afa5437e3369368f43054c82fcd1ba9bed2967b"
   }
 }

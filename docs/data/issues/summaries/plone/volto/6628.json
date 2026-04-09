@@ -1,0 +1,31 @@
+{
+  "version": 1,
+  "status": "success",
+  "generated_at": "2026-04-09T14:41:16Z",
+  "source_issue": {
+    "id": 2815246517,
+    "number": 6628,
+    "title": "PLIP Process for User Interfacing Changing PLIPs",
+    "html_url": "https://github.com/plone/volto/issues/6628",
+    "repository_full_name": "plone/volto",
+    "updated_at": "2025-02-03T21:16:08Z",
+    "labels": [
+      "03 type: feature (plip)",
+      "43 lvl: complex"
+    ],
+    "comments": 8
+  },
+  "ai": {
+    "provider": "openai",
+    "model": "gpt-4o-mini"
+  },
+  "summary_markdown": "## What this issue is about\nThis issue focuses on improving the PLIP (Plone Improvement Proposal) process for user interface (UI) and user experience (UX) changes in Volto (Plone's frontend framework). Changes in this area can often be breaking and may require careful planning and expert input.\n\n## What needs to be done\n1. Identify PLIPs that propose UI/UX changes.\n2. Collaborate with UX experts through meetings and sprints to develop solutions.\n3. Implement the agreed-upon proposals and submit for review by the Volto team.\n\n## Helpful background\nThe discussion highlights a current challenge: limited UX participation within the Volto team and community. Suggestions include reaching out directly to UX professionals and facilitating their involvement in the PLIP process. There's also a mention of creating a forum or tagging system for better engagement and feedback.\n\n## Good first steps\n1. Review the [PLIP documentation](https://6.docs.plone.org/contributing/core/plips.html) to understand existing processes.\n2. Consider joining discussions about UX needs and potential platforms for collaboration.\n3. Reach out to other contributors, especially those with UX experience, for guidance and collaboration opportunities.",
+  "workflow": {
+    "repository": "syslabcom/activity-recognition",
+    "run_id": "24196205718",
+    "run_number": "53",
+    "attempt": "1",
+    "url": "https://github.com/syslabcom/activity-recognition/actions/runs/24196205718",
+    "sha": "4afa5437e3369368f43054c82fcd1ba9bed2967b"
+  }
+}
