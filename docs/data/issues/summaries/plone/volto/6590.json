@@ -1,0 +1,32 @@
+{
+  "version": 1,
+  "status": "success",
+  "generated_at": "2026-04-09T13:38:10Z",
+  "source_issue": {
+    "id": 2786333413,
+    "number": 6590,
+    "title": "Feature: support History for home page",
+    "html_url": "https://github.com/plone/volto/issues/6590",
+    "repository_full_name": "plone/volto",
+    "updated_at": "2025-09-09T00:32:37Z",
+    "labels": [
+      "04 type: enhancement",
+      "43 lvl: complex",
+      "27 status: stale"
+    ],
+    "comments": 9
+  },
+  "ai": {
+    "provider": "openai",
+    "model": "gpt-4o-mini"
+  },
+  "summary_markdown": "```markdown\n## What this issue is about\nThis issue requests a feature to support the history functionality on the Volto demo home page. Currently, users cannot review or restore previous revisions of the home page, which limits editing capabilities.\n\n## What needs to be done\nTo implement this feature, we need to ensure that the home page can be versioned. This involves making changes in the backend, particularly within the Products.CMFEditions, to handle revisions correctly. There are complexities due to components that should not be copied during this process.\n\n## Helpful background\nThe issue is marked as complex and may not be suitable for beginners. Discussions indicate a prior pull request that needs to be addressed before any frontend work can start. It's essential to understand versioning and how it relates to content management.\n\n## Good first steps\n1. Familiarize yourself with versioning concepts in Plone and Products.CMFEditions.\n2. Review the relevant pull request [here](https://github.com/plone/Products.CMFEditions/pull/113).\n3. Engage in discussions with other contributors to clarify any questions you may have regarding the requirements.\n4. Coordinate with others working on related tasks for better insight into backend modifications.\n```",
+  "workflow": {
+    "repository": "syslabcom/activity-recognition",
+    "run_id": "24193140143",
+    "run_number": "52",
+    "attempt": "1",
+    "url": "https://github.com/syslabcom/activity-recognition/actions/runs/24193140143",
+    "sha": "598aa417f24197151040f51e842b398a12c4da37"
+  }
+}

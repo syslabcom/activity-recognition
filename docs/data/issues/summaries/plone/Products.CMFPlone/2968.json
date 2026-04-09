@@ -1,0 +1,33 @@
+{
+  "version": 1,
+  "status": "success",
+  "generated_at": "2026-04-09T13:37:03Z",
+  "source_issue": {
+    "id": 512845190,
+    "number": 2968,
+    "title": "One File-Field (Type) to rules them all",
+    "html_url": "https://github.com/plone/Products.CMFPlone/issues/2968",
+    "repository_full_name": "plone/Products.CMFPlone",
+    "updated_at": "2025-10-24T20:04:28Z",
+    "labels": [
+      "04 type: enhancement",
+      "03 type: feature (plip)",
+      "43 lvl: complex",
+      "53 target: major"
+    ],
+    "comments": 8
+  },
+  "ai": {
+    "provider": "openai",
+    "model": "gpt-4o-mini"
+  },
+  "summary_markdown": "## What this issue is about\nThis issue proposes consolidating Plone's file-handling system to use a single field type for all file types, rather than separating them into specific types like bitmap images and other files. This change aims to simplify content management and enhance user experience by allowing better file differentiation based on MIME type.\n\n## What needs to be done\nThe main tasks include:\n- Deprecating specialized fields like `NamedImage` and `NamedBlobImage`.\n- Implementing a unified field that handles all file types while providing the necessary functionality based on their MIME types.\n- Ensuring backward compatibility and assessing potential risks associated with this change.\n\n## Helpful background\nThis enhancement stems from the recognition that current file handling in Plone can be confusing for editors and users. The discussion indicates that while there's general support for this simplification, there are concerns about the implications for content types and indexing files. This needs careful consideration.\n\n## Good first steps\n1. Familiarize yourself with Plone's file handling and the existing field types.\n2. Review the related comments in the issue for insights and opinions for and against the proposal.\n3. Get involved in discussions on possible side effects and share your thoughts in the comments for better clarity.\n4. Prepare a simple example implementation to demonstrate how this change could work.",
+  "workflow": {
+    "repository": "syslabcom/activity-recognition",
+    "run_id": "24193140143",
+    "run_number": "52",
+    "attempt": "1",
+    "url": "https://github.com/syslabcom/activity-recognition/actions/runs/24193140143",
+    "sha": "598aa417f24197151040f51e842b398a12c4da37"
+  }
+}

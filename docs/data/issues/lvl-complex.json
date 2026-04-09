@@ -1,7 +1,7 @@
 {
   "version": 1,
   "status": "success",
-  "generated_at": "2026-04-09T12:25:45Z",
+  "generated_at": "2026-04-09T13:35:57Z",
   "organization": "plone",
   "state": "open",
   "slug": "lvl-complex",
@@ -607,7 +607,15 @@
       "assignees": [],
       "labels": [
         "43 lvl: complex"
-      ]
+      ],
+      "contributor_summary": {
+        "status": "available",
+        "generated_at": "2026-04-09T13:36:11Z",
+        "source_issue_updated_at": "2025-12-19T04:16:04Z",
+        "model": "gpt-4o-mini",
+        "summary_markdown": "## What this issue is about\nThis issue focuses on creating a conceptual guide for **Cookieplone** within the Plone documentation. Cookieplone is not well-understood and a detailed guide can help clarify its workflow and tools.\n\n## What needs to be done\n1. Create a workflow diagram illustrating the Cookieplone process, from project generation to deployment. You can use **Mermaid** or **Graphviz** for diagrams, and export them as SVG.\n2. Provide a description of the tools included in a Cookieplone project, especially those related to DevOps and documentation.\n3. Reference existing materials, such as content from [Plone Deployment Training](https://training.plone.org/plone-deployment/).\n\n## Helpful background\nThe term \"conceptual guide\" refers to explanations in the **Diátaxis** framework, which outlines how to present complex information clearly. This issue is marked as complex, indicating it may require some experience with Plone.\n\n## Good first steps\n- Familiarize yourself with the [Plone Documentation](https://6.docs.plone.org/contributing/documentation/index.html) and the [First-time contributors](https://6.docs.plone.org/contributing/first-time.html) guidelines.\n- Explore the available resources related to Cookieplone to build a foundational understanding.\n- Consider joining discussions or asking questions in the issue comments to clarify any uncertainties.",
+        "path": "data/issues/summaries/plone/documentation/1759.json"
+      }
     },
     {
       "id": 3665937052,
@@ -630,7 +638,15 @@
       "labels": [
         "13 prio: normal",
         "43 lvl: complex"
-      ]
+      ],
+      "contributor_summary": {
+        "status": "available",
+        "generated_at": "2026-04-09T13:36:57Z",
+        "source_issue_updated_at": "2025-11-26T05:56:50Z",
+        "model": "gpt-4o-mini",
+        "summary_markdown": "## What this issue is about\nThis issue proposes merging the existing Admin and Deployment guides into a single Develop guide for Plone. The aim is to simplify navigation for users who may wear multiple hats—like Admin, DevOps, and Developer—by consolidating relevant tasks into one comprehensive resource.\n\n## What needs to be done\nYou will need to:\n1. Review the current Admin and Deployment guides.\n2. Identify overlapping content and tasks that can be combined.\n3. Create a new Develop guide that includes all necessary information for site administration and development in one place.\n\n## Helpful background\nPrevious discussions indicated that splitting tasks by role makes it harder for users to find what they need. A \"Plone site administrator\" is defined separately from an \"Administrator,\" which has caused some confusion. This merging seeks to clarify roles and make the content more accessible.\n\n## Good first steps\n1. Familiarize yourself with the existing guides by reviewing them directly.\n2. Check related issues and discussions linked [here](https://github.com/plone/documentation/issues/1768) and [here](https://github.com/plone/documentation/pull/1875).\n3. Start drafting a combined outline for the new Develop guide.\n4. Share your progress with the community for feedback!",
+        "path": "data/issues/summaries/plone/documentation/1997.json"
+      }
     },
     {
       "id": 512845190,
@@ -655,7 +671,15 @@
         "03 type: feature (plip)",
         "43 lvl: complex",
         "53 target: major"
-      ]
+      ],
+      "contributor_summary": {
+        "status": "available",
+        "generated_at": "2026-04-09T13:37:03Z",
+        "source_issue_updated_at": "2025-10-24T20:04:28Z",
+        "model": "gpt-4o-mini",
+        "summary_markdown": "## What this issue is about\nThis issue proposes consolidating Plone's file-handling system to use a single field type for all file types, rather than separating them into specific types like bitmap images and other files. This change aims to simplify content management and enhance user experience by allowing better file differentiation based on MIME type.\n\n## What needs to be done\nThe main tasks include:\n- Deprecating specialized fields like `NamedImage` and `NamedBlobImage`.\n- Implementing a unified field that handles all file types while providing the necessary functionality based on their MIME types.\n- Ensuring backward compatibility and assessing potential risks associated with this change.\n\n## Helpful background\nThis enhancement stems from the recognition that current file handling in Plone can be confusing for editors and users. The discussion indicates that while there's general support for this simplification, there are concerns about the implications for content types and indexing files. This needs careful consideration.\n\n## Good first steps\n1. Familiarize yourself with Plone's file handling and the existing field types.\n2. Review the related comments in the issue for insights and opinions for and against the proposal.\n3. Get involved in discussions on possible side effects and share your thoughts in the comments for better clarity.\n4. Prepare a simple example implementation to demonstrate how this change could work.",
+        "path": "data/issues/summaries/plone/Products.CMFPlone/2968.json"
+      }
     },
     {
       "id": 1554846894,
@@ -678,7 +702,15 @@
       "labels": [
         "03 type: feature (plip)",
         "43 lvl: complex"
-      ]
+      ],
+      "contributor_summary": {
+        "status": "available",
+        "generated_at": "2026-04-09T13:37:13Z",
+        "source_issue_updated_at": "2025-10-24T12:15:11Z",
+        "model": "gpt-4o-mini",
+        "summary_markdown": "```markdown\n## What this issue is about\nThis issue (PLIP 4303) focuses on improving the user experience of adding links to internal content or external URLs in Plone. The goal is to unify the link-adding process across different components, providing a more seamless experience akin to those seen in other popular platforms.\n\n## What needs to be done\nWe need to design a new link widget with the following features:\n- Define the default elements to display (e.g., recent user-created content).\n- Implement inline searching for links.\n- Include options to save, edit, and remove links.\n- Address any edge cases that may arise.\n\n## Helpful background\nThis is a proposed improvement, not a bug to fix. It requires discussion, review, and approval from the project team. The idea has gained traction due to its relevance and appeal in modern software such as Google products and WordPress.\n\n## Good first steps\n1. Familiarize yourself with [PLIP guidelines](https://5.docs.plone.org/develop/coredev/docs/plips.html).\n2. Review existing comments and suggestions in this issue.\n3. Consider contributing to discussions about the default elements to show and how links might be handled.\n4. If you're interested in coding, start by looking at related pull requests and testing improvements.\n5. Reach out to the current assignee, @dobri1408, for guidance on how you can help move this forward.\n```",
+        "path": "data/issues/summaries/plone/volto/4303.json"
+      }
     },
     {
       "id": 2853065874,
@@ -699,7 +731,15 @@
       "labels": [
         "03 type: feature (plip)",
         "43 lvl: complex"
-      ]
+      ],
+      "contributor_summary": {
+        "status": "available",
+        "generated_at": "2026-04-09T13:37:19Z",
+        "source_issue_updated_at": "2025-10-24T11:50:29Z",
+        "model": "gpt-4o-mini",
+        "summary_markdown": "```markdown\n## What this issue is about\nThis issue involves refactoring `plone.app.contentrules` to create Python API methods that can be utilized by `plone.restapi`. The goal is to separate UI-related code from the API, improving maintainability and allowing headless installations to function seamlessly.\n\n## What needs to be done\n1. Develop Python API methods for all existing functionality in `plone.app.contentrules`.\n2. Move UI code to `plone.app.layout`.\n3. Update `plone.restapi` to use these new API methods.\n\n## Helpful background\nCurrently, `plone.restapi` fills form data directly, which ties it to the UI code in `plone.app.contentrules`. This refactor aims to decouple those dependencies. Although there are remarks about possibly turning `plone.app.contentrules` into a core add-on, this issue primarily focuses on the API refactoring.\n\n## Good first steps\n1. Familiarize yourself with the existing `plone.app.contentrules` and `plone.restapi` code.\n2. Explore how Python API methods can be structured.\n3. Engage in discussions about the feasibility of separating UI from API, as there is some ambiguity in the ongoing conversation regarding this refactor.\n4. Consider getting involved in related issues (like PLIP #4119) for broader context.\n5. Look out for testing and documentation needs once implementation is underway.\n```",
+        "path": "data/issues/summaries/plone/Products.CMFPlone/4110.json"
+      }
     },
     {
       "id": 1551846820,
@@ -720,7 +760,15 @@
       "labels": [
         "03 type: feature (plip)",
         "43 lvl: complex"
-      ]
+      ],
+      "contributor_summary": {
+        "status": "available",
+        "generated_at": "2026-04-09T13:37:26Z",
+        "source_issue_updated_at": "2025-10-24T11:39:42Z",
+        "model": "gpt-4o-mini",
+        "summary_markdown": "```markdown\n## What this issue is about\nThis issue focuses on improving Volto to support multiple sites under one domain using subpath URLs, like `www.mysite.com/foo`. This feature aims to simplify project setups that need to host different sites within the same domain while keeping a clean and consistent URL structure.\n\n## What needs to be done\nTo achieve this, we require:\n- The Plone site root must operate under `./foo`.\n- Build assets should be served from a designated environment variable, `RAZZLE_PREFIX_PATH`.\n- All images and links must be prefixed accordingly.\n- Update API requests to strip the `/foo` path.\n- Configure Nginx for deployment, along with necessary documentation and Cypress tests.\n\n## Helpful background\nThe concept is based on improved routing in React applications. This implementation will help manage routing and assets more efficiently, reducing manual configuration. There are several proposed methods, including the use of middleware and updated React components for links and images.\n\n## Good first steps\n1. Familiarize yourself with the existing PRs related to this feature, focusing on [PR #3592](https://github.com/plone/volto/pull/3592) and the discussion around its implementation.\n2. Consider reviewing any related issues or PRs to grasp the current state of development.\n3. Reach out to the contributors mentioned for guidance or collaboration, especially regarding documentation and testing strategies.\n```",
+        "path": "data/issues/summaries/plone/volto/4290.json"
+      }
     },
     {
       "id": 1707781588,
@@ -743,7 +791,15 @@
       "labels": [
         "03 type: feature (plip)",
         "43 lvl: complex"
-      ]
+      ],
+      "contributor_summary": {
+        "status": "available",
+        "generated_at": "2026-04-09T13:37:37Z",
+        "source_issue_updated_at": "2025-09-16T17:48:41Z",
+        "model": "gpt-4o-mini",
+        "summary_markdown": "## What this issue is about\nThis issue focuses on enhancing the `Contents` view in `@plone/contents` to improve usability and accessibility. The goal is to refactor the contents view, making it a mini-app that operates independently from the site frame, improving overall user experience. \n\n## What needs to be done\n- Refactor the `Contents.jsx` component to utilize the `@plone/contents` core package.\n- Implement better accessibility features using `react-aria-components`.\n- Avoid using SemanticUI and instead adopt TypeScript and better component slicing for maintainability.\n- Update related issues to ensure all improvements are integrated effectively.\n\n## Helpful background\nThis issue is part of the Plone Improvement Proposal (PLIP) process and aims to provide a better content management experience within the Plone ecosystem. There have been discussions around scheduling this for Plone 6.2, indicating a move away from implementing it in the earlier version.\n\n## Good first steps\n1. Familiarize yourself with the current code of `Contents.jsx`.\n2. Review related issues to understand the scope of enhancements.\n3. Check the implementation patterns in the `@plone/contents` package.\n4. Join discussions on the issue thread for clarification and coordination with other contributors. \n\nTesting and documentation updates will be expected after implementation. Happy contributing!",
+        "path": "data/issues/summaries/plone/volto/4756.json"
+      }
     },
     {
       "id": 617929356,
@@ -767,7 +823,15 @@
       "labels": [
         "03 type: feature (plip)",
         "43 lvl: complex"
-      ]
+      ],
+      "contributor_summary": {
+        "status": "available",
+        "generated_at": "2026-04-09T13:37:42Z",
+        "source_issue_updated_at": "2025-09-13T12:27:31Z",
+        "model": "gpt-4o-mini",
+        "summary_markdown": "## What this issue is about\nThis issue proposes creating a list of \"smart fields\" for Volto blocks. These fields would be automatically processed on the server side, enhancing functionality and simplifying block management. Examples include fields like `searchableText` and `relatedItems`.\n\n## What needs to be done\nWe need to:\n1. Define which fields will be considered \"smart fields.\"\n2. Implement the necessary logic for server-side processing of these fields.\n3. Document the smart fields thoroughly so block authors understand their potential side-effects.\n\n## Helpful background\n\"Smart fields\" are special fields in Volto blocks that have additional behaviors, like automatic indexing or content resolution. For instance, using a `url` field could directly leverage existing code to resolve item references. There may be competing ideas or requirements in this discussion, so clarity on final decisions is essential.\n\n## Good first steps\n1. Review current comments and suggestions in the issue to gather ideas on potential smart fields.\n2. Begin drafting a list of these fields and their intended behaviors.\n3. Familiarize yourself with how existing fields function to understand common patterns.\n4. Once a preliminary list is ready, contribute to the documentation for clarity.",
+        "path": "data/issues/summaries/plone/volto/1478.json"
+      }
     },
     {
       "id": 1515710153,
@@ -788,7 +852,15 @@
       "labels": [
         "03 type: feature (plip)",
         "43 lvl: complex"
-      ]
+      ],
+      "contributor_summary": {
+        "status": "available",
+        "generated_at": "2026-04-09T13:37:47Z",
+        "source_issue_updated_at": "2025-09-13T12:27:31Z",
+        "model": "gpt-4o-mini",
+        "summary_markdown": "```markdown\n## What this issue is about\nThis issue proposes the development of the Quanta Toolbar for Volto, a component that enhances user interaction with blocks in the Plone CMS. The Quanta Toolbar will enable better access to block settings and functionality.\n\n## What needs to be done\nWe need to implement a new toolbar that modernizes the current interaction model with blocks, including features like moving and deleting them. The implementation is intended to be experimental initially, solidifying its use based on feedback and further adjustments.\n\n## Helpful background\nCurrently, the tools for managing blocks in Volto are outdated. The Quanta Toolbar aims to resolve these limitations by offering a more versatile and user-friendly interface. It’s important to keep the CSS separate from SemanticUI to ensure future compatibility.\n\n## Good first steps\n1. Review the [Proof of Concept implementation](https://github.com/plone/volto/pull/3161) to understand the current progress.\n2. Explore the provided mockups on Figma to visualize the desired outcome.\n3. Familiarize yourself with the existing block management system in Volto.\n4. If you're interested in contributing, reach out to [@sneridagh](https://github.com/sneridagh) for guidance and collaboration.\n```",
+        "path": "data/issues/summaries/plone/volto/4206.json"
+      }
     },
     {
       "id": 224721369,
@@ -812,7 +884,15 @@
         "14 prio: low",
         "43 lvl: complex",
         "26 status: blocked"
-      ]
+      ],
+      "contributor_summary": {
+        "status": "available",
+        "generated_at": "2026-04-09T13:37:52Z",
+        "source_issue_updated_at": "2025-09-13T12:27:30Z",
+        "model": "gpt-4o-mini",
+        "summary_markdown": "```markdown\n## What this issue is about\nThis issue focuses on creating various control panels for the Plone Volto project. Control panels allow for configuration and management of different aspects of Plone. Currently, many REST API calls needed for these panels are not yet available.\n\n## What needs to be done\nSeveral control panels need to be developed, including:\n- Addons\n- Discussion\n- Syndication\n- Content settings\n- HTML filtering\n- Configuration Registry\n\nSome panels, like \"Dexterity content types\" and \"Users and groups,\" have been discussed but lack complete implementation. The approach will possibly involve creating REST API endpoints first, followed by the frontend implementation.\n\n## Helpful background\nControl panels in Plone help manage functionalities through a user-friendly interface. The development process may require a good understanding of the Plone framework and REST APIs. Be aware that there might still be some uncertainty regarding the exact structure and requirements for these control panels.\n\n## Good first steps\n1. Familiarize yourself with the existing control panel structure in Volto.\n2. Review the [Plone REST API](https://github.com/plone/plone.restapi) documentation.\n3. Consider joining discussions or sprints on this topic to collaborate with others.\n4. If interested in a specific panel, you can open a new issue on the Plone REST API tracker to discuss endpoint needs.\n```",
+        "path": "data/issues/summaries/plone/volto/29.json"
+      }
     },
     {
       "id": 1560798712,
@@ -833,7 +913,15 @@
       "labels": [
         "03 type: feature (plip)",
         "43 lvl: complex"
-      ]
+      ],
+      "contributor_summary": {
+        "status": "available",
+        "generated_at": "2026-04-09T13:38:03Z",
+        "source_issue_updated_at": "2025-09-13T12:26:56Z",
+        "model": "gpt-4o-mini",
+        "summary_markdown": "```markdown\n## What this issue is about\nThis issue proposes implementing the Quanta Design System in Plone Volto. The goal is to enhance theming by clearly separating the public theme from the CMS user interface (CMSUI), enabling greater flexibility for developers.\n\n## What needs to be done\nKey tasks include implementing the Quanta design system, creating fundamental components, a default theme, and a separation mechanism for public themes and CMSUI. The implementation will require removing the current SemanticUI components from Volto.\n\n## Helpful background\nQuanta is designed to refine the appearance and user experience of Volto. Updates also aim to provide more straightforward customization options for developers. Several Figma mockups illustrate the new design, and additional resources include a [talk](https://www.youtube.com/watch?v=fvTMw36YT6A) and [slides](https://www.slideshare.net/sneridagh/meet-quanta-plones-style-guide).\n\n## Good first steps\n1. Review the provided [mockups](https://www.figma.com/file/lWRIiKmcy1kMRl1DgLkCSL/Quanta) for design context.\n2. Familiarize yourself with the [Quanta Storybook](https://quanta.pastanaga.io/) for component guidance.\n3. Join the discussion and ask questions to clarify implementation details and documentation needs.\n4. Explore existing issues related to the migration of the theming system.\n```",
+        "path": "data/issues/summaries/plone/volto/4332.json"
+      }
     },
     {
       "id": 2786333413,
@@ -855,7 +943,15 @@
         "04 type: enhancement",
         "43 lvl: complex",
         "27 status: stale"
-      ]
+      ],
+      "contributor_summary": {
+        "status": "available",
+        "generated_at": "2026-04-09T13:38:10Z",
+        "source_issue_updated_at": "2025-09-09T00:32:37Z",
+        "model": "gpt-4o-mini",
+        "summary_markdown": "```markdown\n## What this issue is about\nThis issue requests a feature to support the history functionality on the Volto demo home page. Currently, users cannot review or restore previous revisions of the home page, which limits editing capabilities.\n\n## What needs to be done\nTo implement this feature, we need to ensure that the home page can be versioned. This involves making changes in the backend, particularly within the Products.CMFEditions, to handle revisions correctly. There are complexities due to components that should not be copied during this process.\n\n## Helpful background\nThe issue is marked as complex and may not be suitable for beginners. Discussions indicate a prior pull request that needs to be addressed before any frontend work can start. It's essential to understand versioning and how it relates to content management.\n\n## Good first steps\n1. Familiarize yourself with versioning concepts in Plone and Products.CMFEditions.\n2. Review the relevant pull request [here](https://github.com/plone/Products.CMFEditions/pull/113).\n3. Engage in discussions with other contributors to clarify any questions you may have regarding the requirements.\n4. Coordinate with others working on related tasks for better insight into backend modifications.\n```",
+        "path": "data/issues/summaries/plone/volto/6590.json"
+      }
     },
     {
       "id": 2810370070,
@@ -878,7 +974,15 @@
         "33 needs: docs",
         "43 lvl: complex",
         "27 status: stale"
-      ]
+      ],
+      "contributor_summary": {
+        "status": "available",
+        "generated_at": "2026-04-09T13:38:16Z",
+        "source_issue_updated_at": "2025-09-09T00:32:31Z",
+        "model": "gpt-4o-mini",
+        "summary_markdown": "## What this issue is about\nThis issue discusses the need to establish a new theming approach in Volto following the removal of Semantic UI in version 18. Currently, there is no official theming guide available, and developers are looking for guidance on how to proceed.\n\n## What needs to be done\nWe need to develop the new theming system first before creating any documentation. As of now, there is an indication of direction in another issue (#6322), but details are still unclear. This task requires coordination and input from contributors.\n\n## Helpful background\nThe shift away from Semantic UI is due to it being outdated and no longer maintained. The new theming solution needs to fill this gap, but there hasn't been substantial progress, and some aspects of the discussion may be outdated.\n\n## Good first steps\n1. Familiarize yourself with the [documentation](https://6.docs.plone.org/volto/upgrade-guide/index.html#semantic-ui) related to the deprecation.\n2. Review issue #6322 for insights on proposed directions for the new theming system.\n3. Consider commenting on this issue if you have ideas or require clarification on next steps. Your input could be crucial in moving the conversation forward!",
+        "path": "data/issues/summaries/plone/volto/6620.json"
+      }
     },
     {
       "id": 2827132522,
@@ -1419,10 +1523,10 @@
   "message": null,
   "workflow": {
     "repository": "syslabcom/activity-recognition",
-    "run_id": "24190027102",
-    "run_number": "51",
+    "run_id": "24193140143",
+    "run_number": "52",
     "attempt": "1",
-    "url": "https://github.com/syslabcom/activity-recognition/actions/runs/24190027102",
-    "sha": "e0c67d2638fe739b442ccf9da44e8d59c9d3ed15"
+    "url": "https://github.com/syslabcom/activity-recognition/actions/runs/24193140143",
+    "sha": "598aa417f24197151040f51e842b398a12c4da37"
   }
 }

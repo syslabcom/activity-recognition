@@ -1,0 +1,33 @@
+{
+  "version": 1,
+  "status": "success",
+  "generated_at": "2026-04-09T13:38:16Z",
+  "source_issue": {
+    "id": 2810370070,
+    "number": 6620,
+    "title": "Document new theming story",
+    "html_url": "https://github.com/plone/volto/issues/6620",
+    "repository_full_name": "plone/volto",
+    "updated_at": "2025-09-09T00:32:31Z",
+    "labels": [
+      "31 needs: help",
+      "33 needs: docs",
+      "43 lvl: complex",
+      "27 status: stale"
+    ],
+    "comments": 2
+  },
+  "ai": {
+    "provider": "openai",
+    "model": "gpt-4o-mini"
+  },
+  "summary_markdown": "## What this issue is about\nThis issue discusses the need to establish a new theming approach in Volto following the removal of Semantic UI in version 18. Currently, there is no official theming guide available, and developers are looking for guidance on how to proceed.\n\n## What needs to be done\nWe need to develop the new theming system first before creating any documentation. As of now, there is an indication of direction in another issue (#6322), but details are still unclear. This task requires coordination and input from contributors.\n\n## Helpful background\nThe shift away from Semantic UI is due to it being outdated and no longer maintained. The new theming solution needs to fill this gap, but there hasn't been substantial progress, and some aspects of the discussion may be outdated.\n\n## Good first steps\n1. Familiarize yourself with the [documentation](https://6.docs.plone.org/volto/upgrade-guide/index.html#semantic-ui) related to the deprecation.\n2. Review issue #6322 for insights on proposed directions for the new theming system.\n3. Consider commenting on this issue if you have ideas or require clarification on next steps. Your input could be crucial in moving the conversation forward!",
+  "workflow": {
+    "repository": "syslabcom/activity-recognition",
+    "run_id": "24193140143",
+    "run_number": "52",
+    "attempt": "1",
+    "url": "https://github.com/syslabcom/activity-recognition/actions/runs/24193140143",
+    "sha": "598aa417f24197151040f51e842b398a12c4da37"
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "version": 1,
+  "status": "success",
+  "generated_at": "2026-04-09T13:37:57Z",
+  "source_issue": {
+    "id": 2083233870,
+    "number": 5627,
+    "title": "Update i18n machinery to latest `react-intl`",
+    "html_url": "https://github.com/plone/volto/issues/5627",
+    "repository_full_name": "plone/volto",
+    "updated_at": "2025-09-13T12:27:00Z",
+    "labels": [
+      "03 type: feature (plip)",
+      "42 lvl: moderate"
+    ],
+    "comments": 0
+  },
+  "ai": {
+    "provider": "openai",
+    "model": "gpt-4o-mini"
+  },
+  "summary_markdown": "# Issue Summary: Update i18n machinery to latest `react-intl`\n\n## What this issue is about\nThis issue proposes an upgrade of Volto’s internal internationalization (i18n) machinery to use the latest version of `react-intl`. It also includes updating the `@plone/scripts` i18n helpers to use ECMAScript Modules (ESM). The current version is outdated and needs improvement.\n\n## What needs to be done\n1. Upgrade all i18n components to the latest `react-intl`.\n2. Ensure that the `@plone/scripts` helpers are also updated to ESM.\n3. Maintain the functionality of existing artifacts, such as `.po` files, during this transition.\n\n## Helpful background\nInternationalization (i18n) refers to the design and development of a product that can be easily adapted to various languages and regions. Understanding the updates in `react-intl` and how they affect Babel (a JavaScript compiler) will be crucial for this task.\n\n## Good first steps\n1. Familiarize yourself with `react-intl` and its latest version changes.\n2. Review the current state of Volto’s i18n machinery. \n3. Check the existing documentation for `@plone/scripts`.\n4. Consider reaching out to the community for questions or clarifications, as the discussions around this issue may be incomplete.\n\nFeel free to join us in making this improvement!",
+  "workflow": {
+    "repository": "syslabcom/activity-recognition",
+    "run_id": "24193140143",
+    "run_number": "52",
+    "attempt": "1",
+    "url": "https://github.com/syslabcom/activity-recognition/actions/runs/24193140143",
+    "sha": "598aa417f24197151040f51e842b398a12c4da37"
+  }
+}

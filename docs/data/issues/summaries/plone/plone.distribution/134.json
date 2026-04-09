@@ -1,0 +1,33 @@
+{
+  "version": 1,
+  "status": "success",
+  "generated_at": "2026-04-09T13:36:40Z",
+  "source_issue": {
+    "id": 3679287710,
+    "number": 134,
+    "title": "Deduplicate documentation",
+    "html_url": "https://github.com/plone/plone.distribution/issues/134",
+    "repository_full_name": "plone/plone.distribution",
+    "updated_at": "2025-12-01T05:29:19Z",
+    "labels": [
+      "21 status: confirmed",
+      "31 needs: help",
+      "33 needs: docs",
+      "41 lvl: easy"
+    ],
+    "comments": 0
+  },
+  "ai": {
+    "provider": "openai",
+    "model": "gpt-4o-mini"
+  },
+  "summary_markdown": "## What this issue is about\nThis issue focuses on reducing duplicated documentation within the Plone distribution repository. Currently, there's overlap between the `README.md`, the `docs/` folder, and external documentation at https://6.docs.plone.org. The goal is to streamline our documentation into one reliable source.\n\n## What needs to be done\n1. **Remove duplicate documentation** found in this repository that already exists at the external documentation link.\n2. **Purge any code** that generates documentation within this repository, such as references in `Makefile`, `requirements-docs.txt`, and GitHub workflows.\n3. **Update the `README.md`** to include links directing users to the authoritative Plone 6 Documentation:\n   - [Plone distributions](https://6.docs.plone.org/conceptual-guides/distributions.html)\n   - [Create a Plone distribution](https://6.docs.plone.org/developer-guide/create-a-distribution.html)\n\n## Helpful background\nThis issue arose from a need to keep documentation consistent and easier to manage. References to multiple sources can lead to confusion and outdated information. This change aims to align our docs with the official Plone documentation.\n\n## Good first steps\n- Review the current `README.md` and documentation in the `docs/` folder to identify duplicates.\n- Begin exploring how documentation is generated in your local repository (e.g., check the `Makefile` and doc requirements).\n- Consider updating the `README.md` with the suggested links once duplicates are removed.",
+  "workflow": {
+    "repository": "syslabcom/activity-recognition",
+    "run_id": "24193140143",
+    "run_number": "52",
+    "attempt": "1",
+    "url": "https://github.com/syslabcom/activity-recognition/actions/runs/24193140143",
+    "sha": "598aa417f24197151040f51e842b398a12c4da37"
+  }
+}

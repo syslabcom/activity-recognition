@@ -1,0 +1,36 @@
+{
+  "version": 1,
+  "status": "success",
+  "generated_at": "2026-04-09T13:36:24Z",
+  "source_issue": {
+    "id": 2297234474,
+    "number": 3953,
+    "title": "PLIP: Start separating Classic UI code from the core",
+    "html_url": "https://github.com/plone/Products.CMFPlone/issues/3953",
+    "repository_full_name": "plone/Products.CMFPlone",
+    "updated_at": "2025-12-12T07:35:27Z",
+    "labels": [
+      "31 needs: help",
+      "99 tag: cleanup",
+      "03 type: feature (plip)",
+      "13 prio: normal",
+      "42 lvl: moderate",
+      "53 target: major",
+      "99 tag: Classic UI"
+    ],
+    "comments": 14
+  },
+  "ai": {
+    "provider": "openai",
+    "model": "gpt-4o-mini"
+  },
+  "summary_markdown": "```markdown\n## What this issue is about\nThis issue discusses a proposal to gradually separate Classic UI code from the core of Plone, specifically by relocating templates and view logic to a new package called `plone.app.layout`. This aims to create cleaner, more maintainable code and reduce the overall footprint for users who utilize the Volto frontend.\n\n## What needs to be done\nContributors are invited to help move Classic UI code into the `plone.app.layout`, ensuring backward compatibility. There is ongoing discussion on deciding what needs moving and how to structure these changes. Clarity is still needed on potential alternative package names and the roles of existing packages.\n\n## Helpful background\nClassic UI refers to the traditional user interface in Plone. This work aims to streamline the codebase for better usage alongside newer technologies like Volto. Current dependencies between packages need careful consideration to avoid breaking existing functionality. \n\n## Good first steps\n1. Familiarize yourself with the Plone architecture and its package dependencies.\n2. Explore the existing `plone.classicui` and `plone.app.layout` packages.\n3. List the templates or functionalities that are Classic UI only, using command-line tools as detailed in the discussions.\n4. Join the conversation on GitHub to discuss approaches or clarify uncertainties.\n5. Consider contributing small changes or starting documentation updates.\n```",
+  "workflow": {
+    "repository": "syslabcom/activity-recognition",
+    "run_id": "24193140143",
+    "run_number": "52",
+    "attempt": "1",
+    "url": "https://github.com/syslabcom/activity-recognition/actions/runs/24193140143",
+    "sha": "598aa417f24197151040f51e842b398a12c4da37"
+  }
+}

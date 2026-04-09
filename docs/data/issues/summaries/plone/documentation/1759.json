@@ -1,0 +1,30 @@
+{
+  "version": 1,
+  "status": "success",
+  "generated_at": "2026-04-09T13:36:11Z",
+  "source_issue": {
+    "id": 2637729612,
+    "number": 1759,
+    "title": "Create a Cookieplone entry in the Conceptual guide",
+    "html_url": "https://github.com/plone/documentation/issues/1759",
+    "repository_full_name": "plone/documentation",
+    "updated_at": "2025-12-19T04:16:04Z",
+    "labels": [
+      "43 lvl: complex"
+    ],
+    "comments": 5
+  },
+  "ai": {
+    "provider": "openai",
+    "model": "gpt-4o-mini"
+  },
+  "summary_markdown": "## What this issue is about\nThis issue focuses on creating a conceptual guide for **Cookieplone** within the Plone documentation. Cookieplone is not well-understood and a detailed guide can help clarify its workflow and tools.\n\n## What needs to be done\n1. Create a workflow diagram illustrating the Cookieplone process, from project generation to deployment. You can use **Mermaid** or **Graphviz** for diagrams, and export them as SVG.\n2. Provide a description of the tools included in a Cookieplone project, especially those related to DevOps and documentation.\n3. Reference existing materials, such as content from [Plone Deployment Training](https://training.plone.org/plone-deployment/).\n\n## Helpful background\nThe term \"conceptual guide\" refers to explanations in the **Diátaxis** framework, which outlines how to present complex information clearly. This issue is marked as complex, indicating it may require some experience with Plone.\n\n## Good first steps\n- Familiarize yourself with the [Plone Documentation](https://6.docs.plone.org/contributing/documentation/index.html) and the [First-time contributors](https://6.docs.plone.org/contributing/first-time.html) guidelines.\n- Explore the available resources related to Cookieplone to build a foundational understanding.\n- Consider joining discussions or asking questions in the issue comments to clarify any uncertainties.",
+  "workflow": {
+    "repository": "syslabcom/activity-recognition",
+    "run_id": "24193140143",
+    "run_number": "52",
+    "attempt": "1",
+    "url": "https://github.com/syslabcom/activity-recognition/actions/runs/24193140143",
+    "sha": "598aa417f24197151040f51e842b398a12c4da37"
+  }
+}

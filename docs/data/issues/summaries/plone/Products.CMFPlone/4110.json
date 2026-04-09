@@ -1,0 +1,31 @@
+{
+  "version": 1,
+  "status": "success",
+  "generated_at": "2026-04-09T13:37:19Z",
+  "source_issue": {
+    "id": 2853065874,
+    "number": 4110,
+    "title": "Refactor `plone.app.contentrules` to provide API methods, which `plone.restapi` can use",
+    "html_url": "https://github.com/plone/Products.CMFPlone/issues/4110",
+    "repository_full_name": "plone/Products.CMFPlone",
+    "updated_at": "2025-10-24T11:50:29Z",
+    "labels": [
+      "03 type: feature (plip)",
+      "43 lvl: complex"
+    ],
+    "comments": 7
+  },
+  "ai": {
+    "provider": "openai",
+    "model": "gpt-4o-mini"
+  },
+  "summary_markdown": "```markdown\n## What this issue is about\nThis issue involves refactoring `plone.app.contentrules` to create Python API methods that can be utilized by `plone.restapi`. The goal is to separate UI-related code from the API, improving maintainability and allowing headless installations to function seamlessly.\n\n## What needs to be done\n1. Develop Python API methods for all existing functionality in `plone.app.contentrules`.\n2. Move UI code to `plone.app.layout`.\n3. Update `plone.restapi` to use these new API methods.\n\n## Helpful background\nCurrently, `plone.restapi` fills form data directly, which ties it to the UI code in `plone.app.contentrules`. This refactor aims to decouple those dependencies. Although there are remarks about possibly turning `plone.app.contentrules` into a core add-on, this issue primarily focuses on the API refactoring.\n\n## Good first steps\n1. Familiarize yourself with the existing `plone.app.contentrules` and `plone.restapi` code.\n2. Explore how Python API methods can be structured.\n3. Engage in discussions about the feasibility of separating UI from API, as there is some ambiguity in the ongoing conversation regarding this refactor.\n4. Consider getting involved in related issues (like PLIP #4119) for broader context.\n5. Look out for testing and documentation needs once implementation is underway.\n```",
+  "workflow": {
+    "repository": "syslabcom/activity-recognition",
+    "run_id": "24193140143",
+    "run_number": "52",
+    "attempt": "1",
+    "url": "https://github.com/syslabcom/activity-recognition/actions/runs/24193140143",
+    "sha": "598aa417f24197151040f51e842b398a12c4da37"
+  }
+}

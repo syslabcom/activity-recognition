@@ -1,0 +1,31 @@
+{
+  "version": 1,
+  "status": "success",
+  "generated_at": "2026-04-09T13:36:57Z",
+  "source_issue": {
+    "id": 3665937052,
+    "number": 1997,
+    "title": "Merge Admin and Deployment guides into Develop guide",
+    "html_url": "https://github.com/plone/documentation/issues/1997",
+    "repository_full_name": "plone/documentation",
+    "updated_at": "2025-11-26T05:56:50Z",
+    "labels": [
+      "13 prio: normal",
+      "43 lvl: complex"
+    ],
+    "comments": 0
+  },
+  "ai": {
+    "provider": "openai",
+    "model": "gpt-4o-mini"
+  },
+  "summary_markdown": "## What this issue is about\nThis issue proposes merging the existing Admin and Deployment guides into a single Develop guide for Plone. The aim is to simplify navigation for users who may wear multiple hats—like Admin, DevOps, and Developer—by consolidating relevant tasks into one comprehensive resource.\n\n## What needs to be done\nYou will need to:\n1. Review the current Admin and Deployment guides.\n2. Identify overlapping content and tasks that can be combined.\n3. Create a new Develop guide that includes all necessary information for site administration and development in one place.\n\n## Helpful background\nPrevious discussions indicated that splitting tasks by role makes it harder for users to find what they need. A \"Plone site administrator\" is defined separately from an \"Administrator,\" which has caused some confusion. This merging seeks to clarify roles and make the content more accessible.\n\n## Good first steps\n1. Familiarize yourself with the existing guides by reviewing them directly.\n2. Check related issues and discussions linked [here](https://github.com/plone/documentation/issues/1768) and [here](https://github.com/plone/documentation/pull/1875).\n3. Start drafting a combined outline for the new Develop guide.\n4. Share your progress with the community for feedback!",
+  "workflow": {
+    "repository": "syslabcom/activity-recognition",
+    "run_id": "24193140143",
+    "run_number": "52",
+    "attempt": "1",
+    "url": "https://github.com/syslabcom/activity-recognition/actions/runs/24193140143",
+    "sha": "598aa417f24197151040f51e842b398a12c4da37"
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "version": 1,
+  "status": "success",
+  "generated_at": "2026-04-09T13:37:42Z",
+  "source_issue": {
+    "id": 617929356,
+    "number": 1478,
+    "title": "Proposal: have a list of \"smart fields\" in Volto blocks",
+    "html_url": "https://github.com/plone/volto/issues/1478",
+    "repository_full_name": "plone/volto",
+    "updated_at": "2025-09-13T12:27:31Z",
+    "labels": [
+      "03 type: feature (plip)",
+      "43 lvl: complex"
+    ],
+    "comments": 3
+  },
+  "ai": {
+    "provider": "openai",
+    "model": "gpt-4o-mini"
+  },
+  "summary_markdown": "## What this issue is about\nThis issue proposes creating a list of \"smart fields\" for Volto blocks. These fields would be automatically processed on the server side, enhancing functionality and simplifying block management. Examples include fields like `searchableText` and `relatedItems`.\n\n## What needs to be done\nWe need to:\n1. Define which fields will be considered \"smart fields.\"\n2. Implement the necessary logic for server-side processing of these fields.\n3. Document the smart fields thoroughly so block authors understand their potential side-effects.\n\n## Helpful background\n\"Smart fields\" are special fields in Volto blocks that have additional behaviors, like automatic indexing or content resolution. For instance, using a `url` field could directly leverage existing code to resolve item references. There may be competing ideas or requirements in this discussion, so clarity on final decisions is essential.\n\n## Good first steps\n1. Review current comments and suggestions in the issue to gather ideas on potential smart fields.\n2. Begin drafting a list of these fields and their intended behaviors.\n3. Familiarize yourself with how existing fields function to understand common patterns.\n4. Once a preliminary list is ready, contribute to the documentation for clarity.",
+  "workflow": {
+    "repository": "syslabcom/activity-recognition",
+    "run_id": "24193140143",
+    "run_number": "52",
+    "attempt": "1",
+    "url": "https://github.com/syslabcom/activity-recognition/actions/runs/24193140143",
+    "sha": "598aa417f24197151040f51e842b398a12c4da37"
+  }
+}

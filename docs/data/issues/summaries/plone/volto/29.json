@@ -1,0 +1,34 @@
+{
+  "version": 1,
+  "status": "success",
+  "generated_at": "2026-04-09T13:37:52Z",
+  "source_issue": {
+    "id": 224721369,
+    "number": 29,
+    "title": "Control panels",
+    "html_url": "https://github.com/plone/volto/issues/29",
+    "repository_full_name": "plone/volto",
+    "updated_at": "2025-09-13T12:27:30Z",
+    "labels": [
+      "03 type: feature (plip)",
+      "04 type: enhancement",
+      "14 prio: low",
+      "43 lvl: complex",
+      "26 status: blocked"
+    ],
+    "comments": 8
+  },
+  "ai": {
+    "provider": "openai",
+    "model": "gpt-4o-mini"
+  },
+  "summary_markdown": "```markdown\n## What this issue is about\nThis issue focuses on creating various control panels for the Plone Volto project. Control panels allow for configuration and management of different aspects of Plone. Currently, many REST API calls needed for these panels are not yet available.\n\n## What needs to be done\nSeveral control panels need to be developed, including:\n- Addons\n- Discussion\n- Syndication\n- Content settings\n- HTML filtering\n- Configuration Registry\n\nSome panels, like \"Dexterity content types\" and \"Users and groups,\" have been discussed but lack complete implementation. The approach will possibly involve creating REST API endpoints first, followed by the frontend implementation.\n\n## Helpful background\nControl panels in Plone help manage functionalities through a user-friendly interface. The development process may require a good understanding of the Plone framework and REST APIs. Be aware that there might still be some uncertainty regarding the exact structure and requirements for these control panels.\n\n## Good first steps\n1. Familiarize yourself with the existing control panel structure in Volto.\n2. Review the [Plone REST API](https://github.com/plone/plone.restapi) documentation.\n3. Consider joining discussions or sprints on this topic to collaborate with others.\n4. If interested in a specific panel, you can open a new issue on the Plone REST API tracker to discuss endpoint needs.\n```",
+  "workflow": {
+    "repository": "syslabcom/activity-recognition",
+    "run_id": "24193140143",
+    "run_number": "52",
+    "attempt": "1",
+    "url": "https://github.com/syslabcom/activity-recognition/actions/runs/24193140143",
+    "sha": "598aa417f24197151040f51e842b398a12c4da37"
+  }
+}

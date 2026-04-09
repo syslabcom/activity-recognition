@@ -1,7 +1,7 @@
 {
   "version": 1,
   "status": "success",
-  "generated_at": "2026-04-09T12:25:45Z",
+  "generated_at": "2026-04-09T13:35:57Z",
   "organization": "plone",
   "state": "open",
   "slug": "lvl-moderate",
@@ -380,7 +380,15 @@
         "33 needs: docs",
         "42 lvl: moderate",
         "99 tag: backend"
-      ]
+      ],
+      "contributor_summary": {
+        "status": "available",
+        "generated_at": "2026-04-09T13:36:18Z",
+        "source_issue_updated_at": "2025-12-19T03:04:13Z",
+        "model": "gpt-4o-mini",
+        "summary_markdown": "## What this issue is about\nThis issue is focused on moving the content from the `plone.behavior` README file into the documentation section at [6.docs.plone.org/backend/behaviors.html](https://6.docs.plone.org/backend/behaviors.html). After the move, the README should link to the new documentation page.\n\n## What needs to be done\n1. Review the current `plone.behavior` README content.\n2. Transfer relevant information into the mentioned documentation page.\n3. Update the README to replace its content with a link to the new documentation.\n\n## Helpful background\nThis issue has some existing discussions, indicating that some content may have already been moved. However, there’s still a need to ensure everything is in order. Understanding \"behaviors\" in Plone may require additional time and familiarity with the framework.\n\n## Good first steps\n1. Familiarize yourself with the concept of behaviors in Plone if you're not already.\n2. Check the current state of the `plone.behavior` README and the target documentation.\n3. Consider reaching out for guidance from experienced contributors, such as @jensens or @gforcada, as they can help clarify any uncertainties. Don't hesitate to ask questions to drop any barriers to your understanding!",
+        "path": "data/issues/summaries/plone/documentation/1309.json"
+      }
     },
     {
       "id": 2297234474,
@@ -408,7 +416,15 @@
         "42 lvl: moderate",
         "53 target: major",
         "99 tag: Classic UI"
-      ]
+      ],
+      "contributor_summary": {
+        "status": "available",
+        "generated_at": "2026-04-09T13:36:24Z",
+        "source_issue_updated_at": "2025-12-12T07:35:27Z",
+        "model": "gpt-4o-mini",
+        "summary_markdown": "```markdown\n## What this issue is about\nThis issue discusses a proposal to gradually separate Classic UI code from the core of Plone, specifically by relocating templates and view logic to a new package called `plone.app.layout`. This aims to create cleaner, more maintainable code and reduce the overall footprint for users who utilize the Volto frontend.\n\n## What needs to be done\nContributors are invited to help move Classic UI code into the `plone.app.layout`, ensuring backward compatibility. There is ongoing discussion on deciding what needs moving and how to structure these changes. Clarity is still needed on potential alternative package names and the roles of existing packages.\n\n## Helpful background\nClassic UI refers to the traditional user interface in Plone. This work aims to streamline the codebase for better usage alongside newer technologies like Volto. Current dependencies between packages need careful consideration to avoid breaking existing functionality. \n\n## Good first steps\n1. Familiarize yourself with the Plone architecture and its package dependencies.\n2. Explore the existing `plone.classicui` and `plone.app.layout` packages.\n3. List the templates or functionalities that are Classic UI only, using command-line tools as detailed in the discussions.\n4. Join the conversation on GitHub to discuss approaches or clarify uncertainties.\n5. Consider contributing small changes or starting documentation updates.\n```",
+        "path": "data/issues/summaries/plone/Products.CMFPlone/3953.json"
+      }
     },
     {
       "id": 1480563913,
@@ -431,7 +447,15 @@
       "labels": [
         "04 type: enhancement",
         "42 lvl: moderate"
-      ]
+      ],
+      "contributor_summary": {
+        "status": "available",
+        "generated_at": "2026-04-09T13:37:32Z",
+        "source_issue_updated_at": "2025-09-17T14:56:59Z",
+        "model": "gpt-4o-mini",
+        "summary_markdown": "## What this issue is about\nThis issue discusses the implementation of Varnish, a web caching tool, in the plone.org stack. Although the site is already in production, discussions about optimizing caching strategies are ongoing.\n\n## What needs to be done\nThe primary task is to utilize the `plone.app.caching` functionality. Specifically, we need to load a proper caching profile and ensure that caching headers are correctly set for both the website and the REST API.\n\n## Helpful background\nVarnish is a tool used to speed up web applications by caching content. Using `plone.app.caching` can help manage how this cache behaves. Currently, there's uncertainty about whether we need to implement caching profiles since the application now uses Volto, which accesses the site through a REST API.\n\n## Good first steps\n1. Familiarize yourself with **Varnish** and **plone.app.caching**.\n2. Review the existing setup in `portal_setup` to see how caching profiles are configured.\n3. Test the implementation in a staging environment before applying changes to the production site.\n4. Engage in discussions about any ambiguities regarding the necessity of caching in the current application setup.",
+        "path": "data/issues/summaries/plone/plone.org/51.json"
+      }
     },
     {
       "id": 2083233870,
@@ -452,7 +476,15 @@
       "labels": [
         "03 type: feature (plip)",
         "42 lvl: moderate"
-      ]
+      ],
+      "contributor_summary": {
+        "status": "available",
+        "generated_at": "2026-04-09T13:37:57Z",
+        "source_issue_updated_at": "2025-09-13T12:27:00Z",
+        "model": "gpt-4o-mini",
+        "summary_markdown": "# Issue Summary: Update i18n machinery to latest `react-intl`\n\n## What this issue is about\nThis issue proposes an upgrade of Volto’s internal internationalization (i18n) machinery to use the latest version of `react-intl`. It also includes updating the `@plone/scripts` i18n helpers to use ECMAScript Modules (ESM). The current version is outdated and needs improvement.\n\n## What needs to be done\n1. Upgrade all i18n components to the latest `react-intl`.\n2. Ensure that the `@plone/scripts` helpers are also updated to ESM.\n3. Maintain the functionality of existing artifacts, such as `.po` files, during this transition.\n\n## Helpful background\nInternationalization (i18n) refers to the design and development of a product that can be easily adapted to various languages and regions. Understanding the updates in `react-intl` and how they affect Babel (a JavaScript compiler) will be crucial for this task.\n\n## Good first steps\n1. Familiarize yourself with `react-intl` and its latest version changes.\n2. Review the current state of Volto’s i18n machinery. \n3. Check the existing documentation for `@plone/scripts`.\n4. Consider reaching out to the community for questions or clarifications, as the discussions around this issue may be incomplete.\n\nFeel free to join us in making this improvement!",
+        "path": "data/issues/summaries/plone/volto/5627.json"
+      }
     },
     {
       "id": 2189926833,
@@ -1927,10 +1959,10 @@
   "message": null,
   "workflow": {
     "repository": "syslabcom/activity-recognition",
-    "run_id": "24190027102",
-    "run_number": "51",
+    "run_id": "24193140143",
+    "run_number": "52",
     "attempt": "1",
-    "url": "https://github.com/syslabcom/activity-recognition/actions/runs/24190027102",
-    "sha": "e0c67d2638fe739b442ccf9da44e8d59c9d3ed15"
+    "url": "https://github.com/syslabcom/activity-recognition/actions/runs/24193140143",
+    "sha": "598aa417f24197151040f51e842b398a12c4da37"
   }
 }

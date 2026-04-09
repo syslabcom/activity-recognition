@@ -1,0 +1,33 @@
+{
+  "version": 1,
+  "status": "success",
+  "generated_at": "2026-04-09T13:36:18Z",
+  "source_issue": {
+    "id": 1366950401,
+    "number": 1309,
+    "title": "Move the `plone.behavior` readme into `plone/documentation`",
+    "html_url": "https://github.com/plone/documentation/issues/1309",
+    "repository_full_name": "plone/documentation",
+    "updated_at": "2025-12-19T03:04:13Z",
+    "labels": [
+      "31 needs: help",
+      "33 needs: docs",
+      "42 lvl: moderate",
+      "99 tag: backend"
+    ],
+    "comments": 4
+  },
+  "ai": {
+    "provider": "openai",
+    "model": "gpt-4o-mini"
+  },
+  "summary_markdown": "## What this issue is about\nThis issue is focused on moving the content from the `plone.behavior` README file into the documentation section at [6.docs.plone.org/backend/behaviors.html](https://6.docs.plone.org/backend/behaviors.html). After the move, the README should link to the new documentation page.\n\n## What needs to be done\n1. Review the current `plone.behavior` README content.\n2. Transfer relevant information into the mentioned documentation page.\n3. Update the README to replace its content with a link to the new documentation.\n\n## Helpful background\nThis issue has some existing discussions, indicating that some content may have already been moved. However, there’s still a need to ensure everything is in order. Understanding \"behaviors\" in Plone may require additional time and familiarity with the framework.\n\n## Good first steps\n1. Familiarize yourself with the concept of behaviors in Plone if you're not already.\n2. Check the current state of the `plone.behavior` README and the target documentation.\n3. Consider reaching out for guidance from experienced contributors, such as @jensens or @gforcada, as they can help clarify any uncertainties. Don't hesitate to ask questions to drop any barriers to your understanding!",
+  "workflow": {
+    "repository": "syslabcom/activity-recognition",
+    "run_id": "24193140143",
+    "run_number": "52",
+    "attempt": "1",
+    "url": "https://github.com/syslabcom/activity-recognition/actions/runs/24193140143",
+    "sha": "598aa417f24197151040f51e842b398a12c4da37"
+  }
+}
