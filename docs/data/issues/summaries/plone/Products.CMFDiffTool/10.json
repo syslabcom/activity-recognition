@@ -1,0 +1,31 @@
+{
+  "version": 1,
+  "status": "success",
+  "generated_at": "2026-04-09T20:21:28Z",
+  "source_issue": {
+    "id": 129219960,
+    "number": 10,
+    "title": "Implement Unicode sandwich convention",
+    "html_url": "https://github.com/plone/Products.CMFDiffTool/issues/10",
+    "repository_full_name": "plone/Products.CMFDiffTool",
+    "updated_at": "2016-01-27T17:51:54Z",
+    "labels": [
+      "04 type: enhancement",
+      "42 lvl: moderate"
+    ],
+    "comments": 0
+  },
+  "ai": {
+    "provider": "openai",
+    "model": "gpt-4o-mini"
+  },
+  "summary_markdown": "# Issues Summary: Implement Unicode Sandwich Convention\n\n## What this issue is about\nThis issue focuses on implementing the **Unicode sandwich convention** in the Plone project. The goal is to enhance the handling of Unicode characters within the `Products.CMFDiffTool`. More details about the convention can be found [here](http://nedbatchelder.com/text/unipain/unipain.html#35).\n\n## What needs to be done\nYou will need to review the current implementation and adapt it to support the Unicode sandwich convention. This will likely involve modifying code related to text handling in the project, but specific implementation details are not fully outlined in the issue.\n\n## Helpful background\nThe Unicode sandwich convention is a method for better managing Unicode characters, making it easier to represent and manipulate text. Though there's a related issue (#9), the connection isn't fully documented, and there are no comments available to clarify next steps.\n\n## Good first steps\n1. Familiarize yourself with the existing code in `Products.CMFDiffTool`.\n2. Read the linked resource on the Unicode sandwich convention.\n3. Consider reaching out to the author, [do3cc](https://github.com/do3cc), for guidance if needed.\n4. Document any findings and proposed changes for clarity.\n5. Be prepared for testing and review after implementing changes. \n\nGetting involved is a great way to learn, and your contributions are welcome!",
+  "workflow": {
+    "repository": "syslabcom/activity-recognition",
+    "run_id": "24211376672",
+    "run_number": "59",
+    "attempt": "1",
+    "url": "https://github.com/syslabcom/activity-recognition/actions/runs/24211376672",
+    "sha": "f89ac252fa806c64fb5f60b69589b10f5bb9a57a"
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "version": 1,
+  "status": "success",
+  "generated_at": "2026-04-09T20:19:53Z",
+  "source_issue": {
+    "id": 442732591,
+    "number": 51,
+    "title": "i18n would be awesome",
+    "html_url": "https://github.com/plone/plonecli/issues/51",
+    "repository_full_name": "plone/plonecli",
+    "updated_at": "2019-05-19T23:29:06Z",
+    "labels": [
+      "04 type: enhancement",
+      "41 lvl: easy"
+    ],
+    "comments": 2
+  },
+  "ai": {
+    "provider": "openai",
+    "model": "gpt-4o-mini"
+  },
+  "summary_markdown": "## What this issue is about\nThis issue discusses the idea of enhancing internationalization (i18n) support in the Plone CLI (Command Line Interface). The suggestion is to implement a command like `plonecli translate <package.name>`, which would improve how translations are handled.\n\n## What needs to be done\nA potential enhancement is proposed for the Plone CLI to support translation commands. There are suggestions to utilize existing commands, like `./bin/update_locale`, to manage translations within any package.\n\n## Helpful background\nInternationalization (i18n) refers to adapting software to different languages and regions. The conversation suggests enhancing this aspect in the Plone CLI, utilizing existing tools and commands for easier implementation. Some comments indicate varying approaches to handling this enhancement, so clarity on requirements may be needed.\n\n## Good first steps\n1. Review the existing commands for localization in the Plone CLI.\n2. Check out the suggestion made by the commenter about `./bin/update_locale` and familiarize yourself with its functionality.\n3. Join the discussion to clarify any ambiguities or share your thoughts on the proposed enhancements.\n\nYour contributions are welcome, and this could be a great opportunity for those looking to get involved!",
+  "workflow": {
+    "repository": "syslabcom/activity-recognition",
+    "run_id": "24211376672",
+    "run_number": "59",
+    "attempt": "1",
+    "url": "https://github.com/syslabcom/activity-recognition/actions/runs/24211376672",
+    "sha": "f89ac252fa806c64fb5f60b69589b10f5bb9a57a"
+  }
+}

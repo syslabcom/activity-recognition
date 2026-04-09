@@ -1,0 +1,31 @@
+{
+  "version": 1,
+  "status": "success",
+  "generated_at": "2026-04-09T20:21:37Z",
+  "source_issue": {
+    "id": 108313727,
+    "number": 9,
+    "title": "Non ASCII characters raise errors when comparing versions of a document",
+    "html_url": "https://github.com/plone/Products.CMFDiffTool/issues/9",
+    "repository_full_name": "plone/Products.CMFDiffTool",
+    "updated_at": "2016-01-27T17:49:44Z",
+    "labels": [
+      "01 type: bug",
+      "42 lvl: moderate"
+    ],
+    "comments": 0
+  },
+  "ai": {
+    "provider": "openai",
+    "model": "gpt-4o-mini"
+  },
+  "summary_markdown": "## What this issue is about\nThis issue addresses a bug in the `Products.CMFDiffTool` where non-ASCII characters in documents cause errors when comparing different versions. Specifically, it surfaces when creating a news item in Plone 4.3.6 with the `plone.app.contenttypes` version 1.1b5.\n\n## What needs to be done\nWe need to investigate and fix the error triggered by non-ASCII characters during version comparisons in the CMFDiffTool. There's some ambiguity about whether the bug originates from CMFDiffTool or the content types library, as the issue has been discussed elsewhere.\n\n## Helpful background\nNon-ASCII characters are any characters not part of the standard ASCII set (e.g., special symbols, characters from other languages). This issue may involve understanding how character encoding works and its implications in version control systems. Previous discussions suggest uncertainty about the source of the problem, so it’s important to review related issues.\n\n## Good first steps\n1. Familiarize yourself with the CMFDiffTool and how it handles document versions.\n2. Check for any existing tests regarding character encoding and document comparison.\n3. Review the linked [error log](https://gist.github.com/danielhz/a71f7d7aa4d3d8f0e806#file-error-0001-log) and the [buildout configuration](https://gist.github.com/danielhz/daedbc46ae8706eb0aa8#file-buildout-cfg).\n4. Consider opening a discussion or looking for collaborators if you need more guidance.",
+  "workflow": {
+    "repository": "syslabcom/activity-recognition",
+    "run_id": "24211376672",
+    "run_number": "59",
+    "attempt": "1",
+    "url": "https://github.com/syslabcom/activity-recognition/actions/runs/24211376672",
+    "sha": "f89ac252fa806c64fb5f60b69589b10f5bb9a57a"
+  }
+}

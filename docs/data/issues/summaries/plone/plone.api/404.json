@@ -1,0 +1,31 @@
+{
+  "version": 1,
+  "status": "success",
+  "generated_at": "2026-04-09T20:20:26Z",
+  "source_issue": {
+    "id": 332400176,
+    "number": 404,
+    "title": "Add add indexes method to api.portal",
+    "html_url": "https://github.com/plone/plone.api/issues/404",
+    "repository_full_name": "plone/plone.api",
+    "updated_at": "2018-06-14T13:43:00Z",
+    "labels": [
+      "03 type: feature (plip)",
+      "41 lvl: easy"
+    ],
+    "comments": 1
+  },
+  "ai": {
+    "provider": "openai",
+    "model": "gpt-4o-mini"
+  },
+  "summary_markdown": "## What this issue is about\nThis issue proposes adding a method to the `plone.api.portal` module for easily adding indexes to the `portal_catalog`. Currently, it’s complicated and poorly documented, which can lead to issues like empty indexes during reinstallation of add-ons.\n\n## What needs to be done\nWe need to create a central method in `CMFPlone`, possibly in a utilities module, to streamline the process of adding indexes to the `portal_catalog`. There’s also a suggestion to enable the addition of a catalog column (metadata column) using either the same or a new method.\n\n## Helpful background\nThe existing process for adding indexes is not user-friendly, and it lacks reindexing options, making it challenging for developers. For reference, you can check examples provided by the author [here](https://gist.github.com/MrTango/0ec0c0830fec0b9626d2cbdc69cf20cf).\n\n## Good first steps\n1. Review the current usage of `portal_catalog` and its indexing functionality.\n2. Examine the proposed examples in the gist linked above.\n3. Consider how the new method can be structured to include catalog columns if feasible.\n4. Document insights and share them in the issue discussion. Once ready, testing and reviewing will be important to ensure everything works as expected.",
+  "workflow": {
+    "repository": "syslabcom/activity-recognition",
+    "run_id": "24211376672",
+    "run_number": "59",
+    "attempt": "1",
+    "url": "https://github.com/syslabcom/activity-recognition/actions/runs/24211376672",
+    "sha": "f89ac252fa806c64fb5f60b69589b10f5bb9a57a"
+  }
+}

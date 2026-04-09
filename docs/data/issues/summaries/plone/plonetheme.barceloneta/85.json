@@ -1,0 +1,32 @@
+{
+  "version": 1,
+  "status": "success",
+  "generated_at": "2026-04-09T20:21:19Z",
+  "source_issue": {
+    "id": 133442578,
+    "number": 85,
+    "title": "Avoid usage of ``method=\"raw\"`` in ``rules.xml``",
+    "html_url": "https://github.com/plone/plonetheme.barceloneta/issues/85",
+    "repository_full_name": "plone/plonetheme.barceloneta",
+    "updated_at": "2016-02-13T15:47:07Z",
+    "labels": [
+      "05 type: question",
+      "13 prio: normal",
+      "41 lvl: easy"
+    ],
+    "comments": 0
+  },
+  "ai": {
+    "provider": "openai",
+    "model": "gpt-4o-mini"
+  },
+  "summary_markdown": "## What this issue is about\nThis issue addresses the use of `method=\"raw\"` in the `rules.xml` file of the Plone theme \"Barceloneta\". Currently, there are two occurrences of this attribute, which restricts the ability to modify content before it’s added to the theme.\n\n## What needs to be done\nThe goal is to evaluate whether both instances of `method=\"raw\"` can be removed from the `rules.xml` file. We need to verify if their removal will not disrupt existing functionality or if there's a reason they were initially included.\n\n## Helpful background\nThe `method=\"raw\"` attribute prevents content from being manipulated before it's inserted into the theme, which can limit customization options. The discussion on this topic appears to be open-ended, and there are no definitive conclusions yet regarding the necessity of these attributes.\n\n## Good first steps\n1. **Review the current `rules.xml` file**: Familiarize yourself with the code where `method=\"raw\"` is used.\n2. **Consider potential impacts**: Think about how removing these attributes could affect the theme's content behavior.\n3. **Engage in discussion**: Reach out to contributors mentioned in the issue for additional insights.\n4. **Test changes**: If you decide to remove the attributes, make sure to thoroughly test your changes to ensure stability. \n\nFeel free to ask questions if you need help or clarification!",
+  "workflow": {
+    "repository": "syslabcom/activity-recognition",
+    "run_id": "24211376672",
+    "run_number": "59",
+    "attempt": "1",
+    "url": "https://github.com/syslabcom/activity-recognition/actions/runs/24211376672",
+    "sha": "f89ac252fa806c64fb5f60b69589b10f5bb9a57a"
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "version": 1,
+  "status": "success",
+  "generated_at": "2026-04-09T20:20:08Z",
+  "source_issue": {
+    "id": 124127878,
+    "number": 293,
+    "title": "adopt_roles does not work as I expected",
+    "html_url": "https://github.com/plone/plone.api/issues/293",
+    "repository_full_name": "plone/plone.api",
+    "updated_at": "2018-11-07T17:06:47Z",
+    "labels": [
+      "01 type: bug",
+      "31 needs: help",
+      "21 status: confirmed",
+      "43 lvl: complex"
+    ],
+    "comments": 8
+  },
+  "ai": {
+    "provider": "openai",
+    "model": "gpt-4o-mini"
+  },
+  "summary_markdown": "## What this issue is about\nThis issue revolves around the `api.env.adopt_roles` function in Plone, which is not working as expected. Users anticipated it would either temporarily grant roles during a code block or use a proxy user with those roles. However, current observations show it doesn't seem to alter permissions as expected.\n\n## What needs to be done\nWe need to clarify the intended behavior of `adopt_roles`. If it’s confirmed that the current functionality is a bug, it should be addressed in the code. Additionally, the documentation needs updating to explain what `adopt_roles` actually does.\n\n## Helpful background\nMultiple contributors have raised similar issues. They noticed that while granting roles directly using `api.user.grant_roles` operates effectively, `adopt_roles` fails to provide the expected permissions, particularly in the same request context. There's speculation that caching may play a role in this behavior.\n\n## Good first steps\n1. Review the existing tests in the mentioned [link](https://github.com/plone/plone.api/blob/master/src/plone/api/tests/test_env.py#L134-L174) to understand current expectations.\n2. Test the behavior of `adopt_roles` in simple scenarios, noting where it fails to grant access.\n3. If issues persist, contribute by updating documentation to specify the behavior of `adopt_roles`.\n4. Coordinate with other contributors who are interested in resolving these issues for collaborative debugging and solutions.",
+  "workflow": {
+    "repository": "syslabcom/activity-recognition",
+    "run_id": "24211376672",
+    "run_number": "59",
+    "attempt": "1",
+    "url": "https://github.com/syslabcom/activity-recognition/actions/runs/24211376672",
+    "sha": "f89ac252fa806c64fb5f60b69589b10f5bb9a57a"
+  }
+}

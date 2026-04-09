@@ -1,0 +1,33 @@
+{
+  "version": 1,
+  "status": "success",
+  "generated_at": "2026-04-09T20:19:58Z",
+  "source_issue": {
+    "id": 445498964,
+    "number": 383,
+    "title": "Chose Plone 4.3-latest to create a package, but it's pinning to test_plone52.cfg in buildout",
+    "html_url": "https://github.com/plone/bobtemplates.plone/issues/383",
+    "repository_full_name": "plone/bobtemplates.plone",
+    "updated_at": "2019-05-17T16:17:10Z",
+    "labels": [
+      "04 type: enhancement",
+      "31 needs: help",
+      "14 prio: low",
+      "41 lvl: easy"
+    ],
+    "comments": 2
+  },
+  "ai": {
+    "provider": "openai",
+    "model": "gpt-4o-mini"
+  },
+  "summary_markdown": "## What this issue is about\nThis issue addresses a problem where, after creating a package using Plone CLI for Plone 4.3, the buildout is incorrectly pinning to `test_plone52.cfg` instead of the expected `test_plone43.cfg`. This affects how dependencies are managed in the project.\n\n## What needs to be done\nThe goal is to modify the configuration files (`buildout.cfg` and `requirements.txt`) to ensure they reference the correct Plone version (4.3) instead of 5.2. There's also a suggestion to improve the setup by making it more intuitive for users, particularly beginners.\n\n## Helpful background\nThe Plone CLI (Command Line Interface) is intended to simplify creating and managing Plone packages. The use of templates aims to provide a seamless experience by avoiding manual edits, which can lead to errors. This issue is related to ensuring these templates function as intended.\n\n## Good first steps\n1. Review the current `buildout.cfg` and `requirements.txt` to identify all instances of `test_plone52.cfg`.\n2. Experiment with changing the references to `test_plone43.cfg`.\n3. Run the build process to check if the changes resolve the issue.\n4. Consider sharing your findings or improvements in the discussion, especially if you think of further enhancements.",
+  "workflow": {
+    "repository": "syslabcom/activity-recognition",
+    "run_id": "24211376672",
+    "run_number": "59",
+    "attempt": "1",
+    "url": "https://github.com/syslabcom/activity-recognition/actions/runs/24211376672",
+    "sha": "f89ac252fa806c64fb5f60b69589b10f5bb9a57a"
+  }
+}

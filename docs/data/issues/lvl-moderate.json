@@ -1,7 +1,7 @@
 {
   "version": 1,
   "status": "success",
-  "generated_at": "2026-04-09T19:29:25Z",
+  "generated_at": "2026-04-09T20:19:47Z",
   "organization": "plone",
   "state": "open",
   "slug": "lvl-moderate",
@@ -2399,7 +2399,15 @@
         "04 type: enhancement",
         "13 prio: normal",
         "42 lvl: moderate"
-      ]
+      ],
+      "contributor_summary": {
+        "status": "available",
+        "generated_at": "2026-04-09T20:20:44Z",
+        "source_issue_updated_at": "2017-11-08T17:41:54Z",
+        "model": "gpt-4o-mini",
+        "summary_markdown": "## What this issue is about\nThis issue aims to improve the sub-template for vocabularies in the `bobtemplates.plone` repository by integrating the `IContextSourceBinder` method. This enhancement will provide the option to create vocabularies that utilize contextual information, potentially making them easier to understand and use.\n\n## What needs to be done\nYou will need to implement changes to allow the sub-template to support `IContextSourceBinder`. Discussion suggests considering whether this should be the default approach, as it may simplify the vocabulary creation process.\n\n## Helpful background\nVocabularies are collections of terms used in Plone. The `IContextSourceBinder` is a method that binds these vocabularies to a specific context, thereby making the selection of terms more relevant and intuitive. There is also an existing method using `IVocabularyFactory` that could be an alternative.\n\n## Good first steps\n1. Explore the existing code related to vocabularies, focusing on `IContextSourceBinder` and `IVocabularyFactory`.\n2. Review the example links provided in the comments for insights on their implementations.\n3. Start drafting your changes in a separate branch.\n4. Consider writing tests to ensure your implementation works as expected.\n5. Once done, create a pull request for review!",
+        "path": "data/issues/summaries/plone/bobtemplates.plone/238.json"
+      }
     },
     {
       "id": 129219960,
@@ -2420,7 +2428,15 @@
       "labels": [
         "04 type: enhancement",
         "42 lvl: moderate"
-      ]
+      ],
+      "contributor_summary": {
+        "status": "available",
+        "generated_at": "2026-04-09T20:21:28Z",
+        "source_issue_updated_at": "2016-01-27T17:51:54Z",
+        "model": "gpt-4o-mini",
+        "summary_markdown": "# Issues Summary: Implement Unicode Sandwich Convention\n\n## What this issue is about\nThis issue focuses on implementing the **Unicode sandwich convention** in the Plone project. The goal is to enhance the handling of Unicode characters within the `Products.CMFDiffTool`. More details about the convention can be found [here](http://nedbatchelder.com/text/unipain/unipain.html#35).\n\n## What needs to be done\nYou will need to review the current implementation and adapt it to support the Unicode sandwich convention. This will likely involve modifying code related to text handling in the project, but specific implementation details are not fully outlined in the issue.\n\n## Helpful background\nThe Unicode sandwich convention is a method for better managing Unicode characters, making it easier to represent and manipulate text. Though there's a related issue (#9), the connection isn't fully documented, and there are no comments available to clarify next steps.\n\n## Good first steps\n1. Familiarize yourself with the existing code in `Products.CMFDiffTool`.\n2. Read the linked resource on the Unicode sandwich convention.\n3. Consider reaching out to the author, [do3cc](https://github.com/do3cc), for guidance if needed.\n4. Document any findings and proposed changes for clarity.\n5. Be prepared for testing and review after implementing changes. \n\nGetting involved is a great way to learn, and your contributions are welcome!",
+        "path": "data/issues/summaries/plone/Products.CMFDiffTool/10.json"
+      }
     },
     {
       "id": 108313727,
@@ -2441,16 +2457,24 @@
       "labels": [
         "01 type: bug",
         "42 lvl: moderate"
-      ]
+      ],
+      "contributor_summary": {
+        "status": "available",
+        "generated_at": "2026-04-09T20:21:37Z",
+        "source_issue_updated_at": "2016-01-27T17:49:44Z",
+        "model": "gpt-4o-mini",
+        "summary_markdown": "## What this issue is about\nThis issue addresses a bug in the `Products.CMFDiffTool` where non-ASCII characters in documents cause errors when comparing different versions. Specifically, it surfaces when creating a news item in Plone 4.3.6 with the `plone.app.contenttypes` version 1.1b5.\n\n## What needs to be done\nWe need to investigate and fix the error triggered by non-ASCII characters during version comparisons in the CMFDiffTool. There's some ambiguity about whether the bug originates from CMFDiffTool or the content types library, as the issue has been discussed elsewhere.\n\n## Helpful background\nNon-ASCII characters are any characters not part of the standard ASCII set (e.g., special symbols, characters from other languages). This issue may involve understanding how character encoding works and its implications in version control systems. Previous discussions suggest uncertainty about the source of the problem, so it’s important to review related issues.\n\n## Good first steps\n1. Familiarize yourself with the CMFDiffTool and how it handles document versions.\n2. Check for any existing tests regarding character encoding and document comparison.\n3. Review the linked [error log](https://gist.github.com/danielhz/a71f7d7aa4d3d8f0e806#file-error-0001-log) and the [buildout configuration](https://gist.github.com/danielhz/daedbc46ae8706eb0aa8#file-buildout-cfg).\n4. Consider opening a discussion or looking for collaborators if you need more guidance.",
+        "path": "data/issues/summaries/plone/Products.CMFDiffTool/9.json"
+      }
     }
   ],
   "message": null,
   "workflow": {
     "repository": "syslabcom/activity-recognition",
-    "run_id": "24209273658",
-    "run_number": "58",
+    "run_id": "24211376672",
+    "run_number": "59",
     "attempt": "1",
-    "url": "https://github.com/syslabcom/activity-recognition/actions/runs/24209273658",
-    "sha": "429caab57cdd9dd6b64f34f16833b4ee533cde77"
+    "url": "https://github.com/syslabcom/activity-recognition/actions/runs/24211376672",
+    "sha": "f89ac252fa806c64fb5f60b69589b10f5bb9a57a"
   }
 }

@@ -1,0 +1,32 @@
+{
+  "version": 1,
+  "status": "success",
+  "generated_at": "2026-04-09T20:20:20Z",
+  "source_issue": {
+    "id": 335008489,
+    "number": 29,
+    "title": "Improve help message when using \"plonecli -l\"",
+    "html_url": "https://github.com/plone/plonecli/issues/29",
+    "repository_full_name": "plone/plonecli",
+    "updated_at": "2018-10-17T14:18:27Z",
+    "labels": [
+      "04 type: enhancement",
+      "31 needs: help",
+      "41 lvl: easy"
+    ],
+    "comments": 0
+  },
+  "ai": {
+    "provider": "openai",
+    "model": "gpt-4o-mini"
+  },
+  "summary_markdown": "## What this issue is about\nThis issue focuses on enhancing the help message received when using the command `plonecli -l`. The goal is to provide clearer guidance for users, especially newcomers to the Plone CLI, when they attempt to create new add-ons.\n\n## What needs to be done\nThe proposed enhancement is to improve the help output by including specific examples, particularly the command format for creating an add-on: `plonecli create addon src/collective.todo`. Before implementing this improvement, it's suggested to resolve issue #28, which may influence the current changes.\n\n## Helpful background\nUnderstanding the Plone CLI (Command Line Interface) tool is essential for interacting with Plone projects. The `-l` flag lists available templates, while the error related to missing arguments can be confusing for users who are not familiar with command-line operations.\n\n## Good first steps\n1. Review the current help output when using `plonecli -l`.\n2. Familiarize yourself with the Plone CLI documentation, especially the section on creating add-ons: [Plone CLI Docs](https://github.com/plone/plonecli#creating-a-plone-add-on).\n3. Check issue #28 for any existing discussions or updates that may affect this issue.\n4. Consider drafting the improved help message based on your understanding.\n\nFeel free to ask questions if anything is unclear!",
+  "workflow": {
+    "repository": "syslabcom/activity-recognition",
+    "run_id": "24211376672",
+    "run_number": "59",
+    "attempt": "1",
+    "url": "https://github.com/syslabcom/activity-recognition/actions/runs/24211376672",
+    "sha": "f89ac252fa806c64fb5f60b69589b10f5bb9a57a"
+  }
+}

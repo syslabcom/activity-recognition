@@ -1,0 +1,33 @@
+{
+  "version": 1,
+  "status": "success",
+  "generated_at": "2026-04-09T20:21:45Z",
+  "source_issue": {
+    "id": 116513449,
+    "number": 33,
+    "title": "10 years old empty file!",
+    "html_url": "https://github.com/plone/Products.CMFEditions/issues/33",
+    "repository_full_name": "plone/Products.CMFEditions",
+    "updated_at": "2015-11-12T15:17:47Z",
+    "labels": [
+      "04 type: enhancement",
+      "05 type: question",
+      "14 prio: low",
+      "41 lvl: easy"
+    ],
+    "comments": 3
+  },
+  "ai": {
+    "provider": "openai",
+    "model": "gpt-4o-mini"
+  },
+  "summary_markdown": "```markdown\n## What this issue is about\nThis issue discusses a specific file in the `Products.CMFEditions` repository that has been empty for over 10 years. The original post questions whether this file can be safely removed without causing issues.\n\n## What needs to be done\nContributors are invited to evaluate the empty file located at [talesModifierAddForm.pt](https://github.com/plone/Products.CMFEditions/blob/master/Products/CMFEditions/www/talesModifierAddForm.pt). The main goal is to determine if it can be deleted or if it serves a purpose.\n\n## Helpful background\nThere is some ongoing discussion about the overall maintenance of old files across the repository. A contributor mentioned having a script to identify the age of files, and another suggested it would help identify unused files. However, the script mentioned is still in a \"beta\" state and has not been fully refined.\n\n## Good first steps\n1. Review the contents of the [talesModifierAddForm.pt file](https://github.com/plone/Products.CMFEditions/blob/master/Products/CMFEditions/www/talesModifierAddForm.pt).\n2. Assess if it is indeed unused and provide your thoughts in the comments.\n3. If you're comfortable with the script idea, consider helping to improve it for better analysis of old files.\n\nFeel free to ask questions if you're unsure about anything!\n```",
+  "workflow": {
+    "repository": "syslabcom/activity-recognition",
+    "run_id": "24211376672",
+    "run_number": "59",
+    "attempt": "1",
+    "url": "https://github.com/syslabcom/activity-recognition/actions/runs/24211376672",
+    "sha": "f89ac252fa806c64fb5f60b69589b10f5bb9a57a"
+  }
+}

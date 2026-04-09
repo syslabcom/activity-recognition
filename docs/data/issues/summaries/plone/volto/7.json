@@ -1,0 +1,33 @@
+{
+  "version": 1,
+  "status": "success",
+  "generated_at": "2026-04-09T20:20:49Z",
+  "source_issue": {
+    "id": 223134556,
+    "number": 7,
+    "title": "Collaborative editing",
+    "html_url": "https://github.com/plone/volto/issues/7",
+    "repository_full_name": "plone/volto",
+    "updated_at": "2017-04-27T13:21:40Z",
+    "labels": [
+      "04 type: enhancement",
+      "14 prio: low",
+      "21 status: confirmed",
+      "43 lvl: complex"
+    ],
+    "comments": 2
+  },
+  "ai": {
+    "provider": "openai",
+    "model": "gpt-4o-mini"
+  },
+  "summary_markdown": "## What this issue is about\nThis issue discusses the enhancement of adding collaborative editing features to the Plone Volto application. The goal is to allow multiple users to edit content simultaneously, enhancing teamwork and improving user experience.\n\n## What needs to be done\nWe need to implement collaborative editing functionality, utilizing an editor framework that supports document structure as a tree, which can be compared (diffed). It will involve extending the current editor features, like images and links, based on the existing medium-like styles.\n\n## Helpful background\nCollaborative editing allows multiple people to work on the same document at the same time. This specific enhancement leverages an editing framework that saves the editor state in an immutable object. The current Volto editor supports block and inline styles, which can be expanded to include more features.\n\n## Good first steps\n1. Familiarize yourself with the current editor used in Volto.\n2. Review existing discussions and ideas around collaborative editing in this issue.\n3. Consider how the proposed features can integrate with the current structure.\n4. If you're unfamiliar with certain terms or technologies mentioned, don’t hesitate to ask for clarification in the comments!\n5. Coordinate with existing contributors for feedback on your ideas.",
+  "workflow": {
+    "repository": "syslabcom/activity-recognition",
+    "run_id": "24211376672",
+    "run_number": "59",
+    "attempt": "1",
+    "url": "https://github.com/syslabcom/activity-recognition/actions/runs/24211376672",
+    "sha": "f89ac252fa806c64fb5f60b69589b10f5bb9a57a"
+  }
+}

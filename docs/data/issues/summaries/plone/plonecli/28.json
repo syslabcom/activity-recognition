@@ -1,0 +1,32 @@
+{
+  "version": 1,
+  "status": "success",
+  "generated_at": "2026-04-09T20:20:03Z",
+  "source_issue": {
+    "id": 335007063,
+    "number": 28,
+    "title": "Improve help message when using \"plonecli create\"",
+    "html_url": "https://github.com/plone/plonecli/issues/28",
+    "repository_full_name": "plone/plonecli",
+    "updated_at": "2019-01-14T16:23:14Z",
+    "labels": [
+      "04 type: enhancement",
+      "31 needs: help",
+      "41 lvl: easy"
+    ],
+    "comments": 5
+  },
+  "ai": {
+    "provider": "openai",
+    "model": "gpt-4o-mini"
+  },
+  "summary_markdown": "```markdown\n## What this issue is about\nThis issue focuses on improving the help message displayed when using the command `plonecli create`. Currently, the guidance can be unclear, particularly for new users who receive a suggestion to run a help command that isn't very useful.\n\n## What needs to be done\nEnhance the help message for the `plonecli create` command so it clearly outlines the required `TEMPLATE_NAME` and `PACKAGE_NAME` arguments. Suggestions include adding a list of possible templates and a note to run `plonecli -l` for available options.\n\n## Helpful background\nThe Plone CLI is a command-line interface to help create and manage Plone packages. The issue was raised to make the help prompts more user-friendly, especially for those unfamiliar with the available templates and their usage.\n\n## Good first steps\n1. Check current help messages for `plonecli create` and consider how they can be improved based on community suggestions.\n2. Review related commands, such as `plonecli add`, to see if similar improvements are needed.\n3. If you're ready, you could start by forking the repository and making changes to the relevant source files, then test your updates locally.\n4. Document your changes well, and prepare to submit a pull request for review.\n```",
+  "workflow": {
+    "repository": "syslabcom/activity-recognition",
+    "run_id": "24211376672",
+    "run_number": "59",
+    "attempt": "1",
+    "url": "https://github.com/syslabcom/activity-recognition/actions/runs/24211376672",
+    "sha": "f89ac252fa806c64fb5f60b69589b10f5bb9a57a"
+  }
+}

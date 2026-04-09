@@ -1,0 +1,34 @@
+{
+  "version": 1,
+  "status": "success",
+  "generated_at": "2026-04-09T20:20:35Z",
+  "source_issue": {
+    "id": 56731432,
+    "number": 22,
+    "title": "Add option to include sphinx.",
+    "html_url": "https://github.com/plone/bobtemplates.plone/issues/22",
+    "repository_full_name": "plone/bobtemplates.plone",
+    "updated_at": "2018-04-25T13:11:20Z",
+    "labels": [
+      "04 type: enhancement",
+      "31 needs: help",
+      "21 status: confirmed",
+      "33 needs: docs",
+      "41 lvl: easy"
+    ],
+    "comments": 2
+  },
+  "ai": {
+    "provider": "openai",
+    "model": "gpt-4o-mini"
+  },
+  "summary_markdown": "## What this issue is about\nThis issue proposes adding an option to include Sphinx, a documentation generator, for the Plone project. There is also a suggestion to document how to upload the generated docs to Read the Docs.\n\n## What needs to be done\nWe need to clarify documentation around using Sphinx within this project. Specifically, we should outline how to upload the generated documentation to Read the Docs. Note that there is some discussion about whether Sphinx is already included, so further clarification may be needed.\n\n## Helpful background\nSphinx is a popular tool used for generating documentation, typically in a readable web format. Read the Docs is a platform that hosts documentation for open-source projects. The discussions point to some existing use of Sphinx but lack definitive steps for integration with Read the Docs.\n\n## Good first steps\n1. **Review the existing setup** for Sphinx in the project to confirm its current status.\n2. **Document clear steps** for uploading docs to Read the Docs, including any prerequisites.\n3. **Seek feedback** from the community to ensure the documentation is clear and covers all necessary steps. \n\nEngaging with project maintainers can help in refining this process further!",
+  "workflow": {
+    "repository": "syslabcom/activity-recognition",
+    "run_id": "24211376672",
+    "run_number": "59",
+    "attempt": "1",
+    "url": "https://github.com/syslabcom/activity-recognition/actions/runs/24211376672",
+    "sha": "f89ac252fa806c64fb5f60b69589b10f5bb9a57a"
+  }
+}

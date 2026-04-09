@@ -1,0 +1,33 @@
+{
+  "version": 1,
+  "status": "success",
+  "generated_at": "2026-04-09T20:20:13Z",
+  "source_issue": {
+    "id": 149723100,
+    "number": 146,
+    "title": "Encourage usage of XPath in rules.xml",
+    "html_url": "https://github.com/plone/bobtemplates.plone/issues/146",
+    "repository_full_name": "plone/bobtemplates.plone",
+    "updated_at": "2018-10-23T08:58:33Z",
+    "labels": [
+      "04 type: enhancement",
+      "31 needs: help",
+      "14 prio: low",
+      "43 lvl: complex"
+    ],
+    "comments": 5
+  },
+  "ai": {
+    "provider": "openai",
+    "model": "gpt-4o-mini"
+  },
+  "summary_markdown": "```markdown\n## What this issue is about\nThis issue aims to improve performance in the `rules.xml` of `bobtemplates.plone` by encouraging the use of XPath with absolute selectors instead of CSS selectors. The motivation is based on recent experiences showing that CSS selectors can lead to slow, global queries.\n\n## What needs to be done\nTo enhance performance, we should replace existing CSS selectors with more efficient XPath queries. The specific examples discussed involve changing rules for the `#visual-portal-wrapper`, as outlined by contributors, though there is some disagreement on whether XPath should be the standard approach.\n\n## Helpful background\nThe issue of performance relates to how many global searches are triggered by CSS selectors, which can be costly. XPath can be more explicit and often results in faster queries, particularly on longer pages. However, some contributors have suggested alternatives, and there is no consensus on making XPath the preferred method.\n\n## Good first steps\n- Review the current `rules.xml` file in `bobtemplates.plone`.\n- Identify instances where CSS selectors are used for `#visual-portal-wrapper`.\n- Experiment with replacing those with the recommended XPath examples.\n- Consider discussing findings with other contributors for feedback and possible adjustments.\n- Familiarize yourself with XPath if you are new to it, as it's a bit more complex than CSS selectors but quite powerful.\n```",
+  "workflow": {
+    "repository": "syslabcom/activity-recognition",
+    "run_id": "24211376672",
+    "run_number": "59",
+    "attempt": "1",
+    "url": "https://github.com/syslabcom/activity-recognition/actions/runs/24211376672",
+    "sha": "f89ac252fa806c64fb5f60b69589b10f5bb9a57a"
+  }
+}

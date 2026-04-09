@@ -1,7 +1,7 @@
 {
   "version": 1,
   "status": "success",
-  "generated_at": "2026-04-09T19:29:25Z",
+  "generated_at": "2026-04-09T20:19:47Z",
   "organization": "plone",
   "state": "open",
   "slug": "lvl-easy",
@@ -2308,7 +2308,15 @@
       "labels": [
         "04 type: enhancement",
         "41 lvl: easy"
-      ]
+      ],
+      "contributor_summary": {
+        "status": "available",
+        "generated_at": "2026-04-09T20:19:53Z",
+        "source_issue_updated_at": "2019-05-19T23:29:06Z",
+        "model": "gpt-4o-mini",
+        "summary_markdown": "## What this issue is about\nThis issue discusses the idea of enhancing internationalization (i18n) support in the Plone CLI (Command Line Interface). The suggestion is to implement a command like `plonecli translate <package.name>`, which would improve how translations are handled.\n\n## What needs to be done\nA potential enhancement is proposed for the Plone CLI to support translation commands. There are suggestions to utilize existing commands, like `./bin/update_locale`, to manage translations within any package.\n\n## Helpful background\nInternationalization (i18n) refers to adapting software to different languages and regions. The conversation suggests enhancing this aspect in the Plone CLI, utilizing existing tools and commands for easier implementation. Some comments indicate varying approaches to handling this enhancement, so clarity on requirements may be needed.\n\n## Good first steps\n1. Review the existing commands for localization in the Plone CLI.\n2. Check out the suggestion made by the commenter about `./bin/update_locale` and familiarize yourself with its functionality.\n3. Join the discussion to clarify any ambiguities or share your thoughts on the proposed enhancements.\n\nYour contributions are welcome, and this could be a great opportunity for those looking to get involved!",
+        "path": "data/issues/summaries/plone/plonecli/51.json"
+      }
     },
     {
       "id": 445498964,
@@ -2331,7 +2339,15 @@
         "31 needs: help",
         "14 prio: low",
         "41 lvl: easy"
-      ]
+      ],
+      "contributor_summary": {
+        "status": "available",
+        "generated_at": "2026-04-09T20:19:58Z",
+        "source_issue_updated_at": "2019-05-17T16:17:10Z",
+        "model": "gpt-4o-mini",
+        "summary_markdown": "## What this issue is about\nThis issue addresses a problem where, after creating a package using Plone CLI for Plone 4.3, the buildout is incorrectly pinning to `test_plone52.cfg` instead of the expected `test_plone43.cfg`. This affects how dependencies are managed in the project.\n\n## What needs to be done\nThe goal is to modify the configuration files (`buildout.cfg` and `requirements.txt`) to ensure they reference the correct Plone version (4.3) instead of 5.2. There's also a suggestion to improve the setup by making it more intuitive for users, particularly beginners.\n\n## Helpful background\nThe Plone CLI (Command Line Interface) is intended to simplify creating and managing Plone packages. The use of templates aims to provide a seamless experience by avoiding manual edits, which can lead to errors. This issue is related to ensuring these templates function as intended.\n\n## Good first steps\n1. Review the current `buildout.cfg` and `requirements.txt` to identify all instances of `test_plone52.cfg`.\n2. Experiment with changing the references to `test_plone43.cfg`.\n3. Run the build process to check if the changes resolve the issue.\n4. Consider sharing your findings or improvements in the discussion, especially if you think of further enhancements.",
+        "path": "data/issues/summaries/plone/bobtemplates.plone/383.json"
+      }
     },
     {
       "id": 335007063,
@@ -2353,7 +2369,15 @@
         "04 type: enhancement",
         "31 needs: help",
         "41 lvl: easy"
-      ]
+      ],
+      "contributor_summary": {
+        "status": "available",
+        "generated_at": "2026-04-09T20:20:03Z",
+        "source_issue_updated_at": "2019-01-14T16:23:14Z",
+        "model": "gpt-4o-mini",
+        "summary_markdown": "```markdown\n## What this issue is about\nThis issue focuses on improving the help message displayed when using the command `plonecli create`. Currently, the guidance can be unclear, particularly for new users who receive a suggestion to run a help command that isn't very useful.\n\n## What needs to be done\nEnhance the help message for the `plonecli create` command so it clearly outlines the required `TEMPLATE_NAME` and `PACKAGE_NAME` arguments. Suggestions include adding a list of possible templates and a note to run `plonecli -l` for available options.\n\n## Helpful background\nThe Plone CLI is a command-line interface to help create and manage Plone packages. The issue was raised to make the help prompts more user-friendly, especially for those unfamiliar with the available templates and their usage.\n\n## Good first steps\n1. Check current help messages for `plonecli create` and consider how they can be improved based on community suggestions.\n2. Review related commands, such as `plonecli add`, to see if similar improvements are needed.\n3. If you're ready, you could start by forking the repository and making changes to the relevant source files, then test your updates locally.\n4. Document your changes well, and prepare to submit a pull request for review.\n```",
+        "path": "data/issues/summaries/plone/plonecli/28.json"
+      }
     },
     {
       "id": 335008489,
@@ -2375,7 +2399,15 @@
         "04 type: enhancement",
         "31 needs: help",
         "41 lvl: easy"
-      ]
+      ],
+      "contributor_summary": {
+        "status": "available",
+        "generated_at": "2026-04-09T20:20:20Z",
+        "source_issue_updated_at": "2018-10-17T14:18:27Z",
+        "model": "gpt-4o-mini",
+        "summary_markdown": "## What this issue is about\nThis issue focuses on enhancing the help message received when using the command `plonecli -l`. The goal is to provide clearer guidance for users, especially newcomers to the Plone CLI, when they attempt to create new add-ons.\n\n## What needs to be done\nThe proposed enhancement is to improve the help output by including specific examples, particularly the command format for creating an add-on: `plonecli create addon src/collective.todo`. Before implementing this improvement, it's suggested to resolve issue #28, which may influence the current changes.\n\n## Helpful background\nUnderstanding the Plone CLI (Command Line Interface) tool is essential for interacting with Plone projects. The `-l` flag lists available templates, while the error related to missing arguments can be confusing for users who are not familiar with command-line operations.\n\n## Good first steps\n1. Review the current help output when using `plonecli -l`.\n2. Familiarize yourself with the Plone CLI documentation, especially the section on creating add-ons: [Plone CLI Docs](https://github.com/plone/plonecli#creating-a-plone-add-on).\n3. Check issue #28 for any existing discussions or updates that may affect this issue.\n4. Consider drafting the improved help message based on your understanding.\n\nFeel free to ask questions if anything is unclear!",
+        "path": "data/issues/summaries/plone/plonecli/29.json"
+      }
     },
     {
       "id": 332400176,
@@ -2396,7 +2428,15 @@
       "labels": [
         "03 type: feature (plip)",
         "41 lvl: easy"
-      ]
+      ],
+      "contributor_summary": {
+        "status": "available",
+        "generated_at": "2026-04-09T20:20:26Z",
+        "source_issue_updated_at": "2018-06-14T13:43:00Z",
+        "model": "gpt-4o-mini",
+        "summary_markdown": "## What this issue is about\nThis issue proposes adding a method to the `plone.api.portal` module for easily adding indexes to the `portal_catalog`. Currently, it’s complicated and poorly documented, which can lead to issues like empty indexes during reinstallation of add-ons.\n\n## What needs to be done\nWe need to create a central method in `CMFPlone`, possibly in a utilities module, to streamline the process of adding indexes to the `portal_catalog`. There’s also a suggestion to enable the addition of a catalog column (metadata column) using either the same or a new method.\n\n## Helpful background\nThe existing process for adding indexes is not user-friendly, and it lacks reindexing options, making it challenging for developers. For reference, you can check examples provided by the author [here](https://gist.github.com/MrTango/0ec0c0830fec0b9626d2cbdc69cf20cf).\n\n## Good first steps\n1. Review the current usage of `portal_catalog` and its indexing functionality.\n2. Examine the proposed examples in the gist linked above.\n3. Consider how the new method can be structured to include catalog columns if feasible.\n4. Document insights and share them in the issue discussion. Once ready, testing and reviewing will be important to ensure everything works as expected.",
+        "path": "data/issues/summaries/plone/plone.api/404.json"
+      }
     },
     {
       "id": 56731432,
@@ -2420,7 +2460,15 @@
         "21 status: confirmed",
         "33 needs: docs",
         "41 lvl: easy"
-      ]
+      ],
+      "contributor_summary": {
+        "status": "available",
+        "generated_at": "2026-04-09T20:20:35Z",
+        "source_issue_updated_at": "2018-04-25T13:11:20Z",
+        "model": "gpt-4o-mini",
+        "summary_markdown": "## What this issue is about\nThis issue proposes adding an option to include Sphinx, a documentation generator, for the Plone project. There is also a suggestion to document how to upload the generated docs to Read the Docs.\n\n## What needs to be done\nWe need to clarify documentation around using Sphinx within this project. Specifically, we should outline how to upload the generated documentation to Read the Docs. Note that there is some discussion about whether Sphinx is already included, so further clarification may be needed.\n\n## Helpful background\nSphinx is a popular tool used for generating documentation, typically in a readable web format. Read the Docs is a platform that hosts documentation for open-source projects. The discussions point to some existing use of Sphinx but lack definitive steps for integration with Read the Docs.\n\n## Good first steps\n1. **Review the existing setup** for Sphinx in the project to confirm its current status.\n2. **Document clear steps** for uploading docs to Read the Docs, including any prerequisites.\n3. **Seek feedback** from the community to ensure the documentation is clear and covers all necessary steps. \n\nEngaging with project maintainers can help in refining this process further!",
+        "path": "data/issues/summaries/plone/bobtemplates.plone/22.json"
+      }
     },
     {
       "id": 243339368,
@@ -2441,7 +2489,15 @@
       "labels": [
         "04 type: enhancement",
         "41 lvl: easy"
-      ]
+      ],
+      "contributor_summary": {
+        "status": "available",
+        "generated_at": "2026-04-09T20:20:39Z",
+        "source_issue_updated_at": "2018-02-10T02:36:59Z",
+        "model": "gpt-4o-mini",
+        "summary_markdown": "## What this issue is about\nThis issue focuses on simplifying the `__init__` methods in views within the `plone.app.contenttypes`. The goal is to reduce unnecessary complexities that occur when the display menu in the toolbar initializes these views, which can currently be quite resource-intensive.\n\n## What needs to be done\nContributors are encouraged to analyze the current `__init__` methods and propose ways to streamline them. The discussion has raised the need for simpler initialization processes, but specific simplifications are not clearly defined, leaving some room for exploration.\n\n## Helpful background\nThe `__init__` method is a special function in Python that initializes an object when it is created. In Plone, these methods are critical for generating the menu items shown to editors. Streamlining this process will enhance performance and usability.\n\n## Good first steps\n1. Review the current implementation of `__init__` methods in the `plone.app.contenttypes`.\n2. Consider what aspects of the initialization are unnecessary or can be optimized.\n3. Engage in discussions with the community if you have ideas or need clarification.\n4. Prepare to write tests to ensure functionality remains intact after changes.\n5. Check if there's a need for updated documentation reflecting any changes made.",
+        "path": "data/issues/summaries/plone/plone.app.contenttypes/417.json"
+      }
     },
     {
       "id": 119898390,
@@ -2463,7 +2519,15 @@
         "04 type: enhancement",
         "14 prio: low",
         "41 lvl: easy"
-      ]
+      ],
+      "contributor_summary": {
+        "status": "available",
+        "generated_at": "2026-04-09T20:21:00Z",
+        "source_issue_updated_at": "2016-06-09T09:40:41Z",
+        "model": "gpt-4o-mini",
+        "summary_markdown": "## What this issue is about\nThis issue discusses unifying the encoding used for tokens in the Plone application from two different types—`unicode_escape` and `quoted_printable`—to a single consistent format. The discussion suggests that `quoted_printable` is preferable for easier decoding outside of Plone.\n\n## What needs to be done\nWe need to select a single encoding method for tokens and update the code to ensure that all token handling is consistent throughout the application. Specifically, we should replace instances of `unicode_escape` with `quoted_printable` where applicable.\n\n## Helpful background\nTokens are often used to represent data, and having a consistent encoding helps maintain compatibility and reduces errors when the data is processed. While the issue illustrates minimal impact on internal Plone operations, a consistent format could simplify external interactions.\n\n## Good first steps\n1. Review the existing code, focusing on the token handling sections, including [this line](https://github.com/plone/plone.app.vocabularies/blob/master/plone/app/vocabularies/terms.py#L20).\n2. Identify where the encoding methods are implemented and outline a plan for unification.\n3. Consider reaching out in the issue comments for guidance or clarification if anything is unclear.\n4. After making changes, ensure to test the new token encoding and update documentation if necessary.",
+        "path": "data/issues/summaries/plone/plone.app.vocabularies/24.json"
+      }
     },
     {
       "id": 141474700,
@@ -2488,7 +2552,15 @@
         "13 prio: normal",
         "21 status: confirmed",
         "41 lvl: easy"
-      ]
+      ],
+      "contributor_summary": {
+        "status": "available",
+        "generated_at": "2026-04-09T20:21:04Z",
+        "source_issue_updated_at": "2016-03-17T11:35:12Z",
+        "model": "gpt-4o-mini",
+        "summary_markdown": "## What this issue is about\nThis issue addresses a bug in the News portlet of Plone where it displays items even if they are outside their set effective and expiration dates. The intention is to enhance the functionality by respecting these dates.\n\n## What needs to be done\nWe need to update the News portlet so that it only displays items that are currently effective. Specifically, it should not show items that are either before their effective date or after their expiration date. There is additional mention that this issue also affects the Events portlet.\n\n## Helpful background\nEffective and expiration dates are settings for content items that control when they should appear or disappear in listings. This issue is confirmed and categorized as a bug, so resolving it will improve user experience by ensuring the correct items are shown in the portlet.\n\n## Good first steps\n1. Familiarize yourself with the code for the News portlet in the [plone/plone.app.portlets](https://github.com/plone/plone.app.portlets) repository.\n2. Check the current implementation of effective and expiration date functions.\n3. Look into any existing tests for the News portlet, or consider writing new ones to ensure proper functionality.\n4. Coordinate with other contributors if you have questions, especially about related issues with the Events portlet.",
+        "path": "data/issues/summaries/plone/plone.app.portlets/67.json"
+      }
     },
     {
       "id": 133442578,
@@ -2510,7 +2582,15 @@
         "05 type: question",
         "13 prio: normal",
         "41 lvl: easy"
-      ]
+      ],
+      "contributor_summary": {
+        "status": "available",
+        "generated_at": "2026-04-09T20:21:19Z",
+        "source_issue_updated_at": "2016-02-13T15:47:07Z",
+        "model": "gpt-4o-mini",
+        "summary_markdown": "## What this issue is about\nThis issue addresses the use of `method=\"raw\"` in the `rules.xml` file of the Plone theme \"Barceloneta\". Currently, there are two occurrences of this attribute, which restricts the ability to modify content before it’s added to the theme.\n\n## What needs to be done\nThe goal is to evaluate whether both instances of `method=\"raw\"` can be removed from the `rules.xml` file. We need to verify if their removal will not disrupt existing functionality or if there's a reason they were initially included.\n\n## Helpful background\nThe `method=\"raw\"` attribute prevents content from being manipulated before it's inserted into the theme, which can limit customization options. The discussion on this topic appears to be open-ended, and there are no definitive conclusions yet regarding the necessity of these attributes.\n\n## Good first steps\n1. **Review the current `rules.xml` file**: Familiarize yourself with the code where `method=\"raw\"` is used.\n2. **Consider potential impacts**: Think about how removing these attributes could affect the theme's content behavior.\n3. **Engage in discussion**: Reach out to contributors mentioned in the issue for additional insights.\n4. **Test changes**: If you decide to remove the attributes, make sure to thoroughly test your changes to ensure stability. \n\nFeel free to ask questions if you need help or clarification!",
+        "path": "data/issues/summaries/plone/plonetheme.barceloneta/85.json"
+      }
     },
     {
       "id": 129220439,
@@ -2531,7 +2611,15 @@
       "labels": [
         "04 type: enhancement",
         "41 lvl: easy"
-      ]
+      ],
+      "contributor_summary": {
+        "status": "available",
+        "generated_at": "2026-04-09T20:21:23Z",
+        "source_issue_updated_at": "2016-01-27T17:53:59Z",
+        "model": "gpt-4o-mini",
+        "summary_markdown": "## What this issue is about\nThis issue discusses the need to **remove centralized imports** in `Products.CMFDiffTool.__init__`. The current imports are considered dangerous, likely because they can lead to unexpected behavior or conflicts.\n\n## What needs to be done\nYou will need to refactor the way imports are handled in the `__init__.py` file of the `Products.CMFDiffTool` package. Additionally, it may involve adding **deprecation warnings** to inform users about the changes, along with creating tests to ensure everything functions correctly afterward.\n\n## Helpful background\nCentralized imports can create issues in code management and stability. They may cause confusion about where specific functionalities come from. Carefully planning how to replace them with more explicit imports or restructuring your code can alleviate these risks.\n\n## Good first steps\n1. Familiarize yourself with the `Products.CMFDiffTool` codebase, particularly the `__init__.py` file.\n2. Research how to implement import statements more safely.\n3. Check the current testing framework used in the project and consider how to integrate tests for your changes.\n4. If you have questions or need clarification, feel free to reach out to the community or the issue author, [do3cc](https://github.com/do3cc).",
+        "path": "data/issues/summaries/plone/Products.CMFDiffTool/12.json"
+      }
     },
     {
       "id": 116513449,
@@ -2554,16 +2642,24 @@
         "05 type: question",
         "14 prio: low",
         "41 lvl: easy"
-      ]
+      ],
+      "contributor_summary": {
+        "status": "available",
+        "generated_at": "2026-04-09T20:21:45Z",
+        "source_issue_updated_at": "2015-11-12T15:17:47Z",
+        "model": "gpt-4o-mini",
+        "summary_markdown": "```markdown\n## What this issue is about\nThis issue discusses a specific file in the `Products.CMFEditions` repository that has been empty for over 10 years. The original post questions whether this file can be safely removed without causing issues.\n\n## What needs to be done\nContributors are invited to evaluate the empty file located at [talesModifierAddForm.pt](https://github.com/plone/Products.CMFEditions/blob/master/Products/CMFEditions/www/talesModifierAddForm.pt). The main goal is to determine if it can be deleted or if it serves a purpose.\n\n## Helpful background\nThere is some ongoing discussion about the overall maintenance of old files across the repository. A contributor mentioned having a script to identify the age of files, and another suggested it would help identify unused files. However, the script mentioned is still in a \"beta\" state and has not been fully refined.\n\n## Good first steps\n1. Review the contents of the [talesModifierAddForm.pt file](https://github.com/plone/Products.CMFEditions/blob/master/Products/CMFEditions/www/talesModifierAddForm.pt).\n2. Assess if it is indeed unused and provide your thoughts in the comments.\n3. If you're comfortable with the script idea, consider helping to improve it for better analysis of old files.\n\nFeel free to ask questions if you're unsure about anything!\n```",
+        "path": "data/issues/summaries/plone/Products.CMFEditions/33.json"
+      }
     }
   ],
   "message": null,
   "workflow": {
     "repository": "syslabcom/activity-recognition",
-    "run_id": "24209273658",
-    "run_number": "58",
+    "run_id": "24211376672",
+    "run_number": "59",
     "attempt": "1",
-    "url": "https://github.com/syslabcom/activity-recognition/actions/runs/24209273658",
-    "sha": "429caab57cdd9dd6b64f34f16833b4ee533cde77"
+    "url": "https://github.com/syslabcom/activity-recognition/actions/runs/24211376672",
+    "sha": "f89ac252fa806c64fb5f60b69589b10f5bb9a57a"
   }
 }
