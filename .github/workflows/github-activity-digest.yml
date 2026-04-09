@@ -3,7 +3,7 @@ name: Publish GitHub Activity Digest
 on:
   workflow_dispatch:
   schedule:
-    - cron: '0 7 * * 1'
+    - cron: '13 7 * * *'
 
 permissions:
   contents: write
