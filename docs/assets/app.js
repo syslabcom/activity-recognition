@@ -175,7 +175,7 @@ function renderMarkdown(markdown) {
       if (index < lines.length) {
         index += 1;
       }
-      blocks.push(`<pre><code>${escapeHtml(codeLines.join('\n'))}</code></pre>`);
+      blocks.push(`${renderInlineMarkdown(escapeHtml(codeLines.join('\n')))}`);
       continue;
     }
 
