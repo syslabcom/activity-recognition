@@ -1,7 +1,7 @@
 {
   "version": 1,
   "status": "success",
-  "generated_at": "2026-04-09T10:27:59Z",
+  "generated_at": "2026-04-09T11:24:01Z",
   "organization": "plone",
   "state": "open",
   "slug": "lvl-complex",
@@ -30,7 +30,15 @@
       "labels": [
         "05 type: question",
         "43 lvl: complex"
-      ]
+      ],
+      "contributor_summary": {
+        "status": "available",
+        "generated_at": "2026-04-09T11:25:10Z",
+        "source_issue_updated_at": "2026-03-23T19:04:01Z",
+        "model": "gpt-4o-mini",
+        "summary_markdown": "```markdown\n## What this issue is about\nThis issue aims to create a comprehensive guide for Plone site administrators. It will cover navigation through control panels and details on installing add-ons. The guide should include screenshots where possible, according to related implementation plans (PLIP).\n\n## What needs to be done\n- Draft the content for the Administrator guide, ensuring it clearly explains how to navigate control panels and install add-ons.\n- Consider incorporating a section on creating custom control panels.\n- Reconcile and integrate content with any relevant existing discussions or documents, particularly with issue #1768.\n\n## Helpful background\nContributors should familiarize themselves with Plone's existing documentation and the ongoing discussions about the Admin Guide, especially in relation to merging topics with the Developer Guide. There may be some confusion in the requirements and direction, so clarity on the structure is essential.\n\n## Good first steps\n1. Review the existing contributing guidelines in the repository.\n2. Explore the Plone site to get hands-on experience as an administrator.\n3. Check out relevant issues and discussions for context, especially issues #3987, #1768, and #4131.\n4. Start drafting initial sections of the guide and share your progress for feedback!\n```",
+        "path": "data/issues/summaries/plone/documentation/1902.json"
+      }
     },
     {
       "id": 216172434,
@@ -54,7 +62,15 @@
         "12 prio: high",
         "21 status: confirmed",
         "43 lvl: complex"
-      ]
+      ],
+      "contributor_summary": {
+        "status": "available",
+        "generated_at": "2026-04-09T11:25:24Z",
+        "source_issue_updated_at": "2026-03-23T17:35:51Z",
+        "model": "gpt-4o-mini",
+        "summary_markdown": "## What this issue is about\nThis issue addresses a bug where `z3c.form` fields with a default value can't be set to `None` or an empty string `(\"\")`. When users attempt to clear a field and save it, the default value is incorrectly restored upon re-editing the form.\n\n## What needs to be done\nWe need to investigate and fix the underlying issue in `z3c.form` that causes default values to be reapplied even when users want to clear fields. This is currently recognized as a bug affecting multiple scenarios in Plone related to custom content types.\n\n## Helpful background\nThe problem has been noted in various forms, affecting both querying behavior and fields such as `TextLine`. Members of the community have managed to identify that the issue arises with certain versions of `z3c.form`—versions 3.2.11 and later currently exhibit this bug, while 3.2.9 does not. However, there may be additional complexities not yet fully understood.\n\n## Good first steps\n1. Review the existing comments and check out the discussed versions of `z3c.form` to understand which changes led to the bug.\n2. Test the implementation with `z3c.form` version 3.2.9 to confirm it behaves as expected.\n3. Collaborate with other contributors for insights on the code and potential fixes. \n4. Document any findings in your review process for clarity and future reference.",
+        "path": "data/issues/summaries/plone/Products.CMFPlone/1976.json"
+      }
     },
     {
       "id": 1931829127,
@@ -77,7 +93,15 @@
       "labels": [
         "03 type: feature (plip)",
         "43 lvl: complex"
-      ]
+      ],
+      "contributor_summary": {
+        "status": "available",
+        "generated_at": "2026-04-09T11:25:34Z",
+        "source_issue_updated_at": "2026-03-19T20:37:53Z",
+        "model": "gpt-4o-mini",
+        "summary_markdown": "## What this issue is about\nThis issue focuses on implementing a **Keyword Manager** for Plone in the Volto framework. The purpose is to create a tool for managing keywords, enhancing user experience when categorizing and searching content.\n\n## What needs to be done\nDevelop the base functionality of the **Products.PloneKeywordManager**. Discussions have included possible integrations into bulk actions for folders. The implementation will be done first as an add-on to support a client's needs before moving it into the core application.\n\n## Helpful background\nA keyword manager helps users manage keywords efficiently, especially in environments with many keywords. Discussion around the UX and integration suggests there are varying perspectives on features, such as a \"show similar keywords\" option. Feedback and user experience insights are still being gathered.\n\n## Good first steps\n1. **Familiarize yourself** with Plone and the Volto framework.\n2. Review the existing discussions and comments for important context.\n3. Start by developing a prototype based on the low-fidelity UX design shared in the comments.\n4. Coordinate with contributors already involved, like Timo Stollenwerk, to gain insights and establish collaboration.",
+        "path": "data/issues/summaries/plone/volto/5300.json"
+      }
     },
     {
       "id": 2825746317,
@@ -98,7 +122,15 @@
       "labels": [
         "03 type: feature (plip)",
         "43 lvl: complex"
-      ]
+      ],
+      "contributor_summary": {
+        "status": "available",
+        "generated_at": "2026-04-09T11:25:39Z",
+        "source_issue_updated_at": "2026-03-16T16:23:38Z",
+        "model": "gpt-4o-mini",
+        "summary_markdown": "```markdown\n## What this issue is about\nThis issue focuses on modernizing the Plone frontend to create a new version called \"Seven\" that embraces current web development standards, specifically using React Router 7. The goal is to replace outdated libraries and establish a more efficient and flexible architecture for the Plone CMS.\n\n## What needs to be done\nThe plan includes significant updates to the existing Volto framework, such as:\n- Transitioning to a modern bundler, Vite.\n- Creating a pluggable standalone app for the CMS user interface.\n- Refactoring components and introducing a new theming system without Semantic UI.\n- Enhancing the overall content editing experience and ensuring compatibility with existing sites.\n\n## Helpful background\nThis proposal is part of the Plone Improvement Proposal (PLIP) format. The discussion around this issue has included various perspectives on the direction of the project. Some responses are still ongoing and involve clarifications regarding the \"headless\" nature of the future setup.\n\n## Good first steps\n1. Familiarize yourself with the existing **Volto** framework and its components.\n2. Read through the [Seven PLIP discussion](https://github.com/plone/volto/issues/6638) to get insight into what's already been proposed.\n3. Consider contributing by drafting documentation or exploring ways to implement compatibility with current add-ons.\n4. Engage in the conversation by asking questions if you’re unclear about specific technical aspects.\n```",
+        "path": "data/issues/summaries/plone/volto/6638.json"
+      }
     },
     {
       "id": 1609684179,
@@ -1267,10 +1299,10 @@
   "message": null,
   "workflow": {
     "repository": "syslabcom/activity-recognition",
-    "run_id": "24185380696",
-    "run_number": "47",
+    "run_id": "24187585349",
+    "run_number": "48",
     "attempt": "1",
-    "url": "https://github.com/syslabcom/activity-recognition/actions/runs/24185380696",
-    "sha": "cff5f4d0ea700d3af1971d8d412177a40b1b75a5"
+    "url": "https://github.com/syslabcom/activity-recognition/actions/runs/24187585349",
+    "sha": "f88752c0361349fe46a0c616320dfa6ab90ae878"
   }
 }

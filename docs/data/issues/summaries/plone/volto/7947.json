@@ -1,0 +1,34 @@
+{
+  "version": 1,
+  "status": "success",
+  "generated_at": "2026-04-09T11:25:50Z",
+  "source_issue": {
+    "id": 3988967668,
+    "number": 7947,
+    "title": "Improve `@plone/client` documentation",
+    "html_url": "https://github.com/plone/volto/issues/7947",
+    "repository_full_name": "plone/volto",
+    "updated_at": "2026-03-11T17:52:46Z",
+    "labels": [
+      "04 type: enhancement",
+      "31 needs: help",
+      "33 needs: docs",
+      "41 lvl: easy",
+      "dependencies"
+    ],
+    "comments": 9
+  },
+  "ai": {
+    "provider": "openai",
+    "model": "gpt-4o-mini"
+  },
+  "summary_markdown": "```markdown\n## What this issue is about\nThis issue aims to improve the documentation for `@plone/client` in the Volto project. Key tasks include removing references to TanStack Query terminology and enhancing HTTP API examples.\n\n## What needs to be done\n1. Eliminate all mentions of TanStack Query (e.g., mutators, useQuery).\n2. Implement HTTP API examples using the [`sphinxcontrib.httpexample`](https://sphinxcontrib-httpexample.readthedocs.io/en/latest/index.html) extension.\n3. After merging updates, forward port the changes to the `seven` branch, mainly copying new documentation files.\n\n## Helpful background\nDocumentation enhancements are vital to ensure users find accurate and accessible information. Existing discussions indicate some ambiguity around where to find and apply these changes. Coordination may be required based on contributions.\n\n## Good first steps\n1. Familiarize yourself with the existing documentation in [Volto's repo](https://github.com/plone/volto/tree/main/docs/source/client).\n2. Follow the [contributing guidelines](https://6.docs.plone.org/contributing/index.html) for best practices.\n3. Start with reviewing any sections that mention TanStack Query for removal.\n4. Explore the `sphinxcontrib.httpexample` extension for creating better API examples.\n5. Once initial changes are made, coordinate with the team before forward porting to the `seven` branch.\n```",
+  "workflow": {
+    "repository": "syslabcom/activity-recognition",
+    "run_id": "24187585349",
+    "run_number": "48",
+    "attempt": "1",
+    "url": "https://github.com/syslabcom/activity-recognition/actions/runs/24187585349",
+    "sha": "f88752c0361349fe46a0c616320dfa6ab90ae878"
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "version": 1,
+  "status": "success",
+  "generated_at": "2026-04-09T11:25:34Z",
+  "source_issue": {
+    "id": 1931829127,
+    "number": 5300,
+    "title": "PLIP: Keyword Manager",
+    "html_url": "https://github.com/plone/volto/issues/5300",
+    "repository_full_name": "plone/volto",
+    "updated_at": "2026-03-19T20:37:53Z",
+    "labels": [
+      "03 type: feature (plip)",
+      "43 lvl: complex"
+    ],
+    "comments": 8
+  },
+  "ai": {
+    "provider": "openai",
+    "model": "gpt-4o-mini"
+  },
+  "summary_markdown": "## What this issue is about\nThis issue focuses on implementing a **Keyword Manager** for Plone in the Volto framework. The purpose is to create a tool for managing keywords, enhancing user experience when categorizing and searching content.\n\n## What needs to be done\nDevelop the base functionality of the **Products.PloneKeywordManager**. Discussions have included possible integrations into bulk actions for folders. The implementation will be done first as an add-on to support a client's needs before moving it into the core application.\n\n## Helpful background\nA keyword manager helps users manage keywords efficiently, especially in environments with many keywords. Discussion around the UX and integration suggests there are varying perspectives on features, such as a \"show similar keywords\" option. Feedback and user experience insights are still being gathered.\n\n## Good first steps\n1. **Familiarize yourself** with Plone and the Volto framework.\n2. Review the existing discussions and comments for important context.\n3. Start by developing a prototype based on the low-fidelity UX design shared in the comments.\n4. Coordinate with contributors already involved, like Timo Stollenwerk, to gain insights and establish collaboration.",
+  "workflow": {
+    "repository": "syslabcom/activity-recognition",
+    "run_id": "24187585349",
+    "run_number": "48",
+    "attempt": "1",
+    "url": "https://github.com/syslabcom/activity-recognition/actions/runs/24187585349",
+    "sha": "f88752c0361349fe46a0c616320dfa6ab90ae878"
+  }
+}

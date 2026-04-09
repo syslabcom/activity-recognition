@@ -1,7 +1,7 @@
 {
   "version": 1,
   "status": "success",
-  "generated_at": "2026-04-09T10:27:59Z",
+  "generated_at": "2026-04-09T11:24:01Z",
   "organization": "plone",
   "state": "open",
   "slug": "lvl-moderate",
@@ -34,7 +34,15 @@
         "21 status: confirmed",
         "42 lvl: moderate",
         "51 target: patch"
-      ]
+      ],
+      "contributor_summary": {
+        "status": "available",
+        "generated_at": "2026-04-09T11:24:07Z",
+        "source_issue_updated_at": "2026-03-30T08:06:18Z",
+        "model": "gpt-4o-mini",
+        "summary_markdown": "```markdown\n## What this issue is about\nThis issue addresses a broken ARIA reference in the SVG icon used for status messages in Plone. The `aria-labelledby` attribute currently points to a non-existent `title` element, which can confuse screen readers and needs fixing for better accessibility.\n\n## What needs to be done\n1. Modify the SVG icon to ensure the `aria-labelledby` attribute references a valid title ID that exists within the SVG.\n2. Consider adding the `role=\"img\"` attribute for icons that convey meaning within their context.\n3. Remove the broken `aria-labelledby` reference if necessary, especially if icons are purely decorative.\n\n## Helpful background\nThe goal is to enhance accessibility, especially for users relying on screen readers. This involves ensuring that appropriate attributes are used on SVG elements. The discussion also indicated that the `title` element needs to be the first child within the SVG for full compliance. There are differing opinions on whether to use ARIA attributes based on the context of the icon.\n\n## Good first steps\n1. Check the existing SVG code for status icons and review the `aria-labelledby` references.\n2. Create a small test example to see how screen readers interpret the current implementation.\n3. Familiarize yourself with ARIA roles related to images, which can help guide your implementation choices.\n4. Engage with the community for review or guidance through the process!\n```",
+        "path": "data/issues/summaries/plone/Products.CMFPlone/3394.json"
+      }
     },
     {
       "id": 1879981321,
@@ -60,7 +68,15 @@
         "42 lvl: moderate",
         "99 tag: resource registry",
         "99 tag: Plone 6.0"
-      ]
+      ],
+      "contributor_summary": {
+        "status": "available",
+        "generated_at": "2026-04-09T11:24:19Z",
+        "source_issue_updated_at": "2026-03-23T22:38:39Z",
+        "model": "gpt-4o-mini",
+        "summary_markdown": "## What this issue is about\nThis issue addresses the removal of the \"Pattern Options\" tab in the Plone 6.0 Resource Registry control panel, which previously allowed users to set default options for mockup patterns. Users need clarity on where to set these options in the new version.\n\n## What needs to be done\nWe aim to either recreate the \"Pattern Options\" control panel as it existed in Plone 5.2 or find a different, user-friendly way to manage these settings. Discussion points include making it consistent with other control panels in `Products.CMFPlone.controlpanel`, as well as addressing issues with editing the settings in the current configuration registry.\n\n## Helpful background\nWhile `plone.patternoptions` and `IPatternsSettings` are still available, currently, options can only be edited through the configuration registry. Observations indicate potential issues with the current editing modals, causing frustrations for users. \n\n## Good first steps\nIf you're interested in contributing, consider exploring the creation of a new control panel for pattern options. Review existing control panels in `Products.CMFPlone.controlpanel` for guidance. Setting up a simple mockup to expose the options from the registry can be a helpful starting point. Please also check the current modal issues to consider adjustments for a better user experience.",
+        "path": "data/issues/summaries/plone/Products.CMFPlone/3837.json"
+      }
     },
     {
       "id": 1123689944,
@@ -83,7 +99,15 @@
         "02 type: regression",
         "31 needs: help",
         "42 lvl: moderate"
-      ]
+      ],
+      "contributor_summary": {
+        "status": "available",
+        "generated_at": "2026-04-09T11:24:28Z",
+        "source_issue_updated_at": "2026-03-23T21:55:56Z",
+        "model": "gpt-4o-mini",
+        "summary_markdown": "## What this issue is about\nThis issue addresses a bug where the renderer of `sendto_template.pt` is corrupting whitespace in emails sent from the CMFPlone framework. The original report indicates that the email formatting appears incorrect due to whitespace issues.\n\n## What needs to be done\nA contributor needs to investigate whether the whitespace corruption still occurs, particularly in Plone 6. There is also a suggestion to consider changing the email format from plain text to HTML, which may solve the formatting issue.\n\n## Helpful background\n- **ZPT**: This stands for Zope Page Template, a template system used in Plone. Understanding the structure and content of ZPT files may be helpful.\n- **Plain Text vs. HTML Emails**: Emails can be sent in plain text or formatted in HTML. HTML emails allow for better formatting, but may require additional changes to the code.\n\n## Good first steps\n1. **Check the current behavior**: Test the `sendto_template.pt` functionality in Plone 6 to see if the whitespace issue persists.\n2. **Review the existing code**: Familiarize yourself with the `sendto_template.pt` and surrounding code.\n3. **Engage in discussion**: Consider if the email format should change and share your thoughts with the team.\n4. **Documentation and Testing**: Be prepared to document your findings and run tests to ensure any changes made do not introduce new issues.\n\nFeel free to reach out for help or clarification as you explore this!",
+        "path": "data/issues/summaries/plone/Products.CMFPlone/3428.json"
+      }
     },
     {
       "id": 107531900,
@@ -109,7 +133,15 @@
         "42 lvl: moderate",
         "99 tag: Plone 6.0",
         "99 tag: Plone 5.2"
-      ]
+      ],
+      "contributor_summary": {
+        "status": "available",
+        "generated_at": "2026-04-09T11:24:54Z",
+        "source_issue_updated_at": "2026-03-23T21:53:57Z",
+        "model": "gpt-4o-mini",
+        "summary_markdown": "```markdown\n## What this issue is about\nThis issue addresses the confusion surrounding the toolbar icon behavior when an item is locked. Currently, a clock icon, which indicates modification time, is replaced by a lock icon—which many users find unclear.\n\n## What needs to be done\nA redesign of the icon system is needed to improve user experience (UX). Suggestions include replacing the edit button with a lock icon or adding a small lock next to the pencil icon.\n\n## Helpful background\nUsers have reported that the lock icon is misleading, especially when the toolbar is expanded. The intent is to make it obvious when an item is locked, as the current system muddles the information by mixing the lock and modification time elements.\n\n## Good first steps\n1. Review current icon designs in Plone to understand the existing behavior.\n2. Investigate user feedback on how the icons can be made clearer.\n3. Propose a design change based on suggestions from the issue comments.\n4. Ensure any changes are tested for clarity and functionality.\n5. Update documentation accordingly if new icons or behaviors are implemented.\n6. Coordinate with others in the UX team for feedback on your proposals.\n```",
+        "path": "data/issues/summaries/plone/Products.CMFPlone/1056.json"
+      }
     },
     {
       "id": 260642338,
@@ -131,7 +163,15 @@
         "04 type: enhancement",
         "31 needs: help",
         "42 lvl: moderate"
-      ]
+      ],
+      "contributor_summary": {
+        "status": "available",
+        "generated_at": "2026-04-09T11:25:14Z",
+        "source_issue_updated_at": "2026-03-23T17:52:19Z",
+        "model": "gpt-4o-mini",
+        "summary_markdown": "## What this issue is about\nThis issue pertains to enhancing Plone's language handling by ensuring it registers a Zope language negotiation utility (`zope.i18n.INegotiator`). Currently, the `plone.i18n` module does not do this, leading to inconsistent language usage on the same page. \n\n## What needs to be done\nTo resolve this, you need to implement a Zope-level negotiator within `plone.i18n`. This negotiator should use the language already set by Plone, thereby harmonizing the language output across the application. You can use the provided code snippet as a starting point.\n\n## Helpful background\nPlone currently relies on Zope's own language negotiation logic, which differs from the logic used by `plone.i18n`. As a result, users may see different languages simultaneously on a page. There may be broader implications for language support in Plone 6. \n\n## Good first steps\n1. Familiarize yourself with the `plone.i18n` module and `zope.i18n`.\n2. Review the provided code snippet and consider how to adapt it into a functioning negotiator.\n3. Check community discussions for any additional context or suggestions, as the issue’s details might be incomplete or outdated.\n4. Once your implementation is ready, ensure thorough testing, and be prepared to submit a Pull Request for review. Reach out for support as needed!",
+        "path": "data/issues/summaries/plone/Products.CMFPlone/2161.json"
+      }
     },
     {
       "id": 3460812472,
@@ -1839,10 +1879,10 @@
   "message": null,
   "workflow": {
     "repository": "syslabcom/activity-recognition",
-    "run_id": "24185380696",
-    "run_number": "47",
+    "run_id": "24187585349",
+    "run_number": "48",
     "attempt": "1",
-    "url": "https://github.com/syslabcom/activity-recognition/actions/runs/24185380696",
-    "sha": "cff5f4d0ea700d3af1971d8d412177a40b1b75a5"
+    "url": "https://github.com/syslabcom/activity-recognition/actions/runs/24187585349",
+    "sha": "f88752c0361349fe46a0c616320dfa6ab90ae878"
   }
 }

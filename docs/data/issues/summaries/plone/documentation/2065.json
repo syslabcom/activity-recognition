@@ -1,0 +1,33 @@
+{
+  "version": 1,
+  "status": "success",
+  "generated_at": "2026-04-09T11:25:47Z",
+  "source_issue": {
+    "id": 4020920049,
+    "number": 2065,
+    "title": "Add Plone documentation to sites that attract first-time contributors",
+    "html_url": "https://github.com/plone/documentation/issues/2065",
+    "repository_full_name": "plone/documentation",
+    "updated_at": "2026-03-16T00:28:14Z",
+    "labels": [
+      "33 needs: docs",
+      "41 lvl: easy",
+      "99 tag: good first issue",
+      "99 tag: hacktoberfest"
+    ],
+    "comments": 2
+  },
+  "ai": {
+    "provider": "openai",
+    "model": "gpt-4o-mini"
+  },
+  "summary_markdown": "```markdown\n## What this issue is about\nThis issue aims to enhance Plone’s documentation to attract first-time contributors. It's modeled after a similar initiative from the icalendar project, with the goal of making it easier for newcomers to engage with the community.\n\n## What needs to be done\n1. Update the documentation to reflect this pilot program.\n2. Consider including options for low or non-code contributions such as translations, blog posts, and graphic design.\n3. The issue is still open for community input and suggestions.\n\n## Helpful background\nThis initiative has successfully partnered with \"Up for Grabs,\" a platform that helps people find beginner-friendly issues to work on. The mention of \"Good First Issue\" suggests it aims to be easily approachable, though there is uncertainty about its acceptance status.\n\n## Good first steps\n- Review the existing documentation and propose enhancements.\n- Consider how non-code contributions can be integrated into the process.\n- Engage in discussions on the “Good First Issue” and provide feedback or suggestions.\n- Familiarize yourself with the pilot model used by the icalendar project for inspiration.\n```",
+  "workflow": {
+    "repository": "syslabcom/activity-recognition",
+    "run_id": "24187585349",
+    "run_number": "48",
+    "attempt": "1",
+    "url": "https://github.com/syslabcom/activity-recognition/actions/runs/24187585349",
+    "sha": "f88752c0361349fe46a0c616320dfa6ab90ae878"
+  }
+}

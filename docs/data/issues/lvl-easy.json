@@ -1,7 +1,7 @@
 {
   "version": 1,
   "status": "success",
-  "generated_at": "2026-04-09T10:27:59Z",
+  "generated_at": "2026-04-09T11:24:01Z",
   "organization": "plone",
   "state": "open",
   "slug": "lvl-easy",
@@ -31,7 +31,15 @@
         "01 type: bug",
         "31 needs: help",
         "41 lvl: easy"
-      ]
+      ],
+      "contributor_summary": {
+        "status": "available",
+        "generated_at": "2026-04-09T11:24:13Z",
+        "source_issue_updated_at": "2026-03-23T22:56:50Z",
+        "model": "gpt-4o-mini",
+        "summary_markdown": "```markdown\n## What this issue is about\nThis issue addresses inconsistencies in how Control Panel pages in Plone display their \"Site Setup\" links. Some panels show the link as a button or a simple link, while others do not display it at all. The goal is to standardize this across all Control Panels.\n\n## What needs to be done\nWe need to ensure that the \"Site Setup\" link is consistently included in specific Control Panels. Currently, there are still four panels that have excessive or broken \"Site Setup\" links. You'll be working on reviewing and possibly updating these templates to achieve consistency.\n\n## Helpful background\nThis issue impacts user navigation within the Site Setup area. Previous discussions suggest that using breadcrumbs might simplify this navigation, although no definitive solution has been chosen. It’s worth noting that improvements have been made in Plone 6 regarding the overall interface.\n\n## Good first steps\n1. Familiarize yourself with the templates used in the listed Control Panels.\n2. Review `prefs_main_template.pt` to understand how the \"Site Setup\" link is currently applied.\n3. Check the specific Control Panels mentioned in the comments and see how they handle the \"Site Setup\" link.\n4. Consider documenting your findings and proposed changes, then open a pull request for review.\n\nFeel free to ask questions if anything is unclear!\n```",
+        "path": "data/issues/summaries/plone/Products.CMFPlone/1478.json"
+      }
     },
     {
       "id": 459301394,
@@ -55,7 +63,15 @@
         "14 prio: low",
         "21 status: confirmed",
         "41 lvl: easy"
-      ]
+      ],
+      "contributor_summary": {
+        "status": "available",
+        "generated_at": "2026-04-09T11:24:24Z",
+        "source_issue_updated_at": "2026-03-23T22:38:22Z",
+        "model": "gpt-4o-mini",
+        "summary_markdown": "## What this issue is about\nThe issue concerns poor internationalization (i18n) in the `i18n.py` file of the plone.formwidget.recurrence component. Key error messages do not have default fallbacks, which leads to untranslated messages appearing for users in other languages.\n\n## What needs to be done\n1. Add the default English messages directly in the `i18n.py` file for the following `msgid` entries:\n   - `monthly_day_of_month_4`\n   - `no_end_after_n_occurrences`\n   - `no_repeat_every`\n   - `no_repeat_on`\n   - `no_template_match`\n   - `unsupported_features`\n   \nThis ensures that if translations are missing, users won’t see raw message identifiers but rather understandable defaults.\n\n## Helpful background\nInternationalization (i18n) allows software to support multiple languages. When a message isn't translated in the user's locale, a default should ideally be provided in the code to improve user experience. Past discussions on the community forum have highlighted this issue.\n\n## Good first steps\n1. Review the `i18n.py` file and identify where English defaults can be added.\n2. Check existing translations in the `plone.po` file.\n3. Consider setting up a local Plone environment to test your changes before submitting.\n4. Engage with the community to clarify any questions or confirm approaches.",
+        "path": "data/issues/summaries/plone/Products.CMFPlone/2897.json"
+      }
     },
     {
       "id": 106003545,
@@ -79,7 +95,15 @@
         "31 needs: help",
         "14 prio: low",
         "41 lvl: easy"
-      ]
+      ],
+      "contributor_summary": {
+        "status": "available",
+        "generated_at": "2026-04-09T11:24:35Z",
+        "source_issue_updated_at": "2026-03-23T21:55:45Z",
+        "model": "gpt-4o-mini",
+        "summary_markdown": "```markdown\n## What this issue is about\nThis issue discusses a missing validator for the \"Site 'From' address\" in the mail control panel of Plone. Currently, the system does not verify if the provided string is a valid email address, which could lead to errors.\n\n## What needs to be done\nWe need to implement an email validation feature to ensure that the \"From\" field only accepts valid email addresses. Suggestions have been made to use an existing email field type from `plone.schema` instead of a basic text field.\n\n## Helpful background\nEmail validation can be tricky due to various edge cases. Existing discussions point to resources for regular expressions (regex) and validation libraries to assist with this task. However, there are still uncertainties regarding the persistent storage of this new field.\n\n## Good first steps\n1. Review the existing 'From' field implementation in the code.\n2. Explore `plone.schema` documentation for the email field type.\n3. Test the functionality in a local Plone environment to understand current behavior.\n4. Join the discussion on the issue to clarify doubts or ask for help from others who have worked on this area.\n```",
+        "path": "data/issues/summaries/plone/Products.CMFPlone/932.json"
+      }
     },
     {
       "id": 322325792,
@@ -103,7 +127,15 @@
         "04 type: enhancement",
         "31 needs: help",
         "41 lvl: easy"
-      ]
+      ],
+      "contributor_summary": {
+        "status": "available",
+        "generated_at": "2026-04-09T11:24:41Z",
+        "source_issue_updated_at": "2026-03-23T21:55:33Z",
+        "model": "gpt-4o-mini",
+        "summary_markdown": "```markdown\n## What this issue is about\nThis issue aims to update the link to the VPAT (Voluntary Product Accessibility Template) statement on the accessibility-info page of Plone sites. The current link is outdated and does not direct users to the relevant information about accessibility compliance.\n\n## What needs to be done\nYou will need to replace the broken link on the default accessibility-info page with an updated URL. There are several suggested links in the comments, but the correct one is still unclear due to outdated discussions.\n\n## Helpful background\nThe VPAT statement is important for demonstrating accessibility compliance, particularly for users in the U.S. Previous discussions revealed multiple potential links, but the definitive current source is uncertain. A recent comment confirmed the relevance of this issue for Plone 6, indicating a need for timely updates.\n\n## Good first steps\n1. Review the current accessibility-info page template to locate the VPAT link.\n2. Investigate the suggested links in the comments and check their validity.\n3. Coordinate with the community if needed, especially to clarify which URL should be used.\n4. Update the link in the template and run tests to ensure it is functional.\n5. Prepare documentation if significant changes occur, and consider submitting a pull request for review.\n```",
+        "path": "data/issues/summaries/plone/Products.CMFPlone/2408.json"
+      }
     },
     {
       "id": 1095251916,
@@ -125,7 +157,15 @@
         "04 type: enhancement",
         "31 needs: help",
         "41 lvl: easy"
-      ]
+      ],
+      "contributor_summary": {
+        "status": "available",
+        "generated_at": "2026-04-09T11:24:49Z",
+        "source_issue_updated_at": "2026-03-23T21:55:29Z",
+        "model": "gpt-4o-mini",
+        "summary_markdown": "## What this issue is about\nThis issue addresses the need to rename the Control Panel view from the old URL `/prefs_install_products_form` to a more user-friendly URL `/@@install-products-form` in Plone 6. The existing URL is outdated and should be updated as part of enhancements in the new version.\n\n## What needs to be done\nThe task involves changing the URL for the Control Panel view to the new format. This may include updating routing configurations in the code to ensure the new URL functions correctly and replaces the old one.\n\n## Helpful background\nThis change is considered a trivial enhancement but is important for improving the user experience in Plone. The discussion indicates that this issue remains relevant, and participants have agreed on the necessity of the update.\n\n## Good first steps\n1. **Familiarize yourself with the code base**, especially the Control Panel views in Plone.\n2. **Locate the existing URL definition** in the code where `/prefs_install_products_form` is used.\n3. **Implement the change** to point to the new URL.\n4. **Test the changes** to ensure both old and new URLs work as expected.\n5. **Prepare documentation** to explain the change for future reference, if necessary.\n6. Consider coordinating with other contributors for review before finalizing the update. \n\nJump in, and thank you for helping improve Plone!",
+        "path": "data/issues/summaries/plone/Products.CMFPlone/3392.json"
+      }
     },
     {
       "id": 735122255,
@@ -147,7 +187,15 @@
         "01 type: bug",
         "14 prio: low",
         "41 lvl: easy"
-      ]
+      ],
+      "contributor_summary": {
+        "status": "available",
+        "generated_at": "2026-04-09T11:24:59Z",
+        "source_issue_updated_at": "2026-03-23T21:20:52Z",
+        "model": "gpt-4o-mini",
+        "summary_markdown": "## What this issue is about\nThis issue addresses inconsistent capitalization in the titles of the control panel views in Plone. Titles like \"Portal actions,\" \"Date and Time Settings,\" and \"Discussion settings\" use mixed cases, which can be confusing.\n\n## What needs to be done\nThe goal is to standardize the capitalization of these titles. A suggested approach is to use Title Case for all words except small conjunctions like \"and.\" Some titles have already been partially fixed in Plone 6, but others still need attention.\n\n## Helpful background\nInconsistent title formatting can impact user experience, making the interface appear less polished. To improve clarity, we aim for uniformity in titles throughout the control panel. Review existing titles to ensure compliance with the suggested capitalization rules.\n\n## Good first steps\n1. Review the current titles in the control panel to identify inconsistencies.\n2. Check existing discussions and suggestions in this issue for context. Since some titles are already adjusted, be sure to note which ones remain problematic.\n3. Consider opening a pull request with your proposed changes, including the corrected titles. Remember to write tests and update any related documentation if necessary. Coordinate your changes with others working on this area, if applicable.",
+        "path": "data/issues/summaries/plone/Products.CMFPlone/3206.json"
+      }
     },
     {
       "id": 1073109920,
@@ -169,7 +217,15 @@
         "04 type: enhancement",
         "99 tag: cleanup",
         "41 lvl: easy"
-      ]
+      ],
+      "contributor_summary": {
+        "status": "available",
+        "generated_at": "2026-04-09T11:25:05Z",
+        "source_issue_updated_at": "2026-03-23T21:10:06Z",
+        "model": "gpt-4o-mini",
+        "summary_markdown": "## What this issue is about\nThis issue addresses some outdated code related to `LinguaPlone` still present in Plone 6, specifically in the `WorkflowTool` (found in `WorkflowTool.py` lines 240-246). The discussion indicates that parts of Plone should be reviewed for potential cleanup to remove references to this obsolete functionality.\n\n## What needs to be done\nWe need to evaluate and possibly remove the lingering `LinguaPlone` references in the `WorkflowTool`. It's suggested that `plone.app.multilingual` may also require adjustments, but it’s unclear what exactly needs fixing. This is an enhancement focused on cleaning up technical debt.\n\n## Helpful background\n`LinguaPlone` is an older multilingual support system that hasn't been maintained in years. Its remnants in the code may not directly cause issues, but removing them will help streamline the codebase. Contributions to this area might revolve around multilingual functionality in Plone.\n\n## Good first steps\n1. Familiarize yourself with the `WorkflowTool.py` file and identify the sections referencing `LinguaPlone`.\n2. Check the `plone.app.multilingual` code to see if and how it interacts with these references.\n3. Review existing tests to ensure any changes you make won't disrupt functionality.\n4. Consider looking through related documentation to aid your understanding.\n5. Feel free to ask questions or seek clarification from the community members involved if you're unsure about anything!",
+        "path": "data/issues/summaries/plone/Products.CMFPlone/3375.json"
+      }
     },
     {
       "id": 134268392,
@@ -195,7 +251,15 @@
         "14 prio: low",
         "21 status: confirmed",
         "41 lvl: easy"
-      ]
+      ],
+      "contributor_summary": {
+        "status": "available",
+        "generated_at": "2026-04-09T11:25:20Z",
+        "source_issue_updated_at": "2026-03-23T17:51:21Z",
+        "model": "gpt-4o-mini",
+        "summary_markdown": "```markdown\n## What this issue is about\nThis issue focuses on adding validation for image dimensions and formats in the `@@imaging-controlpanel`. Currently, if a user enters an invalid format (e.g., using 'x' instead of ':'), it can cause errors affecting image views throughout Plone.\n\n## What needs to be done\n- You will implement validation to ensure that inputs for image dimensions follow the correct format: `<name><width>:<height>`.\n- Both JavaScript and form validation may be necessary, per community suggestions, to improve user experience.\n\n## Helpful background\nThe issue originated from version Plone 4.3.x, where improper input formats caused breaking errors. Although the discussion includes various suggestions, there’s no definitive consensus on the exact implementation approach, so your initiative and ideas are welcome.\n\n## Good first steps\n1. Familiarize yourself with the `@@imaging-controlpanel` code and existing validation patterns in Plone.\n2. Consider the possibility of using validation through both JavaScript and Python.\n3. Review the [Plone contribution guidelines](https://docs.plone.org/develop/coredev/docs/guidelines.html) for more context on contributing to the project.\n4. Engage in discussions within the issue if you have questions or need guidance.\n```",
+        "path": "data/issues/summaries/plone/Products.CMFPlone/1393.json"
+      }
     },
     {
       "id": 493779992,
@@ -218,7 +282,15 @@
         "31 needs: help",
         "14 prio: low",
         "41 lvl: easy"
-      ]
+      ],
+      "contributor_summary": {
+        "status": "available",
+        "generated_at": "2026-04-09T11:25:29Z",
+        "source_issue_updated_at": "2026-03-23T16:38:23Z",
+        "model": "gpt-4o-mini",
+        "summary_markdown": "```markdown\n## What this issue is about\nThis issue raises a concern regarding the help text for the \"Globally enable comments\" feature in Plone. Currently, the help text describes only \"Plain text\" and \"Intelligent text,\" omitting \"HTML\" and \"Markdown,\" which are also options in the dropdown menu.\n\n## What needs to be done\nThe help text should be updated to include \"HTML\" and \"Markdown.\" Additionally, it should clarify that \"Intelligent text\" is not the only option that creates clickable web and email links.\n\n## Helpful background\nThe discussion has been noted for Plone 5. It’s unclear if the problem persists in Plone 6, as the help text may have changed. This issue was initially reported by [dbitouze](https://github.com/dbitouze) and commented on by [jensens](https://github.com/jensens).\n\n## Good first steps\n1. **Check the current state**: Verify the help text for \"Comment text transform\" in Plone 6 to see if it still requires updates.\n2. **Draft new text**: Create a suggestion for the updated help text that includes \"HTML\" and \"Markdown.\"\n3. **Document your changes**: Record what adjustments you make for clarity and future contributors.\n4. **Consider testing**: Ensure that your changes don’t break any existing links or functionalities.\n```",
+        "path": "data/issues/summaries/plone/Products.CMFPlone/2950.json"
+      }
     },
     {
       "id": 4020920049,
@@ -241,7 +313,15 @@
         "41 lvl: easy",
         "99 tag: good first issue",
         "99 tag: hacktoberfest"
-      ]
+      ],
+      "contributor_summary": {
+        "status": "available",
+        "generated_at": "2026-04-09T11:25:47Z",
+        "source_issue_updated_at": "2026-03-16T00:28:14Z",
+        "model": "gpt-4o-mini",
+        "summary_markdown": "```markdown\n## What this issue is about\nThis issue aims to enhance Plone’s documentation to attract first-time contributors. It's modeled after a similar initiative from the icalendar project, with the goal of making it easier for newcomers to engage with the community.\n\n## What needs to be done\n1. Update the documentation to reflect this pilot program.\n2. Consider including options for low or non-code contributions such as translations, blog posts, and graphic design.\n3. The issue is still open for community input and suggestions.\n\n## Helpful background\nThis initiative has successfully partnered with \"Up for Grabs,\" a platform that helps people find beginner-friendly issues to work on. The mention of \"Good First Issue\" suggests it aims to be easily approachable, though there is uncertainty about its acceptance status.\n\n## Good first steps\n- Review the existing documentation and propose enhancements.\n- Consider how non-code contributions can be integrated into the process.\n- Engage in discussions on the “Good First Issue” and provide feedback or suggestions.\n- Familiarize yourself with the pilot model used by the icalendar project for inspiration.\n```",
+        "path": "data/issues/summaries/plone/documentation/2065.json"
+      }
     },
     {
       "id": 3988967668,
@@ -265,7 +345,15 @@
         "33 needs: docs",
         "41 lvl: easy",
         "dependencies"
-      ]
+      ],
+      "contributor_summary": {
+        "status": "available",
+        "generated_at": "2026-04-09T11:25:50Z",
+        "source_issue_updated_at": "2026-03-11T17:52:46Z",
+        "model": "gpt-4o-mini",
+        "summary_markdown": "```markdown\n## What this issue is about\nThis issue aims to improve the documentation for `@plone/client` in the Volto project. Key tasks include removing references to TanStack Query terminology and enhancing HTTP API examples.\n\n## What needs to be done\n1. Eliminate all mentions of TanStack Query (e.g., mutators, useQuery).\n2. Implement HTTP API examples using the [`sphinxcontrib.httpexample`](https://sphinxcontrib-httpexample.readthedocs.io/en/latest/index.html) extension.\n3. After merging updates, forward port the changes to the `seven` branch, mainly copying new documentation files.\n\n## Helpful background\nDocumentation enhancements are vital to ensure users find accurate and accessible information. Existing discussions indicate some ambiguity around where to find and apply these changes. Coordination may be required based on contributions.\n\n## Good first steps\n1. Familiarize yourself with the existing documentation in [Volto's repo](https://github.com/plone/volto/tree/main/docs/source/client).\n2. Follow the [contributing guidelines](https://6.docs.plone.org/contributing/index.html) for best practices.\n3. Start with reviewing any sections that mention TanStack Query for removal.\n4. Explore the `sphinxcontrib.httpexample` extension for creating better API examples.\n5. Once initial changes are made, coordinate with the team before forward porting to the `seven` branch.\n```",
+        "path": "data/issues/summaries/plone/volto/7947.json"
+      }
     },
     {
       "id": 3791714358,
@@ -1968,10 +2056,10 @@
   "message": null,
   "workflow": {
     "repository": "syslabcom/activity-recognition",
-    "run_id": "24185380696",
-    "run_number": "47",
+    "run_id": "24187585349",
+    "run_number": "48",
     "attempt": "1",
-    "url": "https://github.com/syslabcom/activity-recognition/actions/runs/24185380696",
-    "sha": "cff5f4d0ea700d3af1971d8d412177a40b1b75a5"
+    "url": "https://github.com/syslabcom/activity-recognition/actions/runs/24187585349",
+    "sha": "f88752c0361349fe46a0c616320dfa6ab90ae878"
   }
 }

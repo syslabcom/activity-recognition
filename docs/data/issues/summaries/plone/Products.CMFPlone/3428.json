@@ -1,0 +1,33 @@
+{
+  "version": 1,
+  "status": "success",
+  "generated_at": "2026-04-09T11:24:28Z",
+  "source_issue": {
+    "id": 1123689944,
+    "number": 3428,
+    "title": "The renderer of sendto_template.pt is corrupting the whitespace",
+    "html_url": "https://github.com/plone/Products.CMFPlone/issues/3428",
+    "repository_full_name": "plone/Products.CMFPlone",
+    "updated_at": "2026-03-23T21:55:56Z",
+    "labels": [
+      "01 type: bug",
+      "02 type: regression",
+      "31 needs: help",
+      "42 lvl: moderate"
+    ],
+    "comments": 1
+  },
+  "ai": {
+    "provider": "openai",
+    "model": "gpt-4o-mini"
+  },
+  "summary_markdown": "## What this issue is about\nThis issue addresses a bug where the renderer of `sendto_template.pt` is corrupting whitespace in emails sent from the CMFPlone framework. The original report indicates that the email formatting appears incorrect due to whitespace issues.\n\n## What needs to be done\nA contributor needs to investigate whether the whitespace corruption still occurs, particularly in Plone 6. There is also a suggestion to consider changing the email format from plain text to HTML, which may solve the formatting issue.\n\n## Helpful background\n- **ZPT**: This stands for Zope Page Template, a template system used in Plone. Understanding the structure and content of ZPT files may be helpful.\n- **Plain Text vs. HTML Emails**: Emails can be sent in plain text or formatted in HTML. HTML emails allow for better formatting, but may require additional changes to the code.\n\n## Good first steps\n1. **Check the current behavior**: Test the `sendto_template.pt` functionality in Plone 6 to see if the whitespace issue persists.\n2. **Review the existing code**: Familiarize yourself with the `sendto_template.pt` and surrounding code.\n3. **Engage in discussion**: Consider if the email format should change and share your thoughts with the team.\n4. **Documentation and Testing**: Be prepared to document your findings and run tests to ensure any changes made do not introduce new issues.\n\nFeel free to reach out for help or clarification as you explore this!",
+  "workflow": {
+    "repository": "syslabcom/activity-recognition",
+    "run_id": "24187585349",
+    "run_number": "48",
+    "attempt": "1",
+    "url": "https://github.com/syslabcom/activity-recognition/actions/runs/24187585349",
+    "sha": "f88752c0361349fe46a0c616320dfa6ab90ae878"
+  }
+}

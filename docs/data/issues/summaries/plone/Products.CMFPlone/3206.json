@@ -1,0 +1,32 @@
+{
+  "version": 1,
+  "status": "success",
+  "generated_at": "2026-04-09T11:24:59Z",
+  "source_issue": {
+    "id": 735122255,
+    "number": 3206,
+    "title": "Inconsistent usage of lowercase/uppercase in controlpanel titles",
+    "html_url": "https://github.com/plone/Products.CMFPlone/issues/3206",
+    "repository_full_name": "plone/Products.CMFPlone",
+    "updated_at": "2026-03-23T21:20:52Z",
+    "labels": [
+      "01 type: bug",
+      "14 prio: low",
+      "41 lvl: easy"
+    ],
+    "comments": 1
+  },
+  "ai": {
+    "provider": "openai",
+    "model": "gpt-4o-mini"
+  },
+  "summary_markdown": "## What this issue is about\nThis issue addresses inconsistent capitalization in the titles of the control panel views in Plone. Titles like \"Portal actions,\" \"Date and Time Settings,\" and \"Discussion settings\" use mixed cases, which can be confusing.\n\n## What needs to be done\nThe goal is to standardize the capitalization of these titles. A suggested approach is to use Title Case for all words except small conjunctions like \"and.\" Some titles have already been partially fixed in Plone 6, but others still need attention.\n\n## Helpful background\nInconsistent title formatting can impact user experience, making the interface appear less polished. To improve clarity, we aim for uniformity in titles throughout the control panel. Review existing titles to ensure compliance with the suggested capitalization rules.\n\n## Good first steps\n1. Review the current titles in the control panel to identify inconsistencies.\n2. Check existing discussions and suggestions in this issue for context. Since some titles are already adjusted, be sure to note which ones remain problematic.\n3. Consider opening a pull request with your proposed changes, including the corrected titles. Remember to write tests and update any related documentation if necessary. Coordinate your changes with others working on this area, if applicable.",
+  "workflow": {
+    "repository": "syslabcom/activity-recognition",
+    "run_id": "24187585349",
+    "run_number": "48",
+    "attempt": "1",
+    "url": "https://github.com/syslabcom/activity-recognition/actions/runs/24187585349",
+    "sha": "f88752c0361349fe46a0c616320dfa6ab90ae878"
+  }
+}

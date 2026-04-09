@@ -1,0 +1,34 @@
+{
+  "version": 1,
+  "status": "success",
+  "generated_at": "2026-04-09T11:24:35Z",
+  "source_issue": {
+    "id": 106003545,
+    "number": 932,
+    "title": "mail controlpanel: no validator for \"Site 'From' address\"",
+    "html_url": "https://github.com/plone/Products.CMFPlone/issues/932",
+    "repository_full_name": "plone/Products.CMFPlone",
+    "updated_at": "2026-03-23T21:55:45Z",
+    "labels": [
+      "04 type: enhancement",
+      "99 tag: UX Site Admin",
+      "31 needs: help",
+      "14 prio: low",
+      "41 lvl: easy"
+    ],
+    "comments": 7
+  },
+  "ai": {
+    "provider": "openai",
+    "model": "gpt-4o-mini"
+  },
+  "summary_markdown": "```markdown\n## What this issue is about\nThis issue discusses a missing validator for the \"Site 'From' address\" in the mail control panel of Plone. Currently, the system does not verify if the provided string is a valid email address, which could lead to errors.\n\n## What needs to be done\nWe need to implement an email validation feature to ensure that the \"From\" field only accepts valid email addresses. Suggestions have been made to use an existing email field type from `plone.schema` instead of a basic text field.\n\n## Helpful background\nEmail validation can be tricky due to various edge cases. Existing discussions point to resources for regular expressions (regex) and validation libraries to assist with this task. However, there are still uncertainties regarding the persistent storage of this new field.\n\n## Good first steps\n1. Review the existing 'From' field implementation in the code.\n2. Explore `plone.schema` documentation for the email field type.\n3. Test the functionality in a local Plone environment to understand current behavior.\n4. Join the discussion on the issue to clarify doubts or ask for help from others who have worked on this area.\n```",
+  "workflow": {
+    "repository": "syslabcom/activity-recognition",
+    "run_id": "24187585349",
+    "run_number": "48",
+    "attempt": "1",
+    "url": "https://github.com/syslabcom/activity-recognition/actions/runs/24187585349",
+    "sha": "f88752c0361349fe46a0c616320dfa6ab90ae878"
+  }
+}

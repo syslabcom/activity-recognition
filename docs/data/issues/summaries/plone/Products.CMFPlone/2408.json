@@ -1,0 +1,32 @@
+{
+  "version": 1,
+  "status": "success",
+  "generated_at": "2026-04-09T11:24:41Z",
+  "source_issue": {
+    "id": 322325792,
+    "number": 2408,
+    "title": "add link to VPAT statement on accessibility-info page",
+    "html_url": "https://github.com/plone/Products.CMFPlone/issues/2408",
+    "repository_full_name": "plone/Products.CMFPlone",
+    "updated_at": "2026-03-23T21:55:33Z",
+    "labels": [
+      "04 type: enhancement",
+      "31 needs: help",
+      "41 lvl: easy"
+    ],
+    "comments": 9
+  },
+  "ai": {
+    "provider": "openai",
+    "model": "gpt-4o-mini"
+  },
+  "summary_markdown": "```markdown\n## What this issue is about\nThis issue aims to update the link to the VPAT (Voluntary Product Accessibility Template) statement on the accessibility-info page of Plone sites. The current link is outdated and does not direct users to the relevant information about accessibility compliance.\n\n## What needs to be done\nYou will need to replace the broken link on the default accessibility-info page with an updated URL. There are several suggested links in the comments, but the correct one is still unclear due to outdated discussions.\n\n## Helpful background\nThe VPAT statement is important for demonstrating accessibility compliance, particularly for users in the U.S. Previous discussions revealed multiple potential links, but the definitive current source is uncertain. A recent comment confirmed the relevance of this issue for Plone 6, indicating a need for timely updates.\n\n## Good first steps\n1. Review the current accessibility-info page template to locate the VPAT link.\n2. Investigate the suggested links in the comments and check their validity.\n3. Coordinate with the community if needed, especially to clarify which URL should be used.\n4. Update the link in the template and run tests to ensure it is functional.\n5. Prepare documentation if significant changes occur, and consider submitting a pull request for review.\n```",
+  "workflow": {
+    "repository": "syslabcom/activity-recognition",
+    "run_id": "24187585349",
+    "run_number": "48",
+    "attempt": "1",
+    "url": "https://github.com/syslabcom/activity-recognition/actions/runs/24187585349",
+    "sha": "f88752c0361349fe46a0c616320dfa6ab90ae878"
+  }
+}

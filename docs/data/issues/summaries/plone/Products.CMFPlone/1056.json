@@ -1,0 +1,36 @@
+{
+  "version": 1,
+  "status": "success",
+  "generated_at": "2026-04-09T11:24:54Z",
+  "source_issue": {
+    "id": 107531900,
+    "number": 1056,
+    "title": "Locking icon on toolbar is not clear",
+    "html_url": "https://github.com/plone/Products.CMFPlone/issues/1056",
+    "repository_full_name": "plone/Products.CMFPlone",
+    "updated_at": "2026-03-23T21:53:57Z",
+    "labels": [
+      "01 type: bug",
+      "99 tag: UX Editor",
+      "13 prio: normal",
+      "21 status: confirmed",
+      "42 lvl: moderate",
+      "99 tag: Plone 6.0",
+      "99 tag: Plone 5.2"
+    ],
+    "comments": 7
+  },
+  "ai": {
+    "provider": "openai",
+    "model": "gpt-4o-mini"
+  },
+  "summary_markdown": "```markdown\n## What this issue is about\nThis issue addresses the confusion surrounding the toolbar icon behavior when an item is locked. Currently, a clock icon, which indicates modification time, is replaced by a lock icon—which many users find unclear.\n\n## What needs to be done\nA redesign of the icon system is needed to improve user experience (UX). Suggestions include replacing the edit button with a lock icon or adding a small lock next to the pencil icon.\n\n## Helpful background\nUsers have reported that the lock icon is misleading, especially when the toolbar is expanded. The intent is to make it obvious when an item is locked, as the current system muddles the information by mixing the lock and modification time elements.\n\n## Good first steps\n1. Review current icon designs in Plone to understand the existing behavior.\n2. Investigate user feedback on how the icons can be made clearer.\n3. Propose a design change based on suggestions from the issue comments.\n4. Ensure any changes are tested for clarity and functionality.\n5. Update documentation accordingly if new icons or behaviors are implemented.\n6. Coordinate with others in the UX team for feedback on your proposals.\n```",
+  "workflow": {
+    "repository": "syslabcom/activity-recognition",
+    "run_id": "24187585349",
+    "run_number": "48",
+    "attempt": "1",
+    "url": "https://github.com/syslabcom/activity-recognition/actions/runs/24187585349",
+    "sha": "f88752c0361349fe46a0c616320dfa6ab90ae878"
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "version": 1,
+  "status": "success",
+  "generated_at": "2026-04-09T11:25:10Z",
+  "source_issue": {
+    "id": 2907040780,
+    "number": 1902,
+    "title": "Create Plone site administrator guide",
+    "html_url": "https://github.com/plone/documentation/issues/1902",
+    "repository_full_name": "plone/documentation",
+    "updated_at": "2026-03-23T19:04:01Z",
+    "labels": [
+      "05 type: question",
+      "43 lvl: complex"
+    ],
+    "comments": 7
+  },
+  "ai": {
+    "provider": "openai",
+    "model": "gpt-4o-mini"
+  },
+  "summary_markdown": "```markdown\n## What this issue is about\nThis issue aims to create a comprehensive guide for Plone site administrators. It will cover navigation through control panels and details on installing add-ons. The guide should include screenshots where possible, according to related implementation plans (PLIP).\n\n## What needs to be done\n- Draft the content for the Administrator guide, ensuring it clearly explains how to navigate control panels and install add-ons.\n- Consider incorporating a section on creating custom control panels.\n- Reconcile and integrate content with any relevant existing discussions or documents, particularly with issue #1768.\n\n## Helpful background\nContributors should familiarize themselves with Plone's existing documentation and the ongoing discussions about the Admin Guide, especially in relation to merging topics with the Developer Guide. There may be some confusion in the requirements and direction, so clarity on the structure is essential.\n\n## Good first steps\n1. Review the existing contributing guidelines in the repository.\n2. Explore the Plone site to get hands-on experience as an administrator.\n3. Check out relevant issues and discussions for context, especially issues #3987, #1768, and #4131.\n4. Start drafting initial sections of the guide and share your progress for feedback!\n```",
+  "workflow": {
+    "repository": "syslabcom/activity-recognition",
+    "run_id": "24187585349",
+    "run_number": "48",
+    "attempt": "1",
+    "url": "https://github.com/syslabcom/activity-recognition/actions/runs/24187585349",
+    "sha": "f88752c0361349fe46a0c616320dfa6ab90ae878"
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "version": 1,
+  "status": "success",
+  "generated_at": "2026-04-09T11:25:39Z",
+  "source_issue": {
+    "id": 2825746317,
+    "number": 6638,
+    "title": "Plone 7 frontend (Seven)",
+    "html_url": "https://github.com/plone/volto/issues/6638",
+    "repository_full_name": "plone/volto",
+    "updated_at": "2026-03-16T16:23:38Z",
+    "labels": [
+      "03 type: feature (plip)",
+      "43 lvl: complex"
+    ],
+    "comments": 9
+  },
+  "ai": {
+    "provider": "openai",
+    "model": "gpt-4o-mini"
+  },
+  "summary_markdown": "```markdown\n## What this issue is about\nThis issue focuses on modernizing the Plone frontend to create a new version called \"Seven\" that embraces current web development standards, specifically using React Router 7. The goal is to replace outdated libraries and establish a more efficient and flexible architecture for the Plone CMS.\n\n## What needs to be done\nThe plan includes significant updates to the existing Volto framework, such as:\n- Transitioning to a modern bundler, Vite.\n- Creating a pluggable standalone app for the CMS user interface.\n- Refactoring components and introducing a new theming system without Semantic UI.\n- Enhancing the overall content editing experience and ensuring compatibility with existing sites.\n\n## Helpful background\nThis proposal is part of the Plone Improvement Proposal (PLIP) format. The discussion around this issue has included various perspectives on the direction of the project. Some responses are still ongoing and involve clarifications regarding the \"headless\" nature of the future setup.\n\n## Good first steps\n1. Familiarize yourself with the existing **Volto** framework and its components.\n2. Read through the [Seven PLIP discussion](https://github.com/plone/volto/issues/6638) to get insight into what's already been proposed.\n3. Consider contributing by drafting documentation or exploring ways to implement compatibility with current add-ons.\n4. Engage in the conversation by asking questions if you’re unclear about specific technical aspects.\n```",
+  "workflow": {
+    "repository": "syslabcom/activity-recognition",
+    "run_id": "24187585349",
+    "run_number": "48",
+    "attempt": "1",
+    "url": "https://github.com/syslabcom/activity-recognition/actions/runs/24187585349",
+    "sha": "f88752c0361349fe46a0c616320dfa6ab90ae878"
+  }
+}

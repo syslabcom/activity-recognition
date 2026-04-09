@@ -1,0 +1,32 @@
+{
+  "version": 1,
+  "status": "success",
+  "generated_at": "2026-04-09T11:25:05Z",
+  "source_issue": {
+    "id": 1073109920,
+    "number": 3375,
+    "title": "LinguaPlone support code still in Plone6",
+    "html_url": "https://github.com/plone/Products.CMFPlone/issues/3375",
+    "repository_full_name": "plone/Products.CMFPlone",
+    "updated_at": "2026-03-23T21:10:06Z",
+    "labels": [
+      "04 type: enhancement",
+      "99 tag: cleanup",
+      "41 lvl: easy"
+    ],
+    "comments": 5
+  },
+  "ai": {
+    "provider": "openai",
+    "model": "gpt-4o-mini"
+  },
+  "summary_markdown": "## What this issue is about\nThis issue addresses some outdated code related to `LinguaPlone` still present in Plone 6, specifically in the `WorkflowTool` (found in `WorkflowTool.py` lines 240-246). The discussion indicates that parts of Plone should be reviewed for potential cleanup to remove references to this obsolete functionality.\n\n## What needs to be done\nWe need to evaluate and possibly remove the lingering `LinguaPlone` references in the `WorkflowTool`. It's suggested that `plone.app.multilingual` may also require adjustments, but it’s unclear what exactly needs fixing. This is an enhancement focused on cleaning up technical debt.\n\n## Helpful background\n`LinguaPlone` is an older multilingual support system that hasn't been maintained in years. Its remnants in the code may not directly cause issues, but removing them will help streamline the codebase. Contributions to this area might revolve around multilingual functionality in Plone.\n\n## Good first steps\n1. Familiarize yourself with the `WorkflowTool.py` file and identify the sections referencing `LinguaPlone`.\n2. Check the `plone.app.multilingual` code to see if and how it interacts with these references.\n3. Review existing tests to ensure any changes you make won't disrupt functionality.\n4. Consider looking through related documentation to aid your understanding.\n5. Feel free to ask questions or seek clarification from the community members involved if you're unsure about anything!",
+  "workflow": {
+    "repository": "syslabcom/activity-recognition",
+    "run_id": "24187585349",
+    "run_number": "48",
+    "attempt": "1",
+    "url": "https://github.com/syslabcom/activity-recognition/actions/runs/24187585349",
+    "sha": "f88752c0361349fe46a0c616320dfa6ab90ae878"
+  }
+}

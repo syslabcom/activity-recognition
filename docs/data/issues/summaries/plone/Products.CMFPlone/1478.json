@@ -1,0 +1,32 @@
+{
+  "version": 1,
+  "status": "success",
+  "generated_at": "2026-04-09T11:24:13Z",
+  "source_issue": {
+    "id": 141767567,
+    "number": 1478,
+    "title": "Site Setup parent links on Control Panel pages aren't consistent",
+    "html_url": "https://github.com/plone/Products.CMFPlone/issues/1478",
+    "repository_full_name": "plone/Products.CMFPlone",
+    "updated_at": "2026-03-23T22:56:50Z",
+    "labels": [
+      "01 type: bug",
+      "31 needs: help",
+      "41 lvl: easy"
+    ],
+    "comments": 7
+  },
+  "ai": {
+    "provider": "openai",
+    "model": "gpt-4o-mini"
+  },
+  "summary_markdown": "```markdown\n## What this issue is about\nThis issue addresses inconsistencies in how Control Panel pages in Plone display their \"Site Setup\" links. Some panels show the link as a button or a simple link, while others do not display it at all. The goal is to standardize this across all Control Panels.\n\n## What needs to be done\nWe need to ensure that the \"Site Setup\" link is consistently included in specific Control Panels. Currently, there are still four panels that have excessive or broken \"Site Setup\" links. You'll be working on reviewing and possibly updating these templates to achieve consistency.\n\n## Helpful background\nThis issue impacts user navigation within the Site Setup area. Previous discussions suggest that using breadcrumbs might simplify this navigation, although no definitive solution has been chosen. It’s worth noting that improvements have been made in Plone 6 regarding the overall interface.\n\n## Good first steps\n1. Familiarize yourself with the templates used in the listed Control Panels.\n2. Review `prefs_main_template.pt` to understand how the \"Site Setup\" link is currently applied.\n3. Check the specific Control Panels mentioned in the comments and see how they handle the \"Site Setup\" link.\n4. Consider documenting your findings and proposed changes, then open a pull request for review.\n\nFeel free to ask questions if anything is unclear!\n```",
+  "workflow": {
+    "repository": "syslabcom/activity-recognition",
+    "run_id": "24187585349",
+    "run_number": "48",
+    "attempt": "1",
+    "url": "https://github.com/syslabcom/activity-recognition/actions/runs/24187585349",
+    "sha": "f88752c0361349fe46a0c616320dfa6ab90ae878"
+  }
+}

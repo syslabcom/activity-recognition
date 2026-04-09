@@ -1,0 +1,34 @@
+{
+  "version": 1,
+  "status": "success",
+  "generated_at": "2026-04-09T11:25:24Z",
+  "source_issue": {
+    "id": 216172434,
+    "number": 1976,
+    "title": "z3c.form fields with a default value cannot be set to None or \"\"",
+    "html_url": "https://github.com/plone/Products.CMFPlone/issues/1976",
+    "repository_full_name": "plone/Products.CMFPlone",
+    "updated_at": "2026-03-23T17:35:51Z",
+    "labels": [
+      "01 type: bug",
+      "31 needs: help",
+      "12 prio: high",
+      "21 status: confirmed",
+      "43 lvl: complex"
+    ],
+    "comments": 7
+  },
+  "ai": {
+    "provider": "openai",
+    "model": "gpt-4o-mini"
+  },
+  "summary_markdown": "## What this issue is about\nThis issue addresses a bug where `z3c.form` fields with a default value can't be set to `None` or an empty string `(\"\")`. When users attempt to clear a field and save it, the default value is incorrectly restored upon re-editing the form.\n\n## What needs to be done\nWe need to investigate and fix the underlying issue in `z3c.form` that causes default values to be reapplied even when users want to clear fields. This is currently recognized as a bug affecting multiple scenarios in Plone related to custom content types.\n\n## Helpful background\nThe problem has been noted in various forms, affecting both querying behavior and fields such as `TextLine`. Members of the community have managed to identify that the issue arises with certain versions of `z3c.form`—versions 3.2.11 and later currently exhibit this bug, while 3.2.9 does not. However, there may be additional complexities not yet fully understood.\n\n## Good first steps\n1. Review the existing comments and check out the discussed versions of `z3c.form` to understand which changes led to the bug.\n2. Test the implementation with `z3c.form` version 3.2.9 to confirm it behaves as expected.\n3. Collaborate with other contributors for insights on the code and potential fixes. \n4. Document any findings in your review process for clarity and future reference.",
+  "workflow": {
+    "repository": "syslabcom/activity-recognition",
+    "run_id": "24187585349",
+    "run_number": "48",
+    "attempt": "1",
+    "url": "https://github.com/syslabcom/activity-recognition/actions/runs/24187585349",
+    "sha": "f88752c0361349fe46a0c616320dfa6ab90ae878"
+  }
+}

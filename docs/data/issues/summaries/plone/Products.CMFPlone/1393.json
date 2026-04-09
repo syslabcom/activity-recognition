@@ -1,0 +1,36 @@
+{
+  "version": 1,
+  "status": "success",
+  "generated_at": "2026-04-09T11:25:20Z",
+  "source_issue": {
+    "id": 134268392,
+    "number": 1393,
+    "title": "Add validation for image sizes/format (width:height) in @@imaging-controlpanel",
+    "html_url": "https://github.com/plone/Products.CMFPlone/issues/1393",
+    "repository_full_name": "plone/Products.CMFPlone",
+    "updated_at": "2026-03-23T17:51:21Z",
+    "labels": [
+      "04 type: enhancement",
+      "99 tag: UX Site Admin",
+      "99 tag: UX Integrator/Themer",
+      "31 needs: help",
+      "14 prio: low",
+      "21 status: confirmed",
+      "41 lvl: easy"
+    ],
+    "comments": 7
+  },
+  "ai": {
+    "provider": "openai",
+    "model": "gpt-4o-mini"
+  },
+  "summary_markdown": "```markdown\n## What this issue is about\nThis issue focuses on adding validation for image dimensions and formats in the `@@imaging-controlpanel`. Currently, if a user enters an invalid format (e.g., using 'x' instead of ':'), it can cause errors affecting image views throughout Plone.\n\n## What needs to be done\n- You will implement validation to ensure that inputs for image dimensions follow the correct format: `<name><width>:<height>`.\n- Both JavaScript and form validation may be necessary, per community suggestions, to improve user experience.\n\n## Helpful background\nThe issue originated from version Plone 4.3.x, where improper input formats caused breaking errors. Although the discussion includes various suggestions, there’s no definitive consensus on the exact implementation approach, so your initiative and ideas are welcome.\n\n## Good first steps\n1. Familiarize yourself with the `@@imaging-controlpanel` code and existing validation patterns in Plone.\n2. Consider the possibility of using validation through both JavaScript and Python.\n3. Review the [Plone contribution guidelines](https://docs.plone.org/develop/coredev/docs/guidelines.html) for more context on contributing to the project.\n4. Engage in discussions within the issue if you have questions or need guidance.\n```",
+  "workflow": {
+    "repository": "syslabcom/activity-recognition",
+    "run_id": "24187585349",
+    "run_number": "48",
+    "attempt": "1",
+    "url": "https://github.com/syslabcom/activity-recognition/actions/runs/24187585349",
+    "sha": "f88752c0361349fe46a0c616320dfa6ab90ae878"
+  }
+}
