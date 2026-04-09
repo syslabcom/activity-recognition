@@ -1,0 +1,34 @@
+{
+  "version": 1,
+  "status": "success",
+  "generated_at": "2026-04-09T16:33:59Z",
+  "source_issue": {
+    "id": 166988962,
+    "number": 1688,
+    "title": "title_or_id wakes up the real object",
+    "html_url": "https://github.com/plone/Products.CMFPlone/issues/1688",
+    "repository_full_name": "plone/Products.CMFPlone",
+    "updated_at": "2024-11-10T13:26:24Z",
+    "labels": [
+      "01 type: bug",
+      "31 needs: help",
+      "14 prio: low",
+      "21 status: confirmed",
+      "41 lvl: easy"
+    ],
+    "comments": 6
+  },
+  "ai": {
+    "provider": "openai",
+    "model": "gpt-4o-mini"
+  },
+  "summary_markdown": "## What this issue is about\nThis issue identifies a performance concern in Plone. When using the `title_or_id` method on catalog results (known as \"brains\"), it triggers a retrieval of the real underlying object, which is not efficient.\n\n## What needs to be done\nThe goal is to optimize the `title_or_id` functionality in `plone.app.contentlisting.catalog.CatalogContentListingObject` to avoid unnecessary object retrieval. Suggested approaches include modifying the current implementation to return title and ID directly from the brain, rather than calling `getObject`.\n\n## Helpful background\nThe `title_or_id` method is currently not included in the catalog metadata, which leads to the performance issue. There are multiple discussions on potentially adding this method directly to the `CatalogContentListingObject` class, but consensus on the exact implementation is still unclear.\n\n## Good first steps\n1. Review the `CatalogContentListingObject` in the Plone codebase, focusing on the relevant section: [catalog.py](https://github.com/plone/plone.app.contentlisting/blob/master/plone/app/contentlisting/catalog.py).\n2. Experiment with the proposed code modifications noted in the comments, particularly by adding `title_or_id` directly and ensuring it retrieves data efficiently.\n3. Test any changes thoroughly, and consider documenting your approach in a follow-up comment.\n4. Coordinate with other contributors in the issue discussion for review and feedback on your work.",
+  "workflow": {
+    "repository": "syslabcom/activity-recognition",
+    "run_id": "24201611231",
+    "run_number": "55",
+    "attempt": "1",
+    "url": "https://github.com/syslabcom/activity-recognition/actions/runs/24201611231",
+    "sha": "1e07bb4ba3af8a08520069ab7655ab8021928dcc"
+  }
+}

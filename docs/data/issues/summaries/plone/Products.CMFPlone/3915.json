@@ -1,0 +1,33 @@
+{
+  "version": 1,
+  "status": "success",
+  "generated_at": "2026-04-09T16:35:08Z",
+  "source_issue": {
+    "id": 2167937044,
+    "number": 3915,
+    "title": "Automate inclusion of release notes into Plone 6 documentation",
+    "html_url": "https://github.com/plone/Products.CMFPlone/issues/3915",
+    "repository_full_name": "plone/Products.CMFPlone",
+    "updated_at": "2024-03-07T12:30:10Z",
+    "labels": [
+      "04 type: enhancement",
+      "99 tag: documentation",
+      "33 needs: docs",
+      "42 lvl: moderate"
+    ],
+    "comments": 6
+  },
+  "ai": {
+    "provider": "openai",
+    "model": "gpt-4o-mini"
+  },
+  "summary_markdown": "## What this issue is about\nThis issue focuses on automating the inclusion of Plone release notes into the Plone 6 documentation, similar to what has been done for the Volto project. Currently, there is no consolidated source for these release notes in the documentation.\n\n## What needs to be done\nWe aim to establish a method for compiling and integrating Plone's release notes automatically. This involves determining the correct sources for the release notes and ensuring that they are formatted and stored appropriately, ideally under an \"APPENDICES\" heading in the documentation.\n\n## Helpful background\nThe release notes are currently compiled manually in the core development repository. There are various suggestions for gathering these notes, such as using the `CHANGES.md` files from different development branches. While there is some agreement on the necessity of this task, the discussion remains somewhat ambiguous regarding the best approach and the most reliable sources.\n\n## Good first steps\n1. **Review existing documentation**: Familiarize yourself with Plone and Volto documentation.\n2. **Identify sources of release notes**: Check the current changelogs and how they are being managed in the `buildout.coredev`.\n3. **Explore automating processes**: Research existing methods of automation in similar projects or inquire for guidance from current assignees, notably @stevepiercy and @mauritsvanrees.\n4. **Discuss findings**: Share insights or proposals in the discussion to refine the approach moving forward.",
+  "workflow": {
+    "repository": "syslabcom/activity-recognition",
+    "run_id": "24201611231",
+    "run_number": "55",
+    "attempt": "1",
+    "url": "https://github.com/syslabcom/activity-recognition/actions/runs/24201611231",
+    "sha": "1e07bb4ba3af8a08520069ab7655ab8021928dcc"
+  }
+}

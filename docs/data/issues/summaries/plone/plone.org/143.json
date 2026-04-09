@@ -1,0 +1,32 @@
+{
+  "version": 1,
+  "status": "success",
+  "generated_at": "2026-04-09T16:35:33Z",
+  "source_issue": {
+    "id": 1945839976,
+    "number": 143,
+    "title": "add social media fields to Foundation Member content type",
+    "html_url": "https://github.com/plone/plone.org/issues/143",
+    "repository_full_name": "plone/plone.org",
+    "updated_at": "2024-02-16T16:57:31Z",
+    "labels": [
+      "04 type: enhancement",
+      "13 prio: normal",
+      "41 lvl: easy"
+    ],
+    "comments": 0
+  },
+  "ai": {
+    "provider": "openai",
+    "model": "gpt-4o-mini"
+  },
+  "summary_markdown": "## What this issue is about\nThis issue proposes to enhance the Foundation Member content type by adding new fields for social media profiles. Currently, there are fields for Twitter, GitHub, and LinkedIn, and the suggestion is to include fields for Mastodon and a personal website.\n\n## What needs to be done\n- Add new fields for Mastodon and personal website in the Foundation Member content type.\n- Ensure that the new fields are properly integrated with existing functionality.\n\n## Helpful background\nThe Foundation Member content type is used within the Plone site to manage member information. Adding these fields will allow members to share their presence on additional platforms. No extensive documentation or guidelines are provided within the ticket, which means some exploration might be necessary.\n\n## Good first steps\n1. Familiarize yourself with the Foundation Member content type structure.\n2. Review how social media fields are currently implemented.\n3. Begin by drafting a plan for how to add the new fields.\n4. Reach out to the community if you have questions or need guidance.\n\nFeel free to ask for help as you go! This is a great way to contribute, especially if you're new to Plone.",
+  "workflow": {
+    "repository": "syslabcom/activity-recognition",
+    "run_id": "24201611231",
+    "run_number": "55",
+    "attempt": "1",
+    "url": "https://github.com/syslabcom/activity-recognition/actions/runs/24201611231",
+    "sha": "1e07bb4ba3af8a08520069ab7655ab8021928dcc"
+  }
+}

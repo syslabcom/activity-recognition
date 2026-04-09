@@ -1,0 +1,34 @@
+{
+  "version": 1,
+  "status": "success",
+  "generated_at": "2026-04-09T16:35:02Z",
+  "source_issue": {
+    "id": 184390540,
+    "number": 1801,
+    "title": "list of plone_scripts to get rid of",
+    "html_url": "https://github.com/plone/Products.CMFPlone/issues/1801",
+    "repository_full_name": "plone/Products.CMFPlone",
+    "updated_at": "2024-05-17T12:45:44Z",
+    "labels": [
+      "04 type: enhancement",
+      "31 needs: help",
+      "22 status: in-progress",
+      "14 prio: low",
+      "42 lvl: moderate"
+    ],
+    "comments": 10
+  },
+  "ai": {
+    "provider": "openai",
+    "model": "gpt-4o-mini"
+  },
+  "summary_markdown": "## What this issue is about\nThis issue focuses on identifying and removing obsolete Python scripts located in the `skins/plone_scripts` directory of the Plone project. The aim is to clean up the codebase in preparation for Plone 6.1.\n\n## What needs to be done\nSeveral scripts need to be reviewed and potentially removed or updated. Some have alternatives already available, but they might not be widely used in the code. Notable scripts include `browserDefault.py`, `external_edit.py`, and `translate.py`. Suggestions have been made for stubs or deprecation messages for any scripts removed, to guide users.\n\n## Helpful background\nDiscussion around this issue indicates that some scripts may have existing alternatives or may need to be refactored. The thread is a bit outdated, and more recent input suggests a structured approach to mapping outdated scripts to their modern counterparts, ensuring smooth transitions.\n\n## Good first steps\n1. Review the list of scripts to be removed and familiarize yourself with their purposes.\n2. Check for existing alternatives or references in the codebase.\n3. Optionally, explore the `plone_scripts` folder [here](https://github.com/plone/Products.CMFPlone/tree/master/Products/CMFPlone/skins/plone_scripts) for a full overview.\n4. Consider contributing ideas or actual code changes related to specific scripts that may benefit from updates or removal.",
+  "workflow": {
+    "repository": "syslabcom/activity-recognition",
+    "run_id": "24201611231",
+    "run_number": "55",
+    "attempt": "1",
+    "url": "https://github.com/syslabcom/activity-recognition/actions/runs/24201611231",
+    "sha": "1e07bb4ba3af8a08520069ab7655ab8021928dcc"
+  }
+}

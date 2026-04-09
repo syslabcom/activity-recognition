@@ -1,0 +1,32 @@
+{
+  "version": 1,
+  "status": "success",
+  "generated_at": "2026-04-09T16:35:28Z",
+  "source_issue": {
+    "id": 1953693354,
+    "number": 144,
+    "title": "Align radio button group in forms on a single line",
+    "html_url": "https://github.com/plone/plone.org/issues/144",
+    "repository_full_name": "plone/plone.org",
+    "updated_at": "2024-02-16T16:57:47Z",
+    "labels": [
+      "04 type: enhancement",
+      "41 lvl: easy",
+      "61 sites: visual/theming"
+    ],
+    "comments": 4
+  },
+  "ai": {
+    "provider": "openai",
+    "model": "gpt-4o-mini"
+  },
+  "summary_markdown": "```markdown\n## What this issue is about\nThis issue aims to enhance the layout of radio button groups in forms. Currently, these buttons are stacked vertically, which looks unappealing and wastes space. The goal is to align them horizontally on a single line.\n\n## What needs to be done\nThe main task is to modify the CSS for the radio button group. A proposed solution is to use the following CSS rule:\n```css\n.radio-group {\n  display: inline-flex;\n}\n```\nHowever, discussions suggest that more flexibility could be helpful, such as considering longer text options that might look awkward when displayed inline.\n\n## Helpful background\nThere is ongoing discussion about the best approach to layout. Suggestions include allowing editors to choose between vertical and horizontal options, or using automatic rules based on the text length of the buttons. Some potential approaches may require additional HTML changes, not just CSS adjustments.\n\n## Good first steps\n1. Review the current form implementation [here](https://plone.org/foundation/plone-org-feeback-form).\n2. Experiment with the proposed CSS and see if it meets the alignment needs.\n3. Consider contributing a more flexible solution that allows for both layout options based on content length.\n4. Make sure to test your changes to ensure they display well across different use cases.\n```",
+  "workflow": {
+    "repository": "syslabcom/activity-recognition",
+    "run_id": "24201611231",
+    "run_number": "55",
+    "attempt": "1",
+    "url": "https://github.com/syslabcom/activity-recognition/actions/runs/24201611231",
+    "sha": "1e07bb4ba3af8a08520069ab7655ab8021928dcc"
+  }
+}

@@ -1,7 +1,7 @@
 {
   "version": 1,
   "status": "success",
-  "generated_at": "2026-04-09T15:34:53Z",
+  "generated_at": "2026-04-09T16:33:16Z",
   "organization": "plone",
   "state": "open",
   "slug": "lvl-moderate",
@@ -1217,7 +1217,15 @@
         "01 type: bug",
         "33 needs: docs",
         "42 lvl: moderate"
-      ]
+      ],
+      "contributor_summary": {
+        "status": "available",
+        "generated_at": "2026-04-09T16:33:22Z",
+        "source_issue_updated_at": "2024-11-18T05:47:55Z",
+        "model": "gpt-4o-mini",
+        "summary_markdown": "## What this issue is about\nThe issue addresses a problem with LESS syntax highlighting in the Plone Volto project. Specifically, the Pygments lexer incorrectly marks valid LESS code as invalid when `@import` statements are used within selectors.\n\n## What needs to be done\nContributors are expected to investigate how the LESS syntax is being highlighted by Pygments and identify a fix for the reported issues. This includes reviewing the existing code samples where the syntax fails and testing the suggested fixes.\n\n## Helpful background\nThe two examples causing issues are:\n1. Using `@import` within a selector.\n2. Nested selectors not being recognized correctly.\n\nBoth issues have been reported to Pygments, with one potential fix already proposed. Familiarity with LESS, a stylesheet language, and Pygments, a syntax highlighter, will be helpful for contributors.\n\n## Good first steps\n1. Review the linked Pygments issues to understand the context and proposed fixes.\n2. Experiment with the provided code samples in a local environment and check how they are highlighted.\n3. Draft a potential solution or improvement based on your findings, keeping documentation updates in mind.\n4. Engage with the community for feedback or additional guidance if needed.",
+        "path": "data/issues/summaries/plone/volto/5499.json"
+      }
     },
     {
       "id": 733801363,
@@ -1246,7 +1254,15 @@
         "12 prio: high",
         "21 status: confirmed",
         "42 lvl: moderate"
-      ]
+      ],
+      "contributor_summary": {
+        "status": "available",
+        "generated_at": "2026-04-09T16:33:37Z",
+        "source_issue_updated_at": "2024-11-13T11:06:55Z",
+        "model": "gpt-4o-mini",
+        "summary_markdown": "```markdown\n## What this issue is about\nThis issue addresses a large increase in page size due to the `valid_elements` field added to each `RichTextField` in Plone's TinyMCE editor. Currently, a massive string is used, leading to an additional 40KB for each instance on the edit page.\n\n## What needs to be done\nWe need to review and optimize the `valid_elements` configuration for TinyMCE. It seems that the configuration is unnecessarily complex, likely carried over from older versions. The goal is to determine if such a detailed list is required, or if simplifications can be made.\n\n## Helpful background\nThe `valid_elements` string specifies which HTML tags and attributes are permitted. Its size can significantly impact the performance of the CMS when editors are working with Rich Text fields. Discussions suggest that defining a general HTML5 schema could streamline this configuration.\n\n## Good first steps\n1. Familiarize yourself with the TinyMCE documentation regarding [content filtering](https://www.tiny.cloud/docs/tinymce/latest/content-filtering/#schema).\n2. Consider experimenting with a simpler `valid_elements` setting based on existing patterns.\n3. Join the discussion for ideas on global configurations that might improve efficiency with the `classique-team`.\n4. Prepare to implement and test changes, keeping an eye on documentation and review needs.\n```",
+        "path": "data/issues/summaries/plone/Products.CMFPlone/3204.json"
+      }
     },
     {
       "id": 2019631898,
@@ -1268,7 +1284,15 @@
         "01 type: bug",
         "42 lvl: moderate",
         "99 tag: UX Accessibility"
-      ]
+      ],
+      "contributor_summary": {
+        "status": "available",
+        "generated_at": "2026-04-09T16:34:32Z",
+        "source_issue_updated_at": "2024-09-26T12:37:18Z",
+        "model": "gpt-4o-mini",
+        "summary_markdown": "```markdown\n## What this issue is about\nThis issue addresses a bug in Volto where the sidebar and toolbar functionality is not properly accessible for screen reader users. Even when these elements are \"shrunk,\" they remain focusable, which can create confusion for users relying on assistive technologies.\n\n## What needs to be done\nEnhancements are needed to ensure that when the sidebar or toolbar is shrunk, its focusable elements are no longer accessible to screen readers. We need to implement the `aria-expanded` attribute to communicate the open/closed state properly and ensure focus is prevented using techniques like the `inert` attribute and `aria-hidden`.\n\n## Helpful background\nCurrently, pressing the shrink button doesn't effectively communicate that the toolbar/sidebar is closed, and elements inside remain focusable. The proper use of ARIA attributes can improve this, creating a cleaner experience for screen reader users, who may have difficulty navigating when unnecessary elements are still available to them.\n\n## Good first steps\n1. Review the [existing discussion](https://github.com/plone/volto/issues/5466) to understand the context and various viewpoints.\n2. Familiarize yourself with ARIA attributes, specifically `aria-expanded` and `inert`.\n3. Consider setting up a local development environment to test these changes.\n4. If comfortable, draft a potential implementation plan or solution and share it in the comments to gather feedback before coding.\n```",
+        "path": "data/issues/summaries/plone/volto/5466.json"
+      }
     },
     {
       "id": 1740231971,
@@ -1290,7 +1314,15 @@
         "04 type: enhancement",
         "14 prio: low",
         "42 lvl: moderate"
-      ]
+      ],
+      "contributor_summary": {
+        "status": "available",
+        "generated_at": "2026-04-09T16:34:37Z",
+        "source_issue_updated_at": "2024-09-01T09:15:15Z",
+        "model": "gpt-4o-mini",
+        "summary_markdown": "## What this issue is about\nThis issue proposes to store a dependency graph as an artifact in our project. Currently, the `circular` `tox` environment generates the graph in DOT format, but it cannot be displayed directly on GitHub since the library does not support mermaidJS, the only format GitHub supports for diagrams.\n\n## What needs to be done\nWe need to implement a way to store the generated dependency graph as an artifact. This will allow users to download and inspect it locally, even if it can't be displayed directly on GitHub.\n\n## Helpful background\n- **Artifact**: A file or set of files produced by a build process that can be stored and shared.\n- **DOT format**: A graph description language used by Graphviz; useful for visualizing structural information.\n\nThere is some uncertainty about whether to proceed now or wait for related work in the [pipforester issue](https://github.com/collective/pipforester/issues/4).\n\n## Good first steps\n1. Review the current `tox` configuration and how the dependency graph is generated.\n2. Familiarize yourself with storing artifacts in the project.\n3. Check related discussions in the linked pipforester issue for potential updates.\n4. Consider how to implement storing the graph without disrupting existing workflows.",
+        "path": "data/issues/summaries/plone/meta/119.json"
+      }
     },
     {
       "id": 182319757,
@@ -1313,7 +1345,15 @@
         "31 needs: help",
         "14 prio: low",
         "42 lvl: moderate"
-      ]
+      ],
+      "contributor_summary": {
+        "status": "available",
+        "generated_at": "2026-04-09T16:34:44Z",
+        "source_issue_updated_at": "2024-08-12T16:18:49Z",
+        "model": "gpt-4o-mini",
+        "summary_markdown": "## What this issue is about\nThis issue addresses a bug where the `IWorkingCopy` interface is still maintained in a copied version of an item in Plone. This can create issues if you rely on this interface for custom views or other functionalities.\n\n## What needs to be done\nThe goal is to ensure that when a working copy is copied, it does not retain the `IWorkingCopy` interface. This involves implementing a fix—potentially within the `plone.app.iterate` package.\n\n## Helpful background\nWhen you create and copy a working copy item (a user-editable version of a content item), it currently retains the `IWorkingCopy` interface. This can lead to confusion and malfunction in systems dependent on identifying true working copies. There are suggestions on how to handle this via event handlers to properly erase the interface from the copied item.\n\n## Good first steps\n1. Review the existing code and comments, particularly the provided event handler code.\n2. Test if the issue still persists in your local environment.\n3. Implement the suggested event handler and test it to ensure it removes the interface as expected.\n4. Consider documenting your findings and reaching out for review if you need guidance or further collaboration.",
+        "path": "data/issues/summaries/plone/Products.CMFPlone/1791.json"
+      }
     },
     {
       "id": 747283813,
@@ -1335,7 +1375,15 @@
         "01 type: bug",
         "33 needs: docs",
         "42 lvl: moderate"
-      ]
+      ],
+      "contributor_summary": {
+        "status": "available",
+        "generated_at": "2026-04-09T16:34:50Z",
+        "source_issue_updated_at": "2024-07-28T09:58:49Z",
+        "model": "gpt-4o-mini",
+        "summary_markdown": "## What this issue is about\nThis issue involves documenting `razzle.extend.js`, a hidden feature in Volto addons. Documentation is important, particularly following a recent upgrade to Razzle, to ensure users understand how to utilize this feature effectively.\n\n## What needs to be done\nWe need comprehensive documentation for `razzle.extend.js`. This should cover its intended use cases and any specific details that users should know. There are no clear guidelines on what exactly should be included, so further clarification may be necessary.\n\n## Helpful background\n`razzle.extend.js` is part of Volto and facilitates certain functionalities in the platform. The lack of documentation surrounding this feature suggests that many users might be unaware of its benefits or how to implement it. The recent upgrade adds urgency to this task, making solid documentation even more critical.\n\n## Good first steps\n1. Review the existing comments and explore the functionality of `razzle.extend.js` within the Volto context.\n2. Engage with the community, possibly reaching out to others familiar with this feature for insights and details.\n3. Start drafting the documentation, focusing on clarity and accessibility for new users. Make sure to ask for feedback and iteratively refine your work. Discuss any uncertainties or gaps in information in the comments.",
+        "path": "data/issues/summaries/plone/volto/2005.json"
+      }
     },
     {
       "id": 184390540,
@@ -1359,7 +1407,15 @@
         "22 status: in-progress",
         "14 prio: low",
         "42 lvl: moderate"
-      ]
+      ],
+      "contributor_summary": {
+        "status": "available",
+        "generated_at": "2026-04-09T16:35:02Z",
+        "source_issue_updated_at": "2024-05-17T12:45:44Z",
+        "model": "gpt-4o-mini",
+        "summary_markdown": "## What this issue is about\nThis issue focuses on identifying and removing obsolete Python scripts located in the `skins/plone_scripts` directory of the Plone project. The aim is to clean up the codebase in preparation for Plone 6.1.\n\n## What needs to be done\nSeveral scripts need to be reviewed and potentially removed or updated. Some have alternatives already available, but they might not be widely used in the code. Notable scripts include `browserDefault.py`, `external_edit.py`, and `translate.py`. Suggestions have been made for stubs or deprecation messages for any scripts removed, to guide users.\n\n## Helpful background\nDiscussion around this issue indicates that some scripts may have existing alternatives or may need to be refactored. The thread is a bit outdated, and more recent input suggests a structured approach to mapping outdated scripts to their modern counterparts, ensuring smooth transitions.\n\n## Good first steps\n1. Review the list of scripts to be removed and familiarize yourself with their purposes.\n2. Check for existing alternatives or references in the codebase.\n3. Optionally, explore the `plone_scripts` folder [here](https://github.com/plone/Products.CMFPlone/tree/master/Products/CMFPlone/skins/plone_scripts) for a full overview.\n4. Consider contributing ideas or actual code changes related to specific scripts that may benefit from updates or removal.",
+        "path": "data/issues/summaries/plone/Products.CMFPlone/1801.json"
+      }
     },
     {
       "id": 2167937044,
@@ -1385,7 +1441,15 @@
         "99 tag: documentation",
         "33 needs: docs",
         "42 lvl: moderate"
-      ]
+      ],
+      "contributor_summary": {
+        "status": "available",
+        "generated_at": "2026-04-09T16:35:08Z",
+        "source_issue_updated_at": "2024-03-07T12:30:10Z",
+        "model": "gpt-4o-mini",
+        "summary_markdown": "## What this issue is about\nThis issue focuses on automating the inclusion of Plone release notes into the Plone 6 documentation, similar to what has been done for the Volto project. Currently, there is no consolidated source for these release notes in the documentation.\n\n## What needs to be done\nWe aim to establish a method for compiling and integrating Plone's release notes automatically. This involves determining the correct sources for the release notes and ensuring that they are formatted and stored appropriately, ideally under an \"APPENDICES\" heading in the documentation.\n\n## Helpful background\nThe release notes are currently compiled manually in the core development repository. There are various suggestions for gathering these notes, such as using the `CHANGES.md` files from different development branches. While there is some agreement on the necessity of this task, the discussion remains somewhat ambiguous regarding the best approach and the most reliable sources.\n\n## Good first steps\n1. **Review existing documentation**: Familiarize yourself with Plone and Volto documentation.\n2. **Identify sources of release notes**: Check the current changelogs and how they are being managed in the `buildout.coredev`.\n3. **Explore automating processes**: Research existing methods of automation in similar projects or inquire for guidance from current assignees, notably @stevepiercy and @mauritsvanrees.\n4. **Discuss findings**: Share insights or proposals in the discussion to refine the approach moving forward.",
+        "path": "data/issues/summaries/plone/Products.CMFPlone/3915.json"
+      }
     },
     {
       "id": 1933580552,
@@ -1411,7 +1475,15 @@
         "13 prio: normal",
         "42 lvl: moderate",
         "60 sites: page content"
-      ]
+      ],
+      "contributor_summary": {
+        "status": "available",
+        "generated_at": "2026-04-09T16:35:38Z",
+        "source_issue_updated_at": "2024-02-16T16:56:31Z",
+        "model": "gpt-4o-mini",
+        "summary_markdown": "```markdown\n## What this issue is about\nThis issue addresses the need to recreate the sponsorship form for Plone at [plone.org](https://plone.org/foundation/sponsorship). Currently, the earlier form was replaced by a mailto link, and we need to restore a more interactive and informative form for potential sponsors.\n\n## What needs to be done\nWe need to develop a new sponsorship form that collects essential information from sponsors. The form should also guide users on different types of sponsorship (e.g., Premium, Standard, Basic, University) and link to our GitHub sponsors page instead of PayPal.\n\n## Helpful background\nPreviously, we had several references for the sponsorship form, including: \n- [Sponsorship form](https://old.plone.org/sponsors/sponsorship-form?type-of-sponsorship=Premium)\n- [Be a Hero page](https://old.plone.org/sponsors/be-a-hero) \n\nThese pages provide essential context on what information to collect and how to present it effectively.\n\n## Good first steps\n1. Review the references noted above to understand the required fields and layout.\n2. Explore using the Volto forms block, as suggested.\n3. Begin drafting the form structure and gather feedback from the team.\n4. Consider testing the form for functionality before finalizing it.\n5. Coordinate with the team for documentation and review once the form is ready.\n```",
+        "path": "data/issues/summaries/plone/plone.org/138.json"
+      }
     },
     {
       "id": 1706266069,
@@ -2143,10 +2215,10 @@
   "message": null,
   "workflow": {
     "repository": "syslabcom/activity-recognition",
-    "run_id": "24198904502",
-    "run_number": "54",
+    "run_id": "24201611231",
+    "run_number": "55",
     "attempt": "1",
-    "url": "https://github.com/syslabcom/activity-recognition/actions/runs/24198904502",
-    "sha": "ecf62a0118e412af0bd2733961f444e3de320ba7"
+    "url": "https://github.com/syslabcom/activity-recognition/actions/runs/24201611231",
+    "sha": "1e07bb4ba3af8a08520069ab7655ab8021928dcc"
   }
 }

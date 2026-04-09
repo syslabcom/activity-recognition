@@ -1,0 +1,34 @@
+{
+  "version": 1,
+  "status": "success",
+  "generated_at": "2026-04-09T16:33:37Z",
+  "source_issue": {
+    "id": 733801363,
+    "number": 3204,
+    "title": "Default valid_elements field in pattern options adds 40kb for every RichtTextField on an edit page",
+    "html_url": "https://github.com/plone/Products.CMFPlone/issues/3204",
+    "repository_full_name": "plone/Products.CMFPlone",
+    "updated_at": "2024-11-13T11:06:55Z",
+    "labels": [
+      "04 type: enhancement",
+      "31 needs: help",
+      "12 prio: high",
+      "21 status: confirmed",
+      "42 lvl: moderate"
+    ],
+    "comments": 5
+  },
+  "ai": {
+    "provider": "openai",
+    "model": "gpt-4o-mini"
+  },
+  "summary_markdown": "```markdown\n## What this issue is about\nThis issue addresses a large increase in page size due to the `valid_elements` field added to each `RichTextField` in Plone's TinyMCE editor. Currently, a massive string is used, leading to an additional 40KB for each instance on the edit page.\n\n## What needs to be done\nWe need to review and optimize the `valid_elements` configuration for TinyMCE. It seems that the configuration is unnecessarily complex, likely carried over from older versions. The goal is to determine if such a detailed list is required, or if simplifications can be made.\n\n## Helpful background\nThe `valid_elements` string specifies which HTML tags and attributes are permitted. Its size can significantly impact the performance of the CMS when editors are working with Rich Text fields. Discussions suggest that defining a general HTML5 schema could streamline this configuration.\n\n## Good first steps\n1. Familiarize yourself with the TinyMCE documentation regarding [content filtering](https://www.tiny.cloud/docs/tinymce/latest/content-filtering/#schema).\n2. Consider experimenting with a simpler `valid_elements` setting based on existing patterns.\n3. Join the discussion for ideas on global configurations that might improve efficiency with the `classique-team`.\n4. Prepare to implement and test changes, keeping an eye on documentation and review needs.\n```",
+  "workflow": {
+    "repository": "syslabcom/activity-recognition",
+    "run_id": "24201611231",
+    "run_number": "55",
+    "attempt": "1",
+    "url": "https://github.com/syslabcom/activity-recognition/actions/runs/24201611231",
+    "sha": "1e07bb4ba3af8a08520069ab7655ab8021928dcc"
+  }
+}

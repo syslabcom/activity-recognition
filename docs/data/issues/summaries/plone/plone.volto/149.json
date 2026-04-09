@@ -1,0 +1,33 @@
+{
+  "version": 1,
+  "status": "success",
+  "generated_at": "2026-04-09T16:34:57Z",
+  "source_issue": {
+    "id": 2346073601,
+    "number": 149,
+    "title": "plone.volto:default should install all necessary dependencies",
+    "html_url": "https://github.com/plone/plone.volto/issues/149",
+    "repository_full_name": "plone/plone.volto",
+    "updated_at": "2024-07-19T08:48:22Z",
+    "labels": [
+      "01 type: bug",
+      "14 prio: low",
+      "33 needs: docs",
+      "41 lvl: easy"
+    ],
+    "comments": 4
+  },
+  "ai": {
+    "provider": "openai",
+    "model": "gpt-4o-mini"
+  },
+  "summary_markdown": "```markdown\n## What this issue is about\nThis issue addresses a bug in the Plone Volto framework. It involves ensuring that the default profile automatically includes all necessary dependencies to create a more straightforward installation process. Currently, developers need to manually list multiple dependencies, which can result in issues and unclear installation orders.\n\n## What needs to be done\nThe default profile should include a dependency on `profile-Products.CMFPlone:dependencies`, allowing other required profiles to be pulled in automatically. This should streamline installations and reduce the need for developers to manage a long list of dependencies.\n\n## Helpful background\nThe discussion points to challenges when using custom profiles with `plone.distribution`, which complicates the dependency graph. Consequently, unclear installation orders may leave some features or content types missing. Clarifying and documenting this process will help users better understand how to set up their projects.\n\n## Good first steps\n1. Review the current dependencies in the default profile.\n2. Update the profile to include `profile-Products.CMFPlone:dependencies`.\n3. Consider writing or improving documentation to guide users through using profiles effectively.\n4. Test the installation process to ensure all dependencies load correctly.\n5. Engage with others on the issue to clarify doubts or share insights on implementation.\n```",
+  "workflow": {
+    "repository": "syslabcom/activity-recognition",
+    "run_id": "24201611231",
+    "run_number": "55",
+    "attempt": "1",
+    "url": "https://github.com/syslabcom/activity-recognition/actions/runs/24201611231",
+    "sha": "1e07bb4ba3af8a08520069ab7655ab8021928dcc"
+  }
+}

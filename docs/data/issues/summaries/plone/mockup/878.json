@@ -1,0 +1,30 @@
+{
+  "version": 1,
+  "status": "success",
+  "generated_at": "2026-04-09T16:34:17Z",
+  "source_issue": {
+    "id": 377794044,
+    "number": 878,
+    "title": "Live Search: Enter key does not trigger search",
+    "html_url": "https://github.com/plone/mockup/issues/878",
+    "repository_full_name": "plone/mockup",
+    "updated_at": "2024-11-09T07:30:37Z",
+    "labels": [
+      "41 lvl: easy"
+    ],
+    "comments": 3
+  },
+  "ai": {
+    "provider": "openai",
+    "model": "gpt-4o-mini"
+  },
+  "summary_markdown": "```markdown\n## What this issue is about\nThis issue addresses a problem with the Live Search feature where pressing the Enter key does not perform a search as expected. Instead, it attempts to load a non-existent search page, resulting in a 404 error.\n\n## What needs to be done\nThe goal is to modify the Live Search input behavior so that when the Enter key is pressed, it correctly triggers a live search instead of submitting the form and causing a page reload. You'll likely need to catch the Enter key event and prevent its default action.\n\n## Helpful background\nYou can test the current behavior on the [demo page](http://plone.github.io/mockup/pat/livesearch/search). Note that the initial issue is a few years old, and previous comments indicated confusion about the exact page where it occurs. It's helpful to familiarize yourself with how the Live Search integrates into the broader Plone framework.\n\n## Good first steps\n1. Visit the demo page to reproduce the issue.\n2. Look into the JavaScript responsible for handling the search input.\n3. Plan how to prevent the default form submission on the Enter key.\n4. Once you've made changes, run tests to ensure the search works as intended.\n5. Be ready to document your work and participate in review discussions.\n\nFeel free to ask questions if anything is unclear!\n```",
+  "workflow": {
+    "repository": "syslabcom/activity-recognition",
+    "run_id": "24201611231",
+    "run_number": "55",
+    "attempt": "1",
+    "url": "https://github.com/syslabcom/activity-recognition/actions/runs/24201611231",
+    "sha": "1e07bb4ba3af8a08520069ab7655ab8021928dcc"
+  }
+}

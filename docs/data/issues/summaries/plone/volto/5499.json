@@ -1,0 +1,32 @@
+{
+  "version": 1,
+  "status": "success",
+  "generated_at": "2026-04-09T16:33:22Z",
+  "source_issue": {
+    "id": 2028220544,
+    "number": 5499,
+    "title": "Fix LESS syntax highlighting",
+    "html_url": "https://github.com/plone/volto/issues/5499",
+    "repository_full_name": "plone/volto",
+    "updated_at": "2024-11-18T05:47:55Z",
+    "labels": [
+      "01 type: bug",
+      "33 needs: docs",
+      "42 lvl: moderate"
+    ],
+    "comments": 0
+  },
+  "ai": {
+    "provider": "openai",
+    "model": "gpt-4o-mini"
+  },
+  "summary_markdown": "## What this issue is about\nThe issue addresses a problem with LESS syntax highlighting in the Plone Volto project. Specifically, the Pygments lexer incorrectly marks valid LESS code as invalid when `@import` statements are used within selectors.\n\n## What needs to be done\nContributors are expected to investigate how the LESS syntax is being highlighted by Pygments and identify a fix for the reported issues. This includes reviewing the existing code samples where the syntax fails and testing the suggested fixes.\n\n## Helpful background\nThe two examples causing issues are:\n1. Using `@import` within a selector.\n2. Nested selectors not being recognized correctly.\n\nBoth issues have been reported to Pygments, with one potential fix already proposed. Familiarity with LESS, a stylesheet language, and Pygments, a syntax highlighter, will be helpful for contributors.\n\n## Good first steps\n1. Review the linked Pygments issues to understand the context and proposed fixes.\n2. Experiment with the provided code samples in a local environment and check how they are highlighted.\n3. Draft a potential solution or improvement based on your findings, keeping documentation updates in mind.\n4. Engage with the community for feedback or additional guidance if needed.",
+  "workflow": {
+    "repository": "syslabcom/activity-recognition",
+    "run_id": "24201611231",
+    "run_number": "55",
+    "attempt": "1",
+    "url": "https://github.com/syslabcom/activity-recognition/actions/runs/24201611231",
+    "sha": "1e07bb4ba3af8a08520069ab7655ab8021928dcc"
+  }
+}

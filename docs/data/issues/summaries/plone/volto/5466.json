@@ -1,0 +1,32 @@
+{
+  "version": 1,
+  "status": "success",
+  "generated_at": "2026-04-09T16:34:32Z",
+  "source_issue": {
+    "id": 2019631898,
+    "number": 5466,
+    "title": "Sidebar and toolbar shrink/ expanded functionality should work correctly for screen reader users",
+    "html_url": "https://github.com/plone/volto/issues/5466",
+    "repository_full_name": "plone/volto",
+    "updated_at": "2024-09-26T12:37:18Z",
+    "labels": [
+      "01 type: bug",
+      "42 lvl: moderate",
+      "99 tag: UX Accessibility"
+    ],
+    "comments": 6
+  },
+  "ai": {
+    "provider": "openai",
+    "model": "gpt-4o-mini"
+  },
+  "summary_markdown": "```markdown\n## What this issue is about\nThis issue addresses a bug in Volto where the sidebar and toolbar functionality is not properly accessible for screen reader users. Even when these elements are \"shrunk,\" they remain focusable, which can create confusion for users relying on assistive technologies.\n\n## What needs to be done\nEnhancements are needed to ensure that when the sidebar or toolbar is shrunk, its focusable elements are no longer accessible to screen readers. We need to implement the `aria-expanded` attribute to communicate the open/closed state properly and ensure focus is prevented using techniques like the `inert` attribute and `aria-hidden`.\n\n## Helpful background\nCurrently, pressing the shrink button doesn't effectively communicate that the toolbar/sidebar is closed, and elements inside remain focusable. The proper use of ARIA attributes can improve this, creating a cleaner experience for screen reader users, who may have difficulty navigating when unnecessary elements are still available to them.\n\n## Good first steps\n1. Review the [existing discussion](https://github.com/plone/volto/issues/5466) to understand the context and various viewpoints.\n2. Familiarize yourself with ARIA attributes, specifically `aria-expanded` and `inert`.\n3. Consider setting up a local development environment to test these changes.\n4. If comfortable, draft a potential implementation plan or solution and share it in the comments to gather feedback before coding.\n```",
+  "workflow": {
+    "repository": "syslabcom/activity-recognition",
+    "run_id": "24201611231",
+    "run_number": "55",
+    "attempt": "1",
+    "url": "https://github.com/syslabcom/activity-recognition/actions/runs/24201611231",
+    "sha": "1e07bb4ba3af8a08520069ab7655ab8021928dcc"
+  }
+}

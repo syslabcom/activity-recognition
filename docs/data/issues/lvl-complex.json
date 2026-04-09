@@ -1,7 +1,7 @@
 {
   "version": 1,
   "status": "success",
-  "generated_at": "2026-04-09T15:34:53Z",
+  "generated_at": "2026-04-09T16:33:16Z",
   "organization": "plone",
   "state": "open",
   "slug": "lvl-complex",
@@ -1309,7 +1309,15 @@
       "labels": [
         "03 type: feature (plip)",
         "43 lvl: complex"
-      ]
+      ],
+      "contributor_summary": {
+        "status": "available",
+        "generated_at": "2026-04-09T16:34:23Z",
+        "source_issue_updated_at": "2024-11-05T10:36:02Z",
+        "model": "gpt-4o-mini",
+        "summary_markdown": "```markdown\n## What this issue is about\nThis issue focuses on enhancing the drag and drop functionality within the Volto blocks engine. The current system relies on an outdated library, which hampers usability and adaptability. The proposal is to switch to the actively maintained `react-aria` library, allowing for more complex interactions, such as moving blocks between different containers.\n\n## What needs to be done\nThe following tasks need to be completed:\n- Refactor the drag and drop infrastructure to use `react-aria`.\n- Establish a unified context for drag and drop actions across the engine.\n- Improve collision detection and animations for a smoother user experience.\n- Create a new version of the `DragDropList` component with parallel functionality.\n- Maintain backward compatibility for existing components.\n\n## Helpful background\nThis issue originates from a Plone Improvement Proposal (PLIP). It's noted that a Proof of Concept (PoC) pull request is in progress but needs further refinement. There are discussions on the performance of the new system, including the possibility of integrating a \"virtualized list\" feature for large edit pages.\n\n## Good first steps\n1. Familiarize yourself with the [PoC PR](https://github.com/plone/volto/pull/3547).\n2. Review the existing `DragDropList` component for context.\n3. Reach out to @sneridagh for mentorship and guidance.\n4. Consider contributing to the testing and documentation as the project progresses.\n```",
+        "path": "data/issues/summaries/plone/volto/4204.json"
+      }
     },
     {
       "id": 614748550,
@@ -1603,10 +1611,10 @@
   "message": null,
   "workflow": {
     "repository": "syslabcom/activity-recognition",
-    "run_id": "24198904502",
-    "run_number": "54",
+    "run_id": "24201611231",
+    "run_number": "55",
     "attempt": "1",
-    "url": "https://github.com/syslabcom/activity-recognition/actions/runs/24198904502",
-    "sha": "ecf62a0118e412af0bd2733961f444e3de320ba7"
+    "url": "https://github.com/syslabcom/activity-recognition/actions/runs/24201611231",
+    "sha": "1e07bb4ba3af8a08520069ab7655ab8021928dcc"
   }
 }

@@ -1,0 +1,32 @@
+{
+  "version": 1,
+  "status": "success",
+  "generated_at": "2026-04-09T16:35:17Z",
+  "source_issue": {
+    "id": 2150688665,
+    "number": 360,
+    "title": "harmonize or add missing CSS classes in markup",
+    "html_url": "https://github.com/plone/plone.app.layout/issues/360",
+    "repository_full_name": "plone/plone.app.layout",
+    "updated_at": "2024-02-23T09:21:38Z",
+    "labels": [
+      "01 type: bug",
+      "02 type: regression",
+      "41 lvl: easy"
+    ],
+    "comments": 0
+  },
+  "ai": {
+    "provider": "openai",
+    "model": "gpt-4o-mini"
+  },
+  "summary_markdown": "## What this issue is about\nThis issue focuses on improving the CSS structure in the Plone app layout. Currently, some templates lack meaningful CSS classes, making it challenging to style or hide elements like the document byline without adding excessive CSS across all templates.\n\n## What needs to be done\nWe need to harmonize existing CSS classes and add any missing ones to improve styling options. For instance, a specific class for the document byline (`.document-byline`) would aid developers in easily targeting and styling this element.\n\n## Helpful background\nThe current setup heavily relies on Bootstrap formatting classes, which limits flexibility. By introducing more descriptive classes, we can empower developers to apply CSS more efficiently and avoid unnecessary template modifications. Please note that the discussion in this issue is somewhat open-ended and lacks detailed requirements, so there's room for different approaches.\n\n## Good first steps\n1. Review the existing templates to identify where meaningful CSS classes are missing.\n2. Start by proposing a list of new classes to introduce, including the document byline class.\n3. Test any changes thoroughly to ensure they don't affect existing functionality.\n4. Document your updates, and be ready to gather feedback from other contributors for refinement.",
+  "workflow": {
+    "repository": "syslabcom/activity-recognition",
+    "run_id": "24201611231",
+    "run_number": "55",
+    "attempt": "1",
+    "url": "https://github.com/syslabcom/activity-recognition/actions/runs/24201611231",
+    "sha": "1e07bb4ba3af8a08520069ab7655ab8021928dcc"
+  }
+}

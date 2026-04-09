@@ -1,7 +1,7 @@
 {
   "version": 1,
   "status": "success",
-  "generated_at": "2026-04-09T15:34:53Z",
+  "generated_at": "2026-04-09T16:33:16Z",
   "organization": "plone",
   "state": "open",
   "slug": "lvl-easy",
@@ -1307,7 +1307,15 @@
         "01 type: bug",
         "14 prio: low",
         "41 lvl: easy"
-      ]
+      ],
+      "contributor_summary": {
+        "status": "available",
+        "generated_at": "2026-04-09T16:33:32Z",
+        "source_issue_updated_at": "2024-11-14T16:34:13Z",
+        "model": "gpt-4o-mini",
+        "summary_markdown": "```markdown\n## What this issue is about\nThis issue addresses a localization bug in Plone, where the column titles in tabular listings (like \"Title\" or \"Image\") are not being fully translated. This occurs because the method `plone.app.vocabularies.metadatafields.get_field_label` doesn't cover all catalog metadata fields.\n\n## What needs to be done\nTo fix this issue, we suggest using the `MetaDataFieldsVocabularyFactory` as a fallback to ensure that all field labels are translated properly. \n\n## Helpful background\nLocalization (or i18n) allows software to present text in different languages. The method mentioned in the issue currently fails to provide complete translations for some metadata fields, leading to inconsistent user experiences. \n\n## Good first steps\n1. Review the current implementation in `plone/app/contenttypes/browser/folder.py`.\n2. Implement the suggested change by replacing the existing method with `MetaDataFieldsVocabularyFactory`.\n3. Test the translation of various field labels to ensure they are displayed correctly.\n4. Consider writing documentation for the changes and submit a pull request for review.\n\nFeel free to ask questions if anything is unclear! \n```",
+        "path": "data/issues/summaries/plone/plone.app.contenttypes/646.json"
+      }
     },
     {
       "id": 166988962,
@@ -1331,7 +1339,15 @@
         "14 prio: low",
         "21 status: confirmed",
         "41 lvl: easy"
-      ]
+      ],
+      "contributor_summary": {
+        "status": "available",
+        "generated_at": "2026-04-09T16:33:59Z",
+        "source_issue_updated_at": "2024-11-10T13:26:24Z",
+        "model": "gpt-4o-mini",
+        "summary_markdown": "## What this issue is about\nThis issue identifies a performance concern in Plone. When using the `title_or_id` method on catalog results (known as \"brains\"), it triggers a retrieval of the real underlying object, which is not efficient.\n\n## What needs to be done\nThe goal is to optimize the `title_or_id` functionality in `plone.app.contentlisting.catalog.CatalogContentListingObject` to avoid unnecessary object retrieval. Suggested approaches include modifying the current implementation to return title and ID directly from the brain, rather than calling `getObject`.\n\n## Helpful background\nThe `title_or_id` method is currently not included in the catalog metadata, which leads to the performance issue. There are multiple discussions on potentially adding this method directly to the `CatalogContentListingObject` class, but consensus on the exact implementation is still unclear.\n\n## Good first steps\n1. Review the `CatalogContentListingObject` in the Plone codebase, focusing on the relevant section: [catalog.py](https://github.com/plone/plone.app.contentlisting/blob/master/plone/app/contentlisting/catalog.py).\n2. Experiment with the proposed code modifications noted in the comments, particularly by adding `title_or_id` directly and ensuring it retrieves data efficiently.\n3. Test any changes thoroughly, and consider documenting your approach in a follow-up comment.\n4. Coordinate with other contributors in the issue discussion for review and feedback on your work.",
+        "path": "data/issues/summaries/plone/Products.CMFPlone/1688.json"
+      }
     },
     {
       "id": 169744701,
@@ -1356,7 +1372,15 @@
         "02 type: regression",
         "05 type: question",
         "41 lvl: easy"
-      ]
+      ],
+      "contributor_summary": {
+        "status": "available",
+        "generated_at": "2026-04-09T16:34:05Z",
+        "source_issue_updated_at": "2024-11-10T08:35:16Z",
+        "model": "gpt-4o-mini",
+        "summary_markdown": "```markdown\n## What this issue is about\nThis issue aims to enhance the Autotoc tabs in Plone by adding a `required` boolean option. The goal is to achieve feature parity with Plone 4.x, which indicates required fields with an icon in the tabs.\n\n## What needs to be done\nWe need to implement an option that visually reflects required fields in the tabs. This may involve copying existing classes from level elements to the tabs (`.autotoc-nav a`) and updating a CSS selector accordingly. There is some ambiguity about whether to keep the `required` naming or to consider alternatives like `classLevelCopyOrigin`.\n\n## Helpful background\nThe discussion hasn't reached a definitive conclusion on the naming convention for this feature, which reflects ongoing considerations among contributors. Familiarity with CSS and Plone’s class structures would be helpful.\n\n## Good first steps\n1. Review the current implementation of Autotoc tabs and how required fields are displayed in Plone 4.x.\n2. Experiment with copying classes to see how they affect the styling of tabs.\n3. Join the discussion in the comments to share your thoughts on naming and design decisions.\n4. Remember to test your changes and document them adequately for future contributors.\n```",
+        "path": "data/issues/summaries/plone/mockup/695.json"
+      }
     },
     {
       "id": 1453147188,
@@ -1379,7 +1403,15 @@
         "04 type: enhancement",
         "41 lvl: easy",
         "99 tag: UX"
-      ]
+      ],
+      "contributor_summary": {
+        "status": "available",
+        "generated_at": "2026-04-09T16:34:10Z",
+        "source_issue_updated_at": "2024-11-09T21:20:24Z",
+        "model": "gpt-4o-mini",
+        "summary_markdown": "```markdown\n## What this issue is about\nThis issue addresses the difficulty of editing settings on mobile devices in the Plone Volto interface. The current mobile setup makes it hard to open and close the settings sidebar, which can impede basic editing tasks.\n\n## What needs to be done\nWe aim to improve the mobile user experience by implementing a more intuitive toggle button for the settings sidebar in the toolbar. Suggestions include positioning a cog icon at the bottom of the toolbar and ensuring easy access to close settings. We also need to consider how to position undo, cut, and paste options in relation to the settings button.\n\n## Helpful background\nThe discussion mentions that while improving mobile editing isn't a priority for the upcoming 6.0 release, small changes can significantly enhance usability. Several alternatives for implementing the toggle button and organizing toolbar functions have been suggested but remain unresolved.\n\n## Good first steps\n1. Familiarize yourself with the current settings sidebar functionality on mobile.\n2. Review the proposed changes to the toolbar layout, considering both usability and consistency.\n3. Explore the full [Quanta design](https://www.figma.com/file/YpaRSKjFcFaAkVYnTSVGuz/Volto-UI-%E2%80%93-Quanta?node-id=1786%3A286) for context on design decisions.\n4. Start drafting modifications for the toggle button based on the ideas shared in the issue discussion.\n```",
+        "path": "data/issues/summaries/plone/volto/3910.json"
+      }
     },
     {
       "id": 377794044,
@@ -1399,7 +1431,15 @@
       "assignees": [],
       "labels": [
         "41 lvl: easy"
-      ]
+      ],
+      "contributor_summary": {
+        "status": "available",
+        "generated_at": "2026-04-09T16:34:17Z",
+        "source_issue_updated_at": "2024-11-09T07:30:37Z",
+        "model": "gpt-4o-mini",
+        "summary_markdown": "```markdown\n## What this issue is about\nThis issue addresses a problem with the Live Search feature where pressing the Enter key does not perform a search as expected. Instead, it attempts to load a non-existent search page, resulting in a 404 error.\n\n## What needs to be done\nThe goal is to modify the Live Search input behavior so that when the Enter key is pressed, it correctly triggers a live search instead of submitting the form and causing a page reload. You'll likely need to catch the Enter key event and prevent its default action.\n\n## Helpful background\nYou can test the current behavior on the [demo page](http://plone.github.io/mockup/pat/livesearch/search). Note that the initial issue is a few years old, and previous comments indicated confusion about the exact page where it occurs. It's helpful to familiarize yourself with how the Live Search integrates into the broader Plone framework.\n\n## Good first steps\n1. Visit the demo page to reproduce the issue.\n2. Look into the JavaScript responsible for handling the search input.\n3. Plan how to prevent the default form submission on the Enter key.\n4. Once you've made changes, run tests to ensure the search works as intended.\n5. Be ready to document your work and participate in review discussions.\n\nFeel free to ask questions if anything is unclear!\n```",
+        "path": "data/issues/summaries/plone/mockup/878.json"
+      }
     },
     {
       "id": 2346073601,
@@ -1422,7 +1462,15 @@
         "14 prio: low",
         "33 needs: docs",
         "41 lvl: easy"
-      ]
+      ],
+      "contributor_summary": {
+        "status": "available",
+        "generated_at": "2026-04-09T16:34:57Z",
+        "source_issue_updated_at": "2024-07-19T08:48:22Z",
+        "model": "gpt-4o-mini",
+        "summary_markdown": "```markdown\n## What this issue is about\nThis issue addresses a bug in the Plone Volto framework. It involves ensuring that the default profile automatically includes all necessary dependencies to create a more straightforward installation process. Currently, developers need to manually list multiple dependencies, which can result in issues and unclear installation orders.\n\n## What needs to be done\nThe default profile should include a dependency on `profile-Products.CMFPlone:dependencies`, allowing other required profiles to be pulled in automatically. This should streamline installations and reduce the need for developers to manage a long list of dependencies.\n\n## Helpful background\nThe discussion points to challenges when using custom profiles with `plone.distribution`, which complicates the dependency graph. Consequently, unclear installation orders may leave some features or content types missing. Clarifying and documenting this process will help users better understand how to set up their projects.\n\n## Good first steps\n1. Review the current dependencies in the default profile.\n2. Update the profile to include `profile-Products.CMFPlone:dependencies`.\n3. Consider writing or improving documentation to guide users through using profiles effectively.\n4. Test the installation process to ensure all dependencies load correctly.\n5. Engage with others on the issue to clarify doubts or share insights on implementation.\n```",
+        "path": "data/issues/summaries/plone/plone.volto/149.json"
+      }
     },
     {
       "id": 2150688665,
@@ -1444,7 +1492,15 @@
         "01 type: bug",
         "02 type: regression",
         "41 lvl: easy"
-      ]
+      ],
+      "contributor_summary": {
+        "status": "available",
+        "generated_at": "2026-04-09T16:35:17Z",
+        "source_issue_updated_at": "2024-02-23T09:21:38Z",
+        "model": "gpt-4o-mini",
+        "summary_markdown": "## What this issue is about\nThis issue focuses on improving the CSS structure in the Plone app layout. Currently, some templates lack meaningful CSS classes, making it challenging to style or hide elements like the document byline without adding excessive CSS across all templates.\n\n## What needs to be done\nWe need to harmonize existing CSS classes and add any missing ones to improve styling options. For instance, a specific class for the document byline (`.document-byline`) would aid developers in easily targeting and styling this element.\n\n## Helpful background\nThe current setup heavily relies on Bootstrap formatting classes, which limits flexibility. By introducing more descriptive classes, we can empower developers to apply CSS more efficiently and avoid unnecessary template modifications. Please note that the discussion in this issue is somewhat open-ended and lacks detailed requirements, so there's room for different approaches.\n\n## Good first steps\n1. Review the existing templates to identify where meaningful CSS classes are missing.\n2. Start by proposing a list of new classes to introduce, including the document byline class.\n3. Test any changes thoroughly to ensure they don't affect existing functionality.\n4. Document your updates, and be ready to gather feedback from other contributors for refinement.",
+        "path": "data/issues/summaries/plone/plone.app.layout/360.json"
+      }
     },
     {
       "id": 1987878919,
@@ -1468,7 +1524,15 @@
         "12 prio: high",
         "31 needs: help",
         "41 lvl: easy"
-      ]
+      ],
+      "contributor_summary": {
+        "status": "available",
+        "generated_at": "2026-04-09T16:35:22Z",
+        "source_issue_updated_at": "2024-02-16T17:01:51Z",
+        "model": "gpt-4o-mini",
+        "summary_markdown": "## What this issue is about\nThis issue is about creating a new view for the Foundation Sponsor content type within the Plone platform. The aim is to ensure that only certain fields are visible to users who are not logged in.\n\n## What needs to be done\nYou will need to implement a view that displays specific publicly accessible fields for the Foundation Sponsor type. These fields include the title, logo, sponsor type, organization size, Plone provider status, website, Twitter account, and public notes. Fields that should remain hidden from non-logged-in users must also be addressed.\n\n## Helpful background\nCurrently, some fields are unnecessary for public view and could confuse users. This enhancement improves user experience while maintaining important privacy controls. Please review which fields should be included or excluded based on the initial description and consider any necessary adjustments.\n\n## Good first steps\n1. **Familiarize yourself** with the Foundation Sponsor content type to understand its structure and current view.\n2. **Review existing views** in similar content types for guidance on how to implement this enhancement.\n3. **Set up a local development environment** to test your changes.\n4. **Consider writing tests** to ensure the visibility of fields behaves as expected before submitting your work for review.\n\nFeel free to ask questions if anything is unclear!",
+        "path": "data/issues/summaries/plone/plone.org/149.json"
+      }
     },
     {
       "id": 1953693354,
@@ -1490,7 +1554,15 @@
         "04 type: enhancement",
         "41 lvl: easy",
         "61 sites: visual/theming"
-      ]
+      ],
+      "contributor_summary": {
+        "status": "available",
+        "generated_at": "2026-04-09T16:35:28Z",
+        "source_issue_updated_at": "2024-02-16T16:57:47Z",
+        "model": "gpt-4o-mini",
+        "summary_markdown": "```markdown\n## What this issue is about\nThis issue aims to enhance the layout of radio button groups in forms. Currently, these buttons are stacked vertically, which looks unappealing and wastes space. The goal is to align them horizontally on a single line.\n\n## What needs to be done\nThe main task is to modify the CSS for the radio button group. A proposed solution is to use the following CSS rule:\n```css\n.radio-group {\n  display: inline-flex;\n}\n```\nHowever, discussions suggest that more flexibility could be helpful, such as considering longer text options that might look awkward when displayed inline.\n\n## Helpful background\nThere is ongoing discussion about the best approach to layout. Suggestions include allowing editors to choose between vertical and horizontal options, or using automatic rules based on the text length of the buttons. Some potential approaches may require additional HTML changes, not just CSS adjustments.\n\n## Good first steps\n1. Review the current form implementation [here](https://plone.org/foundation/plone-org-feeback-form).\n2. Experiment with the proposed CSS and see if it meets the alignment needs.\n3. Consider contributing a more flexible solution that allows for both layout options based on content length.\n4. Make sure to test your changes to ensure they display well across different use cases.\n```",
+        "path": "data/issues/summaries/plone/plone.org/144.json"
+      }
     },
     {
       "id": 1945839976,
@@ -1512,7 +1584,15 @@
         "04 type: enhancement",
         "13 prio: normal",
         "41 lvl: easy"
-      ]
+      ],
+      "contributor_summary": {
+        "status": "available",
+        "generated_at": "2026-04-09T16:35:33Z",
+        "source_issue_updated_at": "2024-02-16T16:57:31Z",
+        "model": "gpt-4o-mini",
+        "summary_markdown": "## What this issue is about\nThis issue proposes to enhance the Foundation Member content type by adding new fields for social media profiles. Currently, there are fields for Twitter, GitHub, and LinkedIn, and the suggestion is to include fields for Mastodon and a personal website.\n\n## What needs to be done\n- Add new fields for Mastodon and personal website in the Foundation Member content type.\n- Ensure that the new fields are properly integrated with existing functionality.\n\n## Helpful background\nThe Foundation Member content type is used within the Plone site to manage member information. Adding these fields will allow members to share their presence on additional platforms. No extensive documentation or guidelines are provided within the ticket, which means some exploration might be necessary.\n\n## Good first steps\n1. Familiarize yourself with the Foundation Member content type structure.\n2. Review how social media fields are currently implemented.\n3. Begin by drafting a plan for how to add the new fields.\n4. Reach out to the community if you have questions or need guidance.\n\nFeel free to ask for help as you go! This is a great way to contribute, especially if you're new to Plone.",
+        "path": "data/issues/summaries/plone/plone.org/143.json"
+      }
     },
     {
       "id": 394393792,
@@ -2296,10 +2376,10 @@
   "message": null,
   "workflow": {
     "repository": "syslabcom/activity-recognition",
-    "run_id": "24198904502",
-    "run_number": "54",
+    "run_id": "24201611231",
+    "run_number": "55",
     "attempt": "1",
-    "url": "https://github.com/syslabcom/activity-recognition/actions/runs/24198904502",
-    "sha": "ecf62a0118e412af0bd2733961f444e3de320ba7"
+    "url": "https://github.com/syslabcom/activity-recognition/actions/runs/24201611231",
+    "sha": "1e07bb4ba3af8a08520069ab7655ab8021928dcc"
   }
 }

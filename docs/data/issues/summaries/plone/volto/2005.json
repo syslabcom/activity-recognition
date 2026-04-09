@@ -1,0 +1,32 @@
+{
+  "version": 1,
+  "status": "success",
+  "generated_at": "2026-04-09T16:34:50Z",
+  "source_issue": {
+    "id": 747283813,
+    "number": 2005,
+    "title": "Document razzle.extend.js",
+    "html_url": "https://github.com/plone/volto/issues/2005",
+    "repository_full_name": "plone/volto",
+    "updated_at": "2024-07-28T09:58:49Z",
+    "labels": [
+      "01 type: bug",
+      "33 needs: docs",
+      "42 lvl: moderate"
+    ],
+    "comments": 1
+  },
+  "ai": {
+    "provider": "openai",
+    "model": "gpt-4o-mini"
+  },
+  "summary_markdown": "## What this issue is about\nThis issue involves documenting `razzle.extend.js`, a hidden feature in Volto addons. Documentation is important, particularly following a recent upgrade to Razzle, to ensure users understand how to utilize this feature effectively.\n\n## What needs to be done\nWe need comprehensive documentation for `razzle.extend.js`. This should cover its intended use cases and any specific details that users should know. There are no clear guidelines on what exactly should be included, so further clarification may be necessary.\n\n## Helpful background\n`razzle.extend.js` is part of Volto and facilitates certain functionalities in the platform. The lack of documentation surrounding this feature suggests that many users might be unaware of its benefits or how to implement it. The recent upgrade adds urgency to this task, making solid documentation even more critical.\n\n## Good first steps\n1. Review the existing comments and explore the functionality of `razzle.extend.js` within the Volto context.\n2. Engage with the community, possibly reaching out to others familiar with this feature for insights and details.\n3. Start drafting the documentation, focusing on clarity and accessibility for new users. Make sure to ask for feedback and iteratively refine your work. Discuss any uncertainties or gaps in information in the comments.",
+  "workflow": {
+    "repository": "syslabcom/activity-recognition",
+    "run_id": "24201611231",
+    "run_number": "55",
+    "attempt": "1",
+    "url": "https://github.com/syslabcom/activity-recognition/actions/runs/24201611231",
+    "sha": "1e07bb4ba3af8a08520069ab7655ab8021928dcc"
+  }
+}
