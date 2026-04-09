@@ -1,0 +1,34 @@
+{
+  "version": 1,
+  "status": "success",
+  "generated_at": "2026-04-09T15:35:50Z",
+  "source_issue": {
+    "id": 194520249,
+    "number": 735,
+    "title": "Update/Include LDAP ",
+    "html_url": "https://github.com/plone/documentation/issues/735",
+    "repository_full_name": "plone/documentation",
+    "updated_at": "2024-11-24T07:29:55Z",
+    "labels": [
+      "04 type: enhancement",
+      "31 needs: help",
+      "33 needs: docs",
+      "42 lvl: moderate",
+      "99 tag: Plone 6.x"
+    ],
+    "comments": 0
+  },
+  "ai": {
+    "provider": "openai",
+    "model": "gpt-4o-mini"
+  },
+  "summary_markdown": "## What this issue is about\nThis issue focuses on updating or including information about LDAP (Lightweight Directory Access Protocol) in the Plone documentation. Currently, references to `plone.app.ldap` appear throughout different documentation files, but there isn't a clear explanation of how to effectively connect a Plone site with LDAP.\n\n## What needs to be done\nWe need to decide whether to replace `plone.app.ldap` with `pas.plugins.ldap`. Additionally, we will need to address how this change affects the `manage/deploying/performance/ramcache.rst` documentation.\n\n## Helpful background\nLDAP is used for user authentication and directory services. The current documents reference LDAP but lack a straightforward tutorial or guide on connecting Plone to LDAP. The conversation about replacements and rewriting parts of the documentation has some uncertainty, with questions about best practices still open.\n\n## Good first steps\n1. Familiarize yourself with both `plone.app.ldap` and `pas.plugins.ldap`.\n2. Review the documentation files that mention these plugins, especially `manage/deploying/performance/ramcache.rst`.\n3. Join the discussion about the proposed changes—your insights are welcome!\n\nEach contribution will help clarify how to guide users in integrating LDAP with their Plone sites.",
+  "workflow": {
+    "repository": "syslabcom/activity-recognition",
+    "run_id": "24198904502",
+    "run_number": "54",
+    "attempt": "1",
+    "url": "https://github.com/syslabcom/activity-recognition/actions/runs/24198904502",
+    "sha": "ecf62a0118e412af0bd2733961f444e3de320ba7"
+  }
+}

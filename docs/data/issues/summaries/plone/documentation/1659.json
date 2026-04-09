@@ -1,0 +1,36 @@
+{
+  "version": 1,
+  "status": "success",
+  "generated_at": "2026-04-09T15:36:33Z",
+  "source_issue": {
+    "id": 2270775429,
+    "number": 1659,
+    "title": "Upgrade to 6.1: `z3c.form` and `plone.app.z3cform`",
+    "html_url": "https://github.com/plone/documentation/issues/1659",
+    "repository_full_name": "plone/documentation",
+    "updated_at": "2024-11-24T05:53:28Z",
+    "labels": [
+      "12 prio: high",
+      "21 status: confirmed",
+      "33 needs: docs",
+      "42 lvl: moderate",
+      "52 target: minor",
+      "99 tag: Plone 6.x",
+      "99 tag: classic-ui"
+    ],
+    "comments": 0
+  },
+  "ai": {
+    "provider": "openai",
+    "model": "gpt-4o-mini"
+  },
+  "summary_markdown": "## What this issue is about\nThis issue focuses on upgrading the documentation for `z3c.form` and `plone.app.z3cform` in the context of Plone version 6.1. The upgrade involves addressing changes that may affect addon developers, particularly regarding deprecated imports and the introduction of new widget templates.\n\n## What needs to be done\nWe need to update the documentation to reflect the recent changes in `z3c.form` and `plone.app.z3cform`. This includes explaining any deprecated imports and providing guidance on the new widget templates. \n\n## Helpful background\nThe `z3c.form` package is a form library used in Plone, while `plone.app.z3cform` integrates it into the Plone environment. These changes are important for addon developers to ensure compatibility with the latest version of Plone. The conversation in previous issues suggests some uncertainty about specific details and approaches, which you might need to clarify.\n\n## Good first steps\n1. **Review Existing Documentation:** Familiarize yourself with the current documentation related to `z3c.form` and `plone.app.z3cform`.\n2. **Explore Related Issues:** Check out related issues for additional context and ongoing discussions: [#1113](https://github.com/plone/documentation/issues/1113) and [#893](https://github.com/plone/documentation/issues/893).\n3. **Join the Discussion:** If you're unsure about any specifics, consider engaging with the contributors in the GitHub comments or asking questions. \n4. **Documentation Drafting:** Start drafting changes or improvements based on your findings.",
+  "workflow": {
+    "repository": "syslabcom/activity-recognition",
+    "run_id": "24198904502",
+    "run_number": "54",
+    "attempt": "1",
+    "url": "https://github.com/syslabcom/activity-recognition/actions/runs/24198904502",
+    "sha": "ecf62a0118e412af0bd2733961f444e3de320ba7"
+  }
+}

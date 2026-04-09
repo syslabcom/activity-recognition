@@ -1,7 +1,7 @@
 {
   "version": 1,
   "status": "success",
-  "generated_at": "2026-04-09T14:39:29Z",
+  "generated_at": "2026-04-09T15:34:53Z",
   "organization": "plone",
   "state": "open",
   "slug": "lvl-easy",
@@ -1277,7 +1277,15 @@
       "labels": [
         "01 type: bug",
         "41 lvl: easy"
-      ]
+      ],
+      "contributor_summary": {
+        "status": "available",
+        "generated_at": "2026-04-09T15:35:13Z",
+        "source_issue_updated_at": "2024-12-15T08:05:00Z",
+        "model": "gpt-4o-mini",
+        "summary_markdown": "```markdown\n## What this issue is about\nThis issue reports a bug with the \"query\" widget in Plone's Volto framework. Specifically, if the querystring widget is the first widget in a form, it breaks due to a focus issue. This happens because there is no `this.node` defined in the widget class.\n\n## What needs to be done\nThe goal is to fix the behavior of the querystring widget when it is the first widget in a form. You may need to ensure that the focus functionality works correctly without breaking the widget.\n\n## Helpful background\nThe problem is linked to how first widgets are focused and the lack of a defined node in the widget's code. Additionally, there is a related issue with the QueryWidget, which might also need similar handling. Check the provided code lines for context: \n- [QuerystringWidget](https://github.com/plone/volto/blob/388932a043cdb7cd5db30e93d58c0fe9217b93da/src/components/manage/Widgets/QuerystringWidget.jsx#L135)\n- [QueryWidget](https://github.com/plone/volto/blob/e8caa4240f3d45cf6f3b0404c5ca56c87d08ca9f/src/components/manage/Widgets/QueryWidget.jsx#L103)\n\n## Good first steps\n1. Review the code in both widgets to understand the current implementation.\n2. Experiment with fixing the focus issue in the querystring widget.\n3. Test your changes to make sure the form works as expected.\n4. Consider adding documentation for future contributors about this focus behavior.\n```",
+        "path": "data/issues/summaries/plone/volto/2281.json"
+      }
     },
     {
       "id": 1233622747,
@@ -2288,10 +2296,10 @@
   "message": null,
   "workflow": {
     "repository": "syslabcom/activity-recognition",
-    "run_id": "24196205718",
-    "run_number": "53",
+    "run_id": "24198904502",
+    "run_number": "54",
     "attempt": "1",
-    "url": "https://github.com/syslabcom/activity-recognition/actions/runs/24196205718",
-    "sha": "4afa5437e3369368f43054c82fcd1ba9bed2967b"
+    "url": "https://github.com/syslabcom/activity-recognition/actions/runs/24198904502",
+    "sha": "ecf62a0118e412af0bd2733961f444e3de320ba7"
   }
 }

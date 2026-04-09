@@ -1,0 +1,33 @@
+{
+  "version": 1,
+  "status": "success",
+  "generated_at": "2026-04-09T15:35:56Z",
+  "source_issue": {
+    "id": 227368117,
+    "number": 871,
+    "title": "Document Events for Login/Logout",
+    "html_url": "https://github.com/plone/documentation/issues/871",
+    "repository_full_name": "plone/documentation",
+    "updated_at": "2024-11-24T07:29:29Z",
+    "labels": [
+      "31 needs: help",
+      "33 needs: docs",
+      "42 lvl: moderate",
+      "99 tag: Plone 6.x"
+    ],
+    "comments": 2
+  },
+  "ai": {
+    "provider": "openai",
+    "model": "gpt-4o-mini"
+  },
+  "summary_markdown": "## What this issue is about\nThis issue addresses the need to document the event types related to user login and logout in the Plone documentation. Currently, these events are not included in the specified documentation link.\n\n## What needs to be done\n- Add documentation for login and logout events to the Plone documentation.\n- Include guidance on the difference between handling event interfaces and event classes, as some discussions have highlighted this point.\n\n## Helpful background\nThe current documentation lacks information on how to handle login and logout events within Plone. Best practices suggest using event interfaces rather than event classes, which is a necessary clarification for users. This information has been discussed on platforms like Stack Overflow, indicating ongoing interest and need.\n\n## Good first steps\n1. Review the existing documentation found [here](https://5.docs.plone.org/develop/addons/components/events.html).\n2. Familiarize yourself with event interfaces vs. event classes.\n3. Draft a section that includes both the new event documentation and the best practices mentioned.\n4. Coordinate with others if necessary to ensure alignment with previous discussions and expectations, and prepare the changes for review.",
+  "workflow": {
+    "repository": "syslabcom/activity-recognition",
+    "run_id": "24198904502",
+    "run_number": "54",
+    "attempt": "1",
+    "url": "https://github.com/syslabcom/activity-recognition/actions/runs/24198904502",
+    "sha": "ecf62a0118e412af0bd2733961f444e3de320ba7"
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "version": 1,
+  "status": "success",
+  "generated_at": "2026-04-09T15:35:37Z",
+  "source_issue": {
+    "id": 449977232,
+    "number": 1083,
+    "title": "Inconsistent case suggests wrong view name in contentlisting docs",
+    "html_url": "https://github.com/plone/documentation/issues/1083",
+    "repository_full_name": "plone/documentation",
+    "updated_at": "2024-11-24T07:52:13Z",
+    "labels": [
+      "33 needs: docs",
+      "34 needs: tests",
+      "42 lvl: moderate",
+      "99 tag: Plone 6.x"
+    ],
+    "comments": 5
+  },
+  "ai": {
+    "provider": "openai",
+    "model": "gpt-4o-mini"
+  },
+  "summary_markdown": "## What this issue is about\nThis issue addresses a bug in the documentation for `plone.app.contentlisting`. The documentation incorrectly uses \"contentListing\" with a capital \"L\", which can confuse users trying to access the correct view name, `@@contentlisting` (with a lowercase \"l\"). This discrepancy can lead to errors when upgrading or using various features.\n\n## What needs to be done\nThe documentation needs to be updated to consistently use the correct casing of `@@contentlisting`. This will prevent user confusion and improve clarity regarding how to retrieve content listings.\n\n## Helpful background\nThe current documentation is pulled from an external source, so changes should be made there first. Users have encountered issues due to this loose naming convention, and fixing it will help prevent similar problems in the future. Discussions hint that there are multiple approaches to updating the documentation.\n\n## Good first steps\n1. **Locate and Edit**: Find the README for `plone.app.contentlisting` [here](https://github.com/plone/plone.app.contentlisting/edit/master/README.rst).\n2. **Make Changes**: Update all instances of \"contentListing\" to \"contentlisting\".\n3. **Submit a Pull Request**: After making your updates, submit a pull request for review. \n4. **Coordinate with Maintainers**: Once your PR is merged, inform the maintainers to rebuild the documentation for users to see your changes. \n\nFeel free to reach out if anything is unclear!",
+  "workflow": {
+    "repository": "syslabcom/activity-recognition",
+    "run_id": "24198904502",
+    "run_number": "54",
+    "attempt": "1",
+    "url": "https://github.com/syslabcom/activity-recognition/actions/runs/24198904502",
+    "sha": "ecf62a0118e412af0bd2733961f444e3de320ba7"
+  }
+}

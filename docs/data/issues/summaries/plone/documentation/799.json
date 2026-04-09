@@ -1,0 +1,33 @@
+{
+  "version": 1,
+  "status": "success",
+  "generated_at": "2026-04-09T15:36:01Z",
+  "source_issue": {
+    "id": 213505113,
+    "number": 799,
+    "title": "Troubleshoot: Remove persistent utilties with wildcard.fixpersistentutilities",
+    "html_url": "https://github.com/plone/documentation/issues/799",
+    "repository_full_name": "plone/documentation",
+    "updated_at": "2024-11-24T07:21:40Z",
+    "labels": [
+      "31 needs: help",
+      "33 needs: docs",
+      "42 lvl: moderate",
+      "99 tag: Plone 6.x"
+    ],
+    "comments": 0
+  },
+  "ai": {
+    "provider": "openai",
+    "model": "gpt-4o-mini"
+  },
+  "summary_markdown": "## What this issue is about\nThis issue focuses on improving documentation for the `wildcard.fixpersistentutilities` package. Many users have encountered problems with persistent utilities in Plone but may not know that this tool exists or how to use it effectively.\n\n## What needs to be done\nWe need to create comprehensive documentation detailing how to use `wildcard.fixpersistentutilities` on the [Plone troubleshooting page](https://5.docs.plone.org/manage/troubleshooting/manual-remove-utility.html). This should include practical examples and step-by-step instructions to help users resolve their issues.\n\n## Helpful background\nPersistent utilities are components in Plone that maintain state across sessions. Mismanagement of these can lead to problems in your Plone site. The `wildcard.fixpersistentutilities` package provides tools to clean up these utilities, but current documentation is limited, leading to confusion and unresolved issues.\n\n## Good first steps\n1. Review the current documentation on the troubleshooting page and the `wildcard.fixpersistentutilities` project [here](https://pypi.org/project/wildcard.fixpersistentutilities/).\n2. Identify key areas where users might struggle and think of relatable examples or scenarios.\n3. Consider checking community forums for user experiences and questions to include in your documentation draft. \n4. Reach out for feedback on your draft from other contributors or Plone users to ensure clarity and accuracy. \n\nFeel free to ask any questions if you're unsure about specific details!",
+  "workflow": {
+    "repository": "syslabcom/activity-recognition",
+    "run_id": "24198904502",
+    "run_number": "54",
+    "attempt": "1",
+    "url": "https://github.com/syslabcom/activity-recognition/actions/runs/24198904502",
+    "sha": "ecf62a0118e412af0bd2733961f444e3de320ba7"
+  }
+}

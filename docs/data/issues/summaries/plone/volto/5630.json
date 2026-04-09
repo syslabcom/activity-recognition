@@ -1,0 +1,31 @@
+{
+  "version": 1,
+  "status": "success",
+  "generated_at": "2026-04-09T15:35:05Z",
+  "source_issue": {
+    "id": 2083336469,
+    "number": 5630,
+    "title": "Unify the use of the optional `preview_image_link` across Volto",
+    "html_url": "https://github.com/plone/volto/issues/5630",
+    "repository_full_name": "plone/volto",
+    "updated_at": "2024-12-17T07:50:33Z",
+    "labels": [
+      "04 type: enhancement",
+      "42 lvl: moderate"
+    ],
+    "comments": 6
+  },
+  "ai": {
+    "provider": "openai",
+    "model": "gpt-4o-mini"
+  },
+  "summary_markdown": "## What this issue is about\nThis issue aims to unify the use of the `preview_image_link` field in the Volto framework. Currently, Volto uses the `preview_image` field for basic image handling, which can lead to duplication. The goal is to ensure that `preview_image_link`, which allows for reusable images through a pointer (RelationChoice), is fully supported throughout the codebase.\n\n## What needs to be done\nWe need to search the Volto codebase for all usages of `preview_image` and ensure they support `preview_image_link`. The expectation is to integrate this support seamlessly, avoiding hardcoded instances of `preview_image`.\n\n## Helpful background\nDiscussion indicates that while `preview_image_link` functionality exists, it's not enabled by default. Suggestions include providing this feature for new sites without affecting existing ones, as a migration may be complex. Clarity on implementation and support options is still needed.\n\n## Good first steps\n1. Review the current implementation of both `preview_image` and `preview_image_link`.\n2. Identify instances in the code where `preview_image` is used.\n3. Test the existing functionality of `preview_image_link` and document any findings or gaps.\n4. Engage with team members for insights on documentation and potential impacts on users.",
+  "workflow": {
+    "repository": "syslabcom/activity-recognition",
+    "run_id": "24198904502",
+    "run_number": "54",
+    "attempt": "1",
+    "url": "https://github.com/syslabcom/activity-recognition/actions/runs/24198904502",
+    "sha": "ecf62a0118e412af0bd2733961f444e3de320ba7"
+  }
+}

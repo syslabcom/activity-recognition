@@ -1,0 +1,33 @@
+{
+  "version": 1,
+  "status": "success",
+  "generated_at": "2026-04-09T15:36:27Z",
+  "source_issue": {
+    "id": 178618916,
+    "number": 700,
+    "title": "add a section on distributed server environment",
+    "html_url": "https://github.com/plone/documentation/issues/700",
+    "repository_full_name": "plone/documentation",
+    "updated_at": "2024-11-24T06:37:56Z",
+    "labels": [
+      "31 needs: help",
+      "33 needs: docs",
+      "42 lvl: moderate",
+      "99 tag: Plone 6.x"
+    ],
+    "comments": 2
+  },
+  "ai": {
+    "provider": "openai",
+    "model": "gpt-4o-mini"
+  },
+  "summary_markdown": "## What this issue is about\nThis issue aims to create a new documentation section focusing on setting up Plone in a distributed server environment. This includes configurations like Plone ZEO clients and servers on different machines, as well as using RelStorage with PostgreSQL.\n\n## What needs to be done\nWe need to draft a clear and informative guide that covers the following:\n- Setting up Plone ZEO clients and servers in a distributed setup\n- Options for placing a ZEO server on Windows and clients in other environments\n- Using an existing PostgreSQL database on Windows as a storage backend  \nKeep in mind that the exact placement and setup details might require verification and updating based on Plone's latest practices.\n\n## Helpful background\nThis section of the documentation is intended for users deploying Plone in more complex architectures. It’s particularly relevant for those configuring multiple servers or integrating with existing database solutions.\n\n## Good first steps\n1. Review the existing [Plone deployment documentation](https://6.docs.plone.org/deployment/index.html) for context.\n2. Research the mentioned setups (ZEO clients/servers, RelStorage) to gather detailed configuration steps.\n3. Join the conversation by adding insights or questions in this GitHub issue.\n4. Prepare to test and review your changes once the documentation is drafted to ensure clarity and accuracy.",
+  "workflow": {
+    "repository": "syslabcom/activity-recognition",
+    "run_id": "24198904502",
+    "run_number": "54",
+    "attempt": "1",
+    "url": "https://github.com/syslabcom/activity-recognition/actions/runs/24198904502",
+    "sha": "ecf62a0118e412af0bd2733961f444e3de320ba7"
+  }
+}

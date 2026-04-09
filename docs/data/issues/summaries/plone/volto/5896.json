@@ -1,0 +1,31 @@
+{
+  "version": 1,
+  "status": "success",
+  "generated_at": "2026-04-09T15:34:59Z",
+  "source_issue": {
+    "id": 2194664319,
+    "number": 5896,
+    "title": "It's confusing how to change my password as a logged in user",
+    "html_url": "https://github.com/plone/volto/issues/5896",
+    "repository_full_name": "plone/volto",
+    "updated_at": "2024-12-17T07:51:18Z",
+    "labels": [
+      "04 type: enhancement",
+      "42 lvl: moderate"
+    ],
+    "comments": 9
+  },
+  "ai": {
+    "provider": "openai",
+    "model": "gpt-4o-mini"
+  },
+  "summary_markdown": "```markdown\n## What this issue is about\nThis issue addresses the confusing process for logged-in users to change their passwords in the Volto application. Currently, users must go through the \"Forgot your password\" option at the `/login` route. The proposal is to allow password changes directly from the user profile, similar to the Classic Plone experience.\n\n## What needs to be done\nWe aim to add a \"Change my password\" link in the user preferences section. Additionally, a reset password feature needs to be integrated, ensuring access to these pages requires user authentication.\n\n## Helpful background\nThe Classic Plone interface provides a more direct method for users to change their passwords via the `@@personal-preferences` page. Discussions and suggestions from contributors suggest adopting similar navigation and authentication mechanisms within Volto.\n\n## Good first steps\n1. Review and replicate the \"Change my password\" functionality from Classic Plone.\n2. Plan the design and navigation for both change and reset password features.\n3. Ensure to implement user authentication on the password change page using the appropriate component.\n4. Attend the upcoming team meeting to align on tasks and discuss any uncertainties.\n5. Consider testing the functionality and adding relevant documentation to guide users through the new process.\n```",
+  "workflow": {
+    "repository": "syslabcom/activity-recognition",
+    "run_id": "24198904502",
+    "run_number": "54",
+    "attempt": "1",
+    "url": "https://github.com/syslabcom/activity-recognition/actions/runs/24198904502",
+    "sha": "ecf62a0118e412af0bd2733961f444e3de320ba7"
+  }
+}

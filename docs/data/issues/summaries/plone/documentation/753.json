@@ -1,0 +1,33 @@
+{
+  "version": 1,
+  "status": "success",
+  "generated_at": "2026-04-09T15:36:15Z",
+  "source_issue": {
+    "id": 201220491,
+    "number": 753,
+    "title": "Workflow events does not document LocalrolesModifiedEvent event",
+    "html_url": "https://github.com/plone/documentation/issues/753",
+    "repository_full_name": "plone/documentation",
+    "updated_at": "2024-11-24T07:03:24Z",
+    "labels": [
+      "31 needs: help",
+      "33 needs: docs",
+      "42 lvl: moderate",
+      "99 tag: Plone 6.x"
+    ],
+    "comments": 0
+  },
+  "ai": {
+    "provider": "openai",
+    "model": "gpt-4o-mini"
+  },
+  "summary_markdown": "## What this issue is about\nThis issue addresses the lack of documentation for the `LocalrolesModifiedEvent` in the Plone documentation related to workflow events. This event is triggered when the sharing settings are updated in the Plone app.\n\n## What needs to be done\nWe need to add appropriate documentation for the `LocalrolesModifiedEvent` to ensure that users can understand its purpose and usage. The relevant section of the documentation is currently missing this important detail.\n\n## Helpful background\nThe `LocalrolesModifiedEvent` is triggered in the `plone/app/workflow/browser/sharing.py` file. Proper documentation will help developers know when this event occurs and how to utilize it effectively in their projects.\n\n## Good first steps\n1. Review the current documentation on workflow events [here](https://5.docs.plone.org/develop/addons/components/events.html#workflow-events).\n2. Familiarize yourself with the `LocalrolesModifiedEvent` and its role in the sharing functionality.\n3. Draft an addition to the documentation that explains this event, including examples if possible.\n4. Engage with the community if you have questions or need clarification, as some parts of the discussion around this event may be incomplete or outdated.\n5. Submit your changes for review once you're ready.",
+  "workflow": {
+    "repository": "syslabcom/activity-recognition",
+    "run_id": "24198904502",
+    "run_number": "54",
+    "attempt": "1",
+    "url": "https://github.com/syslabcom/activity-recognition/actions/runs/24198904502",
+    "sha": "ecf62a0118e412af0bd2733961f444e3de320ba7"
+  }
+}

@@ -1,7 +1,7 @@
 {
   "version": 1,
   "status": "success",
-  "generated_at": "2026-04-09T14:39:29Z",
+  "generated_at": "2026-04-09T15:34:53Z",
   "organization": "plone",
   "state": "open",
   "slug": "lvl-moderate",
@@ -660,7 +660,15 @@
       "labels": [
         "04 type: enhancement",
         "42 lvl: moderate"
-      ]
+      ],
+      "contributor_summary": {
+        "status": "available",
+        "generated_at": "2026-04-09T15:34:59Z",
+        "source_issue_updated_at": "2024-12-17T07:51:18Z",
+        "model": "gpt-4o-mini",
+        "summary_markdown": "```markdown\n## What this issue is about\nThis issue addresses the confusing process for logged-in users to change their passwords in the Volto application. Currently, users must go through the \"Forgot your password\" option at the `/login` route. The proposal is to allow password changes directly from the user profile, similar to the Classic Plone experience.\n\n## What needs to be done\nWe aim to add a \"Change my password\" link in the user preferences section. Additionally, a reset password feature needs to be integrated, ensuring access to these pages requires user authentication.\n\n## Helpful background\nThe Classic Plone interface provides a more direct method for users to change their passwords via the `@@personal-preferences` page. Discussions and suggestions from contributors suggest adopting similar navigation and authentication mechanisms within Volto.\n\n## Good first steps\n1. Review and replicate the \"Change my password\" functionality from Classic Plone.\n2. Plan the design and navigation for both change and reset password features.\n3. Ensure to implement user authentication on the password change page using the appropriate component.\n4. Attend the upcoming team meeting to align on tasks and discuss any uncertainties.\n5. Consider testing the functionality and adding relevant documentation to guide users through the new process.\n```",
+        "path": "data/issues/summaries/plone/volto/5896.json"
+      }
     },
     {
       "id": 2083336469,
@@ -681,7 +689,15 @@
       "labels": [
         "04 type: enhancement",
         "42 lvl: moderate"
-      ]
+      ],
+      "contributor_summary": {
+        "status": "available",
+        "generated_at": "2026-04-09T15:35:05Z",
+        "source_issue_updated_at": "2024-12-17T07:50:33Z",
+        "model": "gpt-4o-mini",
+        "summary_markdown": "## What this issue is about\nThis issue aims to unify the use of the `preview_image_link` field in the Volto framework. Currently, Volto uses the `preview_image` field for basic image handling, which can lead to duplication. The goal is to ensure that `preview_image_link`, which allows for reusable images through a pointer (RelationChoice), is fully supported throughout the codebase.\n\n## What needs to be done\nWe need to search the Volto codebase for all usages of `preview_image` and ensure they support `preview_image_link`. The expectation is to integrate this support seamlessly, avoiding hardcoded instances of `preview_image`.\n\n## Helpful background\nDiscussion indicates that while `preview_image_link` functionality exists, it's not enabled by default. Suggestions include providing this feature for new sites without affecting existing ones, as a migration may be complex. Clarity on implementation and support options is still needed.\n\n## Good first steps\n1. Review the current implementation of both `preview_image` and `preview_image_link`.\n2. Identify instances in the code where `preview_image` is used.\n3. Test the existing functionality of `preview_image_link` and document any findings or gaps.\n4. Engage with team members for insights on documentation and potential impacts on users.",
+        "path": "data/issues/summaries/plone/volto/5630.json"
+      }
     },
     {
       "id": 1435845248,
@@ -703,7 +719,15 @@
         "01 type: bug",
         "33 needs: docs",
         "42 lvl: moderate"
-      ]
+      ],
+      "contributor_summary": {
+        "status": "available",
+        "generated_at": "2026-04-09T15:35:20Z",
+        "source_issue_updated_at": "2024-12-13T22:01:51Z",
+        "model": "gpt-4o-mini",
+        "summary_markdown": "```markdown\n## What this issue is about\nThis issue focuses on improving the documentation of existing Cypress commands in the Plone Volto project. Currently, many Cypress commands are available, but their lack of documentation means not all tests use them efficiently. The goal is to document these commands and refactor tests to utilize them properly.\n\n## What needs to be done\n1. **Document all existing Cypress commands** found at [this location](https://github.com/plone/volto/tree/main/packages/volto/cypress/support).\n2. **Refactor existing tests** to incorporate these documented commands. An example is updating to use `cy.toolbarSave()` where applicable.\n3. There is a proposal to prefix Volto-specific commands (like `cy.voltoToolbarSave()`) for clarity, though this is still up for discussion.\n\n## Helpful background\nCypress is a testing framework that allows for end-to-end testing of web applications. A good understanding of Cypress will be beneficial for this task.\n\n## Good first steps\n1. Familiarize yourself with [Cypress documentation](https://docs.cypress.io/).\n2. Review the existing Cypress commands in the specified support directory.\n3. Check the issue for any updates or ongoing discussions before starting. Coordinate with others if you decide to start working on this task to avoid duplication.\n```",
+        "path": "data/issues/summaries/plone/volto/3834.json"
+      }
     },
     {
       "id": 185296197,
@@ -726,7 +750,15 @@
         "33 needs: docs",
         "42 lvl: moderate",
         "99 tag: Plone 6.x"
-      ]
+      ],
+      "contributor_summary": {
+        "status": "available",
+        "generated_at": "2026-04-09T15:35:26Z",
+        "source_issue_updated_at": "2024-11-24T08:35:21Z",
+        "model": "gpt-4o-mini",
+        "summary_markdown": "```markdown\n## What this issue is about\nThis issue addresses an outdated section in the Plone documentation regarding folder restrictions for Dexterity content types. Currently, the documentation only mentions Archetypes (AT) content but does not cover Dexterity content.\n\n## What needs to be done\nWe need to update the documentation on [creating content in Plone](https://5.docs.plone.org/develop/plone/content/creating.html#restricting-available-types-per-folder-instance) to include how to restrict available types for Dexterity content. This will involve using the API similar to what's already provided for AT content.\n\n## Helpful background\nThe necessary API can be accessed through an adapter. The provided code snippet shows how to use the `ISelectableConstrainTypes` interface to manage folder restrictions, which is crucial for maintaining content organization.\n\n## Good first steps\n1. Review the existing documentation linked above.\n2. Familiarize yourself with the Dexterity content and the relevant API.\n3. Consider testing any code updates in a Plone environment to ensure accuracy.\n4. Create a pull request with your changes and add comments to clarify your updates.\n5. Coordination with team members might be beneficial, as some comments indicate uncertainty about the context.\n```",
+        "path": "data/issues/summaries/plone/documentation/707.json"
+      }
     },
     {
       "id": 542049022,
@@ -749,7 +781,15 @@
         "33 needs: docs",
         "42 lvl: moderate",
         "99 tag: Plone 6.x"
-      ]
+      ],
+      "contributor_summary": {
+        "status": "available",
+        "generated_at": "2026-04-09T15:35:32Z",
+        "source_issue_updated_at": "2024-11-24T07:52:58Z",
+        "model": "gpt-4o-mini",
+        "summary_markdown": "## What this issue is about\nThis issue focuses on updating a Simple CSV file Upload Form in Plone to be compatible with Python 3 and Plone 5.2. The goal is to modernize the code by removing dependencies on Python 2.\n\n## What needs to be done\n- Adapt the Simple CSV file Upload Form code to support Python 3.\n- Update any related documentation to reflect these changes and ensure it aligns with Plone 6.x standards.\n- Consider porting content from existing documentation to enhance clarity.\n\n## Helpful background\nThe current implementation uses `StringIO` from Python 2. The updated version should utilize the `io` module, which is compatible with Python 3. The form allows users to upload a CSV file for bulk user imports—a practical feature for managing data efficiently.\n\n## Good first steps\n1. Review the existing code and identify sections that require changes for Python 3 compatibility.\n2. Check the linked documentation at [Plone's documentation](https://5.docs.plone.org/develop/plone/forms/files.html#simple-csv-file-upload-form) for insights.\n3. Experiment with updating the form’s schema and handling logic while keeping the core functionality intact.\n4. Ensure you test the new implementation and verify it works correctly.\n5. Once updated, document any changes clearly and be ready for team review and feedback.",
+        "path": "data/issues/summaries/plone/documentation/1113.json"
+      }
     },
     {
       "id": 449977232,
@@ -772,7 +812,15 @@
         "34 needs: tests",
         "42 lvl: moderate",
         "99 tag: Plone 6.x"
-      ]
+      ],
+      "contributor_summary": {
+        "status": "available",
+        "generated_at": "2026-04-09T15:35:37Z",
+        "source_issue_updated_at": "2024-11-24T07:52:13Z",
+        "model": "gpt-4o-mini",
+        "summary_markdown": "## What this issue is about\nThis issue addresses a bug in the documentation for `plone.app.contentlisting`. The documentation incorrectly uses \"contentListing\" with a capital \"L\", which can confuse users trying to access the correct view name, `@@contentlisting` (with a lowercase \"l\"). This discrepancy can lead to errors when upgrading or using various features.\n\n## What needs to be done\nThe documentation needs to be updated to consistently use the correct casing of `@@contentlisting`. This will prevent user confusion and improve clarity regarding how to retrieve content listings.\n\n## Helpful background\nThe current documentation is pulled from an external source, so changes should be made there first. Users have encountered issues due to this loose naming convention, and fixing it will help prevent similar problems in the future. Discussions hint that there are multiple approaches to updating the documentation.\n\n## Good first steps\n1. **Locate and Edit**: Find the README for `plone.app.contentlisting` [here](https://github.com/plone/plone.app.contentlisting/edit/master/README.rst).\n2. **Make Changes**: Update all instances of \"contentListing\" to \"contentlisting\".\n3. **Submit a Pull Request**: After making your updates, submit a pull request for review. \n4. **Coordinate with Maintainers**: Once your PR is merged, inform the maintainers to rebuild the documentation for users to see your changes. \n\nFeel free to reach out if anything is unclear!",
+        "path": "data/issues/summaries/plone/documentation/1083.json"
+      }
     },
     {
       "id": 238105336,
@@ -795,7 +843,15 @@
         "33 needs: docs",
         "42 lvl: moderate",
         "99 tag: Plone 6.x"
-      ]
+      ],
+      "contributor_summary": {
+        "status": "available",
+        "generated_at": "2026-04-09T15:35:44Z",
+        "source_issue_updated_at": "2024-11-24T07:31:35Z",
+        "model": "gpt-4o-mini",
+        "summary_markdown": "```markdown\n## What this issue is about\nThis issue identifies a problem with the manual override example for `z3c.form` widget templates in the [Plone documentation](https://github.com/plone/documentation/blob/cf62b0a919c639592e7b59c781148e8ac2d0ca0f/develop/plone/forms/z3c.form.rst). The code provided is not functioning correctly due to a local variable issue with the `template`, which may need to be `self.template`. There are also deprecated imports that need updating.\n\n## What needs to be done\n1. Fix the example code so that the `template` is assigned properly (possibly to `self.template`).\n2. Update deprecated imports at the top of the code.\n\n## Helpful background\nThe `z3c.form` framework is used in Plone for creating forms. The `NamedFileWidget` class is a specific widget type, and the example aims to showcase how to customize the display template. This issue is categorized as needing help and documentation.\n\n## Good first steps\n1. Review the mentioned code in the documentation to understand the current implementation.\n2. Modify the code based on the suggestions above.\n3. Consider preparing a pull request (PR) to submit your changes. Coordination with the author or other contributors may be beneficial for review.\n```",
+        "path": "data/issues/summaries/plone/documentation/893.json"
+      }
     },
     {
       "id": 194520249,
@@ -819,7 +875,15 @@
         "33 needs: docs",
         "42 lvl: moderate",
         "99 tag: Plone 6.x"
-      ]
+      ],
+      "contributor_summary": {
+        "status": "available",
+        "generated_at": "2026-04-09T15:35:50Z",
+        "source_issue_updated_at": "2024-11-24T07:29:55Z",
+        "model": "gpt-4o-mini",
+        "summary_markdown": "## What this issue is about\nThis issue focuses on updating or including information about LDAP (Lightweight Directory Access Protocol) in the Plone documentation. Currently, references to `plone.app.ldap` appear throughout different documentation files, but there isn't a clear explanation of how to effectively connect a Plone site with LDAP.\n\n## What needs to be done\nWe need to decide whether to replace `plone.app.ldap` with `pas.plugins.ldap`. Additionally, we will need to address how this change affects the `manage/deploying/performance/ramcache.rst` documentation.\n\n## Helpful background\nLDAP is used for user authentication and directory services. The current documents reference LDAP but lack a straightforward tutorial or guide on connecting Plone to LDAP. The conversation about replacements and rewriting parts of the documentation has some uncertainty, with questions about best practices still open.\n\n## Good first steps\n1. Familiarize yourself with both `plone.app.ldap` and `pas.plugins.ldap`.\n2. Review the documentation files that mention these plugins, especially `manage/deploying/performance/ramcache.rst`.\n3. Join the discussion about the proposed changes—your insights are welcome!\n\nEach contribution will help clarify how to guide users in integrating LDAP with their Plone sites.",
+        "path": "data/issues/summaries/plone/documentation/735.json"
+      }
     },
     {
       "id": 227368117,
@@ -842,7 +906,15 @@
         "33 needs: docs",
         "42 lvl: moderate",
         "99 tag: Plone 6.x"
-      ]
+      ],
+      "contributor_summary": {
+        "status": "available",
+        "generated_at": "2026-04-09T15:35:56Z",
+        "source_issue_updated_at": "2024-11-24T07:29:29Z",
+        "model": "gpt-4o-mini",
+        "summary_markdown": "## What this issue is about\nThis issue addresses the need to document the event types related to user login and logout in the Plone documentation. Currently, these events are not included in the specified documentation link.\n\n## What needs to be done\n- Add documentation for login and logout events to the Plone documentation.\n- Include guidance on the difference between handling event interfaces and event classes, as some discussions have highlighted this point.\n\n## Helpful background\nThe current documentation lacks information on how to handle login and logout events within Plone. Best practices suggest using event interfaces rather than event classes, which is a necessary clarification for users. This information has been discussed on platforms like Stack Overflow, indicating ongoing interest and need.\n\n## Good first steps\n1. Review the existing documentation found [here](https://5.docs.plone.org/develop/addons/components/events.html).\n2. Familiarize yourself with event interfaces vs. event classes.\n3. Draft a section that includes both the new event documentation and the best practices mentioned.\n4. Coordinate with others if necessary to ensure alignment with previous discussions and expectations, and prepare the changes for review.",
+        "path": "data/issues/summaries/plone/documentation/871.json"
+      }
     },
     {
       "id": 213505113,
@@ -865,7 +937,15 @@
         "33 needs: docs",
         "42 lvl: moderate",
         "99 tag: Plone 6.x"
-      ]
+      ],
+      "contributor_summary": {
+        "status": "available",
+        "generated_at": "2026-04-09T15:36:01Z",
+        "source_issue_updated_at": "2024-11-24T07:21:40Z",
+        "model": "gpt-4o-mini",
+        "summary_markdown": "## What this issue is about\nThis issue focuses on improving documentation for the `wildcard.fixpersistentutilities` package. Many users have encountered problems with persistent utilities in Plone but may not know that this tool exists or how to use it effectively.\n\n## What needs to be done\nWe need to create comprehensive documentation detailing how to use `wildcard.fixpersistentutilities` on the [Plone troubleshooting page](https://5.docs.plone.org/manage/troubleshooting/manual-remove-utility.html). This should include practical examples and step-by-step instructions to help users resolve their issues.\n\n## Helpful background\nPersistent utilities are components in Plone that maintain state across sessions. Mismanagement of these can lead to problems in your Plone site. The `wildcard.fixpersistentutilities` package provides tools to clean up these utilities, but current documentation is limited, leading to confusion and unresolved issues.\n\n## Good first steps\n1. Review the current documentation on the troubleshooting page and the `wildcard.fixpersistentutilities` project [here](https://pypi.org/project/wildcard.fixpersistentutilities/).\n2. Identify key areas where users might struggle and think of relatable examples or scenarios.\n3. Consider checking community forums for user experiences and questions to include in your documentation draft. \n4. Reach out for feedback on your draft from other contributors or Plone users to ensure clarity and accuracy. \n\nFeel free to ask any questions if you're unsure about specific details!",
+        "path": "data/issues/summaries/plone/documentation/799.json"
+      }
     },
     {
       "id": 203700804,
@@ -888,7 +968,15 @@
         "33 needs: docs",
         "42 lvl: moderate",
         "99 tag: Plone 6.x"
-      ]
+      ],
+      "contributor_summary": {
+        "status": "available",
+        "generated_at": "2026-04-09T15:36:07Z",
+        "source_issue_updated_at": "2024-11-24T07:09:50Z",
+        "model": "gpt-4o-mini",
+        "summary_markdown": "```markdown\n## What this issue is about\nThis issue focuses on clarifying the jargon used in the documentation regarding ZODB database packing in Plone, specifically the differences between the Zope Control Panel and the Plone Control Panel. It aims to make this information more accessible, especially for users who may be new to Plone.\n\n## What needs to be done\n1. Simplify the explanations of terms like \"Zope Control Panel\" and \"Plone Control Panel.\"\n2. Provide clear steps on how to start the packing process, either through Zope or Plone.\n3. Add links to any existing glossaries or resources that define these terms.\n4. Consider including instructions for setting up automatic packing, which has been suggested as beneficial.\n\n## Helpful background\nCurrently, the relevant documentation is seen as too complex for newcomers. Discussions suggest that some terms might already be defined elsewhere, but this hasn’t been confirmed. There is also a suggestion to make packing easier by documenting built-in tools.\n\n## Good first steps\n1. Review the existing documentation on [packing](https://5.docs.plone.org/manage/deploying/packing.html#setting-up-packing) for context.\n2. Check if suitable definitions exist for the key terms and link to them.\n3. Propose a draft of simplified steps for initiating database packing.\n4. Look into whether the changes should be added to the new [Admin guide](https://6.docs.plone.org/admin-guide/index.html).\n```",
+        "path": "data/issues/summaries/plone/documentation/756.json"
+      }
     },
     {
       "id": 201220491,
@@ -911,7 +999,15 @@
         "33 needs: docs",
         "42 lvl: moderate",
         "99 tag: Plone 6.x"
-      ]
+      ],
+      "contributor_summary": {
+        "status": "available",
+        "generated_at": "2026-04-09T15:36:15Z",
+        "source_issue_updated_at": "2024-11-24T07:03:24Z",
+        "model": "gpt-4o-mini",
+        "summary_markdown": "## What this issue is about\nThis issue addresses the lack of documentation for the `LocalrolesModifiedEvent` in the Plone documentation related to workflow events. This event is triggered when the sharing settings are updated in the Plone app.\n\n## What needs to be done\nWe need to add appropriate documentation for the `LocalrolesModifiedEvent` to ensure that users can understand its purpose and usage. The relevant section of the documentation is currently missing this important detail.\n\n## Helpful background\nThe `LocalrolesModifiedEvent` is triggered in the `plone/app/workflow/browser/sharing.py` file. Proper documentation will help developers know when this event occurs and how to utilize it effectively in their projects.\n\n## Good first steps\n1. Review the current documentation on workflow events [here](https://5.docs.plone.org/develop/addons/components/events.html#workflow-events).\n2. Familiarize yourself with the `LocalrolesModifiedEvent` and its role in the sharing functionality.\n3. Draft an addition to the documentation that explains this event, including examples if possible.\n4. Engage with the community if you have questions or need clarification, as some parts of the discussion around this event may be incomplete or outdated.\n5. Submit your changes for review once you're ready.",
+        "path": "data/issues/summaries/plone/documentation/753.json"
+      }
     },
     {
       "id": 178618916,
@@ -934,7 +1030,15 @@
         "33 needs: docs",
         "42 lvl: moderate",
         "99 tag: Plone 6.x"
-      ]
+      ],
+      "contributor_summary": {
+        "status": "available",
+        "generated_at": "2026-04-09T15:36:27Z",
+        "source_issue_updated_at": "2024-11-24T06:37:56Z",
+        "model": "gpt-4o-mini",
+        "summary_markdown": "## What this issue is about\nThis issue aims to create a new documentation section focusing on setting up Plone in a distributed server environment. This includes configurations like Plone ZEO clients and servers on different machines, as well as using RelStorage with PostgreSQL.\n\n## What needs to be done\nWe need to draft a clear and informative guide that covers the following:\n- Setting up Plone ZEO clients and servers in a distributed setup\n- Options for placing a ZEO server on Windows and clients in other environments\n- Using an existing PostgreSQL database on Windows as a storage backend  \nKeep in mind that the exact placement and setup details might require verification and updating based on Plone's latest practices.\n\n## Helpful background\nThis section of the documentation is intended for users deploying Plone in more complex architectures. It’s particularly relevant for those configuring multiple servers or integrating with existing database solutions.\n\n## Good first steps\n1. Review the existing [Plone deployment documentation](https://6.docs.plone.org/deployment/index.html) for context.\n2. Research the mentioned setups (ZEO clients/servers, RelStorage) to gather detailed configuration steps.\n3. Join the conversation by adding insights or questions in this GitHub issue.\n4. Prepare to test and review your changes once the documentation is drafted to ensure clarity and accuracy.",
+        "path": "data/issues/summaries/plone/documentation/700.json"
+      }
     },
     {
       "id": 2270775429,
@@ -962,7 +1066,15 @@
         "52 target: minor",
         "99 tag: Plone 6.x",
         "99 tag: classic-ui"
-      ]
+      ],
+      "contributor_summary": {
+        "status": "available",
+        "generated_at": "2026-04-09T15:36:33Z",
+        "source_issue_updated_at": "2024-11-24T05:53:28Z",
+        "model": "gpt-4o-mini",
+        "summary_markdown": "## What this issue is about\nThis issue focuses on upgrading the documentation for `z3c.form` and `plone.app.z3cform` in the context of Plone version 6.1. The upgrade involves addressing changes that may affect addon developers, particularly regarding deprecated imports and the introduction of new widget templates.\n\n## What needs to be done\nWe need to update the documentation to reflect the recent changes in `z3c.form` and `plone.app.z3cform`. This includes explaining any deprecated imports and providing guidance on the new widget templates. \n\n## Helpful background\nThe `z3c.form` package is a form library used in Plone, while `plone.app.z3cform` integrates it into the Plone environment. These changes are important for addon developers to ensure compatibility with the latest version of Plone. The conversation in previous issues suggests some uncertainty about specific details and approaches, which you might need to clarify.\n\n## Good first steps\n1. **Review Existing Documentation:** Familiarize yourself with the current documentation related to `z3c.form` and `plone.app.z3cform`.\n2. **Explore Related Issues:** Check out related issues for additional context and ongoing discussions: [#1113](https://github.com/plone/documentation/issues/1113) and [#893](https://github.com/plone/documentation/issues/893).\n3. **Join the Discussion:** If you're unsure about any specifics, consider engaging with the contributors in the GitHub comments or asking questions. \n4. **Documentation Drafting:** Start drafting changes or improvements based on your findings.",
+        "path": "data/issues/summaries/plone/documentation/1659.json"
+      }
     },
     {
       "id": 2227400292,
@@ -986,7 +1098,15 @@
         "33 needs: docs",
         "42 lvl: moderate",
         "99 tag: Plone 6.x"
-      ]
+      ],
+      "contributor_summary": {
+        "status": "available",
+        "generated_at": "2026-04-09T15:36:42Z",
+        "source_issue_updated_at": "2024-11-24T05:53:27Z",
+        "model": "gpt-4o-mini",
+        "summary_markdown": "```markdown\n## What this issue is about\nThis issue focuses on the **Deployment** section of the Plone documentation, which is currently empty. There is some uncertainty about whether older content is still relevant, as it has typically been copied from previous versions.\n\n## What needs to be done\nWe need someone to help write the Deployment documentation for Plone 6. This could involve either rewriting the existing Plone 5.2 content or starting fresh, ensuring the information is accurate and applicable to a production environment.\n\n## Helpful background\nThe original deployment documentation can be found [here for Plone 5.2](https://5.docs.plone.org/manage/deploying/index.html) and [for Plone 6](https://6.docs.plone.org/deployment/index.html). The 5.2 content, converted to MyST format, might help as a starting point, but it's important to evaluate its relevance. Note that the Caching section is mostly complete.\n\n## Good first steps\n1. Review the existing Plone 5.2 deployment documentation.\n2. Check the current Plone 6 deployment guidelines to identify gaps.\n3. Consider how to structure the new documentation for clarity.\n4. Join the discussion to share your ideas or ask questions if you're unsure about specifics.\n \nFeel free to reach out here or via issues for any support you might need!\n```",
+        "path": "data/issues/summaries/plone/documentation/1647.json"
+      }
     },
     {
       "id": 1567799566,
@@ -1006,7 +1126,15 @@
       "assignees": [],
       "labels": [
         "42 lvl: moderate"
-      ]
+      ],
+      "contributor_summary": {
+        "status": "available",
+        "generated_at": "2026-04-09T15:36:49Z",
+        "source_issue_updated_at": "2024-11-24T05:50:39Z",
+        "model": "gpt-4o-mini",
+        "summary_markdown": "```markdown\n## What this issue is about\nThis issue focuses on updating the documentation for getting packages in development. It stems from a related pull request and aims to ensure that our guides reflect the latest best practices.\n\n## What needs to be done\nThe updates are required for the following documentation pages:\n- [Common Management Tasks](https://6.docs.plone.org/install/manage-add-ons-packages.html#common-management-tasks)\n- [Add-on Variables](https://6.docs.plone.org/install/containers/images/backend.html#add-on-variables)\n- [Developing Packages](https://6.docs.plone.org/install/containers/images/backend.html#containers-images-backend-developing-packages-label)\n\n## Helpful background\nThis issue originated from discussions in a related GitHub issue, where necessary changes highlighted the need for clearer instructions on package management within Plone development.\n\n## Good first steps\n1. Review the existing documentation linked above.\n2. Identify areas that require updates or clarification based on current practices.\n3. Consider reaching out to others (like the author or commenters) for feedback or additional insight on specific changes.\n4. Prepare a pull request with your proposed modifications.\n\nThis task invites contributors of all levels. Don't hesitate to ask questions if anything is unclear!\n```",
+        "path": "data/issues/summaries/plone/documentation/1434.json"
+      }
     },
     {
       "id": 1385786752,
@@ -1028,7 +1156,15 @@
         "99 tag: sprint",
         "33 needs: docs",
         "42 lvl: moderate"
-      ]
+      ],
+      "contributor_summary": {
+        "status": "available",
+        "generated_at": "2026-04-09T15:36:56Z",
+        "source_issue_updated_at": "2024-11-24T05:50:36Z",
+        "model": "gpt-4o-mini",
+        "summary_markdown": "```markdown\n## What this issue is about\nThis issue focuses on migrating the `develop/styleguide/*` files from the Plone documentation, particularly for version 6.x. The existing content lacks integration with current automation tools like `black`, `isort`, and `flake8` for Python code, as well as tools for documentation checks.\n\n## What needs to be done\nThe goal is to update the style guide to align with the latest Python style specifications and ensure it is properly automated. This includes reviewing the current content and implementing necessary updates.\n\n## Helpful background\nThis issue is a bit complex because it involves understanding current Python style guides and ensuring the migration aligns with ongoing revisions. New contributors are advised to familiarize themselves with the [Contributing to Documentation](https://6.docs.plone.org/contributing/index.html) guide.\n\n## Good first steps\n- Read the [Contributing to Documentation](https://6.docs.plone.org/contributing/index.html) to understand the process.\n- Familiarize yourself with the current style guide at [Rendered Documentation](https://5.docs.plone.org/develop/styleguide/index.html).\n- Explore issues marked with the [\"41: easy\"](https://github.com/plone/documentation/issues?q=is%3Aopen+is%3Aissue+label%3A%2241+lvl%3A+easy%22) label for beginner-friendly tasks.\n```",
+        "path": "data/issues/summaries/plone/documentation/1330.json"
+      }
     },
     {
       "id": 105328255,
@@ -1051,7 +1187,15 @@
         "99 tag: missing",
         "42 lvl: moderate",
         "99 tag: Plone 6.x"
-      ]
+      ],
+      "contributor_summary": {
+        "status": "available",
+        "generated_at": "2026-04-09T15:37:01Z",
+        "source_issue_updated_at": "2024-11-24T03:02:26Z",
+        "model": "gpt-4o-mini",
+        "summary_markdown": "## What this issue is about\nThis issue addresses the need to improve the documentation regarding layers and traversing in Plone. Specifically, there's a lack of explanation around the role of `IDefaultBrowserLayer` as a base class for Layers.\n\n## What needs to be done\nYou are invited to integrate the background information provided in a related discussion into the documentation. This information should clarify why `IDefaultBrowserLayer` is significant and ensure it is documented in the correct place: `docs/backend/traversal-acquisition.md`.\n\n## Helpful background\nThe original discussion can be found [here](https://github.com/plone/bobtemplates.plone/issues/89#issuecomment-138474557), where the importance of `IDefaultBrowserLayer` is outlined. The insights are backed by real code snippets and tested examples from demo.plone.org. While the discussion provides valuable context, it may contain some ambiguity or outdated elements.\n\n## Good first steps\n1. Read through the linked discussion to understand the current explanations provided.\n2. Review the existing documentation in `docs/backend/traversal-acquisition.md` to see where updates are needed.\n3. Draft improvements to the documentation based on the gathered information.\n4. Consider reaching out for feedback on your draft before finalizing your contributions.\n\nYour effort in refining the documentation will help both current and future Plone users!",
+        "path": "data/issues/summaries/plone/documentation/355.json"
+      }
     },
     {
       "id": 2028220544,
@@ -1999,10 +2143,10 @@
   "message": null,
   "workflow": {
     "repository": "syslabcom/activity-recognition",
-    "run_id": "24196205718",
-    "run_number": "53",
+    "run_id": "24198904502",
+    "run_number": "54",
     "attempt": "1",
-    "url": "https://github.com/syslabcom/activity-recognition/actions/runs/24196205718",
-    "sha": "4afa5437e3369368f43054c82fcd1ba9bed2967b"
+    "url": "https://github.com/syslabcom/activity-recognition/actions/runs/24198904502",
+    "sha": "ecf62a0118e412af0bd2733961f444e3de320ba7"
   }
 }

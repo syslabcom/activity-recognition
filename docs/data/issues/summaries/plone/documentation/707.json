@@ -1,0 +1,33 @@
+{
+  "version": 1,
+  "status": "success",
+  "generated_at": "2026-04-09T15:35:26Z",
+  "source_issue": {
+    "id": 185296197,
+    "number": 707,
+    "title": "plone/content/creating.html outdated for dexterity content (folder restrictions)",
+    "html_url": "https://github.com/plone/documentation/issues/707",
+    "repository_full_name": "plone/documentation",
+    "updated_at": "2024-11-24T08:35:21Z",
+    "labels": [
+      "31 needs: help",
+      "33 needs: docs",
+      "42 lvl: moderate",
+      "99 tag: Plone 6.x"
+    ],
+    "comments": 4
+  },
+  "ai": {
+    "provider": "openai",
+    "model": "gpt-4o-mini"
+  },
+  "summary_markdown": "```markdown\n## What this issue is about\nThis issue addresses an outdated section in the Plone documentation regarding folder restrictions for Dexterity content types. Currently, the documentation only mentions Archetypes (AT) content but does not cover Dexterity content.\n\n## What needs to be done\nWe need to update the documentation on [creating content in Plone](https://5.docs.plone.org/develop/plone/content/creating.html#restricting-available-types-per-folder-instance) to include how to restrict available types for Dexterity content. This will involve using the API similar to what's already provided for AT content.\n\n## Helpful background\nThe necessary API can be accessed through an adapter. The provided code snippet shows how to use the `ISelectableConstrainTypes` interface to manage folder restrictions, which is crucial for maintaining content organization.\n\n## Good first steps\n1. Review the existing documentation linked above.\n2. Familiarize yourself with the Dexterity content and the relevant API.\n3. Consider testing any code updates in a Plone environment to ensure accuracy.\n4. Create a pull request with your changes and add comments to clarify your updates.\n5. Coordination with team members might be beneficial, as some comments indicate uncertainty about the context.\n```",
+  "workflow": {
+    "repository": "syslabcom/activity-recognition",
+    "run_id": "24198904502",
+    "run_number": "54",
+    "attempt": "1",
+    "url": "https://github.com/syslabcom/activity-recognition/actions/runs/24198904502",
+    "sha": "ecf62a0118e412af0bd2733961f444e3de320ba7"
+  }
+}

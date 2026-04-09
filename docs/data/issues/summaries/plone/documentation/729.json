@@ -1,0 +1,33 @@
+{
+  "version": 1,
+  "status": "success",
+  "generated_at": "2026-04-09T15:36:21Z",
+  "source_issue": {
+    "id": 192754883,
+    "number": 729,
+    "title": "consolidate POSKeyError info, include plonechix help",
+    "html_url": "https://github.com/plone/documentation/issues/729",
+    "repository_full_name": "plone/documentation",
+    "updated_at": "2024-11-24T07:01:48Z",
+    "labels": [
+      "31 needs: help",
+      "33 needs: docs",
+      "43 lvl: complex",
+      "99 tag: Plone 6.x"
+    ],
+    "comments": 4
+  },
+  "ai": {
+    "provider": "openai",
+    "model": "gpt-4o-mini"
+  },
+  "summary_markdown": "```markdown\n## What this issue is about\nThis issue focuses on consolidating information about the `POSKeyError` across various sources into a single section in the documentation. Currently, the details are scattered, making it difficult to keep everything updated. It also includes content from an external guide that can be helpful.\n\n## What needs to be done\n1. Gather and combine existing information about `POSKeyError` into one cohesive section.\n2. Include insights from the blog post at [PloneChix](http://plonechix.blogspot.ch/2009/12/definitive-guide-to-poskeyerror.html).\n3. Ensure that the final document is accurate, and consider checking if the external information is still relevant, as it is over a decade old.\n\n## Helpful background\n`POSKeyError` is an error that can occur in Plone, often related to database issues (ZODB). Having a consolidated source will help both current and new users troubleshoot more effectively.\n\n## Good first steps\n1. Review the current documentation to see where `POSKeyError` is mentioned.\n2. Read the linked blog post to understand what additional information can be added.\n3. Open a draft document where you can start compiling this information. \n\nTesting may involve ensuring that the documentation remains clear and accurate for users. Coordination with the documentation team is encouraged to gather feedback.\n```",
+  "workflow": {
+    "repository": "syslabcom/activity-recognition",
+    "run_id": "24198904502",
+    "run_number": "54",
+    "attempt": "1",
+    "url": "https://github.com/syslabcom/activity-recognition/actions/runs/24198904502",
+    "sha": "ecf62a0118e412af0bd2733961f444e3de320ba7"
+  }
+}

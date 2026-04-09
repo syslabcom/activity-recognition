@@ -1,0 +1,33 @@
+{
+  "version": 1,
+  "status": "success",
+  "generated_at": "2026-04-09T15:36:07Z",
+  "source_issue": {
+    "id": 203700804,
+    "number": 756,
+    "title": "ZODB database packing configuration",
+    "html_url": "https://github.com/plone/documentation/issues/756",
+    "repository_full_name": "plone/documentation",
+    "updated_at": "2024-11-24T07:09:50Z",
+    "labels": [
+      "31 needs: help",
+      "33 needs: docs",
+      "42 lvl: moderate",
+      "99 tag: Plone 6.x"
+    ],
+    "comments": 6
+  },
+  "ai": {
+    "provider": "openai",
+    "model": "gpt-4o-mini"
+  },
+  "summary_markdown": "```markdown\n## What this issue is about\nThis issue focuses on clarifying the jargon used in the documentation regarding ZODB database packing in Plone, specifically the differences between the Zope Control Panel and the Plone Control Panel. It aims to make this information more accessible, especially for users who may be new to Plone.\n\n## What needs to be done\n1. Simplify the explanations of terms like \"Zope Control Panel\" and \"Plone Control Panel.\"\n2. Provide clear steps on how to start the packing process, either through Zope or Plone.\n3. Add links to any existing glossaries or resources that define these terms.\n4. Consider including instructions for setting up automatic packing, which has been suggested as beneficial.\n\n## Helpful background\nCurrently, the relevant documentation is seen as too complex for newcomers. Discussions suggest that some terms might already be defined elsewhere, but this hasn’t been confirmed. There is also a suggestion to make packing easier by documenting built-in tools.\n\n## Good first steps\n1. Review the existing documentation on [packing](https://5.docs.plone.org/manage/deploying/packing.html#setting-up-packing) for context.\n2. Check if suitable definitions exist for the key terms and link to them.\n3. Propose a draft of simplified steps for initiating database packing.\n4. Look into whether the changes should be added to the new [Admin guide](https://6.docs.plone.org/admin-guide/index.html).\n```",
+  "workflow": {
+    "repository": "syslabcom/activity-recognition",
+    "run_id": "24198904502",
+    "run_number": "54",
+    "attempt": "1",
+    "url": "https://github.com/syslabcom/activity-recognition/actions/runs/24198904502",
+    "sha": "ecf62a0118e412af0bd2733961f444e3de320ba7"
+  }
+}

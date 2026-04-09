@@ -1,0 +1,34 @@
+{
+  "version": 1,
+  "status": "success",
+  "generated_at": "2026-04-09T15:36:42Z",
+  "source_issue": {
+    "id": 2227400292,
+    "number": 1647,
+    "title": "Deployment section needs content",
+    "html_url": "https://github.com/plone/documentation/issues/1647",
+    "repository_full_name": "plone/documentation",
+    "updated_at": "2024-11-24T05:53:27Z",
+    "labels": [
+      "21 status: confirmed",
+      "31 needs: help",
+      "33 needs: docs",
+      "42 lvl: moderate",
+      "99 tag: Plone 6.x"
+    ],
+    "comments": 1
+  },
+  "ai": {
+    "provider": "openai",
+    "model": "gpt-4o-mini"
+  },
+  "summary_markdown": "```markdown\n## What this issue is about\nThis issue focuses on the **Deployment** section of the Plone documentation, which is currently empty. There is some uncertainty about whether older content is still relevant, as it has typically been copied from previous versions.\n\n## What needs to be done\nWe need someone to help write the Deployment documentation for Plone 6. This could involve either rewriting the existing Plone 5.2 content or starting fresh, ensuring the information is accurate and applicable to a production environment.\n\n## Helpful background\nThe original deployment documentation can be found [here for Plone 5.2](https://5.docs.plone.org/manage/deploying/index.html) and [for Plone 6](https://6.docs.plone.org/deployment/index.html). The 5.2 content, converted to MyST format, might help as a starting point, but it's important to evaluate its relevance. Note that the Caching section is mostly complete.\n\n## Good first steps\n1. Review the existing Plone 5.2 deployment documentation.\n2. Check the current Plone 6 deployment guidelines to identify gaps.\n3. Consider how to structure the new documentation for clarity.\n4. Join the discussion to share your ideas or ask questions if you're unsure about specifics.\n \nFeel free to reach out here or via issues for any support you might need!\n```",
+  "workflow": {
+    "repository": "syslabcom/activity-recognition",
+    "run_id": "24198904502",
+    "run_number": "54",
+    "attempt": "1",
+    "url": "https://github.com/syslabcom/activity-recognition/actions/runs/24198904502",
+    "sha": "ecf62a0118e412af0bd2733961f444e3de320ba7"
+  }
+}
