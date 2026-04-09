@@ -134,8 +134,18 @@ function renderInlineMarkdown(text) {
   return restored.replace(/\n/g, '<br>');
 }
 
+function unwrapOuterMarkdownFence(markdown) {
+  const source = String(markdown || '').trim();
+  const fencedMatch = source.match(/^```(?:markdown|md)?\s*\n([\s\S]*?)\n```$/i);
+  if (fencedMatch) {
+    return fencedMatch[1].trim();
+  }
+
+  return source;
+}
+
 function renderMarkdown(markdown) {
-  const source = String(markdown || '').replace(/\r\n?/g, '\n').trim();
+  const source = unwrapOuterMarkdownFence(String(markdown || '').replace(/\r\n?/g, '\n'));
   if (!source) {
     return '<p>No published summary yet.</p>';
   }
