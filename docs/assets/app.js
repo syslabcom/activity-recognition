@@ -478,6 +478,15 @@ function renderIssueCards(issuePayloads) {
         meta.textContent = `${repository} · updated ${formatDateTime(issue.updated_at)}${author}`;
 
         item.append(link, meta);
+
+        const contributorSummary = issue.contributor_summary;
+        if (contributorSummary?.summary_markdown) {
+          const summary = document.createElement('div');
+          summary.className = 'issue-summary markdown-content';
+          summary.innerHTML = renderMarkdown(contributorSummary.summary_markdown);
+          item.append(summary);
+        }
+
         list.append(item);
       }
 

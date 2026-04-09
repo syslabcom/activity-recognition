@@ -28,6 +28,7 @@ jobs:
       - name: Generate labeled issue lists
         env:
           GITHUB_TOKEN: ${{ github.token }}
+          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
         run: python3 scripts/publish_help_wanted_issues.py
 
       - name: Commit published issue lists
