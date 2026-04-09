@@ -1,0 +1,32 @@
+{
+  "version": 1,
+  "status": "success",
+  "generated_at": "2026-04-09T11:33:34Z",
+  "source_issue": {
+    "id": 2634531781,
+    "number": 1751,
+    "title": "Replace \"Plone instance\" and \"Zope / Plone instance\" with \"Zope instance\"",
+    "html_url": "https://github.com/plone/documentation/issues/1751",
+    "repository_full_name": "plone/documentation",
+    "updated_at": "2026-03-04T09:06:35Z",
+    "labels": [
+      "41 lvl: easy",
+      "99 tag: good first issue",
+      "99 tag: hacktoberfest"
+    ],
+    "comments": 3
+  },
+  "ai": {
+    "provider": "openai",
+    "model": "gpt-4o-mini"
+  },
+  "summary_markdown": "## What this issue is about\nThis issue focuses on updating the Plone documentation to replace instances of the terms \"Plone instance\" and \"Zope / Plone instance\" with \"Zope instance.\" This change will enhance clarity and consistency in the documentation.\n\n## What needs to be done\nYou’ll need to search through the Plone documentation source for all occurrences of the specified terms and replace them accordingly. It's important to ensure the updates correctly reflect the intended meaning.\n\n## Helpful background\nThe goal is to maintain accurate documentation for users and developers. Familiarity with Plone’s documentation structure may help but is not strictly necessary. If you’re new, consider reviewing the documentation sections related to contributors for guidance.\n\n## Good first steps\n1. **Review the Documentation**: Familiarize yourself with the Plone documentation by visiting relevant sections.\n2. **Search for Terms**: Identify all occurrences of \"Plone instance\" and \"Zope / Plone instance\" in the documentation.\n3. **Submit Changes**: After making your updates, create a pull request with your changes. Be sure to follow the [contributing guidelines](https://6.docs.plone.org/contributing/index.html). \n4. **Testing**: Check if updates render correctly in the documentation format before submitting.\n\nFeel free to ask questions in the comments to clarify any uncertainties!",
+  "workflow": {
+    "repository": "syslabcom/activity-recognition",
+    "run_id": "24187949813",
+    "run_number": "49",
+    "attempt": "1",
+    "url": "https://github.com/syslabcom/activity-recognition/actions/runs/24187949813",
+    "sha": "a677a65533a97837746ba09b6941207dd90391a4"
+  }
+}

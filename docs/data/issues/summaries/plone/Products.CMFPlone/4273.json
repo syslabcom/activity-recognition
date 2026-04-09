@@ -1,0 +1,33 @@
+{
+  "version": 1,
+  "status": "success",
+  "generated_at": "2026-04-09T11:34:27Z",
+  "source_issue": {
+    "id": 3922927900,
+    "number": 4273,
+    "title": "PLIP: Make Products.CMFEditions a Core Add-on",
+    "html_url": "https://github.com/plone/Products.CMFPlone/issues/4273",
+    "repository_full_name": "plone/Products.CMFPlone",
+    "updated_at": "2026-02-14T00:25:37Z",
+    "labels": [
+      "03 type: feature (plip)",
+      "43 lvl: complex",
+      "52 target: minor",
+      "99 tag:backend"
+    ],
+    "comments": 4
+  },
+  "ai": {
+    "provider": "openai",
+    "model": "gpt-4o-mini"
+  },
+  "summary_markdown": "```markdown\n## What this issue is about\nThis issue discusses a proposal to move **Products.CMFEditions** from being a core dependency of **Products.CMFPlone** to a core add-on. Currently, every Plone site has it active, which adds overhead even when versioning is not used. The proposal aims to allow sites that don't need versioning to exclude it without losing functionality.\n\n## What needs to be done\nTo achieve this, several code changes are required in various packages. Important tasks include:\n- Removing hard dependencies on **Products.CMFEditions** from **Products.CMFPlone**.\n- Implementing conditional imports and fallback mechanisms to ensure functionality without errors if **CMFEditions** is absent.\n- Updating tests to skip assertions that assume **CMFEditions** is installed.\n\n## Helpful background\nThere's a concern about performance overhead due to **CMFEditions**, especially regarding object creation time. While there's some ambiguity in comments about the exact impact of versioning on all content types, tests and benchmarks hint at significant performance implications for sites using versioning.\n\n## Good first steps\n1. **Review the PLIP documentation** to understand the process for contributing changes to Plone.\n2. Familiarize yourself with the **Products.CMFPlone** repository structure and where dependencies are declared.\n3. Start by making small changes, such as modifying dependencies and implementing conditional import patterns.\n4. Join the discussion to clarify any uncertainties and seek guidance from the community.\n```",
+  "workflow": {
+    "repository": "syslabcom/activity-recognition",
+    "run_id": "24187949813",
+    "run_number": "49",
+    "attempt": "1",
+    "url": "https://github.com/syslabcom/activity-recognition/actions/runs/24187949813",
+    "sha": "a677a65533a97837746ba09b6941207dd90391a4"
+  }
+}

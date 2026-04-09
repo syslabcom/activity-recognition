@@ -1,0 +1,33 @@
+{
+  "version": 1,
+  "status": "success",
+  "generated_at": "2026-04-09T11:34:22Z",
+  "source_issue": {
+    "id": 3460812472,
+    "number": 7409,
+    "title": "Docs - Seven - Release Notes missing",
+    "html_url": "https://github.com/plone/volto/issues/7409",
+    "repository_full_name": "plone/volto",
+    "updated_at": "2026-02-17T05:32:03Z",
+    "labels": [
+      "01 type: bug",
+      "33 needs: docs",
+      "42 lvl: moderate",
+      "30 needs: triage"
+    ],
+    "comments": 1
+  },
+  "ai": {
+    "provider": "openai",
+    "model": "gpt-4o-mini"
+  },
+  "summary_markdown": "```markdown\n## What this issue is about\nThis issue addresses missing release notes and changelog entries for the \"Seven\" documentation in the Plone Volto project. The absence of these documents is causing warnings in Sphinx, the tool used for generating documentation.\n\n## What needs to be done\nWe need to create and include release notes or a changelog for the Seven section of the documentation. This will help eliminate the warnings seen during documentation build processes.\n\n## Helpful background\nSphinx emits warnings when it can't find referenced documents. In this case, it's indicating that our documentation is missing important sections that should detail changes and updates in the project. Proper documentation is crucial for clarity and maintaining project standards.\n\n## Good first steps\n1. **Familiarize yourself** with the existing documentation structure in the `volto` repository.\n2. **Check the Seven-related updates** from recent project developments to gather necessary information for the release notes.\n3. **Draft the missing notes** based on the information you've compiled.\n4. If you're interested in contributing, please ask for assignment in the comments or reach out to the current assignees for guidance.\n5. Be prepared to share your work for review and possibly provide updates based on feedback.\n```",
+  "workflow": {
+    "repository": "syslabcom/activity-recognition",
+    "run_id": "24187949813",
+    "run_number": "49",
+    "attempt": "1",
+    "url": "https://github.com/syslabcom/activity-recognition/actions/runs/24187949813",
+    "sha": "a677a65533a97837746ba09b6941207dd90391a4"
+  }
+}

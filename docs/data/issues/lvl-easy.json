@@ -1,7 +1,7 @@
 {
   "version": 1,
   "status": "success",
-  "generated_at": "2026-04-09T11:24:01Z",
+  "generated_at": "2026-04-09T11:33:16Z",
   "organization": "plone",
   "state": "open",
   "slug": "lvl-easy",
@@ -377,7 +377,15 @@
         "41 lvl: easy",
         "99 tag: good first issue",
         "99 tag: hacktoberfest"
-      ]
+      ],
+      "contributor_summary": {
+        "status": "available",
+        "generated_at": "2026-04-09T11:33:23Z",
+        "source_issue_updated_at": "2026-03-04T09:06:37Z",
+        "model": "gpt-4o-mini",
+        "summary_markdown": "## What this issue is about\nThis issue aims to create a GitHub App that automatically detects first-time comments on Plone repositories. The goal is to respond with helpful links to our contributing guidelines, ensuring that new contributors have the information they need to get started.\n\n## What needs to be done\nWe need to develop a Probot application that identifies first-time commenters across all Plone repositories and sends them links to helpful resources. This involves implementing a bot that can read issues and post comments based on specific conditions.\n\n## Helpful background\nThe issue arose from the increasing number of first-time comments that lack reference to our guidelines. Responding manually has become time-consuming. Probot is a useful library for creating GitHub Apps and has tutorials available to assist in the process. \n\n## Good first steps\n1. **Fork the repository**: Create a fork of the `plone/documentation` repo.\n2. **Set up locally**: Follow Probot's documentation to get a test version running with your GitHub account.\n3. **Share your progress**: Once you have a working version, please open a pull request or share your code for review.\n4. **Engage with the community**: Seek feedback from other contributors in the Plone community forum. \n\nFeel free to reach out if you have questions or need guidance!",
+        "path": "data/issues/summaries/plone/documentation/2029.json"
+      }
     },
     {
       "id": 3440477443,
@@ -399,7 +407,15 @@
         "41 lvl: easy",
         "99 tag: good first issue",
         "99 tag: hacktoberfest"
-      ]
+      ],
+      "contributor_summary": {
+        "status": "available",
+        "generated_at": "2026-04-09T11:33:29Z",
+        "source_issue_updated_at": "2026-03-04T09:06:36Z",
+        "model": "gpt-4o-mini",
+        "summary_markdown": "```markdown\n## What this issue is about\nThis issue proposes adding a \"Related content\" section at the end of most documentation pages, similar to what's seen in Microsoft SQL documentation. This aims to enhance the structure of our docs by providing relevant links that guide users to related topics.\n\n## What needs to be done\nContributors are encouraged to implement the \"Related content\" section, ensuring links provided are genuinely related to the content of the pages. It's specified that this should not be added to index pages or similar landing pages.\n\n## Helpful background\nCurrent discussions indicate that the issue may benefit from being broken into smaller, more manageable tasks focused on different areas of the documentation (e.g., Volto UI, Classic UI). Although there are guidelines, some parts of the discussion remain vague. It's important to align on what constitutes \"related\" content.\n\n## Good first steps\n1. Familiarize yourself with Plone's [first-time contributor guide](https://6.docs.plone.org/contributing/first-time.html).\n2. Review existing documentation to identify where a \"Related content\" section could be useful.\n3. Start by adding this section to one or two appropriate pages, ensuring links are relevant and follow the guidelines mentioned above.\n4. Engage with the community for feedback and further clarification if needed.\n```",
+        "path": "data/issues/summaries/plone/documentation/1973.json"
+      }
     },
     {
       "id": 2634531781,
@@ -423,7 +439,15 @@
         "41 lvl: easy",
         "99 tag: good first issue",
         "99 tag: hacktoberfest"
-      ]
+      ],
+      "contributor_summary": {
+        "status": "available",
+        "generated_at": "2026-04-09T11:33:34Z",
+        "source_issue_updated_at": "2026-03-04T09:06:35Z",
+        "model": "gpt-4o-mini",
+        "summary_markdown": "## What this issue is about\nThis issue focuses on updating the Plone documentation to replace instances of the terms \"Plone instance\" and \"Zope / Plone instance\" with \"Zope instance.\" This change will enhance clarity and consistency in the documentation.\n\n## What needs to be done\nYou’ll need to search through the Plone documentation source for all occurrences of the specified terms and replace them accordingly. It's important to ensure the updates correctly reflect the intended meaning.\n\n## Helpful background\nThe goal is to maintain accurate documentation for users and developers. Familiarity with Plone’s documentation structure may help but is not strictly necessary. If you’re new, consider reviewing the documentation sections related to contributors for guidance.\n\n## Good first steps\n1. **Review the Documentation**: Familiarize yourself with the Plone documentation by visiting relevant sections.\n2. **Search for Terms**: Identify all occurrences of \"Plone instance\" and \"Zope / Plone instance\" in the documentation.\n3. **Submit Changes**: After making your updates, create a pull request with your changes. Be sure to follow the [contributing guidelines](https://6.docs.plone.org/contributing/index.html). \n4. **Testing**: Check if updates render correctly in the documentation format before submitting.\n\nFeel free to ask questions in the comments to clarify any uncertainties!",
+        "path": "data/issues/summaries/plone/documentation/1751.json"
+      }
     },
     {
       "id": 1350425001,
@@ -448,7 +472,15 @@
         "99 tag: Plone 6.x",
         "99 tag: good first issue",
         "99 tag: hacktoberfest"
-      ]
+      ],
+      "contributor_summary": {
+        "status": "available",
+        "generated_at": "2026-04-09T11:33:40Z",
+        "source_issue_updated_at": "2026-03-04T09:06:31Z",
+        "model": "gpt-4o-mini",
+        "summary_markdown": "```markdown\n## What this issue is about\nThis issue aims to create a clear Python dependency diagram for Plone using tools like [pipforester](https://pypi.org/project/pipforester/) and [pipdeptree](https://pypi.org/project/pipdeptree/). The goal is to help newcomers understand how various Plone packages are interconnected.\n\n## What needs to be done\nWe need to generate a dependency diagram that outlines the key packages in Plone and how they relate to each other. This diagram, along with a brief narrative, will be added to the [Overview section of the documentation](https://6.docs.plone.org/overview/index.html).\n\n## Helpful background\nThe discussion has included various tool recommendations, with a focus on using pipforester and pipdeptree for their ability to handle and visualize dependencies effectively. There are some indications of existing challenges with Windows setups, which may need attention.\n\n## Good first steps\n1. **Familiarize yourself with pipdeptree and pipforester** by reviewing their documentation.\n2. **Set up a suitable development environment** (preferably in a Linux system or WSL if using Windows) to avoid installation issues.\n3. **Run the commands** below to generate a dependency diagram:\n   ```shell\n   pip install pipdeptree pipforester\n   pipdeptree -j -e 'zope.*,z3c.*,zc.*,setuptools,uv,six' > plone.json \n   pipforester -i plone.json -o plone.dot \n   ```\n4. **Contribute to the documentation** once you have generated the diagram.\n```",
+        "path": "data/issues/summaries/plone/documentation/1281.json"
+      }
     },
     {
       "id": 1145241080,
@@ -473,7 +505,15 @@
         "99 tag: Plone 6.x",
         "99 tag: good first issue",
         "99 tag: hacktoberfest"
-      ]
+      ],
+      "contributor_summary": {
+        "status": "available",
+        "generated_at": "2026-04-09T11:33:45Z",
+        "source_issue_updated_at": "2026-03-04T09:06:31Z",
+        "model": "gpt-4o-mini",
+        "summary_markdown": "## What this issue is about\nThis issue focuses on improving the spellcheck and consistency of spellings in the Plone documentation. Specific terms like \"JavaScript\" and \"Node.js\" need to be standardized to enhance clarity.\n\n## What needs to be done\nYou will need to update two files in the vocabulary configuration:\n- `styles/config/vocabularies/Plone/accept.txt`: Add correct spellings.\n- `styles/config/vocabularies/Plone/reject.txt`: Add incorrect forms if needed, but not by default for case variations of accepted words. \n\n## Helpful background\nSpellcheck improvements should avoid mistakes, especially when doing global find-and-replace actions that might alter command names or code blocks. Familiarize yourself with the [Vale documentation](https://vale.sh/docs/keys/vocab#case-sensitivity) for case sensitivity details. Check out the setup guides for using Vale with [Plone documentation](https://6.docs.plone.org/contributing/documentation/setup-build.html#vale).\n\n## Good first steps\n1. Review the relevant files in the repository.\n2. Make changes to the vocabularies as indicated.\n3. Ensure the changes are tested. \n4. Familiarize yourself with the contributing guidelines and follow them, especially regarding common pitfalls for new contributors. You can find these in the [Plone contributing documentation](https://6.docs.plone.org/contributing/). \n\nHappy contributing!",
+        "path": "data/issues/summaries/plone/documentation/1190.json"
+      }
     },
     {
       "id": 188974446,
@@ -498,7 +538,15 @@
         "99 tag: Plone 6.x",
         "99 tag: good first issue",
         "99 tag: hacktoberfest"
-      ]
+      ],
+      "contributor_summary": {
+        "status": "available",
+        "generated_at": "2026-04-09T11:33:52Z",
+        "source_issue_updated_at": "2026-03-04T09:06:30Z",
+        "model": "gpt-4o-mini",
+        "summary_markdown": "```markdown\n## What this issue is about\nThis issue seeks to create or improve documentation on customizing print styles (print.css) for Plone, following a user’s request for clarity on this topic.\n\n## What needs to be done\nWe need to document how to modify print styles for both Volto and Classic UI. This includes information on creating a CSS file and adding the appropriate link in your HTML, as suggested in comments.\n\n## Helpful background\nKey resources to consult include:\n- [Custom styling for Volto](https://6.docs.plone.org/volto/theming/custom-styling.html)\n- [Classic UI static resources](https://6.docs.plone.org/classic-ui/static-resources.html)\nYou may also want to review [MDN's guide on printing media queries](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_media_queries/Printing) for a broader understanding.\n\n## Good first steps\n1. Familiarize yourself with the provided documents on customizing styles.\n2. Read the guidelines for first-time contributors including best practices and things to avoid.\n3. Consider drafting a pull request (PR) that adds a small section with examples, if you feel comfortable. Feel free to ask for feedback along the way!\n```",
+        "path": "data/issues/summaries/plone/documentation/717.json"
+      }
     },
     {
       "id": 1108636676,
@@ -523,7 +571,15 @@
         "99 tag: Plone 6.x",
         "99 tag: good first issue",
         "99 tag: hacktoberfest"
-      ]
+      ],
+      "contributor_summary": {
+        "status": "available",
+        "generated_at": "2026-04-09T11:33:59Z",
+        "source_issue_updated_at": "2026-03-04T09:06:30Z",
+        "model": "gpt-4o-mini",
+        "summary_markdown": "```markdown\n## What this issue is about\nThis issue focuses on enhancing SEO (Search Engine Optimization) for Plone by improving the `html_meta` directive. This directive allows you to set metadata in the HTML head, which is crucial for how search engines index your pages.\n\n## What needs to be done\nWe need to complete the implementation of `html_meta` for the backend and Classic UI components. Other parts, like Volto, plone.api, and plone.restapi, are already done.\n\n## Helpful background\nSEO helps make your site more visible in search engine results. The `html_meta` directive includes essential information like keywords and descriptions. Reference the related issue [here](https://github.com/plone/training/issues/519) for more context.\n\n## Good first steps\n1. **Review the existing implementations** of `html_meta` in Volto, plone.api, and plone.restapi for guidance.\n2. **Check the codebase** for the backend and Classic UI to understand where changes are needed.\n3. **Join the discussion** on the issue comments if anything is unclear. Feel free to ask questions—everyone here is ready to help!\n4. **Plan to write tests** to ensure your changes work as expected and update documentation if necessary.\n\nBy contributing to this issue, you will help improve the SEO capabilities of Plone!\n```",
+        "path": "data/issues/summaries/plone/documentation/1147.json"
+      }
     },
     {
       "id": 174787563,
@@ -549,7 +605,15 @@
         "99 tag: classic-ui",
         "99 tag: good first issue",
         "99 tag: hacktoberfest"
-      ]
+      ],
+      "contributor_summary": {
+        "status": "available",
+        "generated_at": "2026-04-09T11:34:03Z",
+        "source_issue_updated_at": "2026-03-04T09:06:28Z",
+        "model": "gpt-4o-mini",
+        "summary_markdown": "```markdown\n## What this issue is about\nThis issue addresses the need for documentation on how to customize moment.js date formats in Plone 6 Classic UI. The goal is to explain how dates can be displayed in different formats using a setting in the Resource Registry.\n\n## What needs to be done\nWe need to document how to use the `momentFormat` setting in the Resource Registry's Pattern Options. This involves creating clear instructions on changing date formats to show full dates rather than relative ones (e.g., \"7 days ago\").\n\n## Helpful background\nCurrently, the documentation needs to clarify whether these customizations are still applicable for Plone 6, as the issue was originally created for Plone 5. Additionally, Moment.js is set to be removed in Plone 7, so any modifications should be temporary.\n\n## Good first steps\n1. Check if customizing date formats through Resource Registry is still supported in Plone 6 Classic UI.\n2. If possible, draft a section explaining how to adjust the `momentFormat` setting with examples and reference links.\n3. Engage with the community for guidance on where this documentation should be added, considering the potential removal of Moment.js in Plone 7.\n```",
+        "path": "data/issues/summaries/plone/documentation/692.json"
+      }
     },
     {
       "id": 155527438,
@@ -572,7 +636,15 @@
         "41 lvl: easy",
         "99 tag: good first issue",
         "99 tag: hacktoberfest"
-      ]
+      ],
+      "contributor_summary": {
+        "status": "available",
+        "generated_at": "2026-04-09T11:34:08Z",
+        "source_issue_updated_at": "2026-03-04T09:06:27Z",
+        "model": "gpt-4o-mini",
+        "summary_markdown": "# Issue Summary: External Links Opening in New Tab/Window\n\n## What this issue is about\nThis issue discusses the feature that allows external links in Plone to open in a new tab or window. Contributors are exploring where this setting is located and advocating for better documentation as users find it unintuitive.\n\n## What needs to be done\nThe primary goal is to improve documentation regarding this feature, specifically how to enable it in the Plone theming control panel. As of now, many users have difficulty finding it, and there are suggestions to make its location more intuitive.\n\n## Helpful background\nThe feature can be located in the 'Theming Control Panel' under the 'Advanced' tab in the 'Theme base' sub-tab. Users have said it's not adequately documented, making it hard for content editors to know about its existence or how to use it.\n\n## Good first steps\n1. Verify the current location and functionality of the external link settings.\n2. If comfortable, update or create documentation to clarify the steps to access and use this feature.\n3. Consider including screenshots or a testing guide for implementation.\n4. Reach out in the issue comments if you have questions or need clarification. Your contributions can help make Plone more user-friendly!",
+        "path": "data/issues/summaries/plone/documentation/612.json"
+      }
     },
     {
       "id": 3965586196,
@@ -596,7 +668,15 @@
         "21 status: confirmed",
         "33 needs: docs",
         "41 lvl: easy"
-      ]
+      ],
+      "contributor_summary": {
+        "status": "available",
+        "generated_at": "2026-04-09T11:34:17Z",
+        "source_issue_updated_at": "2026-02-24T04:11:15Z",
+        "model": "gpt-4o-mini",
+        "summary_markdown": "```markdown\n## What this issue is about\nThis issue addresses the need for better documentation regarding the process of running `make install` when changing a dependency in the Volto project. Currently, new contributors may not be aware of this important step, which also involves committing the updated `pnpm-lock.yaml` file.\n\n## What needs to be done\nWe need to document the `make install` step clearly in the Volto Contributing section to ensure that all contributors, especially newcomers, understand its importance when modifying dependencies. \n\n## Helpful background\nThe discussion suggests that existing documentation is lacking in this area, with only a couple of mentions of `make install`. Improving this will help maintain consistency in contributions and reduce confusion for new developers.\n\n## Good first steps\n1. Review the current documentation related to contributing, specifically the pages on [developing core](https://6.docs.plone.org/volto/contributing/developing-core.html) and [linting](https://6.docs.plone.org/volto/contributing/linting.html).\n2. Suggest wording for a new section that includes the `make install` step and its significance, possibly integrating it into the *testing* documentation.\n3. Coordinate with others involved in this discussion, like @Kathrina-dev and @wesleybl, to refine the documentation further.\n```",
+        "path": "data/issues/summaries/plone/volto/7922.json"
+      }
     },
     {
       "id": 215972621,
@@ -617,7 +697,15 @@
       "labels": [
         "01 type: bug",
         "41 lvl: easy"
-      ]
+      ],
+      "contributor_summary": {
+        "status": "available",
+        "generated_at": "2026-04-09T11:35:04Z",
+        "source_issue_updated_at": "2026-01-29T22:02:30Z",
+        "model": "gpt-4o-mini",
+        "summary_markdown": "## What this issue is about\nThis issue addresses inconsistencies in the Plone REST API documentation regarding the use of \"Plone\" vs. \"plone\" as the root URI for authentication examples. It has been noted that documentation uses both versions, which can confuse users.\n\n## What needs to be done\nWe need to ensure consistent use of either \"Plone\" or \"plone\" in the documentation. The prevailing suggestion is to use \"plone\" in lower case, as mentioned in the conventions. Additionally, there are discrepancies related to port numbers that also need to be aligned, but this aspect is less clear.\n\n## Helpful background\nThe default name for a Plone site is \"Plone\", but when testing or auto-generating documentation, the name \"plone\" is commonly used. This has led to confusion, and there has been discussion about post-processing the requests and responses for documentation to resolve these inconsistencies.\n\n## Good first steps\n1. Review the current documentation in the `/docs/source` and `/src` directories to identify occurrences of \"Plone\" and \"plone\".\n2. Propose consistent usage in your findings.\n3. Consider posting updates or revisions to documentation within a pull request.\n4. Coordinate with others on the team for feedback and testing to ensure all changes align with expectations.",
+        "path": "data/issues/summaries/plone/plone.restapi/285.json"
+      }
     },
     {
       "id": 1228581206,
@@ -2056,10 +2144,10 @@
   "message": null,
   "workflow": {
     "repository": "syslabcom/activity-recognition",
-    "run_id": "24187585349",
-    "run_number": "48",
+    "run_id": "24187949813",
+    "run_number": "49",
     "attempt": "1",
-    "url": "https://github.com/syslabcom/activity-recognition/actions/runs/24187585349",
-    "sha": "f88752c0361349fe46a0c616320dfa6ab90ae878"
+    "url": "https://github.com/syslabcom/activity-recognition/actions/runs/24187949813",
+    "sha": "a677a65533a97837746ba09b6941207dd90391a4"
   }
 }

@@ -1,0 +1,32 @@
+{
+  "version": 1,
+  "status": "success",
+  "generated_at": "2026-04-09T11:33:29Z",
+  "source_issue": {
+    "id": 3440477443,
+    "number": 1973,
+    "title": "Add \"Related content\" as the final section in most pages",
+    "html_url": "https://github.com/plone/documentation/issues/1973",
+    "repository_full_name": "plone/documentation",
+    "updated_at": "2026-03-04T09:06:36Z",
+    "labels": [
+      "41 lvl: easy",
+      "99 tag: good first issue",
+      "99 tag: hacktoberfest"
+    ],
+    "comments": 10
+  },
+  "ai": {
+    "provider": "openai",
+    "model": "gpt-4o-mini"
+  },
+  "summary_markdown": "```markdown\n## What this issue is about\nThis issue proposes adding a \"Related content\" section at the end of most documentation pages, similar to what's seen in Microsoft SQL documentation. This aims to enhance the structure of our docs by providing relevant links that guide users to related topics.\n\n## What needs to be done\nContributors are encouraged to implement the \"Related content\" section, ensuring links provided are genuinely related to the content of the pages. It's specified that this should not be added to index pages or similar landing pages.\n\n## Helpful background\nCurrent discussions indicate that the issue may benefit from being broken into smaller, more manageable tasks focused on different areas of the documentation (e.g., Volto UI, Classic UI). Although there are guidelines, some parts of the discussion remain vague. It's important to align on what constitutes \"related\" content.\n\n## Good first steps\n1. Familiarize yourself with Plone's [first-time contributor guide](https://6.docs.plone.org/contributing/first-time.html).\n2. Review existing documentation to identify where a \"Related content\" section could be useful.\n3. Start by adding this section to one or two appropriate pages, ensuring links are relevant and follow the guidelines mentioned above.\n4. Engage with the community for feedback and further clarification if needed.\n```",
+  "workflow": {
+    "repository": "syslabcom/activity-recognition",
+    "run_id": "24187949813",
+    "run_number": "49",
+    "attempt": "1",
+    "url": "https://github.com/syslabcom/activity-recognition/actions/runs/24187949813",
+    "sha": "a677a65533a97837746ba09b6941207dd90391a4"
+  }
+}

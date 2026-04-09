@@ -1,7 +1,7 @@
 {
   "version": 1,
   "status": "success",
-  "generated_at": "2026-04-09T11:24:01Z",
+  "generated_at": "2026-04-09T11:33:16Z",
   "organization": "plone",
   "state": "open",
   "slug": "lvl-moderate",
@@ -197,7 +197,15 @@
         "33 needs: docs",
         "42 lvl: moderate",
         "30 needs: triage"
-      ]
+      ],
+      "contributor_summary": {
+        "status": "available",
+        "generated_at": "2026-04-09T11:34:22Z",
+        "source_issue_updated_at": "2026-02-17T05:32:03Z",
+        "model": "gpt-4o-mini",
+        "summary_markdown": "```markdown\n## What this issue is about\nThis issue addresses missing release notes and changelog entries for the \"Seven\" documentation in the Plone Volto project. The absence of these documents is causing warnings in Sphinx, the tool used for generating documentation.\n\n## What needs to be done\nWe need to create and include release notes or a changelog for the Seven section of the documentation. This will help eliminate the warnings seen during documentation build processes.\n\n## Helpful background\nSphinx emits warnings when it can't find referenced documents. In this case, it's indicating that our documentation is missing important sections that should detail changes and updates in the project. Proper documentation is crucial for clarity and maintaining project standards.\n\n## Good first steps\n1. **Familiarize yourself** with the existing documentation structure in the `volto` repository.\n2. **Check the Seven-related updates** from recent project developments to gather necessary information for the release notes.\n3. **Draft the missing notes** based on the information you've compiled.\n4. If you're interested in contributing, please ask for assignment in the comments or reach out to the current assignees for guidance.\n5. Be prepared to share your work for review and possibly provide updates based on feedback.\n```",
+        "path": "data/issues/summaries/plone/volto/7409.json"
+      }
     },
     {
       "id": 2655182802,
@@ -219,7 +227,15 @@
         "31 needs: help",
         "33 needs: docs",
         "42 lvl: moderate"
-      ]
+      ],
+      "contributor_summary": {
+        "status": "available",
+        "generated_at": "2026-04-09T11:34:38Z",
+        "source_issue_updated_at": "2026-02-10T04:01:36Z",
+        "model": "gpt-4o-mini",
+        "summary_markdown": "```markdown\n## What this issue is about\nThis issue focuses on completing the documentation for the **Component architecture** in Plone, specifically targeting the conceptual guide and relevant backend topics. The discussions highlight gaps in documenting utilities, adapters, lookups, and events/subscribers.\n\n## What needs to be done\n- Verify and enhance documentation on:\n  - Registering a utility\n  - Adapters\n  - Lookup methods\n  - Events and Subscribers\n\nThere’s some ambiguity regarding the details of certain components, and it seems like input from someone with backend expertise will be crucial.\n\n## Helpful background\nThe documentation source for `plone.app.dexterity` is located in this repository and has been converted to MyST format, ready for editing. Relevant links to the currently affected documentation pages are noted, but the need for additional sources is indicated.\n\n## Good first steps\n1. Review the existing documentation links provided in this issue.\n2. If you're familiar with the Plone backend, consider verifying how utilities and adapters work.\n3. Collaborate with others in the thread who may also contribute or need assistance.\n4. Test any changes locally and document your findings for future contributors.\n```",
+        "path": "data/issues/summaries/plone/documentation/1775.json"
+      }
     },
     {
       "id": 2562726797,
@@ -1879,10 +1895,10 @@
   "message": null,
   "workflow": {
     "repository": "syslabcom/activity-recognition",
-    "run_id": "24187585349",
-    "run_number": "48",
+    "run_id": "24187949813",
+    "run_number": "49",
     "attempt": "1",
-    "url": "https://github.com/syslabcom/activity-recognition/actions/runs/24187585349",
-    "sha": "f88752c0361349fe46a0c616320dfa6ab90ae878"
+    "url": "https://github.com/syslabcom/activity-recognition/actions/runs/24187949813",
+    "sha": "a677a65533a97837746ba09b6941207dd90391a4"
   }
 }

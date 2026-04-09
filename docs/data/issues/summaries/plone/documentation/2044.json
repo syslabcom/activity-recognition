@@ -1,0 +1,30 @@
+{
+  "version": 1,
+  "status": "success",
+  "generated_at": "2026-04-09T11:34:49Z",
+  "source_issue": {
+    "id": 3874667266,
+    "number": 2044,
+    "title": "Include diazo documentation in Classic backend documentation",
+    "html_url": "https://github.com/plone/documentation/issues/2044",
+    "repository_full_name": "plone/documentation",
+    "updated_at": "2026-02-03T02:29:08Z",
+    "labels": [
+      "43 lvl: complex"
+    ],
+    "comments": 4
+  },
+  "ai": {
+    "provider": "openai",
+    "model": "gpt-4o-mini"
+  },
+  "summary_markdown": "```markdown\n## What this issue is about\nThis issue seeks to include the Diazo documentation into the Plone documentation repository. Currently, the Diazo documentation is hosted separately at [diazo.org](https://docs.diazo.org/en/latest/), and there is a suggestion to integrate it more closely with Plone’s documentation.\n\n## What needs to be done\n1. Find and contact the maintainers of the Diazo documentation on ReadTheDocs to request maintainer access.\n2. Convert the existing Diazo documentation to MyST format, which is a format compatible with markdown.\n3. Decide where to add these documents in the Plone repository as a Git submodule.\n4. Set up the submodule in the `plone/documentation` following [these guidelines](https://6.docs.plone.org/contributing/documentation/admins.html#importing-external-docs-with-submodules).\n\n## Helpful background\nDiazo is a tool for theming in Plone, and integrating its documentation could enhance the user experience. The discussions are ongoing, and there might be additional criteria that need clarification.\n\n## Good first steps\n1. Familiarize yourself with the Diazo documentation at [diazo.org](https://docs.diazo.org/en/latest/).\n2. Check the [Plone documentation contribution guide](https://6.docs.plone.org/contributing/documentation/) for setup instructions.\n3. Consider reaching out to the current maintainers for guidance as you begin this work.\n\nFeel free to ask questions if you're unsure about anything!\n```",
+  "workflow": {
+    "repository": "syslabcom/activity-recognition",
+    "run_id": "24187949813",
+    "run_number": "49",
+    "attempt": "1",
+    "url": "https://github.com/syslabcom/activity-recognition/actions/runs/24187949813",
+    "sha": "a677a65533a97837746ba09b6941207dd90391a4"
+  }
+}

@@ -1,0 +1,36 @@
+{
+  "version": 1,
+  "status": "success",
+  "generated_at": "2026-04-09T11:34:03Z",
+  "source_issue": {
+    "id": 174787563,
+    "number": 692,
+    "title": "add doc on customizing moment.js date formats",
+    "html_url": "https://github.com/plone/documentation/issues/692",
+    "repository_full_name": "plone/documentation",
+    "updated_at": "2026-03-04T09:06:28Z",
+    "labels": [
+      "31 needs: help",
+      "33 needs: docs",
+      "41 lvl: easy",
+      "99 tag: Plone 6.x",
+      "99 tag: classic-ui",
+      "99 tag: good first issue",
+      "99 tag: hacktoberfest"
+    ],
+    "comments": 4
+  },
+  "ai": {
+    "provider": "openai",
+    "model": "gpt-4o-mini"
+  },
+  "summary_markdown": "```markdown\n## What this issue is about\nThis issue addresses the need for documentation on how to customize moment.js date formats in Plone 6 Classic UI. The goal is to explain how dates can be displayed in different formats using a setting in the Resource Registry.\n\n## What needs to be done\nWe need to document how to use the `momentFormat` setting in the Resource Registry's Pattern Options. This involves creating clear instructions on changing date formats to show full dates rather than relative ones (e.g., \"7 days ago\").\n\n## Helpful background\nCurrently, the documentation needs to clarify whether these customizations are still applicable for Plone 6, as the issue was originally created for Plone 5. Additionally, Moment.js is set to be removed in Plone 7, so any modifications should be temporary.\n\n## Good first steps\n1. Check if customizing date formats through Resource Registry is still supported in Plone 6 Classic UI.\n2. If possible, draft a section explaining how to adjust the `momentFormat` setting with examples and reference links.\n3. Engage with the community for guidance on where this documentation should be added, considering the potential removal of Moment.js in Plone 7.\n```",
+  "workflow": {
+    "repository": "syslabcom/activity-recognition",
+    "run_id": "24187949813",
+    "run_number": "49",
+    "attempt": "1",
+    "url": "https://github.com/syslabcom/activity-recognition/actions/runs/24187949813",
+    "sha": "a677a65533a97837746ba09b6941207dd90391a4"
+  }
+}

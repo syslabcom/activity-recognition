@@ -1,0 +1,35 @@
+{
+  "version": 1,
+  "status": "success",
+  "generated_at": "2026-04-09T11:33:45Z",
+  "source_issue": {
+    "id": 1145241080,
+    "number": 1190,
+    "title": "Improve spellcheck",
+    "html_url": "https://github.com/plone/documentation/issues/1190",
+    "repository_full_name": "plone/documentation",
+    "updated_at": "2026-03-04T09:06:31Z",
+    "labels": [
+      "31 needs: help",
+      "33 needs: docs",
+      "41 lvl: easy",
+      "99 tag: Plone 6.x",
+      "99 tag: good first issue",
+      "99 tag: hacktoberfest"
+    ],
+    "comments": 5
+  },
+  "ai": {
+    "provider": "openai",
+    "model": "gpt-4o-mini"
+  },
+  "summary_markdown": "## What this issue is about\nThis issue focuses on improving the spellcheck and consistency of spellings in the Plone documentation. Specific terms like \"JavaScript\" and \"Node.js\" need to be standardized to enhance clarity.\n\n## What needs to be done\nYou will need to update two files in the vocabulary configuration:\n- `styles/config/vocabularies/Plone/accept.txt`: Add correct spellings.\n- `styles/config/vocabularies/Plone/reject.txt`: Add incorrect forms if needed, but not by default for case variations of accepted words. \n\n## Helpful background\nSpellcheck improvements should avoid mistakes, especially when doing global find-and-replace actions that might alter command names or code blocks. Familiarize yourself with the [Vale documentation](https://vale.sh/docs/keys/vocab#case-sensitivity) for case sensitivity details. Check out the setup guides for using Vale with [Plone documentation](https://6.docs.plone.org/contributing/documentation/setup-build.html#vale).\n\n## Good first steps\n1. Review the relevant files in the repository.\n2. Make changes to the vocabularies as indicated.\n3. Ensure the changes are tested. \n4. Familiarize yourself with the contributing guidelines and follow them, especially regarding common pitfalls for new contributors. You can find these in the [Plone contributing documentation](https://6.docs.plone.org/contributing/). \n\nHappy contributing!",
+  "workflow": {
+    "repository": "syslabcom/activity-recognition",
+    "run_id": "24187949813",
+    "run_number": "49",
+    "attempt": "1",
+    "url": "https://github.com/syslabcom/activity-recognition/actions/runs/24187949813",
+    "sha": "a677a65533a97837746ba09b6941207dd90391a4"
+  }
+}

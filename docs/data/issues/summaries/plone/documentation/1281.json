@@ -1,0 +1,35 @@
+{
+  "version": 1,
+  "status": "success",
+  "generated_at": "2026-04-09T11:33:40Z",
+  "source_issue": {
+    "id": 1350425001,
+    "number": 1281,
+    "title": "Overview: Create a dependency diagram using pipforester and pipdeptree",
+    "html_url": "https://github.com/plone/documentation/issues/1281",
+    "repository_full_name": "plone/documentation",
+    "updated_at": "2026-03-04T09:06:31Z",
+    "labels": [
+      "31 needs: help",
+      "33 needs: docs",
+      "41 lvl: easy",
+      "99 tag: Plone 6.x",
+      "99 tag: good first issue",
+      "99 tag: hacktoberfest"
+    ],
+    "comments": 14
+  },
+  "ai": {
+    "provider": "openai",
+    "model": "gpt-4o-mini"
+  },
+  "summary_markdown": "```markdown\n## What this issue is about\nThis issue aims to create a clear Python dependency diagram for Plone using tools like [pipforester](https://pypi.org/project/pipforester/) and [pipdeptree](https://pypi.org/project/pipdeptree/). The goal is to help newcomers understand how various Plone packages are interconnected.\n\n## What needs to be done\nWe need to generate a dependency diagram that outlines the key packages in Plone and how they relate to each other. This diagram, along with a brief narrative, will be added to the [Overview section of the documentation](https://6.docs.plone.org/overview/index.html).\n\n## Helpful background\nThe discussion has included various tool recommendations, with a focus on using pipforester and pipdeptree for their ability to handle and visualize dependencies effectively. There are some indications of existing challenges with Windows setups, which may need attention.\n\n## Good first steps\n1. **Familiarize yourself with pipdeptree and pipforester** by reviewing their documentation.\n2. **Set up a suitable development environment** (preferably in a Linux system or WSL if using Windows) to avoid installation issues.\n3. **Run the commands** below to generate a dependency diagram:\n   ```shell\n   pip install pipdeptree pipforester\n   pipdeptree -j -e 'zope.*,z3c.*,zc.*,setuptools,uv,six' > plone.json \n   pipforester -i plone.json -o plone.dot \n   ```\n4. **Contribute to the documentation** once you have generated the diagram.\n```",
+  "workflow": {
+    "repository": "syslabcom/activity-recognition",
+    "run_id": "24187949813",
+    "run_number": "49",
+    "attempt": "1",
+    "url": "https://github.com/syslabcom/activity-recognition/actions/runs/24187949813",
+    "sha": "a677a65533a97837746ba09b6941207dd90391a4"
+  }
+}

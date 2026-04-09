@@ -1,0 +1,32 @@
+{
+  "version": 1,
+  "status": "success",
+  "generated_at": "2026-04-09T11:34:54Z",
+  "source_issue": {
+    "id": 3279893272,
+    "number": 7259,
+    "title": "Search the control panel to find a setting",
+    "html_url": "https://github.com/plone/volto/issues/7259",
+    "repository_full_name": "plone/volto",
+    "updated_at": "2026-02-01T13:59:16Z",
+    "labels": [
+      "43 lvl: complex",
+      "discussion",
+      "30 needs: triage"
+    ],
+    "comments": 11
+  },
+  "ai": {
+    "provider": "openai",
+    "model": "gpt-4o-mini"
+  },
+  "summary_markdown": "```markdown\n## What this issue is about\nThis issue proposes adding a search feature in the Plone control panel to allow users to locate specific settings quickly, similar to the search function in macOS's System Settings. The idea is still in the discussion phase, and there are various viewpoints on how to implement it effectively.\n\n## What needs to be done\nWe need to design a functionality that lets users search for specific settings and see which control panels contain them. There is currently no clear implementation path, and discussions suggest starting with a simple search bar that filters existing settings, eventually moving towards a more advanced solution.\n\n## Helpful background\nContributors have mentioned the importance of both global and filtered search options within the control panel. There is no existing widget that mimics the desired functionality, but notable methods include indexing fields from control panel forms.\n\n## Good first steps\n1. Familiarize yourself with the discussions in the issue. \n2. Check the [Contributing Guide for Plone](https://6.docs.plone.org/contributing/index.html) and the [Volto contributions](https://6.docs.plone.org/contributing/volto.html) to understand the contribution process.\n3. Consider trying to implement a basic search feature that filters through current settings; additional complexity can be added later.\n4. Engage with existing contributors for feedback and guidance throughout the development process.\n```",
+  "workflow": {
+    "repository": "syslabcom/activity-recognition",
+    "run_id": "24187949813",
+    "run_number": "49",
+    "attempt": "1",
+    "url": "https://github.com/syslabcom/activity-recognition/actions/runs/24187949813",
+    "sha": "a677a65533a97837746ba09b6941207dd90391a4"
+  }
+}
