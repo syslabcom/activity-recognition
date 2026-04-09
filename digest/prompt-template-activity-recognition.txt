@@ -40,6 +40,8 @@ Description of changes.
 
 [Include a short closing paragraph if there are important milestones, maintainer effort, or community-relevant progress signals.]
 
+[Include a list of all contributors who committed something during the period, if that information is available in the data.]
+
 Automatically generated from {active_repos} active repositories.
 
 **END OF FORMAT**
