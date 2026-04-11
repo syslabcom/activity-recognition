@@ -13,9 +13,10 @@ The output will be published on GitHub Pages and may also be consumed by externa
 - Organize the summary BY REPOSITORY
 - For each repository, summarize what was delivered or changed in short sentences
 - Mention statistics naturally in the text, such as files changed, lines added or removed, and merged pull requests
-- Pay special attention to contributions by pilz when they appear in the data, but do not invent them if they are absent
+- Pay special attention to contributions when they appear in the data, but do not invent them if they are absent
 - Focus on concrete accomplishments, likely impact, and meaningful progress
 - Be specific about features, fixes, infrastructure work, and maintenance work
+- Do not use hype language or vague generalities. Be practical and ecosystem-relevant in your descriptions.
 - Write everything in {language}
 
 **Repository Activity Data ({period_start} to {period_end}):**
