@@ -23,7 +23,7 @@ jobs:
       - name: Checkout github-activity-digest source
         uses: actions/checkout@v4
         with:
-          repository: abensur/github-activity-digest
+          repository: syslabcom/github-activity-digest
           path: tools/github-activity-digest
 
       - name: Setup Bun
@@ -65,7 +65,7 @@ jobs:
             --summary-file "tools/github-activity-digest/archive/weekly-report-$(date -u +%F).md" \
             --log-file "$RUNNER_TEMP/github-activity-digest.log" \
             --output-dir "docs/data" \
-            --source-repository "abensur/github-activity-digest" \
+            --source-repository "syslabcom/github-activity-digest" \
             --source-config-path "digest/config.json"
 
       - name: Commit published data
