@@ -1,17 +1,34 @@
 {
   "version": 1,
-  "generated_at": "2026-04-12T07:47:13Z",
+  "generated_at": "2026-04-12T10:58:52Z",
   "tasks": [
     {
       "slug": "github-activity-digest",
       "title": "GitHub Activity Digest",
       "latest": {
         "status": "success",
-        "generated_at": "2026-04-12T07:47:13Z",
+        "generated_at": "2026-04-12T10:58:52Z",
         "json_path": "data/github-activity-digest/latest.json",
         "markdown_path": "data/github-activity-digest/latest.md"
       },
       "runs": [
+        {
+          "status": "success",
+          "generated_at": "2026-04-12T10:58:52Z",
+          "period": {
+            "days": 7,
+            "start": "2026-04-05",
+            "end": "2026-04-12"
+          },
+          "counts": {
+            "repos_processed": 416,
+            "active_repos": 79
+          },
+          "json_path": "data/github-activity-digest/runs/2026-04-12T10-58-52Z.json",
+          "markdown_path": "data/github-activity-digest/runs/2026-04-12T10-58-52Z.md",
+          "workflow_url": "https://github.com/syslabcom/activity-recognition/actions/runs/24305061905",
+          "summary_excerpt": "# 📊 WEEKLY SUMMARY **2026-04-05 to 2026-04-12** This week saw considerable activity within the Plone organization, with a mix of updates, maintenance, and feature enhancements acr…"
+        },
         {
           "status": "success",
           "generated_at": "2026-04-12T07:47:13Z",
