@@ -1,7 +1,7 @@
 ---
 title: "Plone issue list — Level: Complex"
 permalink: "/issues/lvl-complex/"
-generated_at: "2026-04-13T03:08:29Z"
+generated_at: "2026-04-13T05:05:51Z"
 organization: "plone"
 issue_count: 56
 required_labels:
@@ -10,7 +10,7 @@ required_labels:
 
 # Plone issue list — Level: Complex
 
-Generated: `2026-04-13T03:08:29Z`  
+Generated: `2026-04-13T05:05:51Z`  
 Organization: `plone`  
 Required label: `43 lvl: complex`  
 Issue count: `56`
@@ -19,6 +19,7 @@ Sorted by last updated date, newest first.
 
 | Updated | Repository | Issue | Author | Labels |
 | --- | --- | --- | --- | --- |
+| 2026-04-13 03:50 UTC | `plone/volto` | [#4204 Improve drag & drop support in the blocks engine](https://github.com/plone/volto/issues/4204) | `sneridagh` | `03 type: feature (plip)`, `43 lvl: complex` |
 | 2026-03-23 19:04 UTC | `plone/documentation` | [#1902 Create Plone site administrator guide](https://github.com/plone/documentation/issues/1902) | `stevepiercy` | `05 type: question`, `43 lvl: complex` |
 | 2026-03-23 17:35 UTC | `plone/Products.CMFPlone` | [#1976 z3c.form fields with a default value cannot be set to None or ""](https://github.com/plone/Products.CMFPlone/issues/1976) | `thet` | `01 type: bug`, `31 needs: help`, `12 prio: high`, `21 status: confirmed`, `43 lvl: complex` |
 | 2026-03-19 20:37 UTC | `plone/volto` | [#5300 PLIP: Keyword Manager](https://github.com/plone/volto/issues/5300) | `tisto` | `03 type: feature (plip)`, `43 lvl: complex` |
@@ -61,7 +62,6 @@ Sorted by last updated date, newest first.
 | 2025-01-24 20:47 UTC | `plone/plone.restapi` | [#1730 json_body should not read entire request BODY](https://github.com/plone/plone.restapi/issues/1730) | `mauritsvanrees` | `01 type: bug`, `31 needs: help`, `99 tag: sprint`, `12 prio: high`, `43 lvl: complex`, `53 target: major` |
 | 2025-01-07 05:29 UTC | `plone/documentation` | [#1785 Switch from `pipx` and `venv` to `uv` and friends](https://github.com/plone/documentation/issues/1785) | `stevepiercy` | `43 lvl: complex` |
 | 2024-11-24 07:01 UTC | `plone/documentation` | [#729 consolidate POSKeyError info, include plonechix help](https://github.com/plone/documentation/issues/729) | `tkimnguyen` | `31 needs: help`, `33 needs: docs`, `43 lvl: complex`, `99 tag: Plone 6.x` |
-| 2024-11-05 10:36 UTC | `plone/volto` | [#4204 Improve drag & drop support in the blocks engine](https://github.com/plone/volto/issues/4204) | `sneridagh` | `03 type: feature (plip)`, `43 lvl: complex` |
 | 2024-01-14 10:06 UTC | `plone/volto` | [#1466 Unable to edit frontpage in Volto site without "Manage portal" permission](https://github.com/plone/volto/issues/1466) | `tiberiuichim` | `04 type: enhancement`, `43 lvl: complex` |
 | 2024-01-11 12:33 UTC | `plone/Products.CMFPlone` | [#3866 a11y - Icon for toolbar button "user" - cms ui](https://github.com/plone/Products.CMFPlone/issues/3866) | `stevepiercy` | `99 tag: UX Accessibility`, `43 lvl: complex` |
 | 2023-11-23 17:36 UTC | `plone/meta` | [#183 Script: remove `pkg_resources` namespace declarations](https://github.com/plone/meta/issues/183) | `gforcada` | `04 type: enhancement`, `12 prio: high`, `43 lvl: complex` |
