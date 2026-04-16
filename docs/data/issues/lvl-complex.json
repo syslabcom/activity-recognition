@@ -1,7 +1,7 @@
 {
   "version": 1,
   "status": "success",
-  "generated_at": "2026-04-16T15:35:23Z",
+  "generated_at": "2026-04-16T16:35:28Z",
   "organization": "plone",
   "state": "open",
   "slug": "lvl-complex",
@@ -33,10 +33,10 @@
       ],
       "contributor_summary": {
         "status": "available",
-        "generated_at": "2026-04-09T16:34:23Z",
-        "source_issue_updated_at": "2024-11-05T10:36:02Z",
+        "generated_at": "2026-04-16T16:35:36Z",
+        "source_issue_updated_at": "2026-04-13T03:50:39Z",
         "model": "gpt-4o-mini",
-        "summary_markdown": "```markdown\n## What this issue is about\nThis issue focuses on enhancing the drag and drop functionality within the Volto blocks engine. The current system relies on an outdated library, which hampers usability and adaptability. The proposal is to switch to the actively maintained `react-aria` library, allowing for more complex interactions, such as moving blocks between different containers.\n\n## What needs to be done\nThe following tasks need to be completed:\n- Refactor the drag and drop infrastructure to use `react-aria`.\n- Establish a unified context for drag and drop actions across the engine.\n- Improve collision detection and animations for a smoother user experience.\n- Create a new version of the `DragDropList` component with parallel functionality.\n- Maintain backward compatibility for existing components.\n\n## Helpful background\nThis issue originates from a Plone Improvement Proposal (PLIP). It's noted that a Proof of Concept (PoC) pull request is in progress but needs further refinement. There are discussions on the performance of the new system, including the possibility of integrating a \"virtualized list\" feature for large edit pages.\n\n## Good first steps\n1. Familiarize yourself with the [PoC PR](https://github.com/plone/volto/pull/3547).\n2. Review the existing `DragDropList` component for context.\n3. Reach out to @sneridagh for mentorship and guidance.\n4. Consider contributing to the testing and documentation as the project progresses.\n```",
+        "summary_markdown": "# Improve drag & drop support in the blocks engine\n\n## What this issue is about\nThis issue aims to enhance the drag-and-drop functionality within the Volto blocks engine by transitioning from the `react-beautiful-dnd` library to the actively maintained `react-aria` library. The goal is to facilitate smoother movement of blocks not just within the main blocks stream but also between different block containers.\n\n## What needs to be done\n1. Create a central drag-and-drop context for all elements in the blocks engine.\n2. Refactor specific components (`BlocksForm`, `EditBlockWrapper`) to use new drag-and-drop hooks.\n3. Develop a new `DragDropList` component using the `dnd-kit` library as a replacement.\n4. Improve collision detection and animations for better user experience.\n5. Explore alternative visual indicators for dragging, making UX simpler and steadier.\n\n## Helpful background\n- The current drag-and-drop setup relies on an outdated library (`react-beautiful-dnd`), making it challenging to implement functional improvements.\n- The discussion includes suggestions for a \"virtualized list\" for better performance on large pages, though this has not been prioritized.\n\n## Good first steps\n1. Review the existing [proof of concept PR](https://github.com/plone/volto/pull/3547) to understand the current progress.\n2. Familiarize yourself with the `react-aria` and `dnd-kit` libraries to better understand their usage.\n3. Join the conversation in this issue and ask questions if any parts are unclear; community support is available!",
         "path": "data/issues/summaries/plone/volto/4204.json"
       }
     },
@@ -1715,10 +1715,10 @@
   "message": null,
   "workflow": {
     "repository": "syslabcom/activity-recognition",
-    "run_id": "24519270847",
-    "run_number": "212",
+    "run_id": "24522089094",
+    "run_number": "213",
     "attempt": "1",
-    "url": "https://github.com/syslabcom/activity-recognition/actions/runs/24519270847",
-    "sha": "4c0ac6396ff638e86c01ca59bedcf34bac60978e"
+    "url": "https://github.com/syslabcom/activity-recognition/actions/runs/24522089094",
+    "sha": "5a9bad7782165494df49615911882653ff50fbd9"
   }
 }
