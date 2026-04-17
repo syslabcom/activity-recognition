@@ -1,19 +1,19 @@
 ---
 title: "Plone issue list — Level: Moderate"
 permalink: "/issues/lvl-moderate/"
-generated_at: "2026-04-17T18:20:46Z"
+generated_at: "2026-04-17T19:26:22Z"
 organization: "plone"
-issue_count: 78
+issue_count: 75
 required_labels:
   - "42 lvl: moderate"
 ---
 
 # Plone issue list — Level: Moderate
 
-Generated: `2026-04-17T18:20:46Z`  
+Generated: `2026-04-17T19:26:22Z`  
 Organization: `plone`  
 Required label: `42 lvl: moderate`  
-Issue count: `78`
+Issue count: `75`
 
 Sorted by last updated date, newest first.
 
@@ -38,7 +38,6 @@ Sorted by last updated date, newest first.
 | 2025-02-28 20:55 UTC | `plone/documentation` | [#931 Docs on setting the modification date](https://github.com/plone/documentation/issues/931) | `zopyx` | `31 needs: help`, `33 needs: docs`, `42 lvl: moderate`, `99 tag: Plone 6.x` |
 | 2025-02-28 11:14 UTC | `plone/cookieplone-templates` | [#157 varnish container build superfluos - use config feature](https://github.com/plone/cookieplone-templates/issues/157) | `jensens` | `04 type: enhancement`, `21 status: confirmed`, `33 needs: docs`, `42 lvl: moderate` |
 | 2025-01-24 06:48 UTC | `plone/buildout.coredev` | [#972 Improve README](https://github.com/plone/buildout.coredev/issues/972) | `ramiroluz` | `04 type: enhancement`, `14 prio: low`, `33 needs: docs`, `41 lvl: easy`, `42 lvl: moderate` |
-| 2024-12-17 09:44 UTC | `plone/plone.org` | [#150 permissions-policy header errors, 404 on loading custom CSS](https://github.com/plone/plone.org/issues/150) | `tkimnguyen` | `01 type: bug`, `14 prio: low`, `42 lvl: moderate` |
 | 2024-12-17 07:51 UTC | `plone/volto` | [#5896 It's confusing how to change my password as a logged in user](https://github.com/plone/volto/issues/5896) | `JeffersonBledsoe` | `04 type: enhancement`, `42 lvl: moderate` |
 | 2024-12-17 07:50 UTC | `plone/volto` | [#5630 Unify the use of the optional `preview_image_link` across Volto](https://github.com/plone/volto/issues/5630) | `sneridagh` | `04 type: enhancement`, `42 lvl: moderate` |
 | 2024-12-13 22:01 UTC | `plone/volto` | [#3834 Document cypress commands, retrofit them to existing tests](https://github.com/plone/volto/issues/3834) | `tiberiuichim` | `01 type: bug`, `33 needs: docs`, `42 lvl: moderate` |
@@ -65,8 +64,6 @@ Sorted by last updated date, newest first.
 | 2024-07-28 09:58 UTC | `plone/volto` | [#2005 Document razzle.extend.js](https://github.com/plone/volto/issues/2005) | `tiberiuichim` | `01 type: bug`, `33 needs: docs`, `42 lvl: moderate` |
 | 2024-05-17 12:45 UTC | `plone/Products.CMFPlone` | [#1801 list of plone_scripts to get rid of](https://github.com/plone/Products.CMFPlone/issues/1801) | `jensens` | `04 type: enhancement`, `31 needs: help`, `22 status: in-progress`, `14 prio: low`, `42 lvl: moderate` |
 | 2024-03-07 12:30 UTC | `plone/Products.CMFPlone` | [#3915 Automate inclusion of release notes into Plone 6 documentation](https://github.com/plone/Products.CMFPlone/issues/3915) | `stevepiercy` | `04 type: enhancement`, `99 tag: documentation`, `33 needs: docs`, `42 lvl: moderate` |
-| 2024-02-16 16:56 UTC | `plone/plone.org` | [#138 We need to recreate the sponsorship form](https://github.com/plone/plone.org/issues/138) | `tkimnguyen` | `04 type: enhancement`, `13 prio: normal`, `42 lvl: moderate`, `60 sites: page content` |
-| 2024-02-16 16:55 UTC | `plone/plone.org` | [#120 Fix News Items with broken URLs](https://github.com/plone/plone.org/issues/120) | `Fosten` | `01 type: bug`, `42 lvl: moderate` |
 | 2024-02-16 16:53 UTC | `plone/plone.org` | [#99 Fix obvious performance issues suggested by Google Lighthouse](https://github.com/plone/plone.org/issues/99) | `rioksane` | `04 type: enhancement`, `42 lvl: moderate` |
 | 2024-02-16 16:50 UTC | `plone/plone.org` | [#76 New Plone Release page gets wrong id](https://github.com/plone/plone.org/issues/76) | `mauritsvanrees` | `02 type: regression`, `42 lvl: moderate` |
 | 2024-02-16 16:46 UTC | `plone/plone.org` | [#59 Cannot fully edit releasepage in Volto](https://github.com/plone/plone.org/issues/59) | `mauritsvanrees` | `01 type: bug`, `42 lvl: moderate` |

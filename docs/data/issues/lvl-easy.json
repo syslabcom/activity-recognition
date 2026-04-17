@@ -1,7 +1,7 @@
 {
   "version": 1,
   "status": "success",
-  "generated_at": "2026-04-17T18:20:46Z",
+  "generated_at": "2026-04-17T19:26:22Z",
   "organization": "plone",
   "state": "open",
   "slug": "lvl-easy",
@@ -9,7 +9,7 @@
   "required_labels": [
     "41 lvl: easy"
   ],
-  "issue_count": 86,
+  "issue_count": 85,
   "issues": [
     {
       "id": 141767567,
@@ -1535,36 +1535,6 @@
       }
     },
     {
-      "id": 1953693354,
-      "number": 144,
-      "title": "Align radio button group in forms on a single line",
-      "html_url": "https://github.com/plone/plone.org/issues/144",
-      "repository_full_name": "plone/plone.org",
-      "repository_url": "https://api.github.com/repos/plone/plone.org",
-      "state": "open",
-      "created_at": "2023-10-20T07:21:26Z",
-      "updated_at": "2024-02-16T16:57:47Z",
-      "comments": 4,
-      "author": {
-        "login": "rioksane",
-        "html_url": "https://github.com/rioksane"
-      },
-      "assignees": [],
-      "labels": [
-        "04 type: enhancement",
-        "41 lvl: easy",
-        "61 sites: visual/theming"
-      ],
-      "contributor_summary": {
-        "status": "available",
-        "generated_at": "2026-04-09T16:35:28Z",
-        "source_issue_updated_at": "2024-02-16T16:57:47Z",
-        "model": "gpt-4o-mini",
-        "summary_markdown": "```markdown\n## What this issue is about\nThis issue aims to enhance the layout of radio button groups in forms. Currently, these buttons are stacked vertically, which looks unappealing and wastes space. The goal is to align them horizontally on a single line.\n\n## What needs to be done\nThe main task is to modify the CSS for the radio button group. A proposed solution is to use the following CSS rule:\n```css\n.radio-group {\n  display: inline-flex;\n}\n```\nHowever, discussions suggest that more flexibility could be helpful, such as considering longer text options that might look awkward when displayed inline.\n\n## Helpful background\nThere is ongoing discussion about the best approach to layout. Suggestions include allowing editors to choose between vertical and horizontal options, or using automatic rules based on the text length of the buttons. Some potential approaches may require additional HTML changes, not just CSS adjustments.\n\n## Good first steps\n1. Review the current form implementation [here](https://plone.org/foundation/plone-org-feeback-form).\n2. Experiment with the proposed CSS and see if it meets the alignment needs.\n3. Consider contributing a more flexible solution that allows for both layout options based on content length.\n4. Make sure to test your changes to ensure they display well across different use cases.\n```",
-        "path": "data/issues/summaries/plone/plone.org/144.json"
-      }
-    },
-    {
       "id": 1945839976,
       "number": 143,
       "title": "add social media fields to Foundation Member content type",
@@ -2656,10 +2626,10 @@
   "message": null,
   "workflow": {
     "repository": "syslabcom/activity-recognition",
-    "run_id": "24580263025",
-    "run_number": "237",
+    "run_id": "24582891638",
+    "run_number": "238",
     "attempt": "1",
-    "url": "https://github.com/syslabcom/activity-recognition/actions/runs/24580263025",
-    "sha": "236908976a0921ba443bdd9546bf5e55c53e22c0"
+    "url": "https://github.com/syslabcom/activity-recognition/actions/runs/24582891638",
+    "sha": "900d0b703de992e3e9aaee44990e5941ef1c56ee"
   }
 }

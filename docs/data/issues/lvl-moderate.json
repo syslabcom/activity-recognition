@@ -1,7 +1,7 @@
 {
   "version": 1,
   "status": "success",
-  "generated_at": "2026-04-17T18:20:46Z",
+  "generated_at": "2026-04-17T19:26:22Z",
   "organization": "plone",
   "state": "open",
   "slug": "lvl-moderate",
@@ -9,7 +9,7 @@
   "required_labels": [
     "42 lvl: moderate"
   ],
-  "issue_count": 78,
+  "issue_count": 75,
   "issues": [
     {
       "id": 1096895299,
@@ -609,36 +609,6 @@
         "model": "gpt-4o-mini",
         "summary_markdown": "```markdown\n## What this issue is about\nThis issue focuses on enhancing the README file of the Plone repository. The goal is to improve clarity and accessibility for new users.\n\n## What needs to be done\nHere are the proposed improvements:\n- Convert the existing `README.rst` to `README.md`.\n- Create a new page, `README-devcontainer`, documenting how to set up the development container and GitHub workspace.\n- Ensure links to the official Plone documentation and the new page are included.\n\nSome tasks have been completed, but others remain open for contribution.\n\n## Helpful background\nThe README serves as the first point of contact for users and contributors. Updating it can help newcomers understand how to get started with Plone and its development environment.\n\nThere is ongoing discussion about possibly including tutorial videos in the documentation, although this is not finalized.\n\n## Good first steps\n1. Familiarize yourself with Markdown if you're not familiar—it's a simple formatting language used for README.md files.\n2. Start by converting the existing `README.rst` to `README.md` format.\n3. Look into the steps for setting up the `README-devcontainer` and gather that information.\n\nOnce you've made progress, consider reviewing and coordinating with others on the issue.\n```",
         "path": "data/issues/summaries/plone/buildout.coredev/972.json"
-      }
-    },
-    {
-      "id": 1987894560,
-      "number": 150,
-      "title": "permissions-policy header errors, 404 on loading custom CSS",
-      "html_url": "https://github.com/plone/plone.org/issues/150",
-      "repository_full_name": "plone/plone.org",
-      "repository_url": "https://api.github.com/repos/plone/plone.org",
-      "state": "open",
-      "created_at": "2023-11-10T15:58:06Z",
-      "updated_at": "2024-12-17T09:44:48Z",
-      "comments": 1,
-      "author": {
-        "login": "tkimnguyen",
-        "html_url": "https://github.com/tkimnguyen"
-      },
-      "assignees": [],
-      "labels": [
-        "01 type: bug",
-        "14 prio: low",
-        "42 lvl: moderate"
-      ],
-      "contributor_summary": {
-        "status": "available",
-        "generated_at": "2026-04-09T14:41:48Z",
-        "source_issue_updated_at": "2024-12-17T09:44:48Z",
-        "model": "gpt-4o-mini",
-        "summary_markdown": "```markdown\n## What this issue is about\nThis issue addresses errors related to the Permissions-Policy headers on certain Plone.org pages, specifically when loading custom CSS. The errors indicate that specific features are not enabled in the browser, and there’s a 404 error while trying to fetch a custom CSS file.\n\n## What needs to be done\nWe need to investigate and resolve the Permissions-Policy header errors and determine why the custom CSS file isn't loading correctly (404 Not Found). This may involve checking the configuration of the Permissions-Policy and ensuring that the custom CSS file is accessible.\n\n## Helpful background\nPermissions-Policy headers control which features can be used on a site. Errors indicate that certain features aren't enabled in the browser. The 404 error means that the requested resource (custom CSS) could not be found on the server.\n\nFor more guidance on contributing, be sure to check the [Plone contribution guidelines](https://6.docs.plone.org/contributing/index.html).\n\n## Good first steps\n1. Review the issue comments for context and confirm the specific features that need addressing.\n2. Explore the site's Permissions-Policy settings to understand the current configuration.\n3. Check the URL for the custom CSS to find out why it returns a 404 error.\n4. Consider asking for clarification on specific aspects if the discussion appears outdated or ambiguous.\n```",
-        "path": "data/issues/summaries/plone/plone.org/150.json"
       }
     },
     {
@@ -1449,69 +1419,6 @@
         "model": "gpt-4o-mini",
         "summary_markdown": "## What this issue is about\nThis issue focuses on automating the inclusion of Plone release notes into the Plone 6 documentation, similar to what has been done for the Volto project. Currently, there is no consolidated source for these release notes in the documentation.\n\n## What needs to be done\nWe aim to establish a method for compiling and integrating Plone's release notes automatically. This involves determining the correct sources for the release notes and ensuring that they are formatted and stored appropriately, ideally under an \"APPENDICES\" heading in the documentation.\n\n## Helpful background\nThe release notes are currently compiled manually in the core development repository. There are various suggestions for gathering these notes, such as using the `CHANGES.md` files from different development branches. While there is some agreement on the necessity of this task, the discussion remains somewhat ambiguous regarding the best approach and the most reliable sources.\n\n## Good first steps\n1. **Review existing documentation**: Familiarize yourself with Plone and Volto documentation.\n2. **Identify sources of release notes**: Check the current changelogs and how they are being managed in the `buildout.coredev`.\n3. **Explore automating processes**: Research existing methods of automation in similar projects or inquire for guidance from current assignees, notably @stevepiercy and @mauritsvanrees.\n4. **Discuss findings**: Share insights or proposals in the discussion to refine the approach moving forward.",
         "path": "data/issues/summaries/plone/Products.CMFPlone/3915.json"
-      }
-    },
-    {
-      "id": 1933580552,
-      "number": 138,
-      "title": "We need to recreate the sponsorship form",
-      "html_url": "https://github.com/plone/plone.org/issues/138",
-      "repository_full_name": "plone/plone.org",
-      "repository_url": "https://api.github.com/repos/plone/plone.org",
-      "state": "open",
-      "created_at": "2023-10-09T18:24:58Z",
-      "updated_at": "2024-02-16T16:56:31Z",
-      "comments": 2,
-      "author": {
-        "login": "tkimnguyen",
-        "html_url": "https://github.com/tkimnguyen"
-      },
-      "assignees": [
-        "tkimnguyen",
-        "rioksane"
-      ],
-      "labels": [
-        "04 type: enhancement",
-        "13 prio: normal",
-        "42 lvl: moderate",
-        "60 sites: page content"
-      ],
-      "contributor_summary": {
-        "status": "available",
-        "generated_at": "2026-04-09T16:35:38Z",
-        "source_issue_updated_at": "2024-02-16T16:56:31Z",
-        "model": "gpt-4o-mini",
-        "summary_markdown": "```markdown\n## What this issue is about\nThis issue addresses the need to recreate the sponsorship form for Plone at [plone.org](https://plone.org/foundation/sponsorship). Currently, the earlier form was replaced by a mailto link, and we need to restore a more interactive and informative form for potential sponsors.\n\n## What needs to be done\nWe need to develop a new sponsorship form that collects essential information from sponsors. The form should also guide users on different types of sponsorship (e.g., Premium, Standard, Basic, University) and link to our GitHub sponsors page instead of PayPal.\n\n## Helpful background\nPreviously, we had several references for the sponsorship form, including: \n- [Sponsorship form](https://old.plone.org/sponsors/sponsorship-form?type-of-sponsorship=Premium)\n- [Be a Hero page](https://old.plone.org/sponsors/be-a-hero) \n\nThese pages provide essential context on what information to collect and how to present it effectively.\n\n## Good first steps\n1. Review the references noted above to understand the required fields and layout.\n2. Explore using the Volto forms block, as suggested.\n3. Begin drafting the form structure and gather feedback from the team.\n4. Consider testing the form for functionality before finalizing it.\n5. Coordinate with the team for documentation and review once the form is ready.\n```",
-        "path": "data/issues/summaries/plone/plone.org/138.json"
-      }
-    },
-    {
-      "id": 1706266069,
-      "number": 120,
-      "title": "Fix News Items with broken URLs",
-      "html_url": "https://github.com/plone/plone.org/issues/120",
-      "repository_full_name": "plone/plone.org",
-      "repository_url": "https://api.github.com/repos/plone/plone.org",
-      "state": "open",
-      "created_at": "2023-05-11T17:40:25Z",
-      "updated_at": "2024-02-16T16:55:14Z",
-      "comments": 2,
-      "author": {
-        "login": "Fosten",
-        "html_url": "https://github.com/Fosten"
-      },
-      "assignees": [],
-      "labels": [
-        "01 type: bug",
-        "42 lvl: moderate"
-      ],
-      "contributor_summary": {
-        "status": "available",
-        "generated_at": "2026-04-09T17:27:01Z",
-        "source_issue_updated_at": "2024-02-16T16:55:14Z",
-        "model": "gpt-4o-mini",
-        "summary_markdown": "```markdown\n## What this issue is about\nThis issue focuses on fixing broken URLs in news items on [Plone.org](https://plone.org/news-and-events/news/2002). When clicked, these faulty links create an infinite loop, which may stem from a bulk import error.\n\n## What needs to be done\nWe need to identify and correct the broken URLs, possibly by assigning them new valid names. It's also worth running a more thorough check to find any additional problematic links.\n\n## Helpful background\nThe problem appears to be related to the frontend, and upgrading to a newer version of Volto could be a potential solution. Currently, the site is using Volto version 16.25.0, which is relatively new.\n\n## Good first steps\n1. Review the broken URLs and their current functionality.\n2. Check if the issue persists in the latest Volto version or if it has been resolved in recent updates.\n3. Consider running a query to identify other similar broken links on the site.\n4. Once you've made corrections, please test thoroughly to ensure proper functionality before creating a pull request.\n```",
-        "path": "data/issues/summaries/plone/plone.org/120.json"
       }
     },
     {
@@ -2438,10 +2345,10 @@
   "message": null,
   "workflow": {
     "repository": "syslabcom/activity-recognition",
-    "run_id": "24580263025",
-    "run_number": "237",
+    "run_id": "24582891638",
+    "run_number": "238",
     "attempt": "1",
-    "url": "https://github.com/syslabcom/activity-recognition/actions/runs/24580263025",
-    "sha": "236908976a0921ba443bdd9546bf5e55c53e22c0"
+    "url": "https://github.com/syslabcom/activity-recognition/actions/runs/24582891638",
+    "sha": "900d0b703de992e3e9aaee44990e5941ef1c56ee"
   }
 }

@@ -1,19 +1,19 @@
 ---
 title: "Plone issue list — Level: Easy"
 permalink: "/issues/lvl-easy/"
-generated_at: "2026-04-17T18:20:46Z"
+generated_at: "2026-04-17T19:26:22Z"
 organization: "plone"
-issue_count: 86
+issue_count: 85
 required_labels:
   - "41 lvl: easy"
 ---
 
 # Plone issue list — Level: Easy
 
-Generated: `2026-04-17T18:20:46Z`  
+Generated: `2026-04-17T19:26:22Z`  
 Organization: `plone`  
 Required label: `41 lvl: easy`  
-Issue count: `86`
+Issue count: `85`
 
 Sorted by last updated date, newest first.
 
@@ -68,7 +68,6 @@ Sorted by last updated date, newest first.
 | 2024-07-19 08:48 UTC | `plone/plone.volto` | [#149 plone.volto:default should install all necessary dependencies](https://github.com/plone/plone.volto/issues/149) | `jensens` | `01 type: bug`, `14 prio: low`, `33 needs: docs`, `41 lvl: easy` |
 | 2024-02-23 09:21 UTC | `plone/plone.app.layout` | [#360 harmonize or add missing CSS classes in markup](https://github.com/plone/plone.app.layout/issues/360) | `MrTango` | `01 type: bug`, `02 type: regression`, `41 lvl: easy` |
 | 2024-02-16 17:01 UTC | `plone/plone.org` | [#149 a view for the Foundation Sponsor content type](https://github.com/plone/plone.org/issues/149) | `tkimnguyen` | `01 type: bug`, `04 type: enhancement`, `12 prio: high`, `31 needs: help`, `41 lvl: easy` |
-| 2024-02-16 16:57 UTC | `plone/plone.org` | [#144 Align radio button group in forms on a single line](https://github.com/plone/plone.org/issues/144) | `rioksane` | `04 type: enhancement`, `41 lvl: easy`, `61 sites: visual/theming` |
 | 2024-02-16 16:57 UTC | `plone/plone.org` | [#143 add social media fields to Foundation Member content type](https://github.com/plone/plone.org/issues/143) | `tkimnguyen` | `04 type: enhancement`, `13 prio: normal`, `41 lvl: easy` |
 | 2024-02-06 22:07 UTC | `plone/volto` | [#588 Resetting the password does not work.](https://github.com/plone/volto/issues/588) | `vinay72` | `01 type: bug`, `12 prio: high`, `31 needs: help`, `41 lvl: easy` |
 | 2024-01-22 07:49 UTC | `plone/volto` | [#4380 Document openExternalLinkInNewTab config.settings](https://github.com/plone/volto/issues/4380) | `tiberiuichim` | `01 type: bug`, `33 needs: docs`, `41 lvl: easy` |
