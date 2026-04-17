@@ -1,7 +1,7 @@
 {
   "version": 1,
   "status": "success",
-  "generated_at": "2026-04-17T17:20:04Z",
+  "generated_at": "2026-04-17T18:20:46Z",
   "organization": "plone",
   "state": "open",
   "slug": "lvl-moderate",
@@ -9,7 +9,7 @@
   "required_labels": [
     "42 lvl: moderate"
   ],
-  "issue_count": 79,
+  "issue_count": 78,
   "issues": [
     {
       "id": 1096895299,
@@ -1544,39 +1544,6 @@
       }
     },
     {
-      "id": 1571438162,
-      "number": 97,
-      "title": "Create get started -documentation for developers",
-      "html_url": "https://github.com/plone/plone.org/issues/97",
-      "repository_full_name": "plone/plone.org",
-      "repository_url": "https://api.github.com/repos/plone/plone.org",
-      "state": "open",
-      "created_at": "2023-02-05T13:48:08Z",
-      "updated_at": "2024-02-16T16:53:31Z",
-      "comments": 1,
-      "author": {
-        "login": "rioksane",
-        "html_url": "https://github.com/rioksane"
-      },
-      "assignees": [
-        "fredvd"
-      ],
-      "labels": [
-        "12 prio: high",
-        "33 needs: docs",
-        "42 lvl: moderate",
-        "60 sites: page content"
-      ],
-      "contributor_summary": {
-        "status": "available",
-        "generated_at": "2026-04-09T17:27:11Z",
-        "source_issue_updated_at": "2024-02-16T16:53:31Z",
-        "model": "gpt-4o-mini",
-        "summary_markdown": "## What this issue is about\nThis issue aims to create step-by-step documentation that helps new developers set up the plone.org site locally, particularly focusing on theming issues. Clear guidance will make it easier for newcomers to contribute to the project.\n\n## What needs to be done\nA documentation page needs to be drafted that outlines the process for building the plone.org site locally with the theme applied. This will involve compiling current information and instructions into an accessible format.\n\n## Helpful background\nWhile there are some instructions available, current discussions suggest that the existing information may need revision or enhancement to ensure clarity and completeness. The goal is to equip developers with the necessary knowledge to tackle theming and other related contributions.\n\n## Good first steps\n1. Review existing README or documentation linked in the comments to gather information about the local setup process.\n2. Draft a preliminary outline for the new documentation, breaking down the setup into easy-to-follow steps.\n3. Consider reaching out to other contributors for input or suggestions to ensure all necessary details are included.\n4. Test the setup yourself to ensure the instructions are accurate and workable. \n\nFeel free to ask questions if anything is unclear or if you’d like coordination on documentation efforts!",
-        "path": "data/issues/summaries/plone/plone.org/97.json"
-      }
-    },
-    {
       "id": 1492168831,
       "number": 76,
       "title": "New Plone Release page gets wrong id",
@@ -2471,10 +2438,10 @@
   "message": null,
   "workflow": {
     "repository": "syslabcom/activity-recognition",
-    "run_id": "24577786019",
-    "run_number": "236",
+    "run_id": "24580263025",
+    "run_number": "237",
     "attempt": "1",
-    "url": "https://github.com/syslabcom/activity-recognition/actions/runs/24577786019",
-    "sha": "e61d9cafde904b5ba5d8bb004239d5c4e8a795da"
+    "url": "https://github.com/syslabcom/activity-recognition/actions/runs/24580263025",
+    "sha": "236908976a0921ba443bdd9546bf5e55c53e22c0"
   }
 }

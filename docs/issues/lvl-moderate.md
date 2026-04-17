@@ -1,19 +1,19 @@
 ---
 title: "Plone issue list — Level: Moderate"
 permalink: "/issues/lvl-moderate/"
-generated_at: "2026-04-17T17:20:04Z"
+generated_at: "2026-04-17T18:20:46Z"
 organization: "plone"
-issue_count: 79
+issue_count: 78
 required_labels:
   - "42 lvl: moderate"
 ---
 
 # Plone issue list — Level: Moderate
 
-Generated: `2026-04-17T17:20:04Z`  
+Generated: `2026-04-17T18:20:46Z`  
 Organization: `plone`  
 Required label: `42 lvl: moderate`  
-Issue count: `79`
+Issue count: `78`
 
 Sorted by last updated date, newest first.
 
@@ -68,7 +68,6 @@ Sorted by last updated date, newest first.
 | 2024-02-16 16:56 UTC | `plone/plone.org` | [#138 We need to recreate the sponsorship form](https://github.com/plone/plone.org/issues/138) | `tkimnguyen` | `04 type: enhancement`, `13 prio: normal`, `42 lvl: moderate`, `60 sites: page content` |
 | 2024-02-16 16:55 UTC | `plone/plone.org` | [#120 Fix News Items with broken URLs](https://github.com/plone/plone.org/issues/120) | `Fosten` | `01 type: bug`, `42 lvl: moderate` |
 | 2024-02-16 16:53 UTC | `plone/plone.org` | [#99 Fix obvious performance issues suggested by Google Lighthouse](https://github.com/plone/plone.org/issues/99) | `rioksane` | `04 type: enhancement`, `42 lvl: moderate` |
-| 2024-02-16 16:53 UTC | `plone/plone.org` | [#97 Create get started -documentation for developers](https://github.com/plone/plone.org/issues/97) | `rioksane` | `12 prio: high`, `33 needs: docs`, `42 lvl: moderate`, `60 sites: page content` |
 | 2024-02-16 16:50 UTC | `plone/plone.org` | [#76 New Plone Release page gets wrong id](https://github.com/plone/plone.org/issues/76) | `mauritsvanrees` | `02 type: regression`, `42 lvl: moderate` |
 | 2024-02-16 16:46 UTC | `plone/plone.org` | [#59 Cannot fully edit releasepage in Volto](https://github.com/plone/plone.org/issues/59) | `mauritsvanrees` | `01 type: bug`, `42 lvl: moderate` |
 | 2024-02-07 08:58 UTC | `plone/volto` | [#5740 Add global form state docs](https://github.com/plone/volto/issues/5740) | `stevepiercy` | `33 needs: docs`, `42 lvl: moderate` |
