@@ -1,7 +1,7 @@
 {
   "version": 1,
   "status": "success",
-  "generated_at": "2026-04-24T07:38:50Z",
+  "generated_at": "2026-04-24T08:44:09Z",
   "organization": "plone",
   "state": "open",
   "slug": "lvl-complex",
@@ -1715,10 +1715,10 @@
   "message": null,
   "workflow": {
     "repository": "syslabcom/activity-recognition",
-    "run_id": "24878102080",
-    "run_number": "382",
+    "run_id": "24880652257",
+    "run_number": "383",
     "attempt": "1",
-    "url": "https://github.com/syslabcom/activity-recognition/actions/runs/24878102080",
-    "sha": "e7ce39b6e89045f7f263be514b68dfb266ecfe81"
+    "url": "https://github.com/syslabcom/activity-recognition/actions/runs/24880652257",
+    "sha": "f15f097436d7d3e70f41a2ca161afe486c8287bb"
   }
 }
