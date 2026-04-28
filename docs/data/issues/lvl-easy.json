@@ -1,7 +1,7 @@
 {
   "version": 1,
   "status": "success",
-  "generated_at": "2026-04-28T19:34:10Z",
+  "generated_at": "2026-04-28T20:31:27Z",
   "organization": "plone",
   "state": "open",
   "slug": "lvl-easy",
@@ -516,39 +516,6 @@
       }
     },
     {
-      "id": 188974446,
-      "number": 717,
-      "title": "need documentation on customizing print styles",
-      "html_url": "https://github.com/plone/documentation/issues/717",
-      "repository_full_name": "plone/documentation",
-      "repository_url": "https://api.github.com/repos/plone/documentation",
-      "state": "open",
-      "created_at": "2016-11-13T14:56:47Z",
-      "updated_at": "2026-03-04T09:06:30Z",
-      "comments": 4,
-      "author": {
-        "login": "tkimnguyen",
-        "html_url": "https://github.com/tkimnguyen"
-      },
-      "assignees": [],
-      "labels": [
-        "31 needs: help",
-        "33 needs: docs",
-        "41 lvl: easy",
-        "99 tag: Plone 6.x",
-        "99 tag: good first issue",
-        "99 tag: hacktoberfest"
-      ],
-      "contributor_summary": {
-        "status": "available",
-        "generated_at": "2026-04-09T11:33:52Z",
-        "source_issue_updated_at": "2026-03-04T09:06:30Z",
-        "model": "gpt-4o-mini",
-        "summary_markdown": "```markdown\n## What this issue is about\nThis issue seeks to create or improve documentation on customizing print styles (print.css) for Plone, following a user’s request for clarity on this topic.\n\n## What needs to be done\nWe need to document how to modify print styles for both Volto and Classic UI. This includes information on creating a CSS file and adding the appropriate link in your HTML, as suggested in comments.\n\n## Helpful background\nKey resources to consult include:\n- [Custom styling for Volto](https://6.docs.plone.org/volto/theming/custom-styling.html)\n- [Classic UI static resources](https://6.docs.plone.org/classic-ui/static-resources.html)\nYou may also want to review [MDN's guide on printing media queries](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_media_queries/Printing) for a broader understanding.\n\n## Good first steps\n1. Familiarize yourself with the provided documents on customizing styles.\n2. Read the guidelines for first-time contributors including best practices and things to avoid.\n3. Consider drafting a pull request (PR) that adds a small section with examples, if you feel comfortable. Feel free to ask for feedback along the way!\n```",
-        "path": "data/issues/summaries/plone/documentation/717.json"
-      }
-    },
-    {
       "id": 1108636676,
       "number": 1147,
       "title": "Improve SEO with `html_meta` directive.",
@@ -579,6 +546,39 @@
         "model": "gpt-4o-mini",
         "summary_markdown": "```markdown\n## What this issue is about\nThis issue focuses on enhancing SEO (Search Engine Optimization) for Plone by improving the `html_meta` directive. This directive allows you to set metadata in the HTML head, which is crucial for how search engines index your pages.\n\n## What needs to be done\nWe need to complete the implementation of `html_meta` for the backend and Classic UI components. Other parts, like Volto, plone.api, and plone.restapi, are already done.\n\n## Helpful background\nSEO helps make your site more visible in search engine results. The `html_meta` directive includes essential information like keywords and descriptions. Reference the related issue [here](https://github.com/plone/training/issues/519) for more context.\n\n## Good first steps\n1. **Review the existing implementations** of `html_meta` in Volto, plone.api, and plone.restapi for guidance.\n2. **Check the codebase** for the backend and Classic UI to understand where changes are needed.\n3. **Join the discussion** on the issue comments if anything is unclear. Feel free to ask questions—everyone here is ready to help!\n4. **Plan to write tests** to ensure your changes work as expected and update documentation if necessary.\n\nBy contributing to this issue, you will help improve the SEO capabilities of Plone!\n```",
         "path": "data/issues/summaries/plone/documentation/1147.json"
+      }
+    },
+    {
+      "id": 188974446,
+      "number": 717,
+      "title": "need documentation on customizing print styles",
+      "html_url": "https://github.com/plone/documentation/issues/717",
+      "repository_full_name": "plone/documentation",
+      "repository_url": "https://api.github.com/repos/plone/documentation",
+      "state": "open",
+      "created_at": "2016-11-13T14:56:47Z",
+      "updated_at": "2026-03-04T09:06:30Z",
+      "comments": 4,
+      "author": {
+        "login": "tkimnguyen",
+        "html_url": "https://github.com/tkimnguyen"
+      },
+      "assignees": [],
+      "labels": [
+        "31 needs: help",
+        "33 needs: docs",
+        "41 lvl: easy",
+        "99 tag: Plone 6.x",
+        "99 tag: good first issue",
+        "99 tag: hacktoberfest"
+      ],
+      "contributor_summary": {
+        "status": "available",
+        "generated_at": "2026-04-09T11:33:52Z",
+        "source_issue_updated_at": "2026-03-04T09:06:30Z",
+        "model": "gpt-4o-mini",
+        "summary_markdown": "```markdown\n## What this issue is about\nThis issue seeks to create or improve documentation on customizing print styles (print.css) for Plone, following a user’s request for clarity on this topic.\n\n## What needs to be done\nWe need to document how to modify print styles for both Volto and Classic UI. This includes information on creating a CSS file and adding the appropriate link in your HTML, as suggested in comments.\n\n## Helpful background\nKey resources to consult include:\n- [Custom styling for Volto](https://6.docs.plone.org/volto/theming/custom-styling.html)\n- [Classic UI static resources](https://6.docs.plone.org/classic-ui/static-resources.html)\nYou may also want to review [MDN's guide on printing media queries](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_media_queries/Printing) for a broader understanding.\n\n## Good first steps\n1. Familiarize yourself with the provided documents on customizing styles.\n2. Read the guidelines for first-time contributors including best practices and things to avoid.\n3. Consider drafting a pull request (PR) that adds a small section with examples, if you feel comfortable. Feel free to ask for feedback along the way!\n```",
+        "path": "data/issues/summaries/plone/documentation/717.json"
       }
     },
     {
@@ -2626,10 +2626,10 @@
   "message": null,
   "workflow": {
     "repository": "syslabcom/activity-recognition",
-    "run_id": "25073512710",
-    "run_number": "483",
+    "run_id": "25076123522",
+    "run_number": "484",
     "attempt": "1",
-    "url": "https://github.com/syslabcom/activity-recognition/actions/runs/25073512710",
-    "sha": "2f6cb3a9ba804c47f6d4aaec2d692d27c6cd3512"
+    "url": "https://github.com/syslabcom/activity-recognition/actions/runs/25076123522",
+    "sha": "82c50dd29c759e7968bd8a0460b5060204824ffb"
   }
 }

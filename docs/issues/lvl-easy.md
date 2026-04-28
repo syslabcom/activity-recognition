@@ -1,7 +1,7 @@
 ---
 title: "Plone issue list — Level: Easy"
 permalink: "/issues/lvl-easy/"
-generated_at: "2026-04-28T19:34:10Z"
+generated_at: "2026-04-28T20:31:27Z"
 organization: "plone"
 issue_count: 85
 required_labels:
@@ -10,7 +10,7 @@ required_labels:
 
 # Plone issue list — Level: Easy
 
-Generated: `2026-04-28T19:34:10Z`  
+Generated: `2026-04-28T20:31:27Z`  
 Organization: `plone`  
 Required label: `41 lvl: easy`  
 Issue count: `85`
@@ -35,8 +35,8 @@ Sorted by last updated date, newest first.
 | 2026-03-04 09:06 UTC | `plone/documentation` | [#1751 Replace "Plone instance" and "Zope / Plone instance" with "Zope instance"](https://github.com/plone/documentation/issues/1751) | `stevepiercy` | `41 lvl: easy`, `99 tag: good first issue`, `99 tag: hacktoberfest` |
 | 2026-03-04 09:06 UTC | `plone/documentation` | [#1281 Overview: Create a dependency diagram using pipforester and pipdeptree](https://github.com/plone/documentation/issues/1281) | `stevepiercy` | `31 needs: help`, `33 needs: docs`, `41 lvl: easy`, `99 tag: Plone 6.x`, `99 tag: good first issue`, `99 tag: hacktoberfest` |
 | 2026-03-04 09:06 UTC | `plone/documentation` | [#1190 Improve spellcheck](https://github.com/plone/documentation/issues/1190) | `stevepiercy` | `31 needs: help`, `33 needs: docs`, `41 lvl: easy`, `99 tag: Plone 6.x`, `99 tag: good first issue`, `99 tag: hacktoberfest` |
-| 2026-03-04 09:06 UTC | `plone/documentation` | [#717 need documentation on customizing print styles](https://github.com/plone/documentation/issues/717) | `tkimnguyen` | `31 needs: help`, `33 needs: docs`, `41 lvl: easy`, `99 tag: Plone 6.x`, `99 tag: good first issue`, `99 tag: hacktoberfest` |
 | 2026-03-04 09:06 UTC | `plone/documentation` | [#1147 Improve SEO with `html_meta` directive.](https://github.com/plone/documentation/issues/1147) | `stevepiercy` | `31 needs: help`, `33 needs: docs`, `41 lvl: easy`, `99 tag: Plone 6.x`, `99 tag: good first issue`, `99 tag: hacktoberfest` |
+| 2026-03-04 09:06 UTC | `plone/documentation` | [#717 need documentation on customizing print styles](https://github.com/plone/documentation/issues/717) | `tkimnguyen` | `31 needs: help`, `33 needs: docs`, `41 lvl: easy`, `99 tag: Plone 6.x`, `99 tag: good first issue`, `99 tag: hacktoberfest` |
 | 2026-03-04 09:06 UTC | `plone/documentation` | [#692 add doc on customizing moment.js date formats](https://github.com/plone/documentation/issues/692) | `tkimnguyen` | `31 needs: help`, `33 needs: docs`, `41 lvl: easy`, `99 tag: Plone 6.x`, `99 tag: classic-ui`, `99 tag: good first issue`, `99 tag: hacktoberfest` |
 | 2026-03-04 09:06 UTC | `plone/documentation` | [#612 document feature of external links opening in new tab/window](https://github.com/plone/documentation/issues/612) | `tkimnguyen` | `33 needs: docs`, `41 lvl: easy`, `99 tag: good first issue`, `99 tag: hacktoberfest` |
 | 2026-02-24 04:11 UTC | `plone/volto` | [#7922 Document to run `make install` when changing a dependency](https://github.com/plone/volto/issues/7922) | `stevepiercy` | `01 type: bug`, `13 prio: normal`, `21 status: confirmed`, `33 needs: docs`, `41 lvl: easy` |
