@@ -1,7 +1,7 @@
 {
   "version": 1,
   "status": "success",
-  "generated_at": "2026-05-03T15:17:08Z",
+  "generated_at": "2026-05-03T16:18:03Z",
   "organization": "plone",
   "state": "open",
   "slug": "good-first-onboarding",
@@ -337,10 +337,10 @@
   "message": null,
   "workflow": {
     "repository": "syslabcom/activity-recognition",
-    "run_id": "25282901097",
-    "run_number": "589",
+    "run_id": "25284305575",
+    "run_number": "590",
     "attempt": "1",
-    "url": "https://github.com/syslabcom/activity-recognition/actions/runs/25282901097",
-    "sha": "db7e8c4376d835c148ba9070e86537dbb909ca6f"
+    "url": "https://github.com/syslabcom/activity-recognition/actions/runs/25284305575",
+    "sha": "e0b04d5a8db2e6edbc6c77e4883543fec938f340"
   }
 }
