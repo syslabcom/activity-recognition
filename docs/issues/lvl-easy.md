@@ -1,7 +1,7 @@
 ---
 title: "Plone issue list — Level: Easy"
 permalink: "/issues/lvl-easy/"
-generated_at: "2026-05-05T17:35:17Z"
+generated_at: "2026-05-05T18:33:59Z"
 organization: "plone"
 issue_count: 85
 required_labels:
@@ -10,7 +10,7 @@ required_labels:
 
 # Plone issue list — Level: Easy
 
-Generated: `2026-05-05T17:35:17Z`  
+Generated: `2026-05-05T18:33:59Z`  
 Organization: `plone`  
 Required label: `41 lvl: easy`  
 Issue count: `85`
