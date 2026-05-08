@@ -1,7 +1,7 @@
 ---
 title: "Plone issue list — Level: Moderate"
 permalink: "/issues/lvl-moderate/"
-generated_at: "2026-05-08T07:35:03Z"
+generated_at: "2026-05-08T08:35:18Z"
 organization: "plone"
 issue_count: 75
 required_labels:
@@ -10,7 +10,7 @@ required_labels:
 
 # Plone issue list — Level: Moderate
 
-Generated: `2026-05-08T07:35:03Z`  
+Generated: `2026-05-08T08:35:18Z`  
 Organization: `plone`  
 Required label: `42 lvl: moderate`  
 Issue count: `75`
@@ -19,6 +19,7 @@ Sorted by last updated date, newest first.
 
 | Updated | Repository | Issue | Author | Labels |
 | --- | --- | --- | --- | --- |
+| 2026-05-08 07:38 UTC | `plone/Products.CMFPlone` | [#3953 PLIP: Start separating Classic UI code from the core](https://github.com/plone/Products.CMFPlone/issues/3953) | `tisto` | `31 needs: help`, `99 tag: cleanup`, `03 type: feature (plip)`, `13 prio: normal`, `42 lvl: moderate`, `53 target: major`, `99 tag: Classic UI` |
 | 2026-03-30 08:06 UTC | `plone/Products.CMFPlone` | [#3394 Broken ARIA reference in SVG icon](https://github.com/plone/Products.CMFPlone/issues/3394) | `giulioturetta` | `99 tag: UX Accessibility`, `01 type: bug`, `12 prio: high`, `21 status: confirmed`, `42 lvl: moderate`, `51 target: patch` |
 | 2026-03-23 22:38 UTC | `plone/Products.CMFPlone` | [#3837 Plone 6.0 Classic-UI: where can I set default pattern options](https://github.com/plone/Products.CMFPlone/issues/3837) | `fredvd` | `01 type: bug`, `99 tag: UX Integrator/Themer`, `13 prio: normal`, `21 status: confirmed`, `42 lvl: moderate`, `99 tag: resource registry`, `99 tag: Plone 6.0` |
 | 2026-03-23 21:55 UTC | `plone/Products.CMFPlone` | [#3428 The renderer of sendto_template.pt is corrupting the whitespace](https://github.com/plone/Products.CMFPlone/issues/3428) | `Rudd-O` | `01 type: bug`, `02 type: regression`, `31 needs: help`, `42 lvl: moderate` |
@@ -31,7 +32,6 @@ Sorted by last updated date, newest first.
 | 2025-12-30 03:08 UTC | `plone/volto` | [#7696 Add deprecation policy or guide to documentation](https://github.com/plone/volto/issues/7696) | `stevepiercy` | `04 type: enhancement`, `33 needs: docs`, `42 lvl: moderate`, `discussion` |
 | 2025-12-26 16:44 UTC | `plone/volto` | [#8 Live updates](https://github.com/plone/volto/issues/8) | `robgietema` | `04 type: enhancement`, `14 prio: low`, `21 status: confirmed`, `42 lvl: moderate` |
 | 2025-12-19 03:04 UTC | `plone/documentation` | [#1309 Move the `plone.behavior` readme into `plone/documentation`](https://github.com/plone/documentation/issues/1309) | `stevepiercy` | `31 needs: help`, `33 needs: docs`, `42 lvl: moderate`, `99 tag: backend` |
-| 2025-12-12 07:35 UTC | `plone/Products.CMFPlone` | [#3953 PLIP: Start separating Classic UI code from the core](https://github.com/plone/Products.CMFPlone/issues/3953) | `tisto` | `31 needs: help`, `99 tag: cleanup`, `03 type: feature (plip)`, `13 prio: normal`, `42 lvl: moderate`, `53 target: major`, `99 tag: Classic UI` |
 | 2025-09-17 14:56 UTC | `plone/plone.org` | [#51 Implement Varnish in the plone.org stack](https://github.com/plone/plone.org/issues/51) | `ericof` | `04 type: enhancement`, `42 lvl: moderate` |
 | 2025-09-13 12:27 UTC | `plone/volto` | [#5627 Update i18n machinery to latest `react-intl`](https://github.com/plone/volto/issues/5627) | `sneridagh` | `03 type: feature (plip)`, `42 lvl: moderate` |
 | 2025-03-08 22:21 UTC | `plone/volto` | [#5883 Create a page for Volto CI](https://github.com/plone/volto/issues/5883) | `stevepiercy` | `33 needs: docs`, `42 lvl: moderate` |
