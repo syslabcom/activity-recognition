@@ -1,17 +1,34 @@
 {
   "version": 1,
-  "generated_at": "2026-05-17T08:02:33Z",
+  "generated_at": "2026-05-18T08:36:52Z",
   "tasks": [
     {
       "slug": "github-activity-digest",
       "title": "GitHub Activity Digest",
       "latest": {
         "status": "success",
-        "generated_at": "2026-05-17T08:02:33Z",
+        "generated_at": "2026-05-18T08:36:52Z",
         "json_path": "data/github-activity-digest/latest.json",
         "markdown_path": "data/github-activity-digest/latest.md"
       },
       "runs": [
+        {
+          "status": "success",
+          "generated_at": "2026-05-18T08:36:52Z",
+          "period": {
+            "days": 7,
+            "start": "2026-05-11",
+            "end": "2026-05-18"
+          },
+          "counts": {
+            "repos_processed": 418,
+            "active_repos": 73
+          },
+          "json_path": "data/github-activity-digest/runs/2026-05-18T08-36-52Z.json",
+          "markdown_path": "data/github-activity-digest/runs/2026-05-18T08-36-52Z.md",
+          "workflow_url": "https://github.com/syslabcom/activity-recognition/actions/runs/26022440601",
+          "summary_excerpt": "# 📊 WEEKLY SUMMARY **2026-05-11 to 2026-05-18** This week in the Plone organization, several repositories saw significant activity, primarily led by **Maurits van Rees** and contr…"
+        },
         {
           "status": "success",
           "generated_at": "2026-05-17T08:02:33Z",
