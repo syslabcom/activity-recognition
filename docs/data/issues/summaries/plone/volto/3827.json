@@ -1,14 +1,14 @@
 {
   "version": 1,
   "status": "success",
-  "generated_at": "2026-04-09T14:40:36Z",
+  "generated_at": "2026-05-18T11:23:34Z",
   "source_issue": {
     "id": 1433738735,
     "number": 3827,
     "title": "Create end-user Editor documentation",
     "html_url": "https://github.com/plone/volto/issues/3827",
     "repository_full_name": "plone/volto",
-    "updated_at": "2025-03-08T17:52:49Z",
+    "updated_at": "2026-05-18T10:28:18Z",
     "labels": [
       "31 needs: help",
       "33 needs: docs",
@@ -20,13 +20,13 @@
     "provider": "openai",
     "model": "gpt-4o-mini"
   },
-  "summary_markdown": "```markdown\n## What this issue is about\nThis issue proposes creating documentation specifically for end-users of the Volto Editor. The goal is to provide guidance within the UI by adding a help icon (❔) that links to relevant documentation, similar to features in other applications like PyCharm.\n\n## What needs to be done\nWe need to develop user-friendly documentation covering the Editor's features and functionalities. The current discussion indicates a need for structure but lacks a finalized format. Contributions can be based on existing discussions and community inputs.\n\n## Helpful background\nPrevious discussions have identified that there are different audiences for Volto documentation, including Developers and Editors. While some initial work has been proposed, there’s uncertainty about the final organization and content details. Familiarizing yourself with the functionality and existing documentation will aid in your contributions.\n\n## Good first steps\n1. Review existing discussions and suggest documentation structures.\n2. Start developing content for specific features of the Volto Editor, using previously shared notes as guidance.\n3. Consider creating a pull request (PR) when you're ready for feedback.\n4. Engage with community members for collaboration or questions on Discord.\n```",
+  "summary_markdown": "# Issue Summary: Create End-User Editor Documentation\n\n## What this issue is about\nThis issue focuses on creating documentation for the Volto Editor aimed at end users. The goal is to guide new users through the UI with contextual help links, streamlining their experience much like PyCharm does.\n\n## What needs to be done\nContributors are encouraged to draft user-friendly documentation covering key Editor features. The structure is still in discussion, but starting with a new directory for the user manual is suggested. Key areas to cover include functionalities like drag and drop, copy/paste, and block types.\n\n## Helpful background\nThe current discussion emphasizes making the documentation accessible to newbies. Existing Plone 5 concepts are relevant but need adaptation for Volto's distinct features. No final decisions on documentation locations have been made yet.\n\n## Good first steps\n1. Familiarize yourself with the existing features of the Volto Editor.\n2. Review the proposed directory structure for documentation: `/volto/docs/source/user-manual/index.md`.\n3. Consider contributing by drafting sections based on feedback or existing notes from discussions.\n4. Once comfortable, create a Pull Request (PR) for review of your contributions. Reach out for help or clarification on any uncertain points.",
   "workflow": {
     "repository": "syslabcom/activity-recognition",
-    "run_id": "24196205718",
-    "run_number": "53",
+    "run_id": "26030380574",
+    "run_number": "895",
     "attempt": "1",
-    "url": "https://github.com/syslabcom/activity-recognition/actions/runs/24196205718",
-    "sha": "4afa5437e3369368f43054c82fcd1ba9bed2967b"
+    "url": "https://github.com/syslabcom/activity-recognition/actions/runs/26030380574",
+    "sha": "fa2346b25110d8f5bb79f199b45634ae384d4c02"
   }
 }

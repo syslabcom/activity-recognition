@@ -1,7 +1,7 @@
 {
   "version": 1,
   "status": "success",
-  "generated_at": "2026-05-18T09:15:20Z",
+  "generated_at": "2026-05-18T11:22:22Z",
   "organization": "plone",
   "state": "open",
   "slug": "lvl-complex",
@@ -9,7 +9,7 @@
   "required_labels": [
     "43 lvl: complex"
   ],
-  "issue_count": 56,
+  "issue_count": 55,
   "issues": [
     {
       "id": 1514641313,
@@ -20,7 +20,7 @@
       "repository_url": "https://api.github.com/repos/plone/volto",
       "state": "open",
       "created_at": "2022-12-30T16:52:42Z",
-      "updated_at": "2026-04-13T03:50:39Z",
+      "updated_at": "2026-05-18T11:15:32Z",
       "comments": 8,
       "author": {
         "login": "sneridagh",
@@ -33,11 +33,229 @@
       ],
       "contributor_summary": {
         "status": "available",
-        "generated_at": "2026-04-16T16:35:36Z",
-        "source_issue_updated_at": "2026-04-13T03:50:39Z",
+        "generated_at": "2026-05-18T11:22:28Z",
+        "source_issue_updated_at": "2026-05-18T11:15:32Z",
         "model": "gpt-4o-mini",
-        "summary_markdown": "# Improve drag & drop support in the blocks engine\n\n## What this issue is about\nThis issue aims to enhance the drag-and-drop functionality within the Volto blocks engine by transitioning from the `react-beautiful-dnd` library to the actively maintained `react-aria` library. The goal is to facilitate smoother movement of blocks not just within the main blocks stream but also between different block containers.\n\n## What needs to be done\n1. Create a central drag-and-drop context for all elements in the blocks engine.\n2. Refactor specific components (`BlocksForm`, `EditBlockWrapper`) to use new drag-and-drop hooks.\n3. Develop a new `DragDropList` component using the `dnd-kit` library as a replacement.\n4. Improve collision detection and animations for better user experience.\n5. Explore alternative visual indicators for dragging, making UX simpler and steadier.\n\n## Helpful background\n- The current drag-and-drop setup relies on an outdated library (`react-beautiful-dnd`), making it challenging to implement functional improvements.\n- The discussion includes suggestions for a \"virtualized list\" for better performance on large pages, though this has not been prioritized.\n\n## Good first steps\n1. Review the existing [proof of concept PR](https://github.com/plone/volto/pull/3547) to understand the current progress.\n2. Familiarize yourself with the `react-aria` and `dnd-kit` libraries to better understand their usage.\n3. Join the conversation in this issue and ask questions if any parts are unclear; community support is available!",
+        "summary_markdown": "```markdown\n## What this issue is about\nThis issue focuses on improving the drag and drop capabilities in the Volto blocks engine. The proposal aims to replace the current `react-beautiful-dnd` library with `react-aria`, which is actively maintained and offers better flexibility.\n\n## What needs to be done\nContributors will need to:\n- Refactor the drag and drop infrastructure using `react-aria`.\n- Enable moving blocks between the main blocks stream and various block containers.\n- Create a new `DragDropList` component while deprecating the old one.\n- Improve animations and collision detection for a better user experience.\n- Address potential breaking changes related to existing components.\n\n## Helpful background\nMoving to `react-aria` is crucial as the current library is no longer actively developed, which limits our implementation. The existing system also has limitations related to context isolation, making it difficult for components to interact properly.\n\n## Good first steps\nBegin by reviewing the [Proof of Concept Pull Request](https://github.com/plone/volto/pull/3547) to understand the ongoing work. Familiarize yourself with the current drag and drop logic in the [DragDropList component](https://github.com/plone/volto/blob/master/src/components/manage/DragDropList/DragDropList.jsx). Engaging with the discussion in this issue may also provide valuable insights.\n```",
         "path": "data/issues/summaries/plone/volto/4204.json"
+      }
+    },
+    {
+      "id": 617929356,
+      "number": 1478,
+      "title": "Proposal: have a list of \"smart fields\" in Volto blocks",
+      "html_url": "https://github.com/plone/volto/issues/1478",
+      "repository_full_name": "plone/volto",
+      "repository_url": "https://api.github.com/repos/plone/volto",
+      "state": "open",
+      "created_at": "2020-05-14T05:11:08Z",
+      "updated_at": "2026-05-18T10:53:16Z",
+      "comments": 3,
+      "author": {
+        "login": "tiberiuichim",
+        "html_url": "https://github.com/tiberiuichim"
+      },
+      "assignees": [
+        "luca-bellenghi",
+        "cekk"
+      ],
+      "labels": [
+        "03 type: feature (plip)",
+        "43 lvl: complex"
+      ],
+      "contributor_summary": {
+        "status": "available",
+        "generated_at": "2026-05-18T11:22:35Z",
+        "source_issue_updated_at": "2026-05-18T10:53:16Z",
+        "model": "gpt-4o-mini",
+        "summary_markdown": "```markdown\n## What this issue is about\nThis issue proposes creating a formal list of \"smart fields\" in Volto blocks. These fields will have special behaviors, like being automatically transformed on the server-side, which simplifies how block values are handled.\n\n## What needs to be done\nWe need to define which fields qualify as smart fields (e.g., `searchableText`, `url`, `relatedItems`), document their behaviors, and ensure block authors understand the implications of these field names. The goal is to enable existing block indexing to use these fields without creating new indexers for every block type.\n\n## Helpful background\nSmart fields, like `searchableText`, allow for better indexing and data handling. For example, filling in a `relatedItems` field would automatically serialize related items on the server side. This feature aims to improve usability and efficiency within Volto.\n\n## Good first steps\n1. Review the existing discussions for clarity and consensus on which fields to include.\n2. Start drafting documentation on what these smart fields are and their expected behaviors.\n3. Coordinate with the current assignees to ensure the approach aligns with ongoing development.\n4. Consider testing the implementation of any proposed smart fields to ensure they behave as expected.\n```",
+        "path": "data/issues/summaries/plone/volto/1478.json"
+      }
+    },
+    {
+      "id": 1609684179,
+      "number": 4460,
+      "title": "Refactor class components to functional components",
+      "html_url": "https://github.com/plone/volto/issues/4460",
+      "repository_full_name": "plone/volto",
+      "repository_url": "https://api.github.com/repos/plone/volto",
+      "state": "open",
+      "created_at": "2023-03-04T08:57:41Z",
+      "updated_at": "2026-05-18T10:51:19Z",
+      "comments": 5,
+      "author": {
+        "login": "sneridagh",
+        "html_url": "https://github.com/sneridagh"
+      },
+      "assignees": [
+        "Tishasoumya-02"
+      ],
+      "labels": [
+        "03 type: feature (plip)",
+        "43 lvl: complex"
+      ],
+      "contributor_summary": {
+        "status": "available",
+        "generated_at": "2026-05-18T11:22:42Z",
+        "source_issue_updated_at": "2026-05-18T10:51:19Z",
+        "model": "gpt-4o-mini",
+        "summary_markdown": "```markdown\n## What this issue is about\nThis issue focuses on refactoring React class components in the Volto project into functional components. This change aims to enhance the development experience by allowing the use of React hooks, which simplify state management and side effects.\n\n## What needs to be done\nYou will need to convert the identified class components to functional components while maintaining their existing behavior. Special attention should be given to the component lifecycle and user experience (UX). If any parts of the API or the components need to be altered, that must be clearly documented.\n\n## Helpful background\nThe existing class components limit the use of modern React practices, like hooks. This project had contributions as part of the GSoC 2023 program but is currently stalled, with some components already refactored. Check existing pull requests to ensure efforts aren't duplicated.\n\n## Good first steps\n1. Review the current list of components that need refactoring to find one that interests you.\n2. Familiarize yourself with React hooks and the Volto codebase.\n3. Check out the existing pull requests for guidance and context.\n4. Join the discussion in the comments if you have questions or want clarification.\n5. Review the contributing guidelines for best practices.\n```",
+        "path": "data/issues/summaries/plone/volto/4460.json"
+      }
+    },
+    {
+      "id": 2547785360,
+      "number": 6327,
+      "title": "Library Upgrades for the next major (19).",
+      "html_url": "https://github.com/plone/volto/issues/6327",
+      "repository_full_name": "plone/volto",
+      "repository_url": "https://api.github.com/repos/plone/volto",
+      "state": "open",
+      "created_at": "2024-09-25T11:57:01Z",
+      "updated_at": "2026-05-18T10:42:31Z",
+      "comments": 2,
+      "author": {
+        "login": "tisto",
+        "html_url": "https://github.com/tisto"
+      },
+      "assignees": [],
+      "labels": [
+        "03 type: feature (plip)",
+        "43 lvl: complex"
+      ],
+      "contributor_summary": {
+        "status": "available",
+        "generated_at": "2026-05-18T11:22:54Z",
+        "source_issue_updated_at": "2026-05-18T10:42:31Z",
+        "model": "gpt-4o-mini",
+        "summary_markdown": "```markdown\n## What this issue is about\nThis issue addresses the need to upgrade some outdated libraries used in Volto, such as `react-intl` and `redux`. The goal is to ensure that Volto uses maintained versions of these foundational libraries.\n\n## What needs to be done\n- Upgrade `react-intl` and `redux` to their latest maintained versions.\n- Adjust the codebase as needed to accommodate changes in these libraries.\n- Evaluate if we need to maintain current tooling related to localization (using .po files).\n\n## Helpful background\nThe discussion includes a specific PLIP related to `react-intl` that may require coordination. The upgrades aim to enhance functionality and stability but may involve some adjustments to existing code.\n\n## Good first steps\n1. Familiarize yourself with the relevant documentation for new contributors: [Contributing to Plone](https://6.docs.plone.org/contributing/index.html) and [Contributing to Volto](https://6.docs.plone.org/contributing/volto.html).\n2. Review the existing library usage in the project to identify the necessary changes.\n3. Consider reaching out to the community for guidance and support if you have questions.\n4. Document your findings and any changes you make for future contributors.\n```",
+        "path": "data/issues/summaries/plone/volto/6327.json"
+      }
+    },
+    {
+      "id": 1218934617,
+      "number": 3277,
+      "title": "Trigger 6-dev documentation build on every push to master in Volto",
+      "html_url": "https://github.com/plone/volto/issues/3277",
+      "repository_full_name": "plone/volto",
+      "repository_url": "https://api.github.com/repos/plone/volto",
+      "state": "open",
+      "created_at": "2022-04-28T15:52:30Z",
+      "updated_at": "2026-05-18T10:34:59Z",
+      "comments": 5,
+      "author": {
+        "login": "sneridagh",
+        "html_url": "https://github.com/sneridagh"
+      },
+      "assignees": [
+        "esteele"
+      ],
+      "labels": [
+        "33 needs: docs",
+        "43 lvl: complex"
+      ],
+      "contributor_summary": {
+        "status": "available",
+        "generated_at": "2026-05-18T11:23:09Z",
+        "source_issue_updated_at": "2026-05-18T10:34:59Z",
+        "model": "gpt-4o-mini",
+        "summary_markdown": "```markdown\n## What this issue is about\nThis issue addresses the need to automatically trigger the documentation build for Volto whenever a push occurs to the master branch. Currently, there are challenges in achieving this, and the process is not straightforward.\n\n## What needs to be done\nThe main task is to set up a system that ensures the documentation builds with each master push. This may involve using CI/CD tools (Continuous Integration/Continuous Deployment) and configuring scripts correctly.\n\n## Helpful background\nPrevious discussions have highlighted potential approaches but also pointed out difficulties in implementation. For more context, you can refer to related issues [#1188](https://github.com/plone/documentation/issues/1188) and [#1214](https://github.com/plone/documentation/issues/1214). As of now, there doesn’t seem to be a clear, functional way to resolve this issue.\n\n## Good first steps\n1. Review existing CI/CD setups in the repository.\n2. Familiarize yourself with current documentation build processes.\n3. Collaborate with the assignee, @esteele, for guidance and clarification on technical hurdles encountered previously.\n4. Contribute to discussions on potential solutions or improvements.\n5. Consider documenting your findings or potential steps forward for future reference.\n```",
+        "path": "data/issues/summaries/plone/volto/3277.json"
+      }
+    },
+    {
+      "id": 1631010525,
+      "number": 4576,
+      "title": "Deployment documentation needs to show Seamless mode first, rather then classic \"simple\"",
+      "html_url": "https://github.com/plone/volto/issues/4576",
+      "repository_full_name": "plone/volto",
+      "repository_url": "https://api.github.com/repos/plone/volto",
+      "state": "open",
+      "created_at": "2023-03-19T16:27:09Z",
+      "updated_at": "2026-05-18T10:30:05Z",
+      "comments": 4,
+      "author": {
+        "login": "tiberiuichim",
+        "html_url": "https://github.com/tiberiuichim"
+      },
+      "assignees": [
+        "tiberiuichim"
+      ],
+      "labels": [
+        "01 type: bug",
+        "33 needs: docs",
+        "43 lvl: complex",
+        "99 tag: docs-reorg"
+      ],
+      "contributor_summary": {
+        "status": "available",
+        "generated_at": "2026-05-18T11:23:30Z",
+        "source_issue_updated_at": "2026-05-18T10:30:05Z",
+        "model": "gpt-4o-mini",
+        "summary_markdown": "## What this issue is about\nThis issue highlights the need to reorganize the Plone Volto deployment documentation. Currently, \"Simple deployment\" appears first, but it is suggested that \"Seamless mode\" should be prioritized instead. This adjustment aims to clarify installation methods for different versions of Plone.\n\n## What needs to be done\n- Rearrange the deployment documentation to feature \"Seamless mode\" as the first option in the navigation.\n- Ensure that the \"Simple deployment\" section includes a clear deprecation warning, indicating it is only suitable for Plone 5.2 and earlier.\n- Update the \"Simple deployment\" content to provide relevant information without it being the primary focus.\n\n## Helpful background\n\"Seamless mode\" allows installation of Volto on older Plone versions without needing `plone.restapi` 2.0, while \"Simple deployment\" is becoming outdated. A refactor of this section is needed to make it clearer.\n\n## Good first steps\n1. Review the current deployment documentation at [Deploying](https://6.dev-docs.plone.org/volto/deploying/index.html).\n2. Think about how best to reorder the items for clarity.\n3. Create a draft for the proposed changes, including details for the deprecation warning.\n4. Collaborate through comments if you have questions or suggestions!",
+        "path": "data/issues/summaries/plone/volto/4576.json"
+      }
+    },
+    {
+      "id": 1521394653,
+      "number": 4232,
+      "title": "Move new CSRF docs from Classic UI to Backend?",
+      "html_url": "https://github.com/plone/volto/issues/4232",
+      "repository_full_name": "plone/volto",
+      "repository_url": "https://api.github.com/repos/plone/volto",
+      "state": "open",
+      "created_at": "2023-01-05T20:46:50Z",
+      "updated_at": "2026-05-18T10:28:01Z",
+      "comments": 20,
+      "author": {
+        "login": "stevepiercy",
+        "html_url": "https://github.com/stevepiercy"
+      },
+      "assignees": [],
+      "labels": [
+        "04 type: enhancement",
+        "33 needs: docs",
+        "43 lvl: complex"
+      ],
+      "contributor_summary": {
+        "status": "available",
+        "generated_at": "2026-05-18T11:23:38Z",
+        "source_issue_updated_at": "2026-05-18T10:28:01Z",
+        "model": "gpt-4o-mini",
+        "summary_markdown": "```markdown\n## What this issue is about\nThis issue discusses whether the documentation for Cross-Site Request Forgery (CSRF) should be moved from the Classic UI section to the Backend section. It raises questions about whether additional content specific to Volto is needed. \n\n## What needs to be done\n1. Move the CSRF documentation from Classic UI to Backend.\n2. Update the documentation to clarify that automatic CSRF protection may only apply to the Classic UI.\n3. Consider whether any additional checks are necessary for handling CSRF in Volto's REST API.\n\n## Helpful background\nThe discussion has highlighted some ambiguity regarding CSRF protection in Volto. It's suggested that while CSRF may not be strictly required for JSON web services, proper request validation and CORS settings are crucial. Some contributors believe the current approach to CSRF protection in Volto might need refinement.\n\n## Good first steps\n1. Review the existing documentation on CSRF to understand its current content.\n2. Gather insights from the ongoing conversation for any additional information that needs to be clarified.\n3. Collaborate with team members to finalize the content before moving the documentation.\n4. Be aware that this issue is considered moderate in difficulty due to ongoing discussions and lack of definitive agreements.\n```",
+        "path": "data/issues/summaries/plone/volto/4232.json"
+      }
+    },
+    {
+      "id": 623198285,
+      "number": 1516,
+      "title": "Metadata block or easy way to insert document metadata inside text block",
+      "html_url": "https://github.com/plone/volto/issues/1516",
+      "repository_full_name": "plone/volto",
+      "repository_url": "https://api.github.com/repos/plone/volto",
+      "state": "open",
+      "created_at": "2020-05-22T13:16:23Z",
+      "updated_at": "2026-05-18T10:24:31Z",
+      "comments": 6,
+      "author": {
+        "login": "avoinea",
+        "html_url": "https://github.com/avoinea"
+      },
+      "assignees": [
+        "avoinea"
+      ],
+      "labels": [
+        "04 type: enhancement",
+        "43 lvl: complex",
+        "99 tag: sprint"
+      ],
+      "contributor_summary": {
+        "status": "available",
+        "generated_at": "2026-05-18T11:23:45Z",
+        "source_issue_updated_at": "2026-05-18T10:24:31Z",
+        "model": "gpt-4o-mini",
+        "summary_markdown": "```markdown\n## What this issue is about\nThis issue addresses the need for a new feature in Plone called a \"metadata block.\" This block will allow users to insert document metadata (like publishing dates and tags) directly into text blocks. It aims to enhance the dynamic capabilities of pages by making metadata more accessible and usable.\n\n## What needs to be done\nWe need to develop a block or button that integrates this metadata functionality into the existing text block editor. Discussions suggest that incorporating a \"mention\" feature could be beneficial, allowing users to easily insert metadata throughout their content.\n\n## Helpful background\nCurrent discussions show varying opinions on whether this feature should be included in the core of Volto. While some contributors recommend adding metadata capabilities, there are concerns about bloating the core with additional blocks. Existing add-ons can provide similar functionality, but integrating it more seamlessly might improve user experience.\n\n## Good first steps\n1. Review the existing branch: [eea-metadata-mentions](https://github.com/plone/volto/tree/eea-metadata-mentions).\n2. Familiarize yourself with similar add-ons: [volto-metadata-block](https://github.com/eea/volto-metadata-block) and [volto-slate-metadata-mentions](https://github.com/eea/volto-slate-metadata-mentions).\n3. Engage in discussions for clarity and to share your thoughts on the proposed features.\n4. Collaborate with peers for potential testing, documentation, or code reviews.\n```",
+        "path": "data/issues/summaries/plone/volto/1516.json"
       }
     },
     {
@@ -162,37 +380,6 @@
       }
     },
     {
-      "id": 1609684179,
-      "number": 4460,
-      "title": "Refactor class components to functional components",
-      "html_url": "https://github.com/plone/volto/issues/4460",
-      "repository_full_name": "plone/volto",
-      "repository_url": "https://api.github.com/repos/plone/volto",
-      "state": "open",
-      "created_at": "2023-03-04T08:57:41Z",
-      "updated_at": "2026-02-26T12:43:32Z",
-      "comments": 5,
-      "author": {
-        "login": "sneridagh",
-        "html_url": "https://github.com/sneridagh"
-      },
-      "assignees": [
-        "Tishasoumya-02"
-      ],
-      "labels": [
-        "03 type: feature (plip)",
-        "43 lvl: complex"
-      ],
-      "contributor_summary": {
-        "status": "available",
-        "generated_at": "2026-04-09T11:34:13Z",
-        "source_issue_updated_at": "2026-02-26T12:43:32Z",
-        "model": "gpt-4o-mini",
-        "summary_markdown": "```markdown\n## What this issue is about\nThis issue focuses on refactoring class-based components in Volto to functional components. This change will facilitate the use of React hooks, allowing for improved functionality and easier future upgrades.\n\n## What needs to be done\nYou will need to convert defined class components to functional components while maintaining their lifecycle and behavior. It is crucial to provide Cypress acceptance tests for any components that currently lack them. If any component contracts change (such as props), proper documentation is required.\n\n## Helpful background\nThe transition from class-based to functional components in React allows for better management of state and side effects through hooks. This issue has seen significant work already, but some components remain to be refactored.\n\n**Note:** The current discussion indicates that work on this issue is on hold until the next alpha release of Volto 19, with some PRs already submitted and others pending.\n\n## Good first steps\n1. Review the existing PRs related to this issue to understand current progress.\n2. Familiarize yourself with the Plone and Volto contribution guidelines, especially around component structure.\n3. Consider picking one of the unfactored components to refactor or assist in reviewing existing pull requests.\n4. Engage in discussions if you have questions or need clarification on refactoring approaches.\n```",
-        "path": "data/issues/summaries/plone/volto/4460.json"
-      }
-    },
-    {
       "id": 3922927900,
       "number": 4273,
       "title": "PLIP: Make Products.CMFEditions a Core Add-on",
@@ -221,36 +408,6 @@
         "model": "gpt-4o-mini",
         "summary_markdown": "```markdown\n## What this issue is about\nThis issue discusses a proposal to move **Products.CMFEditions** from being a core dependency of **Products.CMFPlone** to a core add-on. Currently, every Plone site has it active, which adds overhead even when versioning is not used. The proposal aims to allow sites that don't need versioning to exclude it without losing functionality.\n\n## What needs to be done\nTo achieve this, several code changes are required in various packages. Important tasks include:\n- Removing hard dependencies on **Products.CMFEditions** from **Products.CMFPlone**.\n- Implementing conditional imports and fallback mechanisms to ensure functionality without errors if **CMFEditions** is absent.\n- Updating tests to skip assertions that assume **CMFEditions** is installed.\n\n## Helpful background\nThere's a concern about performance overhead due to **CMFEditions**, especially regarding object creation time. While there's some ambiguity in comments about the exact impact of versioning on all content types, tests and benchmarks hint at significant performance implications for sites using versioning.\n\n## Good first steps\n1. **Review the PLIP documentation** to understand the process for contributing changes to Plone.\n2. Familiarize yourself with the **Products.CMFPlone** repository structure and where dependencies are declared.\n3. Start by making small changes, such as modifying dependencies and implementing conditional import patterns.\n4. Join the discussion to clarify any uncertainties and seek guidance from the community.\n```",
         "path": "data/issues/summaries/plone/Products.CMFPlone/4273.json"
-      }
-    },
-    {
-      "id": 1521394653,
-      "number": 4232,
-      "title": "Move new CSRF docs from Classic UI to Backend?",
-      "html_url": "https://github.com/plone/volto/issues/4232",
-      "repository_full_name": "plone/volto",
-      "repository_url": "https://api.github.com/repos/plone/volto",
-      "state": "open",
-      "created_at": "2023-01-05T20:46:50Z",
-      "updated_at": "2026-02-10T10:16:00Z",
-      "comments": 20,
-      "author": {
-        "login": "stevepiercy",
-        "html_url": "https://github.com/stevepiercy"
-      },
-      "assignees": [],
-      "labels": [
-        "04 type: enhancement",
-        "33 needs: docs",
-        "43 lvl: complex"
-      ],
-      "contributor_summary": {
-        "status": "available",
-        "generated_at": "2026-04-09T11:34:34Z",
-        "source_issue_updated_at": "2026-02-10T10:16:00Z",
-        "model": "gpt-4o-mini",
-        "summary_markdown": "```markdown\n## What this issue is about\nThis issue explores whether the newly created Cross-Site Request Forgery (CSRF) documentation, currently under \"Classic UI,\" should be moved to \"Backend\" and updated for Volto. The discussions indicate that CSRF protection may not apply to the frontend but needs clarification in the documentation.\n\n## What needs to be done\n1. **Move the CSRF documentation** from Classic UI to Backend.\n2. **Update the content** to specify how CSRF is managed in the Volto environment and clarify its application in Plone 6's different frontends.\n\n## Helpful background\nCurrently, the documentation doesn’t adequately reflect how CSRF protection works with the Plone REST API and various frontends. Ongoing discussions suggest that while CSRF checks are generally not necessary in JSON web services, the framework requires further attention to properly document this.\n\n## Good first steps\n1. Review and familiarize yourself with the current CSRF documentation [here](https://6.docs.plone.org/classic-ui/csrf.html).\n2. Begin drafting proposed changes to the content based on discussions and insights from contributors.\n3. Engage with the team for clarification on any points of confusion, particularly regarding the backend's CSRF protections.\n```",
-        "path": "data/issues/summaries/plone/volto/4232.json"
       }
     },
     {
@@ -521,38 +678,6 @@
       }
     },
     {
-      "id": 623198285,
-      "number": 1516,
-      "title": "Metadata block or easy way to insert document metadata inside text block",
-      "html_url": "https://github.com/plone/volto/issues/1516",
-      "repository_full_name": "plone/volto",
-      "repository_url": "https://api.github.com/repos/plone/volto",
-      "state": "open",
-      "created_at": "2020-05-22T13:16:23Z",
-      "updated_at": "2026-01-07T08:34:47Z",
-      "comments": 6,
-      "author": {
-        "login": "avoinea",
-        "html_url": "https://github.com/avoinea"
-      },
-      "assignees": [
-        "avoinea"
-      ],
-      "labels": [
-        "04 type: enhancement",
-        "43 lvl: complex",
-        "99 tag: sprint"
-      ],
-      "contributor_summary": {
-        "status": "available",
-        "generated_at": "2026-04-09T12:27:12Z",
-        "source_issue_updated_at": "2026-01-07T08:34:47Z",
-        "model": "gpt-4o-mini",
-        "summary_markdown": "```markdown\n## What this issue is about\nThis issue focuses on enhancing Volto by introducing a way to insert document metadata into text blocks. The goal is to allow users to easily display metadata, such as publication dates or tags, within content areas. This could greatly improve how dynamic pages are built.\n\n## What needs to be done\nThe enhancement involves creating a new block type or adding a button in the text block that pulls content from metadata fields. Discussions indicate that integrating this feature into the core would be beneficial, although there are some reservations about adding extra blocks.\n\n## Helpful background\nCurrent discussions mention existing add-ons like [volto-metadata-block](https://github.com/eea/volto-metadata-block) and [volto-slate-metadata-mentions](https://github.com/eea/volto-slate-metadata-mentions), which provide similar features. However, there is a strong sentiment that having metadata functionalities in core would simplify the user experience.\n\n## Good first steps\n1. Familiarize yourself with the existing add-ons mentioned for additional context.\n2. Review the current implementation of text blocks in Volto.\n3. Discuss with other contributors about how best to integrate this feature into the core.\n4. Consider starting by drafting a proposal or mockups for the new block/button functionality.\n```",
-        "path": "data/issues/summaries/plone/volto/1516.json"
-      }
-    },
-    {
       "id": 1498083485,
       "number": 1380,
       "title": "Add details about each of the default behaviors",
@@ -771,35 +896,6 @@
       }
     },
     {
-      "id": 1551846820,
-      "number": 4290,
-      "title": "Support for Subpath Domains",
-      "html_url": "https://github.com/plone/volto/issues/4290",
-      "repository_full_name": "plone/volto",
-      "repository_url": "https://api.github.com/repos/plone/volto",
-      "state": "open",
-      "created_at": "2023-01-21T16:30:27Z",
-      "updated_at": "2025-10-24T11:39:42Z",
-      "comments": 5,
-      "author": {
-        "login": "nileshgulia1",
-        "html_url": "https://github.com/nileshgulia1"
-      },
-      "assignees": [],
-      "labels": [
-        "03 type: feature (plip)",
-        "43 lvl: complex"
-      ],
-      "contributor_summary": {
-        "status": "available",
-        "generated_at": "2026-04-09T13:37:26Z",
-        "source_issue_updated_at": "2025-10-24T11:39:42Z",
-        "model": "gpt-4o-mini",
-        "summary_markdown": "```markdown\n## What this issue is about\nThis issue focuses on improving Volto to support multiple sites under one domain using subpath URLs, like `www.mysite.com/foo`. This feature aims to simplify project setups that need to host different sites within the same domain while keeping a clean and consistent URL structure.\n\n## What needs to be done\nTo achieve this, we require:\n- The Plone site root must operate under `./foo`.\n- Build assets should be served from a designated environment variable, `RAZZLE_PREFIX_PATH`.\n- All images and links must be prefixed accordingly.\n- Update API requests to strip the `/foo` path.\n- Configure Nginx for deployment, along with necessary documentation and Cypress tests.\n\n## Helpful background\nThe concept is based on improved routing in React applications. This implementation will help manage routing and assets more efficiently, reducing manual configuration. There are several proposed methods, including the use of middleware and updated React components for links and images.\n\n## Good first steps\n1. Familiarize yourself with the existing PRs related to this feature, focusing on [PR #3592](https://github.com/plone/volto/pull/3592) and the discussion around its implementation.\n2. Consider reviewing any related issues or PRs to grasp the current state of development.\n3. Reach out to the contributors mentioned for guidance or collaboration, especially regarding documentation and testing strategies.\n```",
-        "path": "data/issues/summaries/plone/volto/4290.json"
-      }
-    },
-    {
       "id": 1707781588,
       "number": 4756,
       "title": "`@plone/contents` - Enhance Contents View",
@@ -828,38 +924,6 @@
         "model": "gpt-4o-mini",
         "summary_markdown": "## What this issue is about\nThis issue focuses on enhancing the `Contents` view in `@plone/contents` to improve usability and accessibility. The goal is to refactor the contents view, making it a mini-app that operates independently from the site frame, improving overall user experience. \n\n## What needs to be done\n- Refactor the `Contents.jsx` component to utilize the `@plone/contents` core package.\n- Implement better accessibility features using `react-aria-components`.\n- Avoid using SemanticUI and instead adopt TypeScript and better component slicing for maintainability.\n- Update related issues to ensure all improvements are integrated effectively.\n\n## Helpful background\nThis issue is part of the Plone Improvement Proposal (PLIP) process and aims to provide a better content management experience within the Plone ecosystem. There have been discussions around scheduling this for Plone 6.2, indicating a move away from implementing it in the earlier version.\n\n## Good first steps\n1. Familiarize yourself with the current code of `Contents.jsx`.\n2. Review related issues to understand the scope of enhancements.\n3. Check the implementation patterns in the `@plone/contents` package.\n4. Join discussions on the issue thread for clarification and coordination with other contributors. \n\nTesting and documentation updates will be expected after implementation. Happy contributing!",
         "path": "data/issues/summaries/plone/volto/4756.json"
-      }
-    },
-    {
-      "id": 617929356,
-      "number": 1478,
-      "title": "Proposal: have a list of \"smart fields\" in Volto blocks",
-      "html_url": "https://github.com/plone/volto/issues/1478",
-      "repository_full_name": "plone/volto",
-      "repository_url": "https://api.github.com/repos/plone/volto",
-      "state": "open",
-      "created_at": "2020-05-14T05:11:08Z",
-      "updated_at": "2025-09-13T12:27:31Z",
-      "comments": 3,
-      "author": {
-        "login": "tiberiuichim",
-        "html_url": "https://github.com/tiberiuichim"
-      },
-      "assignees": [
-        "luca-bellenghi",
-        "cekk"
-      ],
-      "labels": [
-        "03 type: feature (plip)",
-        "43 lvl: complex"
-      ],
-      "contributor_summary": {
-        "status": "available",
-        "generated_at": "2026-04-09T13:37:42Z",
-        "source_issue_updated_at": "2025-09-13T12:27:31Z",
-        "model": "gpt-4o-mini",
-        "summary_markdown": "## What this issue is about\nThis issue proposes creating a list of \"smart fields\" for Volto blocks. These fields would be automatically processed on the server side, enhancing functionality and simplifying block management. Examples include fields like `searchableText` and `relatedItems`.\n\n## What needs to be done\nWe need to:\n1. Define which fields will be considered \"smart fields.\"\n2. Implement the necessary logic for server-side processing of these fields.\n3. Document the smart fields thoroughly so block authors understand their potential side-effects.\n\n## Helpful background\n\"Smart fields\" are special fields in Volto blocks that have additional behaviors, like automatic indexing or content resolution. For instance, using a `url` field could directly leverage existing code to resolve item references. There may be competing ideas or requirements in this discussion, so clarity on final decisions is essential.\n\n## Good first steps\n1. Review current comments and suggestions in the issue to gather ideas on potential smart fields.\n2. Begin drafting a list of these fields and their intended behaviors.\n3. Familiarize yourself with how existing fields function to understand common patterns.\n4. Once a preliminary list is ready, contribute to the documentation for clarity.",
-        "path": "data/issues/summaries/plone/volto/1478.json"
       }
     },
     {
@@ -1076,70 +1140,6 @@
       }
     },
     {
-      "id": 1631010525,
-      "number": 4576,
-      "title": "Deployment documentation needs to show Seamless mode first, rather then classic \"simple\"",
-      "html_url": "https://github.com/plone/volto/issues/4576",
-      "repository_full_name": "plone/volto",
-      "repository_url": "https://api.github.com/repos/plone/volto",
-      "state": "open",
-      "created_at": "2023-03-19T16:27:09Z",
-      "updated_at": "2025-03-08T17:52:50Z",
-      "comments": 4,
-      "author": {
-        "login": "tiberiuichim",
-        "html_url": "https://github.com/tiberiuichim"
-      },
-      "assignees": [
-        "tiberiuichim"
-      ],
-      "labels": [
-        "01 type: bug",
-        "33 needs: docs",
-        "43 lvl: complex",
-        "99 tag: docs-reorg"
-      ],
-      "contributor_summary": {
-        "status": "available",
-        "generated_at": "2026-04-09T14:40:30Z",
-        "source_issue_updated_at": "2025-03-08T17:52:50Z",
-        "model": "gpt-4o-mini",
-        "summary_markdown": "## What this issue is about\nThis issue addresses the need to reorganize the deployment documentation for Volto on Plone. Currently, the \"Simple deployment\" section appears before \"Seamless mode,\" which should be prioritized. There are ongoing discussions about how to present this information clearly.\n\n## What needs to be done\n1. Change the order of deployment sections, placing \"Seamless mode\" first in the navigation.\n2. Update the \"Simple deployment\" section to indicate that it's only for older versions of Plone and include a deprecation warning.\n3. Refactor the content to ensure it guides users appropriately, mentioning that \"Simple deployment\" is still valid but secondary.\n\n## Helpful background\n\"Seamless mode\" refers to installing Volto on older Plone versions without needing `plone.restapi` 2.0, while \"Simple deployment\" is becoming outdated. Clarity is needed in the documentation to guide new users effectively.\n\n## Good first steps\n1. Review the deployment documentation linked [here](https://6.docs.plone.org/volto/deploying/index.html).\n2. Discuss proposed changes with the issue author, [tiberiuichim](https://github.com/tiberiuichim), and contributor [stevepiercy](https://github.com/stevepiercy).\n3. Be prepared to write and test any documentation updates and discuss them in the comments for feedback.",
-        "path": "data/issues/summaries/plone/volto/4576.json"
-      }
-    },
-    {
-      "id": 1218934617,
-      "number": 3277,
-      "title": "Trigger 6-dev documentation build on every push to master in Volto",
-      "html_url": "https://github.com/plone/volto/issues/3277",
-      "repository_full_name": "plone/volto",
-      "repository_url": "https://api.github.com/repos/plone/volto",
-      "state": "open",
-      "created_at": "2022-04-28T15:52:30Z",
-      "updated_at": "2025-03-08T17:52:47Z",
-      "comments": 3,
-      "author": {
-        "login": "sneridagh",
-        "html_url": "https://github.com/sneridagh"
-      },
-      "assignees": [
-        "esteele"
-      ],
-      "labels": [
-        "33 needs: docs",
-        "43 lvl: complex"
-      ],
-      "contributor_summary": {
-        "status": "available",
-        "generated_at": "2026-04-09T14:40:44Z",
-        "source_issue_updated_at": "2025-03-08T17:52:47Z",
-        "model": "gpt-4o-mini",
-        "summary_markdown": "# Trigger 6-dev documentation build on every push to master in Volto\n\n## What this issue is about\nThis issue aims to ensure that the documentation for Volto is automatically built whenever there’s a push to the master branch. This helps keep the documentation up to date with the latest code changes.\n\n## What needs to be done\nThe implementation requires setting up a continuous integration (CI) process to automatically trigger a documentation build. The specifics of how to configure this may need further discussion as there are some ambiguities in the comments.\n\n## Helpful background\nThe initiative is connected to ongoing efforts in the Plone community, as referenced in related documentation issues. Previous attempts to implement this feature encountered problems, which are noted in the discussions.\n\n## Good first steps\n1. **Review the current CI setup** for Volto to understand how builds are currently triggered.\n2. **Read the linked issues** for additional context on previous discussions and possible challenges faced.\n3. **Coordinate with the assignee, @esteele**, regarding any unresolved problems or insights on the implementation.\n4. **Test any changes locally** before proposing them to ensure everything works smoothly. \n\nFeel free to ask questions if you're uncertain about any part of the process!",
-        "path": "data/issues/summaries/plone/volto/3277.json"
-      }
-    },
-    {
       "id": 2669412772,
       "number": 1780,
       "title": "Add troubleshooting hints if frontend is accessed from another machine (not localhost) and missing CSS links in head",
@@ -1167,35 +1167,6 @@
         "model": "gpt-4o-mini",
         "summary_markdown": "```markdown\n## What this issue is about\nThis issue addresses a common problem encountered when accessing the Plone frontend from a different machine (not localhost). Users may find that the CSS links are missing from the HTML head, which can lead to styling issues.\n\n## What needs to be done\nWe need to document troubleshooting hints for accessing the Plone frontend from other IP addresses. This documentation should include details about setting the environment variable `HOST` to the correct server IP or domain name and any firewall settings that may need to be adjusted.\n\n## Helpful background\nWhen starting the frontend using `make frontend-start`, if it’s accessed externally, the CSS links might not appear without proper configuration. This issue is related to a ticket in the Cookieplone project (issue [348](https://github.com/plone/cookieplone-templates/issues/348)) which also discusses solutions.\n\n## Good first steps\n1. Review the related Cookieplone issue for more insight.\n2. Check the existing Plone documentation to identify where to add this information.\n3. Draft a proposal for updating the documentation to include these troubleshooting hints.\n4. Participate in discussions to clarify any remaining questions and ensure alignment with other contributions.\n   \nFeel free to raise questions here if you're uncertain about any aspect!\n```",
         "path": "data/issues/summaries/plone/documentation/1780.json"
-      }
-    },
-    {
-      "id": 2547785360,
-      "number": 6327,
-      "title": "Library Upgrades for the next major (19).",
-      "html_url": "https://github.com/plone/volto/issues/6327",
-      "repository_full_name": "plone/volto",
-      "repository_url": "https://api.github.com/repos/plone/volto",
-      "state": "open",
-      "created_at": "2024-09-25T11:57:01Z",
-      "updated_at": "2025-02-04T19:03:13Z",
-      "comments": 2,
-      "author": {
-        "login": "tisto",
-        "html_url": "https://github.com/tisto"
-      },
-      "assignees": [],
-      "labels": [
-        "03 type: feature (plip)",
-        "43 lvl: complex"
-      ],
-      "contributor_summary": {
-        "status": "available",
-        "generated_at": "2026-04-09T14:41:09Z",
-        "source_issue_updated_at": "2025-02-04T19:03:13Z",
-        "model": "gpt-4o-mini",
-        "summary_markdown": "```markdown\n## What this issue is about\nThis issue is about upgrading essential libraries (`react-intl` and `redux`) in Volto for the next major release (version 19). These libraries are currently outdated, and updating them is crucial for maintaining the codebase and improving functionality.\n\n## What needs to be done\n1. Upgrade the libraries to their maintained versions.\n2. Modify existing code as necessary to accommodate changes in the new library versions.\n3. Assess if the current tooling around `react-intl` needs adjustment, particularly regarding the .po (Portable Object) files.\n\n## Helpful background\nThe main motivation for this upgrade is to ensure Volto uses modern, supported libraries. The updating process is part of a broader Plone Improvement Proposal (PLIP). Note that some discussions in this issue might be incomplete or ambiguous, so clarifications could be necessary as you proceed.\n\n## Good first steps\n1. Familiarize yourself with the involved libraries (`react-intl` and `redux`) and their latest features.\n2. Review related issues, especially [issue #5627](https://github.com/plone/volto/issues/5627) on `react-intl`.\n3. Look through documentation on contributing to Volto. See [First-time contributors](https://6.docs.plone.org/contributing/first-time.html) for guidelines.\n4. Feel free to ask questions in the comments if you need guidance!\n```",
-        "path": "data/issues/summaries/plone/volto/6327.json"
       }
     },
     {
@@ -1715,10 +1686,10 @@
   "message": null,
   "workflow": {
     "repository": "syslabcom/activity-recognition",
-    "run_id": "26024439571",
-    "run_number": "894",
+    "run_id": "26030380574",
+    "run_number": "895",
     "attempt": "1",
-    "url": "https://github.com/syslabcom/activity-recognition/actions/runs/26024439571",
-    "sha": "63c53228faa17049c140304e0f7bf1bd7c0e08d6"
+    "url": "https://github.com/syslabcom/activity-recognition/actions/runs/26030380574",
+    "sha": "fa2346b25110d8f5bb79f199b45634ae384d4c02"
   }
 }

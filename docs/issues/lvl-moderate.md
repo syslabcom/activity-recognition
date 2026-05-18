@@ -1,7 +1,7 @@
 ---
 title: "Plone issue list — Level: Moderate"
 permalink: "/issues/lvl-moderate/"
-generated_at: "2026-05-18T09:15:20Z"
+generated_at: "2026-05-18T11:22:22Z"
 organization: "plone"
 issue_count: 73
 required_labels:
@@ -10,7 +10,7 @@ required_labels:
 
 # Plone issue list — Level: Moderate
 
-Generated: `2026-05-18T09:15:20Z`  
+Generated: `2026-05-18T11:22:22Z`  
 Organization: `plone`  
 Required label: `42 lvl: moderate`  
 Issue count: `73`
@@ -19,6 +19,8 @@ Sorted by last updated date, newest first.
 
 | Updated | Repository | Issue | Author | Labels |
 | --- | --- | --- | --- | --- |
+| 2026-05-18 10:43 UTC | `plone/volto` | [#5896 It's confusing how to change my password as a logged in user](https://github.com/plone/volto/issues/5896) | `JeffersonBledsoe` | `04 type: enhancement`, `42 lvl: moderate` |
+| 2026-05-18 10:40 UTC | `plone/volto` | [#5627 Update i18n machinery to latest `react-intl`](https://github.com/plone/volto/issues/5627) | `sneridagh` | `03 type: feature (plip)`, `42 lvl: moderate` |
 | 2026-05-08 07:38 UTC | `plone/Products.CMFPlone` | [#3953 PLIP: Start separating Classic UI code from the core](https://github.com/plone/Products.CMFPlone/issues/3953) | `tisto` | `31 needs: help`, `99 tag: cleanup`, `03 type: feature (plip)`, `13 prio: normal`, `42 lvl: moderate`, `53 target: major`, `99 tag: Classic UI` |
 | 2026-03-30 08:06 UTC | `plone/Products.CMFPlone` | [#3394 Broken ARIA reference in SVG icon](https://github.com/plone/Products.CMFPlone/issues/3394) | `giulioturetta` | `99 tag: UX Accessibility`, `01 type: bug`, `12 prio: high`, `21 status: confirmed`, `42 lvl: moderate`, `51 target: patch` |
 | 2026-03-23 22:38 UTC | `plone/Products.CMFPlone` | [#3837 Plone 6.0 Classic-UI: where can I set default pattern options](https://github.com/plone/Products.CMFPlone/issues/3837) | `fredvd` | `01 type: bug`, `99 tag: UX Integrator/Themer`, `13 prio: normal`, `21 status: confirmed`, `42 lvl: moderate`, `99 tag: resource registry`, `99 tag: Plone 6.0` |
@@ -33,12 +35,10 @@ Sorted by last updated date, newest first.
 | 2025-12-26 16:44 UTC | `plone/volto` | [#8 Live updates](https://github.com/plone/volto/issues/8) | `robgietema` | `04 type: enhancement`, `14 prio: low`, `21 status: confirmed`, `42 lvl: moderate` |
 | 2025-12-19 03:04 UTC | `plone/documentation` | [#1309 Move the `plone.behavior` readme into `plone/documentation`](https://github.com/plone/documentation/issues/1309) | `stevepiercy` | `31 needs: help`, `33 needs: docs`, `42 lvl: moderate`, `99 tag: backend` |
 | 2025-09-17 14:56 UTC | `plone/plone.org` | [#51 Implement Varnish in the plone.org stack](https://github.com/plone/plone.org/issues/51) | `ericof` | `04 type: enhancement`, `42 lvl: moderate` |
-| 2025-09-13 12:27 UTC | `plone/volto` | [#5627 Update i18n machinery to latest `react-intl`](https://github.com/plone/volto/issues/5627) | `sneridagh` | `03 type: feature (plip)`, `42 lvl: moderate` |
 | 2025-03-08 22:21 UTC | `plone/volto` | [#5883 Create a page for Volto CI](https://github.com/plone/volto/issues/5883) | `stevepiercy` | `33 needs: docs`, `42 lvl: moderate` |
 | 2025-02-28 20:55 UTC | `plone/documentation` | [#931 Docs on setting the modification date](https://github.com/plone/documentation/issues/931) | `zopyx` | `31 needs: help`, `33 needs: docs`, `42 lvl: moderate`, `99 tag: Plone 6.x` |
 | 2025-02-28 11:14 UTC | `plone/cookieplone-templates` | [#157 varnish container build superfluos - use config feature](https://github.com/plone/cookieplone-templates/issues/157) | `jensens` | `04 type: enhancement`, `21 status: confirmed`, `33 needs: docs`, `42 lvl: moderate` |
 | 2025-01-24 06:48 UTC | `plone/buildout.coredev` | [#972 Improve README](https://github.com/plone/buildout.coredev/issues/972) | `ramiroluz` | `04 type: enhancement`, `14 prio: low`, `33 needs: docs`, `41 lvl: easy`, `42 lvl: moderate` |
-| 2024-12-17 07:51 UTC | `plone/volto` | [#5896 It's confusing how to change my password as a logged in user](https://github.com/plone/volto/issues/5896) | `JeffersonBledsoe` | `04 type: enhancement`, `42 lvl: moderate` |
 | 2024-12-17 07:50 UTC | `plone/volto` | [#5630 Unify the use of the optional `preview_image_link` across Volto](https://github.com/plone/volto/issues/5630) | `sneridagh` | `04 type: enhancement`, `42 lvl: moderate` |
 | 2024-12-13 22:01 UTC | `plone/volto` | [#3834 Document cypress commands, retrofit them to existing tests](https://github.com/plone/volto/issues/3834) | `tiberiuichim` | `01 type: bug`, `33 needs: docs`, `42 lvl: moderate` |
 | 2024-11-24 08:35 UTC | `plone/documentation` | [#707 plone/content/creating.html outdated for dexterity content (folder restrictions)](https://github.com/plone/documentation/issues/707) | `zopyx` | `31 needs: help`, `33 needs: docs`, `42 lvl: moderate`, `99 tag: Plone 6.x` |

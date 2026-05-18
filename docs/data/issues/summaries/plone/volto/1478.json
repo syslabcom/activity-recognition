@@ -1,14 +1,14 @@
 {
   "version": 1,
   "status": "success",
-  "generated_at": "2026-04-09T13:37:42Z",
+  "generated_at": "2026-05-18T11:22:35Z",
   "source_issue": {
     "id": 617929356,
     "number": 1478,
     "title": "Proposal: have a list of \"smart fields\" in Volto blocks",
     "html_url": "https://github.com/plone/volto/issues/1478",
     "repository_full_name": "plone/volto",
-    "updated_at": "2025-09-13T12:27:31Z",
+    "updated_at": "2026-05-18T10:53:16Z",
     "labels": [
       "03 type: feature (plip)",
       "43 lvl: complex"
@@ -19,13 +19,13 @@
     "provider": "openai",
     "model": "gpt-4o-mini"
   },
-  "summary_markdown": "## What this issue is about\nThis issue proposes creating a list of \"smart fields\" for Volto blocks. These fields would be automatically processed on the server side, enhancing functionality and simplifying block management. Examples include fields like `searchableText` and `relatedItems`.\n\n## What needs to be done\nWe need to:\n1. Define which fields will be considered \"smart fields.\"\n2. Implement the necessary logic for server-side processing of these fields.\n3. Document the smart fields thoroughly so block authors understand their potential side-effects.\n\n## Helpful background\n\"Smart fields\" are special fields in Volto blocks that have additional behaviors, like automatic indexing or content resolution. For instance, using a `url` field could directly leverage existing code to resolve item references. There may be competing ideas or requirements in this discussion, so clarity on final decisions is essential.\n\n## Good first steps\n1. Review current comments and suggestions in the issue to gather ideas on potential smart fields.\n2. Begin drafting a list of these fields and their intended behaviors.\n3. Familiarize yourself with how existing fields function to understand common patterns.\n4. Once a preliminary list is ready, contribute to the documentation for clarity.",
+  "summary_markdown": "```markdown\n## What this issue is about\nThis issue proposes creating a formal list of \"smart fields\" in Volto blocks. These fields will have special behaviors, like being automatically transformed on the server-side, which simplifies how block values are handled.\n\n## What needs to be done\nWe need to define which fields qualify as smart fields (e.g., `searchableText`, `url`, `relatedItems`), document their behaviors, and ensure block authors understand the implications of these field names. The goal is to enable existing block indexing to use these fields without creating new indexers for every block type.\n\n## Helpful background\nSmart fields, like `searchableText`, allow for better indexing and data handling. For example, filling in a `relatedItems` field would automatically serialize related items on the server side. This feature aims to improve usability and efficiency within Volto.\n\n## Good first steps\n1. Review the existing discussions for clarity and consensus on which fields to include.\n2. Start drafting documentation on what these smart fields are and their expected behaviors.\n3. Coordinate with the current assignees to ensure the approach aligns with ongoing development.\n4. Consider testing the implementation of any proposed smart fields to ensure they behave as expected.\n```",
   "workflow": {
     "repository": "syslabcom/activity-recognition",
-    "run_id": "24193140143",
-    "run_number": "52",
+    "run_id": "26030380574",
+    "run_number": "895",
     "attempt": "1",
-    "url": "https://github.com/syslabcom/activity-recognition/actions/runs/24193140143",
-    "sha": "598aa417f24197151040f51e842b398a12c4da37"
+    "url": "https://github.com/syslabcom/activity-recognition/actions/runs/26030380574",
+    "sha": "fa2346b25110d8f5bb79f199b45634ae384d4c02"
   }
 }

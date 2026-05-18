@@ -1,7 +1,7 @@
 ---
 title: "Plone issue list — Level: Easy"
 permalink: "/issues/lvl-easy/"
-generated_at: "2026-05-18T09:15:20Z"
+generated_at: "2026-05-18T11:22:22Z"
 organization: "plone"
 issue_count: 85
 required_labels:
@@ -10,7 +10,7 @@ required_labels:
 
 # Plone issue list — Level: Easy
 
-Generated: `2026-05-18T09:15:20Z`  
+Generated: `2026-05-18T11:22:22Z`  
 Organization: `plone`  
 Required label: `41 lvl: easy`  
 Issue count: `85`
@@ -19,6 +19,9 @@ Sorted by last updated date, newest first.
 
 | Updated | Repository | Issue | Author | Labels |
 | --- | --- | --- | --- | --- |
+| 2026-05-18 10:32 UTC | `plone/volto` | [#3092 Improve spellcheck](https://github.com/plone/volto/issues/3092) | `stevepiercy` | `04 type: enhancement`, `31 needs: help`, `33 needs: docs`, `41 lvl: easy` |
+| 2026-05-18 10:30 UTC | `plone/volto` | [#3344 \[docs\] Convert glossary lists to definition lists](https://github.com/plone/volto/issues/3344) | `stevepiercy` | `04 type: enhancement`, `33 needs: docs`, `41 lvl: easy` |
+| 2026-05-18 10:28 UTC | `plone/volto` | [#3827 Create end-user Editor documentation](https://github.com/plone/volto/issues/3827) | `stevepiercy` | `31 needs: help`, `33 needs: docs`, `41 lvl: easy` |
 | 2026-03-23 22:56 UTC | `plone/Products.CMFPlone` | [#1478 Site Setup parent links on Control Panel pages aren't consistent](https://github.com/plone/Products.CMFPlone/issues/1478) | `davidjb` | `01 type: bug`, `31 needs: help`, `41 lvl: easy` |
 | 2026-03-23 22:38 UTC | `plone/Products.CMFPlone` | [#2897 plone.formwidget.recurrence i18n.py poorly internationalized](https://github.com/plone/Products.CMFPlone/issues/2897) | `vincentfretin` | `01 type: bug`, `99 tag: cleanup`, `14 prio: low`, `21 status: confirmed`, `41 lvl: easy` |
 | 2026-03-23 21:55 UTC | `plone/Products.CMFPlone` | [#932 mail controlpanel: no validator for "Site 'From' address"](https://github.com/plone/Products.CMFPlone/issues/932) | `zopyx` | `04 type: enhancement`, `99 tag: UX Site Admin`, `31 needs: help`, `14 prio: low`, `41 lvl: easy` |
@@ -41,7 +44,6 @@ Sorted by last updated date, newest first.
 | 2026-03-04 09:06 UTC | `plone/documentation` | [#612 document feature of external links opening in new tab/window](https://github.com/plone/documentation/issues/612) | `tkimnguyen` | `33 needs: docs`, `41 lvl: easy`, `99 tag: good first issue`, `99 tag: hacktoberfest` |
 | 2026-02-24 04:11 UTC | `plone/volto` | [#7922 Document to run `make install` when changing a dependency](https://github.com/plone/volto/issues/7922) | `stevepiercy` | `01 type: bug`, `13 prio: normal`, `21 status: confirmed`, `33 needs: docs`, `41 lvl: easy` |
 | 2026-01-29 22:02 UTC | `plone/plone.restapi` | [#285 Discrepancy in documentation for Authentication sometimes root used as plone sometimes Plone](https://github.com/plone/plone.restapi/issues/285) | `envy7` | `01 type: bug`, `41 lvl: easy` |
-| 2026-01-29 09:59 UTC | `plone/volto` | [#3344 \[docs\] Convert glossary lists to definition lists](https://github.com/plone/volto/issues/3344) | `stevepiercy` | `04 type: enhancement`, `33 needs: docs`, `41 lvl: easy` |
 | 2026-01-25 06:16 UTC | `plone/volto` | [#955 user menu popup is not available on the site setup pages](https://github.com/plone/volto/issues/955) | `fredvd` | `01 type: bug`, `41 lvl: easy` |
 | 2026-01-25 06:15 UTC | `plone/Products.CMFPlone` | [#3353 Show portal_timezone in date widgets](https://github.com/plone/Products.CMFPlone/issues/3353) | `MrTango` | `04 type: enhancement`, `31 needs: help`, `41 lvl: easy`, `99 tag: Plone 6.0` |
 | 2026-01-19 08:12 UTC | `plone/volto` | [#7088 unRegisterSlotComponent is in the code, but in the docs it is unregisterSlotComponent](https://github.com/plone/volto/issues/7088) | `silviubogan` | `01 type: bug`, `33 needs: docs`, `41 lvl: easy`, `30 needs: triage` |
@@ -49,7 +51,6 @@ Sorted by last updated date, newest first.
 | 2026-01-10 09:25 UTC | `plone/volto` | [#1783 Document SchemaWidget, provide examples](https://github.com/plone/volto/issues/1783) | `tiberiuichim` | `33 needs: docs`, `41 lvl: easy` |
 | 2026-01-10 08:57 UTC | `plone/volto` | [#1603 Use Cypress to determine code coverage](https://github.com/plone/volto/issues/1603) | `tiberiuichim` | `04 type: enhancement`, `41 lvl: easy` |
 | 2025-12-27 08:08 UTC | `plone/volto` | [#3605 \[DOCS\] How to use local custom fonts](https://github.com/plone/volto/issues/3605) | `rotavio` | `33 needs: docs`, `41 lvl: easy` |
-| 2025-12-19 21:50 UTC | `plone/volto` | [#3092 Improve spellcheck](https://github.com/plone/volto/issues/3092) | `stevepiercy` | `04 type: enhancement`, `31 needs: help`, `33 needs: docs`, `41 lvl: easy` |
 | 2025-12-01 05:29 UTC | `plone/plone.distribution` | [#134 Deduplicate documentation](https://github.com/plone/plone.distribution/issues/134) | `stevepiercy` | `21 status: confirmed`, `31 needs: help`, `33 needs: docs`, `41 lvl: easy` |
 | 2025-11-30 14:21 UTC | `plone/volto` | [#1404 Supported field types in Volto](https://github.com/plone/volto/issues/1404) | `pbauer` | `41 lvl: easy` |
 | 2025-06-01 03:07 UTC | `plone/plone.app.discussion` | [#88 Сlick Reply -> duplicate fields](https://github.com/plone/plone.app.discussion/issues/88) | `serge73` | `31 needs: help`, `02 type: regression`, `12 prio: high`, `21 status: confirmed`, `41 lvl: easy` |
@@ -57,7 +58,6 @@ Sorted by last updated date, newest first.
 | 2025-04-16 20:48 UTC | `plone/plone.i18n` | [#65 FileNameNormalizer/URLNormalizer does not support files with long file extensions](https://github.com/plone/plone.i18n/issues/65) | `pgrunewald` | `01 type: bug`, `14 prio: low`, `41 lvl: easy` |
 | 2025-04-09 10:12 UTC | `plone/cookieplone-templates` | [#200 Support GitLab in `documentation_starter` template](https://github.com/plone/cookieplone-templates/issues/200) | `stevepiercy` | `04 type: enhancement`, `41 lvl: easy`, `52 target: minor` |
 | 2025-03-15 17:42 UTC | `plone/tagung.plone.de` | [#27 Megamenu selected item markup lines not that nice in the current state.](https://github.com/plone/tagung.plone.de/issues/27) | `acsr` | `14 prio: low`, `32 needs: review`, `41 lvl: easy` |
-| 2025-03-08 17:52 UTC | `plone/volto` | [#3827 Create end-user Editor documentation](https://github.com/plone/volto/issues/3827) | `stevepiercy` | `31 needs: help`, `33 needs: docs`, `41 lvl: easy` |
 | 2025-01-24 06:48 UTC | `plone/buildout.coredev` | [#972 Improve README](https://github.com/plone/buildout.coredev/issues/972) | `ramiroluz` | `04 type: enhancement`, `14 prio: low`, `33 needs: docs`, `41 lvl: easy`, `42 lvl: moderate` |
 | 2024-12-15 08:05 UTC | `plone/volto` | [#2281 Can't use "query" as first widget in a form](https://github.com/plone/volto/issues/2281) | `tiberiuichim` | `01 type: bug`, `41 lvl: easy` |
 | 2024-11-14 16:34 UTC | `plone/plone.app.contenttypes` | [#646 tabular listing column titles doesn't get translated completely](https://github.com/plone/plone.app.contenttypes/issues/646) | `petschki` | `01 type: bug`, `14 prio: low`, `41 lvl: easy` |

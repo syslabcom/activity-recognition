@@ -1,14 +1,14 @@
 {
   "version": 1,
   "status": "success",
-  "generated_at": "2026-04-09T14:41:09Z",
+  "generated_at": "2026-05-18T11:22:54Z",
   "source_issue": {
     "id": 2547785360,
     "number": 6327,
     "title": "Library Upgrades for the next major (19).",
     "html_url": "https://github.com/plone/volto/issues/6327",
     "repository_full_name": "plone/volto",
-    "updated_at": "2025-02-04T19:03:13Z",
+    "updated_at": "2026-05-18T10:42:31Z",
     "labels": [
       "03 type: feature (plip)",
       "43 lvl: complex"
@@ -19,13 +19,13 @@
     "provider": "openai",
     "model": "gpt-4o-mini"
   },
-  "summary_markdown": "```markdown\n## What this issue is about\nThis issue is about upgrading essential libraries (`react-intl` and `redux`) in Volto for the next major release (version 19). These libraries are currently outdated, and updating them is crucial for maintaining the codebase and improving functionality.\n\n## What needs to be done\n1. Upgrade the libraries to their maintained versions.\n2. Modify existing code as necessary to accommodate changes in the new library versions.\n3. Assess if the current tooling around `react-intl` needs adjustment, particularly regarding the .po (Portable Object) files.\n\n## Helpful background\nThe main motivation for this upgrade is to ensure Volto uses modern, supported libraries. The updating process is part of a broader Plone Improvement Proposal (PLIP). Note that some discussions in this issue might be incomplete or ambiguous, so clarifications could be necessary as you proceed.\n\n## Good first steps\n1. Familiarize yourself with the involved libraries (`react-intl` and `redux`) and their latest features.\n2. Review related issues, especially [issue #5627](https://github.com/plone/volto/issues/5627) on `react-intl`.\n3. Look through documentation on contributing to Volto. See [First-time contributors](https://6.docs.plone.org/contributing/first-time.html) for guidelines.\n4. Feel free to ask questions in the comments if you need guidance!\n```",
+  "summary_markdown": "```markdown\n## What this issue is about\nThis issue addresses the need to upgrade some outdated libraries used in Volto, such as `react-intl` and `redux`. The goal is to ensure that Volto uses maintained versions of these foundational libraries.\n\n## What needs to be done\n- Upgrade `react-intl` and `redux` to their latest maintained versions.\n- Adjust the codebase as needed to accommodate changes in these libraries.\n- Evaluate if we need to maintain current tooling related to localization (using .po files).\n\n## Helpful background\nThe discussion includes a specific PLIP related to `react-intl` that may require coordination. The upgrades aim to enhance functionality and stability but may involve some adjustments to existing code.\n\n## Good first steps\n1. Familiarize yourself with the relevant documentation for new contributors: [Contributing to Plone](https://6.docs.plone.org/contributing/index.html) and [Contributing to Volto](https://6.docs.plone.org/contributing/volto.html).\n2. Review the existing library usage in the project to identify the necessary changes.\n3. Consider reaching out to the community for guidance and support if you have questions.\n4. Document your findings and any changes you make for future contributors.\n```",
   "workflow": {
     "repository": "syslabcom/activity-recognition",
-    "run_id": "24196205718",
-    "run_number": "53",
+    "run_id": "26030380574",
+    "run_number": "895",
     "attempt": "1",
-    "url": "https://github.com/syslabcom/activity-recognition/actions/runs/24196205718",
-    "sha": "4afa5437e3369368f43054c82fcd1ba9bed2967b"
+    "url": "https://github.com/syslabcom/activity-recognition/actions/runs/26030380574",
+    "sha": "fa2346b25110d8f5bb79f199b45634ae384d4c02"
   }
 }

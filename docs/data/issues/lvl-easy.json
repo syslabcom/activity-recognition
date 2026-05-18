@@ -1,7 +1,7 @@
 {
   "version": 1,
   "status": "success",
-  "generated_at": "2026-05-18T09:15:20Z",
+  "generated_at": "2026-05-18T11:22:22Z",
   "organization": "plone",
   "state": "open",
   "slug": "lvl-easy",
@@ -11,6 +11,97 @@
   ],
   "issue_count": 85,
   "issues": [
+    {
+      "id": 1145243237,
+      "number": 3092,
+      "title": "Improve spellcheck",
+      "html_url": "https://github.com/plone/volto/issues/3092",
+      "repository_full_name": "plone/volto",
+      "repository_url": "https://api.github.com/repos/plone/volto",
+      "state": "open",
+      "created_at": "2022-02-21T02:25:04Z",
+      "updated_at": "2026-05-18T10:32:03Z",
+      "comments": 16,
+      "author": {
+        "login": "stevepiercy",
+        "html_url": "https://github.com/stevepiercy"
+      },
+      "assignees": [],
+      "labels": [
+        "04 type: enhancement",
+        "31 needs: help",
+        "33 needs: docs",
+        "41 lvl: easy"
+      ],
+      "contributor_summary": {
+        "status": "available",
+        "generated_at": "2026-05-18T11:23:16Z",
+        "source_issue_updated_at": "2026-05-18T10:32:03Z",
+        "model": "gpt-4o-mini",
+        "summary_markdown": "```markdown\n## What this issue is about\nThis issue focuses on improving spellcheck and ensuring consistent spellings in the Volto project. Specifically, suggestions include standardizing terms such as \"JavaScript\" and \"NodeJS\" while being careful not to accidentally alter commands or code blocks.\n\n## What needs to be done\nYou need to update `styles/Vocab/Plone/accept.txt` and `styles/Vocab/Plone/reject.txt` with the appropriate terms. The 'accept' file should include accepted spellings, whereas the 'reject' file should specify terms to avoid. \n\n## Helpful background\nSpellcheck in Volto utilizes a tool called Vale. It's important to familiarize yourself with how Vale works, particularly through the linked documentation: [Vale Documentation](https://vale.sh/docs/topics/vocab/). The issue is currently open, and adjustments can still be made based on ongoing discussions.\n\n## Good first steps\n1. Review the current list of accepted and rejected terms in `accept.txt` and `reject.txt`.\n2. Make a few consistent spelling changes that you feel comfortable with.\n3. Run the Vale command to test your changes.\n4. Create a pull request for review, focusing on small, manageable updates to facilitate easier reviews.\n5. Check the contribution guidelines [here](https://6.docs.plone.org/contributing/index.html) to ensure you're following best practices.\n```",
+        "path": "data/issues/summaries/plone/volto/3092.json"
+      }
+    },
+    {
+      "id": 1228581206,
+      "number": 3344,
+      "title": "[docs] Convert glossary lists to definition lists",
+      "html_url": "https://github.com/plone/volto/issues/3344",
+      "repository_full_name": "plone/volto",
+      "repository_url": "https://api.github.com/repos/plone/volto",
+      "state": "open",
+      "created_at": "2022-05-07T09:33:20Z",
+      "updated_at": "2026-05-18T10:30:40Z",
+      "comments": 2,
+      "author": {
+        "login": "stevepiercy",
+        "html_url": "https://github.com/stevepiercy"
+      },
+      "assignees": [],
+      "labels": [
+        "04 type: enhancement",
+        "33 needs: docs",
+        "41 lvl: easy"
+      ],
+      "contributor_summary": {
+        "status": "available",
+        "generated_at": "2026-05-18T11:23:24Z",
+        "source_issue_updated_at": "2026-05-18T10:30:40Z",
+        "model": "gpt-4o-mini",
+        "summary_markdown": "## What this issue is about\nThis issue addresses the need to convert glossary lists in the Plone documentation into proper definition lists. This will enhance the clarity and presentation of defined terms in the documentation.\n\n## What needs to be done\n1. Convert the local glossaries in the [settings reference document](https://github.com/plone/volto/blob/master/docs/source/configuration/settings-reference.md) into definition lists.\n2. Manually sort these definition lists, as they do not have an automatic sort feature.\n3. Ensure that inline terms are formatted correctly with backticks for proper rendering.\n4. Add any new terms to the global glossary located in [plone/documentation](https://github.com/plone/documentation).\n\n## Helpful background\nDefinition lists are a way to present terms and their definitions clearly. In this context, existing terms need refining to enhance document accessibility, especially for new readers.\n\n## Good first steps\n1. Familiarize yourself with [definition lists](https://myst-parser.readthedocs.io/en/latest/syntax/optional.html#definition-lists) in Markdown.\n2. Review the [settings reference document](https://github.com/plone/volto/blob/master/docs/source/configuration/settings-reference.md).\n3. Clone the repository and start making changes according to the guidelines specified.\n4. Once complete, consider submitting a pull request (PR) for review. \n\nFeel free to ask questions; collaboration is encouraged!",
+        "path": "data/issues/summaries/plone/volto/3344.json"
+      }
+    },
+    {
+      "id": 1433738735,
+      "number": 3827,
+      "title": "Create end-user Editor documentation",
+      "html_url": "https://github.com/plone/volto/issues/3827",
+      "repository_full_name": "plone/volto",
+      "repository_url": "https://api.github.com/repos/plone/volto",
+      "state": "open",
+      "created_at": "2022-11-02T20:24:18Z",
+      "updated_at": "2026-05-18T10:28:18Z",
+      "comments": 16,
+      "author": {
+        "login": "stevepiercy",
+        "html_url": "https://github.com/stevepiercy"
+      },
+      "assignees": [],
+      "labels": [
+        "31 needs: help",
+        "33 needs: docs",
+        "41 lvl: easy"
+      ],
+      "contributor_summary": {
+        "status": "available",
+        "generated_at": "2026-05-18T11:23:34Z",
+        "source_issue_updated_at": "2026-05-18T10:28:18Z",
+        "model": "gpt-4o-mini",
+        "summary_markdown": "# Issue Summary: Create End-User Editor Documentation\n\n## What this issue is about\nThis issue focuses on creating documentation for the Volto Editor aimed at end users. The goal is to guide new users through the UI with contextual help links, streamlining their experience much like PyCharm does.\n\n## What needs to be done\nContributors are encouraged to draft user-friendly documentation covering key Editor features. The structure is still in discussion, but starting with a new directory for the user manual is suggested. Key areas to cover include functionalities like drag and drop, copy/paste, and block types.\n\n## Helpful background\nThe current discussion emphasizes making the documentation accessible to newbies. Existing Plone 5 concepts are relevant but need adaptation for Volto's distinct features. No final decisions on documentation locations have been made yet.\n\n## Good first steps\n1. Familiarize yourself with the existing features of the Volto Editor.\n2. Review the proposed directory structure for documentation: `/volto/docs/source/user-manual/index.md`.\n3. Consider contributing by drafting sections based on feedback or existing notes from discussions.\n4. Once comfortable, create a Pull Request (PR) for review of your contributions. Reach out for help or clarification on any uncertain points.",
+        "path": "data/issues/summaries/plone/volto/3827.json"
+      }
+    },
     {
       "id": 141767567,
       "number": 1478,
@@ -708,36 +799,6 @@
       }
     },
     {
-      "id": 1228581206,
-      "number": 3344,
-      "title": "[docs] Convert glossary lists to definition lists",
-      "html_url": "https://github.com/plone/volto/issues/3344",
-      "repository_full_name": "plone/volto",
-      "repository_url": "https://api.github.com/repos/plone/volto",
-      "state": "open",
-      "created_at": "2022-05-07T09:33:20Z",
-      "updated_at": "2026-01-29T09:59:57Z",
-      "comments": 2,
-      "author": {
-        "login": "stevepiercy",
-        "html_url": "https://github.com/stevepiercy"
-      },
-      "assignees": [],
-      "labels": [
-        "04 type: enhancement",
-        "33 needs: docs",
-        "41 lvl: easy"
-      ],
-      "contributor_summary": {
-        "status": "available",
-        "generated_at": "2026-04-09T12:25:57Z",
-        "source_issue_updated_at": "2026-01-29T09:59:57Z",
-        "model": "gpt-4o-mini",
-        "summary_markdown": "```markdown\n## What this issue is about\nThis issue focuses on enhancing the Plone documentation by converting local glossary lists into proper definition lists. This change will improve how terms are presented, making the documentation clearer and more effective.\n\n## What needs to be done\n1. Convert the three local glossaries in the [settings reference document](https://github.com/plone/volto/blob/master/docs/source/configuration/settings-reference.md) to definition lists.\n2. Manually sort the items in the definition lists, as they do not support automatic sorting.\n3. Ensure that any terms that are inline literals are surrounded by backticks (`) to render correctly.\n4. Add any new terms to the global Glossary in the [plone/documentation](https://github.com/plone/documentation).\n\n## Helpful background\nDefinition lists are a specific way to display terms and their definitions, making text more organized. The discussion on this issue is relatively straightforward but may require checking the related documents for any updates or changes.\n\n## Good first steps\n1. Familiarize yourself with how to create definition lists by reviewing the [definition list syntax](https://myst-parser.readthedocs.io/en/latest/syntax/optional.html#definition-lists).\n2. Review the current local glossaries in the settings reference document to understand the context.\n3. You can start working on this issue anytime; just dive in and submit a Pull Request (PR) when ready!\n```",
-        "path": "data/issues/summaries/plone/volto/3344.json"
-      }
-    },
-    {
       "id": 512847566,
       "number": 955,
       "title": "user menu popup is not available on the site setup pages",
@@ -943,37 +1004,6 @@
         "model": "gpt-4o-mini",
         "summary_markdown": "```markdown\n## What this issue is about\nThis issue addresses the lack of documentation on using local custom fonts within the Plone Volto project. Contributors have expressed difficulty in finding clear guidance on how to replace site fonts with custom ones they store locally.\n\n## What needs to be done\nImproved documentation needs to be created that outlines how to correctly set up local fonts in Volto, including configuration examples. This should address the specific issues around font pathing and usage, particularly when importing custom fonts versus Google Fonts.\n\n## Helpful background\nWhile some discussions provided insights into possible solutions, the official documentation is outdated and primarily focuses on incorporating Google Fonts. Current examples suggest using the `@fontsFolder` variable and `@font-face` rules, but clarity and detailed instructions are still needed.\n\n## Good first steps\n1. Explore existing comments and examples provided by contributors, especially around setting font paths and configurations.\n2. Review the current [Volto theming documentation](https://6.docs.plone.org/volto/theming/custom-styling.html) for context.\n3. Draft a clear section for the documentation detailing the setup of custom fonts based on community findings.\n4. Open a pull request with your documentation draft for review and feedback.\n```",
         "path": "data/issues/summaries/plone/volto/3605.json"
-      }
-    },
-    {
-      "id": 1145243237,
-      "number": 3092,
-      "title": "Improve spellcheck",
-      "html_url": "https://github.com/plone/volto/issues/3092",
-      "repository_full_name": "plone/volto",
-      "repository_url": "https://api.github.com/repos/plone/volto",
-      "state": "open",
-      "created_at": "2022-02-21T02:25:04Z",
-      "updated_at": "2025-12-19T21:50:27Z",
-      "comments": 16,
-      "author": {
-        "login": "stevepiercy",
-        "html_url": "https://github.com/stevepiercy"
-      },
-      "assignees": [],
-      "labels": [
-        "04 type: enhancement",
-        "31 needs: help",
-        "33 needs: docs",
-        "41 lvl: easy"
-      ],
-      "contributor_summary": {
-        "status": "available",
-        "generated_at": "2026-04-09T13:36:05Z",
-        "source_issue_updated_at": "2025-12-19T21:50:27Z",
-        "model": "gpt-4o-mini",
-        "summary_markdown": "```markdown\n## What this issue is about\nThis issue focuses on improving the spellcheck by updating the spelling consistency of certain terms in the Volto project, such as \"JavaScript\" and \"NodeJS\".\n\n## What needs to be done\n- Update the `accept.txt` and `reject.txt` files located in `styles/Vocab/Plone` to include preferred spellings.\n- Be cautious not to overwrite commands or code blocks when making changes.\n\n## Helpful background\nThe `reject.txt` file contains terms that should not be used (like variations of \"JavaScript\"). The project now uses a tool called Vale for spellchecking; you can find more info [here](https://vale.sh/docs/topics/vocab/). \n\n## Good first steps\n1. Familiarize yourself with the contribution process by reviewing the [Plone contribution docs](https://6.docs.plone.org/contributing/index.html).\n2. Start by updating a few spellings to ensure your changes can be reviewed easily. Large changes are harder to manage and may delay the review process.\n3. If you encounter issues running commands, ensure you're in the correct project folder and have installed necessary dependencies.\n```",
-        "path": "data/issues/summaries/plone/volto/3092.json"
       }
     },
     {
@@ -1190,36 +1220,6 @@
         "model": "gpt-4o-mini",
         "summary_markdown": "## What this issue is about\nThis issue focuses on improving the appearance of the selected item in the megamenu for the Tagung Plone website. Currently, there is an inconsistency in the thickness of the marker lines for selected and unselected items, making the selected item less visually appealing.\n\n## What needs to be done\nThe task involves modifying the CSS styles to make the marker lines for selected items thicker and more opaque. The goal is to create a more uniform and visually pleasing experience across all menu items.\n\n## Helpful background\nThe initial suggestion indicates that the current design shows a bold line for the selected item, while other items display a thinner line. This can lead to a confusing user experience. The issue is marked as low priority and is considered easy, making it suitable for newcomers.\n\n## Good first steps\n1. Review the current CSS for the megamenu to understand how lines are currently styled.\n2. Experiment with adjusting the thickness and opacity of the lines in your local development environment.\n3. Test your changes to ensure they improve the appearance of the megamenu without introducing new issues.\n4. Be prepared to provide documentation on your changes and coordinate with the maintainers for a review once you’re ready to submit your updates.",
         "path": "data/issues/summaries/plone/tagung.plone.de/27.json"
-      }
-    },
-    {
-      "id": 1433738735,
-      "number": 3827,
-      "title": "Create end-user Editor documentation",
-      "html_url": "https://github.com/plone/volto/issues/3827",
-      "repository_full_name": "plone/volto",
-      "repository_url": "https://api.github.com/repos/plone/volto",
-      "state": "open",
-      "created_at": "2022-11-02T20:24:18Z",
-      "updated_at": "2025-03-08T17:52:49Z",
-      "comments": 16,
-      "author": {
-        "login": "stevepiercy",
-        "html_url": "https://github.com/stevepiercy"
-      },
-      "assignees": [],
-      "labels": [
-        "31 needs: help",
-        "33 needs: docs",
-        "41 lvl: easy"
-      ],
-      "contributor_summary": {
-        "status": "available",
-        "generated_at": "2026-04-09T14:40:36Z",
-        "source_issue_updated_at": "2025-03-08T17:52:49Z",
-        "model": "gpt-4o-mini",
-        "summary_markdown": "```markdown\n## What this issue is about\nThis issue proposes creating documentation specifically for end-users of the Volto Editor. The goal is to provide guidance within the UI by adding a help icon (❔) that links to relevant documentation, similar to features in other applications like PyCharm.\n\n## What needs to be done\nWe need to develop user-friendly documentation covering the Editor's features and functionalities. The current discussion indicates a need for structure but lacks a finalized format. Contributions can be based on existing discussions and community inputs.\n\n## Helpful background\nPrevious discussions have identified that there are different audiences for Volto documentation, including Developers and Editors. While some initial work has been proposed, there’s uncertainty about the final organization and content details. Familiarizing yourself with the functionality and existing documentation will aid in your contributions.\n\n## Good first steps\n1. Review existing discussions and suggest documentation structures.\n2. Start developing content for specific features of the Volto Editor, using previously shared notes as guidance.\n3. Consider creating a pull request (PR) when you're ready for feedback.\n4. Engage with community members for collaboration or questions on Discord.\n```",
-        "path": "data/issues/summaries/plone/volto/3827.json"
       }
     },
     {
@@ -2626,10 +2626,10 @@
   "message": null,
   "workflow": {
     "repository": "syslabcom/activity-recognition",
-    "run_id": "26024439571",
-    "run_number": "894",
+    "run_id": "26030380574",
+    "run_number": "895",
     "attempt": "1",
-    "url": "https://github.com/syslabcom/activity-recognition/actions/runs/26024439571",
-    "sha": "63c53228faa17049c140304e0f7bf1bd7c0e08d6"
+    "url": "https://github.com/syslabcom/activity-recognition/actions/runs/26030380574",
+    "sha": "fa2346b25110d8f5bb79f199b45634ae384d4c02"
   }
 }

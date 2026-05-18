@@ -1,14 +1,14 @@
 {
   "version": 1,
   "status": "success",
-  "generated_at": "2026-04-09T14:40:30Z",
+  "generated_at": "2026-05-18T11:23:30Z",
   "source_issue": {
     "id": 1631010525,
     "number": 4576,
     "title": "Deployment documentation needs to show Seamless mode first, rather then classic \"simple\"",
     "html_url": "https://github.com/plone/volto/issues/4576",
     "repository_full_name": "plone/volto",
-    "updated_at": "2025-03-08T17:52:50Z",
+    "updated_at": "2026-05-18T10:30:05Z",
     "labels": [
       "01 type: bug",
       "33 needs: docs",
@@ -21,13 +21,13 @@
     "provider": "openai",
     "model": "gpt-4o-mini"
   },
-  "summary_markdown": "## What this issue is about\nThis issue addresses the need to reorganize the deployment documentation for Volto on Plone. Currently, the \"Simple deployment\" section appears before \"Seamless mode,\" which should be prioritized. There are ongoing discussions about how to present this information clearly.\n\n## What needs to be done\n1. Change the order of deployment sections, placing \"Seamless mode\" first in the navigation.\n2. Update the \"Simple deployment\" section to indicate that it's only for older versions of Plone and include a deprecation warning.\n3. Refactor the content to ensure it guides users appropriately, mentioning that \"Simple deployment\" is still valid but secondary.\n\n## Helpful background\n\"Seamless mode\" refers to installing Volto on older Plone versions without needing `plone.restapi` 2.0, while \"Simple deployment\" is becoming outdated. Clarity is needed in the documentation to guide new users effectively.\n\n## Good first steps\n1. Review the deployment documentation linked [here](https://6.docs.plone.org/volto/deploying/index.html).\n2. Discuss proposed changes with the issue author, [tiberiuichim](https://github.com/tiberiuichim), and contributor [stevepiercy](https://github.com/stevepiercy).\n3. Be prepared to write and test any documentation updates and discuss them in the comments for feedback.",
+  "summary_markdown": "## What this issue is about\nThis issue highlights the need to reorganize the Plone Volto deployment documentation. Currently, \"Simple deployment\" appears first, but it is suggested that \"Seamless mode\" should be prioritized instead. This adjustment aims to clarify installation methods for different versions of Plone.\n\n## What needs to be done\n- Rearrange the deployment documentation to feature \"Seamless mode\" as the first option in the navigation.\n- Ensure that the \"Simple deployment\" section includes a clear deprecation warning, indicating it is only suitable for Plone 5.2 and earlier.\n- Update the \"Simple deployment\" content to provide relevant information without it being the primary focus.\n\n## Helpful background\n\"Seamless mode\" allows installation of Volto on older Plone versions without needing `plone.restapi` 2.0, while \"Simple deployment\" is becoming outdated. A refactor of this section is needed to make it clearer.\n\n## Good first steps\n1. Review the current deployment documentation at [Deploying](https://6.dev-docs.plone.org/volto/deploying/index.html).\n2. Think about how best to reorder the items for clarity.\n3. Create a draft for the proposed changes, including details for the deprecation warning.\n4. Collaborate through comments if you have questions or suggestions!",
   "workflow": {
     "repository": "syslabcom/activity-recognition",
-    "run_id": "24196205718",
-    "run_number": "53",
+    "run_id": "26030380574",
+    "run_number": "895",
     "attempt": "1",
-    "url": "https://github.com/syslabcom/activity-recognition/actions/runs/24196205718",
-    "sha": "4afa5437e3369368f43054c82fcd1ba9bed2967b"
+    "url": "https://github.com/syslabcom/activity-recognition/actions/runs/26030380574",
+    "sha": "fa2346b25110d8f5bb79f199b45634ae384d4c02"
   }
 }
