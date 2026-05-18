@@ -1,7 +1,7 @@
 ---
 title: "Plone issue list — Level: Easy"
 permalink: "/issues/lvl-easy/"
-generated_at: "2026-05-18T11:22:22Z"
+generated_at: "2026-05-18T13:18:10Z"
 organization: "plone"
 issue_count: 85
 required_labels:
@@ -10,7 +10,7 @@ required_labels:
 
 # Plone issue list — Level: Easy
 
-Generated: `2026-05-18T11:22:22Z`  
+Generated: `2026-05-18T13:18:10Z`  
 Organization: `plone`  
 Required label: `41 lvl: easy`  
 Issue count: `85`
@@ -19,6 +19,7 @@ Sorted by last updated date, newest first.
 
 | Updated | Repository | Issue | Author | Labels |
 | --- | --- | --- | --- | --- |
+| 2026-05-18 11:33 UTC | `plone/volto` | [#1603 Use Cypress to determine code coverage](https://github.com/plone/volto/issues/1603) | `tiberiuichim` | `04 type: enhancement`, `41 lvl: easy` |
 | 2026-05-18 10:32 UTC | `plone/volto` | [#3092 Improve spellcheck](https://github.com/plone/volto/issues/3092) | `stevepiercy` | `04 type: enhancement`, `31 needs: help`, `33 needs: docs`, `41 lvl: easy` |
 | 2026-05-18 10:30 UTC | `plone/volto` | [#3344 \[docs\] Convert glossary lists to definition lists](https://github.com/plone/volto/issues/3344) | `stevepiercy` | `04 type: enhancement`, `33 needs: docs`, `41 lvl: easy` |
 | 2026-05-18 10:28 UTC | `plone/volto` | [#3827 Create end-user Editor documentation](https://github.com/plone/volto/issues/3827) | `stevepiercy` | `31 needs: help`, `33 needs: docs`, `41 lvl: easy` |
@@ -49,7 +50,6 @@ Sorted by last updated date, newest first.
 | 2026-01-19 08:12 UTC | `plone/volto` | [#7088 unRegisterSlotComponent is in the code, but in the docs it is unregisterSlotComponent](https://github.com/plone/volto/issues/7088) | `silviubogan` | `01 type: bug`, `33 needs: docs`, `41 lvl: easy`, `30 needs: triage` |
 | 2026-01-10 10:17 UTC | `plone/volto` | [#1775 Auto-generated text-area form fields should have at least 10 lines by default and should increase size as the user types in text](https://github.com/plone/volto/issues/1775) | `tisto` | `41 lvl: easy` |
 | 2026-01-10 09:25 UTC | `plone/volto` | [#1783 Document SchemaWidget, provide examples](https://github.com/plone/volto/issues/1783) | `tiberiuichim` | `33 needs: docs`, `41 lvl: easy` |
-| 2026-01-10 08:57 UTC | `plone/volto` | [#1603 Use Cypress to determine code coverage](https://github.com/plone/volto/issues/1603) | `tiberiuichim` | `04 type: enhancement`, `41 lvl: easy` |
 | 2025-12-27 08:08 UTC | `plone/volto` | [#3605 \[DOCS\] How to use local custom fonts](https://github.com/plone/volto/issues/3605) | `rotavio` | `33 needs: docs`, `41 lvl: easy` |
 | 2025-12-01 05:29 UTC | `plone/plone.distribution` | [#134 Deduplicate documentation](https://github.com/plone/plone.distribution/issues/134) | `stevepiercy` | `21 status: confirmed`, `31 needs: help`, `33 needs: docs`, `41 lvl: easy` |
 | 2025-11-30 14:21 UTC | `plone/volto` | [#1404 Supported field types in Volto](https://github.com/plone/volto/issues/1404) | `pbauer` | `41 lvl: easy` |

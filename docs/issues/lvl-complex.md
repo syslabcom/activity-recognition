@@ -1,7 +1,7 @@
 ---
 title: "Plone issue list — Level: Complex"
 permalink: "/issues/lvl-complex/"
-generated_at: "2026-05-18T11:22:22Z"
+generated_at: "2026-05-18T13:18:10Z"
 organization: "plone"
 issue_count: 55
 required_labels:
@@ -10,7 +10,7 @@ required_labels:
 
 # Plone issue list — Level: Complex
 
-Generated: `2026-05-18T11:22:22Z`  
+Generated: `2026-05-18T13:18:10Z`  
 Organization: `plone`  
 Required label: `43 lvl: complex`  
 Issue count: `55`
@@ -19,11 +19,11 @@ Sorted by last updated date, newest first.
 
 | Updated | Repository | Issue | Author | Labels |
 | --- | --- | --- | --- | --- |
+| 2026-05-18 11:59 UTC | `plone/volto` | [#3277 Trigger 6-dev documentation build on every push to master in Volto](https://github.com/plone/volto/issues/3277) | `sneridagh` | `33 needs: docs`, `43 lvl: complex` |
 | 2026-05-18 11:15 UTC | `plone/volto` | [#4204 Improve drag & drop support in the blocks engine](https://github.com/plone/volto/issues/4204) | `sneridagh` | `03 type: feature (plip)`, `43 lvl: complex` |
 | 2026-05-18 10:53 UTC | `plone/volto` | [#1478 Proposal: have a list of "smart fields" in Volto blocks](https://github.com/plone/volto/issues/1478) | `tiberiuichim` | `03 type: feature (plip)`, `43 lvl: complex` |
 | 2026-05-18 10:51 UTC | `plone/volto` | [#4460 Refactor class components to functional components](https://github.com/plone/volto/issues/4460) | `sneridagh` | `03 type: feature (plip)`, `43 lvl: complex` |
 | 2026-05-18 10:42 UTC | `plone/volto` | [#6327 Library Upgrades for the next major (19).](https://github.com/plone/volto/issues/6327) | `tisto` | `03 type: feature (plip)`, `43 lvl: complex` |
-| 2026-05-18 10:34 UTC | `plone/volto` | [#3277 Trigger 6-dev documentation build on every push to master in Volto](https://github.com/plone/volto/issues/3277) | `sneridagh` | `33 needs: docs`, `43 lvl: complex` |
 | 2026-05-18 10:30 UTC | `plone/volto` | [#4576 Deployment documentation needs to show Seamless mode first, rather then classic "simple"](https://github.com/plone/volto/issues/4576) | `tiberiuichim` | `01 type: bug`, `33 needs: docs`, `43 lvl: complex`, `99 tag: docs-reorg` |
 | 2026-05-18 10:28 UTC | `plone/volto` | [#4232 Move new CSRF docs from Classic UI to Backend?](https://github.com/plone/volto/issues/4232) | `stevepiercy` | `04 type: enhancement`, `33 needs: docs`, `43 lvl: complex` |
 | 2026-05-18 10:24 UTC | `plone/volto` | [#1516 Metadata block or easy way to insert document metadata inside text block](https://github.com/plone/volto/issues/1516) | `avoinea` | `04 type: enhancement`, `43 lvl: complex`, `99 tag: sprint` |

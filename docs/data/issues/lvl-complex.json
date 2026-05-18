@@ -1,7 +1,7 @@
 {
   "version": 1,
   "status": "success",
-  "generated_at": "2026-05-18T11:22:22Z",
+  "generated_at": "2026-05-18T13:18:10Z",
   "organization": "plone",
   "state": "open",
   "slug": "lvl-complex",
@@ -11,6 +11,37 @@
   ],
   "issue_count": 55,
   "issues": [
+    {
+      "id": 1218934617,
+      "number": 3277,
+      "title": "Trigger 6-dev documentation build on every push to master in Volto",
+      "html_url": "https://github.com/plone/volto/issues/3277",
+      "repository_full_name": "plone/volto",
+      "repository_url": "https://api.github.com/repos/plone/volto",
+      "state": "open",
+      "created_at": "2022-04-28T15:52:30Z",
+      "updated_at": "2026-05-18T11:59:37Z",
+      "comments": 8,
+      "author": {
+        "login": "sneridagh",
+        "html_url": "https://github.com/sneridagh"
+      },
+      "assignees": [
+        "esteele"
+      ],
+      "labels": [
+        "33 needs: docs",
+        "43 lvl: complex"
+      ],
+      "contributor_summary": {
+        "status": "available",
+        "generated_at": "2026-05-18T11:23:09Z",
+        "source_issue_updated_at": "2026-05-18T10:34:59Z",
+        "model": "gpt-4o-mini",
+        "summary_markdown": "```markdown\n## What this issue is about\nThis issue addresses the need to automatically trigger the documentation build for Volto whenever a push occurs to the master branch. Currently, there are challenges in achieving this, and the process is not straightforward.\n\n## What needs to be done\nThe main task is to set up a system that ensures the documentation builds with each master push. This may involve using CI/CD tools (Continuous Integration/Continuous Deployment) and configuring scripts correctly.\n\n## Helpful background\nPrevious discussions have highlighted potential approaches but also pointed out difficulties in implementation. For more context, you can refer to related issues [#1188](https://github.com/plone/documentation/issues/1188) and [#1214](https://github.com/plone/documentation/issues/1214). As of now, there doesn’t seem to be a clear, functional way to resolve this issue.\n\n## Good first steps\n1. Review existing CI/CD setups in the repository.\n2. Familiarize yourself with current documentation build processes.\n3. Collaborate with the assignee, @esteele, for guidance and clarification on technical hurdles encountered previously.\n4. Contribute to discussions on potential solutions or improvements.\n5. Consider documenting your findings or potential steps forward for future reference.\n```",
+        "path": "data/issues/summaries/plone/volto/3277.json"
+      }
+    },
     {
       "id": 1514641313,
       "number": 4204,
@@ -130,37 +161,6 @@
         "model": "gpt-4o-mini",
         "summary_markdown": "```markdown\n## What this issue is about\nThis issue addresses the need to upgrade some outdated libraries used in Volto, such as `react-intl` and `redux`. The goal is to ensure that Volto uses maintained versions of these foundational libraries.\n\n## What needs to be done\n- Upgrade `react-intl` and `redux` to their latest maintained versions.\n- Adjust the codebase as needed to accommodate changes in these libraries.\n- Evaluate if we need to maintain current tooling related to localization (using .po files).\n\n## Helpful background\nThe discussion includes a specific PLIP related to `react-intl` that may require coordination. The upgrades aim to enhance functionality and stability but may involve some adjustments to existing code.\n\n## Good first steps\n1. Familiarize yourself with the relevant documentation for new contributors: [Contributing to Plone](https://6.docs.plone.org/contributing/index.html) and [Contributing to Volto](https://6.docs.plone.org/contributing/volto.html).\n2. Review the existing library usage in the project to identify the necessary changes.\n3. Consider reaching out to the community for guidance and support if you have questions.\n4. Document your findings and any changes you make for future contributors.\n```",
         "path": "data/issues/summaries/plone/volto/6327.json"
-      }
-    },
-    {
-      "id": 1218934617,
-      "number": 3277,
-      "title": "Trigger 6-dev documentation build on every push to master in Volto",
-      "html_url": "https://github.com/plone/volto/issues/3277",
-      "repository_full_name": "plone/volto",
-      "repository_url": "https://api.github.com/repos/plone/volto",
-      "state": "open",
-      "created_at": "2022-04-28T15:52:30Z",
-      "updated_at": "2026-05-18T10:34:59Z",
-      "comments": 5,
-      "author": {
-        "login": "sneridagh",
-        "html_url": "https://github.com/sneridagh"
-      },
-      "assignees": [
-        "esteele"
-      ],
-      "labels": [
-        "33 needs: docs",
-        "43 lvl: complex"
-      ],
-      "contributor_summary": {
-        "status": "available",
-        "generated_at": "2026-05-18T11:23:09Z",
-        "source_issue_updated_at": "2026-05-18T10:34:59Z",
-        "model": "gpt-4o-mini",
-        "summary_markdown": "```markdown\n## What this issue is about\nThis issue addresses the need to automatically trigger the documentation build for Volto whenever a push occurs to the master branch. Currently, there are challenges in achieving this, and the process is not straightforward.\n\n## What needs to be done\nThe main task is to set up a system that ensures the documentation builds with each master push. This may involve using CI/CD tools (Continuous Integration/Continuous Deployment) and configuring scripts correctly.\n\n## Helpful background\nPrevious discussions have highlighted potential approaches but also pointed out difficulties in implementation. For more context, you can refer to related issues [#1188](https://github.com/plone/documentation/issues/1188) and [#1214](https://github.com/plone/documentation/issues/1214). As of now, there doesn’t seem to be a clear, functional way to resolve this issue.\n\n## Good first steps\n1. Review existing CI/CD setups in the repository.\n2. Familiarize yourself with current documentation build processes.\n3. Collaborate with the assignee, @esteele, for guidance and clarification on technical hurdles encountered previously.\n4. Contribute to discussions on potential solutions or improvements.\n5. Consider documenting your findings or potential steps forward for future reference.\n```",
-        "path": "data/issues/summaries/plone/volto/3277.json"
       }
     },
     {
@@ -1686,10 +1686,10 @@
   "message": null,
   "workflow": {
     "repository": "syslabcom/activity-recognition",
-    "run_id": "26030380574",
-    "run_number": "895",
+    "run_id": "26035984476",
+    "run_number": "896",
     "attempt": "1",
-    "url": "https://github.com/syslabcom/activity-recognition/actions/runs/26030380574",
-    "sha": "fa2346b25110d8f5bb79f199b45634ae384d4c02"
+    "url": "https://github.com/syslabcom/activity-recognition/actions/runs/26035984476",
+    "sha": "888eb34846f681b2c1c398c5cfac3f5d5ef9555a"
   }
 }
