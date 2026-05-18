@@ -1,19 +1,19 @@
 ---
 title: "Plone issue list — Level: Moderate"
 permalink: "/issues/lvl-moderate/"
-generated_at: "2026-05-18T07:28:10Z"
+generated_at: "2026-05-18T09:15:20Z"
 organization: "plone"
-issue_count: 74
+issue_count: 73
 required_labels:
   - "42 lvl: moderate"
 ---
 
 # Plone issue list — Level: Moderate
 
-Generated: `2026-05-18T07:28:10Z`  
+Generated: `2026-05-18T09:15:20Z`  
 Organization: `plone`  
 Required label: `42 lvl: moderate`  
-Issue count: `74`
+Issue count: `73`
 
 Sorted by last updated date, newest first.
 
@@ -64,7 +64,6 @@ Sorted by last updated date, newest first.
 | 2024-07-28 09:58 UTC | `plone/volto` | [#2005 Document razzle.extend.js](https://github.com/plone/volto/issues/2005) | `tiberiuichim` | `01 type: bug`, `33 needs: docs`, `42 lvl: moderate` |
 | 2024-05-17 12:45 UTC | `plone/Products.CMFPlone` | [#1801 list of plone_scripts to get rid of](https://github.com/plone/Products.CMFPlone/issues/1801) | `jensens` | `04 type: enhancement`, `31 needs: help`, `22 status: in-progress`, `14 prio: low`, `42 lvl: moderate` |
 | 2024-03-07 12:30 UTC | `plone/Products.CMFPlone` | [#3915 Automate inclusion of release notes into Plone 6 documentation](https://github.com/plone/Products.CMFPlone/issues/3915) | `stevepiercy` | `04 type: enhancement`, `99 tag: documentation`, `33 needs: docs`, `42 lvl: moderate` |
-| 2024-02-16 16:53 UTC | `plone/plone.org` | [#99 Fix obvious performance issues suggested by Google Lighthouse](https://github.com/plone/plone.org/issues/99) | `rioksane` | `04 type: enhancement`, `42 lvl: moderate` |
 | 2024-02-16 16:50 UTC | `plone/plone.org` | [#76 New Plone Release page gets wrong id](https://github.com/plone/plone.org/issues/76) | `mauritsvanrees` | `02 type: regression`, `42 lvl: moderate` |
 | 2024-02-16 16:46 UTC | `plone/plone.org` | [#59 Cannot fully edit releasepage in Volto](https://github.com/plone/plone.org/issues/59) | `mauritsvanrees` | `01 type: bug`, `42 lvl: moderate` |
 | 2024-02-07 08:58 UTC | `plone/volto` | [#5740 Add global form state docs](https://github.com/plone/volto/issues/5740) | `stevepiercy` | `33 needs: docs`, `42 lvl: moderate` |
