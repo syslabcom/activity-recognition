@@ -1,19 +1,19 @@
 ---
 title: "Plone issue list — Level: Moderate"
 permalink: "/issues/lvl-moderate/"
-generated_at: "2026-05-18T05:26:09Z"
+generated_at: "2026-05-18T07:28:10Z"
 organization: "plone"
-issue_count: 75
+issue_count: 74
 required_labels:
   - "42 lvl: moderate"
 ---
 
 # Plone issue list — Level: Moderate
 
-Generated: `2026-05-18T05:26:09Z`  
+Generated: `2026-05-18T07:28:10Z`  
 Organization: `plone`  
 Required label: `42 lvl: moderate`  
-Issue count: `75`
+Issue count: `74`
 
 Sorted by last updated date, newest first.
 
@@ -89,7 +89,6 @@ Sorted by last updated date, newest first.
 | 2022-05-02 13:53 UTC | `plone/volto` | [#3095 Locking Control Panel](https://github.com/plone/volto/issues/3095) | `tisto` | `04 type: enhancement`, `42 lvl: moderate` |
 | 2022-05-02 09:13 UTC | `plone/plone.app.discussion` | [#196 Todo: Remove traces of LinguaPlone](https://github.com/plone/plone.app.discussion/issues/196) | `jensens` | `31 needs: help`, `04 type: enhancement`, `13 prio: normal`, `42 lvl: moderate` |
 | 2021-01-04 18:57 UTC | `plone/volto` | [#4 Server Side Rendering for forms](https://github.com/plone/volto/issues/4) | `robgietema` | `04 type: enhancement`, `14 prio: low`, `21 status: confirmed`, `42 lvl: moderate` |
-| 2020-07-27 07:42 UTC | `plone/plone.staticresources` | [#35 Does not build on Windows 10](https://github.com/plone/plone.staticresources/issues/35) | `smcmahon` | `01 type: bug`, `31 needs: help`, `12 prio: high`, `21 status: confirmed`, `42 lvl: moderate` |
 | 2019-05-22 08:12 UTC | `plone/bobtemplates.plone` | [#374 theme_barceloneta: grunt setup broken](https://github.com/plone/bobtemplates.plone/issues/374) | `djowett` | `31 needs: help`, `13 prio: normal`, `42 lvl: moderate` |
 | 2017-11-08 17:41 UTC | `plone/bobtemplates.plone` | [#238 Improve vocabulary sub template with IContextSourceBinder example](https://github.com/plone/bobtemplates.plone/issues/238) | `MrTango` | `04 type: enhancement`, `13 prio: normal`, `42 lvl: moderate` |
 | 2016-01-27 17:51 UTC | `plone/Products.CMFDiffTool` | [#10 Implement Unicode sandwich convention](https://github.com/plone/Products.CMFDiffTool/issues/10) | `do3cc` | `04 type: enhancement`, `42 lvl: moderate` |
