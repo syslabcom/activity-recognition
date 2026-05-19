@@ -1,7 +1,7 @@
 ---
 title: "Plone issue list — Level: Easy"
 permalink: "/issues/lvl-easy/"
-generated_at: "2026-05-19T07:17:10Z"
+generated_at: "2026-05-19T09:13:23Z"
 organization: "plone"
 issue_count: 85
 required_labels:
@@ -10,7 +10,7 @@ required_labels:
 
 # Plone issue list — Level: Easy
 
-Generated: `2026-05-19T07:17:10Z`  
+Generated: `2026-05-19T09:13:23Z`  
 Organization: `plone`  
 Required label: `41 lvl: easy`  
 Issue count: `85`
@@ -19,9 +19,9 @@ Sorted by last updated date, newest first.
 
 | Updated | Repository | Issue | Author | Labels |
 | --- | --- | --- | --- | --- |
+| 2026-05-19 08:34 UTC | `plone/volto` | [#3344 \[docs\] Convert glossary lists to definition lists](https://github.com/plone/volto/issues/3344) | `stevepiercy` | `04 type: enhancement`, `33 needs: docs`, `41 lvl: easy` |
 | 2026-05-18 11:33 UTC | `plone/volto` | [#1603 Use Cypress to determine code coverage](https://github.com/plone/volto/issues/1603) | `tiberiuichim` | `04 type: enhancement`, `41 lvl: easy` |
 | 2026-05-18 10:32 UTC | `plone/volto` | [#3092 Improve spellcheck](https://github.com/plone/volto/issues/3092) | `stevepiercy` | `04 type: enhancement`, `31 needs: help`, `33 needs: docs`, `41 lvl: easy` |
-| 2026-05-18 10:30 UTC | `plone/volto` | [#3344 \[docs\] Convert glossary lists to definition lists](https://github.com/plone/volto/issues/3344) | `stevepiercy` | `04 type: enhancement`, `33 needs: docs`, `41 lvl: easy` |
 | 2026-05-18 10:28 UTC | `plone/volto` | [#3827 Create end-user Editor documentation](https://github.com/plone/volto/issues/3827) | `stevepiercy` | `31 needs: help`, `33 needs: docs`, `41 lvl: easy` |
 | 2026-03-23 22:56 UTC | `plone/Products.CMFPlone` | [#1478 Site Setup parent links on Control Panel pages aren't consistent](https://github.com/plone/Products.CMFPlone/issues/1478) | `davidjb` | `01 type: bug`, `31 needs: help`, `41 lvl: easy` |
 | 2026-03-23 22:38 UTC | `plone/Products.CMFPlone` | [#2897 plone.formwidget.recurrence i18n.py poorly internationalized](https://github.com/plone/Products.CMFPlone/issues/2897) | `vincentfretin` | `01 type: bug`, `99 tag: cleanup`, `14 prio: low`, `21 status: confirmed`, `41 lvl: easy` |

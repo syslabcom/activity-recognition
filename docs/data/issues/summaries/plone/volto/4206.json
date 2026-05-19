@@ -1,14 +1,14 @@
 {
   "version": 1,
   "status": "success",
-  "generated_at": "2026-04-09T13:37:47Z",
+  "generated_at": "2026-05-19T09:13:48Z",
   "source_issue": {
     "id": 1515710153,
     "number": 4206,
     "title": "Quanta Toolbar",
     "html_url": "https://github.com/plone/volto/issues/4206",
     "repository_full_name": "plone/volto",
-    "updated_at": "2025-09-13T12:27:31Z",
+    "updated_at": "2026-05-19T08:45:20Z",
     "labels": [
       "03 type: feature (plip)",
       "43 lvl: complex"
@@ -19,13 +19,13 @@
     "provider": "openai",
     "model": "gpt-4o-mini"
   },
-  "summary_markdown": "```markdown\n## What this issue is about\nThis issue proposes the development of the Quanta Toolbar for Volto, a component that enhances user interaction with blocks in the Plone CMS. The Quanta Toolbar will enable better access to block settings and functionality.\n\n## What needs to be done\nWe need to implement a new toolbar that modernizes the current interaction model with blocks, including features like moving and deleting them. The implementation is intended to be experimental initially, solidifying its use based on feedback and further adjustments.\n\n## Helpful background\nCurrently, the tools for managing blocks in Volto are outdated. The Quanta Toolbar aims to resolve these limitations by offering a more versatile and user-friendly interface. It’s important to keep the CSS separate from SemanticUI to ensure future compatibility.\n\n## Good first steps\n1. Review the [Proof of Concept implementation](https://github.com/plone/volto/pull/3161) to understand the current progress.\n2. Explore the provided mockups on Figma to visualize the desired outcome.\n3. Familiarize yourself with the existing block management system in Volto.\n4. If you're interested in contributing, reach out to [@sneridagh](https://github.com/sneridagh) for guidance and collaboration.\n```",
+  "summary_markdown": "```markdown\n## What this issue is about\nThis issue discusses the development of the Quanta Toolbar, a new feature for the Volto CMS User Interface. It aims to provide a better way for users to interact with blocks, improving functionality and usability.\n\n## What needs to be done\nWe need to implement a new set of components for the Quanta Toolbar. This feature should be developed as experimental in Volto 16 and could become the default once feedback and initial issues are addressed. The implementation must avoid heavy reliance on SemanticUI to allow for better flexibility in the future.\n\n## Helpful background\nThe Quanta Toolbar addresses limitations in the current toolbar related to moving and deleting blocks. The implementation will improve user experience, especially in handling additional controls. For reference, see the proposed initial implementation in PR #3161. Mockups can be found in the provided Figma links.\n\n## Good first steps\n1. Review the initial implementation in PR #3161.\n2. Familiarize yourself with the mockups in the Figma links.\n3. Reach out to @sneridagh for guidance and collaboration on this PLIP.\n4. Be prepared to document the feature thoroughly once developed.\n```",
   "workflow": {
     "repository": "syslabcom/activity-recognition",
-    "run_id": "24193140143",
-    "run_number": "52",
+    "run_id": "26087797707",
+    "run_number": "910",
     "attempt": "1",
-    "url": "https://github.com/syslabcom/activity-recognition/actions/runs/24193140143",
-    "sha": "598aa417f24197151040f51e842b398a12c4da37"
+    "url": "https://github.com/syslabcom/activity-recognition/actions/runs/26087797707",
+    "sha": "8de4d8fdccf0abeddf9b7f2b4fa9d4129bff3ff5"
   }
 }

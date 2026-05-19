@@ -1,7 +1,7 @@
 ---
 title: "Plone issue list — Level: Moderate"
 permalink: "/issues/lvl-moderate/"
-generated_at: "2026-05-19T07:17:10Z"
+generated_at: "2026-05-19T09:13:23Z"
 organization: "plone"
 issue_count: 73
 required_labels:
@@ -10,7 +10,7 @@ required_labels:
 
 # Plone issue list — Level: Moderate
 
-Generated: `2026-05-19T07:17:10Z`  
+Generated: `2026-05-19T09:13:23Z`  
 Organization: `plone`  
 Required label: `42 lvl: moderate`  
 Issue count: `73`
@@ -19,6 +19,7 @@ Sorted by last updated date, newest first.
 
 | Updated | Repository | Issue | Author | Labels |
 | --- | --- | --- | --- | --- |
+| 2026-05-19 08:43 UTC | `plone/volto` | [#5630 Unify the use of the optional `preview_image_link` across Volto](https://github.com/plone/volto/issues/5630) | `sneridagh` | `04 type: enhancement`, `42 lvl: moderate` |
 | 2026-05-18 10:43 UTC | `plone/volto` | [#5896 It's confusing how to change my password as a logged in user](https://github.com/plone/volto/issues/5896) | `JeffersonBledsoe` | `04 type: enhancement`, `42 lvl: moderate` |
 | 2026-05-18 10:40 UTC | `plone/volto` | [#5627 Update i18n machinery to latest `react-intl`](https://github.com/plone/volto/issues/5627) | `sneridagh` | `03 type: feature (plip)`, `42 lvl: moderate` |
 | 2026-05-08 07:38 UTC | `plone/Products.CMFPlone` | [#3953 PLIP: Start separating Classic UI code from the core](https://github.com/plone/Products.CMFPlone/issues/3953) | `tisto` | `31 needs: help`, `99 tag: cleanup`, `03 type: feature (plip)`, `13 prio: normal`, `42 lvl: moderate`, `53 target: major`, `99 tag: Classic UI` |
@@ -39,7 +40,6 @@ Sorted by last updated date, newest first.
 | 2025-02-28 20:55 UTC | `plone/documentation` | [#931 Docs on setting the modification date](https://github.com/plone/documentation/issues/931) | `zopyx` | `31 needs: help`, `33 needs: docs`, `42 lvl: moderate`, `99 tag: Plone 6.x` |
 | 2025-02-28 11:14 UTC | `plone/cookieplone-templates` | [#157 varnish container build superfluos - use config feature](https://github.com/plone/cookieplone-templates/issues/157) | `jensens` | `04 type: enhancement`, `21 status: confirmed`, `33 needs: docs`, `42 lvl: moderate` |
 | 2025-01-24 06:48 UTC | `plone/buildout.coredev` | [#972 Improve README](https://github.com/plone/buildout.coredev/issues/972) | `ramiroluz` | `04 type: enhancement`, `14 prio: low`, `33 needs: docs`, `41 lvl: easy`, `42 lvl: moderate` |
-| 2024-12-17 07:50 UTC | `plone/volto` | [#5630 Unify the use of the optional `preview_image_link` across Volto](https://github.com/plone/volto/issues/5630) | `sneridagh` | `04 type: enhancement`, `42 lvl: moderate` |
 | 2024-12-13 22:01 UTC | `plone/volto` | [#3834 Document cypress commands, retrofit them to existing tests](https://github.com/plone/volto/issues/3834) | `tiberiuichim` | `01 type: bug`, `33 needs: docs`, `42 lvl: moderate` |
 | 2024-11-24 08:35 UTC | `plone/documentation` | [#707 plone/content/creating.html outdated for dexterity content (folder restrictions)](https://github.com/plone/documentation/issues/707) | `zopyx` | `31 needs: help`, `33 needs: docs`, `42 lvl: moderate`, `99 tag: Plone 6.x` |
 | 2024-11-24 07:52 UTC | `plone/documentation` | [#1113 develop/plone/forms/files.rst](https://github.com/plone/documentation/issues/1113) | `frankar` | `31 needs: help`, `33 needs: docs`, `42 lvl: moderate`, `99 tag: Plone 6.x` |

@@ -1,7 +1,7 @@
 ---
 title: "Plone issue list — Level: Complex"
 permalink: "/issues/lvl-complex/"
-generated_at: "2026-05-19T07:17:10Z"
+generated_at: "2026-05-19T09:13:23Z"
 organization: "plone"
 issue_count: 55
 required_labels:
@@ -10,7 +10,7 @@ required_labels:
 
 # Plone issue list — Level: Complex
 
-Generated: `2026-05-19T07:17:10Z`  
+Generated: `2026-05-19T09:13:23Z`  
 Organization: `plone`  
 Required label: `43 lvl: complex`  
 Issue count: `55`
@@ -19,6 +19,10 @@ Sorted by last updated date, newest first.
 
 | Updated | Repository | Issue | Author | Labels |
 | --- | --- | --- | --- | --- |
+| 2026-05-19 08:45 UTC | `plone/volto` | [#4756 `@plone/contents` - Enhance Contents View](https://github.com/plone/volto/issues/4756) | `sneridagh` | `03 type: feature (plip)`, `43 lvl: complex` |
+| 2026-05-19 08:45 UTC | `plone/volto` | [#4332 Quanta](https://github.com/plone/volto/issues/4332) | `sneridagh` | `03 type: feature (plip)`, `43 lvl: complex` |
+| 2026-05-19 08:45 UTC | `plone/volto` | [#4206 Quanta Toolbar](https://github.com/plone/volto/issues/4206) | `sneridagh` | `03 type: feature (plip)`, `43 lvl: complex` |
+| 2026-05-19 08:43 UTC | `plone/volto` | [#6638 Plone 7 frontend (Seven)](https://github.com/plone/volto/issues/6638) | `sneridagh` | `03 type: feature (plip)`, `43 lvl: complex` |
 | 2026-05-18 11:59 UTC | `plone/volto` | [#3277 Trigger 6-dev documentation build on every push to master in Volto](https://github.com/plone/volto/issues/3277) | `sneridagh` | `33 needs: docs`, `43 lvl: complex` |
 | 2026-05-18 11:15 UTC | `plone/volto` | [#4204 Improve drag & drop support in the blocks engine](https://github.com/plone/volto/issues/4204) | `sneridagh` | `03 type: feature (plip)`, `43 lvl: complex` |
 | 2026-05-18 10:53 UTC | `plone/volto` | [#1478 Proposal: have a list of "smart fields" in Volto blocks](https://github.com/plone/volto/issues/1478) | `tiberiuichim` | `03 type: feature (plip)`, `43 lvl: complex` |
@@ -30,7 +34,6 @@ Sorted by last updated date, newest first.
 | 2026-03-23 19:04 UTC | `plone/documentation` | [#1902 Create Plone site administrator guide](https://github.com/plone/documentation/issues/1902) | `stevepiercy` | `05 type: question`, `43 lvl: complex` |
 | 2026-03-23 17:35 UTC | `plone/Products.CMFPlone` | [#1976 z3c.form fields with a default value cannot be set to None or ""](https://github.com/plone/Products.CMFPlone/issues/1976) | `thet` | `01 type: bug`, `31 needs: help`, `12 prio: high`, `21 status: confirmed`, `43 lvl: complex` |
 | 2026-03-19 20:37 UTC | `plone/volto` | [#5300 PLIP: Keyword Manager](https://github.com/plone/volto/issues/5300) | `tisto` | `03 type: feature (plip)`, `43 lvl: complex` |
-| 2026-03-16 16:23 UTC | `plone/volto` | [#6638 Plone 7 frontend (Seven)](https://github.com/plone/volto/issues/6638) | `sneridagh` | `03 type: feature (plip)`, `43 lvl: complex` |
 | 2026-02-14 00:25 UTC | `plone/Products.CMFPlone` | [#4273 PLIP: Make Products.CMFEditions a Core Add-on](https://github.com/plone/Products.CMFPlone/issues/4273) | `jensens` | `03 type: feature (plip)`, `43 lvl: complex`, `52 target: minor`, `99 tag:backend` |
 | 2026-02-03 19:32 UTC | `plone/Products.CMFPlone` | [#3987 Create User Manual with screenshots and videos for Plone 6](https://github.com/plone/Products.CMFPlone/issues/3987) | `stevepiercy` | `03 type: feature (plip)`, `43 lvl: complex` |
 | 2026-02-03 02:29 UTC | `plone/documentation` | [#2044 Include diazo documentation in Classic backend documentation](https://github.com/plone/documentation/issues/2044) | `erral` | `43 lvl: complex` |
@@ -48,10 +51,7 @@ Sorted by last updated date, newest first.
 | 2025-10-24 20:04 UTC | `plone/Products.CMFPlone` | [#2968 One File-Field (Type) to rules them all](https://github.com/plone/Products.CMFPlone/issues/2968) | `loechel` | `04 type: enhancement`, `03 type: feature (plip)`, `43 lvl: complex`, `53 target: major` |
 | 2025-10-24 12:15 UTC | `plone/volto` | [#4303 Link Widget Improvement (add/select/modify)](https://github.com/plone/volto/issues/4303) | `sneridagh` | `03 type: feature (plip)`, `43 lvl: complex` |
 | 2025-10-24 11:50 UTC | `plone/Products.CMFPlone` | [#4110 Refactor `plone.app.contentrules` to provide API methods, which `plone.restapi` can use](https://github.com/plone/Products.CMFPlone/issues/4110) | `MrTango` | `03 type: feature (plip)`, `43 lvl: complex` |
-| 2025-09-16 17:48 UTC | `plone/volto` | [#4756 `@plone/contents` - Enhance Contents View](https://github.com/plone/volto/issues/4756) | `sneridagh` | `03 type: feature (plip)`, `43 lvl: complex` |
-| 2025-09-13 12:27 UTC | `plone/volto` | [#4206 Quanta Toolbar](https://github.com/plone/volto/issues/4206) | `sneridagh` | `03 type: feature (plip)`, `43 lvl: complex` |
 | 2025-09-13 12:27 UTC | `plone/volto` | [#29 Control panels](https://github.com/plone/volto/issues/29) | `robgietema` | `03 type: feature (plip)`, `04 type: enhancement`, `14 prio: low`, `43 lvl: complex`, `26 status: blocked` |
-| 2025-09-13 12:26 UTC | `plone/volto` | [#4332 Quanta](https://github.com/plone/volto/issues/4332) | `sneridagh` | `03 type: feature (plip)`, `43 lvl: complex` |
 | 2025-09-09 00:32 UTC | `plone/volto` | [#6590 Feature: support History for home page](https://github.com/plone/volto/issues/6590) | `stevepiercy` | `04 type: enhancement`, `43 lvl: complex`, `27 status: stale` |
 | 2025-09-09 00:32 UTC | `plone/volto` | [#6620 Document new theming story](https://github.com/plone/volto/issues/6620) | `stevepiercy` | `31 needs: help`, `33 needs: docs`, `43 lvl: complex`, `27 status: stale` |
 | 2025-05-09 04:49 UTC | `plone/Products.CMFPlone` | [#4097 PLIP: Plone 7 Documentation Layout, Structure, Theme, and Search to Improve Usability](https://github.com/plone/Products.CMFPlone/issues/4097) | `stevepiercy` | `03 type: feature (plip)`, `43 lvl: complex` |

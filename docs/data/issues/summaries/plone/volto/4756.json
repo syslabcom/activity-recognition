@@ -1,14 +1,14 @@
 {
   "version": 1,
   "status": "success",
-  "generated_at": "2026-04-09T13:37:37Z",
+  "generated_at": "2026-05-19T09:13:31Z",
   "source_issue": {
     "id": 1707781588,
     "number": 4756,
     "title": "`@plone/contents` - Enhance Contents View",
     "html_url": "https://github.com/plone/volto/issues/4756",
     "repository_full_name": "plone/volto",
-    "updated_at": "2025-09-16T17:48:41Z",
+    "updated_at": "2026-05-19T08:45:22Z",
     "labels": [
       "03 type: feature (plip)",
       "43 lvl: complex"
@@ -19,13 +19,13 @@
     "provider": "openai",
     "model": "gpt-4o-mini"
   },
-  "summary_markdown": "## What this issue is about\nThis issue focuses on enhancing the `Contents` view in `@plone/contents` to improve usability and accessibility. The goal is to refactor the contents view, making it a mini-app that operates independently from the site frame, improving overall user experience. \n\n## What needs to be done\n- Refactor the `Contents.jsx` component to utilize the `@plone/contents` core package.\n- Implement better accessibility features using `react-aria-components`.\n- Avoid using SemanticUI and instead adopt TypeScript and better component slicing for maintainability.\n- Update related issues to ensure all improvements are integrated effectively.\n\n## Helpful background\nThis issue is part of the Plone Improvement Proposal (PLIP) process and aims to provide a better content management experience within the Plone ecosystem. There have been discussions around scheduling this for Plone 6.2, indicating a move away from implementing it in the earlier version.\n\n## Good first steps\n1. Familiarize yourself with the current code of `Contents.jsx`.\n2. Review related issues to understand the scope of enhancements.\n3. Check the implementation patterns in the `@plone/contents` package.\n4. Join discussions on the issue thread for clarification and coordination with other contributors. \n\nTesting and documentation updates will be expected after implementation. Happy contributing!",
+  "summary_markdown": "```markdown\n## What this issue is about\nThis issue proposes to enhance the `contents` view in Volto by refactoring it to use a new core package, `@plone/contents`. The goal is to improve usability and accessibility, making it a more portable component for different frameworks.\n\n## What needs to be done\n1. Refactor `Contents.jsx` to use `@plone/contents` and implement TypeScript.\n2. Utilize `react-aria-components` for improved accessibility.\n3. Ensure components are sliceable for easier customization.\n4. Provide documentation on using the `contents` view outside of Volto.\n\n## Helpful background\nThe contents view is crucial for managing content in Plone. Improvements aim to create a more user-friendly experience, allowing it to function independently from the main site frame. Discussions have mentioned potentially moving this project to Plone 6.2, indicating timelines may shift.\n\n## Good first steps\n1. Familiarize yourself with the existing `Contents.jsx` code.\n2. Review the accessibility guidelines regarding `react-aria-components`.\n3. Join discussions on the relevant GitHub issues for insights and collaborate with others.\n4. If you're new, consider starting with smaller refactoring tasks or documentation updates.\n```",
   "workflow": {
     "repository": "syslabcom/activity-recognition",
-    "run_id": "24193140143",
-    "run_number": "52",
+    "run_id": "26087797707",
+    "run_number": "910",
     "attempt": "1",
-    "url": "https://github.com/syslabcom/activity-recognition/actions/runs/24193140143",
-    "sha": "598aa417f24197151040f51e842b398a12c4da37"
+    "url": "https://github.com/syslabcom/activity-recognition/actions/runs/26087797707",
+    "sha": "8de4d8fdccf0abeddf9b7f2b4fa9d4129bff3ff5"
   }
 }
