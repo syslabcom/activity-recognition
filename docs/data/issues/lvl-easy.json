@@ -1,7 +1,7 @@
 {
   "version": 1,
   "status": "success",
-  "generated_at": "2026-05-19T09:13:23Z",
+  "generated_at": "2026-05-19T11:06:29Z",
   "organization": "plone",
   "state": "open",
   "slug": "lvl-easy",
@@ -9,38 +9,8 @@
   "required_labels": [
     "41 lvl: easy"
   ],
-  "issue_count": 85,
+  "issue_count": 84,
   "issues": [
-    {
-      "id": 1228581206,
-      "number": 3344,
-      "title": "[docs] Convert glossary lists to definition lists",
-      "html_url": "https://github.com/plone/volto/issues/3344",
-      "repository_full_name": "plone/volto",
-      "repository_url": "https://api.github.com/repos/plone/volto",
-      "state": "open",
-      "created_at": "2022-05-07T09:33:20Z",
-      "updated_at": "2026-05-19T08:34:16Z",
-      "comments": 3,
-      "author": {
-        "login": "stevepiercy",
-        "html_url": "https://github.com/stevepiercy"
-      },
-      "assignees": [],
-      "labels": [
-        "04 type: enhancement",
-        "33 needs: docs",
-        "41 lvl: easy"
-      ],
-      "contributor_summary": {
-        "status": "available",
-        "generated_at": "2026-05-18T11:23:24Z",
-        "source_issue_updated_at": "2026-05-18T10:30:40Z",
-        "model": "gpt-4o-mini",
-        "summary_markdown": "## What this issue is about\nThis issue addresses the need to convert glossary lists in the Plone documentation into proper definition lists. This will enhance the clarity and presentation of defined terms in the documentation.\n\n## What needs to be done\n1. Convert the local glossaries in the [settings reference document](https://github.com/plone/volto/blob/master/docs/source/configuration/settings-reference.md) into definition lists.\n2. Manually sort these definition lists, as they do not have an automatic sort feature.\n3. Ensure that inline terms are formatted correctly with backticks for proper rendering.\n4. Add any new terms to the global glossary located in [plone/documentation](https://github.com/plone/documentation).\n\n## Helpful background\nDefinition lists are a way to present terms and their definitions clearly. In this context, existing terms need refining to enhance document accessibility, especially for new readers.\n\n## Good first steps\n1. Familiarize yourself with [definition lists](https://myst-parser.readthedocs.io/en/latest/syntax/optional.html#definition-lists) in Markdown.\n2. Review the [settings reference document](https://github.com/plone/volto/blob/master/docs/source/configuration/settings-reference.md).\n3. Clone the repository and start making changes according to the guidelines specified.\n4. Once complete, consider submitting a pull request (PR) for review. \n\nFeel free to ask questions; collaboration is encouraged!",
-        "path": "data/issues/summaries/plone/volto/3344.json"
-      }
-    },
     {
       "id": 641819917,
       "number": 1603,
@@ -2626,10 +2596,10 @@
   "message": null,
   "workflow": {
     "repository": "syslabcom/activity-recognition",
-    "run_id": "26087797707",
-    "run_number": "910",
+    "run_id": "26093214034",
+    "run_number": "911",
     "attempt": "1",
-    "url": "https://github.com/syslabcom/activity-recognition/actions/runs/26087797707",
-    "sha": "8de4d8fdccf0abeddf9b7f2b4fa9d4129bff3ff5"
+    "url": "https://github.com/syslabcom/activity-recognition/actions/runs/26093214034",
+    "sha": "7732b6ffd7442e0a18f42544d450aafa3a11c73d"
   }
 }
