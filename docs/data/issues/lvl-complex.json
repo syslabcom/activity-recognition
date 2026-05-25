@@ -1,7 +1,7 @@
 {
   "version": 1,
   "status": "success",
-  "generated_at": "2026-05-25T09:24:13Z",
+  "generated_at": "2026-05-25T11:24:58Z",
   "organization": "plone",
   "state": "open",
   "slug": "lvl-complex",
@@ -153,10 +153,10 @@
       ],
       "contributor_summary": {
         "status": "available",
-        "generated_at": "2026-05-18T11:23:09Z",
-        "source_issue_updated_at": "2026-05-18T10:34:59Z",
+        "generated_at": "2026-05-25T11:25:04Z",
+        "source_issue_updated_at": "2026-05-18T11:59:37Z",
         "model": "gpt-4o-mini",
-        "summary_markdown": "```markdown\n## What this issue is about\nThis issue addresses the need to automatically trigger the documentation build for Volto whenever a push occurs to the master branch. Currently, there are challenges in achieving this, and the process is not straightforward.\n\n## What needs to be done\nThe main task is to set up a system that ensures the documentation builds with each master push. This may involve using CI/CD tools (Continuous Integration/Continuous Deployment) and configuring scripts correctly.\n\n## Helpful background\nPrevious discussions have highlighted potential approaches but also pointed out difficulties in implementation. For more context, you can refer to related issues [#1188](https://github.com/plone/documentation/issues/1188) and [#1214](https://github.com/plone/documentation/issues/1214). As of now, there doesn’t seem to be a clear, functional way to resolve this issue.\n\n## Good first steps\n1. Review existing CI/CD setups in the repository.\n2. Familiarize yourself with current documentation build processes.\n3. Collaborate with the assignee, @esteele, for guidance and clarification on technical hurdles encountered previously.\n4. Contribute to discussions on potential solutions or improvements.\n5. Consider documenting your findings or potential steps forward for future reference.\n```",
+        "summary_markdown": "```markdown\n## What this issue is about\nThis issue focuses on automating the documentation build process for Plone's Volto project. The goal is to ensure that the documentation is updated every time there’s a push to the master branch. This will help keep the documentation in sync with the latest code changes.\n\n## What needs to be done\nThe main task is to implement a way to trigger the documentation build automatically on each push to the master branch. The discussion has not led to a clear solution yet, and there are indications that it might be complex. \n\n## Helpful background\nPast discussions have pointed out that similar issues have been raised before in the Plone documentation repository (see issues #1188 and #1214). Although this feature is deemed important, there is uncertainty regarding the feasibility and method of implementation.\n\n## Good first steps\n1. **Familiarize yourself** with the existing documentation process for Volto.\n2. **Review comments** from contributors for insights on past attempts and current challenges.\n3. **Coordinate with the assignee** ([@esteele](https://github.com/esteele)) and others in the thread to understand their perspectives and any ongoing work.\n4. Consider researching existing CI/CD tools that automate documentation builds to see if they can fit into this context.\n\nFeel free to ask questions or seek clarification—everyone in the community is here to help!\n```",
         "path": "data/issues/summaries/plone/volto/3277.json"
       }
     },
@@ -1686,10 +1686,10 @@
   "message": null,
   "workflow": {
     "repository": "syslabcom/activity-recognition",
-    "run_id": "26393332567",
-    "run_number": "1021",
+    "run_id": "26398002266",
+    "run_number": "1022",
     "attempt": "1",
-    "url": "https://github.com/syslabcom/activity-recognition/actions/runs/26393332567",
-    "sha": "b1d222060b583928c67601eeb382ffb703225981"
+    "url": "https://github.com/syslabcom/activity-recognition/actions/runs/26398002266",
+    "sha": "7049091ca241ed610b3c49b8fc655fd2067ba8e4"
   }
 }
