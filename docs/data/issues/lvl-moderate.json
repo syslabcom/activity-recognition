@@ -1,7 +1,7 @@
 {
   "version": 1,
   "status": "success",
-  "generated_at": "2026-05-26T09:14:19Z",
+  "generated_at": "2026-05-26T13:03:28Z",
   "organization": "plone",
   "state": "open",
   "slug": "lvl-moderate",
@@ -11,6 +11,42 @@
   ],
   "issue_count": 73,
   "issues": [
+    {
+      "id": 2297234474,
+      "number": 3953,
+      "title": "PLIP: Start separating Classic UI code from the core",
+      "html_url": "https://github.com/plone/Products.CMFPlone/issues/3953",
+      "repository_full_name": "plone/Products.CMFPlone",
+      "repository_url": "https://api.github.com/repos/plone/Products.CMFPlone",
+      "state": "open",
+      "created_at": "2024-05-15T08:40:27Z",
+      "updated_at": "2026-05-26T12:25:01Z",
+      "comments": 14,
+      "author": {
+        "login": "tisto",
+        "html_url": "https://github.com/tisto"
+      },
+      "assignees": [
+        "jensens"
+      ],
+      "labels": [
+        "31 needs: help",
+        "99 tag: cleanup",
+        "03 type: feature (plip)",
+        "13 prio: normal",
+        "42 lvl: moderate",
+        "53 target: major",
+        "99 tag: Classic UI"
+      ],
+      "contributor_summary": {
+        "status": "available",
+        "generated_at": "2026-05-26T13:03:34Z",
+        "source_issue_updated_at": "2026-05-26T12:25:01Z",
+        "model": "gpt-4o-mini",
+        "summary_markdown": "```markdown\n## What this issue is about\nThis issue focuses on improving Plone by gradually separating Classic UI code from the core `Products.CMFPlone` package. This aims to create cleaner, more maintainable code and reduce the size of the backend for users who don't use the Classic UI.\n\n## What needs to be done\nWe need to move Classic UI templates and related logic into a new `plone.app.layout` package, while ensuring existing functionality isn't broken. A subpackage, `plone.classicui`, will also be created to manage the Classic UI.\n\n## Helpful background\nThe proposal aims to keep some Classic UI features in the core but offloads UI-related code to `plone.app.layout`, especially important for future compatibility with headless setups (like Volto). Discussions in the comments reveal mixed feelings on implementation details and package naming conventions, indicating there may be some ambiguity.\n\n## Good first steps\n1. Familiarize yourself with the current codebase, especially `Products.CMFPlone` and `plone.app.layout`.\n2. Consider reviewing existing templates and logic that may need to move.\n3. Join discussions to clarify uncertain points about package structure and naming, particularly in the context of upcoming Plone releases.\n4. Help create or revise documentation as changes progress.\n5. Testing and coordination with other contributors will be essential to ensure compatibility.\n```",
+        "path": "data/issues/summaries/plone/Products.CMFPlone/3953.json"
+      }
+    },
     {
       "id": 2083336469,
       "number": 5630,
@@ -96,42 +132,6 @@
         "model": "gpt-4o-mini",
         "summary_markdown": "## What this issue is about\nThis issue is focused on upgrading the internal internationalization (i18n) tools in Volto to the latest version of `react-intl`. It also includes updating the `@plone/scripts` i18n helpers to use ECMAScript Modules (ESM).\n\n## What needs to be done\n- Update Volto’s i18n machinery to utilize the latest `react-intl`.\n- Revise `@plone/scripts` to ensure compatibility with ESM.\n- Ensure that existing translation files (like `.po` files) continue to function as expected.\n\n## Helpful background\nThe current version of `react-intl` in use is outdated. The newer version changes how some features work, particularly with Babel helpers, so adjustments are necessary during the upgrade. Familiarity with internationalization concepts and JavaScript module formats will be helpful.\n\n## Good first steps\n1. Familiarize yourself with both Volto's and `react-intl`'s documentation, focusing on i18n.\n2. Check other related issues or discussions to understand common challenges.\n3. If possible, set up a development environment for Volto to test changes.\n4. Consider joining discussions or seeking guidance from the community for insights and support. \n\nContributions are welcomed, and all help is appreciated!",
         "path": "data/issues/summaries/plone/volto/5627.json"
-      }
-    },
-    {
-      "id": 2297234474,
-      "number": 3953,
-      "title": "PLIP: Start separating Classic UI code from the core",
-      "html_url": "https://github.com/plone/Products.CMFPlone/issues/3953",
-      "repository_full_name": "plone/Products.CMFPlone",
-      "repository_url": "https://api.github.com/repos/plone/Products.CMFPlone",
-      "state": "open",
-      "created_at": "2024-05-15T08:40:27Z",
-      "updated_at": "2026-05-08T07:38:11Z",
-      "comments": 14,
-      "author": {
-        "login": "tisto",
-        "html_url": "https://github.com/tisto"
-      },
-      "assignees": [
-        "jensens"
-      ],
-      "labels": [
-        "31 needs: help",
-        "99 tag: cleanup",
-        "03 type: feature (plip)",
-        "13 prio: normal",
-        "42 lvl: moderate",
-        "53 target: major",
-        "99 tag: Classic UI"
-      ],
-      "contributor_summary": {
-        "status": "available",
-        "generated_at": "2026-05-08T13:36:32Z",
-        "source_issue_updated_at": "2026-05-08T07:38:11Z",
-        "model": "gpt-4o-mini",
-        "summary_markdown": "```markdown\n## What this issue is about\nThis issue involves the gradual separation of Classic UI code from Plone's core. The goal is to simplify maintenance, reduce duplication, and prepare for a more lightweight architecture that will benefit users of the Volto frontend.\n\n## What needs to be done\nThe plan includes moving Classic UI templates and related code to the `plone.app.layout` package while ensuring that core functionality remains intact. The exact details of implementation are still under discussion, including whether some templates should stay put or move to a new package.\n\n## Helpful background\nThis issue is connected to a broader initiative (referred to as a PLIP) aimed at improving Plone's architecture. Discussions have highlighted different opinions on where to place the Classic UI components, and reaching consensus is ongoing.\n\n## Good first steps\n1. Familiarize yourself with the `plone.classicui` and `plone.app.layout` packages.\n2. Check the list of templates currently in discussion for moving.\n3. Join the conversation in the comments to share your insights or questions—your input can shape the direction we take!\n4. Look for related documentation or comments in this issue for deeper context and testing requirements.\n```",
-        "path": "data/issues/summaries/plone/Products.CMFPlone/3953.json"
       }
     },
     {
@@ -2284,10 +2284,10 @@
   "message": null,
   "workflow": {
     "repository": "syslabcom/activity-recognition",
-    "run_id": "26443409138",
-    "run_number": "1038",
+    "run_id": "26449605076",
+    "run_number": "1039",
     "attempt": "1",
-    "url": "https://github.com/syslabcom/activity-recognition/actions/runs/26443409138",
-    "sha": "9e4b453b72ef3520545c6de029bff66823f5b376"
+    "url": "https://github.com/syslabcom/activity-recognition/actions/runs/26449605076",
+    "sha": "28201588f0b0e282b52b43b48c32197024dd4944"
   }
 }

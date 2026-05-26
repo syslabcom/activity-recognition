@@ -1,14 +1,14 @@
 {
   "version": 1,
   "status": "success",
-  "generated_at": "2026-05-08T13:36:32Z",
+  "generated_at": "2026-05-26T13:03:34Z",
   "source_issue": {
     "id": 2297234474,
     "number": 3953,
     "title": "PLIP: Start separating Classic UI code from the core",
     "html_url": "https://github.com/plone/Products.CMFPlone/issues/3953",
     "repository_full_name": "plone/Products.CMFPlone",
-    "updated_at": "2026-05-08T07:38:11Z",
+    "updated_at": "2026-05-26T12:25:01Z",
     "labels": [
       "31 needs: help",
       "99 tag: cleanup",
@@ -24,13 +24,13 @@
     "provider": "openai",
     "model": "gpt-4o-mini"
   },
-  "summary_markdown": "```markdown\n## What this issue is about\nThis issue involves the gradual separation of Classic UI code from Plone's core. The goal is to simplify maintenance, reduce duplication, and prepare for a more lightweight architecture that will benefit users of the Volto frontend.\n\n## What needs to be done\nThe plan includes moving Classic UI templates and related code to the `plone.app.layout` package while ensuring that core functionality remains intact. The exact details of implementation are still under discussion, including whether some templates should stay put or move to a new package.\n\n## Helpful background\nThis issue is connected to a broader initiative (referred to as a PLIP) aimed at improving Plone's architecture. Discussions have highlighted different opinions on where to place the Classic UI components, and reaching consensus is ongoing.\n\n## Good first steps\n1. Familiarize yourself with the `plone.classicui` and `plone.app.layout` packages.\n2. Check the list of templates currently in discussion for moving.\n3. Join the conversation in the comments to share your insights or questions—your input can shape the direction we take!\n4. Look for related documentation or comments in this issue for deeper context and testing requirements.\n```",
+  "summary_markdown": "```markdown\n## What this issue is about\nThis issue focuses on improving Plone by gradually separating Classic UI code from the core `Products.CMFPlone` package. This aims to create cleaner, more maintainable code and reduce the size of the backend for users who don't use the Classic UI.\n\n## What needs to be done\nWe need to move Classic UI templates and related logic into a new `plone.app.layout` package, while ensuring existing functionality isn't broken. A subpackage, `plone.classicui`, will also be created to manage the Classic UI.\n\n## Helpful background\nThe proposal aims to keep some Classic UI features in the core but offloads UI-related code to `plone.app.layout`, especially important for future compatibility with headless setups (like Volto). Discussions in the comments reveal mixed feelings on implementation details and package naming conventions, indicating there may be some ambiguity.\n\n## Good first steps\n1. Familiarize yourself with the current codebase, especially `Products.CMFPlone` and `plone.app.layout`.\n2. Consider reviewing existing templates and logic that may need to move.\n3. Join discussions to clarify uncertain points about package structure and naming, particularly in the context of upcoming Plone releases.\n4. Help create or revise documentation as changes progress.\n5. Testing and coordination with other contributors will be essential to ensure compatibility.\n```",
   "workflow": {
     "repository": "syslabcom/activity-recognition",
-    "run_id": "25558613405",
-    "run_number": "695",
+    "run_id": "26449605076",
+    "run_number": "1039",
     "attempt": "1",
-    "url": "https://github.com/syslabcom/activity-recognition/actions/runs/25558613405",
-    "sha": "0f4b2c540560944d816c20464323effa9188e250"
+    "url": "https://github.com/syslabcom/activity-recognition/actions/runs/26449605076",
+    "sha": "28201588f0b0e282b52b43b48c32197024dd4944"
   }
 }

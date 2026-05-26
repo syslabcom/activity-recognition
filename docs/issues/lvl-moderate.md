@@ -1,7 +1,7 @@
 ---
 title: "Plone issue list — Level: Moderate"
 permalink: "/issues/lvl-moderate/"
-generated_at: "2026-05-26T09:14:19Z"
+generated_at: "2026-05-26T13:03:28Z"
 organization: "plone"
 issue_count: 73
 required_labels:
@@ -10,7 +10,7 @@ required_labels:
 
 # Plone issue list — Level: Moderate
 
-Generated: `2026-05-26T09:14:19Z`  
+Generated: `2026-05-26T13:03:28Z`  
 Organization: `plone`  
 Required label: `42 lvl: moderate`  
 Issue count: `73`
@@ -19,10 +19,10 @@ Sorted by last updated date, newest first.
 
 | Updated | Repository | Issue | Author | Labels |
 | --- | --- | --- | --- | --- |
+| 2026-05-26 12:25 UTC | `plone/Products.CMFPlone` | [#3953 PLIP: Start separating Classic UI code from the core](https://github.com/plone/Products.CMFPlone/issues/3953) | `tisto` | `31 needs: help`, `99 tag: cleanup`, `03 type: feature (plip)`, `13 prio: normal`, `42 lvl: moderate`, `53 target: major`, `99 tag: Classic UI` |
 | 2026-05-19 08:43 UTC | `plone/volto` | [#5630 Unify the use of the optional `preview_image_link` across Volto](https://github.com/plone/volto/issues/5630) | `sneridagh` | `04 type: enhancement`, `42 lvl: moderate` |
 | 2026-05-18 10:43 UTC | `plone/volto` | [#5896 It's confusing how to change my password as a logged in user](https://github.com/plone/volto/issues/5896) | `JeffersonBledsoe` | `04 type: enhancement`, `42 lvl: moderate` |
 | 2026-05-18 10:40 UTC | `plone/volto` | [#5627 Update i18n machinery to latest `react-intl`](https://github.com/plone/volto/issues/5627) | `sneridagh` | `03 type: feature (plip)`, `42 lvl: moderate` |
-| 2026-05-08 07:38 UTC | `plone/Products.CMFPlone` | [#3953 PLIP: Start separating Classic UI code from the core](https://github.com/plone/Products.CMFPlone/issues/3953) | `tisto` | `31 needs: help`, `99 tag: cleanup`, `03 type: feature (plip)`, `13 prio: normal`, `42 lvl: moderate`, `53 target: major`, `99 tag: Classic UI` |
 | 2026-03-30 08:06 UTC | `plone/Products.CMFPlone` | [#3394 Broken ARIA reference in SVG icon](https://github.com/plone/Products.CMFPlone/issues/3394) | `giulioturetta` | `99 tag: UX Accessibility`, `01 type: bug`, `12 prio: high`, `21 status: confirmed`, `42 lvl: moderate`, `51 target: patch` |
 | 2026-03-23 22:38 UTC | `plone/Products.CMFPlone` | [#3837 Plone 6.0 Classic-UI: where can I set default pattern options](https://github.com/plone/Products.CMFPlone/issues/3837) | `fredvd` | `01 type: bug`, `99 tag: UX Integrator/Themer`, `13 prio: normal`, `21 status: confirmed`, `42 lvl: moderate`, `99 tag: resource registry`, `99 tag: Plone 6.0` |
 | 2026-03-23 21:55 UTC | `plone/Products.CMFPlone` | [#3428 The renderer of sendto_template.pt is corrupting the whitespace](https://github.com/plone/Products.CMFPlone/issues/3428) | `Rudd-O` | `01 type: bug`, `02 type: regression`, `31 needs: help`, `42 lvl: moderate` |
