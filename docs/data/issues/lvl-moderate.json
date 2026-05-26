@@ -1,7 +1,7 @@
 {
   "version": 1,
   "status": "success",
-  "generated_at": "2026-05-26T21:34:15Z",
+  "generated_at": "2026-05-26T22:30:51Z",
   "organization": "plone",
   "state": "open",
   "slug": "lvl-moderate",
@@ -20,8 +20,8 @@
       "repository_url": "https://api.github.com/repos/plone/Products.CMFPlone",
       "state": "open",
       "created_at": "2024-05-15T08:40:27Z",
-      "updated_at": "2026-05-26T13:51:13Z",
-      "comments": 14,
+      "updated_at": "2026-05-26T21:55:08Z",
+      "comments": 17,
       "author": {
         "login": "tisto",
         "html_url": "https://github.com/tisto"
@@ -2284,10 +2284,10 @@
   "message": null,
   "workflow": {
     "repository": "syslabcom/activity-recognition",
-    "run_id": "26476469863",
-    "run_number": "1045",
+    "run_id": "26478878564",
+    "run_number": "1046",
     "attempt": "1",
-    "url": "https://github.com/syslabcom/activity-recognition/actions/runs/26476469863",
-    "sha": "aa05247f202979c4912d081bef1126beaed5fe69"
+    "url": "https://github.com/syslabcom/activity-recognition/actions/runs/26478878564",
+    "sha": "214a0a34d093914642c213bdcb528471f46fe5b5"
   }
 }
