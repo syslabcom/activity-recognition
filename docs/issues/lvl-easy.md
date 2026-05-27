@@ -1,19 +1,19 @@
 ---
 title: "Plone issue list — Level: Easy"
 permalink: "/issues/lvl-easy/"
-generated_at: "2026-05-27T05:31:58Z"
+generated_at: "2026-05-27T07:30:34Z"
 organization: "plone"
-issue_count: 84
+issue_count: 83
 required_labels:
   - "41 lvl: easy"
 ---
 
 # Plone issue list — Level: Easy
 
-Generated: `2026-05-27T05:31:58Z`  
+Generated: `2026-05-27T07:30:34Z`  
 Organization: `plone`  
 Required label: `41 lvl: easy`  
-Issue count: `84`
+Issue count: `83`
 
 Sorted by last updated date, newest first.
 
@@ -58,7 +58,6 @@ Sorted by last updated date, newest first.
 | 2025-04-09 10:12 UTC | `plone/cookieplone-templates` | [#200 Support GitLab in `documentation_starter` template](https://github.com/plone/cookieplone-templates/issues/200) | `stevepiercy` | `04 type: enhancement`, `41 lvl: easy`, `52 target: minor` |
 | 2025-03-15 17:42 UTC | `plone/tagung.plone.de` | [#27 Megamenu selected item markup lines not that nice in the current state.](https://github.com/plone/tagung.plone.de/issues/27) | `acsr` | `14 prio: low`, `32 needs: review`, `41 lvl: easy` |
 | 2025-01-24 06:48 UTC | `plone/buildout.coredev` | [#972 Improve README](https://github.com/plone/buildout.coredev/issues/972) | `ramiroluz` | `04 type: enhancement`, `14 prio: low`, `33 needs: docs`, `41 lvl: easy`, `42 lvl: moderate` |
-| 2024-12-15 08:05 UTC | `plone/volto` | [#2281 Can't use "query" as first widget in a form](https://github.com/plone/volto/issues/2281) | `tiberiuichim` | `01 type: bug`, `41 lvl: easy` |
 | 2024-11-14 16:34 UTC | `plone/plone.app.contenttypes` | [#646 tabular listing column titles doesn't get translated completely](https://github.com/plone/plone.app.contenttypes/issues/646) | `petschki` | `01 type: bug`, `14 prio: low`, `41 lvl: easy` |
 | 2024-11-10 13:26 UTC | `plone/Products.CMFPlone` | [#1688 title_or_id wakes up the real object](https://github.com/plone/Products.CMFPlone/issues/1688) | `Martronic-SA` | `01 type: bug`, `31 needs: help`, `14 prio: low`, `21 status: confirmed`, `41 lvl: easy` |
 | 2024-11-10 08:35 UTC | `plone/mockup` | [#695 Add `required` boolean option to Autotoc tabs](https://github.com/plone/mockup/issues/695) | `davilima6` | `99 tag: UX Accessibility`, `99 tag: Plone 5.x`, `99 tag: Plone 4.3.x`, `02 type: regression`, `05 type: question`, `41 lvl: easy` |

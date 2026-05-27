@@ -1,7 +1,7 @@
 {
   "version": 1,
   "status": "success",
-  "generated_at": "2026-05-27T05:31:58Z",
+  "generated_at": "2026-05-27T07:30:34Z",
   "organization": "plone",
   "state": "open",
   "slug": "lvl-easy",
@@ -9,7 +9,7 @@
   "required_labels": [
     "41 lvl: easy"
   ],
-  "issue_count": 84,
+  "issue_count": 83,
   "issues": [
     {
       "id": 641819917,
@@ -1224,37 +1224,6 @@
         "model": "gpt-4o-mini",
         "summary_markdown": "```markdown\n## What this issue is about\nThis issue focuses on enhancing the README file of the Plone repository. The goal is to improve clarity and accessibility for new users.\n\n## What needs to be done\nHere are the proposed improvements:\n- Convert the existing `README.rst` to `README.md`.\n- Create a new page, `README-devcontainer`, documenting how to set up the development container and GitHub workspace.\n- Ensure links to the official Plone documentation and the new page are included.\n\nSome tasks have been completed, but others remain open for contribution.\n\n## Helpful background\nThe README serves as the first point of contact for users and contributors. Updating it can help newcomers understand how to get started with Plone and its development environment.\n\nThere is ongoing discussion about possibly including tutorial videos in the documentation, although this is not finalized.\n\n## Good first steps\n1. Familiarize yourself with Markdown if you're not familiar—it's a simple formatting language used for README.md files.\n2. Start by converting the existing `README.rst` to `README.md` format.\n3. Look into the steps for setting up the `README-devcontainer` and gather that information.\n\nOnce you've made progress, consider reviewing and coordinating with others on the issue.\n```",
         "path": "data/issues/summaries/plone/buildout.coredev/972.json"
-      }
-    },
-    {
-      "id": 835136338,
-      "number": 2281,
-      "title": "Can't use \"query\" as first widget in a form",
-      "html_url": "https://github.com/plone/volto/issues/2281",
-      "repository_full_name": "plone/volto",
-      "repository_url": "https://api.github.com/repos/plone/volto",
-      "state": "open",
-      "created_at": "2021-03-18T18:42:45Z",
-      "updated_at": "2024-12-15T08:05:00Z",
-      "comments": 2,
-      "author": {
-        "login": "tiberiuichim",
-        "html_url": "https://github.com/tiberiuichim"
-      },
-      "assignees": [
-        "silviubogan"
-      ],
-      "labels": [
-        "01 type: bug",
-        "41 lvl: easy"
-      ],
-      "contributor_summary": {
-        "status": "available",
-        "generated_at": "2026-04-09T15:35:13Z",
-        "source_issue_updated_at": "2024-12-15T08:05:00Z",
-        "model": "gpt-4o-mini",
-        "summary_markdown": "```markdown\n## What this issue is about\nThis issue reports a bug with the \"query\" widget in Plone's Volto framework. Specifically, if the querystring widget is the first widget in a form, it breaks due to a focus issue. This happens because there is no `this.node` defined in the widget class.\n\n## What needs to be done\nThe goal is to fix the behavior of the querystring widget when it is the first widget in a form. You may need to ensure that the focus functionality works correctly without breaking the widget.\n\n## Helpful background\nThe problem is linked to how first widgets are focused and the lack of a defined node in the widget's code. Additionally, there is a related issue with the QueryWidget, which might also need similar handling. Check the provided code lines for context: \n- [QuerystringWidget](https://github.com/plone/volto/blob/388932a043cdb7cd5db30e93d58c0fe9217b93da/src/components/manage/Widgets/QuerystringWidget.jsx#L135)\n- [QueryWidget](https://github.com/plone/volto/blob/e8caa4240f3d45cf6f3b0404c5ca56c87d08ca9f/src/components/manage/Widgets/QueryWidget.jsx#L103)\n\n## Good first steps\n1. Review the code in both widgets to understand the current implementation.\n2. Experiment with fixing the focus issue in the querystring widget.\n3. Test your changes to make sure the form works as expected.\n4. Consider adding documentation for future contributors about this focus behavior.\n```",
-        "path": "data/issues/summaries/plone/volto/2281.json"
       }
     },
     {
@@ -2596,10 +2565,10 @@
   "message": null,
   "workflow": {
     "repository": "syslabcom/activity-recognition",
-    "run_id": "26492821303",
-    "run_number": "1051",
+    "run_id": "26497358938",
+    "run_number": "1052",
     "attempt": "1",
-    "url": "https://github.com/syslabcom/activity-recognition/actions/runs/26492821303",
-    "sha": "620ffa3837b8cb9df25af6c1cd191dbc7ac83a0a"
+    "url": "https://github.com/syslabcom/activity-recognition/actions/runs/26497358938",
+    "sha": "d2e585b7202393e8b953050717765916d72eda29"
   }
 }
