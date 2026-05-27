@@ -1,19 +1,19 @@
 ---
 title: "Plone issue list — Level: Easy"
 permalink: "/issues/lvl-easy/"
-generated_at: "2026-05-27T09:12:03Z"
+generated_at: "2026-05-27T11:15:16Z"
 organization: "plone"
-issue_count: 83
+issue_count: 82
 required_labels:
   - "41 lvl: easy"
 ---
 
 # Plone issue list — Level: Easy
 
-Generated: `2026-05-27T09:12:03Z`  
+Generated: `2026-05-27T11:15:16Z`  
 Organization: `plone`  
 Required label: `41 lvl: easy`  
-Issue count: `83`
+Issue count: `82`
 
 Sorted by last updated date, newest first.
 
@@ -42,7 +42,6 @@ Sorted by last updated date, newest first.
 | 2026-03-04 09:06 UTC | `plone/documentation` | [#1147 Improve SEO with `html_meta` directive.](https://github.com/plone/documentation/issues/1147) | `stevepiercy` | `31 needs: help`, `33 needs: docs`, `41 lvl: easy`, `99 tag: Plone 6.x`, `99 tag: good first issue`, `99 tag: hacktoberfest` |
 | 2026-03-04 09:06 UTC | `plone/documentation` | [#692 add doc on customizing moment.js date formats](https://github.com/plone/documentation/issues/692) | `tkimnguyen` | `31 needs: help`, `33 needs: docs`, `41 lvl: easy`, `99 tag: Plone 6.x`, `99 tag: classic-ui`, `99 tag: good first issue`, `99 tag: hacktoberfest` |
 | 2026-03-04 09:06 UTC | `plone/documentation` | [#612 document feature of external links opening in new tab/window](https://github.com/plone/documentation/issues/612) | `tkimnguyen` | `33 needs: docs`, `41 lvl: easy`, `99 tag: good first issue`, `99 tag: hacktoberfest` |
-| 2026-02-24 04:11 UTC | `plone/volto` | [#7922 Document to run `make install` when changing a dependency](https://github.com/plone/volto/issues/7922) | `stevepiercy` | `01 type: bug`, `13 prio: normal`, `21 status: confirmed`, `33 needs: docs`, `41 lvl: easy` |
 | 2026-01-29 22:02 UTC | `plone/plone.restapi` | [#285 Discrepancy in documentation for Authentication sometimes root used as plone sometimes Plone](https://github.com/plone/plone.restapi/issues/285) | `envy7` | `01 type: bug`, `41 lvl: easy` |
 | 2026-01-25 06:16 UTC | `plone/volto` | [#955 user menu popup is not available on the site setup pages](https://github.com/plone/volto/issues/955) | `fredvd` | `01 type: bug`, `41 lvl: easy` |
 | 2026-01-25 06:15 UTC | `plone/Products.CMFPlone` | [#3353 Show portal_timezone in date widgets](https://github.com/plone/Products.CMFPlone/issues/3353) | `MrTango` | `04 type: enhancement`, `31 needs: help`, `41 lvl: easy`, `99 tag: Plone 6.0` |
