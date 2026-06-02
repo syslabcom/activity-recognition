@@ -1,7 +1,7 @@
 {
   "version": 1,
   "status": "success",
-  "generated_at": "2026-06-02T07:42:36Z",
+  "generated_at": "2026-06-02T09:30:13Z",
   "organization": "plone",
   "state": "open",
   "slug": "lvl-moderate",
@@ -11,6 +11,71 @@
   ],
   "issue_count": 73,
   "issues": [
+    {
+      "id": 3102884999,
+      "number": 7159,
+      "title": "Build Storybook for a PR preview on `Aurora` branch",
+      "html_url": "https://github.com/plone/volto/issues/7159",
+      "repository_full_name": "plone/volto",
+      "repository_url": "https://api.github.com/repos/plone/volto",
+      "state": "open",
+      "created_at": "2025-05-30T10:54:47Z",
+      "updated_at": "2026-06-02T09:29:25Z",
+      "comments": 8,
+      "author": {
+        "login": "stevepiercy",
+        "html_url": "https://github.com/stevepiercy"
+      },
+      "assignees": [],
+      "labels": [
+        "04 type: enhancement",
+        "31 needs: help",
+        "33 needs: docs",
+        "42 lvl: moderate"
+      ],
+      "contributor_summary": {
+        "status": "available",
+        "generated_at": "2026-06-02T09:30:19Z",
+        "source_issue_updated_at": "2026-06-02T09:29:25Z",
+        "model": "gpt-4o-mini",
+        "summary_markdown": "```markdown\n## What this issue is about\nThis issue discusses the possibility of building Storybook for previewing pull requests (PRs) on the `Aurora` branch of Volto. Currently, any link to Storybook in preview PRs redirects to the stable version, which makes it difficult to view changes.\n\n## What needs to be done\nWe need to explore how to configure the build process so that PR-specific Storybook URLs are generated instead of redirecting to the stable version. This involves potentially changing redirect settings based on notification of changes in relevant branches.\n\n## Helpful background\nThe discussion indicates there may be uncertainties about the exact implementations needed to achieve this. The comments suggest some ways forward, but details on configuration may require further investigation, especially with integration in Read the Docs (RTD).\n\n## Good first steps\n1. Check the current configuration in `docs/conf.py` and `.readthedocs.yaml` for any redirect settings related to Storybook.\n2. Review the existing documentation for Read the Docs related to building PRs.\n3. Look into the links shared in comments for broader context.\n4. Engage with team members in the next Volto meeting for additional insights and support.\n```",
+        "path": "data/issues/summaries/plone/volto/7159.json"
+      }
+    },
+    {
+      "id": 3460812472,
+      "number": 7409,
+      "title": "Docs - Aurora - Release Notes missing",
+      "html_url": "https://github.com/plone/volto/issues/7409",
+      "repository_full_name": "plone/volto",
+      "repository_url": "https://api.github.com/repos/plone/volto",
+      "state": "open",
+      "created_at": "2025-09-27T22:31:22Z",
+      "updated_at": "2026-06-02T09:29:06Z",
+      "comments": 1,
+      "author": {
+        "login": "stevepiercy",
+        "html_url": "https://github.com/stevepiercy"
+      },
+      "assignees": [
+        "stevepiercy",
+        "sneridagh"
+      ],
+      "labels": [
+        "01 type: bug",
+        "33 needs: docs",
+        "42 lvl: moderate",
+        "30 needs: triage"
+      ],
+      "contributor_summary": {
+        "status": "available",
+        "generated_at": "2026-06-02T09:30:34Z",
+        "source_issue_updated_at": "2026-06-02T09:29:06Z",
+        "model": "gpt-4o-mini",
+        "summary_markdown": "## What this issue is about\nThis issue addresses the absence of release notes and a change log in the documentation for the \"Seven\" component within the Volto project. The documentation build tool, Sphinx, is issuing warnings because it cannot find the necessary files.\n\n## What needs to be done\nWe need to create and include release notes or a change log for the \"Seven\" component in the documentation. This will help inform users about updates and changes in the project.\n\n## Helpful background\nRelease notes summarize the changes made in a software release, providing users insight into updates, fixes, and enhancements. Proper documentation is crucial for user orientation and aids in maintaining project transparency.\n\n## Good first steps\n1. Familiarize yourself with the existing documentation structure, especially the sections related to release notes.\n2. Check the project's GitHub repository for any existing documentation on release notes to avoid duplicating work.\n3. If you're new to contributing, consider reaching out in the comments or via direct messages for guidance from existing contributors or maintainers.\n4. Review any related discussions or comments to understand context and expectations.\n5. Start drafting the release notes based on recent changes in the project, and be prepared for review and feedback before finalizing.",
+        "path": "data/issues/summaries/plone/volto/7409.json"
+      }
+    },
     {
       "id": 2297234474,
       "number": 3953,
@@ -297,40 +362,6 @@
       }
     },
     {
-      "id": 3460812472,
-      "number": 7409,
-      "title": "Docs - Seven - Release Notes missing",
-      "html_url": "https://github.com/plone/volto/issues/7409",
-      "repository_full_name": "plone/volto",
-      "repository_url": "https://api.github.com/repos/plone/volto",
-      "state": "open",
-      "created_at": "2025-09-27T22:31:22Z",
-      "updated_at": "2026-02-17T05:32:03Z",
-      "comments": 1,
-      "author": {
-        "login": "stevepiercy",
-        "html_url": "https://github.com/stevepiercy"
-      },
-      "assignees": [
-        "stevepiercy",
-        "sneridagh"
-      ],
-      "labels": [
-        "01 type: bug",
-        "33 needs: docs",
-        "42 lvl: moderate",
-        "30 needs: triage"
-      ],
-      "contributor_summary": {
-        "status": "available",
-        "generated_at": "2026-04-09T11:34:22Z",
-        "source_issue_updated_at": "2026-02-17T05:32:03Z",
-        "model": "gpt-4o-mini",
-        "summary_markdown": "```markdown\n## What this issue is about\nThis issue addresses missing release notes and changelog entries for the \"Seven\" documentation in the Plone Volto project. The absence of these documents is causing warnings in Sphinx, the tool used for generating documentation.\n\n## What needs to be done\nWe need to create and include release notes or a changelog for the Seven section of the documentation. This will help eliminate the warnings seen during documentation build processes.\n\n## Helpful background\nSphinx emits warnings when it can't find referenced documents. In this case, it's indicating that our documentation is missing important sections that should detail changes and updates in the project. Proper documentation is crucial for clarity and maintaining project standards.\n\n## Good first steps\n1. **Familiarize yourself** with the existing documentation structure in the `volto` repository.\n2. **Check the Seven-related updates** from recent project developments to gather necessary information for the release notes.\n3. **Draft the missing notes** based on the information you've compiled.\n4. If you're interested in contributing, please ask for assignment in the comments or reach out to the current assignees for guidance.\n5. Be prepared to share your work for review and possibly provide updates based on feedback.\n```",
-        "path": "data/issues/summaries/plone/volto/7409.json"
-      }
-    },
-    {
       "id": 2655182802,
       "number": 1775,
       "title": "Conceptual guides > Component architecture needs to be completed",
@@ -387,37 +418,6 @@
         "model": "gpt-4o-mini",
         "summary_markdown": "```markdown\n## What this issue is about\nThis issue focuses on migrating content related to \"Queries, Search And Indexing\" from the Plone 5 documentation to Plone 6. Several specific pages need to be addressed, and some duplicate information needs to be merged for clarity.\n\n## What needs to be done\n1. Review the existing Plone 5 documentation to ensure accuracy for Plone 6.\n2. Update, overhaul, or copy content as needed.\n3. Merge the last two pages mentioned that contain overlapping information.\n4. Continuous review and validation of updates will be required.\n\n## Helpful background\nThe content is available in MyST format on the `5.2-myst` branch. It's essential to familiarize yourself with the differences between Plone 5 and Plone 6; relevant migration resources can be found [here](https://6.docs.plone.org/backend/upgrading/).\n\n## Good first steps\n1. Start by reviewing one of the existing Plone 5 documents listed in the issue.\n2. Check the provided resources to understand the changes from Plone 5 to 6.\n3. Consider splitting longer sections into smaller parts for easier handling and quicker review.\n4. Engage with other contributors for support and feedback as you work on your updates!\n```",
         "path": "data/issues/summaries/plone/documentation/1730.json"
-      }
-    },
-    {
-      "id": 3102884999,
-      "number": 7159,
-      "title": "Build Storybook for a PR preview on `seven` branch",
-      "html_url": "https://github.com/plone/volto/issues/7159",
-      "repository_full_name": "plone/volto",
-      "repository_url": "https://api.github.com/repos/plone/volto",
-      "state": "open",
-      "created_at": "2025-05-30T10:54:47Z",
-      "updated_at": "2026-01-14T00:38:42Z",
-      "comments": 8,
-      "author": {
-        "login": "stevepiercy",
-        "html_url": "https://github.com/stevepiercy"
-      },
-      "assignees": [],
-      "labels": [
-        "04 type: enhancement",
-        "31 needs: help",
-        "33 needs: docs",
-        "42 lvl: moderate"
-      ],
-      "contributor_summary": {
-        "status": "available",
-        "generated_at": "2026-04-09T12:26:33Z",
-        "source_issue_updated_at": "2026-01-14T00:38:42Z",
-        "model": "gpt-4o-mini",
-        "summary_markdown": "```markdown\n## What this issue is about\nThis issue discusses the potential enhancement of having a Storybook build for pull requests (PRs) targeting the `seven` branch in the Volto project. Currently, the Storybook link redirects to the stable version, which limits the ability to preview changes made in PRs.\n\n## What needs to be done\nThere is a need to configure Storybook so that when there’s a PR to the `seven` branch, it does not redirect to the stable version. This involves conditionally disabling the redirect settings, allowing contributors to view the PR’s Storybook preview without being redirected.\n\n## Helpful background\nStorybook is a tool for developing UI components in isolation. The discussion includes different opinions on how the build can be set to preview changes effectively. Some participants have suggested checking configuration settings, but the final steps are still somewhat unclear and may need refinement.\n\n## Good first steps\n1. Review the existing configurations in the `.readthedocs.yaml` and `conf.py` files located in the repository.\n2. Check if the “build PRs” option is enabled in the Read the Docs (RTD) configuration.\n3. Share any insights or findings in the comments and feel free to ask questions if anything is unclear.\n4. Consider discussing with the Volto Team to clarify the next actions during the next meeting.\n```",
-        "path": "data/issues/summaries/plone/volto/7159.json"
       }
     },
     {
@@ -2284,10 +2284,10 @@
   "message": null,
   "workflow": {
     "repository": "syslabcom/activity-recognition",
-    "run_id": "26805799819",
-    "run_number": "1153",
+    "run_id": "26811059685",
+    "run_number": "1154",
     "attempt": "1",
-    "url": "https://github.com/syslabcom/activity-recognition/actions/runs/26805799819",
-    "sha": "c44cd26e96c0e3b7139ce209040fdb7324d530b8"
+    "url": "https://github.com/syslabcom/activity-recognition/actions/runs/26811059685",
+    "sha": "905c6a77f5826eabf20ac5fbf94fe941b66e3fd1"
   }
 }

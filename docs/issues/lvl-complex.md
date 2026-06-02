@@ -1,7 +1,7 @@
 ---
 title: "Plone issue list — Level: Complex"
 permalink: "/issues/lvl-complex/"
-generated_at: "2026-06-02T07:42:36Z"
+generated_at: "2026-06-02T09:30:13Z"
 organization: "plone"
 issue_count: 55
 required_labels:
@@ -10,7 +10,7 @@ required_labels:
 
 # Plone issue list — Level: Complex
 
-Generated: `2026-06-02T07:42:36Z`  
+Generated: `2026-06-02T09:30:13Z`  
 Organization: `plone`  
 Required label: `43 lvl: complex`  
 Issue count: `55`
@@ -19,10 +19,11 @@ Sorted by last updated date, newest first.
 
 | Updated | Repository | Issue | Author | Labels |
 | --- | --- | --- | --- | --- |
+| 2026-06-02 09:29 UTC | `plone/volto` | [#7519 \[Aurora\] - Make APISUFFIX configurable via environment variables](https://github.com/plone/volto/issues/7519) | `avoinea` | `01 type: bug`, `43 lvl: complex`, `30 needs: triage` |
+| 2026-06-02 09:23 UTC | `plone/volto` | [#6638 Plone 7 frontend (Aurora)](https://github.com/plone/volto/issues/6638) | `sneridagh` | `03 type: feature (plip)`, `43 lvl: complex` |
 | 2026-05-19 08:45 UTC | `plone/volto` | [#4756 `@plone/contents` - Enhance Contents View](https://github.com/plone/volto/issues/4756) | `sneridagh` | `03 type: feature (plip)`, `43 lvl: complex` |
 | 2026-05-19 08:45 UTC | `plone/volto` | [#4332 Quanta](https://github.com/plone/volto/issues/4332) | `sneridagh` | `03 type: feature (plip)`, `43 lvl: complex` |
 | 2026-05-19 08:45 UTC | `plone/volto` | [#4206 Quanta Toolbar](https://github.com/plone/volto/issues/4206) | `sneridagh` | `03 type: feature (plip)`, `43 lvl: complex` |
-| 2026-05-19 08:43 UTC | `plone/volto` | [#6638 Plone 7 frontend (Seven)](https://github.com/plone/volto/issues/6638) | `sneridagh` | `03 type: feature (plip)`, `43 lvl: complex` |
 | 2026-05-18 11:59 UTC | `plone/volto` | [#3277 Trigger 6-dev documentation build on every push to master in Volto](https://github.com/plone/volto/issues/3277) | `sneridagh` | `33 needs: docs`, `43 lvl: complex` |
 | 2026-05-18 11:15 UTC | `plone/volto` | [#4204 Improve drag & drop support in the blocks engine](https://github.com/plone/volto/issues/4204) | `sneridagh` | `03 type: feature (plip)`, `43 lvl: complex` |
 | 2026-05-18 10:53 UTC | `plone/volto` | [#1478 Proposal: have a list of "smart fields" in Volto blocks](https://github.com/plone/volto/issues/1478) | `tiberiuichim` | `03 type: feature (plip)`, `43 lvl: complex` |
@@ -42,7 +43,6 @@ Sorted by last updated date, newest first.
 | 2026-01-28 07:57 UTC | `plone/volto` | [#6967 Move videos from the User Manual to a CDN or YouTube](https://github.com/plone/volto/issues/6967) | `stevepiercy` | `04 type: enhancement`, `31 needs: help`, `43 lvl: complex`, `06 type: plip task` |
 | 2026-01-23 22:16 UTC | `plone/documentation` | [#2037 Unpin sphinx in requirements.txt](https://github.com/plone/documentation/issues/2037) | `stevepiercy` | `43 lvl: complex` |
 | 2026-01-07 10:15 UTC | `plone/volto` | [#7527 View for Listing block](https://github.com/plone/volto/issues/7527) | `ebrehault` | `04 type: enhancement`, `43 lvl: complex` |
-| 2026-01-07 08:35 UTC | `plone/volto` | [#7519 \[Seven\] - Make APISUFFIX configurable via environment variables](https://github.com/plone/volto/issues/7519) | `avoinea` | `01 type: bug`, `43 lvl: complex`, `30 needs: triage` |
 | 2026-01-07 08:34 UTC | `plone/volto` | [#7258 Implement non-schema-driven control panels](https://github.com/plone/volto/issues/7258) | `ksuess` | `43 lvl: complex` |
 | 2026-01-04 08:11 UTC | `plone/documentation` | [#1380 Add details about each of the default behaviors](https://github.com/plone/documentation/issues/1380) | `stevepiercy` | `04 type: enhancement`, `13 prio: normal`, `21 status: confirmed`, `33 needs: docs`, `43 lvl: complex`, `99 tag: Plone 6.x` |
 | 2025-12-28 22:40 UTC | `plone/documentation` | [#1496 Create redirects of `docs.plone.org` to `6.docs.plone.org`](https://github.com/plone/documentation/issues/1496) | `stevepiercy` | `01 type: bug`, `43 lvl: complex`, `99 tag: Plone 6.x` |

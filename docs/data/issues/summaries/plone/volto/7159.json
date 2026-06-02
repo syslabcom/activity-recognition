@@ -1,14 +1,14 @@
 {
   "version": 1,
   "status": "success",
-  "generated_at": "2026-04-09T12:26:33Z",
+  "generated_at": "2026-06-02T09:30:19Z",
   "source_issue": {
     "id": 3102884999,
     "number": 7159,
-    "title": "Build Storybook for a PR preview on `seven` branch",
+    "title": "Build Storybook for a PR preview on `Aurora` branch",
     "html_url": "https://github.com/plone/volto/issues/7159",
     "repository_full_name": "plone/volto",
-    "updated_at": "2026-01-14T00:38:42Z",
+    "updated_at": "2026-06-02T09:29:25Z",
     "labels": [
       "04 type: enhancement",
       "31 needs: help",
@@ -21,13 +21,13 @@
     "provider": "openai",
     "model": "gpt-4o-mini"
   },
-  "summary_markdown": "```markdown\n## What this issue is about\nThis issue discusses the potential enhancement of having a Storybook build for pull requests (PRs) targeting the `seven` branch in the Volto project. Currently, the Storybook link redirects to the stable version, which limits the ability to preview changes made in PRs.\n\n## What needs to be done\nThere is a need to configure Storybook so that when there’s a PR to the `seven` branch, it does not redirect to the stable version. This involves conditionally disabling the redirect settings, allowing contributors to view the PR’s Storybook preview without being redirected.\n\n## Helpful background\nStorybook is a tool for developing UI components in isolation. The discussion includes different opinions on how the build can be set to preview changes effectively. Some participants have suggested checking configuration settings, but the final steps are still somewhat unclear and may need refinement.\n\n## Good first steps\n1. Review the existing configurations in the `.readthedocs.yaml` and `conf.py` files located in the repository.\n2. Check if the “build PRs” option is enabled in the Read the Docs (RTD) configuration.\n3. Share any insights or findings in the comments and feel free to ask questions if anything is unclear.\n4. Consider discussing with the Volto Team to clarify the next actions during the next meeting.\n```",
+  "summary_markdown": "```markdown\n## What this issue is about\nThis issue discusses the possibility of building Storybook for previewing pull requests (PRs) on the `Aurora` branch of Volto. Currently, any link to Storybook in preview PRs redirects to the stable version, which makes it difficult to view changes.\n\n## What needs to be done\nWe need to explore how to configure the build process so that PR-specific Storybook URLs are generated instead of redirecting to the stable version. This involves potentially changing redirect settings based on notification of changes in relevant branches.\n\n## Helpful background\nThe discussion indicates there may be uncertainties about the exact implementations needed to achieve this. The comments suggest some ways forward, but details on configuration may require further investigation, especially with integration in Read the Docs (RTD).\n\n## Good first steps\n1. Check the current configuration in `docs/conf.py` and `.readthedocs.yaml` for any redirect settings related to Storybook.\n2. Review the existing documentation for Read the Docs related to building PRs.\n3. Look into the links shared in comments for broader context.\n4. Engage with team members in the next Volto meeting for additional insights and support.\n```",
   "workflow": {
     "repository": "syslabcom/activity-recognition",
-    "run_id": "24190027102",
-    "run_number": "51",
+    "run_id": "26811059685",
+    "run_number": "1154",
     "attempt": "1",
-    "url": "https://github.com/syslabcom/activity-recognition/actions/runs/24190027102",
-    "sha": "e0c67d2638fe739b442ccf9da44e8d59c9d3ed15"
+    "url": "https://github.com/syslabcom/activity-recognition/actions/runs/26811059685",
+    "sha": "905c6a77f5826eabf20ac5fbf94fe941b66e3fd1"
   }
 }

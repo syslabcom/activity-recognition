@@ -1,7 +1,7 @@
 ---
 title: "Plone issue list — Level: Moderate"
 permalink: "/issues/lvl-moderate/"
-generated_at: "2026-06-02T07:42:36Z"
+generated_at: "2026-06-02T09:30:13Z"
 organization: "plone"
 issue_count: 73
 required_labels:
@@ -10,7 +10,7 @@ required_labels:
 
 # Plone issue list — Level: Moderate
 
-Generated: `2026-06-02T07:42:36Z`  
+Generated: `2026-06-02T09:30:13Z`  
 Organization: `plone`  
 Required label: `42 lvl: moderate`  
 Issue count: `73`
@@ -19,6 +19,8 @@ Sorted by last updated date, newest first.
 
 | Updated | Repository | Issue | Author | Labels |
 | --- | --- | --- | --- | --- |
+| 2026-06-02 09:29 UTC | `plone/volto` | [#7159 Build Storybook for a PR preview on `Aurora` branch](https://github.com/plone/volto/issues/7159) | `stevepiercy` | `04 type: enhancement`, `31 needs: help`, `33 needs: docs`, `42 lvl: moderate` |
+| 2026-06-02 09:29 UTC | `plone/volto` | [#7409 Docs - Aurora - Release Notes missing](https://github.com/plone/volto/issues/7409) | `stevepiercy` | `01 type: bug`, `33 needs: docs`, `42 lvl: moderate`, `30 needs: triage` |
 | 2026-05-30 20:43 UTC | `plone/Products.CMFPlone` | [#3953 PLIP: Start separating Classic UI code from the core](https://github.com/plone/Products.CMFPlone/issues/3953) | `tisto` | `31 needs: help`, `99 tag: cleanup`, `03 type: feature (plip)`, `13 prio: normal`, `42 lvl: moderate`, `53 target: major`, `99 tag: Classic UI` |
 | 2026-05-19 08:43 UTC | `plone/volto` | [#5630 Unify the use of the optional `preview_image_link` across Volto](https://github.com/plone/volto/issues/5630) | `sneridagh` | `04 type: enhancement`, `42 lvl: moderate` |
 | 2026-05-18 10:43 UTC | `plone/volto` | [#5896 It's confusing how to change my password as a logged in user](https://github.com/plone/volto/issues/5896) | `JeffersonBledsoe` | `04 type: enhancement`, `42 lvl: moderate` |
@@ -28,10 +30,8 @@ Sorted by last updated date, newest first.
 | 2026-03-23 21:55 UTC | `plone/Products.CMFPlone` | [#3428 The renderer of sendto_template.pt is corrupting the whitespace](https://github.com/plone/Products.CMFPlone/issues/3428) | `Rudd-O` | `01 type: bug`, `02 type: regression`, `31 needs: help`, `42 lvl: moderate` |
 | 2026-03-23 21:53 UTC | `plone/Products.CMFPlone` | [#1056 Locking icon on toolbar is not clear](https://github.com/plone/Products.CMFPlone/issues/1056) | `hvelarde` | `01 type: bug`, `99 tag: UX Editor`, `13 prio: normal`, `21 status: confirmed`, `42 lvl: moderate`, `99 tag: Plone 6.0`, `99 tag: Plone 5.2` |
 | 2026-03-23 17:52 UTC | `plone/Products.CMFPlone` | [#2161 Zope-level language negotiation](https://github.com/plone/Products.CMFPlone/issues/2161) | `malthe` | `04 type: enhancement`, `31 needs: help`, `42 lvl: moderate` |
-| 2026-02-17 05:32 UTC | `plone/volto` | [#7409 Docs - Seven - Release Notes missing](https://github.com/plone/volto/issues/7409) | `stevepiercy` | `01 type: bug`, `33 needs: docs`, `42 lvl: moderate`, `30 needs: triage` |
 | 2026-02-10 04:01 UTC | `plone/documentation` | [#1775 Conceptual guides > Component architecture needs to be completed](https://github.com/plone/documentation/issues/1775) | `stevepiercy` | `31 needs: help`, `33 needs: docs`, `42 lvl: moderate` |
 | 2026-01-29 13:32 UTC | `plone/documentation` | [#1730 Migrate content from v5 "Queries, Search And Indexing"](https://github.com/plone/documentation/issues/1730) | `stevepiercy` | `42 lvl: moderate`, `99 tag: Plone 6.x` |
-| 2026-01-14 00:38 UTC | `plone/volto` | [#7159 Build Storybook for a PR preview on `seven` branch](https://github.com/plone/volto/issues/7159) | `stevepiercy` | `04 type: enhancement`, `31 needs: help`, `33 needs: docs`, `42 lvl: moderate` |
 | 2025-12-30 03:08 UTC | `plone/volto` | [#7696 Add deprecation policy or guide to documentation](https://github.com/plone/volto/issues/7696) | `stevepiercy` | `04 type: enhancement`, `33 needs: docs`, `42 lvl: moderate`, `discussion` |
 | 2025-12-26 16:44 UTC | `plone/volto` | [#8 Live updates](https://github.com/plone/volto/issues/8) | `robgietema` | `04 type: enhancement`, `14 prio: low`, `21 status: confirmed`, `42 lvl: moderate` |
 | 2025-12-19 03:04 UTC | `plone/documentation` | [#1309 Move the `plone.behavior` readme into `plone/documentation`](https://github.com/plone/documentation/issues/1309) | `stevepiercy` | `31 needs: help`, `33 needs: docs`, `42 lvl: moderate`, `99 tag: backend` |
