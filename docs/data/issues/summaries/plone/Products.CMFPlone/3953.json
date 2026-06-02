@@ -1,14 +1,14 @@
 {
   "version": 1,
   "status": "success",
-  "generated_at": "2026-05-26T13:03:34Z",
+  "generated_at": "2026-06-02T13:21:12Z",
   "source_issue": {
     "id": 2297234474,
     "number": 3953,
     "title": "PLIP: Start separating Classic UI code from the core",
     "html_url": "https://github.com/plone/Products.CMFPlone/issues/3953",
     "repository_full_name": "plone/Products.CMFPlone",
-    "updated_at": "2026-05-26T12:25:01Z",
+    "updated_at": "2026-05-30T20:43:32Z",
     "labels": [
       "31 needs: help",
       "99 tag: cleanup",
@@ -18,19 +18,19 @@
       "53 target: major",
       "99 tag: Classic UI"
     ],
-    "comments": 14
+    "comments": 25
   },
   "ai": {
     "provider": "openai",
     "model": "gpt-4o-mini"
   },
-  "summary_markdown": "```markdown\n## What this issue is about\nThis issue focuses on improving Plone by gradually separating Classic UI code from the core `Products.CMFPlone` package. This aims to create cleaner, more maintainable code and reduce the size of the backend for users who don't use the Classic UI.\n\n## What needs to be done\nWe need to move Classic UI templates and related logic into a new `plone.app.layout` package, while ensuring existing functionality isn't broken. A subpackage, `plone.classicui`, will also be created to manage the Classic UI.\n\n## Helpful background\nThe proposal aims to keep some Classic UI features in the core but offloads UI-related code to `plone.app.layout`, especially important for future compatibility with headless setups (like Volto). Discussions in the comments reveal mixed feelings on implementation details and package naming conventions, indicating there may be some ambiguity.\n\n## Good first steps\n1. Familiarize yourself with the current codebase, especially `Products.CMFPlone` and `plone.app.layout`.\n2. Consider reviewing existing templates and logic that may need to move.\n3. Join discussions to clarify uncertain points about package structure and naming, particularly in the context of upcoming Plone releases.\n4. Help create or revise documentation as changes progress.\n5. Testing and coordination with other contributors will be essential to ensure compatibility.\n```",
+  "summary_markdown": "```markdown\n## What this issue is about\nThis issue focuses on separating Classic UI code from the core Plone codebase. The goal is to keep the API and business logic within core packages while moving Classic UI templates and logic to a dedicated package, `plone.classicui`.\n\n## What needs to be done\n- Create a `plone.classicui` package to contain Classic UI elements.\n- Gradually move Classic UI-specific code to `plone.app.layout`, ensuring backward compatibility.\n- Maintain integration so that existing functionality remains intact while allowing for easier code maintenance and reuse.\n\n## Helpful background\nThis change aims to enhance code cleanliness and maintainability by reducing duplication and preparing for a smaller core for headless configurations in Plone 7. Discussions around the specifics are ongoing, and there's no consensus on some details, such as the structure of the packages. Therefore, check ongoing updates for clarity.\n\n## Good first steps\n1. Familiarize yourself with the current `Products.CMFPlone` structure and the planned `plone.classicui`.\n2. Look at existing templates in the codebase, particularly those referenced in comments.\n3. Consider contributing to discussions or issues flagged in the repository for clarity on your tasks.\n4. Be prepared for testing changes and updating documentation as needed.\n```",
   "workflow": {
     "repository": "syslabcom/activity-recognition",
-    "run_id": "26449605076",
-    "run_number": "1039",
+    "run_id": "26822497680",
+    "run_number": "1156",
     "attempt": "1",
-    "url": "https://github.com/syslabcom/activity-recognition/actions/runs/26449605076",
-    "sha": "28201588f0b0e282b52b43b48c32197024dd4944"
+    "url": "https://github.com/syslabcom/activity-recognition/actions/runs/26822497680",
+    "sha": "9ec21faee2e35fd87a668f739349fc8f000f36c2"
   }
 }
