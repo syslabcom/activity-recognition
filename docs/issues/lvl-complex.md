@@ -1,7 +1,7 @@
 ---
 title: "Plone issue list — Level: Complex"
 permalink: "/issues/lvl-complex/"
-generated_at: "2026-06-03T06:36:58Z"
+generated_at: "2026-06-03T08:39:58Z"
 organization: "plone"
 issue_count: 55
 required_labels:
@@ -10,7 +10,7 @@ required_labels:
 
 # Plone issue list — Level: Complex
 
-Generated: `2026-06-03T06:36:58Z`  
+Generated: `2026-06-03T08:39:58Z`  
 Organization: `plone`  
 Required label: `43 lvl: complex`  
 Issue count: `55`
@@ -19,9 +19,9 @@ Sorted by last updated date, newest first.
 
 | Updated | Repository | Issue | Author | Labels |
 | --- | --- | --- | --- | --- |
+| 2026-06-03 07:18 UTC | `plone/volto` | [#4756 `@plone/contents` - Enhance Contents View](https://github.com/plone/volto/issues/4756) | `sneridagh` | `03 type: feature (plip)`, `43 lvl: complex` |
 | 2026-06-02 09:29 UTC | `plone/volto` | [#7519 \[Aurora\] - Make APISUFFIX configurable via environment variables](https://github.com/plone/volto/issues/7519) | `avoinea` | `01 type: bug`, `43 lvl: complex`, `30 needs: triage` |
 | 2026-06-02 09:23 UTC | `plone/volto` | [#6638 Plone 7 frontend (Aurora)](https://github.com/plone/volto/issues/6638) | `sneridagh` | `03 type: feature (plip)`, `43 lvl: complex` |
-| 2026-05-19 08:45 UTC | `plone/volto` | [#4756 `@plone/contents` - Enhance Contents View](https://github.com/plone/volto/issues/4756) | `sneridagh` | `03 type: feature (plip)`, `43 lvl: complex` |
 | 2026-05-19 08:45 UTC | `plone/volto` | [#4332 Quanta](https://github.com/plone/volto/issues/4332) | `sneridagh` | `03 type: feature (plip)`, `43 lvl: complex` |
 | 2026-05-19 08:45 UTC | `plone/volto` | [#4206 Quanta Toolbar](https://github.com/plone/volto/issues/4206) | `sneridagh` | `03 type: feature (plip)`, `43 lvl: complex` |
 | 2026-05-18 11:59 UTC | `plone/volto` | [#3277 Trigger 6-dev documentation build on every push to master in Volto](https://github.com/plone/volto/issues/3277) | `sneridagh` | `33 needs: docs`, `43 lvl: complex` |
