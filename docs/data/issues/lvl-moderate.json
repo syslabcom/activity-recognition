@@ -1,7 +1,7 @@
 {
   "version": 1,
   "status": "success",
-  "generated_at": "2026-06-03T12:33:50Z",
+  "generated_at": "2026-06-03T14:34:03Z",
   "organization": "plone",
   "state": "open",
   "slug": "lvl-moderate",
@@ -11,6 +11,42 @@
   ],
   "issue_count": 73,
   "issues": [
+    {
+      "id": 2297234474,
+      "number": 3953,
+      "title": "PLIP: Start separating Classic UI code from the core",
+      "html_url": "https://github.com/plone/Products.CMFPlone/issues/3953",
+      "repository_full_name": "plone/Products.CMFPlone",
+      "repository_url": "https://api.github.com/repos/plone/Products.CMFPlone",
+      "state": "open",
+      "created_at": "2024-05-15T08:40:27Z",
+      "updated_at": "2026-06-03T12:58:21Z",
+      "comments": 25,
+      "author": {
+        "login": "tisto",
+        "html_url": "https://github.com/tisto"
+      },
+      "assignees": [
+        "jensens"
+      ],
+      "labels": [
+        "31 needs: help",
+        "99 tag: cleanup",
+        "03 type: feature (plip)",
+        "13 prio: normal",
+        "42 lvl: moderate",
+        "53 target: major",
+        "99 tag: Classic UI"
+      ],
+      "contributor_summary": {
+        "status": "available",
+        "generated_at": "2026-06-02T13:21:12Z",
+        "source_issue_updated_at": "2026-05-30T20:43:32Z",
+        "model": "gpt-4o-mini",
+        "summary_markdown": "```markdown\n## What this issue is about\nThis issue focuses on separating Classic UI code from the core Plone codebase. The goal is to keep the API and business logic within core packages while moving Classic UI templates and logic to a dedicated package, `plone.classicui`.\n\n## What needs to be done\n- Create a `plone.classicui` package to contain Classic UI elements.\n- Gradually move Classic UI-specific code to `plone.app.layout`, ensuring backward compatibility.\n- Maintain integration so that existing functionality remains intact while allowing for easier code maintenance and reuse.\n\n## Helpful background\nThis change aims to enhance code cleanliness and maintainability by reducing duplication and preparing for a smaller core for headless configurations in Plone 7. Discussions around the specifics are ongoing, and there's no consensus on some details, such as the structure of the packages. Therefore, check ongoing updates for clarity.\n\n## Good first steps\n1. Familiarize yourself with the current `Products.CMFPlone` structure and the planned `plone.classicui`.\n2. Look at existing templates in the codebase, particularly those referenced in comments.\n3. Consider contributing to discussions or issues flagged in the repository for clarity on your tasks.\n4. Be prepared for testing changes and updating documentation as needed.\n```",
+        "path": "data/issues/summaries/plone/Products.CMFPlone/3953.json"
+      }
+    },
     {
       "id": 3102884999,
       "number": 7159,
@@ -74,42 +110,6 @@
         "model": "gpt-4o-mini",
         "summary_markdown": "## What this issue is about\nThis issue addresses the absence of release notes and a change log in the documentation for the \"Seven\" component within the Volto project. The documentation build tool, Sphinx, is issuing warnings because it cannot find the necessary files.\n\n## What needs to be done\nWe need to create and include release notes or a change log for the \"Seven\" component in the documentation. This will help inform users about updates and changes in the project.\n\n## Helpful background\nRelease notes summarize the changes made in a software release, providing users insight into updates, fixes, and enhancements. Proper documentation is crucial for user orientation and aids in maintaining project transparency.\n\n## Good first steps\n1. Familiarize yourself with the existing documentation structure, especially the sections related to release notes.\n2. Check the project's GitHub repository for any existing documentation on release notes to avoid duplicating work.\n3. If you're new to contributing, consider reaching out in the comments or via direct messages for guidance from existing contributors or maintainers.\n4. Review any related discussions or comments to understand context and expectations.\n5. Start drafting the release notes based on recent changes in the project, and be prepared for review and feedback before finalizing.",
         "path": "data/issues/summaries/plone/volto/7409.json"
-      }
-    },
-    {
-      "id": 2297234474,
-      "number": 3953,
-      "title": "PLIP: Start separating Classic UI code from the core",
-      "html_url": "https://github.com/plone/Products.CMFPlone/issues/3953",
-      "repository_full_name": "plone/Products.CMFPlone",
-      "repository_url": "https://api.github.com/repos/plone/Products.CMFPlone",
-      "state": "open",
-      "created_at": "2024-05-15T08:40:27Z",
-      "updated_at": "2026-05-30T20:43:32Z",
-      "comments": 25,
-      "author": {
-        "login": "tisto",
-        "html_url": "https://github.com/tisto"
-      },
-      "assignees": [
-        "jensens"
-      ],
-      "labels": [
-        "31 needs: help",
-        "99 tag: cleanup",
-        "03 type: feature (plip)",
-        "13 prio: normal",
-        "42 lvl: moderate",
-        "53 target: major",
-        "99 tag: Classic UI"
-      ],
-      "contributor_summary": {
-        "status": "available",
-        "generated_at": "2026-06-02T13:21:12Z",
-        "source_issue_updated_at": "2026-05-30T20:43:32Z",
-        "model": "gpt-4o-mini",
-        "summary_markdown": "```markdown\n## What this issue is about\nThis issue focuses on separating Classic UI code from the core Plone codebase. The goal is to keep the API and business logic within core packages while moving Classic UI templates and logic to a dedicated package, `plone.classicui`.\n\n## What needs to be done\n- Create a `plone.classicui` package to contain Classic UI elements.\n- Gradually move Classic UI-specific code to `plone.app.layout`, ensuring backward compatibility.\n- Maintain integration so that existing functionality remains intact while allowing for easier code maintenance and reuse.\n\n## Helpful background\nThis change aims to enhance code cleanliness and maintainability by reducing duplication and preparing for a smaller core for headless configurations in Plone 7. Discussions around the specifics are ongoing, and there's no consensus on some details, such as the structure of the packages. Therefore, check ongoing updates for clarity.\n\n## Good first steps\n1. Familiarize yourself with the current `Products.CMFPlone` structure and the planned `plone.classicui`.\n2. Look at existing templates in the codebase, particularly those referenced in comments.\n3. Consider contributing to discussions or issues flagged in the repository for clarity on your tasks.\n4. Be prepared for testing changes and updating documentation as needed.\n```",
-        "path": "data/issues/summaries/plone/Products.CMFPlone/3953.json"
       }
     },
     {
@@ -2284,10 +2284,10 @@
   "message": null,
   "workflow": {
     "repository": "syslabcom/activity-recognition",
-    "run_id": "26884999677",
-    "run_number": "1169",
+    "run_id": "26891794998",
+    "run_number": "1170",
     "attempt": "1",
-    "url": "https://github.com/syslabcom/activity-recognition/actions/runs/26884999677",
-    "sha": "3551d6b74daa53d49dad109c7f31c1008e02f98a"
+    "url": "https://github.com/syslabcom/activity-recognition/actions/runs/26891794998",
+    "sha": "9fc4ffa7f549a401d354e6c7a829b76121ad21e0"
   }
 }
