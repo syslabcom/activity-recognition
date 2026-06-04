@@ -1,7 +1,7 @@
 {
   "version": 1,
   "status": "success",
-  "generated_at": "2026-06-04T09:22:35Z",
+  "generated_at": "2026-06-04T11:06:27Z",
   "organization": "plone",
   "state": "open",
   "slug": "lvl-complex",
@@ -9,38 +9,64 @@
   "required_labels": [
     "43 lvl: complex"
   ],
-  "issue_count": 55,
+  "issue_count": 53,
   "issues": [
     {
-      "id": 1707781588,
-      "number": 4756,
-      "title": "`@plone/contents` - Enhance Contents View",
-      "html_url": "https://github.com/plone/volto/issues/4756",
-      "repository_full_name": "plone/volto",
-      "repository_url": "https://api.github.com/repos/plone/volto",
+      "id": 4587545318,
+      "number": 27,
+      "title": "Search the control panel to find a setting",
+      "html_url": "https://github.com/plone/aurora/issues/27",
+      "repository_full_name": "plone/aurora",
+      "repository_url": "https://api.github.com/repos/plone/aurora",
       "state": "open",
-      "created_at": "2023-05-12T14:57:52Z",
-      "updated_at": "2026-06-03T07:18:07Z",
-      "comments": 8,
+      "created_at": "2025-07-31T10:16:24Z",
+      "updated_at": "2026-06-04T09:34:42Z",
+      "comments": 11,
       "author": {
-        "login": "sneridagh",
-        "html_url": "https://github.com/sneridagh"
+        "login": "ksuess",
+        "html_url": "https://github.com/ksuess"
       },
-      "assignees": [
-        "pnicolli",
-        "giuliaghisini"
-      ],
+      "assignees": [],
       "labels": [
-        "03 type: feature (plip)",
+        "43 lvl: complex",
+        "discussion",
+        "30 needs: triage"
+      ],
+      "contributor_summary": {
+        "status": "available",
+        "generated_at": "2026-06-04T11:06:32Z",
+        "source_issue_updated_at": "2026-06-04T09:34:42Z",
+        "model": "gpt-4o-mini",
+        "summary_markdown": "```markdown\n## What this issue is about\nThis issue proposes adding a search feature to the control panel in Plone, allowing users to find specific settings easily, similar to the search functionality in macOS's System Settings. The goal is to enhance user experience by enabling direct searches for settings.\n\n## What needs to be done\nWe need to implement a search functionality that allows users to type in setting names and receive results that specify which control panels contain them. Discussion suggests that considerable thought is needed regarding the implementation and design.\n\n## Helpful background\nCurrent conversations reveal that the search should not only filter control panel names but should actually match specific settings with relevant control panels. This feature could involve lazy loading of schemas and efficient caching to enhance performance.\n\n## Good first steps\n1. **Familiarize Yourself**: Review the [First-time contributors](https://6.docs.plone.org/contributing/first-time.html) guidelines and the key sections on what to avoid.\n2. **Join the Discussion**: Engage in comments to clarify any doubts about the expected implementation.\n3. **Prototype**: Consider starting with a simple text input to filter existing panels and gradually expand.\n4. **Testing**: Ensure any code written passes existing tests locally before submitting for review.\n```",
+        "path": "data/issues/summaries/plone/aurora/27.json"
+      }
+    },
+    {
+      "id": 4587545111,
+      "number": 26,
+      "title": "Implement non-schema-driven control panels",
+      "html_url": "https://github.com/plone/aurora/issues/26",
+      "repository_full_name": "plone/aurora",
+      "repository_url": "https://api.github.com/repos/plone/aurora",
+      "state": "open",
+      "created_at": "2025-07-31T10:14:36Z",
+      "updated_at": "2026-06-04T09:34:40Z",
+      "comments": 0,
+      "author": {
+        "login": "ksuess",
+        "html_url": "https://github.com/ksuess"
+      },
+      "assignees": [],
+      "labels": [
         "43 lvl: complex"
       ],
       "contributor_summary": {
         "status": "available",
-        "generated_at": "2026-06-03T08:40:03Z",
-        "source_issue_updated_at": "2026-06-03T07:18:07Z",
+        "generated_at": "2026-06-04T11:06:40Z",
+        "source_issue_updated_at": "2026-06-04T09:34:40Z",
         "model": "gpt-4o-mini",
-        "summary_markdown": "```markdown\n## What this issue is about\nThis issue addresses the enhancement and refactoring of the `contents` view in Plone, moving it to a new core package called `@plone/contents`. This aims to improve portability and usability, allowing it to be utilized in different frameworks.\n\n## What needs to be done\nThe main tasks include:\n- Refactoring `Contents.jsx` and its components using the Tanstack table library.\n- Implementing better accessibility by using `react-aria-components`.\n- Migrating to TypeScript and adopting `@plone/client` for API requests.\n  \nThe exact discussion on when this will be implemented remains vague, with indications it might be included in Plone 6.2.\n\n## Helpful background\nThis is part of a Plone Improvement Proposal (PLIP). The goal is to make the contents view more user-friendly and functional, ultimately focusing on a better user experience (UX). \n\nFor more context, check existing related issues: [#5620](https://github.com/plone/volto/issues/5620), [#5677](https://github.com/plone/volto/issues/5677).\n\n## Good first steps\n1. Familiarize yourself with the existing `contents` view and its current implementation.\n2. Explore the active discussions in the comments and linked issues for guidance.\n3. Consider reviewing the docs on using `@plone/contents`, `react-aria-components`, and the Tanstack library.\n4. Engage with the team by asking questions or sharing your thoughts on the direction of this enhancement.\n```",
-        "path": "data/issues/summaries/plone/volto/4756.json"
+        "summary_markdown": "## What this issue is about\nThis issue focuses on implementing non-schema-driven control panels for the Plone Aurora project. Control panels are user interfaces that allow users to manage various settings and configurations. The aim is to create flexible options that are not bound to a specific data structure.\n\n## What needs to be done\nThe task involves developing new control panels for add-ons, user management, group settings, and potentially more. As the discussion is currently sparse, further clarification on specific requirements may be needed as you dive into the implementation.\n\n## Helpful background\nControl panels play an essential role in the Plone ecosystem, enabling users to manage configurations effectively. It's important to understand existing control panel structures within Plone to guide your development.\n\n## Good first steps\n1. Familiarize yourself with the existing control panels in the Plone Aurora project.\n2. Review the project's documentation to understand the setup and requirements for new control panels.\n3. Consider starting with one specific panel (like users or groups) to streamline your approach.\n4. Feel free to ask questions in the issue discussion for clarity or guidance as needed. \n\nYour contributions to this complex but rewarding task are welcome!",
+        "path": "data/issues/summaries/plone/aurora/26.json"
       }
     },
     {
@@ -71,35 +97,6 @@
         "model": "gpt-4o-mini",
         "summary_markdown": "```markdown\n## What this issue is about\nThis issue focuses on making the API suffix used in backend calls for Volto configurable via environment variables. Currently, the hardcoded `/++api++` suffix can limit compatibility with other Plone RestAPI-compatible backends like Nick CMS and Guillotina.\n\n## What needs to be done\nWe need to implement functionality in `@plone/client` that allows the API suffix to be overridden through an environment variable, likely to be named `PLONE_API_SUFFIX`. This will help streamline integration with different backends and enhance flexibility.\n\n## Helpful background\nThere is existing functionality in Volto for handling legacy traversal using the `RAZZLE_LEGACY_TRAVERSE` environment variable, but a similar solution is required for `@plone/client`. The current workaround involves custom initialization in a PloneClient setup, which is not user-friendly.\n\n## Good first steps\n1. Review the existing Volto documentation on contributing and first-time contributions.\n2. Familiarize yourself with the `@plone/client` by exploring its current implementation.\n3. Consider how to effectively incorporate an environment variable for configuration.\n4. Engage in discussions with other contributors in the comments for further insights or assistance.\n  \nFeel free to ask questions if anything is unclear!\n```",
         "path": "data/issues/summaries/plone/volto/7519.json"
-      }
-    },
-    {
-      "id": 2825746317,
-      "number": 6638,
-      "title": "Plone 7 frontend (Aurora)",
-      "html_url": "https://github.com/plone/volto/issues/6638",
-      "repository_full_name": "plone/volto",
-      "repository_url": "https://api.github.com/repos/plone/volto",
-      "state": "open",
-      "created_at": "2025-02-02T11:20:00Z",
-      "updated_at": "2026-06-02T09:23:15Z",
-      "comments": 9,
-      "author": {
-        "login": "sneridagh",
-        "html_url": "https://github.com/sneridagh"
-      },
-      "assignees": [],
-      "labels": [
-        "03 type: feature (plip)",
-        "43 lvl: complex"
-      ],
-      "contributor_summary": {
-        "status": "available",
-        "generated_at": "2026-06-02T09:30:41Z",
-        "source_issue_updated_at": "2026-06-02T09:23:15Z",
-        "model": "gpt-4o-mini",
-        "summary_markdown": "## What this issue is about\nThis issue proposes a modernization of Plone's frontend, titled \"Plone 7 frontend (Aurora).\" The goal is to update Plone Volto by incorporating the latest standards and best practices for React development, reflecting changes in the React ecosystem over the past eight years.\n\n## What needs to be done\nTo implement this modernization, we need:\n- Transition to a modern bundler (like Vite) and use React Router 7.\n- Refactor components by replacing old libraries.\n- Establish a pluggable CMS UI.\n- Improve theming and create a unified block model for better flexibility.\n  \nDiscussions around the specific implementation and interplay between the public UI and CMS are ongoing, and certain details remain unclear.\n\n## Helpful background\nThe issue reflects evolving practices in React, emphasizing compatibility with existing Volto sites. As mentioned, documentation is essential, with a strong preference for using TypeScript and integrating testing practices, especially for accessibility.\n\n## Good first steps\n1. Familiarize yourself with the proposed changes in the linked PLIPs and discussions.\n2. Explore the existing Volto architecture to understand its components.\n3. Review TypeScript resources to prepare for coding contributions.\n4. Engage in ongoing conversations in the comments for clarity on implementation aspects.",
-        "path": "data/issues/summaries/plone/volto/6638.json"
       }
     },
     {
@@ -588,36 +585,6 @@
       }
     },
     {
-      "id": 3279893272,
-      "number": 7259,
-      "title": "Search the control panel to find a setting",
-      "html_url": "https://github.com/plone/volto/issues/7259",
-      "repository_full_name": "plone/volto",
-      "repository_url": "https://api.github.com/repos/plone/volto",
-      "state": "open",
-      "created_at": "2025-07-31T10:16:24Z",
-      "updated_at": "2026-02-01T13:59:16Z",
-      "comments": 11,
-      "author": {
-        "login": "ksuess",
-        "html_url": "https://github.com/ksuess"
-      },
-      "assignees": [],
-      "labels": [
-        "43 lvl: complex",
-        "discussion",
-        "30 needs: triage"
-      ],
-      "contributor_summary": {
-        "status": "available",
-        "generated_at": "2026-04-09T11:34:54Z",
-        "source_issue_updated_at": "2026-02-01T13:59:16Z",
-        "model": "gpt-4o-mini",
-        "summary_markdown": "```markdown\n## What this issue is about\nThis issue proposes adding a search feature in the Plone control panel to allow users to locate specific settings quickly, similar to the search function in macOS's System Settings. The idea is still in the discussion phase, and there are various viewpoints on how to implement it effectively.\n\n## What needs to be done\nWe need to design a functionality that lets users search for specific settings and see which control panels contain them. There is currently no clear implementation path, and discussions suggest starting with a simple search bar that filters existing settings, eventually moving towards a more advanced solution.\n\n## Helpful background\nContributors have mentioned the importance of both global and filtered search options within the control panel. There is no existing widget that mimics the desired functionality, but notable methods include indexing fields from control panel forms.\n\n## Good first steps\n1. Familiarize yourself with the discussions in the issue. \n2. Check the [Contributing Guide for Plone](https://6.docs.plone.org/contributing/index.html) and the [Volto contributions](https://6.docs.plone.org/contributing/volto.html) to understand the contribution process.\n3. Consider trying to implement a basic search feature that filters through current settings; additional complexity can be added later.\n4. Engage with existing contributors for feedback and guidance throughout the development process.\n```",
-        "path": "data/issues/summaries/plone/volto/7259.json"
-      }
-    },
-    {
       "id": 2092748101,
       "number": 1611,
       "title": "Automate screenshots and videos",
@@ -737,34 +704,6 @@
         "model": "gpt-4o-mini",
         "summary_markdown": "## What this issue is about\nThis issue focuses on implementing the view for the Listing block in the Plone Volto project. It is designated as part of a more complex future project known as \"Seven.\"\n\n## What needs to be done\nThe specific tasks for this issue are currently unclear and may involve a particular variation of the Listing block. There are indications that the author, [ebrehault](https://github.com/ebrehault), is already working on it, so coordination with them is essential to avoid duplicated effort.\n\n## Helpful background\nDue to the complexity labeled in this issue, it may not be suitable for first-time contributors. Discussions have pointed out that there are relevant existing issues (e.g., #4478 on listing/teaser styles), but details about these connections remain vague. Familiarity with the overall project and its guidelines is recommended.\n\n## Good first steps\nIf you're interested in contributing:\n1. Review the [First-time contributors](https://6.docs.plone.org/contributing/first-time.html) guidelines.\n2. Familiarize yourself with [Contributing to Plone](https://6.docs.plone.org/contributing/index.html) and [Contributing to Volto](https://6.docs.plone.org/contributing/volto.html).\n3. Consider reaching out to [ebrehault](https://github.com/ebrehault) for insights before proceeding, as clear tasks for this issue may need further clarification.",
         "path": "data/issues/summaries/plone/volto/7527.json"
-      }
-    },
-    {
-      "id": 3279888232,
-      "number": 7258,
-      "title": "Implement non-schema-driven control panels",
-      "html_url": "https://github.com/plone/volto/issues/7258",
-      "repository_full_name": "plone/volto",
-      "repository_url": "https://api.github.com/repos/plone/volto",
-      "state": "open",
-      "created_at": "2025-07-31T10:14:36Z",
-      "updated_at": "2026-01-07T08:34:59Z",
-      "comments": 0,
-      "author": {
-        "login": "ksuess",
-        "html_url": "https://github.com/ksuess"
-      },
-      "assignees": [],
-      "labels": [
-        "43 lvl: complex"
-      ],
-      "contributor_summary": {
-        "status": "available",
-        "generated_at": "2026-04-09T12:27:07Z",
-        "source_issue_updated_at": "2026-01-07T08:34:59Z",
-        "model": "gpt-4o-mini",
-        "summary_markdown": "## What this issue is about\nThis issue focuses on implementing non-schema-driven control panels in the Plone Volto project. Control panels are settings interfaces that allow users to manage configuration options without being tied to specific data models (schemas). This could enhance flexibility and user customization.\n\n## What needs to be done\nYou will need to design and implement these control panels to manage different aspects, such as add-ons, users, and groups. Since the issue is open and there is limited detail and no specific guidance in the comments, you might encounter some ambiguity in requirements.\n\n## Helpful background\nUnderstanding control panels in Plone is important for this task. They allow administrators to adjust settings easily. Non-schema-driven panels can provide a more fluid user experience by enabling custom configurations without strict data structures.\n\n## Good first steps\n1. **Familiarize yourself with existing control panels** in the Volto codebase to see how they are currently structured.\n2. **Review the existing documentation** on Plone and Volto to better understand implementation context.\n3. **Reach out to the author, [ksuess](https://github.com/ksuess)**, or the community for clarification on any uncertainties.\n4. **Consider drafting a proposal** for your approach before starting implementation, as this could help clarify expectations.",
-        "path": "data/issues/summaries/plone/volto/7258.json"
       }
     },
     {
@@ -1687,10 +1626,10 @@
   "message": null,
   "workflow": {
     "repository": "syslabcom/activity-recognition",
-    "run_id": "26942942851",
-    "run_number": "1182",
+    "run_id": "26947912186",
+    "run_number": "1183",
     "attempt": "1",
-    "url": "https://github.com/syslabcom/activity-recognition/actions/runs/26942942851",
-    "sha": "a0d3251656c101a23785c815379f0a88b4e82bf9"
+    "url": "https://github.com/syslabcom/activity-recognition/actions/runs/26947912186",
+    "sha": "a35890dda8b5ad4785a269985514fc957ea6b1d8"
   }
 }
