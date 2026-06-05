@@ -1,7 +1,7 @@
 {
   "version": 1,
   "status": "success",
-  "generated_at": "2026-06-05T07:33:13Z",
+  "generated_at": "2026-06-05T09:11:52Z",
   "organization": "plone",
   "state": "open",
   "slug": "lvl-moderate",
@@ -14,13 +14,13 @@
     {
       "id": 2297234474,
       "number": 3953,
-      "title": "PLIP: Start separating Classic UI code from the core",
+      "title": "PLIP: Start separating Blicca (Classic UI) code from the core",
       "html_url": "https://github.com/plone/Products.CMFPlone/issues/3953",
       "repository_full_name": "plone/Products.CMFPlone",
       "repository_url": "https://api.github.com/repos/plone/Products.CMFPlone",
       "state": "open",
       "created_at": "2024-05-15T08:40:27Z",
-      "updated_at": "2026-06-03T12:58:21Z",
+      "updated_at": "2026-06-05T08:12:01Z",
       "comments": 25,
       "author": {
         "login": "tisto",
@@ -2284,10 +2284,10 @@
   "message": null,
   "workflow": {
     "repository": "syslabcom/activity-recognition",
-    "run_id": "27001902952",
-    "run_number": "1197",
+    "run_id": "27006251098",
+    "run_number": "1198",
     "attempt": "1",
-    "url": "https://github.com/syslabcom/activity-recognition/actions/runs/27001902952",
-    "sha": "90827526bec4370a59f9e7559f5be9fb55c8b54f"
+    "url": "https://github.com/syslabcom/activity-recognition/actions/runs/27006251098",
+    "sha": "4e4441b7b5bd4b3939df056a54b3419b38822469"
   }
 }
