@@ -1,30 +1,34 @@
 {
   "version": 1,
   "status": "success",
-  "generated_at": "2026-06-05T16:50:39Z",
+  "generated_at": "2026-06-12T17:02:32Z",
   "source_issue": {
     "id": 4598286545,
     "number": 101,
     "title": "Polish documentation renames, and overall shape",
     "html_url": "https://github.com/plone/aurora/issues/101",
     "repository_full_name": "plone/aurora",
-    "updated_at": "2026-06-05T16:17:22Z",
+    "updated_at": "2026-06-07T09:43:49Z",
     "labels": [
-      "41 lvl: easy"
+      "31 needs: help",
+      "33 needs: docs",
+      "41 lvl: easy",
+      "99 tag: good first issue",
+      "99 tag: hacktoberfest"
     ],
-    "comments": 3
+    "comments": 7
   },
   "ai": {
     "provider": "openai",
     "model": "gpt-4o-mini"
   },
-  "summary_markdown": "```markdown\n## What this issue is about\nThis issue focuses on polishing the documentation for the Plone Aurora project, especially following significant renaming changes made in [pull request #100](https://github.com/plone/aurora/pull/100). The goal is to ensure that the documentation reflects the current state and correct terminology.\n\n## What needs to be done\n- Revise the \"Contributing...\" section, which still contains elements from the earlier Volto documentation. \n- Correct any outdated terms, such as \"Seven,\" that may still appear.\n- Ensure that all sections are clear and accurately represent the project's current status.\n\n## Helpful background\nThe documentation can be found [here](https://plone-aurora.readthedocs.io/). It’s important for contributors to have clear guidance, particularly in sections related to contributing to the project. Review the existing content for any areas that might still misrepresent the intended direction.\n\n## Good first steps\n1. Review the current documentation and identify sections that need updates, especially under \"Contributing...\".\n2. Look out for outdated terms or references that need correction.\n3. Share your findings in a comment or submit a pull request with your proposed changes.\n\nFeel free to reach out if you have questions or need help!\n```",
+  "summary_markdown": "```markdown\n## What this issue is about\nThis issue involves polishing the documentation for the Plone Aurora project after recent renames. Following earlier changes, some sections, particularly \"Contributing,\" still reflect previous terminology from Volto.\n\n## What needs to be done\n- Review and update the \"Contributing\" section of the documentation to better align with the current state of Plone Aurora.\n- Ensure that all links, especially to Storybook, are accurate and updated.\n\n## Helpful background\nThe documentation has undergone some significant updates, but adjustments are still needed. The recent discussion highlighted that some references, like \"Seven,\" were outdated. It’s essential to ensure that all terms and links are current for clarity and accuracy.\n\n## Good first steps\n1. Check the current documentation at [Plone Aurora documentation](https://plone-aurora.readthedocs.io/).\n2. Focus on the \"Contributing\" section to identify outdated references.\n3. Validate all links, especially those redirecting to Storybook.\n4. Consider reviewing the issue discussions for any additional insights or ambiguity, as current discussions may not clarify all aspects.\n5. Feel free to ask questions on this issue or in discussions if anything is unclear!\n```",
   "workflow": {
     "repository": "syslabcom/activity-recognition",
-    "run_id": "27028061404",
-    "run_number": "1202",
+    "run_id": "27430579871",
+    "run_number": "1324",
     "attempt": "1",
-    "url": "https://github.com/syslabcom/activity-recognition/actions/runs/27028061404",
-    "sha": "cbcffe0ebf0e986c4caa60882687f631b534eee3"
+    "url": "https://github.com/syslabcom/activity-recognition/actions/runs/27430579871",
+    "sha": "465ac15d2219fc7e961c8c5932cf96668e93d9d9"
   }
 }
