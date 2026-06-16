@@ -1,14 +1,14 @@
 {
   "version": 1,
   "status": "success",
-  "generated_at": "2026-06-09T15:17:19Z",
+  "generated_at": "2026-06-16T16:34:01Z",
   "source_issue": {
     "id": 2297234474,
     "number": 3953,
     "title": "PLIP: Start separating Blicca (Classic UI) code from the core",
     "html_url": "https://github.com/plone/Products.CMFPlone/issues/3953",
     "repository_full_name": "plone/Products.CMFPlone",
-    "updated_at": "2026-06-08T06:03:34Z",
+    "updated_at": "2026-06-10T09:25:38Z",
     "labels": [
       "31 needs: help",
       "99 tag: cleanup",
@@ -24,13 +24,13 @@
     "provider": "openai",
     "model": "gpt-4o-mini"
   },
-  "summary_markdown": "```markdown\n## What this issue is about\nThis issue addresses the gradual separation of the Classic UI code from the core of Plone, specifically by moving templates and view logic into the `plone.app.layout` package. This is aimed at making the code cleaner and easier to maintain while optimizing it for users who utilize the Volto frontend.\n\n## What needs to be done\nContributors should help with moving specific Classic UI components into the new `plone.app.layout` package. The goal is to have `plone.classicui` focus on being a lightweight distribution, while ensuring compatibility for existing users. Discussions are ongoing regarding the exact structure and components to be moved.\n\n## Helpful background\nThe need for this change stems from a desire to reduce code duplication and size. Currently, there is some uncertainty about which templates will exactly be moved and how to proceed to maintain compatibility with future versions of Plone (like Plone 7). \n\n## Good first steps\n1. Familiarize yourself with the recent discussions in this issue and related PLIPs.\n2. Review the existing Classic UI templates to understand which ones might be applicable for transfer.\n3. Participate in discussions about how best to implement this transition, especially regarding backward compatibility.\n4. Consider helping by drafting proposals for specific packages or templates to be moved.\n5. Be prepared for testing and reviewing any changes made as part of this issue’s progress.\n```",
+  "summary_markdown": "```markdown\n## What this issue is about\nThis issue, titled \"PLIP: Start separating Blicca (Classic UI) code from the core,\" aims to cleanly move the Classic UI templates and view logic from the core Plone package (`Products.CMFPlone`) to a new package called `plone.classicui`. This helps streamline the codebase by creating a separation between the core logic and the user interface.\n\n## What needs to be done\nThe proposal includes:\n- Moving Classic UI-specific code to `plone.app.layout` while maintaining backward compatibility.\n- Creating the `plone.classicui` package that handles distribution without unnecessary dependencies.\n- Ensuring that the movement of templates does not lose functionality for existing users.\n\nThere are ongoing discussions and some disagreement about the exact implementation details and package organization.\n\n## Helpful background\nCommunity conversations indicate that this change is intended to make code maintenance easier and reduce memory usage for headless systems using the Volto frontend. However, the discussions around package specifics and what should be moved remain unresolved, so clarity on these elements is essential.\n\n## Good first steps\n1. **Read through existing comments in the issue.** Familiarize yourself with ongoing discussions and thoughts from other contributors.\n2. **Explore existing templates and view logic** related to Classic UI to understand what might need to be moved.\n3. **Consider testing the movement of a specific template** to better understand how the changes might be structured.\n4. **Join discussions or ask questions** for any clarifications you may need to get involved.\n```",
   "workflow": {
     "repository": "syslabcom/activity-recognition",
-    "run_id": "27215506369",
-    "run_number": "1275",
+    "run_id": "27632785594",
+    "run_number": "1390",
     "attempt": "1",
-    "url": "https://github.com/syslabcom/activity-recognition/actions/runs/27215506369",
-    "sha": "d0b76306c4c128d14a1b2e34b1f40dca0d750629"
+    "url": "https://github.com/syslabcom/activity-recognition/actions/runs/27632785594",
+    "sha": "0d69e40fac46158057f5eac428c065b5e9526b32"
   }
 }
