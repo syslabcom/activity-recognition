@@ -1,7 +1,7 @@
 ---
 title: "Plone issue list — Level: Complex"
 permalink: "/issues/lvl-complex/"
-generated_at: "2026-06-22T13:01:33Z"
+generated_at: "2026-06-22T15:41:00Z"
 organization: "plone"
 issue_count: 53
 required_labels:
@@ -10,7 +10,7 @@ required_labels:
 
 # Plone issue list — Level: Complex
 
-Generated: `2026-06-22T13:01:33Z`  
+Generated: `2026-06-22T15:41:00Z`  
 Organization: `plone`  
 Required label: `43 lvl: complex`  
 Issue count: `53`
@@ -19,6 +19,7 @@ Sorted by last updated date, newest first.
 
 | Updated | Repository | Issue | Author | Labels |
 | --- | --- | --- | --- | --- |
+| 2026-06-22 15:35 UTC | `plone/volto` | [#5300 PLIP: Keyword Manager](https://github.com/plone/volto/issues/5300) | `tisto` | `03 type: feature (plip)`, `43 lvl: complex` |
 | 2026-06-04 09:34 UTC | `plone/aurora` | [#27 Search the control panel to find a setting](https://github.com/plone/aurora/issues/27) | `ksuess` | `43 lvl: complex`, `discussion`, `30 needs: triage` |
 | 2026-06-04 09:34 UTC | `plone/aurora` | [#26 Implement non-schema-driven control panels](https://github.com/plone/aurora/issues/26) | `ksuess` | `43 lvl: complex` |
 | 2026-06-02 09:29 UTC | `plone/volto` | [#7519 \[Aurora\] - Make APISUFFIX configurable via environment variables](https://github.com/plone/volto/issues/7519) | `avoinea` | `01 type: bug`, `43 lvl: complex`, `30 needs: triage` |
@@ -34,7 +35,6 @@ Sorted by last updated date, newest first.
 | 2026-05-18 10:24 UTC | `plone/volto` | [#1516 Metadata block or easy way to insert document metadata inside text block](https://github.com/plone/volto/issues/1516) | `avoinea` | `04 type: enhancement`, `43 lvl: complex`, `99 tag: sprint` |
 | 2026-03-23 19:04 UTC | `plone/documentation` | [#1902 Create Plone site administrator guide](https://github.com/plone/documentation/issues/1902) | `stevepiercy` | `05 type: question`, `43 lvl: complex` |
 | 2026-03-23 17:35 UTC | `plone/Products.CMFPlone` | [#1976 z3c.form fields with a default value cannot be set to None or ""](https://github.com/plone/Products.CMFPlone/issues/1976) | `thet` | `01 type: bug`, `31 needs: help`, `12 prio: high`, `21 status: confirmed`, `43 lvl: complex` |
-| 2026-03-19 20:37 UTC | `plone/volto` | [#5300 PLIP: Keyword Manager](https://github.com/plone/volto/issues/5300) | `tisto` | `03 type: feature (plip)`, `43 lvl: complex` |
 | 2026-02-14 00:25 UTC | `plone/Products.CMFPlone` | [#4273 PLIP: Make Products.CMFEditions a Core Add-on](https://github.com/plone/Products.CMFPlone/issues/4273) | `jensens` | `03 type: feature (plip)`, `43 lvl: complex`, `52 target: minor`, `99 tag:backend` |
 | 2026-02-03 19:32 UTC | `plone/Products.CMFPlone` | [#3987 Create User Manual with screenshots and videos for Plone 6](https://github.com/plone/Products.CMFPlone/issues/3987) | `stevepiercy` | `03 type: feature (plip)`, `43 lvl: complex` |
 | 2026-02-03 02:29 UTC | `plone/documentation` | [#2044 Include diazo documentation in Classic backend documentation](https://github.com/plone/documentation/issues/2044) | `erral` | `43 lvl: complex` |
