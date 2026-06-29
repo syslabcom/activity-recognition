@@ -1,7 +1,7 @@
 ---
 title: "Plone issue list — Level: Moderate"
 permalink: "/issues/lvl-moderate/"
-generated_at: "2026-06-29T00:51:54Z"
+generated_at: "2026-06-29T01:47:07Z"
 organization: "plone"
 issue_count: 73
 required_labels:
@@ -10,7 +10,7 @@ required_labels:
 
 # Plone issue list — Level: Moderate
 
-Generated: `2026-06-29T00:51:54Z`  
+Generated: `2026-06-29T01:47:07Z`  
 Organization: `plone`  
 Required label: `42 lvl: moderate`  
 Issue count: `73`
@@ -19,6 +19,7 @@ Sorted by last updated date, newest first.
 
 | Updated | Repository | Issue | Author | Labels |
 | --- | --- | --- | --- | --- |
+| 2026-06-29 01:19 UTC | `plone/volto` | [#7696 Add deprecation policy or guide to documentation](https://github.com/plone/volto/issues/7696) | `stevepiercy` | `04 type: enhancement`, `33 needs: docs`, `42 lvl: moderate`, `discussion` |
 | 2026-06-10 09:25 UTC | `plone/Products.CMFPlone` | [#3953 PLIP: Start separating Blicca (Classic UI) code from the core](https://github.com/plone/Products.CMFPlone/issues/3953) | `tisto` | `31 needs: help`, `99 tag: cleanup`, `03 type: feature (plip)`, `13 prio: normal`, `42 lvl: moderate`, `53 target: major`, `99 tag: Classic UI` |
 | 2026-06-02 09:29 UTC | `plone/volto` | [#7159 Build Storybook for a PR preview on `Aurora` branch](https://github.com/plone/volto/issues/7159) | `stevepiercy` | `04 type: enhancement`, `31 needs: help`, `33 needs: docs`, `42 lvl: moderate` |
 | 2026-06-02 09:29 UTC | `plone/volto` | [#7409 Docs - Aurora - Release Notes missing](https://github.com/plone/volto/issues/7409) | `stevepiercy` | `01 type: bug`, `33 needs: docs`, `42 lvl: moderate`, `30 needs: triage` |
@@ -32,7 +33,6 @@ Sorted by last updated date, newest first.
 | 2026-03-23 17:52 UTC | `plone/Products.CMFPlone` | [#2161 Zope-level language negotiation](https://github.com/plone/Products.CMFPlone/issues/2161) | `malthe` | `04 type: enhancement`, `31 needs: help`, `42 lvl: moderate` |
 | 2026-02-10 04:01 UTC | `plone/documentation` | [#1775 Conceptual guides > Component architecture needs to be completed](https://github.com/plone/documentation/issues/1775) | `stevepiercy` | `31 needs: help`, `33 needs: docs`, `42 lvl: moderate` |
 | 2026-01-29 13:32 UTC | `plone/documentation` | [#1730 Migrate content from v5 "Queries, Search And Indexing"](https://github.com/plone/documentation/issues/1730) | `stevepiercy` | `42 lvl: moderate`, `99 tag: Plone 6.x` |
-| 2025-12-30 03:08 UTC | `plone/volto` | [#7696 Add deprecation policy or guide to documentation](https://github.com/plone/volto/issues/7696) | `stevepiercy` | `04 type: enhancement`, `33 needs: docs`, `42 lvl: moderate`, `discussion` |
 | 2025-12-26 16:44 UTC | `plone/volto` | [#8 Live updates](https://github.com/plone/volto/issues/8) | `robgietema` | `04 type: enhancement`, `14 prio: low`, `21 status: confirmed`, `42 lvl: moderate` |
 | 2025-12-19 03:04 UTC | `plone/documentation` | [#1309 Move the `plone.behavior` readme into `plone/documentation`](https://github.com/plone/documentation/issues/1309) | `stevepiercy` | `31 needs: help`, `33 needs: docs`, `42 lvl: moderate`, `99 tag: backend` |
 | 2025-09-17 14:56 UTC | `plone/plone.org` | [#51 Implement Varnish in the plone.org stack](https://github.com/plone/plone.org/issues/51) | `ericof` | `04 type: enhancement`, `42 lvl: moderate` |
