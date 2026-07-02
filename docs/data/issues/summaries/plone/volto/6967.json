@@ -1,33 +1,33 @@
 {
   "version": 1,
   "status": "success",
-  "generated_at": "2026-04-09T12:26:03Z",
+  "generated_at": "2026-07-02T23:26:01Z",
   "source_issue": {
     "id": 2984135556,
     "number": 6967,
     "title": "Move videos from the User Manual to a CDN or YouTube",
     "html_url": "https://github.com/plone/volto/issues/6967",
     "repository_full_name": "plone/volto",
-    "updated_at": "2026-01-28T07:57:48Z",
+    "updated_at": "2026-07-02T22:11:16Z",
     "labels": [
       "04 type: enhancement",
       "31 needs: help",
       "43 lvl: complex",
       "06 type: plip task"
     ],
-    "comments": 4
+    "comments": 5
   },
   "ai": {
     "provider": "openai",
     "model": "gpt-4o-mini"
   },
-  "summary_markdown": "## What this issue is about\nThis issue discusses moving videos from the Plone user manual to an external hosting solution, like a Content Delivery Network (CDN) or YouTube. This is to reduce the repository's size, which currently contains videos that contribute significant disk usage.\n\n## What needs to be done\n1. **Audit** existing video assets in the documentation.\n2. **Select** a hosting option (CDN or YouTube).\n3. **Update** all references to the videos in the documentation.\n4. **Document** the recommended approach for future video uploads.\n\n## Helpful background\nThe current video storage contributes about 8MB to the repository size, which can hinder development. This issue is marked as a complex PLIP (Product Life-cycle Improvement Proposal) task, meaning it requires careful coordination among various teams within Plone, including Documentation, Admin, and Marketing.\n\n## Good first steps\n1. **Familiarize yourself** with Plone and its documentation systems.\n2. **Join discussions** with other contributors to understand hosting preferences or constraints.\n3. **Explore the GitHub link** on removing large files from history to grasp the complexities involved.\n4. **Be prepared** for potential coordination efforts if you plan to contribute.",
+  "summary_markdown": "```markdown\n## What this issue is about\nThis issue seeks to move videos and large assets from the Volto repository to a Content Delivery Network (CDN) or YouTube to reduce repository size and improve performance. Currently, these videos contribute to an unnecessary increase in disk usage, which could hinder development.\n\n## What needs to be done\nThe primary tasks include migrating existing video files to an external host and updating all relevant documentation to reflect this change. The approach for hosting (YouTube vs. CDN) needs to be decided in coordination with multiple teams (Documentation, Admin, Marketing).\n\n## Helpful background\nRecent discussions highlighted that including large files in version control negatively impacts repository performance. Using tools like Git Large File Storage (LFS) or DVC (Data Version Control) can help manage large assets while keeping the repository lean.\n\n## Good first steps\n1. Familiarize yourself with the issue discussions and existing comments.\n2. Engage with team members: Comment on this issue if you have insights or preferences about hosting options.\n3. Consider learning about Git LFS or DVC if you’re interested in large file management in repositories.\n4. Note that the complexity of this task makes it less suitable for new contributors, as it requires teamwork and coordination.\n```",
   "workflow": {
     "repository": "syslabcom/activity-recognition",
-    "run_id": "24190027102",
-    "run_number": "51",
+    "run_id": "28627956296",
+    "run_number": "1682",
     "attempt": "1",
-    "url": "https://github.com/syslabcom/activity-recognition/actions/runs/24190027102",
-    "sha": "e0c67d2638fe739b442ccf9da44e8d59c9d3ed15"
+    "url": "https://github.com/syslabcom/activity-recognition/actions/runs/28627956296",
+    "sha": "74f450e1241a7102bfba37544582446b7194f85f"
   }
 }
