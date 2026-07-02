@@ -1,7 +1,7 @@
 {
   "version": 1,
   "status": "success",
-  "generated_at": "2026-07-02T05:21:12Z",
+  "generated_at": "2026-07-02T07:10:46Z",
   "organization": "plone",
   "state": "open",
   "slug": "lvl-easy",
@@ -9,8 +9,38 @@
   "required_labels": [
     "41 lvl: easy"
   ],
-  "issue_count": 83,
+  "issue_count": 84,
   "issues": [
+    {
+      "id": 4791919101,
+      "number": 133,
+      "title": "The listing of the substitutions variables in the send e-mail action is missing in volto.",
+      "html_url": "https://github.com/plone/plone.app.contentrules/issues/133",
+      "repository_full_name": "plone/plone.app.contentrules",
+      "repository_url": "https://api.github.com/repos/plone/plone.app.contentrules",
+      "state": "open",
+      "created_at": "2026-07-02T06:38:26Z",
+      "updated_at": "2026-07-02T06:52:47Z",
+      "comments": 1,
+      "author": {
+        "login": "acsr",
+        "html_url": "https://github.com/acsr"
+      },
+      "assignees": [],
+      "labels": [
+        "04 type: enhancement",
+        "33 needs: docs",
+        "41 lvl: easy"
+      ],
+      "contributor_summary": {
+        "status": "available",
+        "generated_at": "2026-07-02T07:10:51Z",
+        "source_issue_updated_at": "2026-07-02T06:52:47Z",
+        "model": "gpt-4o-mini",
+        "summary_markdown": "```markdown\n## What this issue is about\nThis issue highlights the absence of a listing for substitution variables in the Volto Control Panel UI for the send e-mail action in `plone.app.contentrules`. These variables are functional but not documented, which impacts the user experience since they are important for creating personalized messages.\n\n## What needs to be done\nWe need to implement a way to list the allowed substitution variables in the Volto UI. This includes deciding whether to show these variables directly in the UI or reference existing documentation, which currently lacks this specific information.\n\n## Helpful background\nIn previous versions (Plone 4 and 5), the permitted substitution variables were shown below the message input field, enhancing user understanding. While some documentation exists, such as in Plone 5, it does not specify these substitutions. Transitioning the existing TAL-based documentation approach to the React frontend needs discussion.\n\n## Good first steps\n1. Review the existing UI for sending e-mails and identify where substitutions could be displayed.\n2. Explore documentation options that might link to user-friendly resources regarding these variables.\n3. Consider contributing to the mentioned [ticket for Plone 6 documentation](https://github.com/plone/documentation/issues/1336) for improved content rules guidance.\n4. Engage with the community to gather additional insights on the best approach to take.\n```",
+        "path": "data/issues/summaries/plone/plone.app.contentrules/133.json"
+      }
+    },
     {
       "id": 4598286545,
       "number": 101,
@@ -2565,10 +2595,10 @@
   "message": null,
   "workflow": {
     "repository": "syslabcom/activity-recognition",
-    "run_id": "28567390369",
-    "run_number": "1666",
+    "run_id": "28572201193",
+    "run_number": "1667",
     "attempt": "1",
-    "url": "https://github.com/syslabcom/activity-recognition/actions/runs/28567390369",
-    "sha": "baea4fa04497158b402872dfbbfc302b1cb46d46"
+    "url": "https://github.com/syslabcom/activity-recognition/actions/runs/28572201193",
+    "sha": "7c13e0a178731cc1b1044758e86f77ce54917169"
   }
 }
