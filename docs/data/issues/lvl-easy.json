@@ -1,7 +1,7 @@
 {
   "version": 1,
   "status": "success",
-  "generated_at": "2026-07-05T03:08:01Z",
+  "generated_at": "2026-07-05T05:21:03Z",
   "organization": "plone",
   "state": "open",
   "slug": "lvl-easy",
@@ -11,6 +11,37 @@
   ],
   "issue_count": 84,
   "issues": [
+    {
+      "id": 4020920049,
+      "number": 2065,
+      "title": "Add Plone documentation to sites that attract first-time contributors",
+      "html_url": "https://github.com/plone/documentation/issues/2065",
+      "repository_full_name": "plone/documentation",
+      "repository_url": "https://api.github.com/repos/plone/documentation",
+      "state": "open",
+      "created_at": "2026-03-04T09:10:56Z",
+      "updated_at": "2026-07-05T05:04:50Z",
+      "comments": 3,
+      "author": {
+        "login": "stevepiercy",
+        "html_url": "https://github.com/stevepiercy"
+      },
+      "assignees": [],
+      "labels": [
+        "33 needs: docs",
+        "41 lvl: easy",
+        "99 tag: good first issue",
+        "99 tag: hacktoberfest"
+      ],
+      "contributor_summary": {
+        "status": "available",
+        "generated_at": "2026-04-09T11:25:47Z",
+        "source_issue_updated_at": "2026-03-16T00:28:14Z",
+        "model": "gpt-4o-mini",
+        "summary_markdown": "```markdown\n## What this issue is about\nThis issue aims to enhance Plone’s documentation to attract first-time contributors. It's modeled after a similar initiative from the icalendar project, with the goal of making it easier for newcomers to engage with the community.\n\n## What needs to be done\n1. Update the documentation to reflect this pilot program.\n2. Consider including options for low or non-code contributions such as translations, blog posts, and graphic design.\n3. The issue is still open for community input and suggestions.\n\n## Helpful background\nThis initiative has successfully partnered with \"Up for Grabs,\" a platform that helps people find beginner-friendly issues to work on. The mention of \"Good First Issue\" suggests it aims to be easily approachable, though there is uncertainty about its acceptance status.\n\n## Good first steps\n- Review the existing documentation and propose enhancements.\n- Consider how non-code contributions can be integrated into the process.\n- Engage in discussions on the “Good First Issue” and provide feedback or suggestions.\n- Familiarize yourself with the pilot model used by the icalendar project for inspiration.\n```",
+        "path": "data/issues/summaries/plone/documentation/2065.json"
+      }
+    },
     {
       "id": 4791919101,
       "number": 133,
@@ -444,37 +475,6 @@
         "model": "gpt-4o-mini",
         "summary_markdown": "```markdown\n## What this issue is about\nThis issue raises a concern regarding the help text for the \"Globally enable comments\" feature in Plone. Currently, the help text describes only \"Plain text\" and \"Intelligent text,\" omitting \"HTML\" and \"Markdown,\" which are also options in the dropdown menu.\n\n## What needs to be done\nThe help text should be updated to include \"HTML\" and \"Markdown.\" Additionally, it should clarify that \"Intelligent text\" is not the only option that creates clickable web and email links.\n\n## Helpful background\nThe discussion has been noted for Plone 5. It’s unclear if the problem persists in Plone 6, as the help text may have changed. This issue was initially reported by [dbitouze](https://github.com/dbitouze) and commented on by [jensens](https://github.com/jensens).\n\n## Good first steps\n1. **Check the current state**: Verify the help text for \"Comment text transform\" in Plone 6 to see if it still requires updates.\n2. **Draft new text**: Create a suggestion for the updated help text that includes \"HTML\" and \"Markdown.\"\n3. **Document your changes**: Record what adjustments you make for clarity and future contributors.\n4. **Consider testing**: Ensure that your changes don’t break any existing links or functionalities.\n```",
         "path": "data/issues/summaries/plone/Products.CMFPlone/2950.json"
-      }
-    },
-    {
-      "id": 4020920049,
-      "number": 2065,
-      "title": "Add Plone documentation to sites that attract first-time contributors",
-      "html_url": "https://github.com/plone/documentation/issues/2065",
-      "repository_full_name": "plone/documentation",
-      "repository_url": "https://api.github.com/repos/plone/documentation",
-      "state": "open",
-      "created_at": "2026-03-04T09:10:56Z",
-      "updated_at": "2026-03-16T00:28:14Z",
-      "comments": 2,
-      "author": {
-        "login": "stevepiercy",
-        "html_url": "https://github.com/stevepiercy"
-      },
-      "assignees": [],
-      "labels": [
-        "33 needs: docs",
-        "41 lvl: easy",
-        "99 tag: good first issue",
-        "99 tag: hacktoberfest"
-      ],
-      "contributor_summary": {
-        "status": "available",
-        "generated_at": "2026-04-09T11:25:47Z",
-        "source_issue_updated_at": "2026-03-16T00:28:14Z",
-        "model": "gpt-4o-mini",
-        "summary_markdown": "```markdown\n## What this issue is about\nThis issue aims to enhance Plone’s documentation to attract first-time contributors. It's modeled after a similar initiative from the icalendar project, with the goal of making it easier for newcomers to engage with the community.\n\n## What needs to be done\n1. Update the documentation to reflect this pilot program.\n2. Consider including options for low or non-code contributions such as translations, blog posts, and graphic design.\n3. The issue is still open for community input and suggestions.\n\n## Helpful background\nThis initiative has successfully partnered with \"Up for Grabs,\" a platform that helps people find beginner-friendly issues to work on. The mention of \"Good First Issue\" suggests it aims to be easily approachable, though there is uncertainty about its acceptance status.\n\n## Good first steps\n- Review the existing documentation and propose enhancements.\n- Consider how non-code contributions can be integrated into the process.\n- Engage in discussions on the “Good First Issue” and provide feedback or suggestions.\n- Familiarize yourself with the pilot model used by the icalendar project for inspiration.\n```",
-        "path": "data/issues/summaries/plone/documentation/2065.json"
       }
     },
     {
@@ -2595,10 +2595,10 @@
   "message": null,
   "workflow": {
     "repository": "syslabcom/activity-recognition",
-    "run_id": "28727786583",
-    "run_number": "1726",
+    "run_id": "28730549514",
+    "run_number": "1727",
     "attempt": "1",
-    "url": "https://github.com/syslabcom/activity-recognition/actions/runs/28727786583",
-    "sha": "0193e4a2d86068e149195083cd806a9db31fa1b6"
+    "url": "https://github.com/syslabcom/activity-recognition/actions/runs/28730549514",
+    "sha": "2437bca5bbf523b001f11af67495555200793a7d"
   }
 }

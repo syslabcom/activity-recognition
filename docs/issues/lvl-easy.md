@@ -1,7 +1,7 @@
 ---
 title: "Plone issue list — Level: Easy"
 permalink: "/issues/lvl-easy/"
-generated_at: "2026-07-05T03:08:01Z"
+generated_at: "2026-07-05T05:21:03Z"
 organization: "plone"
 issue_count: 84
 required_labels:
@@ -10,7 +10,7 @@ required_labels:
 
 # Plone issue list — Level: Easy
 
-Generated: `2026-07-05T03:08:01Z`  
+Generated: `2026-07-05T05:21:03Z`  
 Organization: `plone`  
 Required label: `41 lvl: easy`  
 Issue count: `84`
@@ -19,6 +19,7 @@ Sorted by last updated date, newest first.
 
 | Updated | Repository | Issue | Author | Labels |
 | --- | --- | --- | --- | --- |
+| 2026-07-05 05:04 UTC | `plone/documentation` | [#2065 Add Plone documentation to sites that attract first-time contributors](https://github.com/plone/documentation/issues/2065) | `stevepiercy` | `33 needs: docs`, `41 lvl: easy`, `99 tag: good first issue`, `99 tag: hacktoberfest` |
 | 2026-07-02 06:52 UTC | `plone/plone.app.contentrules` | [#133 The listing of the substitutions variables in the send e-mail action is missing in volto.](https://github.com/plone/plone.app.contentrules/issues/133) | `acsr` | `04 type: enhancement`, `33 needs: docs`, `41 lvl: easy` |
 | 2026-06-07 09:43 UTC | `plone/aurora` | [#101 Polish documentation renames, and overall shape](https://github.com/plone/aurora/issues/101) | `sneridagh` | `31 needs: help`, `33 needs: docs`, `41 lvl: easy`, `99 tag: good first issue`, `99 tag: hacktoberfest` |
 | 2026-05-18 11:33 UTC | `plone/volto` | [#1603 Use Cypress to determine code coverage](https://github.com/plone/volto/issues/1603) | `tiberiuichim` | `04 type: enhancement`, `41 lvl: easy` |
@@ -33,7 +34,6 @@ Sorted by last updated date, newest first.
 | 2026-03-23 21:10 UTC | `plone/Products.CMFPlone` | [#3375 LinguaPlone support code still in Plone6](https://github.com/plone/Products.CMFPlone/issues/3375) | `gotcha` | `04 type: enhancement`, `99 tag: cleanup`, `41 lvl: easy` |
 | 2026-03-23 17:51 UTC | `plone/Products.CMFPlone` | [#1393 Add validation for image sizes/format (width:height) in @@imaging-controlpanel](https://github.com/plone/Products.CMFPlone/issues/1393) | `idgserpro` | `04 type: enhancement`, `99 tag: UX Site Admin`, `99 tag: UX Integrator/Themer`, `31 needs: help`, `14 prio: low`, `21 status: confirmed`, `41 lvl: easy` |
 | 2026-03-23 16:38 UTC | `plone/Products.CMFPlone` | [#2950 "HTML" and "Markdown" are not mention in the help text of "Globally enable comments"](https://github.com/plone/Products.CMFPlone/issues/2950) | `dbitouze` | `01 type: bug`, `31 needs: help`, `14 prio: low`, `41 lvl: easy` |
-| 2026-03-16 00:28 UTC | `plone/documentation` | [#2065 Add Plone documentation to sites that attract first-time contributors](https://github.com/plone/documentation/issues/2065) | `stevepiercy` | `33 needs: docs`, `41 lvl: easy`, `99 tag: good first issue`, `99 tag: hacktoberfest` |
 | 2026-03-11 17:52 UTC | `plone/volto` | [#7947 Improve `@plone/client` documentation](https://github.com/plone/volto/issues/7947) | `stevepiercy` | `04 type: enhancement`, `31 needs: help`, `33 needs: docs`, `41 lvl: easy`, `dependencies` |
 | 2026-03-04 09:06 UTC | `plone/documentation` | [#2029 Create a GitHub App that detects first-time comments and responds with links to how to contribute](https://github.com/plone/documentation/issues/2029) | `stevepiercy` | `04 type: enhancement`, `31 needs: help`, `41 lvl: easy`, `99 tag: good first issue`, `99 tag: hacktoberfest` |
 | 2026-03-04 09:06 UTC | `plone/documentation` | [#1973 Add "Related content" as the final section in most pages](https://github.com/plone/documentation/issues/1973) | `stevepiercy` | `41 lvl: easy`, `99 tag: good first issue`, `99 tag: hacktoberfest` |
