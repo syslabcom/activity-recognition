@@ -1,7 +1,7 @@
 ---
 title: "Plone issue list — Level: Complex"
 permalink: "/issues/lvl-complex/"
-generated_at: "2026-07-07T00:42:14Z"
+generated_at: "2026-07-07T01:36:11Z"
 organization: "plone"
 issue_count: 53
 required_labels:
@@ -10,7 +10,7 @@ required_labels:
 
 # Plone issue list — Level: Complex
 
-Generated: `2026-07-07T00:42:14Z`  
+Generated: `2026-07-07T01:36:11Z`  
 Organization: `plone`  
 Required label: `43 lvl: complex`  
 Issue count: `53`
@@ -19,6 +19,7 @@ Sorted by last updated date, newest first.
 
 | Updated | Repository | Issue | Author | Labels |
 | --- | --- | --- | --- | --- |
+| 2026-07-07 00:57 UTC | `plone/volto` | [#7527 View for Listing block](https://github.com/plone/volto/issues/7527) | `ebrehault` | `04 type: enhancement`, `43 lvl: complex`, `27 status: stale` |
 | 2026-07-02 22:11 UTC | `plone/volto` | [#6967 Move videos from the User Manual to a CDN or YouTube](https://github.com/plone/volto/issues/6967) | `stevepiercy` | `04 type: enhancement`, `31 needs: help`, `43 lvl: complex`, `06 type: plip task` |
 | 2026-06-22 15:35 UTC | `plone/volto` | [#5300 PLIP: Keyword Manager](https://github.com/plone/volto/issues/5300) | `tisto` | `03 type: feature (plip)`, `43 lvl: complex` |
 | 2026-06-04 09:34 UTC | `plone/aurora` | [#27 Search the control panel to find a setting](https://github.com/plone/aurora/issues/27) | `ksuess` | `43 lvl: complex`, `discussion`, `30 needs: triage` |
@@ -41,7 +42,6 @@ Sorted by last updated date, newest first.
 | 2026-02-03 02:29 UTC | `plone/documentation` | [#2044 Include diazo documentation in Classic backend documentation](https://github.com/plone/documentation/issues/2044) | `erral` | `43 lvl: complex` |
 | 2026-01-31 13:40 UTC | `plone/documentation` | [#1611 Automate screenshots and videos](https://github.com/plone/documentation/issues/1611) | `stevepiercy` | `04 type: enhancement`, `43 lvl: complex`, `99 tag: Plone 6.x` |
 | 2026-01-23 22:16 UTC | `plone/documentation` | [#2037 Unpin sphinx in requirements.txt](https://github.com/plone/documentation/issues/2037) | `stevepiercy` | `43 lvl: complex` |
-| 2026-01-07 10:15 UTC | `plone/volto` | [#7527 View for Listing block](https://github.com/plone/volto/issues/7527) | `ebrehault` | `04 type: enhancement`, `43 lvl: complex` |
 | 2026-01-04 08:11 UTC | `plone/documentation` | [#1380 Add details about each of the default behaviors](https://github.com/plone/documentation/issues/1380) | `stevepiercy` | `04 type: enhancement`, `13 prio: normal`, `21 status: confirmed`, `33 needs: docs`, `43 lvl: complex`, `99 tag: Plone 6.x` |
 | 2025-12-28 22:40 UTC | `plone/documentation` | [#1496 Create redirects of `docs.plone.org` to `6.docs.plone.org`](https://github.com/plone/documentation/issues/1496) | `stevepiercy` | `01 type: bug`, `43 lvl: complex`, `99 tag: Plone 6.x` |
 | 2025-12-19 04:16 UTC | `plone/documentation` | [#1759 Create a Cookieplone entry in the Conceptual guide](https://github.com/plone/documentation/issues/1759) | `stevepiercy` | `43 lvl: complex` |

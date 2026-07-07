@@ -1,7 +1,7 @@
 {
   "version": 1,
   "status": "success",
-  "generated_at": "2026-07-07T00:42:14Z",
+  "generated_at": "2026-07-07T01:36:11Z",
   "organization": "plone",
   "state": "open",
   "slug": "lvl-complex",
@@ -11,6 +11,38 @@
   ],
   "issue_count": 53,
   "issues": [
+    {
+      "id": 3532029184,
+      "number": 7527,
+      "title": "View for Listing block",
+      "html_url": "https://github.com/plone/volto/issues/7527",
+      "repository_full_name": "plone/volto",
+      "repository_url": "https://api.github.com/repos/plone/volto",
+      "state": "open",
+      "created_at": "2025-10-20T11:05:46Z",
+      "updated_at": "2026-07-07T00:57:53Z",
+      "comments": 4,
+      "author": {
+        "login": "ebrehault",
+        "html_url": "https://github.com/ebrehault"
+      },
+      "assignees": [
+        "ebrehault"
+      ],
+      "labels": [
+        "04 type: enhancement",
+        "43 lvl: complex",
+        "27 status: stale"
+      ],
+      "contributor_summary": {
+        "status": "available",
+        "generated_at": "2026-07-07T01:36:15Z",
+        "source_issue_updated_at": "2026-07-07T00:57:53Z",
+        "model": "gpt-4o-mini",
+        "summary_markdown": "```markdown\n## What this issue is about\nThis issue is focused on creating a view for the Listing block in the Plone/Volto project. The Listing block is used to present content in a structured way, and enhancements are planned as part of the future \"Seven\" project.\n\n## What needs to be done\nThe specifics of what needs to be implemented have not been clearly detailed in the discussions. It's unclear which variations of the Listing block are targeted or the exact requirements for this view.\n\n## Helpful background\nThis issue is marked as complex and is intended for more experienced contributors. It’s important to note that ongoing work has been referenced, indicating that the original author is already addressing this issue. Please also review relevant labels like `lvl: complex` for additional context.\n\n## Good first steps\nIf you're new to Plone or this specific area, consider exploring simpler issues or contributing to other discussions first. I recommend checking the [First-time contributors guide](https://6.docs.plone.org/contributing/first-time.html) for essential best practices. If you're still interested in this issue, it may be best to reach out for more clarification before proceeding.\n```",
+        "path": "data/issues/summaries/plone/volto/7527.json"
+      }
+    },
     {
       "id": 2984135556,
       "number": 6967,
@@ -673,37 +705,6 @@
         "model": "gpt-4o-mini",
         "summary_markdown": "## What this issue is about\nThis issue discusses the need to unpin the Sphinx dependency from `sphinx<9` in the `requirements.txt` file. The current pinning is a temporary solution to address an underlying issue that needs resolution. The ultimate goal is to finalize and release Plone Sphinx Theme v2.0.0, removing the dependency on the Sphinx Book Theme.\n\n## What needs to be done\nThe primary task is to remove the version restriction for Sphinx in the `requirements.txt` file once the related work on Plone Sphinx Theme v2.0.0 is complete. However, it's important to note that the specifics of what remains to be done and any contributing guidelines are currently unclear.\n\n## Helpful background\nSphinx is a documentation generator, and pinning it helps avoid potential compatibility issues. The Sphinx Book Theme is an additional theme that complicates the current setup, making it essential to address it to move forward.\n\n## Good first steps\n1. Familiarize yourself with Sphinx and the Plone Sphinx Theme.\n2. Check for current development branches or documentation related to this issue.\n3. Engage with existing discussions for context, but be prepared that the requirements may shift as this is a complex area with an ambiguous roadmap. \n\nFeel free to reach out if you have questions or need guidance!",
         "path": "data/issues/summaries/plone/documentation/2037.json"
-      }
-    },
-    {
-      "id": 3532029184,
-      "number": 7527,
-      "title": "View for Listing block",
-      "html_url": "https://github.com/plone/volto/issues/7527",
-      "repository_full_name": "plone/volto",
-      "repository_url": "https://api.github.com/repos/plone/volto",
-      "state": "open",
-      "created_at": "2025-10-20T11:05:46Z",
-      "updated_at": "2026-01-07T10:15:16Z",
-      "comments": 3,
-      "author": {
-        "login": "ebrehault",
-        "html_url": "https://github.com/ebrehault"
-      },
-      "assignees": [
-        "ebrehault"
-      ],
-      "labels": [
-        "04 type: enhancement",
-        "43 lvl: complex"
-      ],
-      "contributor_summary": {
-        "status": "available",
-        "generated_at": "2026-04-09T12:26:57Z",
-        "source_issue_updated_at": "2026-01-07T10:15:16Z",
-        "model": "gpt-4o-mini",
-        "summary_markdown": "## What this issue is about\nThis issue focuses on implementing the view for the Listing block in the Plone Volto project. It is designated as part of a more complex future project known as \"Seven.\"\n\n## What needs to be done\nThe specific tasks for this issue are currently unclear and may involve a particular variation of the Listing block. There are indications that the author, [ebrehault](https://github.com/ebrehault), is already working on it, so coordination with them is essential to avoid duplicated effort.\n\n## Helpful background\nDue to the complexity labeled in this issue, it may not be suitable for first-time contributors. Discussions have pointed out that there are relevant existing issues (e.g., #4478 on listing/teaser styles), but details about these connections remain vague. Familiarity with the overall project and its guidelines is recommended.\n\n## Good first steps\nIf you're interested in contributing:\n1. Review the [First-time contributors](https://6.docs.plone.org/contributing/first-time.html) guidelines.\n2. Familiarize yourself with [Contributing to Plone](https://6.docs.plone.org/contributing/index.html) and [Contributing to Volto](https://6.docs.plone.org/contributing/volto.html).\n3. Consider reaching out to [ebrehault](https://github.com/ebrehault) for insights before proceeding, as clear tasks for this issue may need further clarification.",
-        "path": "data/issues/summaries/plone/volto/7527.json"
       }
     },
     {
@@ -1626,10 +1627,10 @@
   "message": null,
   "workflow": {
     "repository": "syslabcom/activity-recognition",
-    "run_id": "28833284704",
-    "run_number": "1760",
+    "run_id": "28835304758",
+    "run_number": "1761",
     "attempt": "1",
-    "url": "https://github.com/syslabcom/activity-recognition/actions/runs/28833284704",
-    "sha": "cf506933c0d94f03354be99652adc4155fe689c4"
+    "url": "https://github.com/syslabcom/activity-recognition/actions/runs/28835304758",
+    "sha": "f25ffdfc5ff70490a9596fc92326b540fdce19ca"
   }
 }
