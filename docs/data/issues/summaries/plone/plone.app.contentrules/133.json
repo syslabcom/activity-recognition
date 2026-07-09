@@ -1,32 +1,32 @@
 {
   "version": 1,
   "status": "success",
-  "generated_at": "2026-07-02T07:10:51Z",
+  "generated_at": "2026-07-09T07:14:41Z",
   "source_issue": {
     "id": 4791919101,
     "number": 133,
     "title": "The listing of the substitutions variables in the send e-mail action is missing in volto.",
     "html_url": "https://github.com/plone/plone.app.contentrules/issues/133",
     "repository_full_name": "plone/plone.app.contentrules",
-    "updated_at": "2026-07-02T06:52:47Z",
+    "updated_at": "2026-07-06T18:55:22Z",
     "labels": [
       "04 type: enhancement",
       "33 needs: docs",
       "41 lvl: easy"
     ],
-    "comments": 1
+    "comments": 2
   },
   "ai": {
     "provider": "openai",
     "model": "gpt-4o-mini"
   },
-  "summary_markdown": "```markdown\n## What this issue is about\nThis issue highlights the absence of a listing for substitution variables in the Volto Control Panel UI for the send e-mail action in `plone.app.contentrules`. These variables are functional but not documented, which impacts the user experience since they are important for creating personalized messages.\n\n## What needs to be done\nWe need to implement a way to list the allowed substitution variables in the Volto UI. This includes deciding whether to show these variables directly in the UI or reference existing documentation, which currently lacks this specific information.\n\n## Helpful background\nIn previous versions (Plone 4 and 5), the permitted substitution variables were shown below the message input field, enhancing user understanding. While some documentation exists, such as in Plone 5, it does not specify these substitutions. Transitioning the existing TAL-based documentation approach to the React frontend needs discussion.\n\n## Good first steps\n1. Review the existing UI for sending e-mails and identify where substitutions could be displayed.\n2. Explore documentation options that might link to user-friendly resources regarding these variables.\n3. Consider contributing to the mentioned [ticket for Plone 6 documentation](https://github.com/plone/documentation/issues/1336) for improved content rules guidance.\n4. Engage with the community to gather additional insights on the best approach to take.\n```",
+  "summary_markdown": "```markdown\n## What this issue is about\nThis issue addresses the lack of visibility for substitution variables in the \"send e-mail\" action of Volto's Control Panel for the `plone.app.contentrules` package. These variables are currently functional but not displayed in the UI or the Plone 6 documentation, making it difficult for users to understand their options.\n\n## What needs to be done\nWe need to create a way to display the list of available substitution variables directly in the Volto Control Panel UI. This may involve adapting an existing TAL-based solution (which previously listed substitutions in Plone 4) to the React-based Volto environment.\n\n## Helpful background\nSubstitution variables allow dynamic content to be included in emails, enhancing user experience. The official Plone 6 documentation lacks a section on Content Rules, and earlier docs from Plone 5 also missed this critical functionality. \n\n## Good first steps\n1. Review existing TAL templates used in Plone 4 for inspiration.\n2. Check the default substitution variable code in [plone.stringinterp](https://github.com/plone/plone.stringinterp).\n3. Consider creating a simple mockup of how the substitutions can be displayed in the UI.\n4. If you find outdated or ambiguous discussions, feel free to raise those points for clarification.\n\nYour contributions will help improve the documentation and user experience for Plone!\n```",
   "workflow": {
     "repository": "syslabcom/activity-recognition",
-    "run_id": "28572201193",
-    "run_number": "1667",
+    "run_id": "29000924638",
+    "run_number": "1804",
     "attempt": "1",
-    "url": "https://github.com/syslabcom/activity-recognition/actions/runs/28572201193",
-    "sha": "7c13e0a178731cc1b1044758e86f77ce54917169"
+    "url": "https://github.com/syslabcom/activity-recognition/actions/runs/29000924638",
+    "sha": "7b4bb3dc178da768eeec50e262450e25cfc0a47b"
   }
 }
