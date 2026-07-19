@@ -1,7 +1,7 @@
 ---
 title: "Plone issue list — Level: Easy"
 permalink: "/issues/lvl-easy/"
-generated_at: "2026-07-19T00:35:03Z"
+generated_at: "2026-07-19T01:35:34Z"
 organization: "plone"
 issue_count: 84
 required_labels:
@@ -10,7 +10,7 @@ required_labels:
 
 # Plone issue list — Level: Easy
 
-Generated: `2026-07-19T00:35:03Z`  
+Generated: `2026-07-19T01:35:34Z`  
 Organization: `plone`  
 Required label: `41 lvl: easy`  
 Issue count: `84`
@@ -19,6 +19,7 @@ Sorted by last updated date, newest first.
 
 | Updated | Repository | Issue | Author | Labels |
 | --- | --- | --- | --- | --- |
+| 2026-07-19 00:51 UTC | `plone/volto` | [#7088 unRegisterSlotComponent is in the code, but in the docs it is unregisterSlotComponent](https://github.com/plone/volto/issues/7088) | `silviubogan` | `01 type: bug`, `33 needs: docs`, `41 lvl: easy`, `30 needs: triage`, `27 status: stale` |
 | 2026-07-06 18:55 UTC | `plone/plone.app.contentrules` | [#133 The listing of the substitutions variables in the send e-mail action is missing in volto.](https://github.com/plone/plone.app.contentrules/issues/133) | `acsr` | `04 type: enhancement`, `33 needs: docs`, `41 lvl: easy` |
 | 2026-07-05 05:04 UTC | `plone/documentation` | [#2065 Add Plone documentation to sites that attract first-time contributors](https://github.com/plone/documentation/issues/2065) | `stevepiercy` | `33 needs: docs`, `41 lvl: easy`, `99 tag: good first issue`, `99 tag: hacktoberfest` |
 | 2026-06-07 09:43 UTC | `plone/aurora` | [#101 Polish documentation renames, and overall shape](https://github.com/plone/aurora/issues/101) | `sneridagh` | `31 needs: help`, `33 needs: docs`, `41 lvl: easy`, `99 tag: good first issue`, `99 tag: hacktoberfest` |
@@ -47,7 +48,6 @@ Sorted by last updated date, newest first.
 | 2026-01-29 22:02 UTC | `plone/plone.restapi` | [#285 Discrepancy in documentation for Authentication sometimes root used as plone sometimes Plone](https://github.com/plone/plone.restapi/issues/285) | `envy7` | `01 type: bug`, `41 lvl: easy` |
 | 2026-01-25 06:16 UTC | `plone/volto` | [#955 user menu popup is not available on the site setup pages](https://github.com/plone/volto/issues/955) | `fredvd` | `01 type: bug`, `41 lvl: easy` |
 | 2026-01-25 06:15 UTC | `plone/Products.CMFPlone` | [#3353 Show portal_timezone in date widgets](https://github.com/plone/Products.CMFPlone/issues/3353) | `MrTango` | `04 type: enhancement`, `31 needs: help`, `41 lvl: easy`, `99 tag: Plone 6.0` |
-| 2026-01-19 08:12 UTC | `plone/volto` | [#7088 unRegisterSlotComponent is in the code, but in the docs it is unregisterSlotComponent](https://github.com/plone/volto/issues/7088) | `silviubogan` | `01 type: bug`, `33 needs: docs`, `41 lvl: easy`, `30 needs: triage` |
 | 2026-01-10 10:17 UTC | `plone/volto` | [#1775 Auto-generated text-area form fields should have at least 10 lines by default and should increase size as the user types in text](https://github.com/plone/volto/issues/1775) | `tisto` | `41 lvl: easy` |
 | 2026-01-10 09:25 UTC | `plone/volto` | [#1783 Document SchemaWidget, provide examples](https://github.com/plone/volto/issues/1783) | `tiberiuichim` | `33 needs: docs`, `41 lvl: easy` |
 | 2025-12-27 08:08 UTC | `plone/volto` | [#3605 \[DOCS\] How to use local custom fonts](https://github.com/plone/volto/issues/3605) | `rotavio` | `33 needs: docs`, `41 lvl: easy` |
