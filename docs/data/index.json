@@ -1,17 +1,34 @@
 {
   "version": 1,
-  "generated_at": "2026-08-04T08:07:09Z",
+  "generated_at": "2026-08-05T08:06:17Z",
   "tasks": [
     {
       "slug": "github-activity-digest",
       "title": "GitHub Activity Digest",
       "latest": {
         "status": "success",
-        "generated_at": "2026-08-04T08:07:09Z",
+        "generated_at": "2026-08-05T08:06:17Z",
         "json_path": "data/github-activity-digest/latest.json",
         "markdown_path": "data/github-activity-digest/latest.md"
       },
       "runs": [
+        {
+          "status": "success",
+          "generated_at": "2026-08-05T08:06:17Z",
+          "period": {
+            "days": 7,
+            "start": "2026-07-29",
+            "end": "2026-08-05"
+          },
+          "counts": {
+            "repos_processed": 425,
+            "active_repos": 97
+          },
+          "json_path": "data/github-activity-digest/runs/2026-08-05T08-06-17Z.json",
+          "markdown_path": "data/github-activity-digest/runs/2026-08-05T08-06-17Z.md",
+          "workflow_url": "https://github.com/syslabcom/activity-recognition/actions/runs/30987403777",
+          "summary_excerpt": "# 📊 WEEKLY SUMMARY 2026-07-29 to 2026-08-05 This week in the Plone organization, significant updates were primarily driven by the automated contributions of the `pre-commit-ci[bot…"
+        },
         {
           "status": "success",
           "generated_at": "2026-08-04T08:07:09Z",
