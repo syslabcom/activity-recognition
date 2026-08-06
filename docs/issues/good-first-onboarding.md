@@ -1,7 +1,7 @@
 ---
 title: "Plone issue list — Good first issue onboarding"
 permalink: "/issues/good-first-onboarding/"
-generated_at: "2026-08-05T23:58:16Z"
+generated_at: "2026-08-06T03:17:01Z"
 organization: "plone"
 issue_count: 11
 required_labels:
@@ -10,7 +10,7 @@ required_labels:
 
 # Plone issue list — Good first issue onboarding
 
-Generated: `2026-08-05T23:58:16Z`  
+Generated: `2026-08-06T03:17:01Z`  
 Organization: `plone`  
 Required label: `99 tag: good first issue`  
 Issue count: `11`
