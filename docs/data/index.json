@@ -1,17 +1,34 @@
 {
   "version": 1,
-  "generated_at": "2026-08-08T07:59:50Z",
+  "generated_at": "2026-08-09T08:01:59Z",
   "tasks": [
     {
       "slug": "github-activity-digest",
       "title": "GitHub Activity Digest",
       "latest": {
         "status": "success",
-        "generated_at": "2026-08-08T07:59:50Z",
+        "generated_at": "2026-08-09T08:01:59Z",
         "json_path": "data/github-activity-digest/latest.json",
         "markdown_path": "data/github-activity-digest/latest.md"
       },
       "runs": [
+        {
+          "status": "success",
+          "generated_at": "2026-08-09T08:01:59Z",
+          "period": {
+            "days": 7,
+            "start": "2026-08-02",
+            "end": "2026-08-09"
+          },
+          "counts": {
+            "repos_processed": 426,
+            "active_repos": 100
+          },
+          "json_path": "data/github-activity-digest/runs/2026-08-09T08-01-59Z.json",
+          "markdown_path": "data/github-activity-digest/runs/2026-08-09T08-01-59Z.md",
+          "workflow_url": "https://github.com/syslabcom/activity-recognition/actions/runs/31302372782",
+          "summary_excerpt": "📊 WEEKLY SUMMARY 2026-08-02 to 2026-08-09 This week, significant updates across various Plone repositories focused on maintenance, dependency management, and fixing issues. Severa…"
+        },
         {
           "status": "success",
           "generated_at": "2026-08-08T07:59:50Z",
