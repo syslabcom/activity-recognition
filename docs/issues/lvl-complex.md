@@ -1,7 +1,7 @@
 ---
 title: "Plone issue list — Level: Complex"
 permalink: "/issues/lvl-complex/"
-generated_at: "2026-08-12T06:11:52Z"
+generated_at: "2026-08-12T08:14:49Z"
 organization: "plone"
 issue_count: 53
 required_labels:
@@ -10,7 +10,7 @@ required_labels:
 
 # Plone issue list — Level: Complex
 
-Generated: `2026-08-12T06:11:52Z`  
+Generated: `2026-08-12T08:14:49Z`  
 Organization: `plone`  
 Required label: `43 lvl: complex`  
 Issue count: `53`
@@ -19,6 +19,7 @@ Sorted by last updated date, newest first.
 
 | Updated | Repository | Issue | Author | Labels |
 | --- | --- | --- | --- | --- |
+| 2026-08-12 07:21 UTC | `plone/volto` | [#4303 Link Widget Improvement (add/select/modify)](https://github.com/plone/volto/issues/4303) | `sneridagh` | `03 type: feature (plip)`, `43 lvl: complex` |
 | 2026-07-07 00:57 UTC | `plone/volto` | [#7527 View for Listing block](https://github.com/plone/volto/issues/7527) | `ebrehault` | `04 type: enhancement`, `43 lvl: complex`, `27 status: stale` |
 | 2026-07-02 22:11 UTC | `plone/volto` | [#6967 Move videos from the User Manual to a CDN or YouTube](https://github.com/plone/volto/issues/6967) | `stevepiercy` | `04 type: enhancement`, `31 needs: help`, `43 lvl: complex`, `06 type: plip task` |
 | 2026-06-22 15:35 UTC | `plone/volto` | [#5300 PLIP: Keyword Manager](https://github.com/plone/volto/issues/5300) | `tisto` | `03 type: feature (plip)`, `43 lvl: complex` |
@@ -47,7 +48,6 @@ Sorted by last updated date, newest first.
 | 2025-12-19 04:16 UTC | `plone/documentation` | [#1759 Create a Cookieplone entry in the Conceptual guide](https://github.com/plone/documentation/issues/1759) | `stevepiercy` | `43 lvl: complex` |
 | 2025-11-26 05:56 UTC | `plone/documentation` | [#1997 Merge Admin and Deployment guides into Develop guide](https://github.com/plone/documentation/issues/1997) | `stevepiercy` | `13 prio: normal`, `43 lvl: complex` |
 | 2025-10-24 20:04 UTC | `plone/Products.CMFPlone` | [#2968 One File-Field (Type) to rules them all](https://github.com/plone/Products.CMFPlone/issues/2968) | `loechel` | `04 type: enhancement`, `03 type: feature (plip)`, `43 lvl: complex`, `53 target: major` |
-| 2025-10-24 12:15 UTC | `plone/volto` | [#4303 Link Widget Improvement (add/select/modify)](https://github.com/plone/volto/issues/4303) | `sneridagh` | `03 type: feature (plip)`, `43 lvl: complex` |
 | 2025-10-24 11:50 UTC | `plone/Products.CMFPlone` | [#4110 Refactor `plone.app.contentrules` to provide API methods, which `plone.restapi` can use](https://github.com/plone/Products.CMFPlone/issues/4110) | `MrTango` | `03 type: feature (plip)`, `43 lvl: complex` |
 | 2025-09-13 12:27 UTC | `plone/volto` | [#29 Control panels](https://github.com/plone/volto/issues/29) | `robgietema` | `03 type: feature (plip)`, `04 type: enhancement`, `14 prio: low`, `43 lvl: complex`, `26 status: blocked` |
 | 2025-09-09 00:32 UTC | `plone/volto` | [#6590 Feature: support History for home page](https://github.com/plone/volto/issues/6590) | `stevepiercy` | `04 type: enhancement`, `43 lvl: complex`, `27 status: stale` |

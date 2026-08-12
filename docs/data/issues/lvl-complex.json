@@ -1,7 +1,7 @@
 {
   "version": 1,
   "status": "success",
-  "generated_at": "2026-08-12T06:11:52Z",
+  "generated_at": "2026-08-12T08:14:49Z",
   "organization": "plone",
   "state": "open",
   "slug": "lvl-complex",
@@ -11,6 +11,37 @@
   ],
   "issue_count": 53,
   "issues": [
+    {
+      "id": 1554846894,
+      "number": 4303,
+      "title": "Link Widget Improvement (add/select/modify)",
+      "html_url": "https://github.com/plone/volto/issues/4303",
+      "repository_full_name": "plone/volto",
+      "repository_url": "https://api.github.com/repos/plone/volto",
+      "state": "open",
+      "created_at": "2023-01-24T11:57:19Z",
+      "updated_at": "2026-08-12T07:21:09Z",
+      "comments": 10,
+      "author": {
+        "login": "sneridagh",
+        "html_url": "https://github.com/sneridagh"
+      },
+      "assignees": [
+        "dobri1408"
+      ],
+      "labels": [
+        "03 type: feature (plip)",
+        "43 lvl: complex"
+      ],
+      "contributor_summary": {
+        "status": "available",
+        "generated_at": "2026-08-12T08:14:52Z",
+        "source_issue_updated_at": "2026-08-12T07:21:09Z",
+        "model": "gpt-4o-mini",
+        "summary_markdown": "```markdown\n## What this issue is about\nThis issue proposes improvements to the \"Link Widget\" used for adding internal and external links in Plone, aiming to enhance user experience and unify functionality across various components.\n\n## What needs to be done\nThe main tasks involve defining the widget's final design, deciding what content appears by default (e.g., recent user-created content), and implementing features for saving, editing, and deleting links. It's also necessary to check for edge cases in these functionalities.\n\n## Helpful background\nThis request stems from a common need in modern applications for easy link integration, as seen in tools like Google Drive and WordPress. The existing functionality can be enhanced to provide a more streamlined experience for users.\n\n## Good first steps\n1. Familiarize yourself with the current Link Widget components.\n2. Review similar widgets in other applications for inspiration.\n3. Engage in discussions with the team to clarify design preferences and feature requirements.\n4. Be prepared for testing and documentation updates as part of the implementation.\n5. Note that this work is still being discussed; the planning may shift depending on project priorities, especially with upcoming releases like Plone 6.2 or 6.3.\n```",
+        "path": "data/issues/summaries/plone/volto/4303.json"
+      }
+    },
     {
       "id": 3532029184,
       "number": 7527,
@@ -866,37 +897,6 @@
       }
     },
     {
-      "id": 1554846894,
-      "number": 4303,
-      "title": "Link Widget Improvement (add/select/modify)",
-      "html_url": "https://github.com/plone/volto/issues/4303",
-      "repository_full_name": "plone/volto",
-      "repository_url": "https://api.github.com/repos/plone/volto",
-      "state": "open",
-      "created_at": "2023-01-24T11:57:19Z",
-      "updated_at": "2025-10-24T12:15:11Z",
-      "comments": 9,
-      "author": {
-        "login": "sneridagh",
-        "html_url": "https://github.com/sneridagh"
-      },
-      "assignees": [
-        "dobri1408"
-      ],
-      "labels": [
-        "03 type: feature (plip)",
-        "43 lvl: complex"
-      ],
-      "contributor_summary": {
-        "status": "available",
-        "generated_at": "2026-04-09T13:37:13Z",
-        "source_issue_updated_at": "2025-10-24T12:15:11Z",
-        "model": "gpt-4o-mini",
-        "summary_markdown": "```markdown\n## What this issue is about\nThis issue (PLIP 4303) focuses on improving the user experience of adding links to internal content or external URLs in Plone. The goal is to unify the link-adding process across different components, providing a more seamless experience akin to those seen in other popular platforms.\n\n## What needs to be done\nWe need to design a new link widget with the following features:\n- Define the default elements to display (e.g., recent user-created content).\n- Implement inline searching for links.\n- Include options to save, edit, and remove links.\n- Address any edge cases that may arise.\n\n## Helpful background\nThis is a proposed improvement, not a bug to fix. It requires discussion, review, and approval from the project team. The idea has gained traction due to its relevance and appeal in modern software such as Google products and WordPress.\n\n## Good first steps\n1. Familiarize yourself with [PLIP guidelines](https://5.docs.plone.org/develop/coredev/docs/plips.html).\n2. Review existing comments and suggestions in this issue.\n3. Consider contributing to discussions about the default elements to show and how links might be handled.\n4. If you're interested in coding, start by looking at related pull requests and testing improvements.\n5. Reach out to the current assignee, @dobri1408, for guidance on how you can help move this forward.\n```",
-        "path": "data/issues/summaries/plone/volto/4303.json"
-      }
-    },
-    {
       "id": 2853065874,
       "number": 4110,
       "title": "Refactor `plone.app.contentrules` to provide API methods, which `plone.restapi` can use",
@@ -1627,10 +1627,10 @@
   "message": null,
   "workflow": {
     "repository": "syslabcom/activity-recognition",
-    "run_id": "31569115480",
-    "run_number": "2479",
+    "run_id": "31577465356",
+    "run_number": "2480",
     "attempt": "1",
-    "url": "https://github.com/syslabcom/activity-recognition/actions/runs/31569115480",
-    "sha": "edaaa606e42f75a64ea2fbf6327aafb0ed8550a6"
+    "url": "https://github.com/syslabcom/activity-recognition/actions/runs/31577465356",
+    "sha": "9fa5d81c13959b4e91401ab07213bc2a9018aa33"
   }
 }
