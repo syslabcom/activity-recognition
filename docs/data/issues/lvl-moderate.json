@@ -1,7 +1,7 @@
 {
   "version": 1,
   "status": "success",
-  "generated_at": "2026-08-12T08:14:49Z",
+  "generated_at": "2026-08-12T10:00:28Z",
   "organization": "plone",
   "state": "open",
   "slug": "lvl-moderate",
@@ -11,6 +11,42 @@
   ],
   "issue_count": 73,
   "issues": [
+    {
+      "id": 2297234474,
+      "number": 3953,
+      "title": "PLIP: Start separating Blicca (Classic UI) code from the core",
+      "html_url": "https://github.com/plone/Products.CMFPlone/issues/3953",
+      "repository_full_name": "plone/Products.CMFPlone",
+      "repository_url": "https://api.github.com/repos/plone/Products.CMFPlone",
+      "state": "open",
+      "created_at": "2024-05-15T08:40:27Z",
+      "updated_at": "2026-08-12T09:13:43Z",
+      "comments": 26,
+      "author": {
+        "login": "tisto",
+        "html_url": "https://github.com/tisto"
+      },
+      "assignees": [
+        "jensens"
+      ],
+      "labels": [
+        "31 needs: help",
+        "99 tag: cleanup",
+        "03 type: feature (plip)",
+        "13 prio: normal",
+        "42 lvl: moderate",
+        "53 target: major",
+        "99 tag: Classic UI"
+      ],
+      "contributor_summary": {
+        "status": "available",
+        "generated_at": "2026-08-12T10:00:33Z",
+        "source_issue_updated_at": "2026-08-12T09:13:43Z",
+        "model": "gpt-4o-mini",
+        "summary_markdown": "```markdown\n## What this issue is about\nThis issue aims to separate the Classic UI code from Plone's core to improve code maintenance. The goal is to move templates and view logic to a new `plone.app.layout` package while keeping the essential business logic in the core. This will streamline the codebase for those using the Volto frontend, allowing a smaller footprint without losing the Classic UI functionality for users.\n\n## What needs to be done\n- Create a `plone.classicui` package focused on Classic UI distribution.\n- Migrate Classic UI-specific templates and logic to `plone.app.layout`.\n- Ensure backward compatibility during these migrations.\n- Address related packages that may also need adjustments.\n\n## Helpful background\nThere is ongoing discussion about how best to implement this change, with several community members weighing in on the package structure and potential alternatives. As of now, some dependencies are already moving into `plone.app.layout`, but full clarity on remaining tasks is still developing.\n\n## Good first steps\n1. Familiarize yourself with the current structure of `Products.CMFPlone` and `plone.app.layout`.\n2. Review issues and comments on this specific issue to understand ongoing discussions.\n3. Start by identifying which Classic UI templates can be easily migrated and suggest changes.\n4. Join the conversation with existing contributors for guidance and support!\n```",
+        "path": "data/issues/summaries/plone/Products.CMFPlone/3953.json"
+      }
+    },
     {
       "id": 3725646159,
       "number": 7696,
@@ -40,42 +76,6 @@
         "model": "gpt-4o-mini",
         "summary_markdown": "```markdown\n## What this issue is about\nThis issue addresses the need for a clear deprecation policy and guidelines in the Volto documentation. Currently, there are no dedicated resources for developers on how to deprecate features effectively, despite having similar guidance available for Plone 6.\n\n## What needs to be done\nWe need to create a section specifically about deprecation in Volto. This could take the form of a dedicated \"Deprecation policy\" page or add guidelines to the existing Version policy. It should include practical examples and Volto-specific details that adapt current Plone 6 documentation.\n\n## Helpful background\nThe discussion indicates that adapting existing guidance from Plone 6 could be beneficial. There is agreement among contributors on the importance of these guidelines, but no consensus on the structure or format as of now. This requires further discussion among the team to finalize an approach.\n\n## Good first steps\n1. Review the existing Plone 6 deprecation guides to understand the content.\n2. Participate in upcoming team discussions to share your ideas on how to structure the new documentation.\n3. Once a path is agreed upon, you can help draft or refine the new documentation section.\n4. If you're unsure, feel free to reach out to team members for guidance and support.\n```",
         "path": "data/issues/summaries/plone/volto/7696.json"
-      }
-    },
-    {
-      "id": 2297234474,
-      "number": 3953,
-      "title": "PLIP: Start separating Blicca (Classic UI) code from the core",
-      "html_url": "https://github.com/plone/Products.CMFPlone/issues/3953",
-      "repository_full_name": "plone/Products.CMFPlone",
-      "repository_url": "https://api.github.com/repos/plone/Products.CMFPlone",
-      "state": "open",
-      "created_at": "2024-05-15T08:40:27Z",
-      "updated_at": "2026-06-10T09:25:38Z",
-      "comments": 25,
-      "author": {
-        "login": "tisto",
-        "html_url": "https://github.com/tisto"
-      },
-      "assignees": [
-        "jensens"
-      ],
-      "labels": [
-        "31 needs: help",
-        "99 tag: cleanup",
-        "03 type: feature (plip)",
-        "13 prio: normal",
-        "42 lvl: moderate",
-        "53 target: major",
-        "99 tag: Classic UI"
-      ],
-      "contributor_summary": {
-        "status": "available",
-        "generated_at": "2026-06-16T16:34:01Z",
-        "source_issue_updated_at": "2026-06-10T09:25:38Z",
-        "model": "gpt-4o-mini",
-        "summary_markdown": "```markdown\n## What this issue is about\nThis issue, titled \"PLIP: Start separating Blicca (Classic UI) code from the core,\" aims to cleanly move the Classic UI templates and view logic from the core Plone package (`Products.CMFPlone`) to a new package called `plone.classicui`. This helps streamline the codebase by creating a separation between the core logic and the user interface.\n\n## What needs to be done\nThe proposal includes:\n- Moving Classic UI-specific code to `plone.app.layout` while maintaining backward compatibility.\n- Creating the `plone.classicui` package that handles distribution without unnecessary dependencies.\n- Ensuring that the movement of templates does not lose functionality for existing users.\n\nThere are ongoing discussions and some disagreement about the exact implementation details and package organization.\n\n## Helpful background\nCommunity conversations indicate that this change is intended to make code maintenance easier and reduce memory usage for headless systems using the Volto frontend. However, the discussions around package specifics and what should be moved remain unresolved, so clarity on these elements is essential.\n\n## Good first steps\n1. **Read through existing comments in the issue.** Familiarize yourself with ongoing discussions and thoughts from other contributors.\n2. **Explore existing templates and view logic** related to Classic UI to understand what might need to be moved.\n3. **Consider testing the movement of a specific template** to better understand how the changes might be structured.\n4. **Join discussions or ask questions** for any clarifications you may need to get involved.\n```",
-        "path": "data/issues/summaries/plone/Products.CMFPlone/3953.json"
       }
     },
     {
@@ -2284,10 +2284,10 @@
   "message": null,
   "workflow": {
     "repository": "syslabcom/activity-recognition",
-    "run_id": "31577465356",
-    "run_number": "2480",
+    "run_id": "31585473487",
+    "run_number": "2481",
     "attempt": "1",
-    "url": "https://github.com/syslabcom/activity-recognition/actions/runs/31577465356",
-    "sha": "9fa5d81c13959b4e91401ab07213bc2a9018aa33"
+    "url": "https://github.com/syslabcom/activity-recognition/actions/runs/31585473487",
+    "sha": "0b6511f80bac9e9d736e0e889bbb356921a6273b"
   }
 }
