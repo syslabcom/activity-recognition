@@ -1,7 +1,7 @@
 ---
 title: "Plone issue list — Level: Easy"
 permalink: "/issues/lvl-easy/"
-generated_at: "2026-08-13T21:41:40Z"
+generated_at: "2026-08-13T22:38:16Z"
 organization: "plone"
 issue_count: 84
 required_labels:
@@ -10,7 +10,7 @@ required_labels:
 
 # Plone issue list — Level: Easy
 
-Generated: `2026-08-13T21:41:40Z`  
+Generated: `2026-08-13T22:38:16Z`  
 Organization: `plone`  
 Required label: `41 lvl: easy`  
 Issue count: `84`
@@ -19,10 +19,10 @@ Sorted by last updated date, newest first.
 
 | Updated | Repository | Issue | Author | Labels |
 | --- | --- | --- | --- | --- |
+| 2026-08-13 22:16 UTC | `plone/aurora` | [#101 Polish documentation renames, and overall shape](https://github.com/plone/aurora/issues/101) | `sneridagh` | `31 needs: help`, `33 needs: docs`, `41 lvl: easy`, `99 tag: good first issue`, `99 tag: hacktoberfest` |
 | 2026-07-19 00:51 UTC | `plone/volto` | [#7088 unRegisterSlotComponent is in the code, but in the docs it is unregisterSlotComponent](https://github.com/plone/volto/issues/7088) | `silviubogan` | `01 type: bug`, `33 needs: docs`, `41 lvl: easy`, `30 needs: triage`, `27 status: stale` |
 | 2026-07-06 18:55 UTC | `plone/plone.app.contentrules` | [#133 The listing of the substitutions variables in the send e-mail action is missing in volto.](https://github.com/plone/plone.app.contentrules/issues/133) | `acsr` | `04 type: enhancement`, `33 needs: docs`, `41 lvl: easy` |
 | 2026-07-05 05:04 UTC | `plone/documentation` | [#2065 Add Plone documentation to sites that attract first-time contributors](https://github.com/plone/documentation/issues/2065) | `stevepiercy` | `33 needs: docs`, `41 lvl: easy`, `99 tag: good first issue`, `99 tag: hacktoberfest` |
-| 2026-06-07 09:43 UTC | `plone/aurora` | [#101 Polish documentation renames, and overall shape](https://github.com/plone/aurora/issues/101) | `sneridagh` | `31 needs: help`, `33 needs: docs`, `41 lvl: easy`, `99 tag: good first issue`, `99 tag: hacktoberfest` |
 | 2026-05-18 11:33 UTC | `plone/volto` | [#1603 Use Cypress to determine code coverage](https://github.com/plone/volto/issues/1603) | `tiberiuichim` | `04 type: enhancement`, `41 lvl: easy` |
 | 2026-05-18 10:32 UTC | `plone/volto` | [#3092 Improve spellcheck](https://github.com/plone/volto/issues/3092) | `stevepiercy` | `04 type: enhancement`, `31 needs: help`, `33 needs: docs`, `41 lvl: easy` |
 | 2026-05-18 10:28 UTC | `plone/volto` | [#3827 Create end-user Editor documentation](https://github.com/plone/volto/issues/3827) | `stevepiercy` | `31 needs: help`, `33 needs: docs`, `41 lvl: easy` |
