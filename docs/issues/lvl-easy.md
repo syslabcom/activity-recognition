@@ -1,7 +1,7 @@
 ---
 title: "Plone issue list — Level: Easy"
 permalink: "/issues/lvl-easy/"
-generated_at: "2026-08-15T17:17:57Z"
+generated_at: "2026-08-15T18:25:08Z"
 organization: "plone"
 issue_count: 84
 required_labels:
@@ -10,7 +10,7 @@ required_labels:
 
 # Plone issue list — Level: Easy
 
-Generated: `2026-08-15T17:17:57Z`  
+Generated: `2026-08-15T18:25:08Z`  
 Organization: `plone`  
 Required label: `41 lvl: easy`  
 Issue count: `84`
@@ -19,7 +19,7 @@ Sorted by last updated date, newest first.
 
 | Updated | Repository | Issue | Author | Labels |
 | --- | --- | --- | --- | --- |
-| 2026-08-15 16:29 UTC | `plone/aurora` | [#101 Polish documentation renames, and overall shape](https://github.com/plone/aurora/issues/101) | `sneridagh` | `31 needs: help`, `33 needs: docs`, `41 lvl: easy`, `99 tag: good first issue`, `99 tag: hacktoberfest` |
+| 2026-08-15 18:00 UTC | `plone/aurora` | [#101 Polish documentation renames, and overall shape](https://github.com/plone/aurora/issues/101) | `sneridagh` | `31 needs: help`, `33 needs: docs`, `41 lvl: easy`, `99 tag: good first issue`, `99 tag: hacktoberfest` |
 | 2026-07-19 00:51 UTC | `plone/volto` | [#7088 unRegisterSlotComponent is in the code, but in the docs it is unregisterSlotComponent](https://github.com/plone/volto/issues/7088) | `silviubogan` | `01 type: bug`, `33 needs: docs`, `41 lvl: easy`, `30 needs: triage`, `27 status: stale` |
 | 2026-07-06 18:55 UTC | `plone/plone.app.contentrules` | [#133 The listing of the substitutions variables in the send e-mail action is missing in volto.](https://github.com/plone/plone.app.contentrules/issues/133) | `acsr` | `04 type: enhancement`, `33 needs: docs`, `41 lvl: easy` |
 | 2026-07-05 05:04 UTC | `plone/documentation` | [#2065 Add Plone documentation to sites that attract first-time contributors](https://github.com/plone/documentation/issues/2065) | `stevepiercy` | `33 needs: docs`, `41 lvl: easy`, `99 tag: good first issue`, `99 tag: hacktoberfest` |
