@@ -1,7 +1,7 @@
 {
   "version": 1,
   "status": "success",
-  "generated_at": "2026-08-20T21:24:49Z",
+  "generated_at": "2026-08-20T22:24:07Z",
   "organization": "plone",
   "state": "open",
   "slug": "good-first-onboarding",
@@ -9,8 +9,41 @@
   "required_labels": [
     "99 tag: good first issue"
   ],
-  "issue_count": 11,
+  "issue_count": 12,
   "issues": [
+    {
+      "id": 5208186791,
+      "number": 2100,
+      "title": "Upgrade to Vale 3.18.0 to support MyST, moar new features  🎉",
+      "html_url": "https://github.com/plone/documentation/issues/2100",
+      "repository_full_name": "plone/documentation",
+      "repository_url": "https://api.github.com/repos/plone/documentation",
+      "state": "open",
+      "created_at": "2026-08-20T21:49:21Z",
+      "updated_at": "2026-08-20T21:49:21Z",
+      "comments": 0,
+      "author": {
+        "login": "stevepiercy",
+        "html_url": "https://github.com/stevepiercy"
+      },
+      "assignees": [],
+      "labels": [
+        "31 needs: help",
+        "41 lvl: easy",
+        "99 tag: Plone 6.x",
+        "dependencies",
+        "99 tag: good first issue",
+        "99 tag: hacktoberfest"
+      ],
+      "contributor_summary": {
+        "status": "available",
+        "generated_at": "2026-08-20T22:24:12Z",
+        "source_issue_updated_at": "2026-08-20T21:49:21Z",
+        "model": "gpt-4o-mini",
+        "summary_markdown": "```markdown\n## What this issue is about\nThis issue focuses on upgrading Vale to version 3.18.0, which introduces support for MyST (a Markdown flavor) and other new features. This upgrade aims to improve our documentation quality. \n\n## What needs to be done\n- Update the project requirements to include Vale 3.18.0.\n- Configure Vale for MyST formatting by following [these instructions](https://docs.vale.sh/formats/myst).\n- Clean up any outdated spellings in `accept.txt` that Vale now ignores.\n- Implement the \"one sentence per line\" formatting script found [here](https://gist.github.com/jdkato/81508f54b34d7f0006aa90491257196b).\n\n## Helpful background\nVale is a tool that helps maintain writing quality in documentation. MyST makes Markdown more powerful, particularly for technical content. If you’re new to these terms, don't worry; this issue will guide you through the preparation steps.\n\n## Good first steps\n1. Familiarize yourself with Vale and MyST through the provided links.\n2. Clone the repository and get the current project setup running.\n3. Start by updating the requirements for Vale 3.18.0; this is a great first task.\n4. If you have questions, feel free to ask in the comments!\n\nThis is marked as a good first issue, so jump in and help out!\n```",
+        "path": "data/issues/summaries/plone/documentation/2100.json"
+      }
+    },
     {
       "id": 4598286545,
       "number": 101,
@@ -369,10 +402,10 @@
   "message": null,
   "workflow": {
     "repository": "syslabcom/activity-recognition",
-    "run_id": "32419264038",
-    "run_number": "2661",
+    "run_id": "32424078024",
+    "run_number": "2662",
     "attempt": "1",
-    "url": "https://github.com/syslabcom/activity-recognition/actions/runs/32419264038",
-    "sha": "798b23bb6c8a82a9674d690b197209f7d93865f9"
+    "url": "https://github.com/syslabcom/activity-recognition/actions/runs/32424078024",
+    "sha": "3af673c6681cdffe4d72c77c28e53ceaf79ff6bd"
   }
 }
