@@ -1,17 +1,34 @@
 {
   "version": 1,
-  "generated_at": "2026-08-24T08:06:05Z",
+  "generated_at": "2026-08-25T07:57:51Z",
   "tasks": [
     {
       "slug": "github-activity-digest",
       "title": "GitHub Activity Digest",
       "latest": {
         "status": "success",
-        "generated_at": "2026-08-24T08:06:05Z",
+        "generated_at": "2026-08-25T07:57:51Z",
         "json_path": "data/github-activity-digest/latest.json",
         "markdown_path": "data/github-activity-digest/latest.md"
       },
       "runs": [
+        {
+          "status": "success",
+          "generated_at": "2026-08-25T07:57:51Z",
+          "period": {
+            "days": 7,
+            "start": "2026-08-18",
+            "end": "2026-08-25"
+          },
+          "counts": {
+            "repos_processed": 426,
+            "active_repos": 108
+          },
+          "json_path": "data/github-activity-digest/runs/2026-08-25T07-57-51Z.json",
+          "markdown_path": "data/github-activity-digest/runs/2026-08-25T07-57-51Z.md",
+          "workflow_url": "https://github.com/syslabcom/activity-recognition/actions/runs/32823891925",
+          "summary_excerpt": "# 📊 WEEKLY SUMMARY **2026-08-18 to 2026-08-25** This week in the Plone organization saw significant activity focused on dependency updates, particularly with the `astral-sh/setup-…"
+        },
         {
           "status": "success",
           "generated_at": "2026-08-24T08:06:05Z",
