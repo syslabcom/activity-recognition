@@ -1,14 +1,14 @@
 {
   "version": 1,
   "status": "success",
-  "generated_at": "2026-08-19T10:25:34Z",
+  "generated_at": "2026-08-26T10:32:19Z",
   "source_issue": {
     "id": 2297234474,
     "number": 3953,
     "title": "PLIP: Start separating Blicca (Classic UI) code from the core",
     "html_url": "https://github.com/plone/Products.CMFPlone/issues/3953",
     "repository_full_name": "plone/Products.CMFPlone",
-    "updated_at": "2026-08-12T12:30:49Z",
+    "updated_at": "2026-08-25T10:27:33Z",
     "labels": [
       "31 needs: help",
       "99 tag: cleanup",
@@ -18,19 +18,19 @@
       "53 target: major",
       "99 tag: Classic UI"
     ],
-    "comments": 27
+    "comments": 28
   },
   "ai": {
     "provider": "openai",
     "model": "gpt-4o-mini"
   },
-  "summary_markdown": "```markdown\n## What this issue is about\nThis issue involves a proposal (PLIP) to gradually separate Classic UI code from the core Plone package. The goal is to clean up the codebase, making it easier to maintain and reducing the overall weight for users of the Volto frontend.\n\n## What needs to be done\n- Move Classic UI templates and views into a new package called `plone.classicui` while keeping the core API intact.\n- Shift relevant code to `plone.app.layout` but maintain backward compatibility, especially for existing templates.\n- Discuss and finalize the structure for Plone 6.x and how it will transition to 7.x without breaking functionality.\n\n## Helpful background\nThe discussion includes several viewpoints on whether certain templates should remain in `plone.classicui` or be moved to `plone.app.layout`. There are ongoing conversations about managing dependencies and ensuring compatibility across versions.\n\n## Good first steps\n1. Familiarize yourself with the existing templates and their purposes.\n2. If you're comfortable, start contributing to the cleanup discussions or move specific templates/code as needed.\n3. Ensure proper testing for any changes made and consider documenting your work for future contributors.\n```",
+  "summary_markdown": "```markdown\n## What this issue is about\nThis issue addresses the gradual separation of the Classic UI code (Blicca) from the core Plone package, aiming to create a cleaner and more maintainable codebase. The objective is to move relevant templates and view logic to a new package, `plone.app.layout`, while maintaining essential functionality for users of the Classic UI.\n\n## What needs to be done\nThe main tasks include:\n- Create a dedicated package (`plone.classicui`) to manage the Classic UI distribution.\n- Migrate relevant Classic UI templates and logic to `plone.app.layout`.\n- Ensure backward compatibility during these transitions.\n\n## Helpful background\nThe motivation for this change is to streamline Plone's architecture for better performance and maintainability, particularly for those using the Volto frontend, which does not require Classic UI code. Discussion on this issue indicates varying opinions on the best approach, and some implementation details are still being debated.\n\n## Good first steps\n1. Familiarize yourself with the current codebase, focusing on templates related to `plone.app.layout`.\n2. Review existing discussions and proposals to understand the context and needs.\n3. Start experimenting with the migration of specific templates, aiming for backward compatibility while moving code.\n4. Team up with others engaged in this effort for coordination.\n```",
   "workflow": {
     "repository": "syslabcom/activity-recognition",
-    "run_id": "32242597630",
-    "run_number": "2627",
+    "run_id": "32958736046",
+    "run_number": "2786",
     "attempt": "1",
-    "url": "https://github.com/syslabcom/activity-recognition/actions/runs/32242597630",
-    "sha": "53876e7bec612aaea7e12fc727391e7ace8c81de"
+    "url": "https://github.com/syslabcom/activity-recognition/actions/runs/32958736046",
+    "sha": "3f07e7a553d6b427a86d2d8ac38c7fed3e81f0f5"
   }
 }
