@@ -1,7 +1,7 @@
 {
   "version": 1,
   "status": "success",
-  "generated_at": "2026-08-27T02:54:20Z",
+  "generated_at": "2026-08-27T13:46:27Z",
   "organization": "plone",
   "state": "open",
   "slug": "good-first-onboarding",
@@ -11,6 +11,37 @@
   ],
   "issue_count": 12,
   "issues": [
+    {
+      "id": 4020920049,
+      "number": 2065,
+      "title": "Add Plone documentation to sites that attract first-time contributors",
+      "html_url": "https://github.com/plone/documentation/issues/2065",
+      "repository_full_name": "plone/documentation",
+      "repository_url": "https://api.github.com/repos/plone/documentation",
+      "state": "open",
+      "created_at": "2026-03-04T09:10:56Z",
+      "updated_at": "2026-08-27T05:18:34Z",
+      "comments": 6,
+      "author": {
+        "login": "stevepiercy",
+        "html_url": "https://github.com/stevepiercy"
+      },
+      "assignees": [],
+      "labels": [
+        "33 needs: docs",
+        "41 lvl: easy",
+        "99 tag: good first issue",
+        "99 tag: hacktoberfest"
+      ],
+      "contributor_summary": {
+        "status": "available",
+        "generated_at": "2026-08-27T13:46:33Z",
+        "source_issue_updated_at": "2026-08-27T05:18:34Z",
+        "model": "gpt-4o-mini",
+        "summary_markdown": "```markdown\n## What this issue is about\nThis issue focuses on enhancing Plone's documentation to support first-time contributors. It's part of a pilot program that aims to create a welcoming environment for new contributors, following an example from the icalendar project.\n\n## What needs to be done\n1. Update the documentation to reflect this initiative.\n2. Review current guidance for first-time contributors on [this page](https://6.docs.plone.org/contributing/first-time.html) and identify areas that might discourage new users.\n3. Consider including options for low or non-code contributions, like translations or blogging.\n\n## Helpful background\nThe project has been accepted into multiple contributor platforms, including Up For Grabs. However, there are ongoing discussions regarding the Good First Issue label's status. The expectations are for clear documentation updates and coordination to ensure all contributors feel supported.\n\n## Good first steps\n1. Review the first-time contributor documentation linked above.\n2. Note any parts that could be improved for a more welcoming experience.\n3. Join the discussion about documentation updates if you wish to contribute, and feel free to ask questions here or on related GitHub discussions!\n```",
+        "path": "data/issues/summaries/plone/documentation/2065.json"
+      }
+    },
     {
       "id": 5208186791,
       "number": 2100,
@@ -74,37 +105,6 @@
         "model": "gpt-4o-mini",
         "summary_markdown": "## What this issue is about\nThis issue focuses on polishing the documentation for the Plone project, specifically addressing renames and the structure of the \"Contributing...\" section. An earlier pull request has made significant updates, but further adjustments are needed to remove outdated references to Volto.\n\n## What needs to be done\nYou will need to review the current documentation and refine the \"Contributing...\" section to ensure it is aligned with the current Plone guidelines. This might involve updating links, removing outdated information, and improving the overall layout.\n\n## Helpful background\nThe discussion reveals some ambiguities regarding references to the Volto project and the Storybook link. It’s helpful to verify if certain sections still meet current needs. Engaging with existing documentation, including [First-time contributors](https://6.docs.plone.org/contributing/first-time.html), is encouraged.\n\n## Good first steps\n1. Review the current documentation at [Plone Aurora Docs](https://plone-aurora.readthedocs.io/).\n2. Identify sections referring to Volto that need updates.\n3. Make notes on any layout improvements.\n4. Consider participating in discussions to clarify any uncertain points.\n5. Once ready, open a PR with your changes for review.",
         "path": "data/issues/summaries/plone/aurora/101.json"
-      }
-    },
-    {
-      "id": 4020920049,
-      "number": 2065,
-      "title": "Add Plone documentation to sites that attract first-time contributors",
-      "html_url": "https://github.com/plone/documentation/issues/2065",
-      "repository_full_name": "plone/documentation",
-      "repository_url": "https://api.github.com/repos/plone/documentation",
-      "state": "open",
-      "created_at": "2026-03-04T09:10:56Z",
-      "updated_at": "2026-07-05T05:04:50Z",
-      "comments": 3,
-      "author": {
-        "login": "stevepiercy",
-        "html_url": "https://github.com/stevepiercy"
-      },
-      "assignees": [],
-      "labels": [
-        "33 needs: docs",
-        "41 lvl: easy",
-        "99 tag: good first issue",
-        "99 tag: hacktoberfest"
-      ],
-      "contributor_summary": {
-        "status": "available",
-        "generated_at": "2026-07-05T07:08:39Z",
-        "source_issue_updated_at": "2026-07-05T05:04:50Z",
-        "model": "gpt-4o-mini",
-        "summary_markdown": "```markdown\n## What this issue is about\nThis issue focuses on improving Plone documentation to attract first-time contributors. Inspired by a model used in the icalendar project, it aims to create a welcoming environment for newcomers.\n\n## What needs to be done\n1. Update the documentation to include information about this pilot program.\n2. Consider adding non-code contributions like translations or tutorials.\n3. Follow up on the Good First Issue application, which is currently awaiting feedback.\n\n## Helpful background\nThe project has received acceptance into the \"Up For Grabs\" initiative, which helps identify beginner-friendly tasks. However, there is some uncertainty regarding the status with \"Good First Issue\", as the discussion is still ongoing.\n\n## Good first steps\n- Familiarize yourself with the [Up For Grabs site](https://up-for-grabs.net/#/filters?tags=ical%2Cicalendar%2Cics%2Crfc5545) for context.\n- Join the conversation about enhancing the documentation.\n- Consider contributing any low or non-code tasks as mentioned in the Hacktoberfest guidelines.\n\nFeel free to ask questions if you are uncertain about any part of the process!\n```",
-        "path": "data/issues/summaries/plone/documentation/2065.json"
       }
     },
     {
@@ -402,10 +402,10 @@
   "message": null,
   "workflow": {
     "repository": "syslabcom/activity-recognition",
-    "run_id": "33034717378",
-    "run_number": "2794",
+    "run_id": "33078586081",
+    "run_number": "2795",
     "attempt": "1",
-    "url": "https://github.com/syslabcom/activity-recognition/actions/runs/33034717378",
-    "sha": "a58062a30c74343fecd8b9061ff9c3a5345b5655"
+    "url": "https://github.com/syslabcom/activity-recognition/actions/runs/33078586081",
+    "sha": "b61bd603a04fe3c22fb8d1b2f8877155c24bc9cf"
   }
 }
