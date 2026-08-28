@@ -1,17 +1,34 @@
 {
   "version": 1,
-  "generated_at": "2026-08-27T18:19:25Z",
+  "generated_at": "2026-08-28T19:27:45Z",
   "tasks": [
     {
       "slug": "github-activity-digest",
       "title": "GitHub Activity Digest",
       "latest": {
         "status": "success",
-        "generated_at": "2026-08-27T18:19:25Z",
+        "generated_at": "2026-08-28T19:27:45Z",
         "json_path": "data/github-activity-digest/latest.json",
         "markdown_path": "data/github-activity-digest/latest.md"
       },
       "runs": [
+        {
+          "status": "success",
+          "generated_at": "2026-08-28T19:27:45Z",
+          "period": {
+            "days": 7,
+            "start": "2026-08-21",
+            "end": "2026-08-28"
+          },
+          "counts": {
+            "repos_processed": 426,
+            "active_repos": 82
+          },
+          "json_path": "data/github-activity-digest/runs/2026-08-28T19-27-45Z.json",
+          "markdown_path": "data/github-activity-digest/runs/2026-08-28T19-27-45Z.md",
+          "workflow_url": "https://github.com/syslabcom/activity-recognition/actions/runs/33203711007",
+          "summary_excerpt": "# 📊 WEEKLY SUMMARY **2026-08-21 to 2026-08-28** This week in the Plone organization saw a focus on updating dependencies, primarily around the `astral-sh/setup-uv` package, as wel…"
+        },
         {
           "status": "success",
           "generated_at": "2026-08-27T18:19:25Z",
