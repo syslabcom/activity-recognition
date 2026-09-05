@@ -1,19 +1,19 @@
 ---
 title: "Plone issue list — Level: Moderate"
 permalink: "/issues/lvl-moderate/"
-generated_at: "2026-09-05T08:12:07Z"
+generated_at: "2026-09-05T09:09:34Z"
 organization: "plone"
-issue_count: 73
+issue_count: 72
 required_labels:
   - "42 lvl: moderate"
 ---
 
 # Plone issue list — Level: Moderate
 
-Generated: `2026-09-05T08:12:07Z`  
+Generated: `2026-09-05T09:09:34Z`  
 Organization: `plone`  
 Required label: `42 lvl: moderate`  
-Issue count: `73`
+Issue count: `72`
 
 Sorted by last updated date, newest first.
 
@@ -72,7 +72,6 @@ Sorted by last updated date, newest first.
 | 2024-01-09 07:21 UTC | `plone/volto` | [#293 Embed (via iFrame) Block](https://github.com/plone/volto/issues/293) | `robgietema` | `04 type: enhancement`, `14 prio: low`, `21 status: confirmed`, `42 lvl: moderate` |
 | 2024-01-08 11:54 UTC | `plone/documentation` | [#1360 Backend instructions should explain how to add add-ons](https://github.com/plone/documentation/issues/1360) | `Rudd-O` | `42 lvl: moderate`, `99 tag: backend` |
 | 2023-12-12 17:47 UTC | `plone/volto` | [#182 Page transitions for React Router](https://github.com/plone/volto/issues/182) | `davisagli` | `04 type: enhancement`, `13 prio: normal`, `21 status: confirmed`, `31 needs: help`, `42 lvl: moderate` |
-| 2023-10-14 13:48 UTC | `plone/meta` | [#173 Make dependency checker configurable](https://github.com/plone/meta/issues/173) | `jensens` | `04 type: enhancement`, `14 prio: low`, `42 lvl: moderate` |
 | 2023-10-14 12:19 UTC | `plone/meta` | [#153 Validate that template's markup is valid](https://github.com/plone/meta/issues/153) | `gforcada` | `04 type: enhancement`, `13 prio: normal`, `42 lvl: moderate` |
 | 2023-06-29 10:46 UTC | `plone/meta` | [#129 Add basic configuration for `MANIFEST.in`?](https://github.com/plone/meta/issues/129) | `gforcada` | `04 type: enhancement`, `14 prio: low`, `42 lvl: moderate` |
 | 2023-05-27 11:16 UTC | `plone/meta` | [#97 Improve coverage reports](https://github.com/plone/meta/issues/97) | `gforcada` | `04 type: enhancement`, `13 prio: normal`, `42 lvl: moderate` |
