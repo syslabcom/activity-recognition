@@ -1,17 +1,34 @@
 {
   "version": 1,
-  "generated_at": "2026-09-05T07:23:54Z",
+  "generated_at": "2026-09-06T07:24:34Z",
   "tasks": [
     {
       "slug": "github-activity-digest",
       "title": "GitHub Activity Digest",
       "latest": {
         "status": "success",
-        "generated_at": "2026-09-05T07:23:54Z",
+        "generated_at": "2026-09-06T07:24:34Z",
         "json_path": "data/github-activity-digest/latest.json",
         "markdown_path": "data/github-activity-digest/latest.md"
       },
       "runs": [
+        {
+          "status": "success",
+          "generated_at": "2026-09-06T07:24:34Z",
+          "period": {
+            "days": 7,
+            "start": "2026-08-30",
+            "end": "2026-09-06"
+          },
+          "counts": {
+            "repos_processed": 426,
+            "active_repos": 10
+          },
+          "json_path": "data/github-activity-digest/runs/2026-09-06T07-24-34Z.json",
+          "markdown_path": "data/github-activity-digest/runs/2026-09-06T07-24-34Z.md",
+          "workflow_url": "https://github.com/syslabcom/activity-recognition/actions/runs/34018942243",
+          "summary_excerpt": "# 📊 WEEKLY SUMMARY 2026-08-30 to 2026-09-06 This week, the Plone organization demonstrated productive activity across multiple repositories, focusing on enhancing security feature…"
+        },
         {
           "status": "success",
           "generated_at": "2026-09-05T07:23:54Z",
