@@ -1,26 +1,24 @@
 ---
 title: "Plone issue list — Level: Easy"
 permalink: "/issues/lvl-easy/"
-generated_at: "2026-09-09T13:10:09Z"
+generated_at: "2026-09-09T14:10:15Z"
 organization: "plone"
-issue_count: 85
+issue_count: 73
 required_labels:
   - "41 lvl: easy"
 ---
 
 # Plone issue list — Level: Easy
 
-Generated: `2026-09-09T13:10:09Z`  
+Generated: `2026-09-09T14:10:15Z`  
 Organization: `plone`  
 Required label: `41 lvl: easy`  
-Issue count: `85`
+Issue count: `73`
 
 Sorted by last updated date, newest first.
 
 | Updated | Repository | Issue | Author | Labels |
 | --- | --- | --- | --- | --- |
-| 2026-08-27 05:18 UTC | `plone/documentation` | [#2065 Add Plone documentation to sites that attract first-time contributors](https://github.com/plone/documentation/issues/2065) | `stevepiercy` | `33 needs: docs`, `41 lvl: easy`, `99 tag: good first issue`, `99 tag: hacktoberfest` |
-| 2026-08-20 21:49 UTC | `plone/documentation` | [#2100 Upgrade to Vale 3.18.0 to support MyST, moar new features  🎉](https://github.com/plone/documentation/issues/2100) | `stevepiercy` | `31 needs: help`, `41 lvl: easy`, `99 tag: Plone 6.x`, `dependencies`, `99 tag: good first issue`, `99 tag: hacktoberfest` |
 | 2026-08-15 18:00 UTC | `plone/aurora` | [#101 Polish documentation renames, and overall shape](https://github.com/plone/aurora/issues/101) | `sneridagh` | `31 needs: help`, `33 needs: docs`, `41 lvl: easy`, `99 tag: good first issue`, `99 tag: hacktoberfest` |
 | 2026-07-19 00:51 UTC | `plone/volto` | [#7088 unRegisterSlotComponent is in the code, but in the docs it is unregisterSlotComponent](https://github.com/plone/volto/issues/7088) | `silviubogan` | `01 type: bug`, `33 needs: docs`, `41 lvl: easy`, `30 needs: triage`, `27 status: stale` |
 | 2026-07-06 18:55 UTC | `plone/plone.app.contentrules` | [#133 The listing of the substitutions variables in the send e-mail action is missing in volto.](https://github.com/plone/plone.app.contentrules/issues/133) | `acsr` | `04 type: enhancement`, `33 needs: docs`, `41 lvl: easy` |
@@ -37,15 +35,6 @@ Sorted by last updated date, newest first.
 | 2026-03-23 17:51 UTC | `plone/Products.CMFPlone` | [#1393 Add validation for image sizes/format (width:height) in @@imaging-controlpanel](https://github.com/plone/Products.CMFPlone/issues/1393) | `idgserpro` | `04 type: enhancement`, `99 tag: UX Site Admin`, `99 tag: UX Integrator/Themer`, `31 needs: help`, `14 prio: low`, `21 status: confirmed`, `41 lvl: easy` |
 | 2026-03-23 16:38 UTC | `plone/Products.CMFPlone` | [#2950 "HTML" and "Markdown" are not mention in the help text of "Globally enable comments"](https://github.com/plone/Products.CMFPlone/issues/2950) | `dbitouze` | `01 type: bug`, `31 needs: help`, `14 prio: low`, `41 lvl: easy` |
 | 2026-03-11 17:52 UTC | `plone/volto` | [#7947 Improve `@plone/client` documentation](https://github.com/plone/volto/issues/7947) | `stevepiercy` | `04 type: enhancement`, `31 needs: help`, `33 needs: docs`, `41 lvl: easy`, `dependencies` |
-| 2026-03-04 09:06 UTC | `plone/documentation` | [#2029 Create a GitHub App that detects first-time comments and responds with links to how to contribute](https://github.com/plone/documentation/issues/2029) | `stevepiercy` | `04 type: enhancement`, `31 needs: help`, `41 lvl: easy`, `99 tag: good first issue`, `99 tag: hacktoberfest` |
-| 2026-03-04 09:06 UTC | `plone/documentation` | [#1973 Add "Related content" as the final section in most pages](https://github.com/plone/documentation/issues/1973) | `stevepiercy` | `41 lvl: easy`, `99 tag: good first issue`, `99 tag: hacktoberfest` |
-| 2026-03-04 09:06 UTC | `plone/documentation` | [#1751 Replace "Plone instance" and "Zope / Plone instance" with "Zope instance"](https://github.com/plone/documentation/issues/1751) | `stevepiercy` | `41 lvl: easy`, `99 tag: good first issue`, `99 tag: hacktoberfest` |
-| 2026-03-04 09:06 UTC | `plone/documentation` | [#1190 Improve spellcheck](https://github.com/plone/documentation/issues/1190) | `stevepiercy` | `31 needs: help`, `33 needs: docs`, `41 lvl: easy`, `99 tag: Plone 6.x`, `99 tag: good first issue`, `99 tag: hacktoberfest` |
-| 2026-03-04 09:06 UTC | `plone/documentation` | [#1281 Overview: Create a dependency diagram using pipforester and pipdeptree](https://github.com/plone/documentation/issues/1281) | `stevepiercy` | `31 needs: help`, `33 needs: docs`, `41 lvl: easy`, `99 tag: Plone 6.x`, `99 tag: good first issue`, `99 tag: hacktoberfest` |
-| 2026-03-04 09:06 UTC | `plone/documentation` | [#717 need documentation on customizing print styles](https://github.com/plone/documentation/issues/717) | `tkimnguyen` | `31 needs: help`, `33 needs: docs`, `41 lvl: easy`, `99 tag: Plone 6.x`, `99 tag: good first issue`, `99 tag: hacktoberfest` |
-| 2026-03-04 09:06 UTC | `plone/documentation` | [#1147 Improve SEO with `html_meta` directive.](https://github.com/plone/documentation/issues/1147) | `stevepiercy` | `31 needs: help`, `33 needs: docs`, `41 lvl: easy`, `99 tag: Plone 6.x`, `99 tag: good first issue`, `99 tag: hacktoberfest` |
-| 2026-03-04 09:06 UTC | `plone/documentation` | [#692 add doc on customizing moment.js date formats](https://github.com/plone/documentation/issues/692) | `tkimnguyen` | `31 needs: help`, `33 needs: docs`, `41 lvl: easy`, `99 tag: Plone 6.x`, `99 tag: classic-ui`, `99 tag: good first issue`, `99 tag: hacktoberfest` |
-| 2026-03-04 09:06 UTC | `plone/documentation` | [#612 document feature of external links opening in new tab/window](https://github.com/plone/documentation/issues/612) | `tkimnguyen` | `33 needs: docs`, `41 lvl: easy`, `99 tag: good first issue`, `99 tag: hacktoberfest` |
 | 2026-01-29 22:02 UTC | `plone/plone.restapi` | [#285 Discrepancy in documentation for Authentication sometimes root used as plone sometimes Plone](https://github.com/plone/plone.restapi/issues/285) | `envy7` | `01 type: bug`, `41 lvl: easy` |
 | 2026-01-25 06:16 UTC | `plone/volto` | [#955 user menu popup is not available on the site setup pages](https://github.com/plone/volto/issues/955) | `fredvd` | `01 type: bug`, `41 lvl: easy` |
 | 2026-01-25 06:15 UTC | `plone/Products.CMFPlone` | [#3353 Show portal_timezone in date widgets](https://github.com/plone/Products.CMFPlone/issues/3353) | `MrTango` | `04 type: enhancement`, `31 needs: help`, `41 lvl: easy`, `99 tag: Plone 6.0` |
@@ -66,7 +55,6 @@ Sorted by last updated date, newest first.
 | 2024-11-09 21:20 UTC | `plone/volto` | [#3910 can't edit on mobile as hard to close and reopen settings](https://github.com/plone/volto/issues/3910) | `djay` | `01 type: bug`, `04 type: enhancement`, `41 lvl: easy`, `99 tag: UX` |
 | 2024-11-09 07:30 UTC | `plone/mockup` | [#878 Live Search: Enter key does not trigger search](https://github.com/plone/mockup/issues/878) | `reinhardt` | `41 lvl: easy` |
 | 2024-07-19 08:48 UTC | `plone/plone.volto` | [#149 plone.volto:default should install all necessary dependencies](https://github.com/plone/plone.volto/issues/149) | `jensens` | `01 type: bug`, `14 prio: low`, `33 needs: docs`, `41 lvl: easy` |
-| 2024-02-23 09:21 UTC | `plone/plone.app.layout` | [#360 harmonize or add missing CSS classes in markup](https://github.com/plone/plone.app.layout/issues/360) | `MrTango` | `01 type: bug`, `02 type: regression`, `41 lvl: easy` |
 | 2024-02-16 17:01 UTC | `plone/plone.org` | [#149 a view for the Foundation Sponsor content type](https://github.com/plone/plone.org/issues/149) | `tkimnguyen` | `01 type: bug`, `04 type: enhancement`, `12 prio: high`, `31 needs: help`, `41 lvl: easy` |
 | 2024-02-16 16:57 UTC | `plone/plone.org` | [#143 add social media fields to Foundation Member content type](https://github.com/plone/plone.org/issues/143) | `tkimnguyen` | `04 type: enhancement`, `13 prio: normal`, `41 lvl: easy` |
 | 2024-02-06 22:07 UTC | `plone/volto` | [#588 Resetting the password does not work.](https://github.com/plone/volto/issues/588) | `vinay72` | `01 type: bug`, `12 prio: high`, `31 needs: help`, `41 lvl: easy` |

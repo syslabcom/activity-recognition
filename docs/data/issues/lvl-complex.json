@@ -1,7 +1,7 @@
 {
   "version": 1,
   "status": "success",
-  "generated_at": "2026-09-09T13:10:09Z",
+  "generated_at": "2026-09-09T14:10:15Z",
   "organization": "plone",
   "state": "open",
   "slug": "lvl-complex",
@@ -9,7 +9,7 @@
   "required_labels": [
     "43 lvl: complex"
   ],
-  "issue_count": 53,
+  "issue_count": 42,
   "issues": [
     {
       "id": 1554846894,
@@ -559,98 +559,6 @@
       }
     },
     {
-      "id": 216172434,
-      "number": 1976,
-      "title": "z3c.form fields with a default value cannot be set to None or \"\"",
-      "html_url": "https://github.com/plone/Products.CMFPlone/issues/1976",
-      "repository_full_name": "plone/Products.CMFPlone",
-      "repository_url": "https://api.github.com/repos/plone/Products.CMFPlone",
-      "state": "open",
-      "created_at": "2017-03-22T18:52:56Z",
-      "updated_at": "2026-03-23T17:35:51Z",
-      "comments": 7,
-      "author": {
-        "login": "thet",
-        "html_url": "https://github.com/thet"
-      },
-      "assignees": [],
-      "labels": [
-        "01 type: bug",
-        "31 needs: help",
-        "12 prio: high",
-        "21 status: confirmed",
-        "43 lvl: complex"
-      ],
-      "contributor_summary": {
-        "status": "available",
-        "generated_at": "2026-04-09T11:25:24Z",
-        "source_issue_updated_at": "2026-03-23T17:35:51Z",
-        "model": "gpt-4o-mini",
-        "summary_markdown": "## What this issue is about\nThis issue addresses a bug where `z3c.form` fields with a default value can't be set to `None` or an empty string `(\"\")`. When users attempt to clear a field and save it, the default value is incorrectly restored upon re-editing the form.\n\n## What needs to be done\nWe need to investigate and fix the underlying issue in `z3c.form` that causes default values to be reapplied even when users want to clear fields. This is currently recognized as a bug affecting multiple scenarios in Plone related to custom content types.\n\n## Helpful background\nThe problem has been noted in various forms, affecting both querying behavior and fields such as `TextLine`. Members of the community have managed to identify that the issue arises with certain versions of `z3c.form`—versions 3.2.11 and later currently exhibit this bug, while 3.2.9 does not. However, there may be additional complexities not yet fully understood.\n\n## Good first steps\n1. Review the existing comments and check out the discussed versions of `z3c.form` to understand which changes led to the bug.\n2. Test the implementation with `z3c.form` version 3.2.9 to confirm it behaves as expected.\n3. Collaborate with other contributors for insights on the code and potential fixes. \n4. Document any findings in your review process for clarity and future reference.",
-        "path": "data/issues/summaries/plone/Products.CMFPlone/1976.json"
-      }
-    },
-    {
-      "id": 3922927900,
-      "number": 4273,
-      "title": "PLIP: Make Products.CMFEditions a Core Add-on",
-      "html_url": "https://github.com/plone/Products.CMFPlone/issues/4273",
-      "repository_full_name": "plone/Products.CMFPlone",
-      "repository_url": "https://api.github.com/repos/plone/Products.CMFPlone",
-      "state": "open",
-      "created_at": "2026-02-10T18:22:20Z",
-      "updated_at": "2026-02-14T00:25:37Z",
-      "comments": 4,
-      "author": {
-        "login": "jensens",
-        "html_url": "https://github.com/jensens"
-      },
-      "assignees": [],
-      "labels": [
-        "03 type: feature (plip)",
-        "43 lvl: complex",
-        "52 target: minor",
-        "99 tag:backend"
-      ],
-      "contributor_summary": {
-        "status": "available",
-        "generated_at": "2026-04-09T11:34:27Z",
-        "source_issue_updated_at": "2026-02-14T00:25:37Z",
-        "model": "gpt-4o-mini",
-        "summary_markdown": "```markdown\n## What this issue is about\nThis issue discusses a proposal to move **Products.CMFEditions** from being a core dependency of **Products.CMFPlone** to a core add-on. Currently, every Plone site has it active, which adds overhead even when versioning is not used. The proposal aims to allow sites that don't need versioning to exclude it without losing functionality.\n\n## What needs to be done\nTo achieve this, several code changes are required in various packages. Important tasks include:\n- Removing hard dependencies on **Products.CMFEditions** from **Products.CMFPlone**.\n- Implementing conditional imports and fallback mechanisms to ensure functionality without errors if **CMFEditions** is absent.\n- Updating tests to skip assertions that assume **CMFEditions** is installed.\n\n## Helpful background\nThere's a concern about performance overhead due to **CMFEditions**, especially regarding object creation time. While there's some ambiguity in comments about the exact impact of versioning on all content types, tests and benchmarks hint at significant performance implications for sites using versioning.\n\n## Good first steps\n1. **Review the PLIP documentation** to understand the process for contributing changes to Plone.\n2. Familiarize yourself with the **Products.CMFPlone** repository structure and where dependencies are declared.\n3. Start by making small changes, such as modifying dependencies and implementing conditional import patterns.\n4. Join the discussion to clarify any uncertainties and seek guidance from the community.\n```",
-        "path": "data/issues/summaries/plone/Products.CMFPlone/4273.json"
-      }
-    },
-    {
-      "id": 2393542605,
-      "number": 3987,
-      "title": "Create User Manual with screenshots and videos for Plone 6",
-      "html_url": "https://github.com/plone/Products.CMFPlone/issues/3987",
-      "repository_full_name": "plone/Products.CMFPlone",
-      "repository_url": "https://api.github.com/repos/plone/Products.CMFPlone",
-      "state": "open",
-      "created_at": "2024-07-06T12:21:30Z",
-      "updated_at": "2026-02-03T19:32:06Z",
-      "comments": 7,
-      "author": {
-        "login": "stevepiercy",
-        "html_url": "https://github.com/stevepiercy"
-      },
-      "assignees": [],
-      "labels": [
-        "03 type: feature (plip)",
-        "43 lvl: complex"
-      ],
-      "contributor_summary": {
-        "status": "available",
-        "generated_at": "2026-04-09T11:34:45Z",
-        "source_issue_updated_at": "2026-02-03T19:32:06Z",
-        "model": "gpt-4o-mini",
-        "summary_markdown": "```markdown\n## What this issue is about\nThis issue focuses on creating a comprehensive User Manual for Plone 6, including screenshots and videos. Currently, much of the documentation is outdated, particularly related to the Classic UI. By using automated tools, we can streamline the process of keeping this manual accurate and accessible.\n\n## What needs to be done\n1. Investigate tools like Cypress and Playwright that can automate the capturing of screenshots and videos.\n2. Port the existing Plone 5 user manual to Plone 6, ensuring it’s in MyST format with SEO headers.\n3. Set up automation via GitHub workflows to update these visuals with every pull request.\n\n## Helpful background\nOlder documentation can be daunting to update continuously. The goal here is to leverage automation to enhance the user experience without overloading users with visuals. Discussions suggest a balance between visuals and narrative text is essential, addressing concerns that too many visuals can clutter documentation.\n\n## Good first steps\n1. Explore the existing [Content Editing training guide](https://training.plone.org/content-editing/index.html) for reuse opportunities.\n2. Familiarize yourself with Cypress Studio and other mentioned tools.\n3. Join the conversation at PloneConf 2025 to discuss the direction and gather feedback.\n4. Consider collaborating with others who are interested in this effort.\n\nFeel free to ask questions if anything is unclear!\n```",
-        "path": "data/issues/summaries/plone/Products.CMFPlone/3987.json"
-      }
-    },
-    {
       "id": 3874667266,
       "number": 2044,
       "title": "Include diazo documentation in Classic backend documentation",
@@ -864,68 +772,6 @@
       }
     },
     {
-      "id": 512845190,
-      "number": 2968,
-      "title": "One File-Field (Type) to rules them all",
-      "html_url": "https://github.com/plone/Products.CMFPlone/issues/2968",
-      "repository_full_name": "plone/Products.CMFPlone",
-      "repository_url": "https://api.github.com/repos/plone/Products.CMFPlone",
-      "state": "open",
-      "created_at": "2019-10-26T14:57:55Z",
-      "updated_at": "2025-10-24T20:04:28Z",
-      "comments": 8,
-      "author": {
-        "login": "loechel",
-        "html_url": "https://github.com/loechel"
-      },
-      "assignees": [
-        "loechel"
-      ],
-      "labels": [
-        "04 type: enhancement",
-        "03 type: feature (plip)",
-        "43 lvl: complex",
-        "53 target: major"
-      ],
-      "contributor_summary": {
-        "status": "available",
-        "generated_at": "2026-04-09T13:37:03Z",
-        "source_issue_updated_at": "2025-10-24T20:04:28Z",
-        "model": "gpt-4o-mini",
-        "summary_markdown": "## What this issue is about\nThis issue proposes consolidating Plone's file-handling system to use a single field type for all file types, rather than separating them into specific types like bitmap images and other files. This change aims to simplify content management and enhance user experience by allowing better file differentiation based on MIME type.\n\n## What needs to be done\nThe main tasks include:\n- Deprecating specialized fields like `NamedImage` and `NamedBlobImage`.\n- Implementing a unified field that handles all file types while providing the necessary functionality based on their MIME types.\n- Ensuring backward compatibility and assessing potential risks associated with this change.\n\n## Helpful background\nThis enhancement stems from the recognition that current file handling in Plone can be confusing for editors and users. The discussion indicates that while there's general support for this simplification, there are concerns about the implications for content types and indexing files. This needs careful consideration.\n\n## Good first steps\n1. Familiarize yourself with Plone's file handling and the existing field types.\n2. Review the related comments in the issue for insights and opinions for and against the proposal.\n3. Get involved in discussions on possible side effects and share your thoughts in the comments for better clarity.\n4. Prepare a simple example implementation to demonstrate how this change could work.",
-        "path": "data/issues/summaries/plone/Products.CMFPlone/2968.json"
-      }
-    },
-    {
-      "id": 2853065874,
-      "number": 4110,
-      "title": "Refactor `plone.app.contentrules` to provide API methods, which `plone.restapi` can use",
-      "html_url": "https://github.com/plone/Products.CMFPlone/issues/4110",
-      "repository_full_name": "plone/Products.CMFPlone",
-      "repository_url": "https://api.github.com/repos/plone/Products.CMFPlone",
-      "state": "open",
-      "created_at": "2025-02-14T09:01:29Z",
-      "updated_at": "2025-10-24T11:50:29Z",
-      "comments": 7,
-      "author": {
-        "login": "MrTango",
-        "html_url": "https://github.com/MrTango"
-      },
-      "assignees": [],
-      "labels": [
-        "03 type: feature (plip)",
-        "43 lvl: complex"
-      ],
-      "contributor_summary": {
-        "status": "available",
-        "generated_at": "2026-04-09T13:37:19Z",
-        "source_issue_updated_at": "2025-10-24T11:50:29Z",
-        "model": "gpt-4o-mini",
-        "summary_markdown": "```markdown\n## What this issue is about\nThis issue involves refactoring `plone.app.contentrules` to create Python API methods that can be utilized by `plone.restapi`. The goal is to separate UI-related code from the API, improving maintainability and allowing headless installations to function seamlessly.\n\n## What needs to be done\n1. Develop Python API methods for all existing functionality in `plone.app.contentrules`.\n2. Move UI code to `plone.app.layout`.\n3. Update `plone.restapi` to use these new API methods.\n\n## Helpful background\nCurrently, `plone.restapi` fills form data directly, which ties it to the UI code in `plone.app.contentrules`. This refactor aims to decouple those dependencies. Although there are remarks about possibly turning `plone.app.contentrules` into a core add-on, this issue primarily focuses on the API refactoring.\n\n## Good first steps\n1. Familiarize yourself with the existing `plone.app.contentrules` and `plone.restapi` code.\n2. Explore how Python API methods can be structured.\n3. Engage in discussions about the feasibility of separating UI from API, as there is some ambiguity in the ongoing conversation regarding this refactor.\n4. Consider getting involved in related issues (like PLIP #4119) for broader context.\n5. Look out for testing and documentation needs once implementation is underway.\n```",
-        "path": "data/issues/summaries/plone/Products.CMFPlone/4110.json"
-      }
-    },
-    {
       "id": 224721369,
       "number": 29,
       "title": "Control panels",
@@ -1016,68 +862,6 @@
         "model": "gpt-4o-mini",
         "summary_markdown": "## What this issue is about\nThis issue discusses the need to establish a new theming approach in Volto following the removal of Semantic UI in version 18. Currently, there is no official theming guide available, and developers are looking for guidance on how to proceed.\n\n## What needs to be done\nWe need to develop the new theming system first before creating any documentation. As of now, there is an indication of direction in another issue (#6322), but details are still unclear. This task requires coordination and input from contributors.\n\n## Helpful background\nThe shift away from Semantic UI is due to it being outdated and no longer maintained. The new theming solution needs to fill this gap, but there hasn't been substantial progress, and some aspects of the discussion may be outdated.\n\n## Good first steps\n1. Familiarize yourself with the [documentation](https://6.docs.plone.org/volto/upgrade-guide/index.html#semantic-ui) related to the deprecation.\n2. Review issue #6322 for insights on proposed directions for the new theming system.\n3. Consider commenting on this issue if you have ideas or require clarification on next steps. Your input could be crucial in moving the conversation forward!",
         "path": "data/issues/summaries/plone/volto/6620.json"
-      }
-    },
-    {
-      "id": 2827132522,
-      "number": 4097,
-      "title": "PLIP: Plone 7 Documentation Layout, Structure, Theme, and Search to Improve Usability",
-      "html_url": "https://github.com/plone/Products.CMFPlone/issues/4097",
-      "repository_full_name": "plone/Products.CMFPlone",
-      "repository_url": "https://api.github.com/repos/plone/Products.CMFPlone",
-      "state": "open",
-      "created_at": "2025-02-03T10:40:28Z",
-      "updated_at": "2025-05-09T04:49:55Z",
-      "comments": 5,
-      "author": {
-        "login": "stevepiercy",
-        "html_url": "https://github.com/stevepiercy"
-      },
-      "assignees": [
-        "stevepiercy"
-      ],
-      "labels": [
-        "03 type: feature (plip)",
-        "43 lvl: complex"
-      ],
-      "contributor_summary": {
-        "status": "available",
-        "generated_at": "2026-04-09T14:39:43Z",
-        "source_issue_updated_at": "2025-05-09T04:49:55Z",
-        "model": "gpt-4o-mini",
-        "summary_markdown": "```markdown\n## What this issue is about\nThis issue focuses on improving the layout, structure, and usability of the Plone 7 Documentation, utilizing an upgraded Plone Sphinx Theme. Primary goals include creating targeted guides for Users, Developers, and Contributors, and enhancing the documentation's search functionality. \n\n## What needs to be done\n- Release `plone-sphinx-theme` 2.0.0 that utilizes PyData Sphinx Theme.\n- Integrate Nuclia Search for better user experience.\n- Reorganize documentation according to the Diátaxis Framework for clarity.\n- Develop and curate various documentation guides, including those for `@plone` packages.\n\n## Helpful background\nThe current documentation has usability issues due to its complex structure. The Diátaxis Framework offers a structured approach for organizing content, which aims to address these challenges. Plone Sphinx Theme depends on external themes, impacting its development pace.\n\n## Good first steps\n1. Familiarize yourself with the [Diátaxis Framework](https://diataxis.fr/).\n2. Explore the existing Plone documentation to understand current shortcomings.\n3. Check out the existing discussions for ideas on API documentation and structure.\n4. Collaborate on specific documentation pieces or contribute to the theme upgrade.\n5. Consider testing the existing documentation layout as you develop improvements.\n```",
-        "path": "data/issues/summaries/plone/Products.CMFPlone/4097.json"
-      }
-    },
-    {
-      "id": 2709856027,
-      "number": 4071,
-      "title": "Draft: Plone Multi Factor Authentication ",
-      "html_url": "https://github.com/plone/Products.CMFPlone/issues/4071",
-      "repository_full_name": "plone/Products.CMFPlone",
-      "repository_url": "https://api.github.com/repos/plone/Products.CMFPlone",
-      "state": "open",
-      "created_at": "2024-12-01T21:10:30Z",
-      "updated_at": "2025-04-17T13:13:25Z",
-      "comments": 4,
-      "author": {
-        "login": "loechel",
-        "html_url": "https://github.com/loechel"
-      },
-      "assignees": [],
-      "labels": [
-        "99 tag: UX Accessibility",
-        "04 type: enhancement",
-        "03 type: feature (plip)",
-        "43 lvl: complex"
-      ],
-      "contributor_summary": {
-        "status": "available",
-        "generated_at": "2026-04-09T14:39:55Z",
-        "source_issue_updated_at": "2025-04-17T13:13:25Z",
-        "model": "gpt-4o-mini",
-        "summary_markdown": "## What this issue is about\nThis issue focuses on implementing Multi-Factor Authentication (MFA) for Plone to enhance security. The aim is to support several MFA methods, including OTOP (Authenticator Apps), FIDO2 hardware tokens, and Passkeys, while offering integration with Single Sign-On (SSO) systems.\n\n## What needs to be done\nWe need to design and implement various MFA schemes. This will involve creating a control panel in Plone for configuring MFA requirements, where users can select settings based on their roles (e.g., optional, enforced for admins, or for all users). The implementation will include both backend and frontend components for Plone's different user interfaces.\n\n## Helpful background\nThere’s ongoing discussion about potentially breaking this large task into smaller, manageable pieces (PLIPs) to make it easier to implement individual MFA systems. UX design considerations are also essential for a seamless experience when integrating the different MFA methods.\n\n## Good first steps\n1. **Familiarize yourself** with Plone's [contributing guidelines](https://6.docs.plone.org/contributing/index.html).\n2. **Read through existing discussions** in this issue about UX design and breakdown suggestions to understand the scope and complexity.\n3. Consider participating in discussions to help clarify requirements or suggest improvements based on user experience.",
-        "path": "data/issues/summaries/plone/Products.CMFPlone/4071.json"
       }
     },
     {
@@ -1261,35 +1045,6 @@
       }
     },
     {
-      "id": 1956446393,
-      "number": 3866,
-      "title": "a11y - Icon for toolbar button \"user\" - cms ui",
-      "html_url": "https://github.com/plone/Products.CMFPlone/issues/3866",
-      "repository_full_name": "plone/Products.CMFPlone",
-      "repository_url": "https://api.github.com/repos/plone/Products.CMFPlone",
-      "state": "open",
-      "created_at": "2023-10-23T06:29:27Z",
-      "updated_at": "2024-01-11T12:33:42Z",
-      "comments": 2,
-      "author": {
-        "login": "stevepiercy",
-        "html_url": "https://github.com/stevepiercy"
-      },
-      "assignees": [],
-      "labels": [
-        "99 tag: UX Accessibility",
-        "43 lvl: complex"
-      ],
-      "contributor_summary": {
-        "status": "available",
-        "generated_at": "2026-04-09T17:27:57Z",
-        "source_issue_updated_at": "2024-01-11T12:33:42Z",
-        "model": "gpt-4o-mini",
-        "summary_markdown": "```markdown\n## What this issue is about\nThis issue discusses improving accessibility (a11y) in the Plone CMS UI by updating the icon and text for the \"user\" toolbar button. The goal is to provide a more intuitive and user-friendly experience for authenticated users.\n\n## What needs to be done\n1. **Change the text** for the button from \"username\" to \"Settings\".\n2. **Update the icon** to a settings icon, choosing between:\n   - [Volto settings icon](https://github.com/plone/volto/blob/master/src/icons/settings.svg)\n   - [Bootstrap settings slider icon](https://icons.getbootstrap.com/icons/sliders/)\n   - [Bootstrap vertical sliders icon](https://icons.getbootstrap.com/icons/sliders2-vertical/)\n\n## Helpful background\nThe issue is part of a larger discussion about long-term UI improvements in Plone. There are considerations for future enhancements, such as creating a dedicated \"Site Settings\" menu item, but those details are not final yet.\n\n## Good first steps\n1. Review the [Contributing to Plone](https://6.docs.plone.org/contributing/index.html) guidelines and [First-time contributors](https://6.docs.plone.org/contributing/first-time.html) documentation.\n2. Set up your local environment by installing Plone for development, as mentioned in the [installation instructions](https://6.docs.plone.org/install/install-from-packages.html).\n3. Explore the relevant code files to identify where the changes are needed. Don’t hesitate to ask for help if you're unsure where to start!\n```",
-        "path": "data/issues/summaries/plone/Products.CMFPlone/3866.json"
-      }
-    },
-    {
       "id": 1943279558,
       "number": 183,
       "title": "Script: remove `pkg_resources` namespace declarations",
@@ -1410,38 +1165,6 @@
       }
     },
     {
-      "id": 106062948,
-      "number": 960,
-      "title": "Autocomplete widget not normalizing on search",
-      "html_url": "https://github.com/plone/Products.CMFPlone/issues/960",
-      "repository_full_name": "plone/Products.CMFPlone",
-      "repository_url": "https://api.github.com/repos/plone/Products.CMFPlone",
-      "state": "open",
-      "created_at": "2015-09-11T18:07:36Z",
-      "updated_at": "2022-08-24T22:13:16Z",
-      "comments": 2,
-      "author": {
-        "login": "hvelarde",
-        "html_url": "https://github.com/hvelarde"
-      },
-      "assignees": [],
-      "labels": [
-        "04 type: enhancement",
-        "31 needs: help",
-        "13 prio: normal",
-        "21 status: confirmed",
-        "43 lvl: complex"
-      ],
-      "contributor_summary": {
-        "status": "available",
-        "generated_at": "2026-04-09T19:29:40Z",
-        "source_issue_updated_at": "2022-08-24T22:13:16Z",
-        "model": "gpt-4o-mini",
-        "summary_markdown": "# Autocomplete widget not normalizing on search\n\n## What this issue is about\nThis issue addresses a problem with the autocomplete widget in Plone that fails to recognize names with accents. For example, typing \"hec...\" does not suggest \"Héctor Velarde\" due to the lack of normalization of accented characters.\n\n## What needs to be done\nWe need to enhance the autocomplete widget to ensure it can return suggestions regardless of accent marks or character variations. This may involve improving how data is indexed and searched within the component.\n\n## Helpful background\nCurrently, it seems that the widget uses a simple keyword index that does not normalize strings. Normalization is the process of converting different forms of a character to a standard form (e.g., treating \"é\" and \"e\" as equivalent). The discussion indicates some uncertainty around existing implementations and their limitations.\n\n## Good first steps\n1. Familiarize yourself with the autocomplete widget in Plone, especially focusing on its indexing mechanism.\n2. Review how normalization is handled in similar components or libraries.\n3. Consider checking existing tests related to the widget and see if enhancements are needed or can be added.\n4. Discuss your findings or proposed changes in the issue comments for feedback before diving into coding.",
-        "path": "data/issues/summaries/plone/Products.CMFPlone/960.json"
-      }
-    },
-    {
       "id": 763844980,
       "number": 2061,
       "title": "Copy&Paste feature overlaps with DX Layout restrictions",
@@ -1499,37 +1222,6 @@
         "model": "gpt-4o-mini",
         "summary_markdown": "## What this issue is about\nThis issue revolves around the `api.env.adopt_roles` function in Plone, which is not working as expected. Users anticipated it would either temporarily grant roles during a code block or use a proxy user with those roles. However, current observations show it doesn't seem to alter permissions as expected.\n\n## What needs to be done\nWe need to clarify the intended behavior of `adopt_roles`. If it’s confirmed that the current functionality is a bug, it should be addressed in the code. Additionally, the documentation needs updating to explain what `adopt_roles` actually does.\n\n## Helpful background\nMultiple contributors have raised similar issues. They noticed that while granting roles directly using `api.user.grant_roles` operates effectively, `adopt_roles` fails to provide the expected permissions, particularly in the same request context. There's speculation that caching may play a role in this behavior.\n\n## Good first steps\n1. Review the existing tests in the mentioned [link](https://github.com/plone/plone.api/blob/master/src/plone/api/tests/test_env.py#L134-L174) to understand current expectations.\n2. Test the behavior of `adopt_roles` in simple scenarios, noting where it fails to grant access.\n3. If issues persist, contribute by updating documentation to specify the behavior of `adopt_roles`.\n4. Coordinate with other contributors who are interested in resolving these issues for collaborative debugging and solutions.",
         "path": "data/issues/summaries/plone/plone.api/293.json"
-      }
-    },
-    {
-      "id": 149723100,
-      "number": 146,
-      "title": "Encourage usage of XPath in rules.xml",
-      "html_url": "https://github.com/plone/bobtemplates.plone/issues/146",
-      "repository_full_name": "plone/bobtemplates.plone",
-      "repository_url": "https://api.github.com/repos/plone/bobtemplates.plone",
-      "state": "open",
-      "created_at": "2016-04-20T10:05:29Z",
-      "updated_at": "2018-10-23T08:58:33Z",
-      "comments": 5,
-      "author": {
-        "login": "jensens",
-        "html_url": "https://github.com/jensens"
-      },
-      "assignees": [],
-      "labels": [
-        "04 type: enhancement",
-        "31 needs: help",
-        "14 prio: low",
-        "43 lvl: complex"
-      ],
-      "contributor_summary": {
-        "status": "available",
-        "generated_at": "2026-04-09T20:20:13Z",
-        "source_issue_updated_at": "2018-10-23T08:58:33Z",
-        "model": "gpt-4o-mini",
-        "summary_markdown": "```markdown\n## What this issue is about\nThis issue aims to improve performance in the `rules.xml` of `bobtemplates.plone` by encouraging the use of XPath with absolute selectors instead of CSS selectors. The motivation is based on recent experiences showing that CSS selectors can lead to slow, global queries.\n\n## What needs to be done\nTo enhance performance, we should replace existing CSS selectors with more efficient XPath queries. The specific examples discussed involve changing rules for the `#visual-portal-wrapper`, as outlined by contributors, though there is some disagreement on whether XPath should be the standard approach.\n\n## Helpful background\nThe issue of performance relates to how many global searches are triggered by CSS selectors, which can be costly. XPath can be more explicit and often results in faster queries, particularly on longer pages. However, some contributors have suggested alternatives, and there is no consensus on making XPath the preferred method.\n\n## Good first steps\n- Review the current `rules.xml` file in `bobtemplates.plone`.\n- Identify instances where CSS selectors are used for `#visual-portal-wrapper`.\n- Experiment with replacing those with the recommended XPath examples.\n- Consider discussing findings with other contributors for feedback and possible adjustments.\n- Familiarize yourself with XPath if you are new to it, as it's a bit more complex than CSS selectors but quite powerful.\n```",
-        "path": "data/issues/summaries/plone/bobtemplates.plone/146.json"
       }
     },
     {
@@ -1593,44 +1285,15 @@
         "summary_markdown": "# Summary of Issue #66: RegistryReader Performance\n\n## What this issue is about\nThis issue addresses poor performance in the `RegistryReader` for Plone sites with many users. Specifically, the `@@qsOptions` view takes too long to generate options for query fields when many users and large vocabularies are present, particularly affecting sites integrated with LDAP.\n\n## What needs to be done\nThe objective is to improve the performance of the `@@qsOptions` view, which retrieves queryable fields and their distinct values from the registry. There are currently suggestions for quick local fixes, although a long-term solution is needed.\n\n## Helpful background\nThe current implementation fetches all distinct field values, which can be overwhelming for sites with numerous users. Suggested fixes include modifying registry values to limit the options returned. Note that the conversation includes various approaches, and a definitive solution has yet to be agreed upon.\n\n## Good first steps\n1. Review the existing comments for potential quick fixes, such as updating registry field values.\n2. Test these local fixes and evaluate their impact on performance.\n3. Consider participating in discussions around alternative solutions or contributing your own ideas.\n4. Be prepared to run tests and document any changes or improvements you suggest. \n\nFeel free to reach out if you have questions or need assistance!",
         "path": "data/issues/summaries/plone/plone.app.querystring/66.json"
       }
-    },
-    {
-      "id": 17883296,
-      "number": 17,
-      "title": "pre-commit hook should only be run on modified files",
-      "html_url": "https://github.com/plone/plone.recipe.codeanalysis/issues/17",
-      "repository_full_name": "plone/plone.recipe.codeanalysis",
-      "repository_url": "https://api.github.com/repos/plone/plone.recipe.codeanalysis",
-      "state": "open",
-      "created_at": "2013-08-09T20:17:12Z",
-      "updated_at": "2016-03-09T18:41:41Z",
-      "comments": 4,
-      "author": {
-        "login": "hvelarde",
-        "html_url": "https://github.com/hvelarde"
-      },
-      "assignees": [],
-      "labels": [
-        "04 type: enhancement",
-        "43 lvl: complex"
-      ],
-      "contributor_summary": {
-        "status": "available",
-        "generated_at": "2026-04-09T20:21:13Z",
-        "source_issue_updated_at": "2016-03-09T18:41:41Z",
-        "model": "gpt-4o-mini",
-        "summary_markdown": "## What this issue is about\nThis issue addresses an enhancement for the `plone.recipe.codeanalysis` repository. The goal is to modify the pre-commit hook so that it runs only on files that have been modified, rather than on the entire codebase. This change aims to reduce unnecessary validations, making the process more efficient.\n\n## What needs to be done\nThe pre-commit hook should be updated to check which files have been modified using the command:\n```\ngit diff --cached --name-only\n```\nThis will allow tools like Flake8, JSHint, and CSS Lint to run only on the relevant files (Python, JavaScript, and CSS respectively). Discussion around whether to retain the old way as an option is still ongoing.\n\n## Helpful background\nCurrently, when committing changes, the pre-commit hook runs validations on all files, which can be inefficient. Enhancing it to target modified files could streamline the development process. A related pull request has been created to introduce this filtering.\n\n## Good first steps\n1. Familiarize yourself with the existing pre-commit hook code in the repository.\n2. Review the command `git diff --cached --name-only` to understand how it identifies changed files.\n3. Consider the implications of keeping the old behavior as an option.\n4. Test your changes thoroughly to ensure the hook still runs appropriate checks.",
-        "path": "data/issues/summaries/plone/plone.recipe.codeanalysis/17.json"
-      }
     }
   ],
   "message": null,
   "workflow": {
     "repository": "syslabcom/activity-recognition",
-    "run_id": "34355370100",
-    "run_number": "3000",
+    "run_id": "34361827449",
+    "run_number": "3001",
     "attempt": "1",
-    "url": "https://github.com/syslabcom/activity-recognition/actions/runs/34355370100",
-    "sha": "d6946267da3e2a4c497a5a2e9be732f993c98440"
+    "url": "https://github.com/syslabcom/activity-recognition/actions/runs/34361827449",
+    "sha": "8d52c45719d2520c091e56f29f2602e28df61e2d"
   }
 }
