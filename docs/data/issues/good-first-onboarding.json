@@ -1,7 +1,7 @@
 {
   "version": 1,
   "status": "success",
-  "generated_at": "2026-09-13T15:08:26Z",
+  "generated_at": "2026-09-13T16:09:47Z",
   "organization": "plone",
   "state": "open",
   "slug": "good-first-onboarding",
@@ -20,8 +20,8 @@
       "repository_url": "https://api.github.com/repos/plone/documentation",
       "state": "open",
       "created_at": "2026-03-04T09:10:56Z",
-      "updated_at": "2026-08-27T05:18:34Z",
-      "comments": 6,
+      "updated_at": "2026-09-13T15:16:00Z",
+      "comments": 7,
       "author": {
         "login": "stevepiercy",
         "html_url": "https://github.com/stevepiercy"
@@ -35,10 +35,10 @@
       ],
       "contributor_summary": {
         "status": "available",
-        "generated_at": "2026-08-27T13:46:33Z",
-        "source_issue_updated_at": "2026-08-27T05:18:34Z",
+        "generated_at": "2026-09-13T16:09:51Z",
+        "source_issue_updated_at": "2026-09-13T15:16:00Z",
         "model": "gpt-4o-mini",
-        "summary_markdown": "```markdown\n## What this issue is about\nThis issue focuses on enhancing Plone's documentation to support first-time contributors. It's part of a pilot program that aims to create a welcoming environment for new contributors, following an example from the icalendar project.\n\n## What needs to be done\n1. Update the documentation to reflect this initiative.\n2. Review current guidance for first-time contributors on [this page](https://6.docs.plone.org/contributing/first-time.html) and identify areas that might discourage new users.\n3. Consider including options for low or non-code contributions, like translations or blogging.\n\n## Helpful background\nThe project has been accepted into multiple contributor platforms, including Up For Grabs. However, there are ongoing discussions regarding the Good First Issue label's status. The expectations are for clear documentation updates and coordination to ensure all contributors feel supported.\n\n## Good first steps\n1. Review the first-time contributor documentation linked above.\n2. Note any parts that could be improved for a more welcoming experience.\n3. Join the discussion about documentation updates if you wish to contribute, and feel free to ask questions here or on related GitHub discussions!\n```",
+        "summary_markdown": "## What this issue is about\nThis issue aims to enhance Plone's documentation to attract first-time contributors. It’s part of a pilot program modeled after successful initiatives, enabling new users to start contributing easily.\n\n## What needs to be done\n1. Update Plone documentation to reflect this pilot program.\n2. Identify and address any aspects that might make new contributors feel unwelcome.\n3. Consider adding options for non-code contributions, like translations or technical writing.\n\n## Helpful background\nThe issue has discussions regarding acceptance into platforms like Up For Grabs and Good First Issue, although the status with Good First Issue is currently unclear. Input from first-time contributors has revealed a need for welcoming and accessible documentation, especially given recent changes in the Plone community and event management like Hacktoberfest.\n\n## Good first steps\n1. Review the existing [first-time contributor documentation](https://6.docs.plone.org/contributing/first-time.html).\n2. Note any barriers or areas for improvement you find.\n3. Engage in discussion here if you have questions, or reach out to contributors for guidance!",
         "path": "data/issues/summaries/plone/documentation/2065.json"
       }
     },
@@ -402,10 +402,10 @@
   "message": null,
   "workflow": {
     "repository": "syslabcom/activity-recognition",
-    "run_id": "34764695660",
-    "run_number": "3098",
+    "run_id": "34767742242",
+    "run_number": "3099",
     "attempt": "1",
-    "url": "https://github.com/syslabcom/activity-recognition/actions/runs/34764695660",
-    "sha": "4f5636719626fb7c4914f0016617e5e8da32fccc"
+    "url": "https://github.com/syslabcom/activity-recognition/actions/runs/34767742242",
+    "sha": "e1026e58ced23dbf2d2280fd5a66d26d9130aaca"
   }
 }

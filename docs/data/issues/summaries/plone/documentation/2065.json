@@ -1,33 +1,33 @@
 {
   "version": 1,
   "status": "success",
-  "generated_at": "2026-08-27T13:46:33Z",
+  "generated_at": "2026-09-13T16:09:51Z",
   "source_issue": {
     "id": 4020920049,
     "number": 2065,
     "title": "Add Plone documentation to sites that attract first-time contributors",
     "html_url": "https://github.com/plone/documentation/issues/2065",
     "repository_full_name": "plone/documentation",
-    "updated_at": "2026-08-27T05:18:34Z",
+    "updated_at": "2026-09-13T15:16:00Z",
     "labels": [
       "33 needs: docs",
       "41 lvl: easy",
       "99 tag: good first issue",
       "99 tag: hacktoberfest"
     ],
-    "comments": 6
+    "comments": 7
   },
   "ai": {
     "provider": "openai",
     "model": "gpt-4o-mini"
   },
-  "summary_markdown": "```markdown\n## What this issue is about\nThis issue focuses on enhancing Plone's documentation to support first-time contributors. It's part of a pilot program that aims to create a welcoming environment for new contributors, following an example from the icalendar project.\n\n## What needs to be done\n1. Update the documentation to reflect this initiative.\n2. Review current guidance for first-time contributors on [this page](https://6.docs.plone.org/contributing/first-time.html) and identify areas that might discourage new users.\n3. Consider including options for low or non-code contributions, like translations or blogging.\n\n## Helpful background\nThe project has been accepted into multiple contributor platforms, including Up For Grabs. However, there are ongoing discussions regarding the Good First Issue label's status. The expectations are for clear documentation updates and coordination to ensure all contributors feel supported.\n\n## Good first steps\n1. Review the first-time contributor documentation linked above.\n2. Note any parts that could be improved for a more welcoming experience.\n3. Join the discussion about documentation updates if you wish to contribute, and feel free to ask questions here or on related GitHub discussions!\n```",
+  "summary_markdown": "## What this issue is about\nThis issue aims to enhance Plone's documentation to attract first-time contributors. It’s part of a pilot program modeled after successful initiatives, enabling new users to start contributing easily.\n\n## What needs to be done\n1. Update Plone documentation to reflect this pilot program.\n2. Identify and address any aspects that might make new contributors feel unwelcome.\n3. Consider adding options for non-code contributions, like translations or technical writing.\n\n## Helpful background\nThe issue has discussions regarding acceptance into platforms like Up For Grabs and Good First Issue, although the status with Good First Issue is currently unclear. Input from first-time contributors has revealed a need for welcoming and accessible documentation, especially given recent changes in the Plone community and event management like Hacktoberfest.\n\n## Good first steps\n1. Review the existing [first-time contributor documentation](https://6.docs.plone.org/contributing/first-time.html).\n2. Note any barriers or areas for improvement you find.\n3. Engage in discussion here if you have questions, or reach out to contributors for guidance!",
   "workflow": {
     "repository": "syslabcom/activity-recognition",
-    "run_id": "33078586081",
-    "run_number": "2795",
+    "run_id": "34767742242",
+    "run_number": "3099",
     "attempt": "1",
-    "url": "https://github.com/syslabcom/activity-recognition/actions/runs/33078586081",
-    "sha": "b61bd603a04fe3c22fb8d1b2f8877155c24bc9cf"
+    "url": "https://github.com/syslabcom/activity-recognition/actions/runs/34767742242",
+    "sha": "e1026e58ced23dbf2d2280fd5a66d26d9130aaca"
   }
 }
