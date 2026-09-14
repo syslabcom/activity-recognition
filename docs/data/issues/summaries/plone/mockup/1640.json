@@ -1,0 +1,33 @@
+{
+  "version": 1,
+  "status": "success",
+  "generated_at": "2026-09-14T11:09:52Z",
+  "source_issue": {
+    "id": 5448206248,
+    "number": 1640,
+    "title": "Dynamic Intl locale-data import bloats the Plone bundle by ~770 lazy chunks (~340 MB on disk)",
+    "html_url": "https://github.com/plone/mockup/issues/1640",
+    "repository_full_name": "plone/mockup",
+    "updated_at": "2026-09-14T10:57:34Z",
+    "labels": [
+      "12 prio: high",
+      "32 needs: review",
+      "02 type: regression",
+      "43 lvl: complex"
+    ],
+    "comments": 0
+  },
+  "ai": {
+    "provider": "openai",
+    "model": "gpt-4o-mini"
+  },
+  "summary_markdown": "## What this issue is about\nThis issue addresses the significant increase in the size of the Plone bundle due to dynamic imports of locale data from the `@formatjs/intl-datetimeformat` library. The current build includes approximately 770 additional lazy chunks, resulting in a bloat of around 340 MB, which is excessive for most deployments.\n\n## What needs to be done\nWe need to optimize the dynamic import to limit the loaded locale data to only those languages officially supported by Plone. This can be achieved by adding a Webpack magic comment to refine which locale files to include.\n\n## Helpful background\nThe problem arises from recent commits that made the dynamic imports resolvable by Webpack, resulting in every locale file being bundled, even those rarely used. Although this does not affect runtime performance for users, it unnecessarily increases the package size, complicating deployments.\n\n## Good first steps\n1. Review the current implementation in `src/core/intl-loader.js`.\n2. Familiarize yourself with Webpack magic comments and the list of supported languages in `plone.app.locales`.\n3. Consider the proposed changes to restrict the chunks, while also discussing alternatives such as loading locales from a static source.\n4. Prepare to test the build to ensure it functions correctly with the updated imports.\n\nFeel free to reach out for clarification if any part of the issue discussion seems ambiguous. Your contributions could help streamline Plone's bundle size significantly!",
+  "workflow": {
+    "repository": "syslabcom/activity-recognition",
+    "run_id": "34836773993",
+    "run_number": "3118",
+    "attempt": "1",
+    "url": "https://github.com/syslabcom/activity-recognition/actions/runs/34836773993",
+    "sha": "092996f9457e1f3ec93983395861ff0f8c7722b6"
+  }
+}
