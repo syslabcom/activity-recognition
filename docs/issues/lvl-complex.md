@@ -1,7 +1,7 @@
 ---
 title: "Plone issue list — Level: Complex"
 permalink: "/issues/lvl-complex/"
-generated_at: "2026-09-14T02:17:41Z"
+generated_at: "2026-09-14T03:14:03Z"
 organization: "plone"
 issue_count: 53
 required_labels:
@@ -10,7 +10,7 @@ required_labels:
 
 # Plone issue list — Level: Complex
 
-Generated: `2026-09-14T02:17:41Z`  
+Generated: `2026-09-14T03:14:03Z`  
 Organization: `plone`  
 Required label: `43 lvl: complex`  
 Issue count: `53`
@@ -19,7 +19,7 @@ Sorted by last updated date, newest first.
 
 | Updated | Repository | Issue | Author | Labels |
 | --- | --- | --- | --- | --- |
-| 2026-09-14 02:15 UTC | `plone/Products.CMFPlone` | [#3987 Create Site Manager and Editor Guide for Plone 7](https://github.com/plone/Products.CMFPlone/issues/3987) | `stevepiercy` | `03 type: feature (plip)`, `43 lvl: complex` |
+| 2026-09-14 02:17 UTC | `plone/Products.CMFPlone` | [#3987 Create Site Manager and Editor Guide for Plone 7](https://github.com/plone/Products.CMFPlone/issues/3987) | `stevepiercy` | `03 type: feature (plip)`, `43 lvl: complex` |
 | 2026-08-12 07:21 UTC | `plone/volto` | [#4303 Link Widget Improvement (add/select/modify)](https://github.com/plone/volto/issues/4303) | `sneridagh` | `03 type: feature (plip)`, `43 lvl: complex` |
 | 2026-07-07 00:57 UTC | `plone/volto` | [#7527 View for Listing block](https://github.com/plone/volto/issues/7527) | `ebrehault` | `04 type: enhancement`, `43 lvl: complex`, `27 status: stale` |
 | 2026-07-02 22:11 UTC | `plone/volto` | [#6967 Move videos from the User Manual to a CDN or YouTube](https://github.com/plone/volto/issues/6967) | `stevepiercy` | `04 type: enhancement`, `31 needs: help`, `43 lvl: complex`, `06 type: plip task` |
