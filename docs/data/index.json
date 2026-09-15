@@ -1,17 +1,34 @@
 {
   "version": 1,
-  "generated_at": "2026-09-14T07:36:59Z",
+  "generated_at": "2026-09-15T07:31:14Z",
   "tasks": [
     {
       "slug": "github-activity-digest",
       "title": "GitHub Activity Digest",
       "latest": {
         "status": "success",
-        "generated_at": "2026-09-14T07:36:59Z",
+        "generated_at": "2026-09-15T07:31:14Z",
         "json_path": "data/github-activity-digest/latest.json",
         "markdown_path": "data/github-activity-digest/latest.md"
       },
       "runs": [
+        {
+          "status": "success",
+          "generated_at": "2026-09-15T07:31:14Z",
+          "period": {
+            "days": 7,
+            "start": "2026-09-08",
+            "end": "2026-09-15"
+          },
+          "counts": {
+            "repos_processed": 427,
+            "active_repos": 112
+          },
+          "json_path": "data/github-activity-digest/runs/2026-09-15T07-31-14Z.json",
+          "markdown_path": "data/github-activity-digest/runs/2026-09-15T07-31-14Z.md",
+          "workflow_url": "https://github.com/syslabcom/activity-recognition/actions/runs/34941802219",
+          "summary_excerpt": "```markdown 📊 WEEKLY SUMMARY 2026-09-08 to 2026-09-15 This week saw significant updates across the Plone ecosystem, particularly with the ongoing migration from `setup.py` to `pyp…"
+        },
         {
           "status": "success",
           "generated_at": "2026-09-14T07:36:59Z",
