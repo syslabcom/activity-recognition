@@ -1,7 +1,7 @@
 ---
 title: "Plone issue list — Level: Complex"
 permalink: "/issues/lvl-complex/"
-generated_at: "2026-09-15T12:15:22Z"
+generated_at: "2026-09-15T13:10:54Z"
 organization: "plone"
 issue_count: 54
 required_labels:
@@ -10,7 +10,7 @@ required_labels:
 
 # Plone issue list — Level: Complex
 
-Generated: `2026-09-15T12:15:22Z`  
+Generated: `2026-09-15T13:10:54Z`  
 Organization: `plone`  
 Required label: `43 lvl: complex`  
 Issue count: `54`
