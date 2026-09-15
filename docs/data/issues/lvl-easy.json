@@ -1,7 +1,7 @@
 {
   "version": 1,
   "status": "success",
-  "generated_at": "2026-09-15T14:11:19Z",
+  "generated_at": "2026-09-15T15:10:30Z",
   "organization": "plone",
   "state": "open",
   "slug": "lvl-easy",
@@ -9,7 +9,7 @@
   "required_labels": [
     "41 lvl: easy"
   ],
-  "issue_count": 75,
+  "issue_count": 85,
   "issues": [
     {
       "id": 4020920049,
@@ -1134,6 +1134,37 @@
       }
     },
     {
+      "id": 2976575029,
+      "number": 197,
+      "title": "Add canonical startpoint link to cookieplone make commands docs to the final console output and main READMEs",
+      "html_url": "https://github.com/plone/cookieplone-templates/issues/197",
+      "repository_full_name": "plone/cookieplone-templates",
+      "repository_url": "https://api.github.com/repos/plone/cookieplone-templates",
+      "state": "open",
+      "created_at": "2025-04-07T11:40:48Z",
+      "updated_at": "2025-04-28T07:46:28Z",
+      "comments": 2,
+      "author": {
+        "login": "acsr",
+        "html_url": "https://github.com/acsr"
+      },
+      "assignees": [],
+      "labels": [
+        "04 type: enhancement",
+        "31 needs: help",
+        "33 needs: docs",
+        "41 lvl: easy"
+      ],
+      "contributor_summary": {
+        "status": "available",
+        "generated_at": "2026-04-09T14:39:49Z",
+        "source_issue_updated_at": "2025-04-28T07:46:28Z",
+        "model": "gpt-4o-mini",
+        "summary_markdown": "## What this issue is about\nThis issue proposes adding a link to the **canonical startpoint documentation** for the `cookieplone make commands` in both the console output after running a command and the main `README.md` file. This aims to help new users quickly find essential information and reduce confusion.\n\n## What needs to be done\n- Include a direct link to the detailed `cookieplone make commands` documentation in the final console output after a run.\n- Add the same link to the main `README.md` file for easy access.\n- Consider user feedback on the suggested implementation, noting that discussions around best practices are ongoing.\n\n## Helpful background\nCurrent documentation for `cookieplone` is still being developed. There are suggestions for improving error messages to guide users better, especially newcomers. Some discussions about whether to link to only the `README.md` file exist to avoid maintaining multiple sources of information.\n\n## Good first steps\n1. Review the existing `README.md` to understand its structure.\n2. Check the console output after running commands to identify where the link can be inserted.\n3. Familiarize yourself with the ongoing discussions and any suggestions made by other contributors.\n4. Create a draft pull request with your proposed changes, and engage in discussions for feedback.",
+        "path": "data/issues/summaries/plone/cookieplone-templates/197.json"
+      }
+    },
+    {
       "id": 2370106958,
       "number": 65,
       "title": "FileNameNormalizer/URLNormalizer does not support files with long file extensions",
@@ -1161,6 +1192,36 @@
         "model": "gpt-4o-mini",
         "summary_markdown": "```markdown\n## What this issue is about\nThis issue addresses a bug in the FileNameNormalizer/URLNormalizer for handling files with long extensions (more than 4 characters). For example, uploading a file named `base.geojson` incorrectly results in `base-geosjon` instead of retaining the proper extension in the generated ID.\n\n## What needs to be done\nWe need to update the current regex (regular expression) used in the `FILENAME_REGEX` to properly account for file extensions longer than 4 characters. The proposed change is from:\n```python\nFILENAME_REGEX = re.compile(r\"^(.+)\\.(\\w{,4})$\")\n```\nto:\n```python\nFILENAME_REGEX = re.compile(r\"^(.+)\\.(\\w+)$\")\n```\nAdditionally, we should verify whether the normalizer is being utilized in file downloads.\n\n## Helpful background\nFile extensions help identify the type of file and are important for proper handling. The current regex restricts extensions to a maximum of 4 characters, which can cause issues with files that have common extensions like `woff2` or `geojson`.\n\n## Good first steps\n1. Review the current `FILENAME_REGEX` implementation in the codebase.\n2. Implement the proposed changes to the regex.\n3. Test the changes by uploading files with various long extensions to ensure they normalize correctly.\n4. Check if the FileNameNormalizer is applied during file downloads.\n5. Prepare for code review and make necessary documentation updates based on your findings.\n```",
         "path": "data/issues/summaries/plone/plone.i18n/65.json"
+      }
+    },
+    {
+      "id": 2981886774,
+      "number": 200,
+      "title": "Support GitLab in `documentation_starter` template",
+      "html_url": "https://github.com/plone/cookieplone-templates/issues/200",
+      "repository_full_name": "plone/cookieplone-templates",
+      "repository_url": "https://api.github.com/repos/plone/cookieplone-templates",
+      "state": "open",
+      "created_at": "2025-04-09T07:41:13Z",
+      "updated_at": "2025-04-09T10:12:23Z",
+      "comments": 2,
+      "author": {
+        "login": "stevepiercy",
+        "html_url": "https://github.com/stevepiercy"
+      },
+      "assignees": [],
+      "labels": [
+        "04 type: enhancement",
+        "41 lvl: easy",
+        "52 target: minor"
+      ],
+      "contributor_summary": {
+        "status": "available",
+        "generated_at": "2026-04-09T14:40:07Z",
+        "source_issue_updated_at": "2025-04-09T10:12:23Z",
+        "model": "gpt-4o-mini",
+        "summary_markdown": "## What this issue is about\nThis issue seeks to enhance the `documentation_starter` template by adding support for GitLab. Currently, the template supports only GitHub, requiring manual edits for GitLab usage.\n\n## What needs to be done\nWe want to incorporate GitLab functionalities into the `documentation_starter` template. This may involve adjusting variables and structures to ensure compatibility. Collaboration with a GitLab user would be beneficial.\n\n## Helpful background\nThe discussion indicates that some groundwork has been done with the new structure of the `documentation_starter` template, but a complete analysis of the modified template in relation to GitLab is still ongoing. There are insights from past adjustments made by other contributors, which might guide this enhancement.\n\n## Good first steps\n1. Familiarize yourself with the `documentation_starter` template in the [repository](https://github.com/plone/cookieplone-templates).\n2. Reach out to potential collaborators like @erral for insights on variable usage.\n3. Test the current setup if you have a GitLab account, and identify any areas that need updating based on your findings.\n4. Review existing discussions and consider what documentation or examples might be needed for future contributors.",
+        "path": "data/issues/summaries/plone/cookieplone-templates/200.json"
       }
     },
     {
@@ -1227,6 +1288,36 @@
         "model": "gpt-4o-mini",
         "summary_markdown": "```markdown\n## What this issue is about\nThis issue focuses on enhancing the README file of the Plone repository. The goal is to improve clarity and accessibility for new users.\n\n## What needs to be done\nHere are the proposed improvements:\n- Convert the existing `README.rst` to `README.md`.\n- Create a new page, `README-devcontainer`, documenting how to set up the development container and GitHub workspace.\n- Ensure links to the official Plone documentation and the new page are included.\n\nSome tasks have been completed, but others remain open for contribution.\n\n## Helpful background\nThe README serves as the first point of contact for users and contributors. Updating it can help newcomers understand how to get started with Plone and its development environment.\n\nThere is ongoing discussion about possibly including tutorial videos in the documentation, although this is not finalized.\n\n## Good first steps\n1. Familiarize yourself with Markdown if you're not familiar—it's a simple formatting language used for README.md files.\n2. Start by converting the existing `README.rst` to `README.md` format.\n3. Look into the steps for setting up the `README-devcontainer` and gather that information.\n\nOnce you've made progress, consider reviewing and coordinating with others on the issue.\n```",
         "path": "data/issues/summaries/plone/buildout.coredev/972.json"
+      }
+    },
+    {
+      "id": 1233622747,
+      "number": 646,
+      "title": "tabular listing column titles doesn't get translated completely",
+      "html_url": "https://github.com/plone/plone.app.contenttypes/issues/646",
+      "repository_full_name": "plone/plone.app.contenttypes",
+      "repository_url": "https://api.github.com/repos/plone/plone.app.contenttypes",
+      "state": "open",
+      "created_at": "2022-05-12T08:22:08Z",
+      "updated_at": "2024-11-14T16:34:13Z",
+      "comments": 1,
+      "author": {
+        "login": "petschki",
+        "html_url": "https://github.com/petschki"
+      },
+      "assignees": [],
+      "labels": [
+        "01 type: bug",
+        "14 prio: low",
+        "41 lvl: easy"
+      ],
+      "contributor_summary": {
+        "status": "available",
+        "generated_at": "2026-04-09T16:33:32Z",
+        "source_issue_updated_at": "2024-11-14T16:34:13Z",
+        "model": "gpt-4o-mini",
+        "summary_markdown": "```markdown\n## What this issue is about\nThis issue addresses a localization bug in Plone, where the column titles in tabular listings (like \"Title\" or \"Image\") are not being fully translated. This occurs because the method `plone.app.vocabularies.metadatafields.get_field_label` doesn't cover all catalog metadata fields.\n\n## What needs to be done\nTo fix this issue, we suggest using the `MetaDataFieldsVocabularyFactory` as a fallback to ensure that all field labels are translated properly. \n\n## Helpful background\nLocalization (or i18n) allows software to present text in different languages. The method mentioned in the issue currently fails to provide complete translations for some metadata fields, leading to inconsistent user experiences. \n\n## Good first steps\n1. Review the current implementation in `plone/app/contenttypes/browser/folder.py`.\n2. Implement the suggested change by replacing the existing method with `MetaDataFieldsVocabularyFactory`.\n3. Test the translation of various field labels to ensure they are displayed correctly.\n4. Consider writing documentation for the changes and submit a pull request for review.\n\nFeel free to ask questions if anything is unclear! \n```",
+        "path": "data/issues/summaries/plone/plone.app.contenttypes/646.json"
       }
     },
     {
@@ -1931,6 +2022,37 @@
       }
     },
     {
+      "id": 922407999,
+      "number": 605,
+      "title": "Plone Image description field is used for alt-attribute but not explained",
+      "html_url": "https://github.com/plone/plone.app.contenttypes/issues/605",
+      "repository_full_name": "plone/plone.app.contenttypes",
+      "repository_url": "https://api.github.com/repos/plone/plone.app.contenttypes",
+      "state": "open",
+      "created_at": "2021-06-16T10:05:19Z",
+      "updated_at": "2021-06-16T10:05:19Z",
+      "comments": 0,
+      "author": {
+        "login": "iham",
+        "html_url": "https://github.com/iham"
+      },
+      "assignees": [],
+      "labels": [
+        "04 type: enhancement",
+        "05 type: question",
+        "13 prio: normal",
+        "41 lvl: easy"
+      ],
+      "contributor_summary": {
+        "status": "available",
+        "generated_at": "2026-04-09T19:30:22Z",
+        "source_issue_updated_at": "2021-06-16T10:05:19Z",
+        "model": "gpt-4o-mini",
+        "summary_markdown": "```markdown\n## What this issue is about\nThis issue addresses the lack of clarification regarding the \"description\" field for Plone Images. Currently, users don't know that the text entered in this field is also used for the image's alt attribute, which is important for accessibility.\n\n## What needs to be done\nThe proposal is to modify the description text of the Plone Image type's description field. This change would inform editors that the text input serves multiple purposes, including being used as the alternative text for the image.\n\n## Helpful background\nUsing appropriate alt text is crucial for web accessibility. It helps users who rely on screen readers understand the content of images. Clear documentation can assist editors in using this feature effectively.\n\n## Good first steps\n1. Check the existing Plone documentation and contribute any findings on where it may fall short.\n2. Consider drafting a proposed text change for the description field that clearly indicates its use.\n3. Engage with community members for feedback on your proposal, as the discussion is currently open and some details may be ambiguous.\n\nFeel free to reach out for help or guidance as you explore this issue!\n```",
+        "path": "data/issues/summaries/plone/plone.app.contenttypes/605.json"
+      }
+    },
+    {
       "id": 749542110,
       "number": 2017,
       "title": "Improve folder_contents workflow state for images/files (show \"inherited from parent\" instead of just \"no workflow state\")",
@@ -1988,6 +2110,36 @@
         "model": "gpt-4o-mini",
         "summary_markdown": "## What this issue is about\nThis issue focuses on enhancing the workflow in the Volto project by enabling the inclusion of comments and contained items. This functionality will improve how users interact with and manage items and their comments within the Plone ecosystem.\n\n## What needs to be done\nThe main task is to implement the feature that allows workflow comments to include contained items. However, this enhancement is currently blocked, as noted in the issue description. You can find more details on the blocking issue [here](https://github.com/plone/plone.restapi/issues/333).\n\n## Helpful background\nWorkflow comments are a way to communicate context and status changes about items. Including contained items will allow for a richer interaction model. It's important to familiarize yourself with the existing workflow and comments functionalities in Volto and the Plone REST API.\n\n## Good first steps\n1. Review the existing implementation of workflows and comments in Volto.\n2. Familiarize yourself with the blocking issue (#333) and understand its implications.\n3. Join discussions or seek clarification on the possible approaches to take, as the details of implementation may be ambiguous or outdated.\n4. Consider how you can contribute, whether it's coding, providing feedback, or improving documentation.",
         "path": "data/issues/summaries/plone/volto/27.json"
+      }
+    },
+    {
+      "id": 446086080,
+      "number": 54,
+      "title": "Point the user to the install docs, if \"plonecli build\" fails",
+      "html_url": "https://github.com/plone/plonecli/issues/54",
+      "repository_full_name": "plone/plonecli",
+      "repository_url": "https://api.github.com/repos/plone/plonecli",
+      "state": "open",
+      "created_at": "2019-05-20T12:19:04Z",
+      "updated_at": "2020-11-20T17:52:31Z",
+      "comments": 0,
+      "author": {
+        "login": "MrTango",
+        "html_url": "https://github.com/MrTango"
+      },
+      "assignees": [],
+      "labels": [
+        "04 type: enhancement",
+        "31 needs: help",
+        "41 lvl: easy"
+      ],
+      "contributor_summary": {
+        "status": "available",
+        "generated_at": "2026-04-09T19:30:49Z",
+        "source_issue_updated_at": "2020-11-20T17:52:31Z",
+        "model": "gpt-4o-mini",
+        "summary_markdown": "## What this issue is about\nThis issue suggests enhancing the `plonecli build` command. Currently, if the command fails, users do not receive guidance on where to seek help. The proposal is to direct them to the relevant installation documentation for support.\n\n## What needs to be done\nYou need to implement a feature in `plonecli` that shows a message pointing users to the installation documentation when `plonecli build` encounters an error. Relevant resources include:\n- [Dependencies Documentation](https://github.com/plone/Installers-UnifiedInstaller/blob/master/docs/dependencies.rst)\n- [Plone Installation Guide](https://docs.plone.org/manage/installing/installation.html)\n- [Collective Install Dependencies](https://github.com/collective/install.plone.dependencies)\n\n## Helpful background\nThis issue is classified as an enhancement and is tagged as easy, making it suitable for new contributors. While the core idea is clear, the exact implementation details and error handling cases may require further discussion.\n\n## Good first steps\n1. **Explore the `plonecli` codebase**: Understand where `plonecli build` is defined.\n2. **Identify error handling**: Look at how errors are currently managed in the code.\n3. **Draft your message**: Create a concise message with links to the installation documentation.\n4. **Implement the change and test**: Make sure your modifications inform users when a build fails.\n5. **Consider submitting a draft pull request**: This invites feedback from other contributors.",
+        "path": "data/issues/summaries/plone/plonecli/54.json"
       }
     },
     {
@@ -2111,6 +2263,35 @@
       }
     },
     {
+      "id": 442732591,
+      "number": 51,
+      "title": "i18n would be awesome",
+      "html_url": "https://github.com/plone/plonecli/issues/51",
+      "repository_full_name": "plone/plonecli",
+      "repository_url": "https://api.github.com/repos/plone/plonecli",
+      "state": "open",
+      "created_at": "2019-05-10T13:55:51Z",
+      "updated_at": "2019-05-19T23:29:06Z",
+      "comments": 2,
+      "author": {
+        "login": "iham",
+        "html_url": "https://github.com/iham"
+      },
+      "assignees": [],
+      "labels": [
+        "04 type: enhancement",
+        "41 lvl: easy"
+      ],
+      "contributor_summary": {
+        "status": "available",
+        "generated_at": "2026-04-09T20:19:53Z",
+        "source_issue_updated_at": "2019-05-19T23:29:06Z",
+        "model": "gpt-4o-mini",
+        "summary_markdown": "## What this issue is about\nThis issue discusses the idea of enhancing internationalization (i18n) support in the Plone CLI (Command Line Interface). The suggestion is to implement a command like `plonecli translate <package.name>`, which would improve how translations are handled.\n\n## What needs to be done\nA potential enhancement is proposed for the Plone CLI to support translation commands. There are suggestions to utilize existing commands, like `./bin/update_locale`, to manage translations within any package.\n\n## Helpful background\nInternationalization (i18n) refers to adapting software to different languages and regions. The conversation suggests enhancing this aspect in the Plone CLI, utilizing existing tools and commands for easier implementation. Some comments indicate varying approaches to handling this enhancement, so clarity on requirements may be needed.\n\n## Good first steps\n1. Review the existing commands for localization in the Plone CLI.\n2. Check out the suggestion made by the commenter about `./bin/update_locale` and familiarize yourself with its functionality.\n3. Join the discussion to clarify any ambiguities or share your thoughts on the proposed enhancements.\n\nYour contributions are welcome, and this could be a great opportunity for those looking to get involved!",
+        "path": "data/issues/summaries/plone/plonecli/51.json"
+      }
+    },
+    {
       "id": 445498964,
       "number": 383,
       "title": "Chose Plone 4.3-latest to create a package, but it's pinning to test_plone52.cfg in buildout",
@@ -2139,6 +2320,66 @@
         "model": "gpt-4o-mini",
         "summary_markdown": "## What this issue is about\nThis issue addresses a problem where, after creating a package using Plone CLI for Plone 4.3, the buildout is incorrectly pinning to `test_plone52.cfg` instead of the expected `test_plone43.cfg`. This affects how dependencies are managed in the project.\n\n## What needs to be done\nThe goal is to modify the configuration files (`buildout.cfg` and `requirements.txt`) to ensure they reference the correct Plone version (4.3) instead of 5.2. There's also a suggestion to improve the setup by making it more intuitive for users, particularly beginners.\n\n## Helpful background\nThe Plone CLI (Command Line Interface) is intended to simplify creating and managing Plone packages. The use of templates aims to provide a seamless experience by avoiding manual edits, which can lead to errors. This issue is related to ensuring these templates function as intended.\n\n## Good first steps\n1. Review the current `buildout.cfg` and `requirements.txt` to identify all instances of `test_plone52.cfg`.\n2. Experiment with changing the references to `test_plone43.cfg`.\n3. Run the build process to check if the changes resolve the issue.\n4. Consider sharing your findings or improvements in the discussion, especially if you think of further enhancements.",
         "path": "data/issues/summaries/plone/bobtemplates.plone/383.json"
+      }
+    },
+    {
+      "id": 335007063,
+      "number": 28,
+      "title": "Improve help message when using \"plonecli create\"",
+      "html_url": "https://github.com/plone/plonecli/issues/28",
+      "repository_full_name": "plone/plonecli",
+      "repository_url": "https://api.github.com/repos/plone/plonecli",
+      "state": "open",
+      "created_at": "2018-06-22T20:20:51Z",
+      "updated_at": "2019-01-14T16:23:14Z",
+      "comments": 5,
+      "author": {
+        "login": "idgserpro",
+        "html_url": "https://github.com/idgserpro"
+      },
+      "assignees": [],
+      "labels": [
+        "04 type: enhancement",
+        "31 needs: help",
+        "41 lvl: easy"
+      ],
+      "contributor_summary": {
+        "status": "available",
+        "generated_at": "2026-04-09T20:20:03Z",
+        "source_issue_updated_at": "2019-01-14T16:23:14Z",
+        "model": "gpt-4o-mini",
+        "summary_markdown": "```markdown\n## What this issue is about\nThis issue focuses on improving the help message displayed when using the command `plonecli create`. Currently, the guidance can be unclear, particularly for new users who receive a suggestion to run a help command that isn't very useful.\n\n## What needs to be done\nEnhance the help message for the `plonecli create` command so it clearly outlines the required `TEMPLATE_NAME` and `PACKAGE_NAME` arguments. Suggestions include adding a list of possible templates and a note to run `plonecli -l` for available options.\n\n## Helpful background\nThe Plone CLI is a command-line interface to help create and manage Plone packages. The issue was raised to make the help prompts more user-friendly, especially for those unfamiliar with the available templates and their usage.\n\n## Good first steps\n1. Check current help messages for `plonecli create` and consider how they can be improved based on community suggestions.\n2. Review related commands, such as `plonecli add`, to see if similar improvements are needed.\n3. If you're ready, you could start by forking the repository and making changes to the relevant source files, then test your updates locally.\n4. Document your changes well, and prepare to submit a pull request for review.\n```",
+        "path": "data/issues/summaries/plone/plonecli/28.json"
+      }
+    },
+    {
+      "id": 335008489,
+      "number": 29,
+      "title": "Improve help message when using \"plonecli -l\"",
+      "html_url": "https://github.com/plone/plonecli/issues/29",
+      "repository_full_name": "plone/plonecli",
+      "repository_url": "https://api.github.com/repos/plone/plonecli",
+      "state": "open",
+      "created_at": "2018-06-22T20:26:05Z",
+      "updated_at": "2018-10-17T14:18:27Z",
+      "comments": 0,
+      "author": {
+        "login": "idgserpro",
+        "html_url": "https://github.com/idgserpro"
+      },
+      "assignees": [],
+      "labels": [
+        "04 type: enhancement",
+        "31 needs: help",
+        "41 lvl: easy"
+      ],
+      "contributor_summary": {
+        "status": "available",
+        "generated_at": "2026-04-09T20:20:20Z",
+        "source_issue_updated_at": "2018-10-17T14:18:27Z",
+        "model": "gpt-4o-mini",
+        "summary_markdown": "## What this issue is about\nThis issue focuses on enhancing the help message received when using the command `plonecli -l`. The goal is to provide clearer guidance for users, especially newcomers to the Plone CLI, when they attempt to create new add-ons.\n\n## What needs to be done\nThe proposed enhancement is to improve the help output by including specific examples, particularly the command format for creating an add-on: `plonecli create addon src/collective.todo`. Before implementing this improvement, it's suggested to resolve issue #28, which may influence the current changes.\n\n## Helpful background\nUnderstanding the Plone CLI (Command Line Interface) tool is essential for interacting with Plone projects. The `-l` flag lists available templates, while the error related to missing arguments can be confusing for users who are not familiar with command-line operations.\n\n## Good first steps\n1. Review the current help output when using `plonecli -l`.\n2. Familiarize yourself with the Plone CLI documentation, especially the section on creating add-ons: [Plone CLI Docs](https://github.com/plone/plonecli#creating-a-plone-add-on).\n3. Check issue #28 for any existing discussions or updates that may affect this issue.\n4. Consider drafting the improved help message based on your understanding.\n\nFeel free to ask questions if anything is unclear!",
+        "path": "data/issues/summaries/plone/plonecli/29.json"
       }
     },
     {
@@ -2203,6 +2444,35 @@
       }
     },
     {
+      "id": 243339368,
+      "number": 417,
+      "title": "Simplify __init__ methods in views",
+      "html_url": "https://github.com/plone/plone.app.contenttypes/issues/417",
+      "repository_full_name": "plone/plone.app.contenttypes",
+      "repository_url": "https://api.github.com/repos/plone/plone.app.contenttypes",
+      "state": "open",
+      "created_at": "2017-07-17T09:31:21Z",
+      "updated_at": "2018-02-10T02:36:59Z",
+      "comments": 2,
+      "author": {
+        "login": "thet",
+        "html_url": "https://github.com/thet"
+      },
+      "assignees": [],
+      "labels": [
+        "04 type: enhancement",
+        "41 lvl: easy"
+      ],
+      "contributor_summary": {
+        "status": "available",
+        "generated_at": "2026-04-09T20:20:39Z",
+        "source_issue_updated_at": "2018-02-10T02:36:59Z",
+        "model": "gpt-4o-mini",
+        "summary_markdown": "## What this issue is about\nThis issue focuses on simplifying the `__init__` methods in views within the `plone.app.contenttypes`. The goal is to reduce unnecessary complexities that occur when the display menu in the toolbar initializes these views, which can currently be quite resource-intensive.\n\n## What needs to be done\nContributors are encouraged to analyze the current `__init__` methods and propose ways to streamline them. The discussion has raised the need for simpler initialization processes, but specific simplifications are not clearly defined, leaving some room for exploration.\n\n## Helpful background\nThe `__init__` method is a special function in Python that initializes an object when it is created. In Plone, these methods are critical for generating the menu items shown to editors. Streamlining this process will enhance performance and usability.\n\n## Good first steps\n1. Review the current implementation of `__init__` methods in the `plone.app.contenttypes`.\n2. Consider what aspects of the initialization are unnecessary or can be optimized.\n3. Engage in discussions with the community if you have ideas or need clarification.\n4. Prepare to write tests to ensure functionality remains intact after changes.\n5. Check if there's a need for updated documentation reflecting any changes made.",
+        "path": "data/issues/summaries/plone/plone.app.contenttypes/417.json"
+      }
+    },
+    {
       "id": 119898390,
       "number": 24,
       "title": "Unify Encoding used for tokens",
@@ -2230,6 +2500,39 @@
         "model": "gpt-4o-mini",
         "summary_markdown": "## What this issue is about\nThis issue discusses unifying the encoding used for tokens in the Plone application from two different types—`unicode_escape` and `quoted_printable`—to a single consistent format. The discussion suggests that `quoted_printable` is preferable for easier decoding outside of Plone.\n\n## What needs to be done\nWe need to select a single encoding method for tokens and update the code to ensure that all token handling is consistent throughout the application. Specifically, we should replace instances of `unicode_escape` with `quoted_printable` where applicable.\n\n## Helpful background\nTokens are often used to represent data, and having a consistent encoding helps maintain compatibility and reduces errors when the data is processed. While the issue illustrates minimal impact on internal Plone operations, a consistent format could simplify external interactions.\n\n## Good first steps\n1. Review the existing code, focusing on the token handling sections, including [this line](https://github.com/plone/plone.app.vocabularies/blob/master/plone/app/vocabularies/terms.py#L20).\n2. Identify where the encoding methods are implemented and outline a plan for unification.\n3. Consider reaching out in the issue comments for guidance or clarification if anything is unclear.\n4. After making changes, ensure to test the new token encoding and update documentation if necessary.",
         "path": "data/issues/summaries/plone/plone.app.vocabularies/24.json"
+      }
+    },
+    {
+      "id": 141474700,
+      "number": 67,
+      "title": "News portlet does not use effective/expiration dates",
+      "html_url": "https://github.com/plone/plone.app.portlets/issues/67",
+      "repository_full_name": "plone/plone.app.portlets",
+      "repository_url": "https://api.github.com/repos/plone/plone.app.portlets",
+      "state": "open",
+      "created_at": "2016-03-17T04:14:49Z",
+      "updated_at": "2016-03-17T11:35:12Z",
+      "comments": 1,
+      "author": {
+        "login": "Robynstar",
+        "html_url": "https://github.com/Robynstar"
+      },
+      "assignees": [],
+      "labels": [
+        "99 tag: Plone 5.x",
+        "01 type: bug",
+        "02 type: regression",
+        "13 prio: normal",
+        "21 status: confirmed",
+        "41 lvl: easy"
+      ],
+      "contributor_summary": {
+        "status": "available",
+        "generated_at": "2026-04-09T20:21:04Z",
+        "source_issue_updated_at": "2016-03-17T11:35:12Z",
+        "model": "gpt-4o-mini",
+        "summary_markdown": "## What this issue is about\nThis issue addresses a bug in the News portlet of Plone where it displays items even if they are outside their set effective and expiration dates. The intention is to enhance the functionality by respecting these dates.\n\n## What needs to be done\nWe need to update the News portlet so that it only displays items that are currently effective. Specifically, it should not show items that are either before their effective date or after their expiration date. There is additional mention that this issue also affects the Events portlet.\n\n## Helpful background\nEffective and expiration dates are settings for content items that control when they should appear or disappear in listings. This issue is confirmed and categorized as a bug, so resolving it will improve user experience by ensuring the correct items are shown in the portlet.\n\n## Good first steps\n1. Familiarize yourself with the code for the News portlet in the [plone/plone.app.portlets](https://github.com/plone/plone.app.portlets) repository.\n2. Check the current implementation of effective and expiration date functions.\n3. Look into any existing tests for the News portlet, or consider writing new ones to ensure proper functionality.\n4. Coordinate with other contributors if you have questions, especially about related issues with the Events portlet.",
+        "path": "data/issues/summaries/plone/plone.app.portlets/67.json"
       }
     },
     {
@@ -2326,10 +2629,10 @@
   "message": null,
   "workflow": {
     "repository": "syslabcom/activity-recognition",
-    "run_id": "34979931234",
-    "run_number": "3145",
+    "run_id": "34986627542",
+    "run_number": "3146",
     "attempt": "1",
-    "url": "https://github.com/syslabcom/activity-recognition/actions/runs/34979931234",
-    "sha": "e0df45a21d3e50873a4c8c83563934ada5007f6f"
+    "url": "https://github.com/syslabcom/activity-recognition/actions/runs/34986627542",
+    "sha": "38f9bb8b4de1f72835dcb56176078753c6017e94"
   }
 }

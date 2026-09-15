@@ -1,19 +1,19 @@
 ---
 title: "Plone issue list — Level: Easy"
 permalink: "/issues/lvl-easy/"
-generated_at: "2026-09-15T14:11:19Z"
+generated_at: "2026-09-15T15:10:30Z"
 organization: "plone"
-issue_count: 75
+issue_count: 85
 required_labels:
   - "41 lvl: easy"
 ---
 
 # Plone issue list — Level: Easy
 
-Generated: `2026-09-15T14:11:19Z`  
+Generated: `2026-09-15T15:10:30Z`  
 Organization: `plone`  
 Required label: `41 lvl: easy`  
-Issue count: `75`
+Issue count: `85`
 
 Sorted by last updated date, newest first.
 
@@ -55,9 +55,12 @@ Sorted by last updated date, newest first.
 | 2025-12-01 05:29 UTC | `plone/plone.distribution` | [#134 Deduplicate documentation](https://github.com/plone/plone.distribution/issues/134) | `stevepiercy` | `21 status: confirmed`, `31 needs: help`, `33 needs: docs`, `41 lvl: easy` |
 | 2025-11-30 14:21 UTC | `plone/volto` | [#1404 Supported field types in Volto](https://github.com/plone/volto/issues/1404) | `pbauer` | `41 lvl: easy` |
 | 2025-06-01 03:07 UTC | `plone/plone.app.discussion` | [#88 Сlick Reply -> duplicate fields](https://github.com/plone/plone.app.discussion/issues/88) | `serge73` | `31 needs: help`, `02 type: regression`, `12 prio: high`, `21 status: confirmed`, `41 lvl: easy` |
+| 2025-04-28 07:46 UTC | `plone/cookieplone-templates` | [#197 Add canonical startpoint link to cookieplone make commands docs to the final console output and main READMEs](https://github.com/plone/cookieplone-templates/issues/197) | `acsr` | `04 type: enhancement`, `31 needs: help`, `33 needs: docs`, `41 lvl: easy` |
 | 2025-04-16 20:48 UTC | `plone/plone.i18n` | [#65 FileNameNormalizer/URLNormalizer does not support files with long file extensions](https://github.com/plone/plone.i18n/issues/65) | `pgrunewald` | `01 type: bug`, `14 prio: low`, `41 lvl: easy` |
+| 2025-04-09 10:12 UTC | `plone/cookieplone-templates` | [#200 Support GitLab in `documentation_starter` template](https://github.com/plone/cookieplone-templates/issues/200) | `stevepiercy` | `04 type: enhancement`, `41 lvl: easy`, `52 target: minor` |
 | 2025-03-15 17:42 UTC | `plone/tagung.plone.de` | [#27 Megamenu selected item markup lines not that nice in the current state.](https://github.com/plone/tagung.plone.de/issues/27) | `acsr` | `14 prio: low`, `32 needs: review`, `41 lvl: easy` |
 | 2025-01-24 06:48 UTC | `plone/buildout.coredev` | [#972 Improve README](https://github.com/plone/buildout.coredev/issues/972) | `ramiroluz` | `04 type: enhancement`, `14 prio: low`, `33 needs: docs`, `41 lvl: easy`, `42 lvl: moderate` |
+| 2024-11-14 16:34 UTC | `plone/plone.app.contenttypes` | [#646 tabular listing column titles doesn't get translated completely](https://github.com/plone/plone.app.contenttypes/issues/646) | `petschki` | `01 type: bug`, `14 prio: low`, `41 lvl: easy` |
 | 2024-11-10 13:26 UTC | `plone/Products.CMFPlone` | [#1688 title_or_id wakes up the real object](https://github.com/plone/Products.CMFPlone/issues/1688) | `Martronic-SA` | `01 type: bug`, `31 needs: help`, `14 prio: low`, `21 status: confirmed`, `41 lvl: easy` |
 | 2024-11-10 08:35 UTC | `plone/mockup` | [#695 Add `required` boolean option to Autotoc tabs](https://github.com/plone/mockup/issues/695) | `davilima6` | `99 tag: UX Accessibility`, `99 tag: Plone 5.x`, `99 tag: Plone 4.3.x`, `02 type: regression`, `05 type: question`, `41 lvl: easy` |
 | 2024-11-09 21:20 UTC | `plone/volto` | [#3910 can't edit on mobile as hard to close and reopen settings](https://github.com/plone/volto/issues/3910) | `djay` | `01 type: bug`, `04 type: enhancement`, `41 lvl: easy`, `99 tag: UX` |
@@ -81,16 +84,23 @@ Sorted by last updated date, newest first.
 | 2023-02-28 14:56 UTC | `plone/volto` | [#3762 Listing block headline should integrate with TOC](https://github.com/plone/volto/issues/3762) | `tiberiuichim` | `01 type: bug`, `41 lvl: easy` |
 | 2022-08-24 09:58 UTC | `plone/Products.CMFPlone` | [#1094 Inconsistent wrapping between portlets](https://github.com/plone/Products.CMFPlone/issues/1094) | `zopyx` | `01 type: bug`, `31 needs: help`, `14 prio: low`, `41 lvl: easy`, `99 tag: Plone 6.0` |
 | 2022-03-14 05:39 UTC | `plone/volto` | [#2074 Remove use of __CLIENT__ in volto code](https://github.com/plone/volto/issues/2074) | `tiberiuichim` | `01 type: bug`, `41 lvl: easy` |
+| 2021-06-16 10:05 UTC | `plone/plone.app.contenttypes` | [#605 Plone Image description field is used for alt-attribute but not explained](https://github.com/plone/plone.app.contenttypes/issues/605) | `iham` | `04 type: enhancement`, `05 type: question`, `13 prio: normal`, `41 lvl: easy` |
 | 2021-04-30 04:31 UTC | `plone/volto` | [#2017 Improve folder_contents workflow state for images/files (show "inherited from parent" instead of just "no workflow state")](https://github.com/plone/volto/issues/2017) | `tisto` | `04 type: enhancement`, `41 lvl: easy` |
 | 2021-01-04 18:57 UTC | `plone/volto` | [#27 Workflow comment and include contained items](https://github.com/plone/volto/issues/27) | `robgietema` | `04 type: enhancement`, `13 prio: normal`, `41 lvl: easy`, `26 status: blocked` |
+| 2020-11-20 17:52 UTC | `plone/plonecli` | [#54 Point the user to the install docs, if "plonecli build" fails](https://github.com/plone/plonecli/issues/54) | `MrTango` | `04 type: enhancement`, `31 needs: help`, `41 lvl: easy` |
 | 2020-11-12 14:42 UTC | `plone/bobtemplates.plone` | [#433 Delete content_type/content/__init__.py](https://github.com/plone/bobtemplates.plone/issues/433) | `NicolasGoeddel` | `04 type: enhancement`, `31 needs: help`, `21 status: confirmed`, `41 lvl: easy` |
 | 2020-10-29 15:47 UTC | `plone/Products.TinyMCE` | [#161 Blank Lines in HTML Filtering Settings "Custom attributes" Breaks TinyMCE](https://github.com/plone/Products.TinyMCE/issues/161) | `flipmcf` | `01 type: bug`, `41 lvl: easy` |
 | 2020-10-22 11:26 UTC | `plone/plone.restapi` | [#411 Provide default_page and layout properties in content GET](https://github.com/plone/plone.restapi/issues/411) | `buchi` | `04 type: enhancement`, `41 lvl: easy` |
 | 2019-05-22 07:27 UTC | `plone/bobtemplates.plone` | [#385 sub-template: profile - Adds a GenericSetup profile](https://github.com/plone/bobtemplates.plone/issues/385) | `idgserpro` | `31 needs: help`, `03 type: feature (plip)`, `14 prio: low`, `41 lvl: easy` |
+| 2019-05-19 23:29 UTC | `plone/plonecli` | [#51 i18n would be awesome](https://github.com/plone/plonecli/issues/51) | `iham` | `04 type: enhancement`, `41 lvl: easy` |
 | 2019-05-17 16:17 UTC | `plone/bobtemplates.plone` | [#383 Chose Plone 4.3-latest to create a package, but it's pinning to test_plone52.cfg in buildout](https://github.com/plone/bobtemplates.plone/issues/383) | `idgserpro` | `04 type: enhancement`, `31 needs: help`, `14 prio: low`, `41 lvl: easy` |
+| 2019-01-14 16:23 UTC | `plone/plonecli` | [#28 Improve help message when using "plonecli create"](https://github.com/plone/plonecli/issues/28) | `idgserpro` | `04 type: enhancement`, `31 needs: help`, `41 lvl: easy` |
+| 2018-10-17 14:18 UTC | `plone/plonecli` | [#29 Improve help message when using "plonecli -l"](https://github.com/plone/plonecli/issues/29) | `idgserpro` | `04 type: enhancement`, `31 needs: help`, `41 lvl: easy` |
 | 2018-06-14 13:43 UTC | `plone/plone.api` | [#404 Add add indexes method to api.portal](https://github.com/plone/plone.api/issues/404) | `MrTango` | `03 type: feature (plip)`, `41 lvl: easy` |
 | 2018-04-25 13:11 UTC | `plone/bobtemplates.plone` | [#22 Add option to include sphinx.](https://github.com/plone/bobtemplates.plone/issues/22) | `tisto` | `04 type: enhancement`, `31 needs: help`, `21 status: confirmed`, `33 needs: docs`, `41 lvl: easy` |
+| 2018-02-10 02:36 UTC | `plone/plone.app.contenttypes` | [#417 Simplify __init__ methods in views](https://github.com/plone/plone.app.contenttypes/issues/417) | `thet` | `04 type: enhancement`, `41 lvl: easy` |
 | 2016-06-09 09:40 UTC | `plone/plone.app.vocabularies` | [#24 Unify Encoding used for tokens](https://github.com/plone/plone.app.vocabularies/issues/24) | `jensens` | `04 type: enhancement`, `14 prio: low`, `41 lvl: easy` |
+| 2016-03-17 11:35 UTC | `plone/plone.app.portlets` | [#67 News portlet does not use effective/expiration dates](https://github.com/plone/plone.app.portlets/issues/67) | `Robynstar` | `99 tag: Plone 5.x`, `01 type: bug`, `02 type: regression`, `13 prio: normal`, `21 status: confirmed`, `41 lvl: easy` |
 | 2016-02-13 15:47 UTC | `plone/plonetheme.barceloneta` | [#85 Avoid usage of ``method="raw"`` in ``rules.xml``](https://github.com/plone/plonetheme.barceloneta/issues/85) | `thet` | `05 type: question`, `13 prio: normal`, `41 lvl: easy` |
 | 2016-01-27 17:53 UTC | `plone/Products.CMFDiffTool` | [#12 Remove the centralized imports in Products.CMFDiffTool.__init__](https://github.com/plone/Products.CMFDiffTool/issues/12) | `do3cc` | `04 type: enhancement`, `41 lvl: easy` |
 | 2015-11-12 15:17 UTC | `plone/Products.CMFEditions` | [#33 10 years old empty file!](https://github.com/plone/Products.CMFEditions/issues/33) | `ale-rt` | `04 type: enhancement`, `05 type: question`, `14 prio: low`, `41 lvl: easy` |
