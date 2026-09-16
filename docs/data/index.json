@@ -1,17 +1,34 @@
 {
   "version": 1,
-  "generated_at": "2026-09-15T07:31:14Z",
+  "generated_at": "2026-09-16T07:31:03Z",
   "tasks": [
     {
       "slug": "github-activity-digest",
       "title": "GitHub Activity Digest",
       "latest": {
         "status": "success",
-        "generated_at": "2026-09-15T07:31:14Z",
+        "generated_at": "2026-09-16T07:31:03Z",
         "json_path": "data/github-activity-digest/latest.json",
         "markdown_path": "data/github-activity-digest/latest.md"
       },
       "runs": [
+        {
+          "status": "success",
+          "generated_at": "2026-09-16T07:31:03Z",
+          "period": {
+            "days": 7,
+            "start": "2026-09-09",
+            "end": "2026-09-16"
+          },
+          "counts": {
+            "repos_processed": 427,
+            "active_repos": 113
+          },
+          "json_path": "data/github-activity-digest/runs/2026-09-16T07-31-03Z.json",
+          "markdown_path": "data/github-activity-digest/runs/2026-09-16T07-31-03Z.md",
+          "workflow_url": "https://github.com/syslabcom/activity-recognition/actions/runs/35068630815",
+          "summary_excerpt": "```markdown 📊 WEEKLY SUMMARY 2026-09-09 to 2026-09-16 This week in the Plone ecosystem saw considerable activity focused on updating dependencies, particularly the bumping of `ast…"
+        },
         {
           "status": "success",
           "generated_at": "2026-09-15T07:31:14Z",
