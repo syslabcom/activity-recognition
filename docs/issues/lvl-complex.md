@@ -1,25 +1,24 @@
 ---
 title: "Plone issue list — Level: Complex"
 permalink: "/issues/lvl-complex/"
-generated_at: "2026-09-17T11:09:29Z"
+generated_at: "2026-09-17T12:15:47Z"
 organization: "plone"
-issue_count: 54
+issue_count: 53
 required_labels:
   - "43 lvl: complex"
 ---
 
 # Plone issue list — Level: Complex
 
-Generated: `2026-09-17T11:09:29Z`  
+Generated: `2026-09-17T12:15:47Z`  
 Organization: `plone`  
 Required label: `43 lvl: complex`  
-Issue count: `54`
+Issue count: `53`
 
 Sorted by last updated date, newest first.
 
 | Updated | Repository | Issue | Author | Labels |
 | --- | --- | --- | --- | --- |
-| 2026-09-16 09:46 UTC | `plone/mockup` | [#1640 Dynamic Intl locale-data import bloats the Plone bundle by ~770 lazy chunks (~340 MB on disk)](https://github.com/plone/mockup/issues/1640) | `petschki` | `12 prio: high`, `32 needs: review`, `02 type: regression`, `43 lvl: complex` |
 | 2026-09-14 02:17 UTC | `plone/Products.CMFPlone` | [#3987 Create Site Manager and Editor Guide for Plone 7](https://github.com/plone/Products.CMFPlone/issues/3987) | `stevepiercy` | `03 type: feature (plip)`, `43 lvl: complex` |
 | 2026-08-12 07:21 UTC | `plone/volto` | [#4303 Link Widget Improvement (add/select/modify)](https://github.com/plone/volto/issues/4303) | `sneridagh` | `03 type: feature (plip)`, `43 lvl: complex` |
 | 2026-07-07 00:57 UTC | `plone/volto` | [#7527 View for Listing block](https://github.com/plone/volto/issues/7527) | `ebrehault` | `04 type: enhancement`, `43 lvl: complex`, `27 status: stale` |

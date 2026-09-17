@@ -1,7 +1,7 @@
 {
   "version": 1,
   "status": "success",
-  "generated_at": "2026-09-17T11:09:29Z",
+  "generated_at": "2026-09-17T12:15:47Z",
   "organization": "plone",
   "state": "open",
   "slug": "lvl-complex",
@@ -9,39 +9,8 @@
   "required_labels": [
     "43 lvl: complex"
   ],
-  "issue_count": 54,
+  "issue_count": 53,
   "issues": [
-    {
-      "id": 5448206248,
-      "number": 1640,
-      "title": "Dynamic Intl locale-data import bloats the Plone bundle by ~770 lazy chunks (~340 MB on disk)",
-      "html_url": "https://github.com/plone/mockup/issues/1640",
-      "repository_full_name": "plone/mockup",
-      "repository_url": "https://api.github.com/repos/plone/mockup",
-      "state": "open",
-      "created_at": "2026-09-14T10:33:32Z",
-      "updated_at": "2026-09-16T09:46:50Z",
-      "comments": 3,
-      "author": {
-        "login": "petschki",
-        "html_url": "https://github.com/petschki"
-      },
-      "assignees": [],
-      "labels": [
-        "12 prio: high",
-        "32 needs: review",
-        "02 type: regression",
-        "43 lvl: complex"
-      ],
-      "contributor_summary": {
-        "status": "available",
-        "generated_at": "2026-09-14T11:09:52Z",
-        "source_issue_updated_at": "2026-09-14T10:57:34Z",
-        "model": "gpt-4o-mini",
-        "summary_markdown": "## What this issue is about\nThis issue addresses the significant increase in the size of the Plone bundle due to dynamic imports of locale data from the `@formatjs/intl-datetimeformat` library. The current build includes approximately 770 additional lazy chunks, resulting in a bloat of around 340 MB, which is excessive for most deployments.\n\n## What needs to be done\nWe need to optimize the dynamic import to limit the loaded locale data to only those languages officially supported by Plone. This can be achieved by adding a Webpack magic comment to refine which locale files to include.\n\n## Helpful background\nThe problem arises from recent commits that made the dynamic imports resolvable by Webpack, resulting in every locale file being bundled, even those rarely used. Although this does not affect runtime performance for users, it unnecessarily increases the package size, complicating deployments.\n\n## Good first steps\n1. Review the current implementation in `src/core/intl-loader.js`.\n2. Familiarize yourself with Webpack magic comments and the list of supported languages in `plone.app.locales`.\n3. Consider the proposed changes to restrict the chunks, while also discussing alternatives such as loading locales from a static source.\n4. Prepare to test the build to ensure it functions correctly with the updated imports.\n\nFeel free to reach out for clarification if any part of the issue discussion seems ambiguous. Your contributions could help streamline Plone's bundle size significantly!",
-        "path": "data/issues/summaries/plone/mockup/1640.json"
-      }
-    },
     {
       "id": 2393542605,
       "number": 3987,
@@ -1658,10 +1627,10 @@
   "message": null,
   "workflow": {
     "repository": "syslabcom/activity-recognition",
-    "run_id": "35214195366",
-    "run_number": "3190",
+    "run_id": "35220110433",
+    "run_number": "3191",
     "attempt": "1",
-    "url": "https://github.com/syslabcom/activity-recognition/actions/runs/35214195366",
-    "sha": "f2d5dd8d05a0b82b8ac0e0c49b7e17f309386a36"
+    "url": "https://github.com/syslabcom/activity-recognition/actions/runs/35220110433",
+    "sha": "58946838a4069710b6a570f782f09a3ff4f8151f"
   }
 }
