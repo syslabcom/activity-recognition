@@ -1,19 +1,19 @@
 ---
 title: "Plone issue list — Level: Moderate"
 permalink: "/issues/lvl-moderate/"
-generated_at: "2026-09-17T22:09:38Z"
+generated_at: "2026-09-17T23:08:25Z"
 organization: "plone"
-issue_count: 72
+issue_count: 71
 required_labels:
   - "42 lvl: moderate"
 ---
 
 # Plone issue list — Level: Moderate
 
-Generated: `2026-09-17T22:09:38Z`  
+Generated: `2026-09-17T23:08:25Z`  
 Organization: `plone`  
 Required label: `42 lvl: moderate`  
-Issue count: `72`
+Issue count: `71`
 
 Sorted by last updated date, newest first.
 
@@ -26,7 +26,6 @@ Sorted by last updated date, newest first.
 | 2026-05-19 08:43 UTC | `plone/volto` | [#5630 Unify the use of the optional `preview_image_link` across Volto](https://github.com/plone/volto/issues/5630) | `sneridagh` | `04 type: enhancement`, `42 lvl: moderate` |
 | 2026-05-18 10:43 UTC | `plone/volto` | [#5896 It's confusing how to change my password as a logged in user](https://github.com/plone/volto/issues/5896) | `JeffersonBledsoe` | `04 type: enhancement`, `42 lvl: moderate` |
 | 2026-05-18 10:40 UTC | `plone/volto` | [#5627 Update i18n machinery to latest `react-intl`](https://github.com/plone/volto/issues/5627) | `sneridagh` | `03 type: feature (plip)`, `42 lvl: moderate` |
-| 2026-03-30 08:06 UTC | `plone/Products.CMFPlone` | [#3394 Broken ARIA reference in SVG icon](https://github.com/plone/Products.CMFPlone/issues/3394) | `giulioturetta` | `99 tag: UX Accessibility`, `01 type: bug`, `12 prio: high`, `21 status: confirmed`, `42 lvl: moderate`, `51 target: patch` |
 | 2026-03-23 22:38 UTC | `plone/Products.CMFPlone` | [#3837 Plone 6.0 Classic-UI: where can I set default pattern options](https://github.com/plone/Products.CMFPlone/issues/3837) | `fredvd` | `01 type: bug`, `99 tag: UX Integrator/Themer`, `13 prio: normal`, `21 status: confirmed`, `42 lvl: moderate`, `99 tag: resource registry`, `99 tag: Plone 6.0` |
 | 2026-03-23 21:55 UTC | `plone/Products.CMFPlone` | [#3428 The renderer of sendto_template.pt is corrupting the whitespace](https://github.com/plone/Products.CMFPlone/issues/3428) | `Rudd-O` | `01 type: bug`, `02 type: regression`, `31 needs: help`, `42 lvl: moderate` |
 | 2026-03-23 21:53 UTC | `plone/Products.CMFPlone` | [#1056 Locking icon on toolbar is not clear](https://github.com/plone/Products.CMFPlone/issues/1056) | `hvelarde` | `01 type: bug`, `99 tag: UX Editor`, `13 prio: normal`, `21 status: confirmed`, `42 lvl: moderate`, `99 tag: Plone 6.0`, `99 tag: Plone 5.2` |
