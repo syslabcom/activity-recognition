@@ -1,7 +1,7 @@
 {
   "version": 1,
   "status": "success",
-  "generated_at": "2026-09-21T00:31:20Z",
+  "generated_at": "2026-09-21T01:26:31Z",
   "organization": "plone",
   "state": "open",
   "slug": "lvl-complex",
@@ -33,10 +33,10 @@
       ],
       "contributor_summary": {
         "status": "available",
-        "generated_at": "2026-09-14T00:31:29Z",
-        "source_issue_updated_at": "2026-09-13T23:21:58Z",
+        "generated_at": "2026-09-21T01:26:36Z",
+        "source_issue_updated_at": "2026-09-14T02:17:52Z",
         "model": "gpt-4o-mini",
-        "summary_markdown": "## What this issue is about\nThis issue focuses on creating an *Editor Manual* for Plone 7. Currently, no comprehensive guide exists, leaving users to rely on outdated Plone 5 documentation. The aim is to develop an up-to-date manual that complements written guidance with automated visuals (screenshots and videos) to make learning easier, especially for non-native English speakers.\n\n## What needs to be done\nWe propose investigating automated tools like Cypress and Playwright for capturing visuals to supplement the manual. Deliverables include automating visual content updates with each merged pull request and adapting existing Plone 5 documentation for Plone 6 and 7.\n\n## Helpful background\nThere's a strong consensus that visual aids, while useful, should not replace detailed written instructions. Challenges include the technical complexity of automation and the need for accurate updates. Uncertainties remain on the use of various tools, as different discussions and proposals have emerged without clear resolution.\n\n## Good first steps\n1. Familiarize yourself with tools like [Cypress](https://docs.cypress.io/app/guides/cypress-studio) and [Playwright](https://playwright.dev/docs/codegen).\n2. Explore the existing Volto user training at [Plone Training](https://training.plone.org/content-editing/index.html) for potential content reuse.\n3. Join discussions at upcoming events to refine the proposal and align efforts within the community.",
+        "summary_markdown": "```markdown\n## What this issue is about\nThis issue focuses on creating a Site Manager and Editor Guide for Plone 7, as current documentation is outdated. The proposal suggests using automated tools for visual documentation—like screenshots and videos—to enhance the guide, making it accessible for users with various language backgrounds.\n\n## What needs to be done\nWe need to investigate and implement automated tools (Cypress or Playwright) to capture and integrate visual content for the Site Manager and Editor Guide. The goal is to produce a comprehensive and updated manual that includes both narrative text and visual aids.\n\n## Helpful background\nThe existing documentation for previous Plone versions is inadequate, and reliance on visuals can help describe complex processes that are hard to capture with text alone. However, there are differing opinions on using too many visuals, as this can clutter documentation.\n\n## Good first steps\n1. Familiarize yourself with Cypress and Playwright for automated testing and documentation.\n2. Explore the current state of Plone documentation and the existing guides, particularly the links shared in the comments (e.g., [Volto User Manual](https://6.docs.plone.org/volto/user-manual/index.html)).\n3. Join discussions at PloneConf to understand community needs and possible collaboration.\n4. Consider reviewing and repurposing existing training materials to assist with this guide.\n```",
         "path": "data/issues/summaries/plone/Products.CMFPlone/3987.json"
       }
     },
@@ -1627,10 +1627,10 @@
   "message": null,
   "workflow": {
     "repository": "syslabcom/activity-recognition",
-    "run_id": "35547956236",
-    "run_number": "3275",
+    "run_id": "35550900255",
+    "run_number": "3276",
     "attempt": "1",
-    "url": "https://github.com/syslabcom/activity-recognition/actions/runs/35547956236",
-    "sha": "d54b5e20bed86da800d1fc3c03de00ba075301a0"
+    "url": "https://github.com/syslabcom/activity-recognition/actions/runs/35550900255",
+    "sha": "0dc7b4e12c888a539226573fa6011ec05511efe2"
   }
 }
