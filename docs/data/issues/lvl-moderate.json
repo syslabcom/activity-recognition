@@ -1,7 +1,7 @@
 {
   "version": 1,
   "status": "success",
-  "generated_at": "2026-09-22T12:15:27Z",
+  "generated_at": "2026-09-22T13:10:36Z",
   "organization": "plone",
   "state": "open",
   "slug": "lvl-moderate",
@@ -11,6 +11,40 @@
   ],
   "issue_count": 72,
   "issues": [
+    {
+      "id": 3460812472,
+      "number": 7409,
+      "title": "Docs - Aurora - Release Notes missing",
+      "html_url": "https://github.com/plone/volto/issues/7409",
+      "repository_full_name": "plone/volto",
+      "repository_url": "https://api.github.com/repos/plone/volto",
+      "state": "open",
+      "created_at": "2025-09-27T22:31:22Z",
+      "updated_at": "2026-09-22T12:59:43Z",
+      "comments": 2,
+      "author": {
+        "login": "stevepiercy",
+        "html_url": "https://github.com/stevepiercy"
+      },
+      "assignees": [
+        "stevepiercy",
+        "sneridagh"
+      ],
+      "labels": [
+        "01 type: bug",
+        "33 needs: docs",
+        "42 lvl: moderate",
+        "30 needs: triage"
+      ],
+      "contributor_summary": {
+        "status": "available",
+        "generated_at": "2026-09-22T13:10:41Z",
+        "source_issue_updated_at": "2026-09-22T12:59:43Z",
+        "model": "gpt-4o-mini",
+        "summary_markdown": "```markdown\n## What this issue is about\nThis issue addresses the missing release notes and change log in the Aurora documentation for Plone. Sphinx, a documentation generator, reports warnings indicating that it cannot find the release notes, which are intended to provide users with information about updates and changes.\n\n## What needs to be done\nWe need to add the missing release notes to the documentation. This will involve creating a new section or updating existing content to ensure that Sphinx can reference the release notes correctly.\n\n## Helpful background\nThe issue was originally raised because Sphinx returned warnings about unknown documents related to release notes. Discussions suggest there may have been attempts to fix this problem, but it's unclear if those efforts resolved the issue. Review prior commits or discussions related to the pull request linked above for context.\n\n## Good first steps\n1. Review the existing documentation and identify the structure for where release notes should go.\n2. Check if the issue was addressed in the mentioned pull request; if so, verify its implementation.\n3. Feel free to ask questions or request guidance in the issue comments. Collaboration is encouraged!\n4. Consider the need for thorough testing and possibly updating related documentation.\n```",
+        "path": "data/issues/summaries/plone/volto/7409.json"
+      }
+    },
     {
       "id": 5524122823,
       "number": 179,
@@ -136,40 +170,6 @@
         "model": "gpt-4o-mini",
         "summary_markdown": "```markdown\n## What this issue is about\nThis issue discusses the possibility of building Storybook for previewing pull requests (PRs) on the `Aurora` branch of Volto. Currently, any link to Storybook in preview PRs redirects to the stable version, which makes it difficult to view changes.\n\n## What needs to be done\nWe need to explore how to configure the build process so that PR-specific Storybook URLs are generated instead of redirecting to the stable version. This involves potentially changing redirect settings based on notification of changes in relevant branches.\n\n## Helpful background\nThe discussion indicates there may be uncertainties about the exact implementations needed to achieve this. The comments suggest some ways forward, but details on configuration may require further investigation, especially with integration in Read the Docs (RTD).\n\n## Good first steps\n1. Check the current configuration in `docs/conf.py` and `.readthedocs.yaml` for any redirect settings related to Storybook.\n2. Review the existing documentation for Read the Docs related to building PRs.\n3. Look into the links shared in comments for broader context.\n4. Engage with team members in the next Volto meeting for additional insights and support.\n```",
         "path": "data/issues/summaries/plone/volto/7159.json"
-      }
-    },
-    {
-      "id": 3460812472,
-      "number": 7409,
-      "title": "Docs - Aurora - Release Notes missing",
-      "html_url": "https://github.com/plone/volto/issues/7409",
-      "repository_full_name": "plone/volto",
-      "repository_url": "https://api.github.com/repos/plone/volto",
-      "state": "open",
-      "created_at": "2025-09-27T22:31:22Z",
-      "updated_at": "2026-06-02T09:29:06Z",
-      "comments": 1,
-      "author": {
-        "login": "stevepiercy",
-        "html_url": "https://github.com/stevepiercy"
-      },
-      "assignees": [
-        "stevepiercy",
-        "sneridagh"
-      ],
-      "labels": [
-        "01 type: bug",
-        "33 needs: docs",
-        "42 lvl: moderate",
-        "30 needs: triage"
-      ],
-      "contributor_summary": {
-        "status": "available",
-        "generated_at": "2026-06-02T09:30:34Z",
-        "source_issue_updated_at": "2026-06-02T09:29:06Z",
-        "model": "gpt-4o-mini",
-        "summary_markdown": "## What this issue is about\nThis issue addresses the absence of release notes and a change log in the documentation for the \"Seven\" component within the Volto project. The documentation build tool, Sphinx, is issuing warnings because it cannot find the necessary files.\n\n## What needs to be done\nWe need to create and include release notes or a change log for the \"Seven\" component in the documentation. This will help inform users about updates and changes in the project.\n\n## Helpful background\nRelease notes summarize the changes made in a software release, providing users insight into updates, fixes, and enhancements. Proper documentation is crucial for user orientation and aids in maintaining project transparency.\n\n## Good first steps\n1. Familiarize yourself with the existing documentation structure, especially the sections related to release notes.\n2. Check the project's GitHub repository for any existing documentation on release notes to avoid duplicating work.\n3. If you're new to contributing, consider reaching out in the comments or via direct messages for guidance from existing contributors or maintainers.\n4. Review any related discussions or comments to understand context and expectations.\n5. Start drafting the release notes based on recent changes in the project, and be prepared for review and feedback before finalizing.",
-        "path": "data/issues/summaries/plone/volto/7409.json"
       }
     },
     {
@@ -2250,10 +2250,10 @@
   "message": null,
   "workflow": {
     "repository": "syslabcom/activity-recognition",
-    "run_id": "35726090637",
-    "run_number": "3311",
+    "run_id": "35731753447",
+    "run_number": "3312",
     "attempt": "1",
-    "url": "https://github.com/syslabcom/activity-recognition/actions/runs/35726090637",
-    "sha": "2d6680c0b9e73b74caf4be38fd0a1c73d62ebbce"
+    "url": "https://github.com/syslabcom/activity-recognition/actions/runs/35731753447",
+    "sha": "1ddf55215a5a10d0030e33eee6ecad5f4da608c0"
   }
 }

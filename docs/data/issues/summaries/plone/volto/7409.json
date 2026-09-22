@@ -1,33 +1,33 @@
 {
   "version": 1,
   "status": "success",
-  "generated_at": "2026-06-02T09:30:34Z",
+  "generated_at": "2026-09-22T13:10:41Z",
   "source_issue": {
     "id": 3460812472,
     "number": 7409,
     "title": "Docs - Aurora - Release Notes missing",
     "html_url": "https://github.com/plone/volto/issues/7409",
     "repository_full_name": "plone/volto",
-    "updated_at": "2026-06-02T09:29:06Z",
+    "updated_at": "2026-09-22T12:59:43Z",
     "labels": [
       "01 type: bug",
       "33 needs: docs",
       "42 lvl: moderate",
       "30 needs: triage"
     ],
-    "comments": 1
+    "comments": 2
   },
   "ai": {
     "provider": "openai",
     "model": "gpt-4o-mini"
   },
-  "summary_markdown": "## What this issue is about\nThis issue addresses the absence of release notes and a change log in the documentation for the \"Seven\" component within the Volto project. The documentation build tool, Sphinx, is issuing warnings because it cannot find the necessary files.\n\n## What needs to be done\nWe need to create and include release notes or a change log for the \"Seven\" component in the documentation. This will help inform users about updates and changes in the project.\n\n## Helpful background\nRelease notes summarize the changes made in a software release, providing users insight into updates, fixes, and enhancements. Proper documentation is crucial for user orientation and aids in maintaining project transparency.\n\n## Good first steps\n1. Familiarize yourself with the existing documentation structure, especially the sections related to release notes.\n2. Check the project's GitHub repository for any existing documentation on release notes to avoid duplicating work.\n3. If you're new to contributing, consider reaching out in the comments or via direct messages for guidance from existing contributors or maintainers.\n4. Review any related discussions or comments to understand context and expectations.\n5. Start drafting the release notes based on recent changes in the project, and be prepared for review and feedback before finalizing.",
+  "summary_markdown": "```markdown\n## What this issue is about\nThis issue addresses the missing release notes and change log in the Aurora documentation for Plone. Sphinx, a documentation generator, reports warnings indicating that it cannot find the release notes, which are intended to provide users with information about updates and changes.\n\n## What needs to be done\nWe need to add the missing release notes to the documentation. This will involve creating a new section or updating existing content to ensure that Sphinx can reference the release notes correctly.\n\n## Helpful background\nThe issue was originally raised because Sphinx returned warnings about unknown documents related to release notes. Discussions suggest there may have been attempts to fix this problem, but it's unclear if those efforts resolved the issue. Review prior commits or discussions related to the pull request linked above for context.\n\n## Good first steps\n1. Review the existing documentation and identify the structure for where release notes should go.\n2. Check if the issue was addressed in the mentioned pull request; if so, verify its implementation.\n3. Feel free to ask questions or request guidance in the issue comments. Collaboration is encouraged!\n4. Consider the need for thorough testing and possibly updating related documentation.\n```",
   "workflow": {
     "repository": "syslabcom/activity-recognition",
-    "run_id": "26811059685",
-    "run_number": "1154",
+    "run_id": "35731753447",
+    "run_number": "3312",
     "attempt": "1",
-    "url": "https://github.com/syslabcom/activity-recognition/actions/runs/26811059685",
-    "sha": "905c6a77f5826eabf20ac5fbf94fe941b66e3fd1"
+    "url": "https://github.com/syslabcom/activity-recognition/actions/runs/35731753447",
+    "sha": "1ddf55215a5a10d0030e33eee6ecad5f4da608c0"
   }
 }

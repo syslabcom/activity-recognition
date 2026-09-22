@@ -1,7 +1,7 @@
 ---
 title: "Plone issue list — Level: Moderate"
 permalink: "/issues/lvl-moderate/"
-generated_at: "2026-09-22T12:15:27Z"
+generated_at: "2026-09-22T13:10:36Z"
 organization: "plone"
 issue_count: 72
 required_labels:
@@ -10,7 +10,7 @@ required_labels:
 
 # Plone issue list — Level: Moderate
 
-Generated: `2026-09-22T12:15:27Z`  
+Generated: `2026-09-22T13:10:36Z`  
 Organization: `plone`  
 Required label: `42 lvl: moderate`  
 Issue count: `72`
@@ -19,11 +19,11 @@ Sorted by last updated date, newest first.
 
 | Updated | Repository | Issue | Author | Labels |
 | --- | --- | --- | --- | --- |
+| 2026-09-22 12:59 UTC | `plone/volto` | [#7409 Docs - Aurora - Release Notes missing](https://github.com/plone/volto/issues/7409) | `stevepiercy` | `01 type: bug`, `33 needs: docs`, `42 lvl: moderate`, `30 needs: triage` |
 | 2026-09-21 07:39 UTC | `plone/aurora` | [#179 System requirements should be updated](https://github.com/plone/aurora/issues/179) | `stevepiercy` | `33 needs: docs`, `42 lvl: moderate` |
 | 2026-08-25 10:27 UTC | `plone/Products.CMFPlone` | [#3953 PLIP: Start separating Blicca (Classic UI) code from the core](https://github.com/plone/Products.CMFPlone/issues/3953) | `tisto` | `31 needs: help`, `99 tag: cleanup`, `03 type: feature (plip)`, `13 prio: normal`, `42 lvl: moderate`, `53 target: major`, `99 tag: Classic UI` |
 | 2026-06-29 01:19 UTC | `plone/volto` | [#7696 Add deprecation policy or guide to documentation](https://github.com/plone/volto/issues/7696) | `stevepiercy` | `04 type: enhancement`, `33 needs: docs`, `42 lvl: moderate`, `discussion` |
 | 2026-06-02 09:29 UTC | `plone/volto` | [#7159 Build Storybook for a PR preview on `Aurora` branch](https://github.com/plone/volto/issues/7159) | `stevepiercy` | `04 type: enhancement`, `31 needs: help`, `33 needs: docs`, `42 lvl: moderate` |
-| 2026-06-02 09:29 UTC | `plone/volto` | [#7409 Docs - Aurora - Release Notes missing](https://github.com/plone/volto/issues/7409) | `stevepiercy` | `01 type: bug`, `33 needs: docs`, `42 lvl: moderate`, `30 needs: triage` |
 | 2026-05-19 08:43 UTC | `plone/volto` | [#5630 Unify the use of the optional `preview_image_link` across Volto](https://github.com/plone/volto/issues/5630) | `sneridagh` | `04 type: enhancement`, `42 lvl: moderate` |
 | 2026-05-18 10:43 UTC | `plone/volto` | [#5896 It's confusing how to change my password as a logged in user](https://github.com/plone/volto/issues/5896) | `JeffersonBledsoe` | `04 type: enhancement`, `42 lvl: moderate` |
 | 2026-05-18 10:40 UTC | `plone/volto` | [#5627 Update i18n machinery to latest `react-intl`](https://github.com/plone/volto/issues/5627) | `sneridagh` | `03 type: feature (plip)`, `42 lvl: moderate` |
