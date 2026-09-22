@@ -1,25 +1,24 @@
 ---
 title: "Plone issue list — Level: Moderate"
 permalink: "/issues/lvl-moderate/"
-generated_at: "2026-09-22T15:10:20Z"
+generated_at: "2026-09-22T16:10:47Z"
 organization: "plone"
-issue_count: 72
+issue_count: 71
 required_labels:
   - "42 lvl: moderate"
 ---
 
 # Plone issue list — Level: Moderate
 
-Generated: `2026-09-22T15:10:20Z`  
+Generated: `2026-09-22T16:10:47Z`  
 Organization: `plone`  
 Required label: `42 lvl: moderate`  
-Issue count: `72`
+Issue count: `71`
 
 Sorted by last updated date, newest first.
 
 | Updated | Repository | Issue | Author | Labels |
 | --- | --- | --- | --- | --- |
-| 2026-09-22 12:59 UTC | `plone/volto` | [#7409 Docs - Aurora - Release Notes missing](https://github.com/plone/volto/issues/7409) | `stevepiercy` | `01 type: bug`, `33 needs: docs`, `42 lvl: moderate`, `30 needs: triage` |
 | 2026-09-21 07:39 UTC | `plone/aurora` | [#179 System requirements should be updated](https://github.com/plone/aurora/issues/179) | `stevepiercy` | `33 needs: docs`, `42 lvl: moderate` |
 | 2026-08-25 10:27 UTC | `plone/Products.CMFPlone` | [#3953 PLIP: Start separating Blicca (Classic UI) code from the core](https://github.com/plone/Products.CMFPlone/issues/3953) | `tisto` | `31 needs: help`, `99 tag: cleanup`, `03 type: feature (plip)`, `13 prio: normal`, `42 lvl: moderate`, `53 target: major`, `99 tag: Classic UI` |
 | 2026-06-29 01:19 UTC | `plone/volto` | [#7696 Add deprecation policy or guide to documentation](https://github.com/plone/volto/issues/7696) | `stevepiercy` | `04 type: enhancement`, `33 needs: docs`, `42 lvl: moderate`, `discussion` |
