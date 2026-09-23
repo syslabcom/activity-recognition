@@ -1,17 +1,34 @@
 {
   "version": 1,
-  "generated_at": "2026-09-22T07:30:48Z",
+  "generated_at": "2026-09-23T07:32:22Z",
   "tasks": [
     {
       "slug": "github-activity-digest",
       "title": "GitHub Activity Digest",
       "latest": {
         "status": "success",
-        "generated_at": "2026-09-22T07:30:48Z",
+        "generated_at": "2026-09-23T07:32:22Z",
         "json_path": "data/github-activity-digest/latest.json",
         "markdown_path": "data/github-activity-digest/latest.md"
       },
       "runs": [
+        {
+          "status": "success",
+          "generated_at": "2026-09-23T07:32:22Z",
+          "period": {
+            "days": 7,
+            "start": "2026-09-16",
+            "end": "2026-09-23"
+          },
+          "counts": {
+            "repos_processed": 429,
+            "active_repos": 66
+          },
+          "json_path": "data/github-activity-digest/runs/2026-09-23T07-32-22Z.json",
+          "markdown_path": "data/github-activity-digest/runs/2026-09-23T07-32-22Z.md",
+          "workflow_url": "https://github.com/syslabcom/activity-recognition/actions/runs/35831880735",
+          "summary_excerpt": "# 📊 WEEKLY SUMMARY **2026-09-16 to 2026-09-23** This week in the Plone organization saw significant contributions primarily from the automated bot `dependabot`, alongside active p…"
+        },
         {
           "status": "success",
           "generated_at": "2026-09-22T07:30:48Z",
