@@ -1,17 +1,34 @@
 {
   "version": 1,
-  "generated_at": "2026-09-25T07:32:27Z",
+  "generated_at": "2026-09-26T07:26:35Z",
   "tasks": [
     {
       "slug": "github-activity-digest",
       "title": "GitHub Activity Digest",
       "latest": {
         "status": "success",
-        "generated_at": "2026-09-25T07:32:27Z",
+        "generated_at": "2026-09-26T07:26:35Z",
         "json_path": "data/github-activity-digest/latest.json",
         "markdown_path": "data/github-activity-digest/latest.md"
       },
       "runs": [
+        {
+          "status": "success",
+          "generated_at": "2026-09-26T07:26:35Z",
+          "period": {
+            "days": 7,
+            "start": "2026-09-19",
+            "end": "2026-09-26"
+          },
+          "counts": {
+            "repos_processed": 429,
+            "active_repos": 30
+          },
+          "json_path": "data/github-activity-digest/runs/2026-09-26T07-26-35Z.json",
+          "markdown_path": "data/github-activity-digest/runs/2026-09-26T07-26-35Z.md",
+          "workflow_url": "https://github.com/syslabcom/activity-recognition/actions/runs/36226635424",
+          "summary_excerpt": "📊 WEEKLY SUMMARY 2026-09-19 to 2026-09-26 This week in the Plone ecosystem, several repositories received updates primarily from contributions by dependabot and a few active contr…"
+        },
         {
           "status": "success",
           "generated_at": "2026-09-25T07:32:27Z",
