@@ -1,7 +1,7 @@
 {
   "version": 1,
   "status": "success",
-  "generated_at": "2026-09-26T07:10:37Z",
+  "generated_at": "2026-09-26T08:13:45Z",
   "organization": "plone",
   "state": "open",
   "slug": "lvl-moderate",
@@ -11,6 +11,42 @@
   ],
   "issue_count": 71,
   "issues": [
+    {
+      "id": 2297234474,
+      "number": 3953,
+      "title": "PLIP: Start separating Blicca (Classic UI) code from the core",
+      "html_url": "https://github.com/plone/Products.CMFPlone/issues/3953",
+      "repository_full_name": "plone/Products.CMFPlone",
+      "repository_url": "https://api.github.com/repos/plone/Products.CMFPlone",
+      "state": "open",
+      "created_at": "2024-05-15T08:40:27Z",
+      "updated_at": "2026-09-26T08:12:23Z",
+      "comments": 28,
+      "author": {
+        "login": "tisto",
+        "html_url": "https://github.com/tisto"
+      },
+      "assignees": [
+        "jensens"
+      ],
+      "labels": [
+        "31 needs: help",
+        "99 tag: cleanup",
+        "03 type: feature (plip)",
+        "13 prio: normal",
+        "42 lvl: moderate",
+        "53 target: major",
+        "99 tag: Classic UI"
+      ],
+      "contributor_summary": {
+        "status": "available",
+        "generated_at": "2026-09-26T08:13:49Z",
+        "source_issue_updated_at": "2026-09-26T08:12:23Z",
+        "model": "gpt-4o-mini",
+        "summary_markdown": "```markdown\n## What this issue is about\nThis issue is about separating the Classic UI code from the core of Plone, specifically moving templates and view logic to a new package called `plone.classicui`, while keeping the essential API and business logic in `Products.CMFPlone`. The goal is to simplify the codebase and reduce resource usage for those using the newer Volto frontend.\n\n## What needs to be done\nThe plan involves:\n- Creating a `plone.classicui` package to host Classic UI templates.\n- Moving Classic UI-specific code to `plone.app.layout`, which will become a core add-on.\n- Ensuring backwards compatibility for existing functionalities, particularly in Plone 6. \n\n## Helpful background\nThere are ongoing discussions about how this separation should be implemented. Some comments express differing opinions about what should move where and highlight potential risks of disrupting existing functionality. \n\n## Good first steps\n1. **Familiarize yourself with the existing code** in `Products.CMFPlone` and `plone.app.layout` to identify templates suitable for migration.\n2. **Review the discussions in the issue comments** for insights into ongoing debates and agreed points.\n3. **Look into contributing to the `plone.classicui` package** once you're comfortable with the structure. \n4. Be prepared for testing and possible documentation adjustments as changes are implemented.\n```",
+        "path": "data/issues/summaries/plone/Products.CMFPlone/3953.json"
+      }
+    },
     {
       "id": 5524122823,
       "number": 179,
@@ -38,42 +74,6 @@
         "model": "gpt-4o-mini",
         "summary_markdown": "## What this issue is about\nThis issue focuses on updating the system requirements for the Plone Aurora project documentation. The current requirements may be outdated, particularly around the versions of Node.js and NVM (Node Version Manager).\n\n## What needs to be done\n1. Update the documentation at [System Requirements](https://plone-aurora.readthedocs.io/get-started/system-requirements.html#nvm) to reflect the latest version of NVM (0.40.8) and the required Node.js version (22.22.0 or higher).\n2. Consider a script that checks for the latest release tags automatically, similar to an existing script in the icalendar project.\n\n## Helpful background\nOutdated documentation can lead to confusion and errors when setting up the environment. Currently, users may experience warnings or errors if they do not have the specified versions installed, as noted in the issue.\n\n## Good first steps\n1. Review the existing documentation linked above and note the changes needed.\n2. Familiarize yourself with how to update documentation in the Plone Aurora project.\n3. If interested, explore the script mentioned for checking release versions. This might involve learning a bit about Python and GitHub API usage.\n4. You can ask questions or seek clarification in the issue thread if any part is unclear.",
         "path": "data/issues/summaries/plone/aurora/179.json"
-      }
-    },
-    {
-      "id": 2297234474,
-      "number": 3953,
-      "title": "PLIP: Start separating Blicca (Classic UI) code from the core",
-      "html_url": "https://github.com/plone/Products.CMFPlone/issues/3953",
-      "repository_full_name": "plone/Products.CMFPlone",
-      "repository_url": "https://api.github.com/repos/plone/Products.CMFPlone",
-      "state": "open",
-      "created_at": "2024-05-15T08:40:27Z",
-      "updated_at": "2026-08-25T10:27:33Z",
-      "comments": 28,
-      "author": {
-        "login": "tisto",
-        "html_url": "https://github.com/tisto"
-      },
-      "assignees": [
-        "jensens"
-      ],
-      "labels": [
-        "31 needs: help",
-        "99 tag: cleanup",
-        "03 type: feature (plip)",
-        "13 prio: normal",
-        "42 lvl: moderate",
-        "53 target: major",
-        "99 tag: Classic UI"
-      ],
-      "contributor_summary": {
-        "status": "available",
-        "generated_at": "2026-08-26T10:32:19Z",
-        "source_issue_updated_at": "2026-08-25T10:27:33Z",
-        "model": "gpt-4o-mini",
-        "summary_markdown": "```markdown\n## What this issue is about\nThis issue addresses the gradual separation of the Classic UI code (Blicca) from the core Plone package, aiming to create a cleaner and more maintainable codebase. The objective is to move relevant templates and view logic to a new package, `plone.app.layout`, while maintaining essential functionality for users of the Classic UI.\n\n## What needs to be done\nThe main tasks include:\n- Create a dedicated package (`plone.classicui`) to manage the Classic UI distribution.\n- Migrate relevant Classic UI templates and logic to `plone.app.layout`.\n- Ensure backward compatibility during these transitions.\n\n## Helpful background\nThe motivation for this change is to streamline Plone's architecture for better performance and maintainability, particularly for those using the Volto frontend, which does not require Classic UI code. Discussion on this issue indicates varying opinions on the best approach, and some implementation details are still being debated.\n\n## Good first steps\n1. Familiarize yourself with the current codebase, focusing on templates related to `plone.app.layout`.\n2. Review existing discussions and proposals to understand the context and needs.\n3. Start experimenting with the migration of specific templates, aiming for backward compatibility while moving code.\n4. Team up with others engaged in this effort for coordination.\n```",
-        "path": "data/issues/summaries/plone/Products.CMFPlone/3953.json"
       }
     },
     {
@@ -2216,10 +2216,10 @@
   "message": null,
   "workflow": {
     "repository": "syslabcom/activity-recognition",
-    "run_id": "36225941071",
-    "run_number": "3402",
+    "run_id": "36229140060",
+    "run_number": "3403",
     "attempt": "1",
-    "url": "https://github.com/syslabcom/activity-recognition/actions/runs/36225941071",
-    "sha": "d189b3f1fef2eb78df7e48a483232bfc8e0e821b"
+    "url": "https://github.com/syslabcom/activity-recognition/actions/runs/36229140060",
+    "sha": "07307a5defc1b6357c781019e4bfeda101eb21f1"
   }
 }

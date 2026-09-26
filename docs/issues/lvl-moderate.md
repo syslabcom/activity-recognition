@@ -1,7 +1,7 @@
 ---
 title: "Plone issue list — Level: Moderate"
 permalink: "/issues/lvl-moderate/"
-generated_at: "2026-09-26T07:10:37Z"
+generated_at: "2026-09-26T08:13:45Z"
 organization: "plone"
 issue_count: 71
 required_labels:
@@ -10,7 +10,7 @@ required_labels:
 
 # Plone issue list — Level: Moderate
 
-Generated: `2026-09-26T07:10:37Z`  
+Generated: `2026-09-26T08:13:45Z`  
 Organization: `plone`  
 Required label: `42 lvl: moderate`  
 Issue count: `71`
@@ -19,8 +19,8 @@ Sorted by last updated date, newest first.
 
 | Updated | Repository | Issue | Author | Labels |
 | --- | --- | --- | --- | --- |
+| 2026-09-26 08:12 UTC | `plone/Products.CMFPlone` | [#3953 PLIP: Start separating Blicca (Classic UI) code from the core](https://github.com/plone/Products.CMFPlone/issues/3953) | `tisto` | `31 needs: help`, `99 tag: cleanup`, `03 type: feature (plip)`, `13 prio: normal`, `42 lvl: moderate`, `53 target: major`, `99 tag: Classic UI` |
 | 2026-09-21 07:39 UTC | `plone/aurora` | [#179 System requirements should be updated](https://github.com/plone/aurora/issues/179) | `stevepiercy` | `33 needs: docs`, `42 lvl: moderate` |
-| 2026-08-25 10:27 UTC | `plone/Products.CMFPlone` | [#3953 PLIP: Start separating Blicca (Classic UI) code from the core](https://github.com/plone/Products.CMFPlone/issues/3953) | `tisto` | `31 needs: help`, `99 tag: cleanup`, `03 type: feature (plip)`, `13 prio: normal`, `42 lvl: moderate`, `53 target: major`, `99 tag: Classic UI` |
 | 2026-06-29 01:19 UTC | `plone/volto` | [#7696 Add deprecation policy or guide to documentation](https://github.com/plone/volto/issues/7696) | `stevepiercy` | `04 type: enhancement`, `33 needs: docs`, `42 lvl: moderate`, `discussion` |
 | 2026-06-02 09:29 UTC | `plone/volto` | [#7159 Build Storybook for a PR preview on `Aurora` branch](https://github.com/plone/volto/issues/7159) | `stevepiercy` | `04 type: enhancement`, `31 needs: help`, `33 needs: docs`, `42 lvl: moderate` |
 | 2026-05-19 08:43 UTC | `plone/volto` | [#5630 Unify the use of the optional `preview_image_link` across Volto](https://github.com/plone/volto/issues/5630) | `sneridagh` | `04 type: enhancement`, `42 lvl: moderate` |
