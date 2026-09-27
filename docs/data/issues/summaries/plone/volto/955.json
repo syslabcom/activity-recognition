@@ -1,31 +1,31 @@
 {
   "version": 1,
   "status": "success",
-  "generated_at": "2026-04-09T12:26:09Z",
+  "generated_at": "2026-09-27T10:09:58Z",
   "source_issue": {
     "id": 512847566,
     "number": 955,
     "title": "user menu popup is not available on the site setup pages",
     "html_url": "https://github.com/plone/volto/issues/955",
     "repository_full_name": "plone/volto",
-    "updated_at": "2026-01-25T06:16:01Z",
+    "updated_at": "2026-09-27T10:01:09Z",
     "labels": [
       "01 type: bug",
       "41 lvl: easy"
     ],
-    "comments": 6
+    "comments": 7
   },
   "ai": {
     "provider": "openai",
     "model": "gpt-4o-mini"
   },
-  "summary_markdown": "```markdown\n## What this issue is about\nThis issue addresses a bug where the user menu icon is missing from the left sidebar on the site setup pages in the Volto interface. The user icon typically allows users to access their account settings, but it disappears when navigating to these specific pages.\n\n## What needs to be done\nTo fix this, the condition that hides the icon based on certain page states (related to \"DefaultViewButtons\") needs to be revised. The goal is to ensure the user icon is always visible when the toolbar is present, regardless of the page.\n\n## Helpful background\nThe discussion suggests that simply modifying the existing code to always render the user icon could resolve the issue. A related pull request is open, which provides further context on the proposed solutions, but it has been inactive for some time.\n\n## Good first steps\n1. Review the current state of the existing pull request [here](https://github.com/plone/volto/pull/4565). \n2. Consider how the suggested changes impact the user interface.\n3. Test the existing Volto implementation to replicate the bug.\n4. Follow the [Plone Contribution Guidelines](https://6.docs.plone.org/contributing/index.html), especially regarding opening your pull request against the correct repository (plone/volto).\n5. Don't hesitate to ask questions if you need guidance!\n```",
+  "summary_markdown": "## What this issue is about\nThis issue addresses a bug where the user menu icon is missing from the left sidebar on site setup pages in Volto. It has been noted that this icon is typically part of the \"DefaultViewButtons.\"\n\n## What needs to be done\nTo fix this issue, we should remove the condition that hides the user icon based on the \"DefaultViewButtons.\" This change will ensure that the user icon is always visible in the toolbar, regardless of the webpage.\n\n## Helpful background\nSeveral discussions indicate that a previous pull request (PR #4565) attempted to resolve this but was not successful and was closed. \n\nContributors have also pointed out the need to adhere to contributions guidelines, particularly for new contributors.\n\n## Good first steps\n1. Review the existing discussions and PRs related to this issue.\n2. Create a new PR that implements the suggested changes.\n3. Make sure to follow the [Plone contribution guidelines](https://6.docs.plone.org/contributing/index.html) to ensure your changes are aligned with project standards.\n\nFeel free to ask questions if anything is unclear. Your contributions are valuable, and we appreciate your help!",
   "workflow": {
     "repository": "syslabcom/activity-recognition",
-    "run_id": "24190027102",
-    "run_number": "51",
+    "run_id": "36311645875",
+    "run_number": "3429",
     "attempt": "1",
-    "url": "https://github.com/syslabcom/activity-recognition/actions/runs/24190027102",
-    "sha": "e0c67d2638fe739b442ccf9da44e8d59c9d3ed15"
+    "url": "https://github.com/syslabcom/activity-recognition/actions/runs/36311645875",
+    "sha": "2433898bec4a9af7c655b18e4bad2bfafc97546f"
   }
 }
