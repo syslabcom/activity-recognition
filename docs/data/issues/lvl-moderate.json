@@ -1,7 +1,7 @@
 {
   "version": 1,
   "status": "success",
-  "generated_at": "2026-09-28T07:29:31Z",
+  "generated_at": "2026-09-28T08:21:22Z",
   "organization": "plone",
   "state": "open",
   "slug": "lvl-moderate",
@@ -69,10 +69,10 @@
       ],
       "contributor_summary": {
         "status": "available",
-        "generated_at": "2026-09-21T08:16:29Z",
-        "source_issue_updated_at": "2026-09-21T07:39:13Z",
+        "generated_at": "2026-09-28T08:21:26Z",
+        "source_issue_updated_at": "2026-09-28T00:07:20Z",
         "model": "gpt-4o-mini",
-        "summary_markdown": "## What this issue is about\nThis issue focuses on updating the system requirements for the Plone Aurora project documentation. The current requirements may be outdated, particularly around the versions of Node.js and NVM (Node Version Manager).\n\n## What needs to be done\n1. Update the documentation at [System Requirements](https://plone-aurora.readthedocs.io/get-started/system-requirements.html#nvm) to reflect the latest version of NVM (0.40.8) and the required Node.js version (22.22.0 or higher).\n2. Consider a script that checks for the latest release tags automatically, similar to an existing script in the icalendar project.\n\n## Helpful background\nOutdated documentation can lead to confusion and errors when setting up the environment. Currently, users may experience warnings or errors if they do not have the specified versions installed, as noted in the issue.\n\n## Good first steps\n1. Review the existing documentation linked above and note the changes needed.\n2. Familiarize yourself with how to update documentation in the Plone Aurora project.\n3. If interested, explore the script mentioned for checking release versions. This might involve learning a bit about Python and GitHub API usage.\n4. You can ask questions or seek clarification in the issue thread if any part is unclear.",
+        "summary_markdown": "## What this issue is about\nThis issue addresses the need to update the system requirements documentation for Plone, specifically regarding the Node Version Manager (NVM). The current documentation references an outdated version, and contributors are discussing ways to automate updates using scripts.\n\n## What needs to be done\nThe documentation at [current system requirements](https://plone-aurora.readthedocs.io/get-started/system-requirements.html#nvm) needs to reflect the latest NVM version (0.40.8) and any relevant Node.js requirements (currently set at `node>=22.22.0`). Consideration is being given to integrating a script that checks for the latest GitHub release dynamically.\n\n## Helpful background\nA script is being developed to fetch the latest NVM release from GitHub. Discussion points include potential implementation in the documentation's configuration file (`docs/conf.py`), though there are concerns about compatibility with the MyST format used for documentation.\n\n## Good first steps\n1. Review the system requirements documentation to identify all instances of outdated version numbers.\n2. Familiarize yourself with the NVM and Node.js requirements.\n3. Explore the Python script shared by contributors to understand its logic for fetching version information.\n4. Consider setting up a local development environment to test your changes and check how documentation builds. If needed, reach out in the comments for assistance.",
         "path": "data/issues/summaries/plone/aurora/179.json"
       }
     },
@@ -2216,10 +2216,10 @@
   "message": null,
   "workflow": {
     "repository": "syslabcom/activity-recognition",
-    "run_id": "36391864445",
-    "run_number": "3450",
+    "run_id": "36396856305",
+    "run_number": "3451",
     "attempt": "1",
-    "url": "https://github.com/syslabcom/activity-recognition/actions/runs/36391864445",
-    "sha": "477dd1382b3638c7e730ce67b26ce820277de5b8"
+    "url": "https://github.com/syslabcom/activity-recognition/actions/runs/36396856305",
+    "sha": "015ffe8a3be7afcce2e2ccab7d228ba28c6cd135"
   }
 }
