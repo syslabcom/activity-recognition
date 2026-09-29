@@ -1,24 +1,25 @@
 ---
 title: "Plone issue list — Level: Complex"
 permalink: "/issues/lvl-complex/"
-generated_at: "2026-09-29T13:14:01Z"
+generated_at: "2026-09-29T14:10:47Z"
 organization: "plone"
-issue_count: 53
+issue_count: 54
 required_labels:
   - "43 lvl: complex"
 ---
 
 # Plone issue list — Level: Complex
 
-Generated: `2026-09-29T13:14:01Z`  
+Generated: `2026-09-29T14:10:47Z`  
 Organization: `plone`  
 Required label: `43 lvl: complex`  
-Issue count: `53`
+Issue count: `54`
 
 Sorted by last updated date, newest first.
 
 | Updated | Repository | Issue | Author | Labels |
 | --- | --- | --- | --- | --- |
+| 2026-09-29 13:37 UTC | `plone/plone.app.dexterity` | [#454 Blicca template separation analysis and follow up](https://github.com/plone/plone.app.dexterity/issues/454) | `petschki` | `04 type: enhancement`, `43 lvl: complex`, `12 prio: high`, `31 needs: help`, `53 target: major` |
 | 2026-09-14 02:17 UTC | `plone/Products.CMFPlone` | [#3987 Create Site Manager and Editor Guide for Plone 7](https://github.com/plone/Products.CMFPlone/issues/3987) | `stevepiercy` | `03 type: feature (plip)`, `43 lvl: complex` |
 | 2026-08-12 07:21 UTC | `plone/volto` | [#4303 Link Widget Improvement (add/select/modify)](https://github.com/plone/volto/issues/4303) | `sneridagh` | `03 type: feature (plip)`, `43 lvl: complex` |
 | 2026-07-07 00:57 UTC | `plone/volto` | [#7527 View for Listing block](https://github.com/plone/volto/issues/7527) | `ebrehault` | `04 type: enhancement`, `43 lvl: complex`, `27 status: stale` |

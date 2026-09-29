@@ -1,7 +1,7 @@
 {
   "version": 1,
   "status": "success",
-  "generated_at": "2026-09-29T13:14:01Z",
+  "generated_at": "2026-09-29T14:10:47Z",
   "organization": "plone",
   "state": "open",
   "slug": "lvl-complex",
@@ -9,8 +9,40 @@
   "required_labels": [
     "43 lvl: complex"
   ],
-  "issue_count": 53,
+  "issue_count": 54,
   "issues": [
+    {
+      "id": 5631372567,
+      "number": 454,
+      "title": "Blicca template separation analysis and follow up",
+      "html_url": "https://github.com/plone/plone.app.dexterity/issues/454",
+      "repository_full_name": "plone/plone.app.dexterity",
+      "repository_url": "https://api.github.com/repos/plone/plone.app.dexterity",
+      "state": "open",
+      "created_at": "2026-09-29T13:30:50Z",
+      "updated_at": "2026-09-29T13:37:22Z",
+      "comments": 0,
+      "author": {
+        "login": "petschki",
+        "html_url": "https://github.com/petschki"
+      },
+      "assignees": [],
+      "labels": [
+        "04 type: enhancement",
+        "43 lvl: complex",
+        "12 prio: high",
+        "31 needs: help",
+        "53 target: major"
+      ],
+      "contributor_summary": {
+        "status": "available",
+        "generated_at": "2026-09-29T14:10:52Z",
+        "source_issue_updated_at": "2026-09-29T13:37:22Z",
+        "model": "gpt-4o-mini",
+        "summary_markdown": "```markdown\n## What this issue is about\nThis issue involves analyzing and proposing changes for the separation of template logic in the Plone application, specifically relating to `plone.app.dexterity` and `plone.app.layout`. The goal is to optimize how the REST API interacts with content types after recent structural changes.\n\n## What needs to be done\nThe main task is to split type management into an API (core) and UI (Blicca, `plone.app.layout`). This involves creating a new module in `plone.app.dexterity` with functions like `create_type` and `delete_type`, and ensuring that the `plone.restapi` code utilizes this new API. Additionally, any remaining backward compatibility issues related to Plone 6.2 need addressing.\n\n## Helpful background\nThe issue stems from a recent move of certain views and components from `plone.app.dexterity` to `plone.app.layout`, which introduced dependencies that weren't previously declared. Understanding the roles of `TypeSettingsAdapter`, `ITypeSettings`, and other elements is essential for contributing effectively.\n\n## Good first steps\n1. Familiarize yourself with the impacted modules: `plone.app.dexterity`, `plone.app.layout`, and `plone.restapi`.\n2. Review the proposed functions for the new API in `plone.app.dexterity`.\n3. Start discussions on module naming and compatibility concerns in ongoing threads to gather insights.\n4. Consider contributing to related PRs when they arise, focused on the outlined changes and testing requirements.\n```",
+        "path": "data/issues/summaries/plone/plone.app.dexterity/454.json"
+      }
+    },
     {
       "id": 2393542605,
       "number": 3987,
@@ -1627,10 +1659,10 @@
   "message": null,
   "workflow": {
     "repository": "syslabcom/activity-recognition",
-    "run_id": "36573598443",
-    "run_number": "3480",
+    "run_id": "36580687159",
+    "run_number": "3481",
     "attempt": "1",
-    "url": "https://github.com/syslabcom/activity-recognition/actions/runs/36573598443",
-    "sha": "593d33b76a65c968aeab5373e27af0533392cdc3"
+    "url": "https://github.com/syslabcom/activity-recognition/actions/runs/36580687159",
+    "sha": "b5b704e2030a853b3087fc94adbea9ae242e3d7e"
   }
 }
