@@ -1,34 +1,35 @@
 {
   "version": 1,
   "status": "success",
-  "generated_at": "2026-04-09T11:25:50Z",
+  "generated_at": "2026-10-02T01:27:10Z",
   "source_issue": {
     "id": 3988967668,
     "number": 7947,
     "title": "Improve `@plone/client` documentation",
     "html_url": "https://github.com/plone/volto/issues/7947",
     "repository_full_name": "plone/volto",
-    "updated_at": "2026-03-11T17:52:46Z",
+    "updated_at": "2026-10-02T00:53:27Z",
     "labels": [
       "04 type: enhancement",
       "31 needs: help",
       "33 needs: docs",
       "41 lvl: easy",
-      "dependencies"
+      "dependencies",
+      "27 status: stale"
     ],
-    "comments": 9
+    "comments": 10
   },
   "ai": {
     "provider": "openai",
     "model": "gpt-4o-mini"
   },
-  "summary_markdown": "```markdown\n## What this issue is about\nThis issue aims to improve the documentation for `@plone/client` in the Volto project. Key tasks include removing references to TanStack Query terminology and enhancing HTTP API examples.\n\n## What needs to be done\n1. Eliminate all mentions of TanStack Query (e.g., mutators, useQuery).\n2. Implement HTTP API examples using the [`sphinxcontrib.httpexample`](https://sphinxcontrib-httpexample.readthedocs.io/en/latest/index.html) extension.\n3. After merging updates, forward port the changes to the `seven` branch, mainly copying new documentation files.\n\n## Helpful background\nDocumentation enhancements are vital to ensure users find accurate and accessible information. Existing discussions indicate some ambiguity around where to find and apply these changes. Coordination may be required based on contributions.\n\n## Good first steps\n1. Familiarize yourself with the existing documentation in [Volto's repo](https://github.com/plone/volto/tree/main/docs/source/client).\n2. Follow the [contributing guidelines](https://6.docs.plone.org/contributing/index.html) for best practices.\n3. Start with reviewing any sections that mention TanStack Query for removal.\n4. Explore the `sphinxcontrib.httpexample` extension for creating better API examples.\n5. Once initial changes are made, coordinate with the team before forward porting to the `seven` branch.\n```",
+  "summary_markdown": "```markdown\n## What this issue is about\nThis issue focuses on improving the documentation for `@plone/client`. It involves adjusting references to TanStack Query and implementing the `sphinxcontrib.httpexample` extension to enhance HTTP API examples.\n\n## What needs to be done\n1. Remove references to TanStack Query terminology from the documentation, ensuring that the remaining text is clear and grammatically correct.\n2. Configure the Volto documentation to include the `sphinxcontrib.httpexample` extension and update HTTP API examples accordingly.\n3. Forward port the final documentation updates to the `seven` branch, primarily to copy the new documents and make necessary changes.\n\n## Helpful background\nFamiliarity with the Volto documentation structure and basic understanding of HTTP API calls will be beneficial. The original discussion indicated some ambiguity about which specific files need updates regarding the HTTP examples.\n\n## Good first steps\n- Check the existing documentation in [volto/docs/source/client](https://github.com/plone/volto/tree/main/docs/source/client) for areas that may need modifications.\n- Start by removing outdated TanStack Query references and ensure the new text is understandable.\n- Review the documentation for configuring `sphinxcontrib.httpexample`.\n\nFeel free to ask questions in the comments if you're unsure about any part!\n```",
   "workflow": {
     "repository": "syslabcom/activity-recognition",
-    "run_id": "24187585349",
-    "run_number": "48",
+    "run_id": "36950985458",
+    "run_number": "3540",
     "attempt": "1",
-    "url": "https://github.com/syslabcom/activity-recognition/actions/runs/24187585349",
-    "sha": "f88752c0361349fe46a0c616320dfa6ab90ae878"
+    "url": "https://github.com/syslabcom/activity-recognition/actions/runs/36950985458",
+    "sha": "f99390a342c0fb06491b357b9bd2e515feb19d50"
   }
 }
