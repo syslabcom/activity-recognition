@@ -1,19 +1,19 @@
 ---
 title: "Plone issue list — Level: Complex"
 permalink: "/issues/lvl-complex/"
-generated_at: "2026-10-04T19:02:13Z"
+generated_at: "2026-10-04T20:44:38Z"
 organization: "plone"
-issue_count: 54
+issue_count: 53
 required_labels:
   - "43 lvl: complex"
 ---
 
 # Plone issue list — Level: Complex
 
-Generated: `2026-10-04T19:02:13Z`  
+Generated: `2026-10-04T20:44:38Z`  
 Organization: `plone`  
 Required label: `43 lvl: complex`  
-Issue count: `54`
+Issue count: `53`
 
 Sorted by last updated date, newest first.
 
@@ -57,7 +57,6 @@ Sorted by last updated date, newest first.
 | 2025-04-17 13:13 UTC | `plone/Products.CMFPlone` | [#4071 Draft: Plone Multi Factor Authentication ](https://github.com/plone/Products.CMFPlone/issues/4071) | `loechel` | `99 tag: UX Accessibility`, `04 type: enhancement`, `03 type: feature (plip)`, `43 lvl: complex` |
 | 2025-02-28 12:20 UTC | `plone/documentation` | [#1780 Add troubleshooting hints if frontend is accessed from another machine (not localhost) and missing CSS links in head](https://github.com/plone/documentation/issues/1780) | `acsr` | `04 type: enhancement`, `33 needs: docs`, `43 lvl: complex` |
 | 2025-02-03 21:16 UTC | `plone/volto` | [#6628 PLIP Process for User Interfacing Changing PLIPs](https://github.com/plone/volto/issues/6628) | `tisto` | `03 type: feature (plip)`, `43 lvl: complex` |
-| 2025-01-24 20:47 UTC | `plone/plone.restapi` | [#1730 json_body should not read entire request BODY](https://github.com/plone/plone.restapi/issues/1730) | `mauritsvanrees` | `01 type: bug`, `31 needs: help`, `99 tag: sprint`, `12 prio: high`, `43 lvl: complex`, `53 target: major` |
 | 2025-01-07 05:29 UTC | `plone/documentation` | [#1785 Switch from `pipx` and `venv` to `uv` and friends](https://github.com/plone/documentation/issues/1785) | `stevepiercy` | `43 lvl: complex` |
 | 2024-11-24 07:01 UTC | `plone/documentation` | [#729 consolidate POSKeyError info, include plonechix help](https://github.com/plone/documentation/issues/729) | `tkimnguyen` | `31 needs: help`, `33 needs: docs`, `43 lvl: complex`, `99 tag: Plone 6.x` |
 | 2024-01-14 10:06 UTC | `plone/volto` | [#1466 Unable to edit frontpage in Volto site without "Manage portal" permission](https://github.com/plone/volto/issues/1466) | `tiberiuichim` | `04 type: enhancement`, `43 lvl: complex` |
