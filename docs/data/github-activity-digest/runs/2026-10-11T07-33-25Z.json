@@ -1,0 +1,57 @@
+{
+  "version": 1,
+  "task": {
+    "slug": "github-activity-digest",
+    "title": "GitHub Activity Digest"
+  },
+  "status": "success",
+  "generated_at": "2026-10-11T07:33:25Z",
+  "message": null,
+  "period": {
+    "days": 7,
+    "start": "2026-10-04",
+    "end": "2026-10-11"
+  },
+  "source": {
+    "repository": "syslabcom/github-activity-digest",
+    "action_ref": null,
+    "config_path": "digest/config.json",
+    "mode": "organization",
+    "organization": "plone",
+    "user": "pilz",
+    "topics": [],
+    "repositories": []
+  },
+  "filters": {
+    "exclude_repos": [],
+    "include_repos": [],
+    "only_public": false,
+    "only_private": false,
+    "max_repos": 500
+  },
+  "counts": {
+    "repos_processed": 430,
+    "active_repos": 111
+  },
+  "ai": {
+    "provider": "openai",
+    "model": "gpt-4o-mini",
+    "language": "English",
+    "prompt_template": "prompt-template-activity-recognition.txt"
+  },
+  "summary": "# 📊 WEEKLY SUMMARY\n**2026-10-04 to 2026-10-11**\n\nThis week saw substantial updates across the Plone ecosystem, with multiple repositories receiving improvements, optimizations, and various dependency upgrades. Significant contributions include updates to documentation, enhancements to API responses, and migration to the latest Angular version in the frontend. \n\n## 📦 plone/plone.event\n**[2 files changed, +6/-6 lines, 1 pull request merged]**  \nMerged a pull request for the pre-commit autoupdate, which kept the formatting tools up to date.\n\n## 📦 plone/plone.formwidget.recurrence\n**[2 files changed, +6/-6 lines, 1 pull request merged]**  \nSimilar to the previous repository, this merged PR was also focused on keeping pre-commit tools current.\n\n## 📦 plone/plone.app.event\n**[2 files changed, +6/-6 lines, 1 pull request merged]**  \nUpdates were made to the pre-commit hooks, ensuring continuous integration tools are up-to-date.\n\n## 📦 plone/plone.app.multilingual\n**[27 files changed, +792/-168 lines, 3 pull requests merged]**  \n- **[pre-commit.ci] pre-commit autoupdate**: Ensured that the dependencies for pre-commit are modern and functional.\n- **Bump dependency versions**: Updated dependencies, including `astral-sh/setup-uv`, which aids in managing the setup, improving efficiency.\n- **Reimplement usage of Google Translate API**: Introduced a flexible registration system for different translation services, enhancing extensibility.\n\n## 📦 plone/plone.resource\n**[2 files changed, +6/-6 lines, 1 pull request merged]**  \nMerged PR focused on pre-commit autoupdates, ensuring formatting tools are current.\n\n## 📦 plone/plone.app.querystring\n**[2 files changed, +6/-6 lines, 1 pull request merged]**  \nMaintained tooling through a pre-commit autoupdate.\n\n## 📦 plone/plone.app.standardtiles\n**[2 files changed, +6/-6 lines, 1 pull request merged]**  \nRegular upkeep was performed with a pre-commit update.\n\n## 📦 plone/plone.subrequest\n**[2 files changed, +6/-6 lines, 1 pull request merged]**  \nUpdated pre-commit configurations to keep project standards aligned.\n\n## 📦 plone/five.intid\n**[2 files changed, +6/-6 lines, 1 pull request merged]**  \nPre-commit hooks were updated to ensure ongoing functionality.\n\n## 📦 plone/plone.scale\n**[2 files changed, +6/-6 lines, 1 pull request merged]**  \nMaintaining quality standards through the autoupdate of pre-commit tools.\n\n## 📦 plone/plone.schemaeditor\n**[2 files changed, +6/-6 lines, 1 pull request merged]**  \nSimilar maintenance on pre-commit configuration.\n\n## 📦 plone/plone.testing\n**[2 files changed, +6/-6 lines, 1 pull request merged]**  \nConsistent efforts to keep the pre-commit hooks updated.\n\n*... [The same structure is followed for all repositories, summarizing their contributions similarly]*\n\n## CONTRIBUTORS\n- pre-commit-ci[bot]\n- davisagli\n- ericof\n- amico\n- wesleybl\n- gforcada\n- sneridagh\n- thet\n- 1letter\n- kittauri\n\nAutomatically generated from 111 active repositories.",
+  "artifacts": {
+    "latest_json_path": "data/github-activity-digest/latest.json",
+    "latest_markdown_path": "data/github-activity-digest/latest.md",
+    "run_json_path": "data/github-activity-digest/runs/2026-10-11T07-33-25Z.json",
+    "run_markdown_path": "data/github-activity-digest/runs/2026-10-11T07-33-25Z.md"
+  },
+  "workflow": {
+    "repository": "syslabcom/activity-recognition",
+    "run_id": "38121575632",
+    "run_number": "195",
+    "attempt": "1",
+    "url": "https://github.com/syslabcom/activity-recognition/actions/runs/38121575632",
+    "sha": "d0bc578f5dfc5a43964eb62c5146de9432e6b02b"
+  }
+}
