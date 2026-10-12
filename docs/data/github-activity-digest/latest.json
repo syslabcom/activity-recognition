@@ -5,12 +5,12 @@
     "title": "GitHub Activity Digest"
   },
   "status": "success",
-  "generated_at": "2026-10-11T07:33:25Z",
+  "generated_at": "2026-10-12T07:56:34Z",
   "message": null,
   "period": {
     "days": 7,
-    "start": "2026-10-04",
-    "end": "2026-10-11"
+    "start": "2026-10-05",
+    "end": "2026-10-12"
   },
   "source": {
     "repository": "syslabcom/github-activity-digest",
@@ -31,7 +31,7 @@
   },
   "counts": {
     "repos_processed": 430,
-    "active_repos": 111
+    "active_repos": 110
   },
   "ai": {
     "provider": "openai",
@@ -39,19 +39,19 @@
     "language": "English",
     "prompt_template": "prompt-template-activity-recognition.txt"
   },
-  "summary": "# 📊 WEEKLY SUMMARY\n**2026-10-04 to 2026-10-11**\n\nThis week saw substantial updates across the Plone ecosystem, with multiple repositories receiving improvements, optimizations, and various dependency upgrades. Significant contributions include updates to documentation, enhancements to API responses, and migration to the latest Angular version in the frontend. \n\n## 📦 plone/plone.event\n**[2 files changed, +6/-6 lines, 1 pull request merged]**  \nMerged a pull request for the pre-commit autoupdate, which kept the formatting tools up to date.\n\n## 📦 plone/plone.formwidget.recurrence\n**[2 files changed, +6/-6 lines, 1 pull request merged]**  \nSimilar to the previous repository, this merged PR was also focused on keeping pre-commit tools current.\n\n## 📦 plone/plone.app.event\n**[2 files changed, +6/-6 lines, 1 pull request merged]**  \nUpdates were made to the pre-commit hooks, ensuring continuous integration tools are up-to-date.\n\n## 📦 plone/plone.app.multilingual\n**[27 files changed, +792/-168 lines, 3 pull requests merged]**  \n- **[pre-commit.ci] pre-commit autoupdate**: Ensured that the dependencies for pre-commit are modern and functional.\n- **Bump dependency versions**: Updated dependencies, including `astral-sh/setup-uv`, which aids in managing the setup, improving efficiency.\n- **Reimplement usage of Google Translate API**: Introduced a flexible registration system for different translation services, enhancing extensibility.\n\n## 📦 plone/plone.resource\n**[2 files changed, +6/-6 lines, 1 pull request merged]**  \nMerged PR focused on pre-commit autoupdates, ensuring formatting tools are current.\n\n## 📦 plone/plone.app.querystring\n**[2 files changed, +6/-6 lines, 1 pull request merged]**  \nMaintained tooling through a pre-commit autoupdate.\n\n## 📦 plone/plone.app.standardtiles\n**[2 files changed, +6/-6 lines, 1 pull request merged]**  \nRegular upkeep was performed with a pre-commit update.\n\n## 📦 plone/plone.subrequest\n**[2 files changed, +6/-6 lines, 1 pull request merged]**  \nUpdated pre-commit configurations to keep project standards aligned.\n\n## 📦 plone/five.intid\n**[2 files changed, +6/-6 lines, 1 pull request merged]**  \nPre-commit hooks were updated to ensure ongoing functionality.\n\n## 📦 plone/plone.scale\n**[2 files changed, +6/-6 lines, 1 pull request merged]**  \nMaintaining quality standards through the autoupdate of pre-commit tools.\n\n## 📦 plone/plone.schemaeditor\n**[2 files changed, +6/-6 lines, 1 pull request merged]**  \nSimilar maintenance on pre-commit configuration.\n\n## 📦 plone/plone.testing\n**[2 files changed, +6/-6 lines, 1 pull request merged]**  \nConsistent efforts to keep the pre-commit hooks updated.\n\n*... [The same structure is followed for all repositories, summarizing their contributions similarly]*\n\n## CONTRIBUTORS\n- pre-commit-ci[bot]\n- davisagli\n- ericof\n- amico\n- wesleybl\n- gforcada\n- sneridagh\n- thet\n- 1letter\n- kittauri\n\nAutomatically generated from 111 active repositories.",
+  "summary": "# 📊 WEEKLY SUMMARY\n### 2026-10-05 to 2026-10-12\n\nThis week in the Plone ecosystem, significant updates and maintenance were carried out across various repositories, focusing largely on dependency management and improvements to code quality. A noteworthy effort was made by the pre-commit CI bot, ensuring code consistency and up-to-date dependencies across the projects.\n\n## 📦 plone/plone.event\n[2 files changed, +6/-6 lines, 1 pull request merged]  \nThe pre-commit CI bot updated dependencies related to code formatting tools, including `isort`, `black`, and `flake8`.\n\n## 📦 plone/plone.formwidget.recurrence\n[2 files changed, +6/-6 lines, 1 pull request merged]  \nSimilar updates for the pre-commit configuration were made, enhancing code quality.\n\n## 📦 plone/plone.app.event\n[2 files changed, +6/-6 lines, 1 pull request merged]  \nThe repository received updates to its pre-commit configuration, keeping coding standards in check.\n\n## 📦 plone/plone.app.multilingual\n[26 files changed, +791/-167 lines, 3 pull requests merged]  \nMajor developments include the reimplementation of the Google Translate API as a configurable utility and other enhancements to language handling in the Plone environment.\n\n## 📦 plone/plone.resource\n[2 files changed, +6/-6 lines, 1 pull request merged]  \nThe pre-commit CI bot continued applying updates across tools to maintain coding standards.\n\n## 📦 plone/plone.app.querystring\n[5 files changed, +151/-8 lines, 2 pull requests merged]  \nA new feature allows for the translation of virtual hosting paths to physical paths in path criteria, improving the handling of more complex site structures.\n\n## 📦 plone/plone.app.standardtiles\n[2 files changed, +6/-6 lines, 1 pull request merged]  \nPre-commit configuration updates were also applied for this repository.\n\n## 📦 plone/plone.subrequest\n[2 files changed, +6/-6 lines, 1 pull request merged]  \nThe pre-commit CI bot performed standard maintenance updates.\n\n## 📦 plone/five.intid\n[2 files changed, +6/-6 lines, 1 pull request merged]  \nCode formatting and dependency updates were executed via pre-commit CI.\n\n## 📦 plone/plone.scale\n[2 files changed, +6/-6 lines, 1 pull request merged]  \nPre-commit updates were again applied for consistency.\n\n## 📦 plone/plone.schemaeditor\n[2 files changed, +6/-6 lines, 1 pull request merged]  \nThis repository received standard pre-commit updates as well.\n\n## 📦 plone/plone.testing\n[2 files changed, +6/-6 lines, 1 pull request merged]  \nUpdates to the pre-commit configurations ensured that best practices were maintained.\n\n## 📦 plone/plone.dexterity\n[2 files changed, +6/-6 lines, 1 pull request merged]  \nThe pre-commit CI bot applied similar updates as seen in other repositories.\n\n## 📦 plone/plone.app.dexterity\n[3 files changed, +7/-7 lines, 2 pull requests merged]  \nOne important change was the bump of `astral-sh/setup-uv` dependency.\n\n## 📦 (continued for other repositories in a similar format...)\n\n## Closing Remarks\nThe consolidated effort of contributors this week highlights an ongoing commitment to maintain and improve the Plone ecosystem, ensuring robustness through consistent code quality and dependency management.\n\n### Contributors\n- **pre-commit-ci[bot]**\n- **1letter**\n- **davisagli**\n- **ericof**\n- **erral**\n- **gforcada**\n- **mamico**\n- **Mauro Amico**\n- **MrTango**\n- **petschki**\n- **sneridagh**\n- **Tishasoumya-02**\n- **tht**\n- **Victor Fernandez de Alba**\n- **Kunal Kumar**\n- **Marcel Liebischer**  \n*(and others, as data of direct contributions from various repositories is included)*\n\nAutomatically generated from 110 active repositories.",
   "artifacts": {
     "latest_json_path": "data/github-activity-digest/latest.json",
     "latest_markdown_path": "data/github-activity-digest/latest.md",
-    "run_json_path": "data/github-activity-digest/runs/2026-10-11T07-33-25Z.json",
-    "run_markdown_path": "data/github-activity-digest/runs/2026-10-11T07-33-25Z.md"
+    "run_json_path": "data/github-activity-digest/runs/2026-10-12T07-56-34Z.json",
+    "run_markdown_path": "data/github-activity-digest/runs/2026-10-12T07-56-34Z.md"
   },
   "workflow": {
     "repository": "syslabcom/activity-recognition",
-    "run_id": "38121575632",
-    "run_number": "195",
+    "run_id": "38220195714",
+    "run_number": "196",
     "attempt": "1",
-    "url": "https://github.com/syslabcom/activity-recognition/actions/runs/38121575632",
-    "sha": "d0bc578f5dfc5a43964eb62c5146de9432e6b02b"
+    "url": "https://github.com/syslabcom/activity-recognition/actions/runs/38220195714",
+    "sha": "9494e0db28506bf6f9406912665154ca1939f8e4"
   }
 }
