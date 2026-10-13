@@ -1,0 +1,31 @@
+{
+  "version": 1,
+  "status": "success",
+  "generated_at": "2026-10-13T10:13:07Z",
+  "source_issue": {
+    "id": 5828149215,
+    "number": 2116,
+    "title": "Improve backend/vocabularies documentation",
+    "html_url": "https://github.com/plone/documentation/issues/2116",
+    "repository_full_name": "plone/documentation",
+    "updated_at": "2026-10-13T09:53:14Z",
+    "labels": [
+      "31 needs: help",
+      "99 tag: good first issue"
+    ],
+    "comments": 0
+  },
+  "ai": {
+    "provider": "openai",
+    "model": "gpt-4o-mini"
+  },
+  "summary_markdown": "## What this issue is about\nThis issue focuses on improving the documentation for backend vocabularies in Plone. Vocabularies help define a set of values for fields, and clear documentation will assist developers in using them effectively.\n\n## What needs to be done\nTo address this issue, we need to:\n- Change \"UV\" to lowercase as per style guidelines.\n- Fix an error where the command `plonecli create addon src/collective.myaddon` fails.\n- Update the documentation to remove redundant information by linking directly to the existing Plone REST API documentation on vocabularies.\n\n## Helpful background\nVocabularies in Plone are primarily accessed via the Plone REST API at the `@vocabularies` endpoint. Familiarizing yourself with the existing documentation can help automate the writing process for this task. You can find the reference [here](https://6.docs.plone.org/plone.restapi/docs/source/endpoints/vocabularies.html).\n\n## Good first steps\n1. Review the current backend vocabularies documentation to identify parts that need improvement.\n2. Test the `plonecli create addon` command to understand the failure and troubleshoot it.\n3. Start by making the documentation changes, ensuring to link to the relevant resources as stated.\n4. Once you complete your changes, consider submitting a pull request for review. Don't hesitate to ask for help if needed!",
+  "workflow": {
+    "repository": "syslabcom/activity-recognition",
+    "run_id": "38381825140",
+    "run_number": "3799",
+    "attempt": "1",
+    "url": "https://github.com/syslabcom/activity-recognition/actions/runs/38381825140",
+    "sha": "635c5a1750abb51c926fbe2c0281c105fdc11eed"
+  }
+}
