@@ -1,264 +1,263 @@
-# 📊 WEEKLY SUMMARY 
-**2026-10-06 to 2026-10-13** 
+# 📊 WEEKLY SUMMARY
+## 2026-10-07 to 2026-10-14
 
-This week, significant progress was made across the Plone organization, focusing on code maintenance, dependency updates, and feature enhancements for various repositories. Improvements were also made to documentation and community resources to support the ongoing development of Plone projects.
-
-## 📦 plone/plone.event
-**[1 file changed, +3/-3 lines, 1 pull request merged]**  
-Merged a pull request to auto-update pre-commit configuration, updating dependencies such as `isort`, `black`, and `flake8` to their respective latest versions.
-
-## 📦 plone/plone.formwidget.recurrence
-**[1 file changed, +3/-3 lines, 1 pull request merged]**  
-Similar to `plone.event`, this repository received pre-commit auto-update for its linting tools.
-
-## 📦 plone/plone.app.event
-**[1 file changed, +3/-3 lines, 1 pull request merged]**  
-An update of pre-commit configurations to keep tools like `isort`, `black`, and `flake8` up to date was completed.
-
-## 📦 plone/plone.app.multilingual
-**[3 files changed, +5/-5 lines, 2 pull requests merged]**  
-Included pull requests involved the pre-commit auto-update and a dependency bump for `setup-uv` for continuous integration improvements.
-
-## 📦 plone/plone.resource
-**[1 file changed, +3/-3 lines, 1 pull request merged]**  
-Merged a routine update for pre-commit settings, ensuring consistency across coding standards.
-
-## 📦 plone/plone.app.querystring
-**[28 files changed, +626/-9 lines, 3 pull requests merged]**  
-Implemented a new operation to filter queries by the current UID while enhancing path sortability. The pre-commit auto-update was also merged.
-
-## 📦 plone/plone.app.standardtiles
-**[1 file changed, +3/-3 lines, 1 pull request merged]**  
-A pre-commit auto-update was completed to support the latest coding standards.
-
-## 📦 plone/plone.subrequest
-**[1 file changed, +3/-3 lines, 1 pull request merged]**  
-Merged an auto-update for pre-commit configurations.
-
-## 📦 plone/five.intid
-**[1 file changed, +3/-3 lines, 1 pull request merged]**  
-A simple pre-commit auto-update was executed to maintain tool configurations.
-
-## 📦 plone/plone.scale
-**[1 file changed, +3/-3 lines, 1 pull request merged]**  
-This repository also received a pre-commit configuration update.
-
-## 📦 plone/plone.schemaeditor
-**[1 file changed, +3/-3 lines, 1 pull request merged]**  
-Updated the dependencies in pre-commit as per routine maintenance.
-
-## 📦 plone/plone.testing
-**[1 file changed, +3/-3 lines, 1 pull request merged]**  
-Merged another auto-update for the pre-commit configurations.
-
-## 📦 plone/plone.formwidget.namedfile
-**[1 file changed, +3/-3 lines, 1 pull request merged]**  
-A routine update for pre-commit checks was completed.
-
-## 📦 plone/plone.supermodel
-**[1 file changed, +3/-3 lines, 1 pull request merged]**  
-Merged a pre-commit auto-update.
-
-## 📦 plone/plone.app.intid
-**[1 file changed, +3/-3 lines, 1 pull request merged]**  
-Implemented a pre-commit update for maintaining code quality.
-
-## 📦 plone/plone.dexterity
-**[1 file changed, +3/-3 lines, 1 pull request merged]**  
-A merged auto-update of pre-commit configurations was done.
-
-## 📦 plone/plone.app.dexterity
-**[2 files changed, +4/-4 lines, 2 pull requests merged]**  
-Includes a pre-commit auto-update and a bump for the `setup-uv` dependency.
-
-## 📦 plone/plone.autoform
-**[1 file changed, +3/-3 lines, 1 pull request merged]**  
-Regular maintenance through a pre-commit update was completed.
-
-## 📦 plone/plone.folder
-**[1 file changed, +3/-3 lines, 1 pull request merged]**  
-Merged a routine pre-commit auto-update.
-
-## 📦 plone/plone.app.textfield
-**[1 file changed, +3/-3 lines, 1 pull request merged]**  
-Merged an update for maintaining pre-commit tools.
-
-## 📦 plone/plone.app.relationfield
-**[1 file changed, +3/-3 lines, 1 pull request merged]**  
-Routine pre-commit auto-update was executed.
-
-## 📦 plone/plone.rfc822
-**[1 file changed, +3/-3 lines, 1 pull request merged]**  
-Merged a pre-commit auto-update for tool dependencies.
-
-## 📦 plone/plone.app.versioningbehavior
-**[1 file changed, +3/-3 lines, 1 pull request merged]**  
-Routine maintenance through pre-commit configuration updates was done.
-
-## 📦 plone/plone.app.z3cform
-**[1 file changed, +3/-3 lines, 1 pull request merged]**  
-Merged pre-commit configuration updates.
-
-## 📦 plone/plone.uuid
-**[1 file changed, +3/-3 lines, 1 pull request merged]**  
-Another routine maintenance commit for pre-commit tools.
-
-## 📦 plone/plone.alterego
-**[1 file changed, +3/-3 lines, 1 pull request merged]**  
-Routine pre-commit auto-update completed.
-
-## 📦 plone/plone.behavior
-**[1 file changed, +3/-3 lines, 1 pull request merged]**  
-Merged another pre-commit auto-update.
-
-## 📦 plone/plone.app.linkintegrity
-**[1 file changed, +3/-3 lines, 1 pull request merged]**  
-Completed a pre-commit auto-update to maintain coding quality.
-
-## 📦 plone/plone.portlets
-**[5 files changed, +73/-68 lines, 2 pull requests merged]**  
-Metadata was transferred from `setup.py` to `pyproject.toml` as part of the ongoing improvements to structure, alongside a pre-commit update.
-
-## 📦 plone/borg.localrole
-**[1 file changed, +3/-3 lines, 1 pull request merged]**  
-Routine maintenance via pre-commit configuration.
-
-## 📦 plone/plone.stringinterp
-**[1 file changed, +3/-3 lines, 1 pull request merged]**  
-Merged a routine update for pre-commit configurations.
-
-## 📦 plone/plone.indexer
-**[1 file changed, +3/-3 lines, 1 pull request merged]**  
-Routine pre-commit auto-update was executed.
-
-## 📦 plone/plone.app.redirector
-**[1 file changed, +3/-3 lines, 1 pull request merged]**  
-Another auto-update for pre-commit settings was merged.
-
-## 📦 plone/plone.app.content
-**[1 file changed, +3/-3 lines, 1 pull request merged]**  
-Merged pre-commit auto-update.
-
-## 📦 plone/plone.app.contentmenu
-**[1 file changed, +3/-3 lines, 1 pull request merged]**  
-Merged pre-commit update.
-
-## 📦 plone/plone.app.uuid
-**[1 file changed, +3/-3 lines, 1 pull request merged]**  
-Routine maintenance through pre-commit updates completed.
-
-## 📦 plone/plone.app.discussion
-**[1 file changed, +3/-3 lines, 1 pull request merged]**  
-Merged a pre-commit auto-update for coding tools.
-
-## 📦 plone/plone.i18n
-**[1 file changed, +3/-3 lines, 1 pull request merged]**  
-Merged another pre-commit auto-update.
-
-## 📦 plone/plone.app.portlets
-**[1 file changed, +3/-3 lines, 1 pull request merged]**  
-Another completed pre-commit auto-update.
-
-## 📦 plone/plone.app.theming
-**[1 file changed, +3/-3 lines, 1 pull request merged]**  
-Merged a routine pre-commit auto-update.
-
-## 📦 plone/plone.contentrules
-**[1 file changed, +3/-3 lines, 1 pull request merged]**  
-Merged a pre-commit configuration update.
-
-## 📦 plone/plone.app.layout
-**[2 files changed, +4/-4 lines, 2 pull requests merged]**  
-Also included were updates for the pre-commit checks along with improvements related to dependencies.
-
-## 📦 plone/plone.browserlayer
-**[1 file changed, +3/-3 lines, 1 pull request merged]**  
-Merged a pre-commit auto-update.
-
-## 📦 plone/plone.app.customerize
-**[1 file changed, +3/-3 lines, 1 pull request merged]**  
-Routine maintenance through pre-commit updates was completed.
-
-## 📦 plone/plone.stubs
-**[34 files changed, +1582/-196 lines, 4 pull requests merged]**  
-Merged updates include actions to maintain GitHub Actions configuration and general improvements to the stubs' dependency management.
-
-## 📦 plone/volto
-**[66 files changed, +1188/-94 lines, 9 pull requests merged]**  
-Implemented several improvements, including localization handling for server-side rendering and widget configuration updates, reflecting a strong focus on enhancing functionality and user experience.
-
-## 📦 plone/cookiecutter-zope-instance
-**[29 files changed, +526/-4 lines, 2 pull requests merged]**  
-Significant contributions addressed wsgi server options and additional configurations for Zope setup, enhancing the flexibility of deployments.
-
-## 📦 plone/cookieplone
-**[22 files changed, +285/-29 lines, 1 pull request merged]**  
-Introduced functionalities to handle template names with slashes in answers and replay files.
-
-## 📦 plone/plone.memoize
-**[1 file changed, +3/-3 lines, 1 pull request merged]**  
-Standard update applied for pre-commit configurations.
-
-## 📦 plone/mockup
-**[3 files changed, +6/-6 lines, 2 pull requests merged]**  
-Updated dependencies and made minor adjustments for better integration with newer standards.
-
-## 📦 plone/plone.restapi
-**[17 files changed, +611/-129 lines, 4 pull requests merged]**  
-Implemented significant updates for API endpoint handling and request parameter management, enhancing overall efficiency and user experience.
-
-## 📦 plone/documentation
-**[23 files changed, +159/-72 lines, 5 pull requests merged]**  
-Focused on fixing links and improving documentation related to recent Plone releases and their features.
-
-## 📦 plone/pastanaga-angular
-**[18 files changed, +3875/-4414 lines, 2 pull requests merged]**  
-Upgraded Angular dependencies along with numerous optimizations and fixes for enhanced performance.
-
-## 📦 plone/Products.CMFDiffTool
-**[1 file changed, +3/-3 lines, 1 pull request merged]**  
-Merged an auto-update for pre-commit configurations.
-
-## 📦 plone/Products.CMFEditions
-**[1 file changed, +3/-3 lines, 1 pull request merged]**  
-Merged a pre-commit auto-update.
-
-## 📦 plone/Products.CMFPlacefulWorkflow
-**[1 file changed, +3/-3 lines, 1 pull request merged]**  
-Routine pre-commit update completed.
-
-## 📦 plone/Products.MimetypesRegistry
-**[1 file changed, +3/-3 lines, 1 pull request merged]**  
-Merged an update for pre-commit configurations.
-
-## 📦 plone/Products.PortalTransforms
-**[1 file changed, +3/-3 lines, 1 pull request merged]**  
-Merged a pre-commit auto-update.
-
-## 📦 plone/Products.statusmessages
-**[1 file changed, +3/-3 lines, 1 pull request merged]**  
-Merged an update for pre-commit configurations.
-
-## 📦 plone/plone-mcp
-**[76 files changed, +1985/-2651 lines, 1 pull request merged]**  
-A complete update to handle annotation tasks was implemented.
-
-## 📦 plone/plone-ping
-**[15 files changed, +506/-505 lines, 396 commits]**  
-Ongoing maintenance and state updates using Upptime for monitoring.
+This week saw significant contributions across various repositories in the Plone ecosystem, with a strong focus on maintaining code quality through pre-commit autoupdates and facilitating enhancements to functionalities. Contributors have made advancements in documentation, dependency updates, and fixing bugs that improve the overall developer experience and user interaction with Plone applications.
 
 ---
 
-Contributors this week include:
-- **Gil Forcada Codinachs** (gforcada) 
-- **Érico Andrei** (ericof) 
-- **Victor Fernandez de Alba** (sneridagh) 
-- **Kunal Kumar** (kunalKumar-13) 
-- **Thomas Mersch** (kittauri) 
-- **Rob Gietema** (robgietema) 
-- **davisagli**
-- **Mikel Larreategi** (erral) 
-- **Johannes Raggam** (thet) 
-- **MrTango**
+## 📦 plone/plone.event
+[1 file changed, +3/-3 lines, 1 pull request merged]  
+The pre-commit configuration was updated to utilize newer versions of `isort`, `black`, and `flake8` from a previous version, ensuring better compliance with coding standards.
 
-Automatically generated from 112 active repositories.
+## 📦 plone/plone.formwidget.recurrence
+[1 file changed, +3/-3 lines, 1 pull request merged]  
+Updated pre-commit configuration to ensure the project adheres to the latest coding standards.
+
+## 📦 plone/plone.app.event
+[1 file changed, +3/-3 lines, 1 pull request merged]  
+The repository updated pre-commit configurations to reflect recent upgrades in coding standard tools.
+
+## 📦 plone/plone.app.multilingual
+[3 files changed, +5/-5 lines, 2 pull requests merged]  
+Merged pull requests included updates to pre-commit configurations and the dependency management tool `setup-uv`, enhancing the build environment.
+
+## 📦 plone/plone.resource
+[1 file changed, +3/-3 lines, 1 pull request merged]  
+Merged a pull request updating the pre-commit configurations for improved code quality.
+
+## 📦 plone/plone.app.querystring
+[36 files changed, +978/-11 lines, 4 pull requests merged]  
+Significant changes were made to merge query criteria more effectively across indices and enhance the capability to apply current UID operations. 
+
+## 📦 plone/plone.app.standardtiles
+[1 file changed, +3/-3 lines, 1 pull request merged]  
+Pre-commit configurations were revised to keep the repository in line with current quality standards.
+
+## 📦 plone/plone.subrequest
+[1 file changed, +3/-3 lines, 1 pull request merged]  
+The repository was updated to align with recent pre-commit tool versions.
+
+## 📦 plone/five.intid
+[1 file changed, +3/-3 lines, 1 pull request merged]  
+Updated pre-commit settings to ensure compliance with modern coding practices.
+
+## 📦 plone/plone.scale
+[1 file changed, +3/-3 lines, 1 pull request merged]  
+Merging the pre-commit updates helps support better maintenance standards.
+
+## 📦 plone/plone.schemaeditor
+[1 file changed, +3/-3 lines, 1 pull request merged]  
+Integration of updated pre-commit configurations for ongoing code quality.
+
+## 📦 plone/plone.testing
+[1 file changed, +3/-3 lines, 1 pull request merged]  
+Enhanced pre-commit hooks were added to improve the coding standards compliance of the testing framework.
+
+## 📦 plone/plone.formwidget.namedfile
+[1 file changed, +3/-3 lines, 1 pull request merged]  
+The pre-commit configuration was updated to utilize the latest coding standards.
+
+## 📦 plone/plone.supermodel
+[1 file changed, +3/-3 lines, 1 pull request merged]  
+Merged a pre-commit configurative update enhancing compliance with updated standards.
+
+## 📦 plone/plone.app.intid
+[1 file changed, +3/-3 lines, 1 pull request merged]  
+Merges updated pre-commit configurations ensuring adherence to current standards.
+
+## 📦 plone/plone.dexterity
+[1 file changed, +3/-3 lines, 1 pull request merged]  
+Updated pre-commit settings in alignment with the latest coding standards.
+
+## 📦 plone/plone.app.dexterity
+[2 files changed, +4/-4 lines, 2 pull requests merged]  
+Merging pre-commit updates and necessary dependency configuration.
+
+## 📦 plone/plone.autoform
+[1 file changed, +3/-3 lines, 1 pull request merged]  
+Enhanced the project's coding standard compliance with updated pre-commit configurations.
+
+## 📦 plone/plone.folder
+[1 file changed, +3/-3 lines, 1 pull request merged]  
+Merged updates for pre-commit configurations for improved code quality adherence.
+
+## 📦 plone/plone.app.textfield
+[1 file changed, +3/-3 lines, 1 pull request merged]  
+Updated the repository's pre-commit configurations to adhere to coding standards.
+
+## 📦 plone/plone.app.relationfield
+[1 file changed, +3/-3 lines, 1 pull request merged]  
+Merged a request for updating the pre-commit configuration in line with current standards.
+
+## 📦 plone/plone.rfc822
+[1 file changed, +3/-3 lines, 1 pull request merged]  
+Merging the pre-commit configuration updates for better code quality control.
+
+## 📦 plone/plone.app.versioningbehavior
+[1 file changed, +3/-3 lines, 1 pull request merged]  
+Merged updates to pre-commit configurations to maintain coding standards.
+
+## 📦 plone/plone.app.z3cform
+[1 file changed, +3/-3 lines, 1 pull request merged]  
+Maintained coding quality with the recent updates of pre-commit configurations.
+
+## 📦 plone/plone.uuid
+[1 file changed, +3/-3 lines, 1 pull request merged]  
+Merged the pre-commit updates for coding standards compliance.
+
+## 📦 plone/plone.alterego
+[1 file changed, +3/-3 lines, 1 pull request merged]  
+Ensured repository compliance with the most updated pre-commit configurations.
+
+## 📦 plone/plone.behavior
+[1 file changed, +3/-3 lines, 1 pull request merged]  
+Merged updates in the pre-commit configurations for better coding practices.
+
+## 📦 plone/plone.app.linkintegrity
+[1 file changed, +3/-3 lines, 1 pull request merged]  
+Updated the repository’s pre-commit configurations to enhance code quality.
+
+## 📦 plone/plone.portlets
+[5 files changed, +73/-68 lines, 2 pull requests merged]  
+Moved metadata management from `setup.py` to `pyproject.toml`. This change is part of ongoing efforts to modernize package management.
+
+## 📦 plone/borg.localrole
+[1 file changed, +3/-3 lines, 1 pull request merged]  
+Merged updates for pre-commit configurations.
+
+## 📦 plone/plone.stringinterp
+[1 file changed, +3/-3 lines, 1 pull request merged]  
+Updated pre-commit configuration updated for improved standards adherence.
+
+## 📦 plone/plone.indexer
+[1 file changed, +3/-3 lines, 1 pull request merged]  
+Merged the updates to the repository's pre-commit configurations for better quality control.
+
+## 📦 plone/plone.app.redirector
+[1 file changed, +3/-3 lines, 1 pull request merged]  
+Merged updates for pre-commit configurations.
+
+## 📦 plone/plone.app.content
+[1 file changed, +3/-3 lines, 1 pull request merged]  
+Updated the pre-commit configuration to comply with the latest standards.
+
+## 📦 plone/plone.app.contentmenu
+[1 file changed, +3/-3 lines, 1 pull request merged]  
+Merged pre-commit configurations ensuring consistent quality standards.
+
+## 📦 plone/plone.app.uuid
+[1 file changed, +3/-3 lines, 1 pull request merged]  
+Updated pre-commit hooks to maintain better code quality within the project.
+
+## 📦 plone/plone.protect
+[1 file changed, +3/-3 lines, 1 pull request merged]  
+Merged updates for pre-commit configurations to ensure compliance with modern standards.
+
+## 📦 plone/plone.locking
+[1 file changed, +3/-3 lines, 1 pull request merged]  
+Merged updates for the pre-commit configuration.
+
+## 📦 plone/plone.app.i18n
+[1 file changed, +3/-3 lines, 1 pull request merged]  
+Merged updates in pre-commit configurations.
+
+## 📦 plone/plone.portlet.collection
+[4 files changed, +70/-57 lines, 1 pull request merged]  
+Moved metadata from `setup.py` to `pyproject.toml`, enhancing package management as part of a larger initiative.
+
+## 📦 plone/pytest-plone
+[57 files changed, +474/-38 lines, 1 pull request merged]  
+Improved deployment processes and testing configurations, aligning with recent changes.
+
+## 📦 plone/plone.recipe.zeoserver
+[1 file changed, +3/-3 lines, 1 pull request merged]  
+Merged updates to the pre-commit configurations ensuring compliance.
+
+## 📦 plone/plone.theme
+[1 file changed, +3/-3 lines, 1 pull request merged]  
+Updated the repository’s coding standards through the latest merged pre-commit configurations.
+
+## 📦 plone/Products.MimetypesRegistry
+[1 file changed, +3/-3 lines, 1 pull request merged]  
+Merged updates in the pre-commit configurations to enhance coding quality.
+
+## 📦 plone/Products.PortalTransforms
+[1 file changed, +3/-3 lines, 1 pull request merged]  
+Merged pre-commit updates for ongoing coding quality assurance.
+
+## 📦 plone/plone.app.contentlisting
+[1 file changed, +3/-3 lines, 1 pull request merged]  
+Updated pre-commit configurations to ensure consistency in coding practices.
+
+## 📦 plone/plone.resourceeditor
+[1 file changed, +3/-3 lines, 1 pull request merged]  
+Merged updates for pre-commit configurations ensuring compliance.
+
+## 📦 plone/plone.app.contenttypes
+[2 files changed, +4/-4 lines, 1 pull request merged]  
+Merged updates for dependency configuration in conjunction with pre-commit enhancements.
+
+## 📦 plone/Products.PlonePAS
+[1 file changed, +3/-3 lines, 1 pull request merged]  
+Updated pre-commit configurations to ensure the repository meets the latest coding standards.
+
+## 📦 plone/plone.rfc822
+[1 file changed, +3/-3 lines, 1 pull request merged]  
+Merged pre-commit updates for improved code quality.
+
+## 📦 plone/Products.CMFDiffTool
+[1 file changed, +3/-3 lines, 1 pull request merged]  
+Merged updates for pre-commit configurations ensuring compliance with coding standards.
+
+## 📦 plone/Products.CMFPlacefulWorkflow
+[1 file changed, +3/-3 lines, 1 pull request merged]  
+Merged updates for the pre-commit configuration.
+
+## 📦 plone/Products.CMFEditions
+[1 file changed, +3/-3 lines, 1 pull request merged]  
+Updated the pre-commit configuration for improved code quality.
+
+## 📦 plone/Products.CMFDynamicViewFTI
+[1 file changed, +3/-3 lines, 1 pull request merged]  
+Merged updates to the pre-commit configuration for coding quality improvements.
+
+## 📦 plone/Products.statusmessages
+[1 file changed, +3/-3 lines, 1 pull request merged]  
+Merged updates for pre-commit configurations ensuring compliance.
+
+## 📦 plone/plone.batching
+[1 file changed, +3/-3 lines, 1 pull request merged]  
+Merged updates to the pre-commit configurations for improved code quality.
+
+## 📦 plone/mockup
+[3 files changed, +6/-6 lines, 1 pull request merged]  
+Updated to let `pnpm` trust packages from `@patternslib`, enhancing package management safety.
+
+## 📦 plone/plone.schema
+[1 file changed, +3/-3 lines, 1 pull request merged]  
+Merged updates for pre-commit configurations ensuring coding quality.
+
+## 📦 plone/plone.app.robotframework
+[1 file changed, +4/-4 lines, 1 pull request merged]  
+Updated pre-commit configurations, aligning the repository with current standards.
+
+## 📦 plone/plone.ping
+[393 files changed, +504/-503 lines, Several PRs with maintenance tasks]  
+Routine maintenance updates conducted by the Upptime Bot for the status checks.
+
+## 📦 plone/plone.container
+[1 file changed, +3/-3 lines, 1 pull request merged]  
+Merged updates on pre-commit configurations to maintain coding standards.
+
+## 📦 plone/repostaging
+[2 files changed, +2/-2 lines, 1 pull request merged]  
+Routine maintenance updated by the Upptime Bot.
+
+---
+
+The Plone community continues to demonstrate strong engagement in refining our ecosystem, greatly enhancing the overall developer experience and code quality. Thank you to all contributors for your efforts!
+
+### Contributors
+**pre-commit-ci[bot], Érico Andrei (ericof), Mikel Larreategi (erral), David Glick (davisagli), Gil Forcada Codinachs (gforcada), Peter Mathis (petschki), João Figueiredo (1letter), Kunal Kumar (kunalKumar-13), Victor Fernandez de Alba (sneridagh), Tishasoumya-02 (Tishasoumya-02), Johannes Raggam (thet), Rob Gietema (robgietema), Steve Piercy (stevepiercy), and other contributors.**
+
+Automatically generated from 109 active repositories.
