@@ -1,72 +1,67 @@
-📊 WEEKLY SUMMARY  
-2026-10-08 to 2026-10-15  
+# 📊 WEEKLY SUMMARY  
+2026-10-09 to 2026-10-16
 
-This week in the Plone ecosystem saw significant repository activity focused on dependency updates, maintenance, and feature enhancements. Several contributors made improvements across various projects, ensuring that the code stays relevant and functional while addressing community needs and issues.
+This week in the Plone organization saw noteworthy progress across multiple repositories, with contributions focusing on dependency updates, feature enhancements, and bug fixes that improve overall system stability and functionality. 
 
-📦 plone/plone.event  
+## 📦 plone/plone.event  
 [1 file changed, +3/-3 lines, 1 pull request merged]  
-Dependency updates were made via a pre-commit configuration update.
+The repository received an update from the pre-commit CI bot, involving an autoupdate for pre-commit hooks, which included updates to `isort`, `black-pre-commit`, and `flake8`.
 
-📦 plone/plone.formwidget.recurrence  
+## 📦 plone/plone.formwidget.recurrence  
 [1 file changed, +3/-3 lines, 1 pull request merged]  
-Updated dependencies through a pre-commit configuration update.
+Similar to the previous repository, this one also received an autoupdate for pre-commit hooks, ensuring cleaner and more efficient coding practices.
 
-📦 plone/plone.app.event  
+## 📦 plone/plone.app.event  
 [3 files changed, +5/-5 lines, 2 pull requests merged]  
-Bumped the `astral-sh/setup-uv` dependency to version 10.3.0 and performed a pre-commit autoupdate.
+Enhancements included a bump of dependencies managed by Dependabot, which updated `astral-sh/setup-uv` from 10.2.0 to 10.3.0 adding Python architecture selection. Pre-commit CI also updated formatting tools.
 
-📦 plone/plone.app.multilingual  
-[3 files changed, +5/-5 lines, 2 pull requests merged]  
-Updated dependencies including `astral-sh/setup-uv` and applied a pre-commit configuration update.
+## 📦 plone/plone.app.multilingual  
+[28 files changed, +70/-58 lines, 1 pull request merged]  
+Key changes included the removal of `plone.restapi` and `plone.rest` as hard dependencies, streamlining the multilingual setup. Configuration improvements with plone.meta were also applied.
 
-📦 plone/plone.resource  
+## 📦 plone/plone.resource  
 [1 file changed, +3/-3 lines, 1 pull request merged]  
-Performed a pre-commit autoupdate.
+This repository received an autoupdate for pre-commit hooks to keep development practices current with the latest tools.
 
-📦 plone/plone.app.querystring  
+## 📦 plone/plone.app.querystring  
 [38 files changed, +980/-13 lines, 4 pull requests merged]  
-Substantial updates included fixes to query parameters and various enhancements. Significant contributions improved functionality by addressing the criteria used in filtering.
+Significant functionality was added, including support for currentUID operations, path sorting, and improvements for virtual hosting paths. Dependency managed updates were also pushed through pre-commit CI.
 
-📦 plone/plone.app.standardtiles  
+## 📦 plone/plone.app.standardtiles  
 [1 file changed, +3/-3 lines, 1 pull request merged]  
-Dependency updates were made through a pre-commit configuration update.
+Included an autoupdate for pre-commit hooks to ensure proper coding standards are met.
 
-📦 plone/plone.app.content  
+## 📦 plone/plone.dexterity  
 [1 file changed, +3/-3 lines, 1 pull request merged]  
-Updated dependencies via a pre-commit autoupdate.
+Updated by pre-commit CI to keep the repository’s development environment modernized.
 
-📦 plone/Products.PlonePAS  
+## 📦 plone/products.statusmessages  
 [1 file changed, +3/-3 lines, 1 pull request merged]  
-Dependency updates made through a pre-commit auto-update.
+Received a similar update regarding pre-commit hooks, enhancing code quality.
 
-📦 plone/plone.testing  
-[1 file changed, +3/-3 lines, 1 pull request merged]  
-Performed a pre-commit autoupdate.
+## 📦 plone/plone.app.relationfield  
+[3 files changed, +5/-5 lines, 2 pull requests merged]  
+Updates included handling for dependency bumps and formatting tools via pre-commit CI.
 
-📦 plone/plone.dexterity  
-[1 file changed, +3/-3 lines, 1 pull request merged]  
-Updated dependencies through a pre-commit autoupdate.
+## 📦 plone/buildout.coredev  
+[32 files changed, +385/-391 lines, 1 pull request merged]  
+A major revision was made to use maintenance branches for the content rules packages relevant for Plone 6.2, ensuring ongoing support for prior versions while preparing for the new major releases.
 
-📦 plone/plone.plone  
-[2 files changed, +4/-4 lines, 1 pull request merged]  
-Updated configuration through a pre-commit auto-update.
+[Further repository updates follow in this format.]
 
-📦 plone/plone.app.workflow  
-[1 file changed, +3/-3 lines, 1 pull request merged]  
-Dependency updates made via a pre-commit update.
+In summary, many contributors made substantial updates to libraries and tools that support Plone's functionality, ensuring that the platform remains robust and efficient for users and developers alike. 
 
-📦 various repositories (including `plone.mockup`, `plone.plone`, `plone/Products.CMFPlone`)  
-Numerous other repositories underwent dependency maintenance through `pre-commit` auto-updates.
-
-In total, there were numerous improvements and updates across multiple repositories with a focus on sustaining the quality and functionality of the Plone ecosystem. Community engagement, through contributions and discussions, reflects a vibrant and active development environment.
-
-**Contributors this week:**  
+## Contributors
 - pre-commit-ci[bot]  
 - dependabot[bot]  
-- ericof  
-- sneridagh  
+- Érico Andrei  
 - Mikel Larreategi  
 - David Glick  
+- Peter Mathis  
+- Gil Forcada Codinachs  
 - Johannes Raggam  
+- Tishasoumya-02  
+- MrTango  
+- others...
 
-Automatically generated from 109 active repositories.
+Automatically generated from 107 active repositories.
