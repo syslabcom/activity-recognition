@@ -1,7 +1,7 @@
 {
   "version": 1,
   "status": "success",
-  "generated_at": "2026-10-16T11:10:11Z",
+  "generated_at": "2026-10-16T12:15:20Z",
   "organization": "plone",
   "state": "open",
   "slug": "lvl-easy",
@@ -9,8 +9,163 @@
   "required_labels": [
     "41 lvl: easy"
   ],
-  "issue_count": 85,
+  "issue_count": 90,
   "issues": [
+    {
+      "id": 5881093246,
+      "number": 44,
+      "title": "PLIP scripts: plip_stats.py --year crashes; plone_plips.py doesn't use the GitHub token",
+      "html_url": "https://github.com/plone/plone-contributor-statistics/issues/44",
+      "repository_full_name": "plone/plone-contributor-statistics",
+      "repository_url": "https://api.github.com/repos/plone/plone-contributor-statistics",
+      "state": "open",
+      "created_at": "2026-10-16T08:42:23Z",
+      "updated_at": "2026-10-16T11:11:05Z",
+      "comments": 0,
+      "author": {
+        "login": "jensens",
+        "html_url": "https://github.com/jensens"
+      },
+      "assignees": [],
+      "labels": [
+        "01 type: bug",
+        "14 prio: low",
+        "41 lvl: easy",
+        "99 tag: github stats"
+      ],
+      "contributor_summary": {
+        "status": "available",
+        "generated_at": "2026-10-16T12:15:35Z",
+        "source_issue_updated_at": "2026-10-16T11:11:05Z",
+        "model": "gpt-4o-mini",
+        "summary_markdown": "```markdown\n## What this issue is about\nThis issue addresses two problems in the PLIP (Python Library for Interactive Programming) statistics collection scripts: `plip_stats.py` and `plone_plips.py`. Both scripts are designed to gather data related to PLIP contributions but are currently facing technical bugs.\n\n## What needs to be done\n1. Fix the crash in `plip_stats.py` when using the `--year` or `--end-date` options by ensuring correct timezone handling for date comparisons.\n2. Modify `plone_plips.py` to utilize the GitHub token for authenticated requests, avoiding limitations on the number of requests that can be made.\n\n## Helpful background\n- **PLIP**: A framework for managing Plone improvement proposals.\n- **Timezone-aware dates**: These are dates that keep track of the time zone they were recorded in, which is important to avoid errors during comparisons.\n- The current code does not handle date comparisons properly, leading to crashes and inefficient data retrieval.\n\n## Good first steps\n1. Review the `plip_stats.py` code for how it handles date comparisons and adjust it to ensure all dates used are timezone-aware.\n2. Look into the token authentication function in `plone_plips.py` and modify it to properly retrieve the GitHub token.\n3. Test your changes to ensure that the scripts work without crashing and make authenticated requests. Documentation updates may be needed for clarity.\n```",
+        "path": "data/issues/summaries/plone/plone-contributor-statistics/44.json"
+      }
+    },
+    {
+      "id": 5881093042,
+      "number": 43,
+      "title": "2011 data files are missing, and reports skip missing years without warning",
+      "html_url": "https://github.com/plone/plone-contributor-statistics/issues/43",
+      "repository_full_name": "plone/plone-contributor-statistics",
+      "repository_url": "https://api.github.com/repos/plone/plone-contributor-statistics",
+      "state": "open",
+      "created_at": "2026-10-16T08:42:22Z",
+      "updated_at": "2026-10-16T11:11:03Z",
+      "comments": 0,
+      "author": {
+        "login": "jensens",
+        "html_url": "https://github.com/jensens"
+      },
+      "assignees": [],
+      "labels": [
+        "01 type: bug",
+        "14 prio: low",
+        "41 lvl: easy",
+        "99 tag: data"
+      ],
+      "contributor_summary": {
+        "status": "available",
+        "generated_at": "2026-10-16T12:15:39Z",
+        "source_issue_updated_at": "2026-10-16T11:11:03Z",
+        "model": "gpt-4o-mini",
+        "summary_markdown": "# Issue #43: Missing 2011 Data Files\n\n## What this issue is about\nThis issue addresses the absence of data files for the year 2011 in the `plone-contributor-statistics` repository. Specifically, the files `data/2011-plone-contributors.csv` and `data/2011-plone-organisation-contributors.csv` are missing, which causes reports to skip over 2011 without notifying users.\n\n## What needs to be done\n1. Create the missing data files for 2011.\n2. Update the report generators (`generate_contributor_report.py` and `generate_volto_team_report.py`) to issue warnings or errors if any requested year lacks data.\n\n## Helpful background\nThe missing data impacts reports that cover a range of years including 2011, resulting in understated statistics. While the reports published so far are unaffected, fixing this will ensure future reports provide accurate information.\n\n## Good first steps\n1. Check if you can create the necessary CSV files for 2011, using data from previous years as a reference.\n2. Familiarize yourself with the report generators by reviewing their code.\n3. Consider contributing by implementing the warning/error handling for missing years.   \n4. Reach out for guidance if anything is unclear, as some discussion points in the issue may need clarification.",
+        "path": "data/issues/summaries/plone/plone-contributor-statistics/43.json"
+      }
+    },
+    {
+      "id": 5881092176,
+      "number": 40,
+      "title": "Org stats and multi-year summaries can't find their input in data/, so their outputs are out of date",
+      "html_url": "https://github.com/plone/plone-contributor-statistics/issues/40",
+      "repository_full_name": "plone/plone-contributor-statistics",
+      "repository_url": "https://api.github.com/repos/plone/plone-contributor-statistics",
+      "state": "open",
+      "created_at": "2026-10-16T08:42:19Z",
+      "updated_at": "2026-10-16T11:10:55Z",
+      "comments": 0,
+      "author": {
+        "login": "jensens",
+        "html_url": "https://github.com/jensens"
+      },
+      "assignees": [],
+      "labels": [
+        "01 type: bug",
+        "12 prio: high",
+        "41 lvl: easy",
+        "99 tag: github stats"
+      ],
+      "contributor_summary": {
+        "status": "available",
+        "generated_at": "2026-10-16T12:15:50Z",
+        "source_issue_updated_at": "2026-10-16T11:10:55Z",
+        "model": "gpt-4o-mini",
+        "summary_markdown": "```markdown\n## What this issue is about\nThis issue addresses a bug where statistics scripts can’t find necessary input files since the CSVs were moved to the `data/` directory. As a result, several outputs are now outdated, affecting how we track contributor statistics.\n\n## What needs to be done\n1. Update the scripts in `organisation_stats.py` and `multi_year_summary.py` to read from and write to the `data/` directory.\n2. Fix or remove the import of `top_contributors_summary`, as it is currently missing.\n3. Regenerate all organizational files and summaries.\n4. Delete the outdated summary files if they have been replaced by `reports/github-contributor-report.md`.\n\n## Helpful background\nThe issue arises because the scripts are still referencing files in the original location, which is no longer valid. Outdated names of organizations also mix with newer names, complicating data analysis.\n\n## Good first steps\n1. Familiarize yourself with the relevant scripts: `organisation_stats.py`, `multi_year_summary.py`, and the `Makefile`.\n2. Check the current structure of the `data/` directory and how CSV files are named.\n3. Consider checking the existing reports in `reports/github-contributor-report.md` to understand the needed outputs.\n4. Make small changes to the scripts and run tests to confirm they read from the correct location.\n```",
+        "path": "data/issues/summaries/plone/plone-contributor-statistics/40.json"
+      }
+    },
+    {
+      "id": 5881091938,
+      "number": 39,
+      "title": "Merge commits are counted as commits for the person who merged",
+      "html_url": "https://github.com/plone/plone-contributor-statistics/issues/39",
+      "repository_full_name": "plone/plone-contributor-statistics",
+      "repository_url": "https://api.github.com/repos/plone/plone-contributor-statistics",
+      "state": "open",
+      "created_at": "2026-10-16T08:42:18Z",
+      "updated_at": "2026-10-16T11:10:52Z",
+      "comments": 0,
+      "author": {
+        "login": "jensens",
+        "html_url": "https://github.com/jensens"
+      },
+      "assignees": [],
+      "labels": [
+        "01 type: bug",
+        "13 prio: normal",
+        "41 lvl: easy",
+        "99 tag: github stats"
+      ],
+      "contributor_summary": {
+        "status": "available",
+        "generated_at": "2026-10-16T12:15:54Z",
+        "source_issue_updated_at": "2026-10-16T11:10:52Z",
+        "model": "gpt-4o-mini",
+        "summary_markdown": "## What this issue is about\nThis issue addresses a bug in how commit statistics are generated for contributors in the Plone project. Specifically, when a pull request (PR) is merged, the merge commit incorrectly counts towards the total commits of the person who performed the merge instead of the original author of the code.\n\n## What needs to be done\nWe need to adjust the code in `plone_contributors.py` and `volto_stats.py` to exclude merge commits from the counted commits. Merge commits can be identified as those with more than one parent. We also want to ensure that previous contributor data can be recalculated with this change.\n\n## Helpful background\nIn Git, a **merge commit** is created when two branches are combined. Merge commits can skew contributions, as they may reflect the work of the person merging rather than the original developers. Release commits handled by zest.releaser are valid contributions and should still be counted.\n\n## Good first steps\n1. Review the current logic in `plone_contributors.py` and `volto_stats.py`.\n2. Implement the suggested fix to skip merge commits in the calculations.\n3. Test the changes to ensure contributor stats are correctly reported.\n4. If you have questions or need clarifications, feel free to ask in the issue discussion.",
+        "path": "data/issues/summaries/plone/plone-contributor-statistics/39.json"
+      }
+    },
+    {
+      "id": 5881091244,
+      "number": 37,
+      "title": "PR interactions: pagination stops early, so CMFPlone and Volto get 0 rows for past years",
+      "html_url": "https://github.com/plone/plone-contributor-statistics/issues/37",
+      "repository_full_name": "plone/plone-contributor-statistics",
+      "repository_url": "https://api.github.com/repos/plone/plone-contributor-statistics",
+      "state": "open",
+      "created_at": "2026-10-16T08:42:15Z",
+      "updated_at": "2026-10-16T11:10:48Z",
+      "comments": 0,
+      "author": {
+        "login": "jensens",
+        "html_url": "https://github.com/jensens"
+      },
+      "assignees": [],
+      "labels": [
+        "01 type: bug",
+        "13 prio: normal",
+        "41 lvl: easy",
+        "99 tag: github stats"
+      ],
+      "contributor_summary": {
+        "status": "available",
+        "generated_at": "2026-10-16T12:15:58Z",
+        "source_issue_updated_at": "2026-10-16T11:10:48Z",
+        "model": "gpt-4o-mini",
+        "summary_markdown": "## What this issue is about\nThis issue addresses a bug in the `plone_pr_interactions.py` script. Currently, it retrieves pull requests (PRs) sorted by their last update date and stops early if it encounters an empty page, leading to inaccurate activity reports for older years in the Plone ecosystem, specifically for `CMFPlone` and `Volto`.\n\n## What needs to be done\n1. Modify the pagination logic to continue fetching PRs as long as there are updates after the target date range.\n2. Change the filtering criteria to use the PR's creation or merge date instead of the last updated date.\n3. Recollect the data for all years to ensure accurate statistics.\n\n## Helpful background\nThis issue is tagged as a normal priority bug and is considered easy to work on. It affects how PR interactions are reported, influencing the statistics visible in `reports/github-pr-interactions-report-*.md`.\n\n## Good first steps\n1. Familiarize yourself with the `plone_pr_interactions.py` file, particularly around line 197.\n2. Understand pagination and how the current logic stops prematurely.\n3. Consider how to implement the suggested changes and test them to confirm they work as expected.\n4. You may want to coordinate with others on potential approaches if you encounter any ambiguity.",
+        "path": "data/issues/summaries/plone/plone-contributor-statistics/37.json"
+      }
+    },
     {
       "id": 3988967668,
       "number": 7947,
@@ -2632,10 +2787,10 @@
   "message": null,
   "workflow": {
     "repository": "syslabcom/activity-recognition",
-    "run_id": "38891979164",
-    "run_number": "3872",
+    "run_id": "38899229388",
+    "run_number": "3873",
     "attempt": "1",
-    "url": "https://github.com/syslabcom/activity-recognition/actions/runs/38891979164",
-    "sha": "40a8c6850730be2e3843300598d11a4cceb3d877"
+    "url": "https://github.com/syslabcom/activity-recognition/actions/runs/38899229388",
+    "sha": "8bc833c4669ce5a699539cf953872509834c356b"
   }
 }

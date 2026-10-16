@@ -1,0 +1,35 @@
+{
+  "version": 1,
+  "status": "success",
+  "generated_at": "2026-10-16T12:15:30Z",
+  "source_issue": {
+    "id": 5882422697,
+    "number": 46,
+    "title": "Check 2025 community data against the Foundation Board minutes",
+    "html_url": "https://github.com/plone/plone-contributor-statistics/issues/46",
+    "repository_full_name": "plone/plone-contributor-statistics",
+    "updated_at": "2026-10-16T11:11:10Z",
+    "labels": [
+      "01 type: bug",
+      "12 prio: high",
+      "31 needs: help",
+      "42 lvl: moderate",
+      "99 tag: data",
+      "99 tag: community recognition"
+    ],
+    "comments": 0
+  },
+  "ai": {
+    "provider": "openai",
+    "model": "gpt-4o-mini"
+  },
+  "summary_markdown": "# Contributor Summary for Issue #46: Check 2025 Community Data Against Foundation Board Minutes\n\n## What this issue is about\nThis issue addresses the need to verify the 2025 community data files (located in `data/community-contributions/2025-*.csv`) against the official Foundation Board minutes. Past reviews highlighted discrepancies, so a similar check for 2025 is crucial.\n\n## What needs to be done\nYou will need to:\n1. Review the 2025 strategic sprints and release managers against the minutes.\n2. Ensure all entries are accurate and complete.\n3. Add a \"Source\" column in the CSV files with relevant links to the minutes for each entry.\n\n## Helpful background\n- **Strategic sprints:** These are special community events mentioned in the minutes. Their details (like funding and designation) need verification.\n- **Release managers:** Roles filled during releases; ensure the names listed are correct.\n- Podcasts related to 2025 must also be documented since they are missing from the current data.\n\n## Good first steps\n1. Familiarize yourself with the Foundation Board minutes for 2025 [here](https://plone.org/foundation/meetings/minutes).\n2. Start by checking the entries for strategic sprints against the provided URLs.\n3. Document any discrepancies you find and propose updates through a GitHub pull request.\n\nFeel free to ask questions if you need help navigating the data or the minutes!",
+  "workflow": {
+    "repository": "syslabcom/activity-recognition",
+    "run_id": "38899229388",
+    "run_number": "3873",
+    "attempt": "1",
+    "url": "https://github.com/syslabcom/activity-recognition/actions/runs/38899229388",
+    "sha": "8bc833c4669ce5a699539cf953872509834c356b"
+  }
+}

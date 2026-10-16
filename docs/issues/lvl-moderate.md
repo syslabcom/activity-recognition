@@ -1,24 +1,29 @@
 ---
 title: "Plone issue list — Level: Moderate"
 permalink: "/issues/lvl-moderate/"
-generated_at: "2026-10-16T11:10:11Z"
+generated_at: "2026-10-16T12:15:20Z"
 organization: "plone"
-issue_count: 71
+issue_count: 76
 required_labels:
   - "42 lvl: moderate"
 ---
 
 # Plone issue list — Level: Moderate
 
-Generated: `2026-10-16T11:10:11Z`  
+Generated: `2026-10-16T12:15:20Z`  
 Organization: `plone`  
 Required label: `42 lvl: moderate`  
-Issue count: `71`
+Issue count: `76`
 
 Sorted by last updated date, newest first.
 
 | Updated | Repository | Issue | Author | Labels |
 | --- | --- | --- | --- | --- |
+| 2026-10-16 11:42 UTC | `plone/plone-contributor-statistics` | [#36 Historical stats skip archived repos (≥23% of 2012 commits missing)](https://github.com/plone/plone-contributor-statistics/issues/36) | `jensens` | `01 type: bug`, `12 prio: high`, `42 lvl: moderate`, `99 tag: github stats` |
+| 2026-10-16 11:11 UTC | `plone/plone-contributor-statistics` | [#46 Check 2025 community data against the Foundation Board minutes](https://github.com/plone/plone-contributor-statistics/issues/46) | `jensens` | `01 type: bug`, `12 prio: high`, `31 needs: help`, `42 lvl: moderate`, `99 tag: data`, `99 tag: community recognition` |
+| 2026-10-16 11:11 UTC | `plone/plone-contributor-statistics` | [#42 PR counting differs: Volto uses creation date, core uses merge date; early-stop check; backport PRs](https://github.com/plone/plone-contributor-statistics/issues/42) | `jensens` | `01 type: bug`, `13 prio: normal`, `42 lvl: moderate`, `99 tag: github stats` |
+| 2026-10-16 11:10 UTC | `plone/plone-contributor-statistics` | [#41 API errors and rate limits are recorded as zero activity; partial runs overwrite the normal data files](https://github.com/plone/plone-contributor-statistics/issues/41) | `jensens` | `01 type: bug`, `12 prio: high`, `42 lvl: moderate`, `99 tag: github stats` |
+| 2026-10-16 11:10 UTC | `plone/plone-contributor-statistics` | [#14 Count only merged and release PLIPs](https://github.com/plone/plone-contributor-statistics/issues/14) | `tisto` | `04 type: enhancement`, `13 prio: normal`, `42 lvl: moderate`, `99 tag: community recognition` |
 | 2026-09-29 13:05 UTC | `plone/Products.CMFPlone` | [#3953 PLIP: Start separating Blicca (Classic UI) code from the core](https://github.com/plone/Products.CMFPlone/issues/3953) | `tisto` | `31 needs: help`, `99 tag: cleanup`, `03 type: feature (plip)`, `13 prio: normal`, `42 lvl: moderate`, `53 target: major`, `99 tag: Classic UI` |
 | 2026-09-28 00:07 UTC | `plone/aurora` | [#179 System requirements should be updated](https://github.com/plone/aurora/issues/179) | `stevepiercy` | `33 needs: docs`, `42 lvl: moderate` |
 | 2026-06-29 01:19 UTC | `plone/volto` | [#7696 Add deprecation policy or guide to documentation](https://github.com/plone/volto/issues/7696) | `stevepiercy` | `04 type: enhancement`, `33 needs: docs`, `42 lvl: moderate`, `discussion` |

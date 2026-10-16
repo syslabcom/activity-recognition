@@ -1,0 +1,33 @@
+{
+  "version": 1,
+  "status": "success",
+  "generated_at": "2026-10-16T12:15:39Z",
+  "source_issue": {
+    "id": 5881093042,
+    "number": 43,
+    "title": "2011 data files are missing, and reports skip missing years without warning",
+    "html_url": "https://github.com/plone/plone-contributor-statistics/issues/43",
+    "repository_full_name": "plone/plone-contributor-statistics",
+    "updated_at": "2026-10-16T11:11:03Z",
+    "labels": [
+      "01 type: bug",
+      "14 prio: low",
+      "41 lvl: easy",
+      "99 tag: data"
+    ],
+    "comments": 0
+  },
+  "ai": {
+    "provider": "openai",
+    "model": "gpt-4o-mini"
+  },
+  "summary_markdown": "# Issue #43: Missing 2011 Data Files\n\n## What this issue is about\nThis issue addresses the absence of data files for the year 2011 in the `plone-contributor-statistics` repository. Specifically, the files `data/2011-plone-contributors.csv` and `data/2011-plone-organisation-contributors.csv` are missing, which causes reports to skip over 2011 without notifying users.\n\n## What needs to be done\n1. Create the missing data files for 2011.\n2. Update the report generators (`generate_contributor_report.py` and `generate_volto_team_report.py`) to issue warnings or errors if any requested year lacks data.\n\n## Helpful background\nThe missing data impacts reports that cover a range of years including 2011, resulting in understated statistics. While the reports published so far are unaffected, fixing this will ensure future reports provide accurate information.\n\n## Good first steps\n1. Check if you can create the necessary CSV files for 2011, using data from previous years as a reference.\n2. Familiarize yourself with the report generators by reviewing their code.\n3. Consider contributing by implementing the warning/error handling for missing years.   \n4. Reach out for guidance if anything is unclear, as some discussion points in the issue may need clarification.",
+  "workflow": {
+    "repository": "syslabcom/activity-recognition",
+    "run_id": "38899229388",
+    "run_number": "3873",
+    "attempt": "1",
+    "url": "https://github.com/syslabcom/activity-recognition/actions/runs/38899229388",
+    "sha": "8bc833c4669ce5a699539cf953872509834c356b"
+  }
+}

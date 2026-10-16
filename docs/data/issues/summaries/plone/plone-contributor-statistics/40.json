@@ -1,0 +1,33 @@
+{
+  "version": 1,
+  "status": "success",
+  "generated_at": "2026-10-16T12:15:50Z",
+  "source_issue": {
+    "id": 5881092176,
+    "number": 40,
+    "title": "Org stats and multi-year summaries can't find their input in data/, so their outputs are out of date",
+    "html_url": "https://github.com/plone/plone-contributor-statistics/issues/40",
+    "repository_full_name": "plone/plone-contributor-statistics",
+    "updated_at": "2026-10-16T11:10:55Z",
+    "labels": [
+      "01 type: bug",
+      "12 prio: high",
+      "41 lvl: easy",
+      "99 tag: github stats"
+    ],
+    "comments": 0
+  },
+  "ai": {
+    "provider": "openai",
+    "model": "gpt-4o-mini"
+  },
+  "summary_markdown": "```markdown\n## What this issue is about\nThis issue addresses a bug where statistics scripts can’t find necessary input files since the CSVs were moved to the `data/` directory. As a result, several outputs are now outdated, affecting how we track contributor statistics.\n\n## What needs to be done\n1. Update the scripts in `organisation_stats.py` and `multi_year_summary.py` to read from and write to the `data/` directory.\n2. Fix or remove the import of `top_contributors_summary`, as it is currently missing.\n3. Regenerate all organizational files and summaries.\n4. Delete the outdated summary files if they have been replaced by `reports/github-contributor-report.md`.\n\n## Helpful background\nThe issue arises because the scripts are still referencing files in the original location, which is no longer valid. Outdated names of organizations also mix with newer names, complicating data analysis.\n\n## Good first steps\n1. Familiarize yourself with the relevant scripts: `organisation_stats.py`, `multi_year_summary.py`, and the `Makefile`.\n2. Check the current structure of the `data/` directory and how CSV files are named.\n3. Consider checking the existing reports in `reports/github-contributor-report.md` to understand the needed outputs.\n4. Make small changes to the scripts and run tests to confirm they read from the correct location.\n```",
+  "workflow": {
+    "repository": "syslabcom/activity-recognition",
+    "run_id": "38899229388",
+    "run_number": "3873",
+    "attempt": "1",
+    "url": "https://github.com/syslabcom/activity-recognition/actions/runs/38899229388",
+    "sha": "8bc833c4669ce5a699539cf953872509834c356b"
+  }
+}

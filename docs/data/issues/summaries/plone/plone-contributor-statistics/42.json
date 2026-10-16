@@ -1,0 +1,33 @@
+{
+  "version": 1,
+  "status": "success",
+  "generated_at": "2026-10-16T12:15:43Z",
+  "source_issue": {
+    "id": 5881092729,
+    "number": 42,
+    "title": "PR counting differs: Volto uses creation date, core uses merge date; early-stop check; backport PRs",
+    "html_url": "https://github.com/plone/plone-contributor-statistics/issues/42",
+    "repository_full_name": "plone/plone-contributor-statistics",
+    "updated_at": "2026-10-16T11:11:00Z",
+    "labels": [
+      "01 type: bug",
+      "13 prio: normal",
+      "42 lvl: moderate",
+      "99 tag: github stats"
+    ],
+    "comments": 0
+  },
+  "ai": {
+    "provider": "openai",
+    "model": "gpt-4o-mini"
+  },
+  "summary_markdown": "```markdown\n## What this issue is about\nThis issue addresses discrepancies in how pull requests (PRs) are counted between the core stats and Volto stats for Plone. Specifically, it highlights differences in the date used for counting and how PRs are listed.\n\n## What needs to be done\n1. Modify `volto_stats.py` to use the merge date (`merged_at`) instead of the creation date (`created:`) for counting PRs.\n2. Adjust the stop condition in `plone_contributors.py` to check `updated_at < start_date`, rather than stopping at `merged_at`.\n3. Decide if backport PRs should be counted and update the README to document this decision.\n\n## Helpful background\nCurrently, Volto counts a PR based on its creation date, while the core stats rely on the merge date. This inconsistency can lead to confusion. Additionally, the early stop in core listings may omit important PRs based on the wrong criteria.\n\n## Good first steps\n1. Review `volto_stats.py` and `plone_contributors.py` to understand how PRs are currently counted.\n2. Consider testing the proposed changes in a local environment to ensure they resolve the counting discrepancies.\n3. Participate in discussions if you're unsure about the backport PRs decision.\n```",
+  "workflow": {
+    "repository": "syslabcom/activity-recognition",
+    "run_id": "38899229388",
+    "run_number": "3873",
+    "attempt": "1",
+    "url": "https://github.com/syslabcom/activity-recognition/actions/runs/38899229388",
+    "sha": "8bc833c4669ce5a699539cf953872509834c356b"
+  }
+}

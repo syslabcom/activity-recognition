@@ -1,7 +1,7 @@
 {
   "version": 1,
   "status": "success",
-  "generated_at": "2026-10-16T11:10:11Z",
+  "generated_at": "2026-10-16T12:15:20Z",
   "organization": "plone",
   "state": "open",
   "slug": "lvl-moderate",
@@ -9,8 +9,165 @@
   "required_labels": [
     "42 lvl: moderate"
   ],
-  "issue_count": 71,
+  "issue_count": 76,
   "issues": [
+    {
+      "id": 5881090987,
+      "number": 36,
+      "title": "Historical stats skip archived repos (≥23% of 2012 commits missing)",
+      "html_url": "https://github.com/plone/plone-contributor-statistics/issues/36",
+      "repository_full_name": "plone/plone-contributor-statistics",
+      "repository_url": "https://api.github.com/repos/plone/plone-contributor-statistics",
+      "state": "open",
+      "created_at": "2026-10-16T08:42:14Z",
+      "updated_at": "2026-10-16T11:42:26Z",
+      "comments": 1,
+      "author": {
+        "login": "jensens",
+        "html_url": "https://github.com/jensens"
+      },
+      "assignees": [],
+      "labels": [
+        "01 type: bug",
+        "12 prio: high",
+        "42 lvl: moderate",
+        "99 tag: github stats"
+      ],
+      "contributor_summary": {
+        "status": "available",
+        "generated_at": "2026-10-16T12:15:25Z",
+        "source_issue_updated_at": "2026-10-16T11:42:26Z",
+        "model": "gpt-4o-mini",
+        "summary_markdown": "## What this issue is about\nThis issue addresses a problem in the `plone_contributors.py` script, which currently skips counting commits from archived repositories. This results in a significant percentage of historical commit data being missing, particularly from 2012 and later.\n\n## What needs to be done\nWe need to modify the script to include archived repositories in historical statistics, while applying certain exclusions:\n- Exclude the `*.renamedforrestore` repositories, which duplicate the history of active repos.\n- Decide on the treatment of repositories that have moved to the Zope Foundation.\n- Clarify whether or not to include forks in the statistics, particularly for Docker-related repos.\n\nAfter these changes, we will need to regenerate the historical data for all years.\n\n## Helpful background\nArchiving repositories can affect how we assess contributions over time. The decision on including forks and repos moved to other organizations introduces some complexity. Be mindful of the distinctions that need to be made.\n\n## Good first steps\n1. Review the current script in `plone_contributors.py` to understand its logic.\n2. Identify the archived repositories and the criteria for inclusion/exclusion.\n3. Engage with the community to clarify questions about forks and repositories moved to different organizations.\n4. Begin drafting the updated code while considering testing and documentation needs.\n\nFeel free to reach out if you have questions or need assistance!",
+        "path": "data/issues/summaries/plone/plone-contributor-statistics/36.json"
+      }
+    },
+    {
+      "id": 5882422697,
+      "number": 46,
+      "title": "Check 2025 community data against the Foundation Board minutes",
+      "html_url": "https://github.com/plone/plone-contributor-statistics/issues/46",
+      "repository_full_name": "plone/plone-contributor-statistics",
+      "repository_url": "https://api.github.com/repos/plone/plone-contributor-statistics",
+      "state": "open",
+      "created_at": "2026-10-16T10:18:40Z",
+      "updated_at": "2026-10-16T11:11:10Z",
+      "comments": 0,
+      "author": {
+        "login": "jensens",
+        "html_url": "https://github.com/jensens"
+      },
+      "assignees": [],
+      "labels": [
+        "01 type: bug",
+        "12 prio: high",
+        "31 needs: help",
+        "42 lvl: moderate",
+        "99 tag: data",
+        "99 tag: community recognition"
+      ],
+      "contributor_summary": {
+        "status": "available",
+        "generated_at": "2026-10-16T12:15:30Z",
+        "source_issue_updated_at": "2026-10-16T11:11:10Z",
+        "model": "gpt-4o-mini",
+        "summary_markdown": "# Contributor Summary for Issue #46: Check 2025 Community Data Against Foundation Board Minutes\n\n## What this issue is about\nThis issue addresses the need to verify the 2025 community data files (located in `data/community-contributions/2025-*.csv`) against the official Foundation Board minutes. Past reviews highlighted discrepancies, so a similar check for 2025 is crucial.\n\n## What needs to be done\nYou will need to:\n1. Review the 2025 strategic sprints and release managers against the minutes.\n2. Ensure all entries are accurate and complete.\n3. Add a \"Source\" column in the CSV files with relevant links to the minutes for each entry.\n\n## Helpful background\n- **Strategic sprints:** These are special community events mentioned in the minutes. Their details (like funding and designation) need verification.\n- **Release managers:** Roles filled during releases; ensure the names listed are correct.\n- Podcasts related to 2025 must also be documented since they are missing from the current data.\n\n## Good first steps\n1. Familiarize yourself with the Foundation Board minutes for 2025 [here](https://plone.org/foundation/meetings/minutes).\n2. Start by checking the entries for strategic sprints against the provided URLs.\n3. Document any discrepancies you find and propose updates through a GitHub pull request.\n\nFeel free to ask questions if you need help navigating the data or the minutes!",
+        "path": "data/issues/summaries/plone/plone-contributor-statistics/46.json"
+      }
+    },
+    {
+      "id": 5881092729,
+      "number": 42,
+      "title": "PR counting differs: Volto uses creation date, core uses merge date; early-stop check; backport PRs",
+      "html_url": "https://github.com/plone/plone-contributor-statistics/issues/42",
+      "repository_full_name": "plone/plone-contributor-statistics",
+      "repository_url": "https://api.github.com/repos/plone/plone-contributor-statistics",
+      "state": "open",
+      "created_at": "2026-10-16T08:42:21Z",
+      "updated_at": "2026-10-16T11:11:00Z",
+      "comments": 0,
+      "author": {
+        "login": "jensens",
+        "html_url": "https://github.com/jensens"
+      },
+      "assignees": [],
+      "labels": [
+        "01 type: bug",
+        "13 prio: normal",
+        "42 lvl: moderate",
+        "99 tag: github stats"
+      ],
+      "contributor_summary": {
+        "status": "available",
+        "generated_at": "2026-10-16T12:15:43Z",
+        "source_issue_updated_at": "2026-10-16T11:11:00Z",
+        "model": "gpt-4o-mini",
+        "summary_markdown": "```markdown\n## What this issue is about\nThis issue addresses discrepancies in how pull requests (PRs) are counted between the core stats and Volto stats for Plone. Specifically, it highlights differences in the date used for counting and how PRs are listed.\n\n## What needs to be done\n1. Modify `volto_stats.py` to use the merge date (`merged_at`) instead of the creation date (`created:`) for counting PRs.\n2. Adjust the stop condition in `plone_contributors.py` to check `updated_at < start_date`, rather than stopping at `merged_at`.\n3. Decide if backport PRs should be counted and update the README to document this decision.\n\n## Helpful background\nCurrently, Volto counts a PR based on its creation date, while the core stats rely on the merge date. This inconsistency can lead to confusion. Additionally, the early stop in core listings may omit important PRs based on the wrong criteria.\n\n## Good first steps\n1. Review `volto_stats.py` and `plone_contributors.py` to understand how PRs are currently counted.\n2. Consider testing the proposed changes in a local environment to ensure they resolve the counting discrepancies.\n3. Participate in discussions if you're unsure about the backport PRs decision.\n```",
+        "path": "data/issues/summaries/plone/plone-contributor-statistics/42.json"
+      }
+    },
+    {
+      "id": 5881092441,
+      "number": 41,
+      "title": "API errors and rate limits are recorded as zero activity; partial runs overwrite the normal data files",
+      "html_url": "https://github.com/plone/plone-contributor-statistics/issues/41",
+      "repository_full_name": "plone/plone-contributor-statistics",
+      "repository_url": "https://api.github.com/repos/plone/plone-contributor-statistics",
+      "state": "open",
+      "created_at": "2026-10-16T08:42:20Z",
+      "updated_at": "2026-10-16T11:10:57Z",
+      "comments": 0,
+      "author": {
+        "login": "jensens",
+        "html_url": "https://github.com/jensens"
+      },
+      "assignees": [],
+      "labels": [
+        "01 type: bug",
+        "12 prio: high",
+        "42 lvl: moderate",
+        "99 tag: github stats"
+      ],
+      "contributor_summary": {
+        "status": "available",
+        "generated_at": "2026-10-16T12:15:46Z",
+        "source_issue_updated_at": "2026-10-16T11:10:57Z",
+        "model": "gpt-4o-mini",
+        "summary_markdown": "# Contributor Guide for Issue #41: API Errors and Rate Limits\n\n## What this issue is about\nThis issue addresses how the GitHub API errors and rate limits are not being properly recorded in the `plone-contributor-statistics` project. Specifically, when a request fails—especially with a 403 error—the system incorrectly logs zero activity or produces incomplete data files.\n\n## What needs to be done\n1. Update how the system handles 403 and 429 errors: check for rate limit headers, wait if needed, and retry requests.\n2. Change the behavior so it raises an error on failures instead of logging zero.\n3. Only write the final CSV file if all data is collected successfully; otherwise, create a checkpoint file.\n4. Consider eliminating the fallback to a fixed set of repositories or clearly naming such outputs.\n5. Optionally add logging for which requests failed.\n\n## Helpful background\nThis issue is classified as a bug and is considered high priority. Understanding HTTP status codes (like 403 for forbidden access and 429 for rate limiting) will be helpful for contributors.\n\n## Good first steps\n1. Familiarize yourself with the `plone_contributors.py` and `volto_stats.py` files mentioned in the issue.\n2. Look into how API requests are currently managed and try to reproduce the error.\n3. Join the conversation by sharing your ideas or asking questions about unclear points.",
+        "path": "data/issues/summaries/plone/plone-contributor-statistics/41.json"
+      }
+    },
+    {
+      "id": 4075691309,
+      "number": 14,
+      "title": "Count only merged and release PLIPs",
+      "html_url": "https://github.com/plone/plone-contributor-statistics/issues/14",
+      "repository_full_name": "plone/plone-contributor-statistics",
+      "repository_url": "https://api.github.com/repos/plone/plone-contributor-statistics",
+      "state": "open",
+      "created_at": "2026-03-14T12:15:38Z",
+      "updated_at": "2026-10-16T11:10:30Z",
+      "comments": 0,
+      "author": {
+        "login": "tisto",
+        "html_url": "https://github.com/tisto"
+      },
+      "assignees": [],
+      "labels": [
+        "04 type: enhancement",
+        "13 prio: normal",
+        "42 lvl: moderate",
+        "99 tag: community recognition"
+      ],
+      "contributor_summary": {
+        "status": "available",
+        "generated_at": "2026-10-16T12:16:01Z",
+        "source_issue_updated_at": "2026-10-16T11:10:30Z",
+        "model": "gpt-4o-mini",
+        "summary_markdown": "## What this issue is about\nThis issue addresses the need to better distinguish between merged/released PLIPs (Proposed Location Implementation Plans) and those that have been abandoned or rejected. Currently, both types are labeled the same, which can lead to confusion.\n\n## What needs to be done\nWe need to create a new label specifically for completed PLIPs. The goal is to allow users to easily identify accepted and merged PLIPs as opposed to those that have been rejected. The specifics of implementing this change, including label naming and criteria for labeling, are still open for discussion.\n\n## Helpful background\nWhile many PLIPs are marked with the \"reason: completed\" status, the lack of a distinct label creates complications for tracking progress and community recognition. Previous discussions have included suggestions on how to handle this differentiation, but no clear consensus has been reached yet.\n\n## Good first steps\n1. Review existing issues related to PLIP statuses to understand the context.\n2. Think about how to clearly define what constitutes a completed PLIP.\n3. Consider potential names for a new label that captures this status.\n4. Engage with other contributors, such as @jensens and @sneridagh, for insights or past experiences with PLIP labeling.\n\nFeel free to jump in with your thoughts or proposals!",
+        "path": "data/issues/summaries/plone/plone-contributor-statistics/14.json"
+      }
+    },
     {
       "id": 2297234474,
       "number": 3953,
@@ -2216,10 +2373,10 @@
   "message": null,
   "workflow": {
     "repository": "syslabcom/activity-recognition",
-    "run_id": "38891979164",
-    "run_number": "3872",
+    "run_id": "38899229388",
+    "run_number": "3873",
     "attempt": "1",
-    "url": "https://github.com/syslabcom/activity-recognition/actions/runs/38891979164",
-    "sha": "40a8c6850730be2e3843300598d11a4cceb3d877"
+    "url": "https://github.com/syslabcom/activity-recognition/actions/runs/38899229388",
+    "sha": "8bc833c4669ce5a699539cf953872509834c356b"
   }
 }

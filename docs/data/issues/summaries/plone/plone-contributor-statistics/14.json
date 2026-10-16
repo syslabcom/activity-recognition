@@ -1,0 +1,33 @@
+{
+  "version": 1,
+  "status": "success",
+  "generated_at": "2026-10-16T12:16:01Z",
+  "source_issue": {
+    "id": 4075691309,
+    "number": 14,
+    "title": "Count only merged and release PLIPs",
+    "html_url": "https://github.com/plone/plone-contributor-statistics/issues/14",
+    "repository_full_name": "plone/plone-contributor-statistics",
+    "updated_at": "2026-10-16T11:10:30Z",
+    "labels": [
+      "04 type: enhancement",
+      "13 prio: normal",
+      "42 lvl: moderate",
+      "99 tag: community recognition"
+    ],
+    "comments": 0
+  },
+  "ai": {
+    "provider": "openai",
+    "model": "gpt-4o-mini"
+  },
+  "summary_markdown": "## What this issue is about\nThis issue addresses the need to better distinguish between merged/released PLIPs (Proposed Location Implementation Plans) and those that have been abandoned or rejected. Currently, both types are labeled the same, which can lead to confusion.\n\n## What needs to be done\nWe need to create a new label specifically for completed PLIPs. The goal is to allow users to easily identify accepted and merged PLIPs as opposed to those that have been rejected. The specifics of implementing this change, including label naming and criteria for labeling, are still open for discussion.\n\n## Helpful background\nWhile many PLIPs are marked with the \"reason: completed\" status, the lack of a distinct label creates complications for tracking progress and community recognition. Previous discussions have included suggestions on how to handle this differentiation, but no clear consensus has been reached yet.\n\n## Good first steps\n1. Review existing issues related to PLIP statuses to understand the context.\n2. Think about how to clearly define what constitutes a completed PLIP.\n3. Consider potential names for a new label that captures this status.\n4. Engage with other contributors, such as @jensens and @sneridagh, for insights or past experiences with PLIP labeling.\n\nFeel free to jump in with your thoughts or proposals!",
+  "workflow": {
+    "repository": "syslabcom/activity-recognition",
+    "run_id": "38899229388",
+    "run_number": "3873",
+    "attempt": "1",
+    "url": "https://github.com/syslabcom/activity-recognition/actions/runs/38899229388",
+    "sha": "8bc833c4669ce5a699539cf953872509834c356b"
+  }
+}

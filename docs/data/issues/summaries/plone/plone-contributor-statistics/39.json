@@ -1,0 +1,33 @@
+{
+  "version": 1,
+  "status": "success",
+  "generated_at": "2026-10-16T12:15:54Z",
+  "source_issue": {
+    "id": 5881091938,
+    "number": 39,
+    "title": "Merge commits are counted as commits for the person who merged",
+    "html_url": "https://github.com/plone/plone-contributor-statistics/issues/39",
+    "repository_full_name": "plone/plone-contributor-statistics",
+    "updated_at": "2026-10-16T11:10:52Z",
+    "labels": [
+      "01 type: bug",
+      "13 prio: normal",
+      "41 lvl: easy",
+      "99 tag: github stats"
+    ],
+    "comments": 0
+  },
+  "ai": {
+    "provider": "openai",
+    "model": "gpt-4o-mini"
+  },
+  "summary_markdown": "## What this issue is about\nThis issue addresses a bug in how commit statistics are generated for contributors in the Plone project. Specifically, when a pull request (PR) is merged, the merge commit incorrectly counts towards the total commits of the person who performed the merge instead of the original author of the code.\n\n## What needs to be done\nWe need to adjust the code in `plone_contributors.py` and `volto_stats.py` to exclude merge commits from the counted commits. Merge commits can be identified as those with more than one parent. We also want to ensure that previous contributor data can be recalculated with this change.\n\n## Helpful background\nIn Git, a **merge commit** is created when two branches are combined. Merge commits can skew contributions, as they may reflect the work of the person merging rather than the original developers. Release commits handled by zest.releaser are valid contributions and should still be counted.\n\n## Good first steps\n1. Review the current logic in `plone_contributors.py` and `volto_stats.py`.\n2. Implement the suggested fix to skip merge commits in the calculations.\n3. Test the changes to ensure contributor stats are correctly reported.\n4. If you have questions or need clarifications, feel free to ask in the issue discussion.",
+  "workflow": {
+    "repository": "syslabcom/activity-recognition",
+    "run_id": "38899229388",
+    "run_number": "3873",
+    "attempt": "1",
+    "url": "https://github.com/syslabcom/activity-recognition/actions/runs/38899229388",
+    "sha": "8bc833c4669ce5a699539cf953872509834c356b"
+  }
+}
