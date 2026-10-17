@@ -1,7 +1,7 @@
 {
   "version": 1,
   "status": "success",
-  "generated_at": "2026-10-17T21:07:56Z",
+  "generated_at": "2026-10-17T22:08:02Z",
   "organization": "plone",
   "state": "open",
   "slug": "lvl-easy",
@@ -9,7 +9,7 @@
   "required_labels": [
     "41 lvl: easy"
   ],
-  "issue_count": 87,
+  "issue_count": 86,
   "issues": [
     {
       "id": 5881093246,
@@ -40,37 +40,6 @@
         "model": "gpt-4o-mini",
         "summary_markdown": "```markdown\n## What this issue is about\nThis issue addresses two problems in the PLIP (Python Library for Interactive Programming) statistics collection scripts: `plip_stats.py` and `plone_plips.py`. Both scripts are designed to gather data related to PLIP contributions but are currently facing technical bugs.\n\n## What needs to be done\n1. Fix the crash in `plip_stats.py` when using the `--year` or `--end-date` options by ensuring correct timezone handling for date comparisons.\n2. Modify `plone_plips.py` to utilize the GitHub token for authenticated requests, avoiding limitations on the number of requests that can be made.\n\n## Helpful background\n- **PLIP**: A framework for managing Plone improvement proposals.\n- **Timezone-aware dates**: These are dates that keep track of the time zone they were recorded in, which is important to avoid errors during comparisons.\n- The current code does not handle date comparisons properly, leading to crashes and inefficient data retrieval.\n\n## Good first steps\n1. Review the `plip_stats.py` code for how it handles date comparisons and adjust it to ensure all dates used are timezone-aware.\n2. Look into the token authentication function in `plone_plips.py` and modify it to properly retrieve the GitHub token.\n3. Test your changes to ensure that the scripts work without crashing and make authenticated requests. Documentation updates may be needed for clarity.\n```",
         "path": "data/issues/summaries/plone/plone-contributor-statistics/44.json"
-      }
-    },
-    {
-      "id": 5881093042,
-      "number": 43,
-      "title": "2011 data files are missing, and reports skip missing years without warning",
-      "html_url": "https://github.com/plone/plone-contributor-statistics/issues/43",
-      "repository_full_name": "plone/plone-contributor-statistics",
-      "repository_url": "https://api.github.com/repos/plone/plone-contributor-statistics",
-      "state": "open",
-      "created_at": "2026-10-16T08:42:22Z",
-      "updated_at": "2026-10-16T11:11:03Z",
-      "comments": 0,
-      "author": {
-        "login": "jensens",
-        "html_url": "https://github.com/jensens"
-      },
-      "assignees": [],
-      "labels": [
-        "01 type: bug",
-        "14 prio: low",
-        "41 lvl: easy",
-        "99 tag: data"
-      ],
-      "contributor_summary": {
-        "status": "available",
-        "generated_at": "2026-10-16T12:15:39Z",
-        "source_issue_updated_at": "2026-10-16T11:11:03Z",
-        "model": "gpt-4o-mini",
-        "summary_markdown": "# Issue #43: Missing 2011 Data Files\n\n## What this issue is about\nThis issue addresses the absence of data files for the year 2011 in the `plone-contributor-statistics` repository. Specifically, the files `data/2011-plone-contributors.csv` and `data/2011-plone-organisation-contributors.csv` are missing, which causes reports to skip over 2011 without notifying users.\n\n## What needs to be done\n1. Create the missing data files for 2011.\n2. Update the report generators (`generate_contributor_report.py` and `generate_volto_team_report.py`) to issue warnings or errors if any requested year lacks data.\n\n## Helpful background\nThe missing data impacts reports that cover a range of years including 2011, resulting in understated statistics. While the reports published so far are unaffected, fixing this will ensure future reports provide accurate information.\n\n## Good first steps\n1. Check if you can create the necessary CSV files for 2011, using data from previous years as a reference.\n2. Familiarize yourself with the report generators by reviewing their code.\n3. Consider contributing by implementing the warning/error handling for missing years.   \n4. Reach out for guidance if anything is unclear, as some discussion points in the issue may need clarification.",
-        "path": "data/issues/summaries/plone/plone-contributor-statistics/43.json"
       }
     },
     {
@@ -2694,10 +2663,10 @@
   "message": null,
   "workflow": {
     "repository": "syslabcom/activity-recognition",
-    "run_id": "39069628998",
-    "run_number": "3906",
+    "run_id": "39073797248",
+    "run_number": "3907",
     "attempt": "1",
-    "url": "https://github.com/syslabcom/activity-recognition/actions/runs/39069628998",
-    "sha": "8e1933d311b1a2105c43a499a3268ff9b596e256"
+    "url": "https://github.com/syslabcom/activity-recognition/actions/runs/39073797248",
+    "sha": "bb54142ad35e56ebddc1f7634cf6426191ed54b1"
   }
 }
