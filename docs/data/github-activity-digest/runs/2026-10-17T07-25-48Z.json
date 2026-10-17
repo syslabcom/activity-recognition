@@ -1,0 +1,57 @@
+{
+  "version": 1,
+  "task": {
+    "slug": "github-activity-digest",
+    "title": "GitHub Activity Digest"
+  },
+  "status": "success",
+  "generated_at": "2026-10-17T07:25:48Z",
+  "message": null,
+  "period": {
+    "days": 7,
+    "start": "2026-10-10",
+    "end": "2026-10-17"
+  },
+  "source": {
+    "repository": "syslabcom/github-activity-digest",
+    "action_ref": null,
+    "config_path": "digest/config.json",
+    "mode": "organization",
+    "organization": "plone",
+    "user": "pilz",
+    "topics": [],
+    "repositories": []
+  },
+  "filters": {
+    "exclude_repos": [],
+    "include_repos": [],
+    "only_public": false,
+    "only_private": false,
+    "max_repos": 500
+  },
+  "counts": {
+    "repos_processed": 430,
+    "active_repos": 31
+  },
+  "ai": {
+    "provider": "openai",
+    "model": "gpt-4o-mini",
+    "language": "English",
+    "prompt_template": "prompt-template-activity-recognition.txt"
+  },
+  "summary": "# 📊 WEEKLY SUMMARY\n2026-10-10 to 2026-10-17\n\nThis week, the Plone organization has seen substantial contributions across a variety of repositories, with ongoing maintenance work and feature enhancements being central to the updates. Multiple pull requests were merged, improving base functionality, fixing issues, and preparing for future features.\n\n## 📦 plone/plone.app.event\n[2 files changed, +2/-2 lines, 1 pull request merged]  \nDependabot updated the `astral-sh/setup-uv` from version 10.2.0 to 10.3.0, addressing potential security vulnerabilities.\n\n## 📦 plone/plone.app.multilingual\n[27 files changed, +69/-57 lines, 1 pull request merged]  \nMikel Larreategi (erral) and Maurits van Rees removed `plone.restapi` and `plone.rest` as hard dependencies. Significant refactoring and configuration updates were made, including an increase in test matrix support.\n\n## 📦 plone/plone.app.querystring\n[25 files changed, +738/-8 lines, 4 pull requests merged]  \nMultiple improvements were implemented, including enhancements by Érico Andrei (ericof) and Peter Mathis (petschki) to refine query processing and handle virtual hosting paths more effectively. Major features included the addition of a `currentUID` operation.\n\n## 📦 plone/plone.app.relationfield\n[2 files changed, +2/-2 lines, 1 pull request merged]  \nSimilar to previous updates, this repository also saw a version bump of `astral-sh/setup-uv` by Dependabot, ensuring ongoing compatibility and security.\n\n## 📦 plone/plone.portlets\n[4 files changed, +70/-65 lines, 1 pull request merged]  \nGil Forcada Codinachs advanced the migration of metadata from `setup.py` to `pyproject.toml`, contributing to better project structure and management.\n\n## 📦 plone/plone.locking\n[10 files changed, +118/-104 lines, 2 pull requests merged]  \nContinuing metadata migration efforts, Gil Forcada (gforcada) facilitated integration with `pyproject.toml`, alongside Dependabot’s version upgrades.\n\n## 📦 plone/plone.portlet.collection\n[4 files changed, +70/-57 lines, 1 pull request merged]  \nGil Forcada Codinachs updated the portlet's build configuration by transitioning metadata from `setup.py` to `pyproject.toml`.\n\n## 📦 plone/plone.portlet.static\n[4 files changed, +63/-57 lines, 1 pull request merged]  \nOnce again, metadata migration was active with Gil Forcada’s contributions, improving the structural integrity of the project.\n\n## 📦 plone/Products.CMFPlone\n[2 files changed, +6/-2 lines, 1 pull request merged]  \nMrTango implemented improvements in the Robot testing framework for the content-browser link target selection.\n\n## 📦 plone/plone.memoize\n[17 files changed, +136/-124 lines, 2 pull requests merged]  \nFurther developments aimed at modernizing the build process and improving the dependency management system were carried out by gforcada.\n\n## 📦 plone/plone.app.layout\n[9 files changed, +63/-33 lines, 1 pull request merged]  \nNew breadcrumb microdata features were introduced by 1letter, enhancing SEO and accessibility of Plone content.\n\n## 📦 plone/plone.restapi\n[33 files changed, +777/-177 lines, 4 pull requests merged]  \nQuality of the Plone REST API was enhanced with significant bug fixes and feature implementations, notably with handling content rules which now return 404 errors when not activated, improving functionality and user experience.\n\n## 📦 plone/aurora\n[315 files changed, +9152/-2234 lines, 7 pull requests merged]  \nVictor Fernandez de Alba (sneridagh) made extensive contributions, enhancing functionality and performance, particularly around resource routing and middleware management.\n\n## 📦 plone/pytest-plone\n[6 files changed, +10/-10 lines, 1 pull request merged]  \nDependabot again updated dependency versions, keeping compatibility and security in check.\n\n## 📦 plone/plone-volto\n[9 files changed, +573/-28 lines, 2 pull requests merged]  \nSignificant front-end work was accomplished, improving user interface features in Volto by sneridagh and continuing the modernization push.\n\n## 📦 plone/volto\n[9 files changed, +30/-4 lines, 3 pull requests merged]  \nMore widgets were added, and existing controls were refined in a step towards more dynamic user interactions in Volto.\n\n## 📦 plone/cookiecutter-zope-instance\n[74 files changed, +2627/-214 lines, 2 pull requests merged]  \nJens W. Klein introduced critical fixes to the context overrides for the cookiecutter templates, greatly improving stability.\n\n## 📦 plone/documentation\n[7 files changed, +92/-44 lines, 4 pull requests merged]  \nDocumentation updates increased clarity, particularly regarding recent changes in the Classic UI and Backend documentation, involving contributions from multiple authors.\n\n## 📦 plone/aurora\n[227 files changed, +6213/-5371 lines, 7 pull requests merged]  \nSubstantial updates were made to this repository focused on improving the internal architecture and user experience within Plone, spearheaded by Victor Fernandez de Alba.\n\n## 📦 plone/plone-contributor-statistics\n[9 files changed, +286/-11 lines, 2 pull requests merged]  \nImprovements included fixing organizational mappings and introducing historical data contributing to enhanced analytics on contributors.\n\n## 📦 plone/plone-ping\n[172 files changed, +354/-353 lines, 0 pull requests merged]  \nContinuous updates to status monitoring scripts were pushed by Upptime Bot for various Plone services.\n\nThis week’s activities indicate a robust flow of updates and improvements across the Plone ecosystem, with particular focus on dependency management, architectural enhancements, and user-facing features.\n\n### Contributors:\n- Mikel Larreategi (erral)\n- Maurits van Rees (mauritsvanrees)\n- Gil Forcada Codinachs (gforcada)\n- Érico Andrei (ericof)\n- Peter Mathis (petschki)\n- David Glick (davisagli)\n- MrTango\n- Victor Fernandez de Alba (sneridagh)\n- Johannes Raggam (thet)\n- Jens W. Klein (jensens)\n- Upptime Bot\n- Tishasoumya-02\n- kunalKumar-13\n- Marcel Liebischer (mliebischer)\n- 1letter\n- wesleybl\n\nAutomatically generated from 31 active repositories.",
+  "artifacts": {
+    "latest_json_path": "data/github-activity-digest/latest.json",
+    "latest_markdown_path": "data/github-activity-digest/latest.md",
+    "run_json_path": "data/github-activity-digest/runs/2026-10-17T07-25-48Z.json",
+    "run_markdown_path": "data/github-activity-digest/runs/2026-10-17T07-25-48Z.md"
+  },
+  "workflow": {
+    "repository": "syslabcom/activity-recognition",
+    "run_id": "39013364648",
+    "run_number": "201",
+    "attempt": "1",
+    "url": "https://github.com/syslabcom/activity-recognition/actions/runs/39013364648",
+    "sha": "a6921a517310fc15117f11256fa2e1f237145ed5"
+  }
+}
