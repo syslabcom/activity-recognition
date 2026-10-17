@@ -1,19 +1,19 @@
 ---
 title: "Plone issue list — Level: Easy"
 permalink: "/issues/lvl-easy/"
-generated_at: "2026-10-17T14:08:10Z"
+generated_at: "2026-10-17T15:08:09Z"
 organization: "plone"
-issue_count: 90
+issue_count: 89
 required_labels:
   - "41 lvl: easy"
 ---
 
 # Plone issue list — Level: Easy
 
-Generated: `2026-10-17T14:08:10Z`  
+Generated: `2026-10-17T15:08:09Z`  
 Organization: `plone`  
 Required label: `41 lvl: easy`  
-Issue count: `90`
+Issue count: `89`
 
 Sorted by last updated date, newest first.
 
@@ -23,7 +23,6 @@ Sorted by last updated date, newest first.
 | 2026-10-16 11:11 UTC | `plone/plone-contributor-statistics` | [#43 2011 data files are missing, and reports skip missing years without warning](https://github.com/plone/plone-contributor-statistics/issues/43) | `jensens` | `01 type: bug`, `14 prio: low`, `41 lvl: easy`, `99 tag: data` |
 | 2026-10-16 11:10 UTC | `plone/plone-contributor-statistics` | [#40 Org stats and multi-year summaries can't find their input in data/, so their outputs are out of date](https://github.com/plone/plone-contributor-statistics/issues/40) | `jensens` | `01 type: bug`, `12 prio: high`, `41 lvl: easy`, `99 tag: github stats` |
 | 2026-10-16 11:10 UTC | `plone/plone-contributor-statistics` | [#39 Merge commits are counted as commits for the person who merged](https://github.com/plone/plone-contributor-statistics/issues/39) | `jensens` | `01 type: bug`, `13 prio: normal`, `41 lvl: easy`, `99 tag: github stats` |
-| 2026-10-16 11:10 UTC | `plone/plone-contributor-statistics` | [#37 PR interactions: pagination stops early, so CMFPlone and Volto get 0 rows for past years](https://github.com/plone/plone-contributor-statistics/issues/37) | `jensens` | `01 type: bug`, `13 prio: normal`, `41 lvl: easy`, `99 tag: github stats` |
 | 2026-10-02 00:53 UTC | `plone/volto` | [#7947 Improve `@plone/client` documentation](https://github.com/plone/volto/issues/7947) | `stevepiercy` | `04 type: enhancement`, `31 needs: help`, `33 needs: docs`, `41 lvl: easy`, `dependencies`, `27 status: stale` |
 | 2026-09-27 10:01 UTC | `plone/volto` | [#955 user menu popup is not available on the site setup pages](https://github.com/plone/volto/issues/955) | `fredvd` | `01 type: bug`, `41 lvl: easy` |
 | 2026-09-13 19:21 UTC | `plone/documentation` | [#2065 Add Plone documentation to sites that attract first-time contributors](https://github.com/plone/documentation/issues/2065) | `stevepiercy` | `33 needs: docs`, `41 lvl: easy`, `99 tag: good first issue`, `99 tag: hacktoberfest` |

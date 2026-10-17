@@ -1,7 +1,7 @@
 {
   "version": 1,
   "status": "success",
-  "generated_at": "2026-10-17T14:08:10Z",
+  "generated_at": "2026-10-17T15:08:09Z",
   "organization": "plone",
   "state": "open",
   "slug": "lvl-easy",
@@ -9,7 +9,7 @@
   "required_labels": [
     "41 lvl: easy"
   ],
-  "issue_count": 90,
+  "issue_count": 89,
   "issues": [
     {
       "id": 5881093246,
@@ -133,37 +133,6 @@
         "model": "gpt-4o-mini",
         "summary_markdown": "## What this issue is about\nThis issue addresses a bug in how commit statistics are generated for contributors in the Plone project. Specifically, when a pull request (PR) is merged, the merge commit incorrectly counts towards the total commits of the person who performed the merge instead of the original author of the code.\n\n## What needs to be done\nWe need to adjust the code in `plone_contributors.py` and `volto_stats.py` to exclude merge commits from the counted commits. Merge commits can be identified as those with more than one parent. We also want to ensure that previous contributor data can be recalculated with this change.\n\n## Helpful background\nIn Git, a **merge commit** is created when two branches are combined. Merge commits can skew contributions, as they may reflect the work of the person merging rather than the original developers. Release commits handled by zest.releaser are valid contributions and should still be counted.\n\n## Good first steps\n1. Review the current logic in `plone_contributors.py` and `volto_stats.py`.\n2. Implement the suggested fix to skip merge commits in the calculations.\n3. Test the changes to ensure contributor stats are correctly reported.\n4. If you have questions or need clarifications, feel free to ask in the issue discussion.",
         "path": "data/issues/summaries/plone/plone-contributor-statistics/39.json"
-      }
-    },
-    {
-      "id": 5881091244,
-      "number": 37,
-      "title": "PR interactions: pagination stops early, so CMFPlone and Volto get 0 rows for past years",
-      "html_url": "https://github.com/plone/plone-contributor-statistics/issues/37",
-      "repository_full_name": "plone/plone-contributor-statistics",
-      "repository_url": "https://api.github.com/repos/plone/plone-contributor-statistics",
-      "state": "open",
-      "created_at": "2026-10-16T08:42:15Z",
-      "updated_at": "2026-10-16T11:10:48Z",
-      "comments": 0,
-      "author": {
-        "login": "jensens",
-        "html_url": "https://github.com/jensens"
-      },
-      "assignees": [],
-      "labels": [
-        "01 type: bug",
-        "13 prio: normal",
-        "41 lvl: easy",
-        "99 tag: github stats"
-      ],
-      "contributor_summary": {
-        "status": "available",
-        "generated_at": "2026-10-16T12:15:58Z",
-        "source_issue_updated_at": "2026-10-16T11:10:48Z",
-        "model": "gpt-4o-mini",
-        "summary_markdown": "## What this issue is about\nThis issue addresses a bug in the `plone_pr_interactions.py` script. Currently, it retrieves pull requests (PRs) sorted by their last update date and stops early if it encounters an empty page, leading to inaccurate activity reports for older years in the Plone ecosystem, specifically for `CMFPlone` and `Volto`.\n\n## What needs to be done\n1. Modify the pagination logic to continue fetching PRs as long as there are updates after the target date range.\n2. Change the filtering criteria to use the PR's creation or merge date instead of the last updated date.\n3. Recollect the data for all years to ensure accurate statistics.\n\n## Helpful background\nThis issue is tagged as a normal priority bug and is considered easy to work on. It affects how PR interactions are reported, influencing the statistics visible in `reports/github-pr-interactions-report-*.md`.\n\n## Good first steps\n1. Familiarize yourself with the `plone_pr_interactions.py` file, particularly around line 197.\n2. Understand pagination and how the current logic stops prematurely.\n3. Consider how to implement the suggested changes and test them to confirm they work as expected.\n4. You may want to coordinate with others on potential approaches if you encounter any ambiguity.",
-        "path": "data/issues/summaries/plone/plone-contributor-statistics/37.json"
       }
     },
     {
@@ -2787,10 +2756,10 @@
   "message": null,
   "workflow": {
     "repository": "syslabcom/activity-recognition",
-    "run_id": "39039447998",
-    "run_number": "3899",
+    "run_id": "39043709782",
+    "run_number": "3900",
     "attempt": "1",
-    "url": "https://github.com/syslabcom/activity-recognition/actions/runs/39039447998",
-    "sha": "d49e4c8d20f01e1eea4c4654c82f84fa9c50e173"
+    "url": "https://github.com/syslabcom/activity-recognition/actions/runs/39043709782",
+    "sha": "95aa721dc12ad6e8c3d1a9a5e5f186ec29f5adb1"
   }
 }
