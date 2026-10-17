@@ -1,7 +1,7 @@
 {
   "version": 1,
   "status": "success",
-  "generated_at": "2026-10-17T16:09:42Z",
+  "generated_at": "2026-10-17T17:07:34Z",
   "organization": "plone",
   "state": "open",
   "slug": "lvl-moderate",
@@ -9,7 +9,7 @@
   "required_labels": [
     "42 lvl: moderate"
   ],
-  "issue_count": 76,
+  "issue_count": 74,
   "issues": [
     {
       "id": 5881090987,
@@ -73,68 +73,6 @@
         "model": "gpt-4o-mini",
         "summary_markdown": "# Contributor Summary for Issue #46: Check 2025 Community Data Against Foundation Board Minutes\n\n## What this issue is about\nThis issue addresses the need to verify the 2025 community data files (located in `data/community-contributions/2025-*.csv`) against the official Foundation Board minutes. Past reviews highlighted discrepancies, so a similar check for 2025 is crucial.\n\n## What needs to be done\nYou will need to:\n1. Review the 2025 strategic sprints and release managers against the minutes.\n2. Ensure all entries are accurate and complete.\n3. Add a \"Source\" column in the CSV files with relevant links to the minutes for each entry.\n\n## Helpful background\n- **Strategic sprints:** These are special community events mentioned in the minutes. Their details (like funding and designation) need verification.\n- **Release managers:** Roles filled during releases; ensure the names listed are correct.\n- Podcasts related to 2025 must also be documented since they are missing from the current data.\n\n## Good first steps\n1. Familiarize yourself with the Foundation Board minutes for 2025 [here](https://plone.org/foundation/meetings/minutes).\n2. Start by checking the entries for strategic sprints against the provided URLs.\n3. Document any discrepancies you find and propose updates through a GitHub pull request.\n\nFeel free to ask questions if you need help navigating the data or the minutes!",
         "path": "data/issues/summaries/plone/plone-contributor-statistics/46.json"
-      }
-    },
-    {
-      "id": 5881092729,
-      "number": 42,
-      "title": "PR counting differs: Volto uses creation date, core uses merge date; early-stop check; backport PRs",
-      "html_url": "https://github.com/plone/plone-contributor-statistics/issues/42",
-      "repository_full_name": "plone/plone-contributor-statistics",
-      "repository_url": "https://api.github.com/repos/plone/plone-contributor-statistics",
-      "state": "open",
-      "created_at": "2026-10-16T08:42:21Z",
-      "updated_at": "2026-10-16T11:11:00Z",
-      "comments": 0,
-      "author": {
-        "login": "jensens",
-        "html_url": "https://github.com/jensens"
-      },
-      "assignees": [],
-      "labels": [
-        "01 type: bug",
-        "13 prio: normal",
-        "42 lvl: moderate",
-        "99 tag: github stats"
-      ],
-      "contributor_summary": {
-        "status": "available",
-        "generated_at": "2026-10-16T12:15:43Z",
-        "source_issue_updated_at": "2026-10-16T11:11:00Z",
-        "model": "gpt-4o-mini",
-        "summary_markdown": "```markdown\n## What this issue is about\nThis issue addresses discrepancies in how pull requests (PRs) are counted between the core stats and Volto stats for Plone. Specifically, it highlights differences in the date used for counting and how PRs are listed.\n\n## What needs to be done\n1. Modify `volto_stats.py` to use the merge date (`merged_at`) instead of the creation date (`created:`) for counting PRs.\n2. Adjust the stop condition in `plone_contributors.py` to check `updated_at < start_date`, rather than stopping at `merged_at`.\n3. Decide if backport PRs should be counted and update the README to document this decision.\n\n## Helpful background\nCurrently, Volto counts a PR based on its creation date, while the core stats rely on the merge date. This inconsistency can lead to confusion. Additionally, the early stop in core listings may omit important PRs based on the wrong criteria.\n\n## Good first steps\n1. Review `volto_stats.py` and `plone_contributors.py` to understand how PRs are currently counted.\n2. Consider testing the proposed changes in a local environment to ensure they resolve the counting discrepancies.\n3. Participate in discussions if you're unsure about the backport PRs decision.\n```",
-        "path": "data/issues/summaries/plone/plone-contributor-statistics/42.json"
-      }
-    },
-    {
-      "id": 5881092441,
-      "number": 41,
-      "title": "API errors and rate limits are recorded as zero activity; partial runs overwrite the normal data files",
-      "html_url": "https://github.com/plone/plone-contributor-statistics/issues/41",
-      "repository_full_name": "plone/plone-contributor-statistics",
-      "repository_url": "https://api.github.com/repos/plone/plone-contributor-statistics",
-      "state": "open",
-      "created_at": "2026-10-16T08:42:20Z",
-      "updated_at": "2026-10-16T11:10:57Z",
-      "comments": 0,
-      "author": {
-        "login": "jensens",
-        "html_url": "https://github.com/jensens"
-      },
-      "assignees": [],
-      "labels": [
-        "01 type: bug",
-        "12 prio: high",
-        "42 lvl: moderate",
-        "99 tag: github stats"
-      ],
-      "contributor_summary": {
-        "status": "available",
-        "generated_at": "2026-10-16T12:15:46Z",
-        "source_issue_updated_at": "2026-10-16T11:10:57Z",
-        "model": "gpt-4o-mini",
-        "summary_markdown": "# Contributor Guide for Issue #41: API Errors and Rate Limits\n\n## What this issue is about\nThis issue addresses how the GitHub API errors and rate limits are not being properly recorded in the `plone-contributor-statistics` project. Specifically, when a request fails—especially with a 403 error—the system incorrectly logs zero activity or produces incomplete data files.\n\n## What needs to be done\n1. Update how the system handles 403 and 429 errors: check for rate limit headers, wait if needed, and retry requests.\n2. Change the behavior so it raises an error on failures instead of logging zero.\n3. Only write the final CSV file if all data is collected successfully; otherwise, create a checkpoint file.\n4. Consider eliminating the fallback to a fixed set of repositories or clearly naming such outputs.\n5. Optionally add logging for which requests failed.\n\n## Helpful background\nThis issue is classified as a bug and is considered high priority. Understanding HTTP status codes (like 403 for forbidden access and 429 for rate limiting) will be helpful for contributors.\n\n## Good first steps\n1. Familiarize yourself with the `plone_contributors.py` and `volto_stats.py` files mentioned in the issue.\n2. Look into how API requests are currently managed and try to reproduce the error.\n3. Join the conversation by sharing your ideas or asking questions about unclear points.",
-        "path": "data/issues/summaries/plone/plone-contributor-statistics/41.json"
       }
     },
     {
@@ -2373,10 +2311,10 @@
   "message": null,
   "workflow": {
     "repository": "syslabcom/activity-recognition",
-    "run_id": "39048186994",
-    "run_number": "3901",
+    "run_id": "39052372064",
+    "run_number": "3902",
     "attempt": "1",
-    "url": "https://github.com/syslabcom/activity-recognition/actions/runs/39048186994",
-    "sha": "eae04c269412db76d3d41252ba4a2442d78a4057"
+    "url": "https://github.com/syslabcom/activity-recognition/actions/runs/39052372064",
+    "sha": "1b4b410df5a241604df79715b371dc46c83c8fb9"
   }
 }
