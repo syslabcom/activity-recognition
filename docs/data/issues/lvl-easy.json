@@ -1,7 +1,7 @@
 {
   "version": 1,
   "status": "success",
-  "generated_at": "2026-10-17T15:08:09Z",
+  "generated_at": "2026-10-17T16:09:42Z",
   "organization": "plone",
   "state": "open",
   "slug": "lvl-easy",
@@ -9,7 +9,7 @@
   "required_labels": [
     "41 lvl: easy"
   ],
-  "issue_count": 89,
+  "issue_count": 88,
   "issues": [
     {
       "id": 5881093246,
@@ -71,37 +71,6 @@
         "model": "gpt-4o-mini",
         "summary_markdown": "# Issue #43: Missing 2011 Data Files\n\n## What this issue is about\nThis issue addresses the absence of data files for the year 2011 in the `plone-contributor-statistics` repository. Specifically, the files `data/2011-plone-contributors.csv` and `data/2011-plone-organisation-contributors.csv` are missing, which causes reports to skip over 2011 without notifying users.\n\n## What needs to be done\n1. Create the missing data files for 2011.\n2. Update the report generators (`generate_contributor_report.py` and `generate_volto_team_report.py`) to issue warnings or errors if any requested year lacks data.\n\n## Helpful background\nThe missing data impacts reports that cover a range of years including 2011, resulting in understated statistics. While the reports published so far are unaffected, fixing this will ensure future reports provide accurate information.\n\n## Good first steps\n1. Check if you can create the necessary CSV files for 2011, using data from previous years as a reference.\n2. Familiarize yourself with the report generators by reviewing their code.\n3. Consider contributing by implementing the warning/error handling for missing years.   \n4. Reach out for guidance if anything is unclear, as some discussion points in the issue may need clarification.",
         "path": "data/issues/summaries/plone/plone-contributor-statistics/43.json"
-      }
-    },
-    {
-      "id": 5881092176,
-      "number": 40,
-      "title": "Org stats and multi-year summaries can't find their input in data/, so their outputs are out of date",
-      "html_url": "https://github.com/plone/plone-contributor-statistics/issues/40",
-      "repository_full_name": "plone/plone-contributor-statistics",
-      "repository_url": "https://api.github.com/repos/plone/plone-contributor-statistics",
-      "state": "open",
-      "created_at": "2026-10-16T08:42:19Z",
-      "updated_at": "2026-10-16T11:10:55Z",
-      "comments": 0,
-      "author": {
-        "login": "jensens",
-        "html_url": "https://github.com/jensens"
-      },
-      "assignees": [],
-      "labels": [
-        "01 type: bug",
-        "12 prio: high",
-        "41 lvl: easy",
-        "99 tag: github stats"
-      ],
-      "contributor_summary": {
-        "status": "available",
-        "generated_at": "2026-10-16T12:15:50Z",
-        "source_issue_updated_at": "2026-10-16T11:10:55Z",
-        "model": "gpt-4o-mini",
-        "summary_markdown": "```markdown\n## What this issue is about\nThis issue addresses a bug where statistics scripts can’t find necessary input files since the CSVs were moved to the `data/` directory. As a result, several outputs are now outdated, affecting how we track contributor statistics.\n\n## What needs to be done\n1. Update the scripts in `organisation_stats.py` and `multi_year_summary.py` to read from and write to the `data/` directory.\n2. Fix or remove the import of `top_contributors_summary`, as it is currently missing.\n3. Regenerate all organizational files and summaries.\n4. Delete the outdated summary files if they have been replaced by `reports/github-contributor-report.md`.\n\n## Helpful background\nThe issue arises because the scripts are still referencing files in the original location, which is no longer valid. Outdated names of organizations also mix with newer names, complicating data analysis.\n\n## Good first steps\n1. Familiarize yourself with the relevant scripts: `organisation_stats.py`, `multi_year_summary.py`, and the `Makefile`.\n2. Check the current structure of the `data/` directory and how CSV files are named.\n3. Consider checking the existing reports in `reports/github-contributor-report.md` to understand the needed outputs.\n4. Make small changes to the scripts and run tests to confirm they read from the correct location.\n```",
-        "path": "data/issues/summaries/plone/plone-contributor-statistics/40.json"
       }
     },
     {
@@ -2756,10 +2725,10 @@
   "message": null,
   "workflow": {
     "repository": "syslabcom/activity-recognition",
-    "run_id": "39043709782",
-    "run_number": "3900",
+    "run_id": "39048186994",
+    "run_number": "3901",
     "attempt": "1",
-    "url": "https://github.com/syslabcom/activity-recognition/actions/runs/39043709782",
-    "sha": "95aa721dc12ad6e8c3d1a9a5e5f186ec29f5adb1"
+    "url": "https://github.com/syslabcom/activity-recognition/actions/runs/39048186994",
+    "sha": "eae04c269412db76d3d41252ba4a2442d78a4057"
   }
 }
