@@ -1,7 +1,7 @@
 ---
 title: "Plone issue list — Level: Moderate"
 permalink: "/issues/lvl-moderate/"
-generated_at: "2026-10-18T20:09:27Z"
+generated_at: "2026-10-18T21:07:45Z"
 organization: "plone"
 issue_count: 73
 required_labels:
@@ -10,7 +10,7 @@ required_labels:
 
 # Plone issue list — Level: Moderate
 
-Generated: `2026-10-18T20:09:27Z`  
+Generated: `2026-10-18T21:07:45Z`  
 Organization: `plone`  
 Required label: `42 lvl: moderate`  
 Issue count: `73`
@@ -19,7 +19,7 @@ Sorted by last updated date, newest first.
 
 | Updated | Repository | Issue | Author | Labels |
 | --- | --- | --- | --- | --- |
-| 2026-10-16 11:11 UTC | `plone/plone-contributor-statistics` | [#46 Check 2025 community data against the Foundation Board minutes](https://github.com/plone/plone-contributor-statistics/issues/46) | `jensens` | `01 type: bug`, `12 prio: high`, `31 needs: help`, `42 lvl: moderate`, `99 tag: data`, `99 tag: community recognition` |
+| 2026-10-18 20:38 UTC | `plone/plone-contributor-statistics` | [#46 Check 2025 community data against the Foundation Board minutes](https://github.com/plone/plone-contributor-statistics/issues/46) | `jensens` | `04 type: enhancement`, `12 prio: high`, `31 needs: help`, `42 lvl: moderate`, `99 tag: data`, `99 tag: community recognition` |
 | 2026-10-16 11:10 UTC | `plone/plone-contributor-statistics` | [#14 Count only merged and release PLIPs](https://github.com/plone/plone-contributor-statistics/issues/14) | `tisto` | `04 type: enhancement`, `13 prio: normal`, `42 lvl: moderate`, `99 tag: community recognition` |
 | 2026-09-29 13:05 UTC | `plone/Products.CMFPlone` | [#3953 PLIP: Start separating Blicca (Classic UI) code from the core](https://github.com/plone/Products.CMFPlone/issues/3953) | `tisto` | `31 needs: help`, `99 tag: cleanup`, `03 type: feature (plip)`, `13 prio: normal`, `42 lvl: moderate`, `53 target: major`, `99 tag: Classic UI` |
 | 2026-09-28 00:07 UTC | `plone/aurora` | [#179 System requirements should be updated](https://github.com/plone/aurora/issues/179) | `stevepiercy` | `33 needs: docs`, `42 lvl: moderate` |
