@@ -1,110 +1,153 @@
 # 📊 WEEKLY SUMMARY
-2026-10-10 to 2026-10-17
+**2026-10-11 to 2026-10-18**
 
-This week, the Plone organization has seen substantial contributions across a variety of repositories, with ongoing maintenance work and feature enhancements being central to the updates. Multiple pull requests were merged, improving base functionality, fixing issues, and preparing for future features.
+This week, Plone's open-source ecosystem saw significant contributions across numerous repositories, with a focus on infrastructure improvements and contributions to ongoing project features. Particularly notable were metadata migrations and updates to improve the functionality of various Plone components.
+
+## 📦 plone/plone.event
+**[10 files changed, +124/-102 lines, 1 pull request merged]**  
+Gil Forcada Codinachs implemented a feature to move project metadata from `setup.py` to `pyproject.toml`, aiming to enhance configuration management. 
+
+## 📦 plone/plone.formwidget.recurrence
+**[25 files changed, +190/-172 lines, 1 pull request merged]**  
+The project saw improvements by relocating metadata from `setup.py` to `pyproject.toml`, in line with ongoing efforts for configuration standardization.
 
 ## 📦 plone/plone.app.event
-[2 files changed, +2/-2 lines, 1 pull request merged]  
-Dependabot updated the `astral-sh/setup-uv` from version 10.2.0 to 10.3.0, addressing potential security vulnerabilities.
+**[2 files changed, +2/-2 lines, 1 pull request merged]**  
+Dependabot updated the `astral-sh/setup-uv` dependency from version 10.2.0 to 10.3.0, adding enhancements to the workflows.
 
 ## 📦 plone/plone.app.multilingual
-[27 files changed, +69/-57 lines, 1 pull request merged]  
-Mikel Larreategi (erral) and Maurits van Rees removed `plone.restapi` and `plone.rest` as hard dependencies. Significant refactoring and configuration updates were made, including an increase in test matrix support.
+**[18 files changed, +53/-45 lines, 1 pull request merged]**  
+Developers removed `plone.restapi` and `plone.rest` as hard dependencies, streamlining project dependencies and improving compatibility.
 
 ## 📦 plone/plone.app.querystring
-[25 files changed, +738/-8 lines, 4 pull requests merged]  
-Multiple improvements were implemented, including enhancements by Érico Andrei (ericof) and Peter Mathis (petschki) to refine query processing and handle virtual hosting paths more effectively. Major features included the addition of a `currentUID` operation.
+**[25 files changed, +738/-8 lines, 4 pull requests merged]**  
+This repository received updates for dependency bumps and substantial enhancements, including the introduction of new query string operations and improved handling for virtual hosting paths.
+
+## 📦 plone/plone.namedfile
+**[29 files changed, +373/-158 lines, 2 pull requests merged]**  
+Improvements were made to the `filestream_range_iterator` to better handle end range requests, and project metadata was moved to `pyproject.toml`, enhancing overall maintainability.
+
+## 📦 plone/plone.formwidget.namedfile
+**[10 files changed, +122/-90 lines, 1 pull request merged]**  
+Metadata was shifted from `setup.py` to `pyproject.toml`, part of broader efforts to modernize project configurations across Plone.
+
+## 📦 plone/plone.folder
+**[10 files changed, +122/-116 lines, 1 pull request merged]**  
+As with other repositories, this one also transitioned metadata from `setup.py` to `pyproject.toml`, promoting consistency in project formatting.
 
 ## 📦 plone/plone.app.relationfield
-[2 files changed, +2/-2 lines, 1 pull request merged]  
-Similar to previous updates, this repository also saw a version bump of `astral-sh/setup-uv` by Dependabot, ensuring ongoing compatibility and security.
+**[2 files changed, +2/-2 lines, 1 pull request merged]**  
+Dependabot updated `setup-uv`, ensuring continued compatibility with the latest dependency features.
+
+## 📦 plone/plone.app.linkintegrity
+**[4 files changed, +20/-7 lines, 1 pull request merged]**  
+MrTango implemented a change to create only one reference per linked object, improving how relations are managed in the integrity framework.
 
 ## 📦 plone/plone.portlets
-[4 files changed, +70/-65 lines, 1 pull request merged]  
-Gil Forcada Codinachs advanced the migration of metadata from `setup.py` to `pyproject.toml`, contributing to better project structure and management.
+**[4 files changed, +70/-65 lines, 1 pull request merged]**  
+As part of the ongoing transition to `pyproject.toml`, metadata has been effectively moved, streamlining further developments.
+
+## 📦 plone/plone.indexer
+**[10 files changed, +114/-92 lines, 1 pull request merged]**  
+Similar updates were made regarding the migration of metadata, alongside several structural improvements aimed at optimizing indexing performance.
 
 ## 📦 plone/plone.locking
-[10 files changed, +118/-104 lines, 2 pull requests merged]  
-Continuing metadata migration efforts, Gil Forcada (gforcada) facilitated integration with `pyproject.toml`, alongside Dependabot’s version upgrades.
+**[10 files changed, +118/-104 lines, 2 pull requests merged]**  
+Changes included moving metadata to `pyproject.toml` and updating dependencies for improved functionality.
 
 ## 📦 plone/plone.portlet.collection
-[4 files changed, +70/-57 lines, 1 pull request merged]  
-Gil Forcada Codinachs updated the portlet's build configuration by transitioning metadata from `setup.py` to `pyproject.toml`.
+**[4 files changed, +70/-57 lines, 1 pull request merged]**  
+Efforts to migrate project metadata continued, enhancing configuration practices moving forward.
+
+## 📦 plone/plone.keyring
+**[10 files changed, +106/-80 lines, 2 pull requests merged]**  
+Contributors migrated metadata, contributing to overall strategic improvements across the repository.
 
 ## 📦 plone/plone.portlet.static
-[4 files changed, +63/-57 lines, 1 pull request merged]  
-Once again, metadata migration was active with Gil Forcada’s contributions, improving the structural integrity of the project.
+**[4 files changed, +63/-57 lines, 1 pull request merged]**  
+The repository underwent similar updates for metadata management as part of the broader sustainability strategy.
+
+## 📦 plone/plone.outputfilters
+**[10 files changed, +150/-134 lines, 1 pull request merged]**  
+Updates involved refining output handling, with enhancements made to metadata configurations.
+
+## 📦 plone/plone.intelligenttext
+**[14 files changed, +106/-88 lines, 1 pull request merged]**  
+Adapter for modern tooling was added, improving how intelligent text insights are generated.
+
+## 📦 plone/plone.i18n
+**[10 files changed, +132/-122 lines, 1 pull request merged]**  
+Improvements to locale handling were undertaken, following the ongoing migration efforts.
 
 ## 📦 plone/Products.CMFPlone
-[2 files changed, +6/-2 lines, 1 pull request merged]  
-MrTango implemented improvements in the Robot testing framework for the content-browser link target selection.
+**[2 files changed, +6/-2 lines, 1 pull request merged]**  
+MrTango made changes to ensure the Robot content-browser link targets are selected by title, enhancing consistency in testing.
 
 ## 📦 plone/plone.memoize
-[17 files changed, +136/-124 lines, 2 pull requests merged]  
-Further developments aimed at modernizing the build process and improving the dependency management system were carried out by gforcada.
+**[17 files changed, +136/-124 lines, 2 pull requests merged]**  
+Updates included dependency management improvements alongside metadata migrations.
 
-## 📦 plone/plone.app.layout
-[9 files changed, +63/-33 lines, 1 pull request merged]  
-New breadcrumb microdata features were introduced by 1letter, enhancing SEO and accessibility of Plone content.
+## 📦 plone/buildout.coredev
+**[41 files changed, +590/-481 lines, 2 pull requests merged]**  
+This week, several dependencies were adjusted to maintain overall consistency and build stability within the Plone framework.
 
-## 📦 plone/plone.restapi
-[33 files changed, +777/-177 lines, 4 pull requests merged]  
-Quality of the Plone REST API was enhanced with significant bug fixes and feature implementations, notably with handling content rules which now return 404 errors when not activated, improving functionality and user experience.
-
-## 📦 plone/aurora
-[315 files changed, +9152/-2234 lines, 7 pull requests merged]  
-Victor Fernandez de Alba (sneridagh) made extensive contributions, enhancing functionality and performance, particularly around resource routing and middleware management.
-
-## 📦 plone/pytest-plone
-[6 files changed, +10/-10 lines, 1 pull request merged]  
-Dependabot again updated dependency versions, keeping compatibility and security in check.
-
-## 📦 plone/plone-volto
-[9 files changed, +573/-28 lines, 2 pull requests merged]  
-Significant front-end work was accomplished, improving user interface features in Volto by sneridagh and continuing the modernization push.
-
-## 📦 plone/volto
-[9 files changed, +30/-4 lines, 3 pull requests merged]  
-More widgets were added, and existing controls were refined in a step towards more dynamic user interactions in Volto.
-
-## 📦 plone/cookiecutter-zope-instance
-[74 files changed, +2627/-214 lines, 2 pull requests merged]  
-Jens W. Klein introduced critical fixes to the context overrides for the cookiecutter templates, greatly improving stability.
-
-## 📦 plone/documentation
-[7 files changed, +92/-44 lines, 4 pull requests merged]  
-Documentation updates increased clarity, particularly regarding recent changes in the Classic UI and Backend documentation, involving contributions from multiple authors.
-
-## 📦 plone/aurora
-[227 files changed, +6213/-5371 lines, 7 pull requests merged]  
-Substantial updates were made to this repository focused on improving the internal architecture and user experience within Plone, spearheaded by Victor Fernandez de Alba.
+## 📦 plone/training
+**[4 files changed, +4/-4 lines, 1 pull request merged]**  
+Dependency bumps were implemented to maintain compatibility with upcoming changes in the Plone stack.
 
 ## 📦 plone/plone-contributor-statistics
-[9 files changed, +286/-11 lines, 2 pull requests merged]  
-Improvements included fixing organizational mappings and introducing historical data contributing to enhanced analytics on contributors.
+**[886 files changed, +53125/-29386 lines, 5 pull requests merged]**  
+A major restructuring of contributor data took place, improving the accuracy of statistics and addressing longstanding issues regarding organization mapping.
+
+## 📦 plone/pastanaga-angular
+**[2 files changed, +8/-3 lines, 1 pull request merged]**  
+The deprecated `@angular/animations` package was removed as part of ongoing maintenance work.
+
+## 📦 plone/plone.volto
+**[20 files changed, +4766/-4069 lines, 7 pull requests merged]**  
+Substantial updates to Volto included numerous dependency updates and enhancements for visual regression testing, aiming to improve development speed and reliability.
+
+## 📦 plone/cookiecutter-zope-instance
+**[74 files changed, +2627/-214 lines, 3 pull requests merged]**  
+Significant contributions included tools to improve default context handling, making customization processes more robust and less error-prone.
+
+## 📦 plone/mockup
+**[19 files changed, +3173/-3062 lines, 3 pull requests merged]**  
+The repository saw extensive updates, including dependency management improvements and various bug fixes aimed at enhancing mockup stability.
+
+## 📦 plone/aurora
+**[218 files changed, +6163/-913 lines, 2 pull requests merged]**  
+Key contributions were made addressing visual regression tests while building the Quanta components inventory.
 
 ## 📦 plone/plone-ping
-[172 files changed, +354/-353 lines, 0 pull requests merged]  
-Continuous updates to status monitoring scripts were pushed by Upptime Bot for various Plone services.
+**[169 files changed, +310/-309 lines, 0 pull requests merged]**  
+Updates were primarily executed through automated bot contributions focusing on maintaining status logs and reporting metrics.
 
-This week’s activities indicate a robust flow of updates and improvements across the Plone ecosystem, with particular focus on dependency management, architectural enhancements, and user-facing features.
+## 📦 plone/collective.icalendar
+**[2 files changed, +0/-0 lines, 0 pull requests merged]**  
+No significant updates were logged this week.
 
-### Contributors:
-- Mikel Larreategi (erral)
-- Maurits van Rees (mauritsvanrees)
-- Gil Forcada Codinachs (gforcada)
-- Érico Andrei (ericof)
-- Peter Mathis (petschki)
-- David Glick (davisagli)
+## 📦 plone/aurora-visual-regression
+**[255 files changed, +0/-0 lines, 0 pull requests merged]**  
+Visual regression testing resources were updated, reinforcing testing protocols for code quality.
+
+In summary, the Plone ecosystem has made substantial strides this week with mixed contributions across the entire organization. Noteworthy is the cohesive push to migrate metadata configurations, which should significantly aid future development workflows and enhance compatibility. 
+
+### Contributors
+- Gil Forcada Codinachs
 - MrTango
-- Victor Fernandez de Alba (sneridagh)
-- Johannes Raggam (thet)
-- Jens W. Klein (jensens)
-- Upptime Bot
+- Mikel Larreategi
+- David Glick
+- Érico Andrei
+- Kunal Kumar
+- Peter Mathis
+- Davisagli
+- Johannes Raggam
 - Tishasoumya-02
-- kunalKumar-13
-- Marcel Liebischer (mliebischer)
 - 1letter
-- wesleybl
+- jensens
+- sneridagh
+- Wesleybl
+- upptime-bot
 
-Automatically generated from 31 active repositories.
+Automatically generated from 44 active repositories.
