@@ -1,7 +1,7 @@
 {
   "version": 1,
   "status": "success",
-  "generated_at": "2026-10-18T19:07:19Z",
+  "generated_at": "2026-10-18T20:09:27Z",
   "organization": "plone",
   "state": "open",
   "slug": "lvl-easy",
@@ -9,39 +9,8 @@
   "required_labels": [
     "41 lvl: easy"
   ],
-  "issue_count": 86,
+  "issue_count": 85,
   "issues": [
-    {
-      "id": 5881093246,
-      "number": 44,
-      "title": "PLIP scripts: plip_stats.py --year crashes; plone_plips.py doesn't use the GitHub token",
-      "html_url": "https://github.com/plone/plone-contributor-statistics/issues/44",
-      "repository_full_name": "plone/plone-contributor-statistics",
-      "repository_url": "https://api.github.com/repos/plone/plone-contributor-statistics",
-      "state": "open",
-      "created_at": "2026-10-16T08:42:23Z",
-      "updated_at": "2026-10-16T11:11:05Z",
-      "comments": 0,
-      "author": {
-        "login": "jensens",
-        "html_url": "https://github.com/jensens"
-      },
-      "assignees": [],
-      "labels": [
-        "01 type: bug",
-        "14 prio: low",
-        "41 lvl: easy",
-        "99 tag: github stats"
-      ],
-      "contributor_summary": {
-        "status": "available",
-        "generated_at": "2026-10-16T12:15:35Z",
-        "source_issue_updated_at": "2026-10-16T11:11:05Z",
-        "model": "gpt-4o-mini",
-        "summary_markdown": "```markdown\n## What this issue is about\nThis issue addresses two problems in the PLIP (Python Library for Interactive Programming) statistics collection scripts: `plip_stats.py` and `plone_plips.py`. Both scripts are designed to gather data related to PLIP contributions but are currently facing technical bugs.\n\n## What needs to be done\n1. Fix the crash in `plip_stats.py` when using the `--year` or `--end-date` options by ensuring correct timezone handling for date comparisons.\n2. Modify `plone_plips.py` to utilize the GitHub token for authenticated requests, avoiding limitations on the number of requests that can be made.\n\n## Helpful background\n- **PLIP**: A framework for managing Plone improvement proposals.\n- **Timezone-aware dates**: These are dates that keep track of the time zone they were recorded in, which is important to avoid errors during comparisons.\n- The current code does not handle date comparisons properly, leading to crashes and inefficient data retrieval.\n\n## Good first steps\n1. Review the `plip_stats.py` code for how it handles date comparisons and adjust it to ensure all dates used are timezone-aware.\n2. Look into the token authentication function in `plone_plips.py` and modify it to properly retrieve the GitHub token.\n3. Test your changes to ensure that the scripts work without crashing and make authenticated requests. Documentation updates may be needed for clarity.\n```",
-        "path": "data/issues/summaries/plone/plone-contributor-statistics/44.json"
-      }
-    },
     {
       "id": 3988967668,
       "number": 7947,
@@ -2663,10 +2632,10 @@
   "message": null,
   "workflow": {
     "repository": "syslabcom/activity-recognition",
-    "run_id": "39157291564",
-    "run_number": "3928",
+    "run_id": "39162009900",
+    "run_number": "3929",
     "attempt": "1",
-    "url": "https://github.com/syslabcom/activity-recognition/actions/runs/39157291564",
-    "sha": "69300a1efd57095bff378ff883a6e05388a9524b"
+    "url": "https://github.com/syslabcom/activity-recognition/actions/runs/39162009900",
+    "sha": "f79171081c84761a06c3de30ac460e6c846e4ebf"
   }
 }
