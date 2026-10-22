@@ -1,7 +1,7 @@
 {
   "version": 1,
   "status": "success",
-  "generated_at": "2026-10-22T13:11:11Z",
+  "generated_at": "2026-10-22T14:10:35Z",
   "organization": "plone",
   "state": "open",
   "slug": "lvl-moderate",
@@ -9,39 +9,8 @@
   "required_labels": [
     "42 lvl: moderate"
   ],
-  "issue_count": 72,
+  "issue_count": 49,
   "issues": [
-    {
-      "id": 4075691309,
-      "number": 14,
-      "title": "Count only merged and release PLIPs",
-      "html_url": "https://github.com/plone/plone-contributor-statistics/issues/14",
-      "repository_full_name": "plone/plone-contributor-statistics",
-      "repository_url": "https://api.github.com/repos/plone/plone-contributor-statistics",
-      "state": "open",
-      "created_at": "2026-03-14T12:15:38Z",
-      "updated_at": "2026-10-16T11:10:30Z",
-      "comments": 0,
-      "author": {
-        "login": "tisto",
-        "html_url": "https://github.com/tisto"
-      },
-      "assignees": [],
-      "labels": [
-        "04 type: enhancement",
-        "13 prio: normal",
-        "42 lvl: moderate",
-        "99 tag: community recognition"
-      ],
-      "contributor_summary": {
-        "status": "available",
-        "generated_at": "2026-10-16T12:16:01Z",
-        "source_issue_updated_at": "2026-10-16T11:10:30Z",
-        "model": "gpt-4o-mini",
-        "summary_markdown": "## What this issue is about\nThis issue addresses the need to better distinguish between merged/released PLIPs (Proposed Location Implementation Plans) and those that have been abandoned or rejected. Currently, both types are labeled the same, which can lead to confusion.\n\n## What needs to be done\nWe need to create a new label specifically for completed PLIPs. The goal is to allow users to easily identify accepted and merged PLIPs as opposed to those that have been rejected. The specifics of implementing this change, including label naming and criteria for labeling, are still open for discussion.\n\n## Helpful background\nWhile many PLIPs are marked with the \"reason: completed\" status, the lack of a distinct label creates complications for tracking progress and community recognition. Previous discussions have included suggestions on how to handle this differentiation, but no clear consensus has been reached yet.\n\n## Good first steps\n1. Review existing issues related to PLIP statuses to understand the context.\n2. Think about how to clearly define what constitutes a completed PLIP.\n3. Consider potential names for a new label that captures this status.\n4. Engage with other contributors, such as @jensens and @sneridagh, for insights or past experiences with PLIP labeling.\n\nFeel free to jump in with your thoughts or proposals!",
-        "path": "data/issues/summaries/plone/plone-contributor-statistics/14.json"
-      }
-    },
     {
       "id": 2297234474,
       "number": 3953,
@@ -105,155 +74,6 @@
         "model": "gpt-4o-mini",
         "summary_markdown": "## What this issue is about\nThis issue addresses the need to update the system requirements documentation for Plone, specifically regarding the Node Version Manager (NVM). The current documentation references an outdated version, and contributors are discussing ways to automate updates using scripts.\n\n## What needs to be done\nThe documentation at [current system requirements](https://plone-aurora.readthedocs.io/get-started/system-requirements.html#nvm) needs to reflect the latest NVM version (0.40.8) and any relevant Node.js requirements (currently set at `node>=22.22.0`). Consideration is being given to integrating a script that checks for the latest GitHub release dynamically.\n\n## Helpful background\nA script is being developed to fetch the latest NVM release from GitHub. Discussion points include potential implementation in the documentation's configuration file (`docs/conf.py`), though there are concerns about compatibility with the MyST format used for documentation.\n\n## Good first steps\n1. Review the system requirements documentation to identify all instances of outdated version numbers.\n2. Familiarize yourself with the NVM and Node.js requirements.\n3. Explore the Python script shared by contributors to understand its logic for fetching version information.\n4. Consider setting up a local development environment to test your changes and check how documentation builds. If needed, reach out in the comments for assistance.",
         "path": "data/issues/summaries/plone/aurora/179.json"
-      }
-    },
-    {
-      "id": 3725646159,
-      "number": 7696,
-      "title": "Add deprecation policy or guide to documentation",
-      "html_url": "https://github.com/plone/volto/issues/7696",
-      "repository_full_name": "plone/volto",
-      "repository_url": "https://api.github.com/repos/plone/volto",
-      "state": "open",
-      "created_at": "2025-12-13T07:41:56Z",
-      "updated_at": "2026-06-29T01:19:33Z",
-      "comments": 6,
-      "author": {
-        "login": "stevepiercy",
-        "html_url": "https://github.com/stevepiercy"
-      },
-      "assignees": [],
-      "labels": [
-        "04 type: enhancement",
-        "33 needs: docs",
-        "42 lvl: moderate",
-        "discussion"
-      ],
-      "contributor_summary": {
-        "status": "available",
-        "generated_at": "2026-06-29T01:47:13Z",
-        "source_issue_updated_at": "2026-06-29T01:19:33Z",
-        "model": "gpt-4o-mini",
-        "summary_markdown": "```markdown\n## What this issue is about\nThis issue addresses the need for a clear deprecation policy and guidelines in the Volto documentation. Currently, there are no dedicated resources for developers on how to deprecate features effectively, despite having similar guidance available for Plone 6.\n\n## What needs to be done\nWe need to create a section specifically about deprecation in Volto. This could take the form of a dedicated \"Deprecation policy\" page or add guidelines to the existing Version policy. It should include practical examples and Volto-specific details that adapt current Plone 6 documentation.\n\n## Helpful background\nThe discussion indicates that adapting existing guidance from Plone 6 could be beneficial. There is agreement among contributors on the importance of these guidelines, but no consensus on the structure or format as of now. This requires further discussion among the team to finalize an approach.\n\n## Good first steps\n1. Review the existing Plone 6 deprecation guides to understand the content.\n2. Participate in upcoming team discussions to share your ideas on how to structure the new documentation.\n3. Once a path is agreed upon, you can help draft or refine the new documentation section.\n4. If you're unsure, feel free to reach out to team members for guidance and support.\n```",
-        "path": "data/issues/summaries/plone/volto/7696.json"
-      }
-    },
-    {
-      "id": 3102884999,
-      "number": 7159,
-      "title": "Build Storybook for a PR preview on `Aurora` branch",
-      "html_url": "https://github.com/plone/volto/issues/7159",
-      "repository_full_name": "plone/volto",
-      "repository_url": "https://api.github.com/repos/plone/volto",
-      "state": "open",
-      "created_at": "2025-05-30T10:54:47Z",
-      "updated_at": "2026-06-02T09:29:25Z",
-      "comments": 8,
-      "author": {
-        "login": "stevepiercy",
-        "html_url": "https://github.com/stevepiercy"
-      },
-      "assignees": [],
-      "labels": [
-        "04 type: enhancement",
-        "31 needs: help",
-        "33 needs: docs",
-        "42 lvl: moderate"
-      ],
-      "contributor_summary": {
-        "status": "available",
-        "generated_at": "2026-06-02T09:30:19Z",
-        "source_issue_updated_at": "2026-06-02T09:29:25Z",
-        "model": "gpt-4o-mini",
-        "summary_markdown": "```markdown\n## What this issue is about\nThis issue discusses the possibility of building Storybook for previewing pull requests (PRs) on the `Aurora` branch of Volto. Currently, any link to Storybook in preview PRs redirects to the stable version, which makes it difficult to view changes.\n\n## What needs to be done\nWe need to explore how to configure the build process so that PR-specific Storybook URLs are generated instead of redirecting to the stable version. This involves potentially changing redirect settings based on notification of changes in relevant branches.\n\n## Helpful background\nThe discussion indicates there may be uncertainties about the exact implementations needed to achieve this. The comments suggest some ways forward, but details on configuration may require further investigation, especially with integration in Read the Docs (RTD).\n\n## Good first steps\n1. Check the current configuration in `docs/conf.py` and `.readthedocs.yaml` for any redirect settings related to Storybook.\n2. Review the existing documentation for Read the Docs related to building PRs.\n3. Look into the links shared in comments for broader context.\n4. Engage with team members in the next Volto meeting for additional insights and support.\n```",
-        "path": "data/issues/summaries/plone/volto/7159.json"
-      }
-    },
-    {
-      "id": 2083336469,
-      "number": 5630,
-      "title": "Unify the use of the optional `preview_image_link` across Volto",
-      "html_url": "https://github.com/plone/volto/issues/5630",
-      "repository_full_name": "plone/volto",
-      "repository_url": "https://api.github.com/repos/plone/volto",
-      "state": "open",
-      "created_at": "2024-01-16T08:47:42Z",
-      "updated_at": "2026-05-19T08:43:44Z",
-      "comments": 6,
-      "author": {
-        "login": "sneridagh",
-        "html_url": "https://github.com/sneridagh"
-      },
-      "assignees": [],
-      "labels": [
-        "04 type: enhancement",
-        "42 lvl: moderate"
-      ],
-      "contributor_summary": {
-        "status": "available",
-        "generated_at": "2026-05-19T09:14:09Z",
-        "source_issue_updated_at": "2026-05-19T08:43:44Z",
-        "model": "gpt-4o-mini",
-        "summary_markdown": "```markdown\n## What this issue is about\nThis issue proposes to unify the use of `preview_image_link` in Volto to allow better reuse of images across content types instead of duplicating them with `preview_image`. The aim is to support this change smoothly throughout the Volto codebase.\n\n## What needs to be done\n1. Update the code to ensure that `preview_image_link` is correctly used wherever `preview_image` is currently implemented.\n2. Modify new instances of Volto to enable `preview_image_link` by default for new sites, while retaining the `preview_image` option for existing sites to avoid migration issues.\n\n## Helpful background\n`preview_image` currently stores images as a direct attribute, which can duplicate images. The new `preview_image_link` uses a RelationChoice pointer, helping in scenarios like implementing a Digital Asset Management System (DAMS).\n\n## Good first steps\n1. Explore the Volto codebase for any hardcoded instances of `preview_image`.\n2. Test the `preview_image_link` functionality and consider how it can be documented for clarity.\n3. Engage with fellow contributors for feedback and guidance, especially around the implications of enabling this feature by default in new sites.\n```",
-        "path": "data/issues/summaries/plone/volto/5630.json"
-      }
-    },
-    {
-      "id": 2194664319,
-      "number": 5896,
-      "title": "It's confusing how to change my password as a logged in user",
-      "html_url": "https://github.com/plone/volto/issues/5896",
-      "repository_full_name": "plone/volto",
-      "repository_url": "https://api.github.com/repos/plone/volto",
-      "state": "open",
-      "created_at": "2024-03-19T11:06:08Z",
-      "updated_at": "2026-05-18T10:43:34Z",
-      "comments": 9,
-      "author": {
-        "login": "JeffersonBledsoe",
-        "html_url": "https://github.com/JeffersonBledsoe"
-      },
-      "assignees": [],
-      "labels": [
-        "04 type: enhancement",
-        "42 lvl: moderate"
-      ],
-      "contributor_summary": {
-        "status": "available",
-        "generated_at": "2026-05-18T11:22:47Z",
-        "source_issue_updated_at": "2026-05-18T10:43:34Z",
-        "model": "gpt-4o-mini",
-        "summary_markdown": "```markdown\n## What this issue is about\nThis issue addresses the confusion users face when trying to change their passwords in Volto. Currently, users must go through the \"Forgot your password?\" option via the `/login` route. The aim is to allow users to change their passwords from their personal profile.\n\n## What needs to be done\nTo enhance user experience, we want to:\n- Add an option in the user preferences to change the password directly.\n- Ensure the `/change-password` page requires user authentication, displaying an \"Unauthorized\" notification for unauthenticated attempts.\n- Possibly include a \"Get help\" link for users who encounter issues.\n\n## Helpful background\nIn Classic Plone, users can change their passwords through the `@@personal-preferences` section. It's suggested we keep the navigation and functionality consistent with that model. Key discussions about functionality and navigation improvements are ongoing.\n\n## Good first steps\n1. Familiarize yourself with the current user preferences implementation.\n2. Review how the `@@change-password` link is integrated in Classic Plone.\n3. Consider designing the UI to include the password change feature.\n4. Attend the upcoming Volto Team meeting for further insights and coordination.\n5. Explore user authentication handling and permissions, especially regarding how users can return their passwords via email.\n```",
-        "path": "data/issues/summaries/plone/volto/5896.json"
-      }
-    },
-    {
-      "id": 2083233870,
-      "number": 5627,
-      "title": "Update i18n machinery to latest `react-intl`",
-      "html_url": "https://github.com/plone/volto/issues/5627",
-      "repository_full_name": "plone/volto",
-      "repository_url": "https://api.github.com/repos/plone/volto",
-      "state": "open",
-      "created_at": "2024-01-16T07:58:59Z",
-      "updated_at": "2026-05-18T10:40:11Z",
-      "comments": 0,
-      "author": {
-        "login": "sneridagh",
-        "html_url": "https://github.com/sneridagh"
-      },
-      "assignees": [],
-      "labels": [
-        "03 type: feature (plip)",
-        "42 lvl: moderate"
-      ],
-      "contributor_summary": {
-        "status": "available",
-        "generated_at": "2026-05-18T11:23:01Z",
-        "source_issue_updated_at": "2026-05-18T10:40:11Z",
-        "model": "gpt-4o-mini",
-        "summary_markdown": "## What this issue is about\nThis issue is focused on upgrading the internal internationalization (i18n) tools in Volto to the latest version of `react-intl`. It also includes updating the `@plone/scripts` i18n helpers to use ECMAScript Modules (ESM).\n\n## What needs to be done\n- Update Volto’s i18n machinery to utilize the latest `react-intl`.\n- Revise `@plone/scripts` to ensure compatibility with ESM.\n- Ensure that existing translation files (like `.po` files) continue to function as expected.\n\n## Helpful background\nThe current version of `react-intl` in use is outdated. The newer version changes how some features work, particularly with Babel helpers, so adjustments are necessary during the upgrade. Familiarity with internationalization concepts and JavaScript module formats will be helpful.\n\n## Good first steps\n1. Familiarize yourself with both Volto's and `react-intl`'s documentation, focusing on i18n.\n2. Check other related issues or discussions to understand common challenges.\n3. If possible, set up a development environment for Volto to test changes.\n4. Consider joining discussions or seeking guidance from the community for insights and support. \n\nContributions are welcomed, and all help is appreciated!",
-        "path": "data/issues/summaries/plone/volto/5627.json"
       }
     },
     {
@@ -445,37 +265,6 @@
       }
     },
     {
-      "id": 223134795,
-      "number": 8,
-      "title": "Live updates",
-      "html_url": "https://github.com/plone/volto/issues/8",
-      "repository_full_name": "plone/volto",
-      "repository_url": "https://api.github.com/repos/plone/volto",
-      "state": "open",
-      "created_at": "2017-04-20T17:02:24Z",
-      "updated_at": "2025-12-26T16:44:25Z",
-      "comments": 1,
-      "author": {
-        "login": "robgietema",
-        "html_url": "https://github.com/robgietema"
-      },
-      "assignees": [],
-      "labels": [
-        "04 type: enhancement",
-        "14 prio: low",
-        "21 status: confirmed",
-        "42 lvl: moderate"
-      ],
-      "contributor_summary": {
-        "status": "available",
-        "generated_at": "2026-04-09T12:27:42Z",
-        "source_issue_updated_at": "2025-12-26T16:44:25Z",
-        "model": "gpt-4o-mini",
-        "summary_markdown": "# Live Updates in Plone Volto\n\n## What this issue is about\nThis issue aims to enhance the Plone Volto project by adding live updates, specifically for features like navigation bar updates when a new item is added. The implementation would utilize WebSockets, a technology that enables real-time communication.\n\n## What needs to be done\nThe main task is to implement the live update functionality using WebSockets. However, the discussion around this issue is somewhat unclear, with no specific design guidelines provided yet. It’s advisable to clarify any design preferences with project maintainers before starting.\n\n## Helpful background\nWebSockets allow for full-duplex communication channels over a single connection, making them suitable for live updates. Understanding how Plone Volto currently handles item updates may provide insight for this enhancement.\n\n## Good first steps\n1. **Explore the existing codebase** to understand how updates are currently managed in Plone Volto.\n2. **Check in with the issue author** ([@robgietema](https://github.com/robgietema)) for clarification on design preferences.\n3. **Consider reaching out** to other contributors for mentorship, as shown by the comment from [Shyam-Raghuwanshi](https://github.com/Shyam-Raghuwanshi). \n\nGetting started with discussions is key—don’t hesitate to ask questions!",
-        "path": "data/issues/summaries/plone/volto/8.json"
-      }
-    },
-    {
       "id": 1366950401,
       "number": 1309,
       "title": "Move the `plone.behavior` readme into `plone/documentation`",
@@ -504,66 +293,6 @@
         "model": "gpt-4o-mini",
         "summary_markdown": "## What this issue is about\nThis issue is focused on moving the content from the `plone.behavior` README file into the documentation section at [6.docs.plone.org/backend/behaviors.html](https://6.docs.plone.org/backend/behaviors.html). After the move, the README should link to the new documentation page.\n\n## What needs to be done\n1. Review the current `plone.behavior` README content.\n2. Transfer relevant information into the mentioned documentation page.\n3. Update the README to replace its content with a link to the new documentation.\n\n## Helpful background\nThis issue has some existing discussions, indicating that some content may have already been moved. However, there’s still a need to ensure everything is in order. Understanding \"behaviors\" in Plone may require additional time and familiarity with the framework.\n\n## Good first steps\n1. Familiarize yourself with the concept of behaviors in Plone if you're not already.\n2. Check the current state of the `plone.behavior` README and the target documentation.\n3. Consider reaching out for guidance from experienced contributors, such as @jensens or @gforcada, as they can help clarify any uncertainties. Don't hesitate to ask questions to drop any barriers to your understanding!",
         "path": "data/issues/summaries/plone/documentation/1309.json"
-      }
-    },
-    {
-      "id": 1480563913,
-      "number": 51,
-      "title": "Implement Varnish in the plone.org stack",
-      "html_url": "https://github.com/plone/plone.org/issues/51",
-      "repository_full_name": "plone/plone.org",
-      "repository_url": "https://api.github.com/repos/plone/plone.org",
-      "state": "open",
-      "created_at": "2022-12-07T00:38:10Z",
-      "updated_at": "2025-09-17T14:56:59Z",
-      "comments": 5,
-      "author": {
-        "login": "ericof",
-        "html_url": "https://github.com/ericof"
-      },
-      "assignees": [
-        "jensens"
-      ],
-      "labels": [
-        "04 type: enhancement",
-        "42 lvl: moderate"
-      ],
-      "contributor_summary": {
-        "status": "available",
-        "generated_at": "2026-04-09T13:37:32Z",
-        "source_issue_updated_at": "2025-09-17T14:56:59Z",
-        "model": "gpt-4o-mini",
-        "summary_markdown": "## What this issue is about\nThis issue discusses the implementation of Varnish, a web caching tool, in the plone.org stack. Although the site is already in production, discussions about optimizing caching strategies are ongoing.\n\n## What needs to be done\nThe primary task is to utilize the `plone.app.caching` functionality. Specifically, we need to load a proper caching profile and ensure that caching headers are correctly set for both the website and the REST API.\n\n## Helpful background\nVarnish is a tool used to speed up web applications by caching content. Using `plone.app.caching` can help manage how this cache behaves. Currently, there's uncertainty about whether we need to implement caching profiles since the application now uses Volto, which accesses the site through a REST API.\n\n## Good first steps\n1. Familiarize yourself with **Varnish** and **plone.app.caching**.\n2. Review the existing setup in `portal_setup` to see how caching profiles are configured.\n3. Test the implementation in a staging environment before applying changes to the production site.\n4. Engage in discussions about any ambiguities regarding the necessity of caching in the current application setup.",
-        "path": "data/issues/summaries/plone/plone.org/51.json"
-      }
-    },
-    {
-      "id": 2189926833,
-      "number": 5883,
-      "title": "Create a page for Volto CI",
-      "html_url": "https://github.com/plone/volto/issues/5883",
-      "repository_full_name": "plone/volto",
-      "repository_url": "https://api.github.com/repos/plone/volto",
-      "state": "open",
-      "created_at": "2024-03-16T11:39:24Z",
-      "updated_at": "2025-03-08T22:21:39Z",
-      "comments": 0,
-      "author": {
-        "login": "stevepiercy",
-        "html_url": "https://github.com/stevepiercy"
-      },
-      "assignees": [],
-      "labels": [
-        "33 needs: docs",
-        "42 lvl: moderate"
-      ],
-      "contributor_summary": {
-        "status": "available",
-        "generated_at": "2026-04-09T14:40:24Z",
-        "source_issue_updated_at": "2025-03-08T22:21:39Z",
-        "model": "gpt-4o-mini",
-        "summary_markdown": "## What this issue is about\nThis issue proposes creating a dedicated page or section about Continuous Integration (CI) for new contributors to Volto. The current documentation may not provide sufficient clarity for users who are unfamiliar with CI and how to utilize it effectively in their contributions.\n\n## What needs to be done\nWe need to develop a new subsection under the existing \"[Developing Volto](https://6.docs.plone.org/volto/contributing/developing-core.html#developing-volto)\" documentation. This section should explain what CI is and how it can be beneficial for contributors, specifically targeting newcomers to GitHub.\n\n## Helpful background\nContinuous Integration (CI) is a practice that helps developers integrate code changes frequently, allowing for more reliable and efficient development. Many new contributors may lack understanding of this process, making it essential to provide clear documentation.\n\n## Good first steps\n1. Familiarize yourself with the existing documentation on developing Volto.\n2. Research what CI involves, focusing on key concepts that beginners should know.\n3. Draft an outline for the new CI section, considering what information would be most helpful to newcomers.\n4. Create a pull request (PR) for your proposed changes, ensuring clear communication throughout the process. \n\nBy contributing, you’ll help make Volto more accessible to new users!",
-        "path": "data/issues/summaries/plone/volto/5883.json"
       }
     },
     {
@@ -660,36 +389,6 @@
         "model": "gpt-4o-mini",
         "summary_markdown": "```markdown\n## What this issue is about\nThis issue focuses on enhancing the README file of the Plone repository. The goal is to improve clarity and accessibility for new users.\n\n## What needs to be done\nHere are the proposed improvements:\n- Convert the existing `README.rst` to `README.md`.\n- Create a new page, `README-devcontainer`, documenting how to set up the development container and GitHub workspace.\n- Ensure links to the official Plone documentation and the new page are included.\n\nSome tasks have been completed, but others remain open for contribution.\n\n## Helpful background\nThe README serves as the first point of contact for users and contributors. Updating it can help newcomers understand how to get started with Plone and its development environment.\n\nThere is ongoing discussion about possibly including tutorial videos in the documentation, although this is not finalized.\n\n## Good first steps\n1. Familiarize yourself with Markdown if you're not familiar—it's a simple formatting language used for README.md files.\n2. Start by converting the existing `README.rst` to `README.md` format.\n3. Look into the steps for setting up the `README-devcontainer` and gather that information.\n\nOnce you've made progress, consider reviewing and coordinating with others on the issue.\n```",
         "path": "data/issues/summaries/plone/buildout.coredev/972.json"
-      }
-    },
-    {
-      "id": 1435845248,
-      "number": 3834,
-      "title": "Document cypress commands, retrofit them to existing tests",
-      "html_url": "https://github.com/plone/volto/issues/3834",
-      "repository_full_name": "plone/volto",
-      "repository_url": "https://api.github.com/repos/plone/volto",
-      "state": "open",
-      "created_at": "2022-11-04T10:17:43Z",
-      "updated_at": "2024-12-13T22:01:51Z",
-      "comments": 4,
-      "author": {
-        "login": "tiberiuichim",
-        "html_url": "https://github.com/tiberiuichim"
-      },
-      "assignees": [],
-      "labels": [
-        "01 type: bug",
-        "33 needs: docs",
-        "42 lvl: moderate"
-      ],
-      "contributor_summary": {
-        "status": "available",
-        "generated_at": "2026-04-09T15:35:20Z",
-        "source_issue_updated_at": "2024-12-13T22:01:51Z",
-        "model": "gpt-4o-mini",
-        "summary_markdown": "```markdown\n## What this issue is about\nThis issue focuses on improving the documentation of existing Cypress commands in the Plone Volto project. Currently, many Cypress commands are available, but their lack of documentation means not all tests use them efficiently. The goal is to document these commands and refactor tests to utilize them properly.\n\n## What needs to be done\n1. **Document all existing Cypress commands** found at [this location](https://github.com/plone/volto/tree/main/packages/volto/cypress/support).\n2. **Refactor existing tests** to incorporate these documented commands. An example is updating to use `cy.toolbarSave()` where applicable.\n3. There is a proposal to prefix Volto-specific commands (like `cy.voltoToolbarSave()`) for clarity, though this is still up for discussion.\n\n## Helpful background\nCypress is a testing framework that allows for end-to-end testing of web applications. A good understanding of Cypress will be beneficial for this task.\n\n## Good first steps\n1. Familiarize yourself with [Cypress documentation](https://docs.cypress.io/).\n2. Review the existing Cypress commands in the specified support directory.\n3. Check the issue for any updates or ongoing discussions before starting. Coordinate with others if you decide to start working on this task to avoid duplication.\n```",
-        "path": "data/issues/summaries/plone/volto/3834.json"
       }
     },
     {
@@ -1161,36 +860,6 @@
       }
     },
     {
-      "id": 2028220544,
-      "number": 5499,
-      "title": "Fix LESS syntax highlighting",
-      "html_url": "https://github.com/plone/volto/issues/5499",
-      "repository_full_name": "plone/volto",
-      "repository_url": "https://api.github.com/repos/plone/volto",
-      "state": "open",
-      "created_at": "2023-12-06T10:24:40Z",
-      "updated_at": "2024-11-18T05:47:55Z",
-      "comments": 0,
-      "author": {
-        "login": "stevepiercy",
-        "html_url": "https://github.com/stevepiercy"
-      },
-      "assignees": [],
-      "labels": [
-        "01 type: bug",
-        "33 needs: docs",
-        "42 lvl: moderate"
-      ],
-      "contributor_summary": {
-        "status": "available",
-        "generated_at": "2026-04-09T16:33:22Z",
-        "source_issue_updated_at": "2024-11-18T05:47:55Z",
-        "model": "gpt-4o-mini",
-        "summary_markdown": "## What this issue is about\nThe issue addresses a problem with LESS syntax highlighting in the Plone Volto project. Specifically, the Pygments lexer incorrectly marks valid LESS code as invalid when `@import` statements are used within selectors.\n\n## What needs to be done\nContributors are expected to investigate how the LESS syntax is being highlighted by Pygments and identify a fix for the reported issues. This includes reviewing the existing code samples where the syntax fails and testing the suggested fixes.\n\n## Helpful background\nThe two examples causing issues are:\n1. Using `@import` within a selector.\n2. Nested selectors not being recognized correctly.\n\nBoth issues have been reported to Pygments, with one potential fix already proposed. Familiarity with LESS, a stylesheet language, and Pygments, a syntax highlighter, will be helpful for contributors.\n\n## Good first steps\n1. Review the linked Pygments issues to understand the context and proposed fixes.\n2. Experiment with the provided code samples in a local environment and check how they are highlighted.\n3. Draft a potential solution or improvement based on your findings, keeping documentation updates in mind.\n4. Engage with the community for feedback or additional guidance if needed.",
-        "path": "data/issues/summaries/plone/volto/5499.json"
-      }
-    },
-    {
       "id": 733801363,
       "number": 3204,
       "title": "Default valid_elements field in pattern options adds 40kb for every RichtTextField on an edit page",
@@ -1225,36 +894,6 @@
         "model": "gpt-4o-mini",
         "summary_markdown": "```markdown\n## What this issue is about\nThis issue addresses a large increase in page size due to the `valid_elements` field added to each `RichTextField` in Plone's TinyMCE editor. Currently, a massive string is used, leading to an additional 40KB for each instance on the edit page.\n\n## What needs to be done\nWe need to review and optimize the `valid_elements` configuration for TinyMCE. It seems that the configuration is unnecessarily complex, likely carried over from older versions. The goal is to determine if such a detailed list is required, or if simplifications can be made.\n\n## Helpful background\nThe `valid_elements` string specifies which HTML tags and attributes are permitted. Its size can significantly impact the performance of the CMS when editors are working with Rich Text fields. Discussions suggest that defining a general HTML5 schema could streamline this configuration.\n\n## Good first steps\n1. Familiarize yourself with the TinyMCE documentation regarding [content filtering](https://www.tiny.cloud/docs/tinymce/latest/content-filtering/#schema).\n2. Consider experimenting with a simpler `valid_elements` setting based on existing patterns.\n3. Join the discussion for ideas on global configurations that might improve efficiency with the `classique-team`.\n4. Prepare to implement and test changes, keeping an eye on documentation and review needs.\n```",
         "path": "data/issues/summaries/plone/Products.CMFPlone/3204.json"
-      }
-    },
-    {
-      "id": 2019631898,
-      "number": 5466,
-      "title": "Sidebar and toolbar shrink/ expanded functionality should work correctly for screen reader users",
-      "html_url": "https://github.com/plone/volto/issues/5466",
-      "repository_full_name": "plone/volto",
-      "repository_url": "https://api.github.com/repos/plone/volto",
-      "state": "open",
-      "created_at": "2023-11-30T22:43:33Z",
-      "updated_at": "2024-09-26T12:37:18Z",
-      "comments": 6,
-      "author": {
-        "login": "JeffersonBledsoe",
-        "html_url": "https://github.com/JeffersonBledsoe"
-      },
-      "assignees": [],
-      "labels": [
-        "01 type: bug",
-        "42 lvl: moderate",
-        "99 tag: UX Accessibility"
-      ],
-      "contributor_summary": {
-        "status": "available",
-        "generated_at": "2026-04-09T16:34:32Z",
-        "source_issue_updated_at": "2024-09-26T12:37:18Z",
-        "model": "gpt-4o-mini",
-        "summary_markdown": "```markdown\n## What this issue is about\nThis issue addresses a bug in Volto where the sidebar and toolbar functionality is not properly accessible for screen reader users. Even when these elements are \"shrunk,\" they remain focusable, which can create confusion for users relying on assistive technologies.\n\n## What needs to be done\nEnhancements are needed to ensure that when the sidebar or toolbar is shrunk, its focusable elements are no longer accessible to screen readers. We need to implement the `aria-expanded` attribute to communicate the open/closed state properly and ensure focus is prevented using techniques like the `inert` attribute and `aria-hidden`.\n\n## Helpful background\nCurrently, pressing the shrink button doesn't effectively communicate that the toolbar/sidebar is closed, and elements inside remain focusable. The proper use of ARIA attributes can improve this, creating a cleaner experience for screen reader users, who may have difficulty navigating when unnecessary elements are still available to them.\n\n## Good first steps\n1. Review the [existing discussion](https://github.com/plone/volto/issues/5466) to understand the context and various viewpoints.\n2. Familiarize yourself with ARIA attributes, specifically `aria-expanded` and `inert`.\n3. Consider setting up a local development environment to test these changes.\n4. If comfortable, draft a potential implementation plan or solution and share it in the comments to gather feedback before coding.\n```",
-        "path": "data/issues/summaries/plone/volto/5466.json"
       }
     },
     {
@@ -1316,36 +955,6 @@
         "model": "gpt-4o-mini",
         "summary_markdown": "## What this issue is about\nThis issue addresses a bug where the `IWorkingCopy` interface is still maintained in a copied version of an item in Plone. This can create issues if you rely on this interface for custom views or other functionalities.\n\n## What needs to be done\nThe goal is to ensure that when a working copy is copied, it does not retain the `IWorkingCopy` interface. This involves implementing a fix—potentially within the `plone.app.iterate` package.\n\n## Helpful background\nWhen you create and copy a working copy item (a user-editable version of a content item), it currently retains the `IWorkingCopy` interface. This can lead to confusion and malfunction in systems dependent on identifying true working copies. There are suggestions on how to handle this via event handlers to properly erase the interface from the copied item.\n\n## Good first steps\n1. Review the existing code and comments, particularly the provided event handler code.\n2. Test if the issue still persists in your local environment.\n3. Implement the suggested event handler and test it to ensure it removes the interface as expected.\n4. Consider documenting your findings and reaching out for review if you need guidance or further collaboration.",
         "path": "data/issues/summaries/plone/Products.CMFPlone/1791.json"
-      }
-    },
-    {
-      "id": 747283813,
-      "number": 2005,
-      "title": "Document razzle.extend.js",
-      "html_url": "https://github.com/plone/volto/issues/2005",
-      "repository_full_name": "plone/volto",
-      "repository_url": "https://api.github.com/repos/plone/volto",
-      "state": "open",
-      "created_at": "2020-11-20T08:21:26Z",
-      "updated_at": "2024-07-28T09:58:49Z",
-      "comments": 1,
-      "author": {
-        "login": "tiberiuichim",
-        "html_url": "https://github.com/tiberiuichim"
-      },
-      "assignees": [],
-      "labels": [
-        "01 type: bug",
-        "33 needs: docs",
-        "42 lvl: moderate"
-      ],
-      "contributor_summary": {
-        "status": "available",
-        "generated_at": "2026-04-09T16:34:50Z",
-        "source_issue_updated_at": "2024-07-28T09:58:49Z",
-        "model": "gpt-4o-mini",
-        "summary_markdown": "## What this issue is about\nThis issue involves documenting `razzle.extend.js`, a hidden feature in Volto addons. Documentation is important, particularly following a recent upgrade to Razzle, to ensure users understand how to utilize this feature effectively.\n\n## What needs to be done\nWe need comprehensive documentation for `razzle.extend.js`. This should cover its intended use cases and any specific details that users should know. There are no clear guidelines on what exactly should be included, so further clarification may be necessary.\n\n## Helpful background\n`razzle.extend.js` is part of Volto and facilitates certain functionalities in the platform. The lack of documentation surrounding this feature suggests that many users might be unaware of its benefits or how to implement it. The recent upgrade adds urgency to this task, making solid documentation even more critical.\n\n## Good first steps\n1. Review the existing comments and explore the functionality of `razzle.extend.js` within the Volto context.\n2. Engage with the community, possibly reaching out to others familiar with this feature for insights and details.\n3. Start drafting the documentation, focusing on clarity and accessibility for new users. Make sure to ask for feedback and iteratively refine your work. Discuss any uncertainties or gaps in information in the comments.",
-        "path": "data/issues/summaries/plone/volto/2005.json"
       }
     },
     {
@@ -1415,188 +1024,6 @@
       }
     },
     {
-      "id": 1492168831,
-      "number": 76,
-      "title": "New Plone Release page gets wrong id",
-      "html_url": "https://github.com/plone/plone.org/issues/76",
-      "repository_full_name": "plone/plone.org",
-      "repository_url": "https://api.github.com/repos/plone/plone.org",
-      "state": "open",
-      "created_at": "2022-12-12T15:37:42Z",
-      "updated_at": "2024-02-16T16:50:57Z",
-      "comments": 0,
-      "author": {
-        "login": "mauritsvanrees",
-        "html_url": "https://github.com/mauritsvanrees"
-      },
-      "assignees": [
-        "mauritsvanrees"
-      ],
-      "labels": [
-        "02 type: regression",
-        "42 lvl: moderate"
-      ],
-      "contributor_summary": {
-        "status": "available",
-        "generated_at": "2026-04-09T17:27:15Z",
-        "source_issue_updated_at": "2024-02-16T16:50:57Z",
-        "model": "gpt-4o-mini",
-        "summary_markdown": "## What this issue is about\nThis issue relates to a regression in the Plone Release page where the version ID format has changed. Instead of the expected format (e.g., \"6.0.0\"), the new site produces variations like \"plone-6-0.0\" or \"6-0.0\". This can complicate the way releases are listed and referenced.\n\n## What needs to be done\nWe need to resolve the incorrect formatting of the release ID to match the behavior of the old site. Ideally, the ID should reflect the version number directly as \"6.0.0\". \n\n## Helpful background\nThe old site used the version number as the ID, making it straightforward for users. This issue emerged during updates, and while a workaround exists using the Zope Management Interface (ZMI), we should aim to fix the root cause for consistency.\n\n## Good first steps\n1. Familiarize yourself with the code related to release IDs in the Plone codebase.\n2. Check for any relevant tests that cover this functionality.\n3. Explore the possibility of adjusting the ID formatting logic according to the old site's implementation.\n4. As you make changes, please ensure to write or update tests, and coordinate with the project maintainer, Maurits van Rees, for review.",
-        "path": "data/issues/summaries/plone/plone.org/76.json"
-      }
-    },
-    {
-      "id": 1485529863,
-      "number": 59,
-      "title": "Cannot fully edit releasepage in Volto",
-      "html_url": "https://github.com/plone/plone.org/issues/59",
-      "repository_full_name": "plone/plone.org",
-      "repository_url": "https://api.github.com/repos/plone/plone.org",
-      "state": "open",
-      "created_at": "2022-12-08T22:45:36Z",
-      "updated_at": "2024-02-16T16:46:40Z",
-      "comments": 1,
-      "author": {
-        "login": "mauritsvanrees",
-        "html_url": "https://github.com/mauritsvanrees"
-      },
-      "assignees": [],
-      "labels": [
-        "01 type: bug",
-        "42 lvl: moderate"
-      ],
-      "contributor_summary": {
-        "status": "available",
-        "generated_at": "2026-04-09T17:27:21Z",
-        "source_issue_updated_at": "2024-02-16T16:46:40Z",
-        "model": "gpt-4o-mini",
-        "summary_markdown": "## What this issue is about\nThis issue addresses a bug in Volto where the changelog and release notes fields do not function correctly. Users are experiencing problems when attempting to edit these fields, especially when removing or pasting text, leading to visible HTML codes or JavaScript errors.\n\n## What needs to be done\nWe need to investigate and fix the issues with the changelog and release notes fields in Volto. This may involve understanding how reStructuredText is handled and resolving the JavaScript error (`TypeError: undefined is not an object`).\n\n## Helpful background\nThe changelog field is supposed to store information in reStructuredText format, which allows for formatting but might be causing issues when edited. A workaround is to use ClassicUI for editing, but we want to resolve this behavior in Volto to improve user experience.\n\n## Good first steps\n1. Review the issue and try to recreate the problem in your local environment.\n2. Look through existing comments and related issues for context, particularly Issue #45.\n3. Experiment with editing the changelog field and note any specific issues or behaviors.\n4. Familiarize yourself with how reStructuredText works and how Volto implements it.\n5. If you identify a fix, consider writing a test to ensure the issue doesn't come back. \n\nFeel free to reach out in the discussion if you're unsure about any steps!",
-        "path": "data/issues/summaries/plone/plone.org/59.json"
-      }
-    },
-    {
-      "id": 2122507111,
-      "number": 5740,
-      "title": "Add global form state docs",
-      "html_url": "https://github.com/plone/volto/issues/5740",
-      "repository_full_name": "plone/volto",
-      "repository_url": "https://api.github.com/repos/plone/volto",
-      "state": "open",
-      "created_at": "2024-02-07T08:57:05Z",
-      "updated_at": "2024-02-07T08:58:04Z",
-      "comments": 0,
-      "author": {
-        "login": "stevepiercy",
-        "html_url": "https://github.com/stevepiercy"
-      },
-      "assignees": [],
-      "labels": [
-        "33 needs: docs",
-        "42 lvl: moderate"
-      ],
-      "contributor_summary": {
-        "status": "available",
-        "generated_at": "2026-04-09T17:27:26Z",
-        "source_issue_updated_at": "2024-02-07T08:58:04Z",
-        "model": "gpt-4o-mini",
-        "summary_markdown": "## What this issue is about\nThis issue focuses on creating documentation for the \"global form state\" feature in Volto. Adding clear, user-friendly documentation will help both new and experienced developers understand how to effectively use this feature.\n\n## What needs to be done\nWe need to draft and finalize documentation that explains the global form state in Volto. This includes detailing the functionality and providing examples of its application. Please note that this task is dependent on confirming how the feature works in practice, which is still being explored. \n\n## Helpful background\nThe global form state allows users to manage form data more efficiently across different components. As of now, there’s some ambiguity regarding its specifics. Engaging in discussions or checking related issues might provide additional insights.\n\n## Good first steps\n1. Familiarize yourself with the global form state by exploring existing discussions and code.\n2. Reach out for clarification on any unclear aspects, especially if you find conflicting information.\n3. Start a draft of the documentation, focusing on clear explanations and examples.\n4. Coordinate with others who may be working on similar documentation to ensure consistency. \n\nFeel free to contribute your thoughts or reach out if you need support!",
-        "path": "data/issues/summaries/plone/volto/5740.json"
-      }
-    },
-    {
-      "id": 515404096,
-      "number": 977,
-      "title": "document port/host backend api overrides",
-      "html_url": "https://github.com/plone/volto/issues/977",
-      "repository_full_name": "plone/volto",
-      "repository_url": "https://api.github.com/repos/plone/volto",
-      "state": "open",
-      "created_at": "2019-10-31T12:45:27Z",
-      "updated_at": "2024-02-04T22:09:06Z",
-      "comments": 0,
-      "author": {
-        "login": "fredvd",
-        "html_url": "https://github.com/fredvd"
-      },
-      "assignees": [
-        "robgietema"
-      ],
-      "labels": [
-        "01 type: bug",
-        "33 needs: docs",
-        "42 lvl: moderate"
-      ],
-      "contributor_summary": {
-        "status": "available",
-        "generated_at": "2026-04-09T17:27:35Z",
-        "source_issue_updated_at": "2024-02-04T22:09:06Z",
-        "model": "gpt-4o-mini",
-        "summary_markdown": "```markdown\n## What this issue is about\nThis issue addresses challenges in overriding the frontend port, host, and backend API path in Volto during development. Different behaviors are observed when using Volto from its source repository versus a Volto app created with `create-volto-app`. The main issue is that setting the port via command line appears to conflict with configurations in `src/config.js`.\n\n## What needs to be done\nThe goal is to clarify the usage of environment variables like `PORT` and `RAZZLE_API_PATH` for consistent behavior across setups. It may involve updating documentation to help new developers understand how to properly configure their development environment.\n\n## Helpful background\nVolto uses several settings to configure the frontend and backend during development. Environment variables govern this process, but their interaction with configuration files is not behaving as expected, leading to inconsistent results.\n\n## Good first steps\n1. Review the current behavior of `yarn start` with different configurations in both source and `create-volto-app` environments.\n2. Experiment with different combinations of `PORT` and `RAZZLE_API_PATH` to identify reproducible patterns.\n3. Consider how documentation can be improved to guide new contributors effectively.\n4. If you have feedback or questions, feel free to raise them in this issue; collaboration is encouraged as we work through these complexities.\n```",
-        "path": "data/issues/summaries/plone/volto/977.json"
-      }
-    },
-    {
-      "id": 1182619493,
-      "number": 3198,
-      "title": "Documenting URL helpers API",
-      "html_url": "https://github.com/plone/volto/issues/3198",
-      "repository_full_name": "plone/volto",
-      "repository_url": "https://api.github.com/repos/plone/volto",
-      "state": "open",
-      "created_at": "2022-03-27T18:26:04Z",
-      "updated_at": "2024-02-04T21:57:56Z",
-      "comments": 1,
-      "author": {
-        "login": "tiberiuichim",
-        "html_url": "https://github.com/tiberiuichim"
-      },
-      "assignees": [],
-      "labels": [
-        "04 type: enhancement",
-        "33 needs: docs",
-        "42 lvl: moderate"
-      ],
-      "contributor_summary": {
-        "status": "available",
-        "generated_at": "2026-04-09T17:27:41Z",
-        "source_issue_updated_at": "2024-02-04T21:57:56Z",
-        "model": "gpt-4o-mini",
-        "summary_markdown": "```markdown\n## What this issue is about\nThis issue focuses on improving the documentation for several URL helper functions in the Plone Volto repository. The current API functions handle various URL conversions for frontend and backend usage but lack clear documentation.\n\n## What needs to be done\nYou will need to document the following API functions:\n- `formatApiUrl(path)`: Converts a given path to a backend URL.\n- `getBaseUrl(url)`: Computes the \"Zope path\" of the context content from a Volto URL.\n- `flattenToAppURL(url)`: Strips URLs to return a base path.\n- `toPublicURL(url)`: Converts a path to a public URL.\n- `addAppURL(url)`: Prepends the API path to a URL.\n\nAdditionally, proposals for new aliases (like `pathToEndpointUrl`) also need to be documented.\n\n## Helpful background\nThe documentation should clarify the distinction between front-end and back-end URL handling. Some comments hint at a need for more clarity in use cases but do not provide further specifics.\n\n## Good first steps\n1. Review the existing functions and their code for understanding.\n2. Draft documentation outlining each function and its purpose.\n3. Add examples illustrating how to use these URL helpers effectively.\n4. Share your draft for feedback from the community before finalizing.\n```",
-        "path": "data/issues/summaries/plone/volto/3198.json"
-      }
-    },
-    {
-      "id": 379404615,
-      "number": 293,
-      "title": "Embed (via iFrame) Block",
-      "html_url": "https://github.com/plone/volto/issues/293",
-      "repository_full_name": "plone/volto",
-      "repository_url": "https://api.github.com/repos/plone/volto",
-      "state": "open",
-      "created_at": "2018-11-10T08:48:39Z",
-      "updated_at": "2024-01-09T07:21:08Z",
-      "comments": 1,
-      "author": {
-        "login": "robgietema",
-        "html_url": "https://github.com/robgietema"
-      },
-      "assignees": [],
-      "labels": [
-        "04 type: enhancement",
-        "14 prio: low",
-        "21 status: confirmed",
-        "42 lvl: moderate"
-      ],
-      "contributor_summary": {
-        "status": "available",
-        "generated_at": "2026-04-09T17:28:02Z",
-        "source_issue_updated_at": "2024-01-09T07:21:08Z",
-        "model": "gpt-4o-mini",
-        "summary_markdown": "```markdown\n## What this issue is about\nThis issue is focused on enhancing Volto by creating a new tile that allows users to embed third-party services (like Twitter) via iFrame. The goal is to make it easier for users to integrate external content into their Plone site.\n\n## What needs to be done\nYou will need to design and implement an iFrame embed tile. This includes considering how users can input the necessary embed code for different services. Discussion regarding the potential use of a code editor in edit mode has been suggested but is not fully resolved.\n\n## Helpful background\niFrames are HTML elements that allow you to embed another webpage within your site. This enhancement will make it user-friendly for administrators to add dynamic content. Familiarity with React and Plone would be beneficial, but don’t hesitate to ask questions!\n\n## Good first steps\n1. Review existing embed tiles in Volto to understand current implementations.\n2. Familiarize yourself with the iFrame syntax and the types of service URLs you want to support.\n3. Consider participating in discussions about the code editor feature to understand its viability.\n4. Reach out here if you have questions or need clarity on any points.\n```",
-        "path": "data/issues/summaries/plone/volto/293.json"
-      }
-    },
-    {
       "id": 1449621795,
       "number": 1360,
       "title": "Backend instructions should explain how to add add-ons",
@@ -1623,38 +1050,6 @@
         "model": "gpt-4o-mini",
         "summary_markdown": "```markdown\n## What this issue is about\nThis issue addresses a gap in the Plone documentation for version 6.x, specifically regarding how to properly add add-ons to the backend. Currently, the only method described is using the `ADDONS` variable, which is not recommended for production environments.\n\n## What needs to be done\nWe need to enhance the documentation to clarify how to add add-ons effectively, using a proper method that is suitable for production. The suggestion includes including specific Docker commands that facilitate this process.\n\n## Helpful background\nThe issue stems from the lack of clear guidance in the [plone-backend container documentation](https://github.com/plone/documentation/blob/6-dev/docs/install/containers/images/backend.md). Community input suggests that users often look for reliable ways to install add-ons in a production setting, thus making accurate documentation essential.\n\n## Good first steps\n1. Review the existing documentation linked above.\n2. Implement the suggested Docker commands for adding add-ons properly.\n3. Ensure any new documentation is easily understandable, especially for newcomers.\n4. Consider adding examples and testing procedures if applicable.\n5. Submit your changes for review to get feedback and make improvements.\n```",
         "path": "data/issues/summaries/plone/documentation/1360.json"
-      }
-    },
-    {
-      "id": 335082047,
-      "number": 182,
-      "title": "Page transitions for React Router",
-      "html_url": "https://github.com/plone/volto/issues/182",
-      "repository_full_name": "plone/volto",
-      "repository_url": "https://api.github.com/repos/plone/volto",
-      "state": "open",
-      "created_at": "2018-06-23T08:41:50Z",
-      "updated_at": "2023-12-12T17:47:34Z",
-      "comments": 2,
-      "author": {
-        "login": "davisagli",
-        "html_url": "https://github.com/davisagli"
-      },
-      "assignees": [],
-      "labels": [
-        "04 type: enhancement",
-        "13 prio: normal",
-        "21 status: confirmed",
-        "31 needs: help",
-        "42 lvl: moderate"
-      ],
-      "contributor_summary": {
-        "status": "available",
-        "generated_at": "2026-04-09T17:28:11Z",
-        "source_issue_updated_at": "2023-12-12T17:47:34Z",
-        "model": "gpt-4o-mini",
-        "summary_markdown": "```markdown\n## What this issue is about\nThis issue addresses the lack of visual feedback during page transitions in Volto when using React Router. Currently, there is no spinner or loading indicator, which can make the site feel unresponsive, even though navigation is efficient.\n\n## What needs to be done\nTo improve user experience, we should implement a loading spinner that appears during API requests (page transitions). One suggestion is to replace the logo in the toolbar with the spinner while the new page loads. \n\n## Helpful background\nWhen navigating, the application sends API requests without a browser loading indicator, which can confuse users. Adding a visual cue like a spinner is a common way to signal that a page is loading.\n\n## Good first steps\n1. Review React Router documentation to understand how to integrate a loading spinner.\n2. Examine existing components in the Volto codebase for modifying the toolbar.\n3. Consider creating a simple loading spinner animation for this feature.\n4. If you're unsure about any part of the implementation, feel free to ask for clarification in the comments or check for clarity on the issue’s status, as some discussions may have changed over time.\n5. After implementing, ensure to test the changes thoroughly for a smooth user experience.\n```",
-        "path": "data/issues/summaries/plone/volto/182.json"
       }
     },
     {
@@ -1972,37 +1367,6 @@
       }
     },
     {
-      "id": 614573796,
-      "number": 1459,
-      "title": "Workflow Manager",
-      "html_url": "https://github.com/plone/volto/issues/1459",
-      "repository_full_name": "plone/volto",
-      "repository_url": "https://api.github.com/repos/plone/volto",
-      "state": "open",
-      "created_at": "2020-05-08T07:50:20Z",
-      "updated_at": "2022-12-03T16:46:53Z",
-      "comments": 1,
-      "author": {
-        "login": "tisto",
-        "html_url": "https://github.com/tisto"
-      },
-      "assignees": [
-        "iRohitSingh"
-      ],
-      "labels": [
-        "04 type: enhancement",
-        "42 lvl: moderate"
-      ],
-      "contributor_summary": {
-        "status": "available",
-        "generated_at": "2026-04-09T19:29:34Z",
-        "source_issue_updated_at": "2022-12-03T16:46:53Z",
-        "model": "gpt-4o-mini",
-        "summary_markdown": "## What this issue is about\nThis issue involves enhancing the Workflow Manager in the Plone Volto project. The goal is to improve how workflows are managed within the system, as shown in the accompanying images. Currently, the discussion is open, and there is some ambiguity regarding the specifics of the implementation.\n\n## What needs to be done\nWe aim to enhance workflow management features. However, the detailed requirements and implementation steps are not clearly defined in the issue discussion. Coordination with the current assignee, iRohitSingh, is needed to get an updated status and direction for the work.\n\n## Helpful background\nWorkflow management is crucial for controlling content approval processes in Plone. Understanding how workflows function in the system will be beneficial. You can find more information on Plone's documentation site about workflows and their configurations.\n\n## Good first steps\n1. Review the current Workflow Manager in Volto.\n2. Check out the linked images to understand existing workflows.\n3. Reach out to iRohitSingh for the latest updates and guidance on your contribution.\n4. Consider familiarizing yourself with relevant workflows in the Plone documentation to better understand the context.",
-        "path": "data/issues/summaries/plone/volto/1459.json"
-      }
-    },
-    {
       "id": 106998535,
       "number": 1018,
       "title": "Uploade \"site logo\" not validated ",
@@ -2035,35 +1399,6 @@
       }
     },
     {
-      "id": 1145394615,
-      "number": 3095,
-      "title": "Locking Control Panel",
-      "html_url": "https://github.com/plone/volto/issues/3095",
-      "repository_full_name": "plone/volto",
-      "repository_url": "https://api.github.com/repos/plone/volto",
-      "state": "open",
-      "created_at": "2022-02-21T06:56:23Z",
-      "updated_at": "2022-05-02T13:53:11Z",
-      "comments": 0,
-      "author": {
-        "login": "tisto",
-        "html_url": "https://github.com/tisto"
-      },
-      "assignees": [],
-      "labels": [
-        "04 type: enhancement",
-        "42 lvl: moderate"
-      ],
-      "contributor_summary": {
-        "status": "available",
-        "generated_at": "2026-04-09T19:29:58Z",
-        "source_issue_updated_at": "2022-05-02T13:53:11Z",
-        "model": "gpt-4o-mini",
-        "summary_markdown": "```markdown\n## What this issue is about\nThis issue suggests enhancing the Volto application by adding a Locking Control Panel. Currently, site administrators can release locks on objects using the Zope Management Interface (ZMI), but having this feature in Volto will improve usability and reduce reliance on the classic interface.\n\n## What needs to be done\n- Implement REST API endpoints to retrieve locked content.\n- Create a Volto control panel that displays all locks on a site, allows filtering by path, and provides options to release locks on one or more items.\n\n## Helpful background\nLocks are used to prevent changes to objects in Plone. Currently, this management is accessible through ZMI, but the aim is to make it more user-friendly with a modern interface. While the unlock feature works, the approach for releasing non-stealable locks needs clarification.\n\n## Good first steps\n1. Familiarize yourself with existing REST API implementations in Volto.\n2. Review the current ZMI functionality about locks to understand what is needed in the Volto interface.\n3. Consider proposing how to handle non-stealable locks if you have ideas.\n4. Feel free to ask questions if anything is unclear; community feedback is welcomed!\n```",
-        "path": "data/issues/summaries/plone/volto/3095.json"
-      }
-    },
-    {
       "id": 1222660800,
       "number": 196,
       "title": "Todo: Remove traces of LinguaPlone",
@@ -2092,37 +1427,6 @@
         "model": "gpt-4o-mini",
         "summary_markdown": "## What this issue is about\nThis issue focuses on removing references to LinguaPlone, a translation tool, from the codebase of the Plone discussion package. There is also a need to evaluate whether features previously provided by LinguaPlone are now handled by `plone.app.multilingual` (p.a.multilingual) or if they are still necessary.\n\n## What needs to be done\n- Identify and remove all outdated LinguaPlone traces in the code.\n- Check and document which features were provided by LinguaPlone.\n- Determine if those features are covered by p.a.multilingual or if they still need to be addressed.\n\n## Helpful background\nLinguaPlone was used for multilingual content management, but its functionality may now overlap with p.a.multilingual. Familiarity with both tools will be helpful for understanding the scope of this issue.\n\n## Good first steps\n1. Explore the codebase for any LinguaPlone references.\n2. Review documentation on p.a.multilingual to see if it fulfills the necessary features.\n3. Consider reaching out to the community or referring to past discussions for clarification on any ambiguous areas.\n4. Be ready to test your changes to ensure functionality remains intact after modifications. Documentation updates may also be necessary.",
         "path": "data/issues/summaries/plone/plone.app.discussion/196.json"
-      }
-    },
-    {
-      "id": 223133204,
-      "number": 4,
-      "title": "Server Side Rendering for forms",
-      "html_url": "https://github.com/plone/volto/issues/4",
-      "repository_full_name": "plone/volto",
-      "repository_url": "https://api.github.com/repos/plone/volto",
-      "state": "open",
-      "created_at": "2017-04-20T16:56:34Z",
-      "updated_at": "2021-01-04T18:57:18Z",
-      "comments": 0,
-      "author": {
-        "login": "robgietema",
-        "html_url": "https://github.com/robgietema"
-      },
-      "assignees": [],
-      "labels": [
-        "04 type: enhancement",
-        "14 prio: low",
-        "21 status: confirmed",
-        "42 lvl: moderate"
-      ],
-      "contributor_summary": {
-        "status": "available",
-        "generated_at": "2026-04-09T19:30:38Z",
-        "source_issue_updated_at": "2021-01-04T18:57:18Z",
-        "model": "gpt-4o-mini",
-        "summary_markdown": "## What this issue is about\nThis issue addresses enhancements needed for \"Server Side Rendering\" (SSR) of forms in the Volto application. Currently, there are problems where certain features, like tabs, aren't properly supported, and fieldsets are not rendering as expected.\n\n## What needs to be done\n1. Ensure that all fields and fieldsets are rendered correctly during SSR.\n2. Potentially implement a page redirect after form submission. However, this may be dependent on a future upgrade to React Router 4, so timing is uncertain.\n\n## Helpful background\nServer Side Rendering improves performance and SEO by delivering fully rendered pages from the server. Understanding how forms work in Volto will help manage the expected changes. The current implementation is confirmed to have limitations, but further discussion may need to clarify specifics.\n\n## Good first steps\n1. Familiarize yourself with how forms are set up in Volto.\n2. Review the existing implementation to identify areas for improvement regarding SSR.\n3. Consider experimenting with the rendering of tabbed fields and check the output.\n4. Join the conversation for insights on how SSR is currently functioning and any ongoing updates related to React Router 4.",
-        "path": "data/issues/summaries/plone/volto/4.json"
       }
     },
     {
@@ -2247,10 +1551,10 @@
   "message": null,
   "workflow": {
     "repository": "syslabcom/activity-recognition",
-    "run_id": "39784610931",
-    "run_number": "4018",
+    "run_id": "39793405846",
+    "run_number": "4019",
     "attempt": "1",
-    "url": "https://github.com/syslabcom/activity-recognition/actions/runs/39784610931",
-    "sha": "4d0155198544e0dc435bd4832b4db34c80227476"
+    "url": "https://github.com/syslabcom/activity-recognition/actions/runs/39793405846",
+    "sha": "768c94e7ee0299d2134cce899bb34af3b07c8d13"
   }
 }
