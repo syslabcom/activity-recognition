@@ -1,0 +1,33 @@
+{
+  "version": 1,
+  "status": "success",
+  "generated_at": "2026-10-27T22:07:00Z",
+  "source_issue": {
+    "id": 1428366827,
+    "number": 3811,
+    "title": "Block Shortcuts style shouts with UPPERCASE ALL THE THINGS",
+    "html_url": "https://github.com/plone/volto/issues/3811",
+    "repository_full_name": "plone/volto",
+    "updated_at": "2026-10-27T21:16:24Z",
+    "labels": [
+      "01 type: bug",
+      "21 status: confirmed",
+      "41 lvl: easy",
+      "61 scope: editor"
+    ],
+    "comments": 7
+  },
+  "ai": {
+    "provider": "openai",
+    "model": "gpt-4o-mini"
+  },
+  "summary_markdown": "```markdown\n## What this issue is about\nThis issue addresses a bug where active block text in the Volto editor appears in all uppercase, which users find uninviting. The goal is to change the text to sentence case and improve clarity in the UI.\n\n## What needs to be done\n1. Remove the uppercase transformation from the block text styles.\n2. Update the block type instructions and shortcuts for better usability.\n3. Coordinate on improving the editor documentation and considering an in-context help icon.\n\n## Helpful background\nThe issue has comments about potential improvements, such as detecting the OS for modifier keys and providing more accessible editor documentation. There's some discussion about making the current sidebar's shortcuts more relevant and possibly offering a universal help icon for better user assistance.\n\n## Good first steps\n1. Familiarize yourself with the Volto structure, specifically CSS styles related to block elements.\n2. Begin by modifying the relevant CSS line to remove `text-transform: uppercase;`.\n3. Check if the changes align with existing UI elements, and consider how to test these changes effectively.\n4. Engage with other contributors for clarification on documentation needs or additional improvements.\n```",
+  "workflow": {
+    "repository": "syslabcom/activity-recognition",
+    "run_id": "40592196037",
+    "run_number": "4146",
+    "attempt": "1",
+    "url": "https://github.com/syslabcom/activity-recognition/actions/runs/40592196037",
+    "sha": "ce04e15d9a66bd97f712a31e6eb9f0a7cf533be6"
+  }
+}

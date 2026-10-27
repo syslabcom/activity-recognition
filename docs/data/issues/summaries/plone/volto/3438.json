@@ -1,0 +1,33 @@
+{
+  "version": 1,
+  "status": "success",
+  "generated_at": "2026-10-27T22:07:03Z",
+  "source_issue": {
+    "id": 1274674340,
+    "number": 3438,
+    "title": "Properly internationalize the When component in EventDatesInfo.jsx ",
+    "html_url": "https://github.com/plone/volto/issues/3438",
+    "repository_full_name": "plone/volto",
+    "updated_at": "2026-10-27T21:16:16Z",
+    "labels": [
+      "01 type: bug",
+      "21 status: confirmed",
+      "41 lvl: easy",
+      "62 scope: viewer"
+    ],
+    "comments": 2
+  },
+  "ai": {
+    "provider": "openai",
+    "model": "gpt-4o-mini"
+  },
+  "summary_markdown": "## What this issue is about\nThis issue addresses the **When component** in `EventDatesInfo.jsx`, which currently has hard-coded \"from\" and \"to\" strings for event dates. This means it isn’t properly internationalized, making it less user-friendly for non-English speakers.\n\n## What needs to be done\nThe goal is to replace the fixed \"from\" and \"to\" with interpolated messages that can adapt to different languages. For example, instead of simply adding translation strings, we must consider language variations like the Basque language. \n\n## Helpful background\nIn classic Plone, translations are handled using `i18n:translate` and `i18n:name` tags. The implementation in this context should allow for similar flexibility to reflect various languages' structures.\n\n## Good first steps\n1. **Familiarize yourself** with the `When component` in `EventDatesInfo.jsx` [here](https://github.com/plone/volto/blob/master/src/components/theme/View/EventDatesInfo.jsx#L27).\n2. **Review the comments** for insights on expected changes and internationalization needs.\n3. **Test your changes** for different languages after making the updates.\n4. **Coordinate with others** on this ticket if you have questions or need feedback before finalizing your work. \n\nFeel free to reach out if you're unsure about any part of the process!",
+  "workflow": {
+    "repository": "syslabcom/activity-recognition",
+    "run_id": "40592196037",
+    "run_number": "4146",
+    "attempt": "1",
+    "url": "https://github.com/syslabcom/activity-recognition/actions/runs/40592196037",
+    "sha": "ce04e15d9a66bd97f712a31e6eb9f0a7cf533be6"
+  }
+}

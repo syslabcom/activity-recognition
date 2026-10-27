@@ -1,24 +1,30 @@
 ---
 title: "Plone issue list — Level: Easy"
 permalink: "/issues/lvl-easy/"
-generated_at: "2026-10-27T21:06:18Z"
+generated_at: "2026-10-27T22:06:34Z"
 organization: "plone"
-issue_count: 85
+issue_count: 90
 required_labels:
   - "41 lvl: easy"
 ---
 
 # Plone issue list — Level: Easy
 
-Generated: `2026-10-27T21:06:18Z`  
+Generated: `2026-10-27T22:06:34Z`  
 Organization: `plone`  
 Required label: `41 lvl: easy`  
-Issue count: `85`
+Issue count: `90`
 
 Sorted by last updated date, newest first.
 
 | Updated | Repository | Issue | Author | Labels |
 | --- | --- | --- | --- | --- |
+| 2026-10-27 21:32 UTC | `plone/volto` | [#6119 RAZZLE_PUBLIC_URL is overridden by server.jsx code](https://github.com/plone/volto/issues/6119) | `ichim-david` | `01 type: bug`, `21 status: confirmed`, `41 lvl: easy` |
+| 2026-10-27 21:32 UTC | `plone/volto` | [#1836 Non-uniform colors in Pastanaga icons](https://github.com/plone/volto/issues/1836) | `tiberiuichim` | `01 type: bug`, `21 status: confirmed`, `41 lvl: easy` |
+| 2026-10-27 21:16 UTC | `plone/volto` | [#3910 can't edit on mobile as hard to close and reopen settings](https://github.com/plone/volto/issues/3910) | `djay` | `01 type: bug`, `04 type: enhancement`, `21 status: confirmed`, `41 lvl: easy`, `99 tag: UX`, `61 scope: editor` |
+| 2026-10-27 21:16 UTC | `plone/volto` | [#3811 Block Shortcuts style shouts with UPPERCASE ALL THE THINGS](https://github.com/plone/volto/issues/3811) | `stevepiercy` | `01 type: bug`, `21 status: confirmed`, `41 lvl: easy`, `61 scope: editor` |
+| 2026-10-27 21:16 UTC | `plone/volto` | [#3438 Properly internationalize the When component in EventDatesInfo.jsx ](https://github.com/plone/volto/issues/3438) | `erral` | `01 type: bug`, `21 status: confirmed`, `41 lvl: easy`, `62 scope: viewer` |
+| 2026-10-27 21:16 UTC | `plone/volto` | [#2270 Outdated config registry docs in the official documentation](https://github.com/plone/volto/issues/2270) | `tiberiuichim` | `01 type: bug`, `33 needs: docs`, `41 lvl: easy` |
 | 2026-10-02 00:53 UTC | `plone/volto` | [#7947 Improve `@plone/client` documentation](https://github.com/plone/volto/issues/7947) | `stevepiercy` | `04 type: enhancement`, `31 needs: help`, `33 needs: docs`, `41 lvl: easy`, `dependencies`, `27 status: stale` |
 | 2026-09-27 10:01 UTC | `plone/volto` | [#955 user menu popup is not available on the site setup pages](https://github.com/plone/volto/issues/955) | `fredvd` | `01 type: bug`, `41 lvl: easy` |
 | 2026-09-13 19:21 UTC | `plone/documentation` | [#2065 Add Plone documentation to sites that attract first-time contributors](https://github.com/plone/documentation/issues/2065) | `stevepiercy` | `33 needs: docs`, `41 lvl: easy`, `99 tag: good first issue`, `99 tag: hacktoberfest` |
@@ -63,7 +69,6 @@ Sorted by last updated date, newest first.
 | 2024-11-14 16:34 UTC | `plone/plone.app.contenttypes` | [#646 tabular listing column titles doesn't get translated completely](https://github.com/plone/plone.app.contenttypes/issues/646) | `petschki` | `01 type: bug`, `14 prio: low`, `41 lvl: easy` |
 | 2024-11-10 13:26 UTC | `plone/Products.CMFPlone` | [#1688 title_or_id wakes up the real object](https://github.com/plone/Products.CMFPlone/issues/1688) | `Martronic-SA` | `01 type: bug`, `31 needs: help`, `14 prio: low`, `21 status: confirmed`, `41 lvl: easy` |
 | 2024-11-10 08:35 UTC | `plone/mockup` | [#695 Add `required` boolean option to Autotoc tabs](https://github.com/plone/mockup/issues/695) | `davilima6` | `99 tag: UX Accessibility`, `99 tag: Plone 5.x`, `99 tag: Plone 4.3.x`, `02 type: regression`, `05 type: question`, `41 lvl: easy` |
-| 2024-11-09 21:20 UTC | `plone/volto` | [#3910 can't edit on mobile as hard to close and reopen settings](https://github.com/plone/volto/issues/3910) | `djay` | `01 type: bug`, `04 type: enhancement`, `41 lvl: easy`, `99 tag: UX` |
 | 2024-11-09 07:30 UTC | `plone/mockup` | [#878 Live Search: Enter key does not trigger search](https://github.com/plone/mockup/issues/878) | `reinhardt` | `41 lvl: easy` |
 | 2024-07-19 08:48 UTC | `plone/plone.volto` | [#149 plone.volto:default should install all necessary dependencies](https://github.com/plone/plone.volto/issues/149) | `jensens` | `01 type: bug`, `14 prio: low`, `33 needs: docs`, `41 lvl: easy` |
 | 2024-02-23 09:21 UTC | `plone/plone.app.layout` | [#360 harmonize or add missing CSS classes in markup](https://github.com/plone/plone.app.layout/issues/360) | `MrTango` | `01 type: bug`, `02 type: regression`, `41 lvl: easy` |

@@ -1,7 +1,7 @@
 {
   "version": 1,
   "status": "success",
-  "generated_at": "2026-10-27T21:06:18Z",
+  "generated_at": "2026-10-27T22:06:34Z",
   "organization": "plone",
   "state": "open",
   "slug": "lvl-moderate",
@@ -9,8 +9,69 @@
   "required_labels": [
     "42 lvl: moderate"
   ],
-  "issue_count": 72,
+  "issue_count": 70,
   "issues": [
+    {
+      "id": 2028220544,
+      "number": 5499,
+      "title": "Fix LESS syntax highlighting",
+      "html_url": "https://github.com/plone/volto/issues/5499",
+      "repository_full_name": "plone/volto",
+      "repository_url": "https://api.github.com/repos/plone/volto",
+      "state": "open",
+      "created_at": "2023-12-06T10:24:40Z",
+      "updated_at": "2026-10-27T21:36:26Z",
+      "comments": 2,
+      "author": {
+        "login": "stevepiercy",
+        "html_url": "https://github.com/stevepiercy"
+      },
+      "assignees": [],
+      "labels": [
+        "01 type: bug",
+        "21 status: confirmed",
+        "33 needs: docs",
+        "42 lvl: moderate"
+      ],
+      "contributor_summary": {
+        "status": "available",
+        "generated_at": "2026-10-27T22:06:38Z",
+        "source_issue_updated_at": "2026-10-27T21:36:26Z",
+        "model": "gpt-4o-mini",
+        "summary_markdown": "# Fix LESS syntax highlighting\n\n## What this issue is about\nThis issue focuses on a bug in the LESS syntax highlighting when using `@import` statements within selectors. The highlighting fails in Pygments, causing some legitimate LESS code to be marked as invalid, even though it works in other environments like the Less Sandbox.\n\n## What needs to be done\nWe need to improve the LESS syntax highlighting to account for these `@import` statements inside selectors. Some discussions indicate that the underlying issues may be linked to Pygments and have been reported there, but no fix has been implemented yet.\n\n## Helpful background\nThe problematic code examples are as follows:\n- \n```less\n.loadThemeFonts() {\n  @import \"./typography.css\";\n}\n```\n- \n```less\n.highlight {\n  .highlight-header {\n    display: flex;\n    flex-direction: column;\n    align-items: center;\n    \n    h2 {\n      text-align: center;\n      text-transform: uppercase;\n    }\n  }\n}\n```\nAlthough temporary workarounds exist (such as changing the lexer to `css` or `text`), these are not optimal.\n\n## Good first steps\n1. Review the existing code in `docs/source/theming/custom-styling.md` to understand how the current syntax highlighting is working.\n2. Follow the ongoing discussions in the related Pygments issues ([#2606](https://github.com/pygments/pygments/issues/2606) and [#2817](https://github.com/pygments/pygments/issues/2817)).\n3. Consider proposing improvements to the documentation to reflect these issues and possible workarounds.\n\nFeel free to reach out if you have questions or need guidance!",
+        "path": "data/issues/summaries/plone/volto/5499.json"
+      }
+    },
+    {
+      "id": 1435845248,
+      "number": 3834,
+      "title": "Document cypress commands, retrofit them to existing tests",
+      "html_url": "https://github.com/plone/volto/issues/3834",
+      "repository_full_name": "plone/volto",
+      "repository_url": "https://api.github.com/repos/plone/volto",
+      "state": "open",
+      "created_at": "2022-11-04T10:17:43Z",
+      "updated_at": "2026-10-27T21:32:14Z",
+      "comments": 5,
+      "author": {
+        "login": "tiberiuichim",
+        "html_url": "https://github.com/tiberiuichim"
+      },
+      "assignees": [],
+      "labels": [
+        "33 needs: docs",
+        "42 lvl: moderate",
+        "99 tag: docs"
+      ],
+      "contributor_summary": {
+        "status": "available",
+        "generated_at": "2026-10-27T22:06:52Z",
+        "source_issue_updated_at": "2026-10-27T21:32:14Z",
+        "model": "gpt-4o-mini",
+        "summary_markdown": "```markdown\n## What this issue is about\nThis issue focuses on documenting Cypress commands in the Plone Volto project and updating existing tests to use these documented commands. Many commands currently lack proper documentation, causing inconsistency in their usage.\n\n## What needs to be done\n1. Document the Cypress commands available in the [support folder](https://github.com/plone/volto/tree/main/packages/volto/cypress/support).\n2. Update existing tests to utilize these commands effectively, ensuring that tasks align with their intended commands.\n3. Consider renaming commands for clarity, possibly adding a \"volto\" prefix (e.g., `cy.voltoToolbarSave()`).\n\n## Helpful background\nCypress is a testing tool for web applications. The Volto project has many custom commands defined but lacks a comprehensive reference and consistent usage across tests. It's important to have a clear naming convention and documentation to assist new contributors in understanding available commands.\n\n## Good first steps\n1. Review the current Cypress commands listed in the [support folder](https://github.com/plone/volto/tree/main/packages/volto/cypress/support).\n2. Identify which commands are not currently used in tests and think about where they could be applied.\n3. Update the documentation for these commands. \n4. Explore existing tests to find opportunities for refactoring using the documented commands. \n5. Check ongoing pull requests to avoid duplicate efforts.\n```",
+        "path": "data/issues/summaries/plone/volto/3834.json"
+      }
+    },
     {
       "id": 4075691309,
       "number": 14,
@@ -663,36 +724,6 @@
       }
     },
     {
-      "id": 1435845248,
-      "number": 3834,
-      "title": "Document cypress commands, retrofit them to existing tests",
-      "html_url": "https://github.com/plone/volto/issues/3834",
-      "repository_full_name": "plone/volto",
-      "repository_url": "https://api.github.com/repos/plone/volto",
-      "state": "open",
-      "created_at": "2022-11-04T10:17:43Z",
-      "updated_at": "2024-12-13T22:01:51Z",
-      "comments": 4,
-      "author": {
-        "login": "tiberiuichim",
-        "html_url": "https://github.com/tiberiuichim"
-      },
-      "assignees": [],
-      "labels": [
-        "01 type: bug",
-        "33 needs: docs",
-        "42 lvl: moderate"
-      ],
-      "contributor_summary": {
-        "status": "available",
-        "generated_at": "2026-04-09T15:35:20Z",
-        "source_issue_updated_at": "2024-12-13T22:01:51Z",
-        "model": "gpt-4o-mini",
-        "summary_markdown": "```markdown\n## What this issue is about\nThis issue focuses on improving the documentation of existing Cypress commands in the Plone Volto project. Currently, many Cypress commands are available, but their lack of documentation means not all tests use them efficiently. The goal is to document these commands and refactor tests to utilize them properly.\n\n## What needs to be done\n1. **Document all existing Cypress commands** found at [this location](https://github.com/plone/volto/tree/main/packages/volto/cypress/support).\n2. **Refactor existing tests** to incorporate these documented commands. An example is updating to use `cy.toolbarSave()` where applicable.\n3. There is a proposal to prefix Volto-specific commands (like `cy.voltoToolbarSave()`) for clarity, though this is still up for discussion.\n\n## Helpful background\nCypress is a testing framework that allows for end-to-end testing of web applications. A good understanding of Cypress will be beneficial for this task.\n\n## Good first steps\n1. Familiarize yourself with [Cypress documentation](https://docs.cypress.io/).\n2. Review the existing Cypress commands in the specified support directory.\n3. Check the issue for any updates or ongoing discussions before starting. Coordinate with others if you decide to start working on this task to avoid duplication.\n```",
-        "path": "data/issues/summaries/plone/volto/3834.json"
-      }
-    },
-    {
       "id": 185296197,
       "number": 707,
       "title": "plone/content/creating.html outdated for dexterity content (folder restrictions)",
@@ -1161,36 +1192,6 @@
       }
     },
     {
-      "id": 2028220544,
-      "number": 5499,
-      "title": "Fix LESS syntax highlighting",
-      "html_url": "https://github.com/plone/volto/issues/5499",
-      "repository_full_name": "plone/volto",
-      "repository_url": "https://api.github.com/repos/plone/volto",
-      "state": "open",
-      "created_at": "2023-12-06T10:24:40Z",
-      "updated_at": "2024-11-18T05:47:55Z",
-      "comments": 0,
-      "author": {
-        "login": "stevepiercy",
-        "html_url": "https://github.com/stevepiercy"
-      },
-      "assignees": [],
-      "labels": [
-        "01 type: bug",
-        "33 needs: docs",
-        "42 lvl: moderate"
-      ],
-      "contributor_summary": {
-        "status": "available",
-        "generated_at": "2026-04-09T16:33:22Z",
-        "source_issue_updated_at": "2024-11-18T05:47:55Z",
-        "model": "gpt-4o-mini",
-        "summary_markdown": "## What this issue is about\nThe issue addresses a problem with LESS syntax highlighting in the Plone Volto project. Specifically, the Pygments lexer incorrectly marks valid LESS code as invalid when `@import` statements are used within selectors.\n\n## What needs to be done\nContributors are expected to investigate how the LESS syntax is being highlighted by Pygments and identify a fix for the reported issues. This includes reviewing the existing code samples where the syntax fails and testing the suggested fixes.\n\n## Helpful background\nThe two examples causing issues are:\n1. Using `@import` within a selector.\n2. Nested selectors not being recognized correctly.\n\nBoth issues have been reported to Pygments, with one potential fix already proposed. Familiarity with LESS, a stylesheet language, and Pygments, a syntax highlighter, will be helpful for contributors.\n\n## Good first steps\n1. Review the linked Pygments issues to understand the context and proposed fixes.\n2. Experiment with the provided code samples in a local environment and check how they are highlighted.\n3. Draft a potential solution or improvement based on your findings, keeping documentation updates in mind.\n4. Engage with the community for feedback or additional guidance if needed.",
-        "path": "data/issues/summaries/plone/volto/5499.json"
-      }
-    },
-    {
       "id": 733801363,
       "number": 3204,
       "title": "Default valid_elements field in pattern options adds 40kb for every RichtTextField on an edit page",
@@ -1316,36 +1317,6 @@
         "model": "gpt-4o-mini",
         "summary_markdown": "## What this issue is about\nThis issue addresses a bug where the `IWorkingCopy` interface is still maintained in a copied version of an item in Plone. This can create issues if you rely on this interface for custom views or other functionalities.\n\n## What needs to be done\nThe goal is to ensure that when a working copy is copied, it does not retain the `IWorkingCopy` interface. This involves implementing a fix—potentially within the `plone.app.iterate` package.\n\n## Helpful background\nWhen you create and copy a working copy item (a user-editable version of a content item), it currently retains the `IWorkingCopy` interface. This can lead to confusion and malfunction in systems dependent on identifying true working copies. There are suggestions on how to handle this via event handlers to properly erase the interface from the copied item.\n\n## Good first steps\n1. Review the existing code and comments, particularly the provided event handler code.\n2. Test if the issue still persists in your local environment.\n3. Implement the suggested event handler and test it to ensure it removes the interface as expected.\n4. Consider documenting your findings and reaching out for review if you need guidance or further collaboration.",
         "path": "data/issues/summaries/plone/Products.CMFPlone/1791.json"
-      }
-    },
-    {
-      "id": 747283813,
-      "number": 2005,
-      "title": "Document razzle.extend.js",
-      "html_url": "https://github.com/plone/volto/issues/2005",
-      "repository_full_name": "plone/volto",
-      "repository_url": "https://api.github.com/repos/plone/volto",
-      "state": "open",
-      "created_at": "2020-11-20T08:21:26Z",
-      "updated_at": "2024-07-28T09:58:49Z",
-      "comments": 1,
-      "author": {
-        "login": "tiberiuichim",
-        "html_url": "https://github.com/tiberiuichim"
-      },
-      "assignees": [],
-      "labels": [
-        "01 type: bug",
-        "33 needs: docs",
-        "42 lvl: moderate"
-      ],
-      "contributor_summary": {
-        "status": "available",
-        "generated_at": "2026-04-09T16:34:50Z",
-        "source_issue_updated_at": "2024-07-28T09:58:49Z",
-        "model": "gpt-4o-mini",
-        "summary_markdown": "## What this issue is about\nThis issue involves documenting `razzle.extend.js`, a hidden feature in Volto addons. Documentation is important, particularly following a recent upgrade to Razzle, to ensure users understand how to utilize this feature effectively.\n\n## What needs to be done\nWe need comprehensive documentation for `razzle.extend.js`. This should cover its intended use cases and any specific details that users should know. There are no clear guidelines on what exactly should be included, so further clarification may be necessary.\n\n## Helpful background\n`razzle.extend.js` is part of Volto and facilitates certain functionalities in the platform. The lack of documentation surrounding this feature suggests that many users might be unaware of its benefits or how to implement it. The recent upgrade adds urgency to this task, making solid documentation even more critical.\n\n## Good first steps\n1. Review the existing comments and explore the functionality of `razzle.extend.js` within the Volto context.\n2. Engage with the community, possibly reaching out to others familiar with this feature for insights and details.\n3. Start drafting the documentation, focusing on clarity and accessibility for new users. Make sure to ask for feedback and iteratively refine your work. Discuss any uncertainties or gaps in information in the comments.",
-        "path": "data/issues/summaries/plone/volto/2005.json"
       }
     },
     {
@@ -1501,38 +1472,6 @@
         "model": "gpt-4o-mini",
         "summary_markdown": "## What this issue is about\nThis issue focuses on creating documentation for the \"global form state\" feature in Volto. Adding clear, user-friendly documentation will help both new and experienced developers understand how to effectively use this feature.\n\n## What needs to be done\nWe need to draft and finalize documentation that explains the global form state in Volto. This includes detailing the functionality and providing examples of its application. Please note that this task is dependent on confirming how the feature works in practice, which is still being explored. \n\n## Helpful background\nThe global form state allows users to manage form data more efficiently across different components. As of now, there’s some ambiguity regarding its specifics. Engaging in discussions or checking related issues might provide additional insights.\n\n## Good first steps\n1. Familiarize yourself with the global form state by exploring existing discussions and code.\n2. Reach out for clarification on any unclear aspects, especially if you find conflicting information.\n3. Start a draft of the documentation, focusing on clear explanations and examples.\n4. Coordinate with others who may be working on similar documentation to ensure consistency. \n\nFeel free to contribute your thoughts or reach out if you need support!",
         "path": "data/issues/summaries/plone/volto/5740.json"
-      }
-    },
-    {
-      "id": 515404096,
-      "number": 977,
-      "title": "document port/host backend api overrides",
-      "html_url": "https://github.com/plone/volto/issues/977",
-      "repository_full_name": "plone/volto",
-      "repository_url": "https://api.github.com/repos/plone/volto",
-      "state": "open",
-      "created_at": "2019-10-31T12:45:27Z",
-      "updated_at": "2024-02-04T22:09:06Z",
-      "comments": 0,
-      "author": {
-        "login": "fredvd",
-        "html_url": "https://github.com/fredvd"
-      },
-      "assignees": [
-        "robgietema"
-      ],
-      "labels": [
-        "01 type: bug",
-        "33 needs: docs",
-        "42 lvl: moderate"
-      ],
-      "contributor_summary": {
-        "status": "available",
-        "generated_at": "2026-04-09T17:27:35Z",
-        "source_issue_updated_at": "2024-02-04T22:09:06Z",
-        "model": "gpt-4o-mini",
-        "summary_markdown": "```markdown\n## What this issue is about\nThis issue addresses challenges in overriding the frontend port, host, and backend API path in Volto during development. Different behaviors are observed when using Volto from its source repository versus a Volto app created with `create-volto-app`. The main issue is that setting the port via command line appears to conflict with configurations in `src/config.js`.\n\n## What needs to be done\nThe goal is to clarify the usage of environment variables like `PORT` and `RAZZLE_API_PATH` for consistent behavior across setups. It may involve updating documentation to help new developers understand how to properly configure their development environment.\n\n## Helpful background\nVolto uses several settings to configure the frontend and backend during development. Environment variables govern this process, but their interaction with configuration files is not behaving as expected, leading to inconsistent results.\n\n## Good first steps\n1. Review the current behavior of `yarn start` with different configurations in both source and `create-volto-app` environments.\n2. Experiment with different combinations of `PORT` and `RAZZLE_API_PATH` to identify reproducible patterns.\n3. Consider how documentation can be improved to guide new contributors effectively.\n4. If you have feedback or questions, feel free to raise them in this issue; collaboration is encouraged as we work through these complexities.\n```",
-        "path": "data/issues/summaries/plone/volto/977.json"
       }
     },
     {
@@ -2247,10 +2186,10 @@
   "message": null,
   "workflow": {
     "repository": "syslabcom/activity-recognition",
-    "run_id": "40583893572",
-    "run_number": "4145",
+    "run_id": "40592196037",
+    "run_number": "4146",
     "attempt": "1",
-    "url": "https://github.com/syslabcom/activity-recognition/actions/runs/40583893572",
-    "sha": "ca19fdb59dec6503ed4833090c0573df44083f60"
+    "url": "https://github.com/syslabcom/activity-recognition/actions/runs/40592196037",
+    "sha": "ce04e15d9a66bd97f712a31e6eb9f0a7cf533be6"
   }
 }

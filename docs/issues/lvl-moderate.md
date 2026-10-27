@@ -1,24 +1,26 @@
 ---
 title: "Plone issue list — Level: Moderate"
 permalink: "/issues/lvl-moderate/"
-generated_at: "2026-10-27T21:06:18Z"
+generated_at: "2026-10-27T22:06:34Z"
 organization: "plone"
-issue_count: 72
+issue_count: 70
 required_labels:
   - "42 lvl: moderate"
 ---
 
 # Plone issue list — Level: Moderate
 
-Generated: `2026-10-27T21:06:18Z`  
+Generated: `2026-10-27T22:06:34Z`  
 Organization: `plone`  
 Required label: `42 lvl: moderate`  
-Issue count: `72`
+Issue count: `70`
 
 Sorted by last updated date, newest first.
 
 | Updated | Repository | Issue | Author | Labels |
 | --- | --- | --- | --- | --- |
+| 2026-10-27 21:36 UTC | `plone/volto` | [#5499 Fix LESS syntax highlighting](https://github.com/plone/volto/issues/5499) | `stevepiercy` | `01 type: bug`, `21 status: confirmed`, `33 needs: docs`, `42 lvl: moderate` |
+| 2026-10-27 21:32 UTC | `plone/volto` | [#3834 Document cypress commands, retrofit them to existing tests](https://github.com/plone/volto/issues/3834) | `tiberiuichim` | `33 needs: docs`, `42 lvl: moderate`, `99 tag: docs` |
 | 2026-10-16 11:10 UTC | `plone/plone-contributor-statistics` | [#14 Count only merged and release PLIPs](https://github.com/plone/plone-contributor-statistics/issues/14) | `tisto` | `04 type: enhancement`, `13 prio: normal`, `42 lvl: moderate`, `99 tag: community recognition` |
 | 2026-09-29 13:05 UTC | `plone/Products.CMFPlone` | [#3953 PLIP: Start separating Blicca (Classic UI) code from the core](https://github.com/plone/Products.CMFPlone/issues/3953) | `tisto` | `31 needs: help`, `99 tag: cleanup`, `03 type: feature (plip)`, `13 prio: normal`, `42 lvl: moderate`, `53 target: major`, `99 tag: Classic UI` |
 | 2026-09-28 00:07 UTC | `plone/aurora` | [#179 System requirements should be updated](https://github.com/plone/aurora/issues/179) | `stevepiercy` | `33 needs: docs`, `42 lvl: moderate` |
@@ -40,7 +42,6 @@ Sorted by last updated date, newest first.
 | 2025-02-28 20:55 UTC | `plone/documentation` | [#931 Docs on setting the modification date](https://github.com/plone/documentation/issues/931) | `zopyx` | `31 needs: help`, `33 needs: docs`, `42 lvl: moderate`, `99 tag: Plone 6.x` |
 | 2025-02-28 11:14 UTC | `plone/cookieplone-templates` | [#157 varnish container build superfluos - use config feature](https://github.com/plone/cookieplone-templates/issues/157) | `jensens` | `04 type: enhancement`, `21 status: confirmed`, `33 needs: docs`, `42 lvl: moderate` |
 | 2025-01-24 06:48 UTC | `plone/buildout.coredev` | [#972 Improve README](https://github.com/plone/buildout.coredev/issues/972) | `ramiroluz` | `04 type: enhancement`, `14 prio: low`, `33 needs: docs`, `41 lvl: easy`, `42 lvl: moderate` |
-| 2024-12-13 22:01 UTC | `plone/volto` | [#3834 Document cypress commands, retrofit them to existing tests](https://github.com/plone/volto/issues/3834) | `tiberiuichim` | `01 type: bug`, `33 needs: docs`, `42 lvl: moderate` |
 | 2024-11-24 08:35 UTC | `plone/documentation` | [#707 plone/content/creating.html outdated for dexterity content (folder restrictions)](https://github.com/plone/documentation/issues/707) | `zopyx` | `31 needs: help`, `33 needs: docs`, `42 lvl: moderate`, `99 tag: Plone 6.x` |
 | 2024-11-24 07:52 UTC | `plone/documentation` | [#1113 develop/plone/forms/files.rst](https://github.com/plone/documentation/issues/1113) | `frankar` | `31 needs: help`, `33 needs: docs`, `42 lvl: moderate`, `99 tag: Plone 6.x` |
 | 2024-11-24 07:52 UTC | `plone/documentation` | [#1083 Inconsistent case suggests wrong view name in contentlisting docs](https://github.com/plone/documentation/issues/1083) | `nutjob4life` | `33 needs: docs`, `34 needs: tests`, `42 lvl: moderate`, `99 tag: Plone 6.x` |
@@ -56,18 +57,15 @@ Sorted by last updated date, newest first.
 | 2024-11-24 05:50 UTC | `plone/documentation` | [#1434 Update how to get packages in develop](https://github.com/plone/documentation/issues/1434) | `stevepiercy` | `42 lvl: moderate` |
 | 2024-11-24 05:50 UTC | `plone/documentation` | [#1330 Migrate `develop/styleguide/*`](https://github.com/plone/documentation/issues/1330) | `stevepiercy` | `99 tag: sprint`, `33 needs: docs`, `42 lvl: moderate` |
 | 2024-11-24 03:02 UTC | `plone/documentation` | [#355 Integrate missing information about layers and traversing](https://github.com/plone/documentation/issues/355) | `do3cc` | `04 type: enhancement`, `99 tag: missing`, `42 lvl: moderate`, `99 tag: Plone 6.x` |
-| 2024-11-18 05:47 UTC | `plone/volto` | [#5499 Fix LESS syntax highlighting](https://github.com/plone/volto/issues/5499) | `stevepiercy` | `01 type: bug`, `33 needs: docs`, `42 lvl: moderate` |
 | 2024-11-13 11:06 UTC | `plone/Products.CMFPlone` | [#3204 Default valid_elements field in pattern options adds 40kb for every RichtTextField on an edit page](https://github.com/plone/Products.CMFPlone/issues/3204) | `fredvd` | `04 type: enhancement`, `31 needs: help`, `12 prio: high`, `21 status: confirmed`, `42 lvl: moderate` |
 | 2024-09-26 12:37 UTC | `plone/volto` | [#5466 Sidebar and toolbar shrink/ expanded functionality should work correctly for screen reader users](https://github.com/plone/volto/issues/5466) | `JeffersonBledsoe` | `01 type: bug`, `42 lvl: moderate`, `99 tag: UX Accessibility` |
 | 2024-09-01 09:15 UTC | `plone/meta` | [#119 Store dependency graph as an artifact](https://github.com/plone/meta/issues/119) | `gforcada` | `04 type: enhancement`, `14 prio: low`, `42 lvl: moderate` |
 | 2024-08-12 16:18 UTC | `plone/Products.CMFPlone` | [#1791 IWorkingCopy interface is preserved in copy of an item](https://github.com/plone/Products.CMFPlone/issues/1791) | `rafaelbco` | `01 type: bug`, `31 needs: help`, `14 prio: low`, `42 lvl: moderate` |
-| 2024-07-28 09:58 UTC | `plone/volto` | [#2005 Document razzle.extend.js](https://github.com/plone/volto/issues/2005) | `tiberiuichim` | `01 type: bug`, `33 needs: docs`, `42 lvl: moderate` |
 | 2024-05-17 12:45 UTC | `plone/Products.CMFPlone` | [#1801 list of plone_scripts to get rid of](https://github.com/plone/Products.CMFPlone/issues/1801) | `jensens` | `04 type: enhancement`, `31 needs: help`, `22 status: in-progress`, `14 prio: low`, `42 lvl: moderate` |
 | 2024-03-07 12:30 UTC | `plone/Products.CMFPlone` | [#3915 Automate inclusion of release notes into Plone 6 documentation](https://github.com/plone/Products.CMFPlone/issues/3915) | `stevepiercy` | `04 type: enhancement`, `99 tag: documentation`, `33 needs: docs`, `42 lvl: moderate` |
 | 2024-02-16 16:50 UTC | `plone/plone.org` | [#76 New Plone Release page gets wrong id](https://github.com/plone/plone.org/issues/76) | `mauritsvanrees` | `02 type: regression`, `42 lvl: moderate` |
 | 2024-02-16 16:46 UTC | `plone/plone.org` | [#59 Cannot fully edit releasepage in Volto](https://github.com/plone/plone.org/issues/59) | `mauritsvanrees` | `01 type: bug`, `42 lvl: moderate` |
 | 2024-02-07 08:58 UTC | `plone/volto` | [#5740 Add global form state docs](https://github.com/plone/volto/issues/5740) | `stevepiercy` | `33 needs: docs`, `42 lvl: moderate` |
-| 2024-02-04 22:09 UTC | `plone/volto` | [#977 document port/host backend api overrides](https://github.com/plone/volto/issues/977) | `fredvd` | `01 type: bug`, `33 needs: docs`, `42 lvl: moderate` |
 | 2024-02-04 21:57 UTC | `plone/volto` | [#3198 Documenting URL helpers API](https://github.com/plone/volto/issues/3198) | `tiberiuichim` | `04 type: enhancement`, `33 needs: docs`, `42 lvl: moderate` |
 | 2024-01-09 07:21 UTC | `plone/volto` | [#293 Embed (via iFrame) Block](https://github.com/plone/volto/issues/293) | `robgietema` | `04 type: enhancement`, `14 prio: low`, `21 status: confirmed`, `42 lvl: moderate` |
 | 2024-01-08 11:54 UTC | `plone/documentation` | [#1360 Backend instructions should explain how to add add-ons](https://github.com/plone/documentation/issues/1360) | `Rudd-O` | `42 lvl: moderate`, `99 tag: backend` |
