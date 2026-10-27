@@ -1,7 +1,7 @@
 ---
 title: "Plone issue list — Level: Complex"
 permalink: "/issues/lvl-complex/"
-generated_at: "2026-10-27T20:08:14Z"
+generated_at: "2026-10-27T21:06:18Z"
 organization: "plone"
 issue_count: 53
 required_labels:
@@ -10,7 +10,7 @@ required_labels:
 
 # Plone issue list — Level: Complex
 
-Generated: `2026-10-27T20:08:14Z`  
+Generated: `2026-10-27T21:06:18Z`  
 Organization: `plone`  
 Required label: `43 lvl: complex`  
 Issue count: `53`
@@ -19,6 +19,7 @@ Sorted by last updated date, newest first.
 
 | Updated | Repository | Issue | Author | Labels |
 | --- | --- | --- | --- | --- |
+| 2026-10-27 20:52 UTC | `plone/aurora` | [#318 \[Aurora\] - Make APISUFFIX configurable via environment variables](https://github.com/plone/aurora/issues/318) | `avoinea` | `01 type: bug`, `43 lvl: complex`, `30 needs: triage` |
 | 2026-09-29 13:37 UTC | `plone/plone.app.dexterity` | [#454 Blicca template separation analysis and follow up](https://github.com/plone/plone.app.dexterity/issues/454) | `petschki` | `04 type: enhancement`, `43 lvl: complex`, `12 prio: high`, `31 needs: help`, `53 target: major` |
 | 2026-09-14 02:17 UTC | `plone/Products.CMFPlone` | [#3987 Create Site Manager and Editor Guide for Plone 7](https://github.com/plone/Products.CMFPlone/issues/3987) | `stevepiercy` | `03 type: feature (plip)`, `43 lvl: complex` |
 | 2026-08-12 07:21 UTC | `plone/volto` | [#4303 Link Widget Improvement (add/select/modify)](https://github.com/plone/volto/issues/4303) | `sneridagh` | `03 type: feature (plip)`, `43 lvl: complex` |
@@ -27,7 +28,6 @@ Sorted by last updated date, newest first.
 | 2026-06-22 15:35 UTC | `plone/volto` | [#5300 PLIP: Keyword Manager](https://github.com/plone/volto/issues/5300) | `tisto` | `03 type: feature (plip)`, `43 lvl: complex` |
 | 2026-06-04 09:34 UTC | `plone/aurora` | [#27 Search the control panel to find a setting](https://github.com/plone/aurora/issues/27) | `ksuess` | `43 lvl: complex`, `discussion`, `30 needs: triage` |
 | 2026-06-04 09:34 UTC | `plone/aurora` | [#26 Implement non-schema-driven control panels](https://github.com/plone/aurora/issues/26) | `ksuess` | `43 lvl: complex` |
-| 2026-06-02 09:29 UTC | `plone/volto` | [#7519 \[Aurora\] - Make APISUFFIX configurable via environment variables](https://github.com/plone/volto/issues/7519) | `avoinea` | `01 type: bug`, `43 lvl: complex`, `30 needs: triage` |
 | 2026-05-19 08:45 UTC | `plone/volto` | [#4332 Quanta](https://github.com/plone/volto/issues/4332) | `sneridagh` | `03 type: feature (plip)`, `43 lvl: complex` |
 | 2026-05-19 08:45 UTC | `plone/volto` | [#4206 Quanta Toolbar](https://github.com/plone/volto/issues/4206) | `sneridagh` | `03 type: feature (plip)`, `43 lvl: complex` |
 | 2026-05-18 11:59 UTC | `plone/volto` | [#3277 Trigger 6-dev documentation build on every push to master in Volto](https://github.com/plone/volto/issues/3277) | `sneridagh` | `33 needs: docs`, `43 lvl: complex` |

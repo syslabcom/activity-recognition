@@ -1,0 +1,32 @@
+{
+  "version": 1,
+  "status": "success",
+  "generated_at": "2026-10-27T21:06:25Z",
+  "source_issue": {
+    "id": 6067478242,
+    "number": 318,
+    "title": "[Aurora] - Make APISUFFIX configurable via environment variables",
+    "html_url": "https://github.com/plone/aurora/issues/318",
+    "repository_full_name": "plone/aurora",
+    "updated_at": "2026-10-27T20:52:18Z",
+    "labels": [
+      "01 type: bug",
+      "43 lvl: complex",
+      "30 needs: triage"
+    ],
+    "comments": 4
+  },
+  "ai": {
+    "provider": "openai",
+    "model": "gpt-4o-mini"
+  },
+  "summary_markdown": "```markdown\n## What this issue is about\nThis issue aims to make the API suffix configurable via environment variables in the Aurora project. Currently, the default `/++api++` suffix is hard-coded, which complicates integration with other Plone RestAPI-compatible backends like Nick and Guillotina.\n\n## What needs to be done\nWe need to implement a feature that allows the API suffix to be specified through an environment variable, enhancing flexibility for developers. An example variable could be `PLONE_API_SUFFIX`, enabling users to easily override the default suffix.\n\n## Helpful background\nThis change is needed as other projects have similar configurations (like `RAZZLE_LEGACY_TRAVERSE` in Volto), but `@plone/client` currently lacks this capability. The community discussion reveals a workaround, but making it configurable would simplify the setup for users wanting to integrate with different backends.\n\n## Good first steps\n1. Familiarize yourself with the existing code in the `@plone/client` package.\n2. Review the linked documentation for first-time contributors and community guidelines.\n3. Consider how to implement or adjust the code to read the suffix from an environment variable.\n4. Open a pull request once you've implemented the changes and ensure testing is included to verify functionality.\n```",
+  "workflow": {
+    "repository": "syslabcom/activity-recognition",
+    "run_id": "40583893572",
+    "run_number": "4145",
+    "attempt": "1",
+    "url": "https://github.com/syslabcom/activity-recognition/actions/runs/40583893572",
+    "sha": "ca19fdb59dec6503ed4833090c0573df44083f60"
+  }
+}
