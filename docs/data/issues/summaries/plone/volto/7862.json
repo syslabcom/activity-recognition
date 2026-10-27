@@ -1,0 +1,31 @@
+{
+  "version": 1,
+  "status": "success",
+  "generated_at": "2026-10-27T23:06:29Z",
+  "source_issue": {
+    "id": 3906863329,
+    "number": 7862,
+    "title": "Docs : Missing react page in documentation for - 'contributing to volto'",
+    "html_url": "https://github.com/plone/volto/issues/7862",
+    "repository_full_name": "plone/volto",
+    "updated_at": "2026-10-27T22:23:11Z",
+    "labels": [
+      "41 lvl: easy",
+      "99 tag: docs"
+    ],
+    "comments": 6
+  },
+  "ai": {
+    "provider": "openai",
+    "model": "gpt-4o-mini"
+  },
+  "summary_markdown": "## What this issue is about\nThis issue addresses a missing or unnecessary documentation page for contributing to Volto regarding React. The specific page in question is located at [this link](https://6.docs.plone.org/volto/contributing/react.html), but there seems to be confusion over its purpose and content.\n\n## What needs to be done\nThe consensus among contributors is to delete the React documentation page and its reference in the index file’s table of contents (toctree). It’s unclear if this page should be replaced with new content, as there are competing thoughts about its necessity.\n\n## Helpful background\nThe issue was initiated because the React documentation page lacks content, which has led to questions about its value. It appears that React topics may already be covered elsewhere. Participants in the discussion have not agreed on any specific new content to include, making this a straightforward deletion task.\n\n## Good first steps\n1. Confirm the necessity of the page by reviewing existing React documentation to ensure it is redundant.\n2. If confirmed, delete the `react.md` file and remove its toctree entry in the `index.md` file.\n3. Submit a pull request for review.\n4. Coordinate with other contributors if you need assistance or feedback during your work.",
+  "workflow": {
+    "repository": "syslabcom/activity-recognition",
+    "run_id": "40599745839",
+    "run_number": "4147",
+    "attempt": "1",
+    "url": "https://github.com/syslabcom/activity-recognition/actions/runs/40599745839",
+    "sha": "29164740162f47fb1908bbe34e818d633ffb6b7a"
+  }
+}

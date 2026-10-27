@@ -1,24 +1,30 @@
 ---
 title: "Plone issue list — Level: Easy"
 permalink: "/issues/lvl-easy/"
-generated_at: "2026-10-27T22:06:34Z"
+generated_at: "2026-10-27T23:06:21Z"
 organization: "plone"
-issue_count: 90
+issue_count: 91
 required_labels:
   - "41 lvl: easy"
 ---
 
 # Plone issue list — Level: Easy
 
-Generated: `2026-10-27T22:06:34Z`  
+Generated: `2026-10-27T23:06:21Z`  
 Organization: `plone`  
 Required label: `41 lvl: easy`  
-Issue count: `90`
+Issue count: `91`
 
 Sorted by last updated date, newest first.
 
 | Updated | Repository | Issue | Author | Labels |
 | --- | --- | --- | --- | --- |
+| 2026-10-27 23:00 UTC | `plone/volto` | [#8487 Video block: YouTube playlist URL without a video id shows a broken placeholder image](https://github.com/plone/volto/issues/8487) | `jensens` | `01 type: bug`, `41 lvl: easy`, `62 scope: viewer` |
+| 2026-10-27 22:23 UTC | `plone/volto` | [#7862 Docs : Missing react page in documentation for - 'contributing to volto'](https://github.com/plone/volto/issues/7862) | `boss6825` | `41 lvl: easy`, `99 tag: docs` |
+| 2026-10-27 22:23 UTC | `plone/volto` | [#7265 Typing error when using `description` in schema with TextWidget – prop is unused and should be removed](https://github.com/plone/volto/issues/7265) | `alexandreIFB` | `01 type: bug`, `21 status: confirmed`, `41 lvl: easy` |
+| 2026-10-27 22:21 UTC | `plone/volto` | [#3762 Listing block headline should integrate with TOC](https://github.com/plone/volto/issues/3762) | `tiberiuichim` | `01 type: bug`, `21 status: confirmed`, `41 lvl: easy`, `62 scope: viewer` |
+| 2026-10-27 22:21 UTC | `plone/volto` | [#2074 Remove use of __CLIENT__ in volto code](https://github.com/plone/volto/issues/2074) | `tiberiuichim` | `01 type: bug`, `41 lvl: easy` |
+| 2026-10-27 22:21 UTC | `plone/volto` | [#1997 "manage-translations" view can be viewed by anonymous](https://github.com/plone/volto/issues/1997) | `tisto` | `01 type: bug`, `21 status: confirmed`, `41 lvl: easy` |
 | 2026-10-27 21:32 UTC | `plone/volto` | [#6119 RAZZLE_PUBLIC_URL is overridden by server.jsx code](https://github.com/plone/volto/issues/6119) | `ichim-david` | `01 type: bug`, `21 status: confirmed`, `41 lvl: easy` |
 | 2026-10-27 21:32 UTC | `plone/volto` | [#1836 Non-uniform colors in Pastanaga icons](https://github.com/plone/volto/issues/1836) | `tiberiuichim` | `01 type: bug`, `21 status: confirmed`, `41 lvl: easy` |
 | 2026-10-27 21:16 UTC | `plone/volto` | [#3910 can't edit on mobile as hard to close and reopen settings](https://github.com/plone/volto/issues/3910) | `djay` | `01 type: bug`, `04 type: enhancement`, `21 status: confirmed`, `41 lvl: easy`, `99 tag: UX`, `61 scope: editor` |
@@ -74,9 +80,7 @@ Sorted by last updated date, newest first.
 | 2024-02-23 09:21 UTC | `plone/plone.app.layout` | [#360 harmonize or add missing CSS classes in markup](https://github.com/plone/plone.app.layout/issues/360) | `MrTango` | `01 type: bug`, `02 type: regression`, `41 lvl: easy` |
 | 2024-02-16 17:01 UTC | `plone/plone.org` | [#149 a view for the Foundation Sponsor content type](https://github.com/plone/plone.org/issues/149) | `tkimnguyen` | `01 type: bug`, `04 type: enhancement`, `12 prio: high`, `31 needs: help`, `41 lvl: easy` |
 | 2024-02-16 16:57 UTC | `plone/plone.org` | [#143 add social media fields to Foundation Member content type](https://github.com/plone/plone.org/issues/143) | `tkimnguyen` | `04 type: enhancement`, `13 prio: normal`, `41 lvl: easy` |
-| 2024-02-06 22:07 UTC | `plone/volto` | [#588 Resetting the password does not work.](https://github.com/plone/volto/issues/588) | `vinay72` | `01 type: bug`, `12 prio: high`, `31 needs: help`, `41 lvl: easy` |
 | 2024-01-22 07:49 UTC | `plone/volto` | [#4380 Document openExternalLinkInNewTab config.settings](https://github.com/plone/volto/issues/4380) | `tiberiuichim` | `01 type: bug`, `33 needs: docs`, `41 lvl: easy` |
-| 2023-12-05 06:20 UTC | `plone/volto` | [#1997 "manage-translations" view can be viewed by anonymous](https://github.com/plone/volto/issues/1997) | `tisto` | `01 type: bug`, `41 lvl: easy` |
 | 2023-12-04 11:37 UTC | `plone/volto` | [#4341 The ListingBody component should be exported unconnected](https://github.com/plone/volto/issues/4341) | `tiberiuichim` | `04 type: enhancement`, `41 lvl: easy` |
 | 2023-10-14 13:44 UTC | `plone/meta` | [#175 New pre-commit hook: teyit](https://github.com/plone/meta/issues/175) | `gforcada` | `04 type: enhancement`, `14 prio: low`, `41 lvl: easy` |
 | 2023-05-30 20:45 UTC | `plone/meta` | [#70 Linter: `dlint`](https://github.com/plone/meta/issues/70) | `gforcada` | `04 type: enhancement`, `14 prio: low`, `41 lvl: easy` |
@@ -85,10 +89,7 @@ Sorted by last updated date, newest first.
 | 2023-05-30 20:26 UTC | `plone/meta` | [#30 Linter: rstcheck](https://github.com/plone/meta/issues/30) | `gforcada` | `04 type: enhancement`, `14 prio: low`, `41 lvl: easy` |
 | 2023-04-03 08:40 UTC | `plone/volto` | [#4486 Check reserved words on creating new content type instances](https://github.com/plone/volto/issues/4486) | `ksuess` | `01 type: bug`, `41 lvl: easy` |
 | 2023-03-13 10:29 UTC | `plone/Products.CMFPlone` | [#1863 Putting space in "Path Identifier" allows site to  be created; however, site does not function](https://github.com/plone/Products.CMFPlone/issues/1863) | `rileydog` | `01 type: bug`, `31 needs: help`, `14 prio: low`, `41 lvl: easy` |
-| 2023-03-04 21:00 UTC | `plone/volto` | [#4440 Using a package name that starts with `volto` causes `plone/generator-volto` to fail](https://github.com/plone/volto/issues/4440) | `stevepiercy` | `01 type: bug`, `31 needs: help`, `41 lvl: easy`, `51 target: patch` |
-| 2023-02-28 14:56 UTC | `plone/volto` | [#3762 Listing block headline should integrate with TOC](https://github.com/plone/volto/issues/3762) | `tiberiuichim` | `01 type: bug`, `41 lvl: easy` |
 | 2022-08-24 09:58 UTC | `plone/Products.CMFPlone` | [#1094 Inconsistent wrapping between portlets](https://github.com/plone/Products.CMFPlone/issues/1094) | `zopyx` | `01 type: bug`, `31 needs: help`, `14 prio: low`, `41 lvl: easy`, `99 tag: Plone 6.0` |
-| 2022-03-14 05:39 UTC | `plone/volto` | [#2074 Remove use of __CLIENT__ in volto code](https://github.com/plone/volto/issues/2074) | `tiberiuichim` | `01 type: bug`, `41 lvl: easy` |
 | 2021-06-16 10:05 UTC | `plone/plone.app.contenttypes` | [#605 Plone Image description field is used for alt-attribute but not explained](https://github.com/plone/plone.app.contenttypes/issues/605) | `iham` | `04 type: enhancement`, `05 type: question`, `13 prio: normal`, `41 lvl: easy` |
 | 2021-04-30 04:31 UTC | `plone/volto` | [#2017 Improve folder_contents workflow state for images/files (show "inherited from parent" instead of just "no workflow state")](https://github.com/plone/volto/issues/2017) | `tisto` | `04 type: enhancement`, `41 lvl: easy` |
 | 2021-01-04 18:57 UTC | `plone/volto` | [#27 Workflow comment and include contained items](https://github.com/plone/volto/issues/27) | `robgietema` | `04 type: enhancement`, `13 prio: normal`, `41 lvl: easy`, `26 status: blocked` |

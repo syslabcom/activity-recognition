@@ -1,7 +1,7 @@
 ---
 title: "Plone issue list — Level: Complex"
 permalink: "/issues/lvl-complex/"
-generated_at: "2026-10-27T22:06:34Z"
+generated_at: "2026-10-27T23:06:21Z"
 organization: "plone"
 issue_count: 53
 required_labels:
@@ -10,7 +10,7 @@ required_labels:
 
 # Plone issue list — Level: Complex
 
-Generated: `2026-10-27T22:06:34Z`  
+Generated: `2026-10-27T23:06:21Z`  
 Organization: `plone`  
 Required label: `43 lvl: complex`  
 Issue count: `53`
@@ -19,6 +19,7 @@ Sorted by last updated date, newest first.
 
 | Updated | Repository | Issue | Author | Labels |
 | --- | --- | --- | --- | --- |
+| 2026-10-27 22:22 UTC | `plone/volto` | [#4576 Deployment documentation needs to show Seamless mode first, rather then classic "simple"](https://github.com/plone/volto/issues/4576) | `tiberiuichim` | `33 needs: docs`, `43 lvl: complex`, `99 tag: docs-reorg`, `99 tag: docs` |
 | 2026-10-27 20:52 UTC | `plone/aurora` | [#318 \[Aurora\] - Make APISUFFIX configurable via environment variables](https://github.com/plone/aurora/issues/318) | `avoinea` | `01 type: bug`, `43 lvl: complex`, `30 needs: triage` |
 | 2026-09-29 13:37 UTC | `plone/plone.app.dexterity` | [#454 Blicca template separation analysis and follow up](https://github.com/plone/plone.app.dexterity/issues/454) | `petschki` | `04 type: enhancement`, `43 lvl: complex`, `12 prio: high`, `31 needs: help`, `53 target: major` |
 | 2026-09-14 02:17 UTC | `plone/Products.CMFPlone` | [#3987 Create Site Manager and Editor Guide for Plone 7](https://github.com/plone/Products.CMFPlone/issues/3987) | `stevepiercy` | `03 type: feature (plip)`, `43 lvl: complex` |
@@ -35,7 +36,6 @@ Sorted by last updated date, newest first.
 | 2026-05-18 10:53 UTC | `plone/volto` | [#1478 Proposal: have a list of "smart fields" in Volto blocks](https://github.com/plone/volto/issues/1478) | `tiberiuichim` | `03 type: feature (plip)`, `43 lvl: complex` |
 | 2026-05-18 10:51 UTC | `plone/volto` | [#4460 Refactor class components to functional components](https://github.com/plone/volto/issues/4460) | `sneridagh` | `03 type: feature (plip)`, `43 lvl: complex` |
 | 2026-05-18 10:42 UTC | `plone/volto` | [#6327 Library Upgrades for the next major (19).](https://github.com/plone/volto/issues/6327) | `tisto` | `03 type: feature (plip)`, `43 lvl: complex` |
-| 2026-05-18 10:30 UTC | `plone/volto` | [#4576 Deployment documentation needs to show Seamless mode first, rather then classic "simple"](https://github.com/plone/volto/issues/4576) | `tiberiuichim` | `01 type: bug`, `33 needs: docs`, `43 lvl: complex`, `99 tag: docs-reorg` |
 | 2026-05-18 10:28 UTC | `plone/volto` | [#4232 Move new CSRF docs from Classic UI to Backend?](https://github.com/plone/volto/issues/4232) | `stevepiercy` | `04 type: enhancement`, `33 needs: docs`, `43 lvl: complex` |
 | 2026-05-18 10:24 UTC | `plone/volto` | [#1516 Metadata block or easy way to insert document metadata inside text block](https://github.com/plone/volto/issues/1516) | `avoinea` | `04 type: enhancement`, `43 lvl: complex`, `99 tag: sprint` |
 | 2026-03-23 19:04 UTC | `plone/documentation` | [#1902 Create Plone site administrator guide](https://github.com/plone/documentation/issues/1902) | `stevepiercy` | `05 type: question`, `43 lvl: complex` |

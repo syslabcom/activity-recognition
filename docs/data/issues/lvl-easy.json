@@ -1,7 +1,7 @@
 {
   "version": 1,
   "status": "success",
-  "generated_at": "2026-10-27T22:06:34Z",
+  "generated_at": "2026-10-27T23:06:21Z",
   "organization": "plone",
   "state": "open",
   "slug": "lvl-easy",
@@ -9,8 +9,191 @@
   "required_labels": [
     "41 lvl: easy"
   ],
-  "issue_count": 90,
+  "issue_count": 91,
   "issues": [
+    {
+      "id": 6069219495,
+      "number": 8487,
+      "title": "Video block: YouTube playlist URL without a video id shows a broken placeholder image",
+      "html_url": "https://github.com/plone/volto/issues/8487",
+      "repository_full_name": "plone/volto",
+      "repository_url": "https://api.github.com/repos/plone/volto",
+      "state": "open",
+      "created_at": "2026-10-27T23:00:52Z",
+      "updated_at": "2026-10-27T23:00:52Z",
+      "comments": 0,
+      "author": {
+        "login": "jensens",
+        "html_url": "https://github.com/jensens"
+      },
+      "assignees": [],
+      "labels": [
+        "01 type: bug",
+        "41 lvl: easy",
+        "62 scope: viewer"
+      ],
+      "contributor_summary": {
+        "status": "available",
+        "generated_at": "2026-10-27T23:06:25Z",
+        "source_issue_updated_at": "2026-10-27T23:00:52Z",
+        "model": "gpt-4o-mini",
+        "summary_markdown": "```markdown\n## What this issue is about\nThis issue concerns a bug in the Video block of Volto where a YouTube playlist URL, lacking a video ID, displays a broken placeholder image. When users attempt to access such a URL, they see an invalid thumbnail instead of a suitable default image.\n\n## What needs to be done\nThe current code needs a fix to ensure that if a playlist URL is provided without a video ID, an appropriate placeholder image (like only a play icon) is shown instead of the broken image. Additionally, some dead code related to the `listID` prop should be removed for clarity.\n\n## Helpful background\nThe bug arises from the `getVideoIDAndPlaceholder` function in `Body.jsx`, which incorrectly generates a thumbnail URL that results in a `null` value when there is no video ID. This issue is consistent in both the current and previous versions of the code, indicating it is not a new regression.\n\n## Good first steps\n1. Familiarize yourself with the `getVideoIDAndPlaceholder` function in `packages/volto/src/components/manage/Blocks/Video/Body.jsx`.\n2. Review how the thumbnail URL is constructed and identify where the appropriate placeholder logic can be added.\n3. Propose an update to the code and remove the unnecessary `listID` prop.\n4. Consider testing your changes to ensure the new placeholder displays correctly and the video plays as expected.\n```",
+        "path": "data/issues/summaries/plone/volto/8487.json"
+      }
+    },
+    {
+      "id": 3906863329,
+      "number": 7862,
+      "title": "Docs : Missing react page in documentation for - 'contributing to volto'",
+      "html_url": "https://github.com/plone/volto/issues/7862",
+      "repository_full_name": "plone/volto",
+      "repository_url": "https://api.github.com/repos/plone/volto",
+      "state": "open",
+      "created_at": "2026-02-06T13:48:31Z",
+      "updated_at": "2026-10-27T22:23:11Z",
+      "comments": 6,
+      "author": {
+        "login": "boss6825",
+        "html_url": "https://github.com/boss6825"
+      },
+      "assignees": [
+        "sneridagh"
+      ],
+      "labels": [
+        "41 lvl: easy",
+        "99 tag: docs"
+      ],
+      "contributor_summary": {
+        "status": "available",
+        "generated_at": "2026-10-27T23:06:29Z",
+        "source_issue_updated_at": "2026-10-27T22:23:11Z",
+        "model": "gpt-4o-mini",
+        "summary_markdown": "## What this issue is about\nThis issue addresses a missing or unnecessary documentation page for contributing to Volto regarding React. The specific page in question is located at [this link](https://6.docs.plone.org/volto/contributing/react.html), but there seems to be confusion over its purpose and content.\n\n## What needs to be done\nThe consensus among contributors is to delete the React documentation page and its reference in the index file’s table of contents (toctree). It’s unclear if this page should be replaced with new content, as there are competing thoughts about its necessity.\n\n## Helpful background\nThe issue was initiated because the React documentation page lacks content, which has led to questions about its value. It appears that React topics may already be covered elsewhere. Participants in the discussion have not agreed on any specific new content to include, making this a straightforward deletion task.\n\n## Good first steps\n1. Confirm the necessity of the page by reviewing existing React documentation to ensure it is redundant.\n2. If confirmed, delete the `react.md` file and remove its toctree entry in the `index.md` file.\n3. Submit a pull request for review.\n4. Coordinate with other contributors if you need assistance or feedback during your work.",
+        "path": "data/issues/summaries/plone/volto/7862.json"
+      }
+    },
+    {
+      "id": 3304240569,
+      "number": 7265,
+      "title": "Typing error when using `description` in schema with TextWidget – prop is unused and should be removed",
+      "html_url": "https://github.com/plone/volto/issues/7265",
+      "repository_full_name": "plone/volto",
+      "repository_url": "https://api.github.com/repos/plone/volto",
+      "state": "open",
+      "created_at": "2025-08-08T14:19:07Z",
+      "updated_at": "2026-10-27T22:23:00Z",
+      "comments": 7,
+      "author": {
+        "login": "alexandreIFB",
+        "html_url": "https://github.com/alexandreIFB"
+      },
+      "assignees": [],
+      "labels": [
+        "01 type: bug",
+        "21 status: confirmed",
+        "41 lvl: easy"
+      ],
+      "contributor_summary": {
+        "status": "available",
+        "generated_at": "2026-10-27T23:06:33Z",
+        "source_issue_updated_at": "2026-10-27T22:23:00Z",
+        "model": "gpt-4o-mini",
+        "summary_markdown": "## What this issue is about\nThis issue addresses a typing error related to the `description` property when using the `TextWidget` in the Plone Volto project. Specifically, the `description` is passed as a prop but isn't utilized correctly, leading to potential confusion.\n\n## What needs to be done\nThe likely solution is to revise the type declaration of `description` in `TextWidget` to accept React elements (`PropTypes.node`). This modification allows for consistent handling of the `description` prop.\n\n## Helpful background\nTo reproduce the issue, you can add a React element as the `description` in the `Teaser/schema.js`, save the file as `.jsx`, and check the browser console for typing errors. Discussions around the issue have revealed different views on the best approach, so clarity on implementation might still be needed.\n\n## Good first steps\n1. Review the code in `TextWidget` and `FormFieldWrapper` to understand how `description` is currently implemented.\n2. Update the `TextWidget` to accept a wider range of prop types for `description`.\n3. Test your changes to ensure the typing error no longer appears.\n4. Consider contributing a pull request to this issue, but be aware of existing discussions and proposals. Follow up with the community if you have questions!",
+        "path": "data/issues/summaries/plone/volto/7265.json"
+      }
+    },
+    {
+      "id": 1409037162,
+      "number": 3762,
+      "title": "Listing block headline should integrate with TOC",
+      "html_url": "https://github.com/plone/volto/issues/3762",
+      "repository_full_name": "plone/volto",
+      "repository_url": "https://api.github.com/repos/plone/volto",
+      "state": "open",
+      "created_at": "2022-10-14T09:16:40Z",
+      "updated_at": "2026-10-27T22:21:33Z",
+      "comments": 2,
+      "author": {
+        "login": "tiberiuichim",
+        "html_url": "https://github.com/tiberiuichim"
+      },
+      "assignees": [
+        "tedw87"
+      ],
+      "labels": [
+        "01 type: bug",
+        "21 status: confirmed",
+        "41 lvl: easy",
+        "62 scope: viewer"
+      ],
+      "contributor_summary": {
+        "status": "available",
+        "generated_at": "2026-10-27T23:06:44Z",
+        "source_issue_updated_at": "2026-10-27T22:21:33Z",
+        "model": "gpt-4o-mini",
+        "summary_markdown": "## What this issue is about\nThis issue addresses a bug in the Volto project where the listing block headline is not properly integrated with the Table of Contents (TOC). Specifically, it involves ensuring the `tocEntry` feature works as intended.\n\n## What needs to be done\nYou need to investigate the configuration of the listing block and implement the functionality to include a `tocEntry` as per the existing TOC integration strategies. There seems to be a gap in the current implementation where the `tocEntry` is missing from the listing block.\n\n## Helpful background\nThis issue has been confirmed and has links to related discussions and previous attempts to address it (see [#4436](https://github.com/plone/volto/pull/4436)). However, prior solutions were closed without fully resolving this specific problem. The mechanism for `tocEntries` was added in another pull request (#5146), but the integration within the listing block remains to be addressed.\n\n## Good first steps\n1. Review the existing configuration for listing blocks and TOC integration.\n2. Familiarize yourself with the `tocEntry` feature in the context of Volto.\n3. Check the open comments for insights or suggestions from other contributors.\n4. Start working on a potential fix and write tests to ensure it works as expected.\n5. Coordinate with the assigned contributor for any questions or guidance.",
+        "path": "data/issues/summaries/plone/volto/3762.json"
+      }
+    },
+    {
+      "id": 770062840,
+      "number": 2074,
+      "title": "Remove use of __CLIENT__ in volto code",
+      "html_url": "https://github.com/plone/volto/issues/2074",
+      "repository_full_name": "plone/volto",
+      "repository_url": "https://api.github.com/repos/plone/volto",
+      "state": "open",
+      "created_at": "2020-12-17T13:58:06Z",
+      "updated_at": "2026-10-27T22:21:12Z",
+      "comments": 5,
+      "author": {
+        "login": "tiberiuichim",
+        "html_url": "https://github.com/tiberiuichim"
+      },
+      "assignees": [],
+      "labels": [
+        "01 type: bug",
+        "41 lvl: easy"
+      ],
+      "contributor_summary": {
+        "status": "available",
+        "generated_at": "2026-10-27T23:06:48Z",
+        "source_issue_updated_at": "2026-10-27T22:21:12Z",
+        "model": "gpt-4o-mini",
+        "summary_markdown": "```markdown\n## What this issue is about\nThis issue focuses on removing unnecessary use of the `__CLIENT__` variable in the Volto codebase. This variable is intended for distinguishing client-side rendering but has led to incorrect assumptions about component mounting.\n\n## What needs to be done\nReview and remove instances of `__CLIENT__` in specific files, ensuring that components are correctly utilizing a state variable (like `this.state.isClient`) instead. Some references are acceptable and should be examined case by case. This task is partially completed, with remaining work identified in certain components.\n\n## Helpful background\nThe use of `__CLIENT__` can lead to performance issues and misunderstandings in how components should render. This discussion has evolved, and while some parts of the ticket might be outdated, careful examination is crucial for proper implementation. \n\n## Good first steps\n1. Familiarize yourself with the `__CLIENT__` usage in the specified components: \n   - `src/sentry.js`\n   - `src/components/manage/*.jsx`\n   - `src/middleware/crashReporter.js`\n2. Check for the correct implementation of `state.isClient` in these files.\n3. Test any changes to ensure that components render as expected.\n4. Coordinate with other contributors if you're unsure about a particular code instance.\n```",
+        "path": "data/issues/summaries/plone/volto/2074.json"
+      }
+    },
+    {
+      "id": 745429960,
+      "number": 1997,
+      "title": "\"manage-translations\" view can be viewed by anonymous",
+      "html_url": "https://github.com/plone/volto/issues/1997",
+      "repository_full_name": "plone/volto",
+      "repository_url": "https://api.github.com/repos/plone/volto",
+      "state": "open",
+      "created_at": "2020-11-18T08:03:50Z",
+      "updated_at": "2026-10-27T22:21:10Z",
+      "comments": 7,
+      "author": {
+        "login": "tisto",
+        "html_url": "https://github.com/tisto"
+      },
+      "assignees": [],
+      "labels": [
+        "01 type: bug",
+        "21 status: confirmed",
+        "41 lvl: easy"
+      ],
+      "contributor_summary": {
+        "status": "available",
+        "generated_at": "2026-10-27T23:06:52Z",
+        "source_issue_updated_at": "2026-10-27T22:21:10Z",
+        "model": "gpt-4o-mini",
+        "summary_markdown": "```markdown\n## What this issue is about\nThis issue addresses a bug where the \"manage-translations\" view is accessible by anonymous users, which should not happen. Instead, they should receive a 404 error or redirected to a login page.\n\n## What needs to be done\nThe goal is to implement a permission check for the \"manage-translations\" route so that only logged-in users can access it. This will involve editing the `Multilingual/ManageTranslations.jsx` component to ensure proper authorization.\n\n## Helpful background\nThe current behavior allows anyone to view the \"manage-translations\" page, which poses a security risk. The function of routes in Volto can be somewhat unique; nonContentRoutes don't pull content from the backend but are meant to redirect or show specific content based on user credentials.\n\n## Good first steps\n1. Familiarize yourself with the `Multilingual/ManageTranslations.jsx` component and its role in the routing system.\n2. Check existing route handling mechanisms in the codebase, especially focusing on how permission checks are structured.\n3. Plan the changes needed to include a user authentication check to restrict access.\n4. Consider looking into relevant documentation for route management to ensure you understand the implications of your changes.\n5. After implementing, remember to test the changes thoroughly and document your approach in the project for clarity.\n```",
+        "path": "data/issues/summaries/plone/volto/1997.json"
+      }
+    },
     {
       "id": 2367730353,
       "number": 6119,
@@ -1727,39 +1910,6 @@
       }
     },
     {
-      "id": 394393792,
-      "number": 588,
-      "title": "Resetting the password does not work.",
-      "html_url": "https://github.com/plone/volto/issues/588",
-      "repository_full_name": "plone/volto",
-      "repository_url": "https://api.github.com/repos/plone/volto",
-      "state": "open",
-      "created_at": "2018-12-27T13:22:40Z",
-      "updated_at": "2024-02-06T22:07:26Z",
-      "comments": 4,
-      "author": {
-        "login": "vinay72",
-        "html_url": "https://github.com/vinay72"
-      },
-      "assignees": [
-        "robdayz"
-      ],
-      "labels": [
-        "01 type: bug",
-        "12 prio: high",
-        "31 needs: help",
-        "41 lvl: easy"
-      ],
-      "contributor_summary": {
-        "status": "available",
-        "generated_at": "2026-04-09T17:27:31Z",
-        "source_issue_updated_at": "2024-02-06T22:07:26Z",
-        "model": "gpt-4o-mini",
-        "summary_markdown": "## What this issue is about\nThis issue reports that the password reset feature in Plone’s Volto application is not functioning. Users are unable to receive password reset emails when they attempt to reset their passwords after registration.\n\n## What needs to be done\nThe underlying issue involves backend adjustments. A solution is needed to ensure password reset emails are sent correctly. Additionally, a Cypress test should be developed to thoroughly verify the password reset process, which is essential for maintaining functionality.\n\n## Helpful background\nThis issue is recognized as complex, requiring backend modifications for a proper fix. Earlier discussions highlighted challenges, including the need for email configuration and addressing multilingual features related to the password reset flow. \n\n## Good first steps\n1. Familiarize yourself with the current code handling the password reset process.\n2. Explore the [Cypress](https://docs.cypress.io/) testing framework if you're interested in helping develop tests.\n3. Review relevant documentation regarding backend email settings in Plone.\n4. Consider discussing potential solutions in the comments if you have ideas or questions.\n\nFeel free to reach out to the issue assignee, [robdayz](https://github.com/robdayz) or engage with other contributors for guidance!",
-        "path": "data/issues/summaries/plone/volto/588.json"
-      }
-    },
-    {
       "id": 1575854434,
       "number": 4380,
       "title": "Document openExternalLinkInNewTab config.settings",
@@ -1787,35 +1937,6 @@
         "model": "gpt-4o-mini",
         "summary_markdown": "## What this issue is about\nThis issue focuses on adding documentation for the `openExternalLinkInNewTab` setting in Volto, which is currently not mentioned in the settings reference. The setting controls whether external links open in a new tab or not.\n\n## What needs to be done\nYou need to update the Volto documentation to include the `openExternalLinkInNewTab` setting. Specifically, this involves adding a clear explanation of what the setting does and how to use it in the documentation file located [here](https://github.com/plone/volto/blob/main/docs/source/configuration/settings-reference.md).\n\n## Helpful background\nThe setting is currently defaulted to `false`, meaning external links do not open in a new tab. Proper documentation will help users understand and configure this setting effectively. If you're unsure about the exact details or how to implement it, feel free to reach out for clarification.\n\n## Good first steps\n1. Review the existing [settings-reference](https://6.docs.plone.org/volto/configuration/settings-reference.html) to see the format and style used.\n2. Create a draft for the new documentation section about `openExternalLinkInNewTab`.\n3. Consider checking if there are any related issues or existing comments for more context.\n4. Once you're ready, submit a pull request for review.\n\nFeel free to ask questions if anything is unclear!",
         "path": "data/issues/summaries/plone/volto/4380.json"
-      }
-    },
-    {
-      "id": 745429960,
-      "number": 1997,
-      "title": "\"manage-translations\" view can be viewed by anonymous",
-      "html_url": "https://github.com/plone/volto/issues/1997",
-      "repository_full_name": "plone/volto",
-      "repository_url": "https://api.github.com/repos/plone/volto",
-      "state": "open",
-      "created_at": "2020-11-18T08:03:50Z",
-      "updated_at": "2023-12-05T06:20:33Z",
-      "comments": 6,
-      "author": {
-        "login": "tisto",
-        "html_url": "https://github.com/tisto"
-      },
-      "assignees": [],
-      "labels": [
-        "01 type: bug",
-        "41 lvl: easy"
-      ],
-      "contributor_summary": {
-        "status": "available",
-        "generated_at": "2026-04-09T17:28:15Z",
-        "source_issue_updated_at": "2023-12-05T06:20:33Z",
-        "model": "gpt-4o-mini",
-        "summary_markdown": "## What this issue is about\nThis issue addresses a bug in the `manage-translations` view in Volto, which currently allows anonymous users to access the page without appropriate permissions. Instead, anonymous users should see a 404 error or a login prompt.\n\n## What needs to be done\nThe goal is to restrict access to the `manage-translations` view so that it returns a 404 or redirect to the login page for unauthenticated users. The implementation requires modifying how non-content routes handle permissions.\n\n## Helpful background\nIn Volto, `nonContentRoutes` are special routes that do not load typical Plone content. They handle different functionalities, such as control panels or sitemaps. The discussion highlights uncertainty about expected behaviors for certain routes, particularly whether they should present a homepage or an error message to anonymous users.\n\n## Good first steps\n1. Review the `manage-translations` view code to understand current routing and permission checks.\n2. Investigate other `nonContentRoutes` to identify patterns for handling access permissions.\n3. Consider updating or adding documentation based on findings to help clarify route behaviors for future contributors.\n4. Test your changes to ensure that the intended access restrictions are effective.",
-        "path": "data/issues/summaries/plone/volto/1997.json"
       }
     },
     {
@@ -2058,68 +2179,6 @@
       }
     },
     {
-      "id": 1603090121,
-      "number": 4440,
-      "title": "Using a package name that starts with `volto` causes `plone/generator-volto` to fail",
-      "html_url": "https://github.com/plone/volto/issues/4440",
-      "repository_full_name": "plone/volto",
-      "repository_url": "https://api.github.com/repos/plone/volto",
-      "state": "open",
-      "created_at": "2023-02-28T13:35:56Z",
-      "updated_at": "2023-03-04T21:00:35Z",
-      "comments": 2,
-      "author": {
-        "login": "stevepiercy",
-        "html_url": "https://github.com/stevepiercy"
-      },
-      "assignees": [],
-      "labels": [
-        "01 type: bug",
-        "31 needs: help",
-        "41 lvl: easy",
-        "51 target: patch"
-      ],
-      "contributor_summary": {
-        "status": "available",
-        "generated_at": "2026-04-09T18:25:44Z",
-        "source_issue_updated_at": "2023-03-04T21:00:35Z",
-        "model": "gpt-4o-mini",
-        "summary_markdown": "```markdown\n## What this issue is about\nThis issue addresses a bug in the `plone/generator-volto` where using a package name that starts with `volto` causes errors during installation and startup.\n\n## What needs to be done\nWe need to investigate the issue around package naming and how it interferes with `yarn`, our dependency management tool. This could involve checking if the package name handling can be adjusted or if there’s a specific workaround needed.\n\n## Helpful background\nThe error seems to occur during the `yarn install` process, which typically manages package dependencies. Specifically, it indicates that the package isn't found in the lockfile. There's uncertainty about the root cause, with a potential connection to another issue (#3770), but no definitive solution has been proposed yet.\n\n## Good first steps\n1. Clone the `plone/volto` repository and navigate to the `packages/generator-volto` directory.\n2. Try reproducing the issue by creating a package that starts with `volto` and run `yarn install`.\n3. Investigate the error messages and check if they relate to package locking.\n4. Consider contributing a fix or workaround, and document your findings for review.\n5. Coordinate with other contributors who have commented on this issue for additional insights.\n\nFeel free to reach out if you have questions!\n```",
-        "path": "data/issues/summaries/plone/volto/4440.json"
-      }
-    },
-    {
-      "id": 1409037162,
-      "number": 3762,
-      "title": "Listing block headline should integrate with TOC",
-      "html_url": "https://github.com/plone/volto/issues/3762",
-      "repository_full_name": "plone/volto",
-      "repository_url": "https://api.github.com/repos/plone/volto",
-      "state": "open",
-      "created_at": "2022-10-14T09:16:40Z",
-      "updated_at": "2023-02-28T14:56:46Z",
-      "comments": 1,
-      "author": {
-        "login": "tiberiuichim",
-        "html_url": "https://github.com/tiberiuichim"
-      },
-      "assignees": [
-        "tedw87"
-      ],
-      "labels": [
-        "01 type: bug",
-        "41 lvl: easy"
-      ],
-      "contributor_summary": {
-        "status": "available",
-        "generated_at": "2026-04-09T19:29:30Z",
-        "source_issue_updated_at": "2023-02-28T14:56:46Z",
-        "model": "gpt-4o-mini",
-        "summary_markdown": "## What this issue is about\nThis issue addresses a bug in the Volto project where the headline of the listing block is not properly integrating with the Table of Contents (TOC). The TOC helps in organizing content, and this integration is important for usability.\n\n## What needs to be done\nThe main task is to update the listing block so that its headline can function correctly with the existing TOC framework. This might involve modifying configurations related to `config.blocks.blocksConfig[block['@type']]?.tocEntry`. \n\n## Helpful background\nThe discussion around this issue includes a pull request (#4436) that may provide insights on potential solutions. As parts of this issue are still being discussed, details or implementation strategies could change, so stay flexible in your approach.\n\n## Good first steps\n1. Check out the pull request linked in the comments for context on potential fixes.\n2. Familiarize yourself with how the listing block and TOC are currently working in Volto.\n3. Start by experimenting with the related code in a local environment to gain hands-on understanding.\n4. Don’t hesitate to ask questions in the issue thread if anything is unclear! Your contributions are welcomed.",
-        "path": "data/issues/summaries/plone/volto/3762.json"
-      }
-    },
-    {
       "id": 108453013,
       "number": 1094,
       "title": "Inconsistent wrapping between portlets",
@@ -2149,35 +2208,6 @@
         "model": "gpt-4o-mini",
         "summary_markdown": "## What this issue is about\nThis issue addresses an inconsistency in how titles are wrapped in different portlets within Plone. Specifically, long titles in one portlet start on a new line, while in another, they follow the bullet directly, leading to a mismatched appearance.\n\n## What needs to be done\nWe need to investigate the CSS or layout settings for the portlets and ensure consistent behavior for title wrapping across all portlet types. This may involve adjusting the styling or markup.\n\n## Helpful background\nThis issue stems from differences in how stock portlet types render their content. Recent comments indicate that the visual inconsistency persists even in Plone 6, so updates or fixes may be necessary.\n\n## Good first steps\n1. Review the existing portlet code and associated CSS to understand how titles are currently styled.\n2. Experiment with adjustments to the CSS for maintaining consistent wrapping behavior.\n3. Test your changes in different portlets to ensure the fix is effective across the board.\n4. Document any changes you make, noting their impact on different portlet types. Once you're confident in your changes, consider submitting a pull request for review.\n\nIf you're unsure about something, feel free to ask for clarification in the comments!",
         "path": "data/issues/summaries/plone/Products.CMFPlone/1094.json"
-      }
-    },
-    {
-      "id": 770062840,
-      "number": 2074,
-      "title": "Remove use of __CLIENT__ in volto code",
-      "html_url": "https://github.com/plone/volto/issues/2074",
-      "repository_full_name": "plone/volto",
-      "repository_url": "https://api.github.com/repos/plone/volto",
-      "state": "open",
-      "created_at": "2020-12-17T13:58:06Z",
-      "updated_at": "2022-03-14T05:39:16Z",
-      "comments": 4,
-      "author": {
-        "login": "tiberiuichim",
-        "html_url": "https://github.com/tiberiuichim"
-      },
-      "assignees": [],
-      "labels": [
-        "01 type: bug",
-        "41 lvl: easy"
-      ],
-      "contributor_summary": {
-        "status": "available",
-        "generated_at": "2026-04-09T19:30:11Z",
-        "source_issue_updated_at": "2022-03-14T05:39:16Z",
-        "model": "gpt-4o-mini",
-        "summary_markdown": "```markdown\n## What this issue is about\nThis issue aims to review and possibly remove the use of the `__CLIENT__` variable in the Volto codebase. This approach was previously used to determine if the code is running in a client environment. However, it can lead to incorrect component behavior.\n\n## What needs to be done\nYou should investigate the specific instances of `__CLIENT__` in the code to determine if they need to be replaced or removed. Not all references may need changing; some may still be valid. Some references to `__SERVER__` should also be examined as part of this process.\n\n## Helpful background\nThe original intent of using `__CLIENT__` was to help components know whether they had been mounted in a client environment. However, newer best practices suggest using a state variable like `this.state.isClient` for more accurate behavior in React components.\n\n## Good first steps\n1. **Review the instances** of `__CLIENT__` found in the following files:\n   - `src/store.js`\n   - `src/sentry.js`\n   - `src/components/manage/Multilingual/ManageTranslations.jsx`\n   - `src/components/manage/Sidebar/ObjectBrowser.jsx`\n   - `src/components/manage/Form/Form.jsx`\n   - `src/components/manage/Form/BlocksToolbar.jsx`\n   - `src/components/theme/App/App.jsx`\n   - `src/middleware/crashReporter.js`\n\n2. **Discuss with the community** if you're unsure about specific cases.\n\n3. **Update documentation and tests** as needed based on the changes you make.\n\nFeel free to ask questions if something is unclear!\n```",
-        "path": "data/issues/summaries/plone/volto/2074.json"
       }
     },
     {
@@ -2788,10 +2818,10 @@
   "message": null,
   "workflow": {
     "repository": "syslabcom/activity-recognition",
-    "run_id": "40592196037",
-    "run_number": "4146",
+    "run_id": "40599745839",
+    "run_number": "4147",
     "attempt": "1",
-    "url": "https://github.com/syslabcom/activity-recognition/actions/runs/40592196037",
-    "sha": "ce04e15d9a66bd97f712a31e6eb9f0a7cf533be6"
+    "url": "https://github.com/syslabcom/activity-recognition/actions/runs/40599745839",
+    "sha": "29164740162f47fb1908bbe34e818d633ffb6b7a"
   }
 }

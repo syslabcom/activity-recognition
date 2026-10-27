@@ -1,31 +1,32 @@
 {
   "version": 1,
   "status": "success",
-  "generated_at": "2026-04-09T17:28:15Z",
+  "generated_at": "2026-10-27T23:06:52Z",
   "source_issue": {
     "id": 745429960,
     "number": 1997,
     "title": "\"manage-translations\" view can be viewed by anonymous",
     "html_url": "https://github.com/plone/volto/issues/1997",
     "repository_full_name": "plone/volto",
-    "updated_at": "2023-12-05T06:20:33Z",
+    "updated_at": "2026-10-27T22:21:10Z",
     "labels": [
       "01 type: bug",
+      "21 status: confirmed",
       "41 lvl: easy"
     ],
-    "comments": 6
+    "comments": 7
   },
   "ai": {
     "provider": "openai",
     "model": "gpt-4o-mini"
   },
-  "summary_markdown": "## What this issue is about\nThis issue addresses a bug in the `manage-translations` view in Volto, which currently allows anonymous users to access the page without appropriate permissions. Instead, anonymous users should see a 404 error or a login prompt.\n\n## What needs to be done\nThe goal is to restrict access to the `manage-translations` view so that it returns a 404 or redirect to the login page for unauthenticated users. The implementation requires modifying how non-content routes handle permissions.\n\n## Helpful background\nIn Volto, `nonContentRoutes` are special routes that do not load typical Plone content. They handle different functionalities, such as control panels or sitemaps. The discussion highlights uncertainty about expected behaviors for certain routes, particularly whether they should present a homepage or an error message to anonymous users.\n\n## Good first steps\n1. Review the `manage-translations` view code to understand current routing and permission checks.\n2. Investigate other `nonContentRoutes` to identify patterns for handling access permissions.\n3. Consider updating or adding documentation based on findings to help clarify route behaviors for future contributors.\n4. Test your changes to ensure that the intended access restrictions are effective.",
+  "summary_markdown": "```markdown\n## What this issue is about\nThis issue addresses a bug where the \"manage-translations\" view is accessible by anonymous users, which should not happen. Instead, they should receive a 404 error or redirected to a login page.\n\n## What needs to be done\nThe goal is to implement a permission check for the \"manage-translations\" route so that only logged-in users can access it. This will involve editing the `Multilingual/ManageTranslations.jsx` component to ensure proper authorization.\n\n## Helpful background\nThe current behavior allows anyone to view the \"manage-translations\" page, which poses a security risk. The function of routes in Volto can be somewhat unique; nonContentRoutes don't pull content from the backend but are meant to redirect or show specific content based on user credentials.\n\n## Good first steps\n1. Familiarize yourself with the `Multilingual/ManageTranslations.jsx` component and its role in the routing system.\n2. Check existing route handling mechanisms in the codebase, especially focusing on how permission checks are structured.\n3. Plan the changes needed to include a user authentication check to restrict access.\n4. Consider looking into relevant documentation for route management to ensure you understand the implications of your changes.\n5. After implementing, remember to test the changes thoroughly and document your approach in the project for clarity.\n```",
   "workflow": {
     "repository": "syslabcom/activity-recognition",
-    "run_id": "24203975522",
-    "run_number": "56",
+    "run_id": "40599745839",
+    "run_number": "4147",
     "attempt": "1",
-    "url": "https://github.com/syslabcom/activity-recognition/actions/runs/24203975522",
-    "sha": "545d41a532ab38141cd1d0635e792cae331679ae"
+    "url": "https://github.com/syslabcom/activity-recognition/actions/runs/40599745839",
+    "sha": "29164740162f47fb1908bbe34e818d633ffb6b7a"
   }
 }

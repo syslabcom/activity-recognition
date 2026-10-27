@@ -1,0 +1,32 @@
+{
+  "version": 1,
+  "status": "success",
+  "generated_at": "2026-10-27T23:06:33Z",
+  "source_issue": {
+    "id": 3304240569,
+    "number": 7265,
+    "title": "Typing error when using `description` in schema with TextWidget – prop is unused and should be removed",
+    "html_url": "https://github.com/plone/volto/issues/7265",
+    "repository_full_name": "plone/volto",
+    "updated_at": "2026-10-27T22:23:00Z",
+    "labels": [
+      "01 type: bug",
+      "21 status: confirmed",
+      "41 lvl: easy"
+    ],
+    "comments": 7
+  },
+  "ai": {
+    "provider": "openai",
+    "model": "gpt-4o-mini"
+  },
+  "summary_markdown": "## What this issue is about\nThis issue addresses a typing error related to the `description` property when using the `TextWidget` in the Plone Volto project. Specifically, the `description` is passed as a prop but isn't utilized correctly, leading to potential confusion.\n\n## What needs to be done\nThe likely solution is to revise the type declaration of `description` in `TextWidget` to accept React elements (`PropTypes.node`). This modification allows for consistent handling of the `description` prop.\n\n## Helpful background\nTo reproduce the issue, you can add a React element as the `description` in the `Teaser/schema.js`, save the file as `.jsx`, and check the browser console for typing errors. Discussions around the issue have revealed different views on the best approach, so clarity on implementation might still be needed.\n\n## Good first steps\n1. Review the code in `TextWidget` and `FormFieldWrapper` to understand how `description` is currently implemented.\n2. Update the `TextWidget` to accept a wider range of prop types for `description`.\n3. Test your changes to ensure the typing error no longer appears.\n4. Consider contributing a pull request to this issue, but be aware of existing discussions and proposals. Follow up with the community if you have questions!",
+  "workflow": {
+    "repository": "syslabcom/activity-recognition",
+    "run_id": "40599745839",
+    "run_number": "4147",
+    "attempt": "1",
+    "url": "https://github.com/syslabcom/activity-recognition/actions/runs/40599745839",
+    "sha": "29164740162f47fb1908bbe34e818d633ffb6b7a"
+  }
+}

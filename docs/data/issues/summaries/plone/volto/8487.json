@@ -1,0 +1,32 @@
+{
+  "version": 1,
+  "status": "success",
+  "generated_at": "2026-10-27T23:06:25Z",
+  "source_issue": {
+    "id": 6069219495,
+    "number": 8487,
+    "title": "Video block: YouTube playlist URL without a video id shows a broken placeholder image",
+    "html_url": "https://github.com/plone/volto/issues/8487",
+    "repository_full_name": "plone/volto",
+    "updated_at": "2026-10-27T23:00:52Z",
+    "labels": [
+      "01 type: bug",
+      "41 lvl: easy",
+      "62 scope: viewer"
+    ],
+    "comments": 0
+  },
+  "ai": {
+    "provider": "openai",
+    "model": "gpt-4o-mini"
+  },
+  "summary_markdown": "```markdown\n## What this issue is about\nThis issue concerns a bug in the Video block of Volto where a YouTube playlist URL, lacking a video ID, displays a broken placeholder image. When users attempt to access such a URL, they see an invalid thumbnail instead of a suitable default image.\n\n## What needs to be done\nThe current code needs a fix to ensure that if a playlist URL is provided without a video ID, an appropriate placeholder image (like only a play icon) is shown instead of the broken image. Additionally, some dead code related to the `listID` prop should be removed for clarity.\n\n## Helpful background\nThe bug arises from the `getVideoIDAndPlaceholder` function in `Body.jsx`, which incorrectly generates a thumbnail URL that results in a `null` value when there is no video ID. This issue is consistent in both the current and previous versions of the code, indicating it is not a new regression.\n\n## Good first steps\n1. Familiarize yourself with the `getVideoIDAndPlaceholder` function in `packages/volto/src/components/manage/Blocks/Video/Body.jsx`.\n2. Review how the thumbnail URL is constructed and identify where the appropriate placeholder logic can be added.\n3. Propose an update to the code and remove the unnecessary `listID` prop.\n4. Consider testing your changes to ensure the new placeholder displays correctly and the video plays as expected.\n```",
+  "workflow": {
+    "repository": "syslabcom/activity-recognition",
+    "run_id": "40599745839",
+    "run_number": "4147",
+    "attempt": "1",
+    "url": "https://github.com/syslabcom/activity-recognition/actions/runs/40599745839",
+    "sha": "29164740162f47fb1908bbe34e818d633ffb6b7a"
+  }
+}

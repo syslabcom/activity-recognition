@@ -1,7 +1,7 @@
 {
   "version": 1,
   "status": "success",
-  "generated_at": "2026-10-27T22:06:34Z",
+  "generated_at": "2026-10-27T23:06:21Z",
   "organization": "plone",
   "state": "open",
   "slug": "lvl-complex",
@@ -11,6 +11,39 @@
   ],
   "issue_count": 53,
   "issues": [
+    {
+      "id": 1631010525,
+      "number": 4576,
+      "title": "Deployment documentation needs to show Seamless mode first, rather then classic \"simple\"",
+      "html_url": "https://github.com/plone/volto/issues/4576",
+      "repository_full_name": "plone/volto",
+      "repository_url": "https://api.github.com/repos/plone/volto",
+      "state": "open",
+      "created_at": "2023-03-19T16:27:09Z",
+      "updated_at": "2026-10-27T22:22:07Z",
+      "comments": 5,
+      "author": {
+        "login": "tiberiuichim",
+        "html_url": "https://github.com/tiberiuichim"
+      },
+      "assignees": [
+        "tiberiuichim"
+      ],
+      "labels": [
+        "33 needs: docs",
+        "43 lvl: complex",
+        "99 tag: docs-reorg",
+        "99 tag: docs"
+      ],
+      "contributor_summary": {
+        "status": "available",
+        "generated_at": "2026-10-27T23:06:41Z",
+        "source_issue_updated_at": "2026-10-27T22:22:07Z",
+        "model": "gpt-4o-mini",
+        "summary_markdown": "```markdown\n## What this issue is about\nThis issue addresses the ordering of deployment documentation for the Plone Volto project. It's suggested that the \"Seamless mode\" deployment method should be prioritized over the older \"Simple deployment\" method.\n\n## What needs to be done\n1. Refactor the navigation items under the \"Deploying\" section to place \"Seamless mode\" first.\n2. Update the \"Simple deployment\" documentation to add a deprecation warning, highlighting that this method requires `plone.restapi` < 2.0 and is recommended only for Plone 5.2 and older.\n\n## Helpful background\nCurrent navigation leads with \"Simple deployment,\" which can confuse users. The \"Seamless mode\" provides a more current installation method, especially for newer Plone versions. The discussions point out that the documentation needs a clearer distinction between the two methods.\n\n## Good first steps\n- Review the current deployment documentation: [Deploying](https://6.dev-docs.plone.org/volto/deploying/index.html).\n- Update the navigation structure and include deprecation warnings in the \"Simple deployment\" documentation.\n- Collaborate with team members if you have questions or need guidance on how to implement these changes.\n```",
+        "path": "data/issues/summaries/plone/volto/4576.json"
+      }
+    },
     {
       "id": 6067478242,
       "number": 318,
@@ -493,39 +526,6 @@
         "model": "gpt-4o-mini",
         "summary_markdown": "```markdown\n## What this issue is about\nThis issue addresses the need to upgrade some outdated libraries used in Volto, such as `react-intl` and `redux`. The goal is to ensure that Volto uses maintained versions of these foundational libraries.\n\n## What needs to be done\n- Upgrade `react-intl` and `redux` to their latest maintained versions.\n- Adjust the codebase as needed to accommodate changes in these libraries.\n- Evaluate if we need to maintain current tooling related to localization (using .po files).\n\n## Helpful background\nThe discussion includes a specific PLIP related to `react-intl` that may require coordination. The upgrades aim to enhance functionality and stability but may involve some adjustments to existing code.\n\n## Good first steps\n1. Familiarize yourself with the relevant documentation for new contributors: [Contributing to Plone](https://6.docs.plone.org/contributing/index.html) and [Contributing to Volto](https://6.docs.plone.org/contributing/volto.html).\n2. Review the existing library usage in the project to identify the necessary changes.\n3. Consider reaching out to the community for guidance and support if you have questions.\n4. Document your findings and any changes you make for future contributors.\n```",
         "path": "data/issues/summaries/plone/volto/6327.json"
-      }
-    },
-    {
-      "id": 1631010525,
-      "number": 4576,
-      "title": "Deployment documentation needs to show Seamless mode first, rather then classic \"simple\"",
-      "html_url": "https://github.com/plone/volto/issues/4576",
-      "repository_full_name": "plone/volto",
-      "repository_url": "https://api.github.com/repos/plone/volto",
-      "state": "open",
-      "created_at": "2023-03-19T16:27:09Z",
-      "updated_at": "2026-05-18T10:30:05Z",
-      "comments": 4,
-      "author": {
-        "login": "tiberiuichim",
-        "html_url": "https://github.com/tiberiuichim"
-      },
-      "assignees": [
-        "tiberiuichim"
-      ],
-      "labels": [
-        "01 type: bug",
-        "33 needs: docs",
-        "43 lvl: complex",
-        "99 tag: docs-reorg"
-      ],
-      "contributor_summary": {
-        "status": "available",
-        "generated_at": "2026-05-18T11:23:30Z",
-        "source_issue_updated_at": "2026-05-18T10:30:05Z",
-        "model": "gpt-4o-mini",
-        "summary_markdown": "## What this issue is about\nThis issue highlights the need to reorganize the Plone Volto deployment documentation. Currently, \"Simple deployment\" appears first, but it is suggested that \"Seamless mode\" should be prioritized instead. This adjustment aims to clarify installation methods for different versions of Plone.\n\n## What needs to be done\n- Rearrange the deployment documentation to feature \"Seamless mode\" as the first option in the navigation.\n- Ensure that the \"Simple deployment\" section includes a clear deprecation warning, indicating it is only suitable for Plone 5.2 and earlier.\n- Update the \"Simple deployment\" content to provide relevant information without it being the primary focus.\n\n## Helpful background\n\"Seamless mode\" allows installation of Volto on older Plone versions without needing `plone.restapi` 2.0, while \"Simple deployment\" is becoming outdated. A refactor of this section is needed to make it clearer.\n\n## Good first steps\n1. Review the current deployment documentation at [Deploying](https://6.dev-docs.plone.org/volto/deploying/index.html).\n2. Think about how best to reorder the items for clarity.\n3. Create a draft for the proposed changes, including details for the deprecation warning.\n4. Collaborate through comments if you have questions or suggestions!",
-        "path": "data/issues/summaries/plone/volto/4576.json"
       }
     },
     {
@@ -1626,10 +1626,10 @@
   "message": null,
   "workflow": {
     "repository": "syslabcom/activity-recognition",
-    "run_id": "40592196037",
-    "run_number": "4146",
+    "run_id": "40599745839",
+    "run_number": "4147",
     "attempt": "1",
-    "url": "https://github.com/syslabcom/activity-recognition/actions/runs/40592196037",
-    "sha": "ce04e15d9a66bd97f712a31e6eb9f0a7cf533be6"
+    "url": "https://github.com/syslabcom/activity-recognition/actions/runs/40599745839",
+    "sha": "29164740162f47fb1908bbe34e818d633ffb6b7a"
   }
 }

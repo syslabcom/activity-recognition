@@ -1,31 +1,31 @@
 {
   "version": 1,
   "status": "success",
-  "generated_at": "2026-04-09T19:30:11Z",
+  "generated_at": "2026-10-27T23:06:48Z",
   "source_issue": {
     "id": 770062840,
     "number": 2074,
     "title": "Remove use of __CLIENT__ in volto code",
     "html_url": "https://github.com/plone/volto/issues/2074",
     "repository_full_name": "plone/volto",
-    "updated_at": "2022-03-14T05:39:16Z",
+    "updated_at": "2026-10-27T22:21:12Z",
     "labels": [
       "01 type: bug",
       "41 lvl: easy"
     ],
-    "comments": 4
+    "comments": 5
   },
   "ai": {
     "provider": "openai",
     "model": "gpt-4o-mini"
   },
-  "summary_markdown": "```markdown\n## What this issue is about\nThis issue aims to review and possibly remove the use of the `__CLIENT__` variable in the Volto codebase. This approach was previously used to determine if the code is running in a client environment. However, it can lead to incorrect component behavior.\n\n## What needs to be done\nYou should investigate the specific instances of `__CLIENT__` in the code to determine if they need to be replaced or removed. Not all references may need changing; some may still be valid. Some references to `__SERVER__` should also be examined as part of this process.\n\n## Helpful background\nThe original intent of using `__CLIENT__` was to help components know whether they had been mounted in a client environment. However, newer best practices suggest using a state variable like `this.state.isClient` for more accurate behavior in React components.\n\n## Good first steps\n1. **Review the instances** of `__CLIENT__` found in the following files:\n   - `src/store.js`\n   - `src/sentry.js`\n   - `src/components/manage/Multilingual/ManageTranslations.jsx`\n   - `src/components/manage/Sidebar/ObjectBrowser.jsx`\n   - `src/components/manage/Form/Form.jsx`\n   - `src/components/manage/Form/BlocksToolbar.jsx`\n   - `src/components/theme/App/App.jsx`\n   - `src/middleware/crashReporter.js`\n\n2. **Discuss with the community** if you're unsure about specific cases.\n\n3. **Update documentation and tests** as needed based on the changes you make.\n\nFeel free to ask questions if something is unclear!\n```",
+  "summary_markdown": "```markdown\n## What this issue is about\nThis issue focuses on removing unnecessary use of the `__CLIENT__` variable in the Volto codebase. This variable is intended for distinguishing client-side rendering but has led to incorrect assumptions about component mounting.\n\n## What needs to be done\nReview and remove instances of `__CLIENT__` in specific files, ensuring that components are correctly utilizing a state variable (like `this.state.isClient`) instead. Some references are acceptable and should be examined case by case. This task is partially completed, with remaining work identified in certain components.\n\n## Helpful background\nThe use of `__CLIENT__` can lead to performance issues and misunderstandings in how components should render. This discussion has evolved, and while some parts of the ticket might be outdated, careful examination is crucial for proper implementation. \n\n## Good first steps\n1. Familiarize yourself with the `__CLIENT__` usage in the specified components: \n   - `src/sentry.js`\n   - `src/components/manage/*.jsx`\n   - `src/middleware/crashReporter.js`\n2. Check for the correct implementation of `state.isClient` in these files.\n3. Test any changes to ensure that components render as expected.\n4. Coordinate with other contributors if you're unsure about a particular code instance.\n```",
   "workflow": {
     "repository": "syslabcom/activity-recognition",
-    "run_id": "24209273658",
-    "run_number": "58",
+    "run_id": "40599745839",
+    "run_number": "4147",
     "attempt": "1",
-    "url": "https://github.com/syslabcom/activity-recognition/actions/runs/24209273658",
-    "sha": "429caab57cdd9dd6b64f34f16833b4ee533cde77"
+    "url": "https://github.com/syslabcom/activity-recognition/actions/runs/40599745839",
+    "sha": "29164740162f47fb1908bbe34e818d633ffb6b7a"
   }
 }

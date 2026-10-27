@@ -1,7 +1,7 @@
 ---
 title: "Plone issue list — Level: Moderate"
 permalink: "/issues/lvl-moderate/"
-generated_at: "2026-10-27T22:06:34Z"
+generated_at: "2026-10-27T23:06:21Z"
 organization: "plone"
 issue_count: 70
 required_labels:
@@ -10,7 +10,7 @@ required_labels:
 
 # Plone issue list — Level: Moderate
 
-Generated: `2026-10-27T22:06:34Z`  
+Generated: `2026-10-27T23:06:21Z`  
 Organization: `plone`  
 Required label: `42 lvl: moderate`  
 Issue count: `70`
@@ -19,6 +19,7 @@ Sorted by last updated date, newest first.
 
 | Updated | Repository | Issue | Author | Labels |
 | --- | --- | --- | --- | --- |
+| 2026-10-27 22:22 UTC | `plone/volto` | [#5466 Sidebar and toolbar shrink/ expanded functionality should work correctly for screen reader users](https://github.com/plone/volto/issues/5466) | `JeffersonBledsoe` | `01 type: bug`, `42 lvl: moderate`, `99 tag: UX Accessibility`, `61 scope: editor` |
 | 2026-10-27 21:36 UTC | `plone/volto` | [#5499 Fix LESS syntax highlighting](https://github.com/plone/volto/issues/5499) | `stevepiercy` | `01 type: bug`, `21 status: confirmed`, `33 needs: docs`, `42 lvl: moderate` |
 | 2026-10-27 21:32 UTC | `plone/volto` | [#3834 Document cypress commands, retrofit them to existing tests](https://github.com/plone/volto/issues/3834) | `tiberiuichim` | `33 needs: docs`, `42 lvl: moderate`, `99 tag: docs` |
 | 2026-10-16 11:10 UTC | `plone/plone-contributor-statistics` | [#14 Count only merged and release PLIPs](https://github.com/plone/plone-contributor-statistics/issues/14) | `tisto` | `04 type: enhancement`, `13 prio: normal`, `42 lvl: moderate`, `99 tag: community recognition` |
@@ -58,7 +59,6 @@ Sorted by last updated date, newest first.
 | 2024-11-24 05:50 UTC | `plone/documentation` | [#1330 Migrate `develop/styleguide/*`](https://github.com/plone/documentation/issues/1330) | `stevepiercy` | `99 tag: sprint`, `33 needs: docs`, `42 lvl: moderate` |
 | 2024-11-24 03:02 UTC | `plone/documentation` | [#355 Integrate missing information about layers and traversing](https://github.com/plone/documentation/issues/355) | `do3cc` | `04 type: enhancement`, `99 tag: missing`, `42 lvl: moderate`, `99 tag: Plone 6.x` |
 | 2024-11-13 11:06 UTC | `plone/Products.CMFPlone` | [#3204 Default valid_elements field in pattern options adds 40kb for every RichtTextField on an edit page](https://github.com/plone/Products.CMFPlone/issues/3204) | `fredvd` | `04 type: enhancement`, `31 needs: help`, `12 prio: high`, `21 status: confirmed`, `42 lvl: moderate` |
-| 2024-09-26 12:37 UTC | `plone/volto` | [#5466 Sidebar and toolbar shrink/ expanded functionality should work correctly for screen reader users](https://github.com/plone/volto/issues/5466) | `JeffersonBledsoe` | `01 type: bug`, `42 lvl: moderate`, `99 tag: UX Accessibility` |
 | 2024-09-01 09:15 UTC | `plone/meta` | [#119 Store dependency graph as an artifact](https://github.com/plone/meta/issues/119) | `gforcada` | `04 type: enhancement`, `14 prio: low`, `42 lvl: moderate` |
 | 2024-08-12 16:18 UTC | `plone/Products.CMFPlone` | [#1791 IWorkingCopy interface is preserved in copy of an item](https://github.com/plone/Products.CMFPlone/issues/1791) | `rafaelbco` | `01 type: bug`, `31 needs: help`, `14 prio: low`, `42 lvl: moderate` |
 | 2024-05-17 12:45 UTC | `plone/Products.CMFPlone` | [#1801 list of plone_scripts to get rid of](https://github.com/plone/Products.CMFPlone/issues/1801) | `jensens` | `04 type: enhancement`, `31 needs: help`, `22 status: in-progress`, `14 prio: low`, `42 lvl: moderate` |
