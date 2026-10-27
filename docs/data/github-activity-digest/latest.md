@@ -1,78 +1,143 @@
-📊 WEEKLY SUMMARY  
-2026-10-19 to 2026-10-26  
+# 📊 WEEKLY SUMMARY
+**2026-10-20 to 2026-10-27**
 
-This week in the Plone organization saw significant enhancements and transitions across various repositories, particularly related to infrastructure improvements and ongoing updates for upcoming releases. Several contributors actively improved code quality, merged multiple pull requests, and prepared new release versions, ensuring a robust ecosystem moving forward.
+This week, the Plone organization saw significant activity across numerous repositories, focusing primarily on dependency updates, bug fixes, and enhancements. Notably, various contributors worked on integrating new features and maintaining existing functionalities, showcasing ongoing efforts to improve the Plone ecosystem.
 
-📦 plone/plone.event  
-[4 files changed, +41/-1 lines, 1 pull request merged]  
-Contributor @syahra712 enhanced the `re.sub` function to correctly use `re.MULTILINE` as a flag instead of a count, addressing a deprecation warning in Python 3.13+. Additional test cases were added to ensure `DTSTART` lines are appropriately removed from the recurrence rules.
+## 📦 plone/plone.event
+[6 files changed, +43/-3 lines, 2 pull requests merged]
+Notable updates include a change to the use of `re.MULTILINE` in regex substitutions to avoid deprecation warnings in Python 3.13+, and added tests to ensure `DTSTART` lines are properly removed from the recurrence rules.
 
-📦 plone/plone.subrequest  
-[1 file changed, +1/-1 lines, 1 pull request merged]  
-@dependabot[bot] updated the `astral-sh/setup-uv` dependency from version 10.2.0 to 10.3.0, which includes a Python architecture selection feature.
+## 📦 plone/plone.reload
+[2 files changed, +2/-2 lines, 1 pull request merged]
+Updated dependencies to the latest version of `astral-sh/setup-uv` for improved stability and performance.
 
-📦 plone/plone.portlets  
-[161 files changed, +17966/-416 lines, 7 pull requests merged]  
-This repository underwent significant changes, including the merging of previous portlet repositories (`plone.app.portlets`, `plone.portlet.collection`, and `plone.portlet.static`) into one. Contributor @gforcada played a major role in implementing these transitions along with @jensens, @mauritsvanrees, and others. Various enhancements were made, including the removal of unnecessary files and configuration updates for `plone.meta`.
+## 📦 plone/plone.resource
+[2 files changed, +2/-2 lines, 1 pull request merged]
+This update includes a dependency bump for `astral-sh/setup-uv`, similar to other repositories this week.
 
-📦 plone/plone.app.content  
-[6 files changed, +13/-7 lines, 0 pull requests merged]  
-Contributors @davisagli and @mauritsvanrees implemented permission checks to improve group and principal vocabulary access.
+## 📦 plone/plone.app.blocks
+[2 files changed, +2/-2 lines, 1 pull request merged]
+A minor update focused on dependency management by bumping the `astral-sh/setup-uv` package.
 
-📦 plone/plone.protect  
-[1 file changed, +1/-1 lines, 1 pull request merged]  
-A dependency update was made to bump `astral-sh/setup-uv` to version 10.3.0 by @dependabot[bot].
+## 📦 plone/plone.subrequest
+[3 files changed, +3/-3 lines, 1 pull request merged]
+This repository also received an update to the `astral-sh/setup-uv` dependency.
 
-📦 plone/plone.portlet.collection  
-[35 files changed, +68/-1982 lines, 1 pull request merged]  
-The repository transitioned into an empty package as part of `PLIP 4137`, with @jensens leading the changes, moving its source code to the consolidated `plone.portlets` distribution.
+## 📦 plone/five.intid
+[2 files changed, +2/-2 lines, 1 pull request merged]
+Another straightforward update with a dependency bump for `astral-sh/setup-uv`.
 
-📦 plone/plone.portlet.static  
-[29 files changed, +66/-1204 lines, 1 pull request merged]  
-Similar to the previous repository, `plone.portlet.static` now exists as an empty transitional package following the progressive consolidation efforts under `PLIP 4137`, spearheaded by @jensens.
+## 📦 plone/plone.scale
+[2 files changed, +2/-2 lines, 1 pull request merged]
+Updated `astral-sh/setup-uv` consistency with other repositories.
 
-📦 plone/plone.app.portlets  
-[129 files changed, +68/-13497 lines, 1 pull request merged]  
-The repository has also turned into an empty transitional package as part of the merging strategy under `PLIP 4137`, which involves significant restructuring of portlet capabilities.
+## 📦 plone/plone.schemaeditor
+[2 files changed, +2/-2 lines, 1 pull request merged]
+Bumped dependency version for `astral-sh/setup-uv`.
 
-📦 plone/buildout.coredev  
-[37 files changed, +180/-261 lines, 5 pull requests merged]  
-Updates were made to dependencies and configurations for building images, including support for the Pillow library and various packages needed for Plone 6.1 and 6.3, led by contributors such as @davisagli and @mauritsvanrees.
+## 📦 plone/plone.testing
+[2 files changed, +2/-2 lines, 1 pull request merged]
+Maintained dependency alignment by updating `astral-sh/setup-uv`.
 
-📦 plone/training  
-[28 files changed, +1175/-21 lines, 2 pull requests merged]  
-@petschki introduced new training documentation, including blicca customization training, alongside @stevepiercy who worked on improving merge conditions.
+## 📦 plone/plone.app.versioningbehavior
+[2 files changed, +2/-2 lines, 1 pull request merged]
+Earlier dependency updates were made focusing on the `astral-sh/setup-uv` package.
 
-📦 plone/cookiecutter-zope-instance  
-[4 files changed, +8/-2 lines, 1 pull request merged]  
-Contributions focused on adding support for Python 3.15 in the template testing.
+## 📦 plone/plone.app.layout
+[1 files changed, +1/-1 lines, 1 pull request merged]
+A simple dependency bump for `astral-sh/setup-uv`.
 
-📦 plone/meta  
-[1 file changed, +1/-1 lines, 0 pull requests merged]  
-A minor update to the CI configuration was made to reflect recent changes.
+## 📦 plone/plone.app.upgrade
+[2 files changed, +2/-2 lines, 1 pull request merged]
+This repository focused on keeping dependencies current with similar updates.
 
-📦 plone/plone-contributor-statistics  
-[6430 files changed, +166272/-50517 lines, 9 pull requests merged]  
-A major restructuring effort was undertaken by @jensens, focusing on enhancing data accuracy related to contributed statistics, improving configuration and the integrity of records.
+## 📦 plone/buildout.coredev
+[38 files changed, +249/-306 lines, 5 pull requests merged]
+Significant updates were made, including upgrading critical packages like `pip`, `certifi`, and `Pillow`, enhancing overall performance and security.
 
-📦 plone/plone.ping  
-[260 files changed, +430/-429 lines, 0 pull requests merged]  
-Automated updates were performed primarily by the Upptime Bot, reflecting the status checks across various Plone services.
+## 📦 plone/plone.dexterity
+[3 files changed, +3/-3 lines, 1 pull request merged]
+Another dependency update to `astral-sh/setup-uv` for improved functionality.
 
-In conclusion, the Plone organization has made considerable strides this week through collaborative efforts and a focus on updating dependencies, restructuring repositories for better efficiency, and refining processes across multiple projects. 
+## 📦 plone/plone.autoform
+[2 files changed, +2/-2 lines, 1 pull request merged]
+Updated for the `astral-sh/setup-uv` package.
 
-Contributors this week:  
-- @davisagli  
-- @mauritsvanrees  
-- @jensens  
-- @dependabot[bot]  
-- @gforcada  
-- @petschki  
-- @stevepiercy  
-- @syahra712  
-- @Wagner3UB  
-- @sneridagh  
-- @ericof  
+## 📦 plone/plone.folder
+[2 files changed, +2/-2 lines, 1 pull request merged]
+Continued to rely on updated `astral-sh/setup-uv`.
 
+## 📦 plone/plone.app.upgrade
+[2 files changed, +2/-2 lines, 1 pull request merged]
+Updated dependencies to improve stability and maintain consistency across the project.
 
-Automatically generated from 22 active repositories.
+## 📦 plone/plone.client
+[346 files changed, +25579/-9174 lines, 5 pull requests merged]
+Major enhancements included grouping command line help into panels and bumping several dependencies.
+
+## 📦 plone/plone.i18n
+[2 files changed, +2/-2 lines, 1 pull request merged]
+Bumped dependency for `astral-sh/setup-uv`, like other repositories.
+
+## 📦 plone/Products.PlonePAS
+[2 files changed, +2/-2 lines, 1 pull request merged]
+Maintaining dependencies updated to `astral-sh/setup-uv`.
+
+## 📦 plone/plone.app.content
+[6 files changed, +13/-7 lines, 0 pull requests merged]
+Notable development was done including permissions checks and added functionality for managing principals vocabs.
+
+## 📦 plone/training
+[32 files changed, +1179/-25 lines, 3 pull requests merged]
+Extensive updates with new training documentation and adjustments toward improving the existing content.
+
+## 📦 plone/volto
+[518 files changed, +2197/-2240 lines, 8 pull requests merged]
+Significant enhancements focused on fixing links, improving accessibility features, and restoring UI elements.
+
+## 📦 plone/plone-ping
+[241 files changed, +399/-398 lines, 0 pull requests merged]
+Automated updates related to the status of various sites.
+
+## 📦 plone/container-backend
+[16 files changed, +26/-9 lines, 2 pull requests merged]
+Key improvements included upgrades to Plone 6.2.2.1 security release and updates on UV and OS packages.
+
+## 📦 plone/cookiecutter-zope-instance
+[4 files changed, +8/-2 lines, 1 pull request merged]
+A notable increase in support for tests on Python 3.15.
+
+## 📦 plone/nick
+[9497 files changed, +520027/-188563 lines, 0 pull requests merged]
+A transformational week focused on significant updates across multiple domains, including permission management and enhanced organizational support.
+
+## 📦 plone/repoplone
+[2 files changed, +14/-12 lines, 1 pull request merged]
+Automated updates from the bot.
+
+## 📦 plone/plone-contributor-statistics
+[5740 files changed, +136983/-42767 lines, 0 pull requests merged]
+Comprehensive documentation efforts and restructuring to assure effective contributor statistics are maintained.
+
+## 📦 plone/aurora
+[184 files changed, +3144/-2004 lines, 5 pull requests merged]
+Major contributions to the project related to reorganization and UI enhancements based on design feedback.
+
+In summary, this week reflects a vibrant activity within the Plone organization, with strong contributions from both individual developers and bots ensuring that repositories remain up-to-date, secure, and functional.
+
+### Contributors:
+- David Glick (@davisagli)
+- Érico Andrei (@ericof)
+- Victor Fernandez de Alba (@sneridagh)
+- Jens W. Klein (@jensens)
+- Mauro Amico (@mamico)
+- Rob Gietema (@robgietema)
+- Sabrina Bongiovanni (@sabrina-bongiovanni)
+- Steve Piercy (@stevepiercy)
+- Peter Mathis (@petschki)
+- Somil Gupta (@Somilg11)
+- Wagner Trezub (@Wagner3UB)
+- Dependabot (@dependabot[bot])
+- Upptime Bot (@upptime-bot)
+
+Automatically generated from 61 active repositories.
