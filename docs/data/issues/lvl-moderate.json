@@ -1,7 +1,7 @@
 {
   "version": 1,
   "status": "success",
-  "generated_at": "2026-10-28T14:08:09Z",
+  "generated_at": "2026-10-28T15:08:02Z",
   "organization": "plone",
   "state": "open",
   "slug": "lvl-moderate",
@@ -156,7 +156,15 @@
         "31 needs: help",
         "33 needs: docs",
         "42 lvl: moderate"
-      ]
+      ],
+      "contributor_summary": {
+        "status": "available",
+        "generated_at": "2026-10-28T15:08:09Z",
+        "source_issue_updated_at": "2026-10-28T13:29:52Z",
+        "model": "gpt-4o-mini",
+        "summary_markdown": "```markdown\n## What this issue is about\nThis issue discusses the need to build Storybook for pull request (PR) previews on the `Aurora` branch. Currently, links to Storybook in PR previews redirect to a stable version, preventing users from previewing changes effectively.\n\n## What needs to be done\nWe need to adjust the configuration to build Storybook for PR previews without redirecting to the stable version. This may involve conditionally disabling the redirect settings in the `sphinx` configuration for specific branches.\n\n## Helpful background\nThere have been discussions regarding how to implement these changes. Currently, the `seven` branch utilizes a redirect that hinders the preview capability. The GitHub Actions (GHA) should post the Storybook URL in the PR comments once the configuration is set correctly.\n\n## Good first steps\n1. Familiarize yourself with the existing redirect configuration in the `docs/conf.py` and `.readthedocs.yaml` files.\n2. Join the discussion in the comments or reach out to team members for clarity.\n3. Test the proposed changes locally by disabling the redirect and verifying if Storybook builds correctly for PR previews.\n4. Document your findings, and consider creating a Pull Request.\n```",
+        "path": "data/issues/summaries/plone/aurora/328.json"
+      }
     },
     {
       "id": 2019631898,
@@ -2182,10 +2190,10 @@
   "message": null,
   "workflow": {
     "repository": "syslabcom/activity-recognition",
-    "run_id": "40702949798",
-    "run_number": "4162",
+    "run_id": "40712827338",
+    "run_number": "4163",
     "attempt": "1",
-    "url": "https://github.com/syslabcom/activity-recognition/actions/runs/40702949798",
-    "sha": "8189e6e15b7b25516f2fe71b09231fc651219263"
+    "url": "https://github.com/syslabcom/activity-recognition/actions/runs/40712827338",
+    "sha": "7c7da13c374c16a616877effb217c169fd85fc5e"
   }
 }
