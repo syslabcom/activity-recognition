@@ -1,20 +1,20 @@
 {
   "version": 1,
   "status": "success",
-  "generated_at": "2026-07-19T01:35:39Z",
+  "generated_at": "2026-10-28T00:21:16Z",
   "source_issue": {
     "id": 3073749519,
     "number": 7088,
     "title": "unRegisterSlotComponent is in the code, but in the docs it is unregisterSlotComponent",
     "html_url": "https://github.com/plone/volto/issues/7088",
     "repository_full_name": "plone/volto",
-    "updated_at": "2026-07-19T00:51:36Z",
+    "updated_at": "2026-10-27T23:58:57Z",
     "labels": [
-      "01 type: bug",
       "33 needs: docs",
       "41 lvl: easy",
       "30 needs: triage",
-      "27 status: stale"
+      "27 status: stale",
+      "99 tag: docs"
     ],
     "comments": 5
   },
@@ -22,13 +22,13 @@
     "provider": "openai",
     "model": "gpt-4o-mini"
   },
-  "summary_markdown": "```markdown\n## What this issue is about\nThis issue highlights a discrepancy between the code and documentation regarding the method name for unregistering slot components in Plone's Volto. The code uses `unRegisterSlotComponent`, while the documentation mentions `unregisterSlotComponent`, which is considered more grammatically correct.\n\n## What needs to be done\nThe goal is to align the code and documentation by ensuring that both refer to the method consistently. A correction will likely change `unRegisterSlotComponent` to `unregisterSlotComponent` in the codebase.\n\n## Helpful background\nThis issue is labeled as a bug, indicating it is crucial to fix documentation errors to prevent confusion for new contributors and users. There are ongoing discussions, and it might be worth checking the latest version of Volto for any updates related to this method.\n\n## Good first steps\n1. Review the current implementations of `unRegisterSlotComponent` in the codebase.\n2. Check the related documentation for mentions of `unregisterSlotComponent`.\n3. Propose changes through a pull request, clearly stating the adjustments made.\n4. Consider running tests to ensure no functionality is affected by the renaming.\n\nFeel free to ask questions if you're uncertain about the process or need guidance!\n```",
+  "summary_markdown": "```markdown\n## What this issue is about\nThis issue reports a discrepancy between the code and documentation in the Volto project. Specifically, the code uses `unRegisterSlotComponent`, while the documentation refers to it as `unregisterSlotComponent`. There is a consensus that the correct term should be `unregister` with all lowercase letters.\n\n## What needs to be done\nThe goal is to update either the code or the documentation to ensure consistency. You should clarify which one needs changing and proceed accordingly.\n\n## Helpful background\nThe term \"unregister\" means to remove an item from a list or service. The confusion arises from inconsistent capitalization: programming often treats case sensitivity as significant. The suggestion is to follow the conventional lower-case spelling for better clarity and accuracy.\n\n## Good first steps\n1. Check the instances of both `unRegisterSlotComponent` and `unregisterSlotComponent` in the codebase.\n2. Decide whether to update the code or documentation (or both).\n3. If you're uncertain or if the discussion feels outdated, feel free to ask questions or seek clarification in the comments.\n4. Follow the [first-time contributors guide](https://6.docs.plone.org/contributing/first-time.html) for best practices on contributing.\n```",
   "workflow": {
     "repository": "syslabcom/activity-recognition",
-    "run_id": "29668825217",
-    "run_number": "2011",
+    "run_id": "40608197675",
+    "run_number": "4148",
     "attempt": "1",
-    "url": "https://github.com/syslabcom/activity-recognition/actions/runs/29668825217",
-    "sha": "149932cbae2b601bc28dbc5d9e45afec1e4ccb88"
+    "url": "https://github.com/syslabcom/activity-recognition/actions/runs/40608197675",
+    "sha": "b1efe1d6ac4ae9d62660d67ecba5d189f2519947"
   }
 }

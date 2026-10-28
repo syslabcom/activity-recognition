@@ -1,0 +1,33 @@
+{
+  "version": 1,
+  "status": "success",
+  "generated_at": "2026-10-28T00:21:25Z",
+  "source_issue": {
+    "id": 1319439592,
+    "number": 3513,
+    "title": "Form component doesn't display error message when white-spaces as input given to it",
+    "html_url": "https://github.com/plone/volto/issues/3513",
+    "repository_full_name": "plone/volto",
+    "updated_at": "2026-10-27T23:34:38Z",
+    "labels": [
+      "01 type: bug",
+      "21 status: confirmed",
+      "41 lvl: easy",
+      "61 scope: editor"
+    ],
+    "comments": 9
+  },
+  "ai": {
+    "provider": "openai",
+    "model": "gpt-4o-mini"
+  },
+  "summary_markdown": "```markdown\n## What this issue is about\nThis issue addresses a bug in the Plone Volto form component, where no error message is displayed when only white spaces are entered in the input field. Users expect an error when submitting whitespace, similar to other empty inputs.\n\n## What needs to be done\nThe task is to modify the form validation logic in `helpers/FormValidation/FormValidation.jsx`. Specifically, it requires trimming the input values before checking if they are empty. This will ensure that forms are correctly validated against whitespace-only inputs.\n\n## Helpful background\nCurrently, the validation logic only checks if the input is strictly empty (i.e., `!formData[field]`). Since whitespace is considered a filled input, users do not receive an error message. Adjusting this logic will align the behavior with user expectations.\n\n## Good first steps\n1. **Set up your local environment**: Follow the instructions provided in the repository's README. If you're new to Docker or Yarn, consider looking up basic tutorials for each.\n2. **Investigate the file**: Open `helpers/FormValidation/FormValidation.jsx` and review the existing validation logic.\n3. **Implement the trim functionality**: Adjust the validation code to trim the input before the check.\n4. **Run your tests**: Ensure that your changes work as expected and that existing functionality remains intact.\n5. **Ask for help if needed**: If you run into issues, feel free to create a new issue describing the problem or reach out to the community for guidance.\n```",
+  "workflow": {
+    "repository": "syslabcom/activity-recognition",
+    "run_id": "40608197675",
+    "run_number": "4148",
+    "attempt": "1",
+    "url": "https://github.com/syslabcom/activity-recognition/actions/runs/40608197675",
+    "sha": "b1efe1d6ac4ae9d62660d67ecba5d189f2519947"
+  }
+}

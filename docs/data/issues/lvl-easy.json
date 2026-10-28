@@ -1,7 +1,7 @@
 {
   "version": 1,
   "status": "success",
-  "generated_at": "2026-10-27T23:06:21Z",
+  "generated_at": "2026-10-28T00:21:11Z",
   "organization": "plone",
   "state": "open",
   "slug": "lvl-easy",
@@ -9,8 +9,132 @@
   "required_labels": [
     "41 lvl: easy"
   ],
-  "issue_count": 91,
+  "issue_count": 92,
   "issues": [
+    {
+      "id": 3073749519,
+      "number": 7088,
+      "title": "unRegisterSlotComponent is in the code, but in the docs it is unregisterSlotComponent",
+      "html_url": "https://github.com/plone/volto/issues/7088",
+      "repository_full_name": "plone/volto",
+      "repository_url": "https://api.github.com/repos/plone/volto",
+      "state": "open",
+      "created_at": "2025-05-19T12:54:35Z",
+      "updated_at": "2026-10-27T23:58:57Z",
+      "comments": 5,
+      "author": {
+        "login": "silviubogan",
+        "html_url": "https://github.com/silviubogan"
+      },
+      "assignees": [],
+      "labels": [
+        "33 needs: docs",
+        "41 lvl: easy",
+        "30 needs: triage",
+        "27 status: stale",
+        "99 tag: docs"
+      ],
+      "contributor_summary": {
+        "status": "available",
+        "generated_at": "2026-10-28T00:21:16Z",
+        "source_issue_updated_at": "2026-10-27T23:58:57Z",
+        "model": "gpt-4o-mini",
+        "summary_markdown": "```markdown\n## What this issue is about\nThis issue reports a discrepancy between the code and documentation in the Volto project. Specifically, the code uses `unRegisterSlotComponent`, while the documentation refers to it as `unregisterSlotComponent`. There is a consensus that the correct term should be `unregister` with all lowercase letters.\n\n## What needs to be done\nThe goal is to update either the code or the documentation to ensure consistency. You should clarify which one needs changing and proceed accordingly.\n\n## Helpful background\nThe term \"unregister\" means to remove an item from a list or service. The confusion arises from inconsistent capitalization: programming often treats case sensitivity as significant. The suggestion is to follow the conventional lower-case spelling for better clarity and accuracy.\n\n## Good first steps\n1. Check the instances of both `unRegisterSlotComponent` and `unregisterSlotComponent` in the codebase.\n2. Decide whether to update the code or documentation (or both).\n3. If you're uncertain or if the discussion feels outdated, feel free to ask questions or seek clarification in the comments.\n4. Follow the [first-time contributors guide](https://6.docs.plone.org/contributing/first-time.html) for best practices on contributing.\n```",
+        "path": "data/issues/summaries/plone/volto/7088.json"
+      }
+    },
+    {
+      "id": 1575854434,
+      "number": 4380,
+      "title": "Document openExternalLinkInNewTab config.settings",
+      "html_url": "https://github.com/plone/volto/issues/4380",
+      "repository_full_name": "plone/volto",
+      "repository_url": "https://api.github.com/repos/plone/volto",
+      "state": "open",
+      "created_at": "2023-02-08T10:20:24Z",
+      "updated_at": "2026-10-27T23:58:50Z",
+      "comments": 2,
+      "author": {
+        "login": "tiberiuichim",
+        "html_url": "https://github.com/tiberiuichim"
+      },
+      "assignees": [],
+      "labels": [
+        "33 needs: docs",
+        "41 lvl: easy",
+        "99 tag: docs"
+      ],
+      "contributor_summary": {
+        "status": "available",
+        "generated_at": "2026-10-28T00:21:20Z",
+        "source_issue_updated_at": "2026-10-27T23:58:50Z",
+        "model": "gpt-4o-mini",
+        "summary_markdown": "## What this issue is about\nThis issue addresses the need to document the `openExternalLinkInNewTab` configuration setting in Volto. Currently, this setting, which controls whether external links open in a new tab, is missing from the official documentation.\n\n## What needs to be done\nThe goal is to add a description of the `openExternalLinkInNewTab` setting to the documentation. The setting defaults to `false`, meaning external links do not open in a new tab unless specified otherwise.\n\n## Helpful background\nUnderstanding how external links function in web applications is essential. The `openExternalLinkInNewTab` setting relates to user experience—deciding whether users stay on the current page while accessing external content. The absence of documentation makes it unclear for users who want to configure this option.\n\n## Good first steps\n1. Review the existing Pull Request [#4379](https://github.com/plone/volto/pull/4379/files) for context and code details.\n2. Check the current documentation at [settings-reference.md](https://github.com/plone/volto/blob/main/docs/source/configuration/settings-reference.md) to see how configurations are formatted.\n3. Draft a clear description of the `openExternalLinkInNewTab` setting, including examples if possible.\n4. Submit your documentation changes for review through a Pull Request. \n\nFeel free to ask questions if anything is unclear!",
+        "path": "data/issues/summaries/plone/volto/4380.json"
+      }
+    },
+    {
+      "id": 770062840,
+      "number": 2074,
+      "title": "Remove use of __CLIENT__ in volto code",
+      "html_url": "https://github.com/plone/volto/issues/2074",
+      "repository_full_name": "plone/volto",
+      "repository_url": "https://api.github.com/repos/plone/volto",
+      "state": "open",
+      "created_at": "2020-12-17T13:58:06Z",
+      "updated_at": "2026-10-27T23:58:27Z",
+      "comments": 5,
+      "author": {
+        "login": "tiberiuichim",
+        "html_url": "https://github.com/tiberiuichim"
+      },
+      "assignees": [],
+      "labels": [
+        "04 type: enhancement",
+        "41 lvl: easy"
+      ],
+      "contributor_summary": {
+        "status": "available",
+        "generated_at": "2026-10-27T23:06:48Z",
+        "source_issue_updated_at": "2026-10-27T22:21:12Z",
+        "model": "gpt-4o-mini",
+        "summary_markdown": "```markdown\n## What this issue is about\nThis issue focuses on removing unnecessary use of the `__CLIENT__` variable in the Volto codebase. This variable is intended for distinguishing client-side rendering but has led to incorrect assumptions about component mounting.\n\n## What needs to be done\nReview and remove instances of `__CLIENT__` in specific files, ensuring that components are correctly utilizing a state variable (like `this.state.isClient`) instead. Some references are acceptable and should be examined case by case. This task is partially completed, with remaining work identified in certain components.\n\n## Helpful background\nThe use of `__CLIENT__` can lead to performance issues and misunderstandings in how components should render. This discussion has evolved, and while some parts of the ticket might be outdated, careful examination is crucial for proper implementation. \n\n## Good first steps\n1. Familiarize yourself with the `__CLIENT__` usage in the specified components: \n   - `src/sentry.js`\n   - `src/components/manage/*.jsx`\n   - `src/middleware/crashReporter.js`\n2. Check for the correct implementation of `state.isClient` in these files.\n3. Test any changes to ensure that components render as expected.\n4. Coordinate with other contributors if you're unsure about a particular code instance.\n```",
+        "path": "data/issues/summaries/plone/volto/2074.json"
+      }
+    },
+    {
+      "id": 1319439592,
+      "number": 3513,
+      "title": "Form component doesn't display error message when white-spaces as input given to it",
+      "html_url": "https://github.com/plone/volto/issues/3513",
+      "repository_full_name": "plone/volto",
+      "repository_url": "https://api.github.com/repos/plone/volto",
+      "state": "open",
+      "created_at": "2022-07-27T11:43:24Z",
+      "updated_at": "2026-10-27T23:34:38Z",
+      "comments": 9,
+      "author": {
+        "login": "mdsahiloss",
+        "html_url": "https://github.com/mdsahiloss"
+      },
+      "assignees": [
+        "ayush3160"
+      ],
+      "labels": [
+        "01 type: bug",
+        "21 status: confirmed",
+        "41 lvl: easy",
+        "61 scope: editor"
+      ],
+      "contributor_summary": {
+        "status": "available",
+        "generated_at": "2026-10-28T00:21:25Z",
+        "source_issue_updated_at": "2026-10-27T23:34:38Z",
+        "model": "gpt-4o-mini",
+        "summary_markdown": "```markdown\n## What this issue is about\nThis issue addresses a bug in the Plone Volto form component, where no error message is displayed when only white spaces are entered in the input field. Users expect an error when submitting whitespace, similar to other empty inputs.\n\n## What needs to be done\nThe task is to modify the form validation logic in `helpers/FormValidation/FormValidation.jsx`. Specifically, it requires trimming the input values before checking if they are empty. This will ensure that forms are correctly validated against whitespace-only inputs.\n\n## Helpful background\nCurrently, the validation logic only checks if the input is strictly empty (i.e., `!formData[field]`). Since whitespace is considered a filled input, users do not receive an error message. Adjusting this logic will align the behavior with user expectations.\n\n## Good first steps\n1. **Set up your local environment**: Follow the instructions provided in the repository's README. If you're new to Docker or Yarn, consider looking up basic tutorials for each.\n2. **Investigate the file**: Open `helpers/FormValidation/FormValidation.jsx` and review the existing validation logic.\n3. **Implement the trim functionality**: Adjust the validation code to trim the input before the check.\n4. **Run your tests**: Ensure that your changes work as expected and that existing functionality remains intact.\n5. **Ask for help if needed**: If you run into issues, feel free to create a new issue describing the problem or reach out to the community for guidance.\n```",
+        "path": "data/issues/summaries/plone/volto/3513.json"
+      }
+    },
     {
       "id": 6069219495,
       "number": 8487,
@@ -133,35 +257,6 @@
         "model": "gpt-4o-mini",
         "summary_markdown": "## What this issue is about\nThis issue addresses a bug in the Volto project where the listing block headline is not properly integrated with the Table of Contents (TOC). Specifically, it involves ensuring the `tocEntry` feature works as intended.\n\n## What needs to be done\nYou need to investigate the configuration of the listing block and implement the functionality to include a `tocEntry` as per the existing TOC integration strategies. There seems to be a gap in the current implementation where the `tocEntry` is missing from the listing block.\n\n## Helpful background\nThis issue has been confirmed and has links to related discussions and previous attempts to address it (see [#4436](https://github.com/plone/volto/pull/4436)). However, prior solutions were closed without fully resolving this specific problem. The mechanism for `tocEntries` was added in another pull request (#5146), but the integration within the listing block remains to be addressed.\n\n## Good first steps\n1. Review the existing configuration for listing blocks and TOC integration.\n2. Familiarize yourself with the `tocEntry` feature in the context of Volto.\n3. Check the open comments for insights or suggestions from other contributors.\n4. Start working on a potential fix and write tests to ensure it works as expected.\n5. Coordinate with the assigned contributor for any questions or guidance.",
         "path": "data/issues/summaries/plone/volto/3762.json"
-      }
-    },
-    {
-      "id": 770062840,
-      "number": 2074,
-      "title": "Remove use of __CLIENT__ in volto code",
-      "html_url": "https://github.com/plone/volto/issues/2074",
-      "repository_full_name": "plone/volto",
-      "repository_url": "https://api.github.com/repos/plone/volto",
-      "state": "open",
-      "created_at": "2020-12-17T13:58:06Z",
-      "updated_at": "2026-10-27T22:21:12Z",
-      "comments": 5,
-      "author": {
-        "login": "tiberiuichim",
-        "html_url": "https://github.com/tiberiuichim"
-      },
-      "assignees": [],
-      "labels": [
-        "01 type: bug",
-        "41 lvl: easy"
-      ],
-      "contributor_summary": {
-        "status": "available",
-        "generated_at": "2026-10-27T23:06:48Z",
-        "source_issue_updated_at": "2026-10-27T22:21:12Z",
-        "model": "gpt-4o-mini",
-        "summary_markdown": "```markdown\n## What this issue is about\nThis issue focuses on removing unnecessary use of the `__CLIENT__` variable in the Volto codebase. This variable is intended for distinguishing client-side rendering but has led to incorrect assumptions about component mounting.\n\n## What needs to be done\nReview and remove instances of `__CLIENT__` in specific files, ensuring that components are correctly utilizing a state variable (like `this.state.isClient`) instead. Some references are acceptable and should be examined case by case. This task is partially completed, with remaining work identified in certain components.\n\n## Helpful background\nThe use of `__CLIENT__` can lead to performance issues and misunderstandings in how components should render. This discussion has evolved, and while some parts of the ticket might be outdated, careful examination is crucial for proper implementation. \n\n## Good first steps\n1. Familiarize yourself with the `__CLIENT__` usage in the specified components: \n   - `src/sentry.js`\n   - `src/components/manage/*.jsx`\n   - `src/middleware/crashReporter.js`\n2. Check for the correct implementation of `state.isClient` in these files.\n3. Test any changes to ensure that components render as expected.\n4. Coordinate with other contributors if you're unsure about a particular code instance.\n```",
-        "path": "data/issues/summaries/plone/volto/2074.json"
       }
     },
     {
@@ -539,38 +634,6 @@
         "model": "gpt-4o-mini",
         "summary_markdown": "## What this issue is about\nThis issue focuses on polishing the documentation for the Plone project, specifically addressing renames and the structure of the \"Contributing...\" section. An earlier pull request has made significant updates, but further adjustments are needed to remove outdated references to Volto.\n\n## What needs to be done\nYou will need to review the current documentation and refine the \"Contributing...\" section to ensure it is aligned with the current Plone guidelines. This might involve updating links, removing outdated information, and improving the overall layout.\n\n## Helpful background\nThe discussion reveals some ambiguities regarding references to the Volto project and the Storybook link. It’s helpful to verify if certain sections still meet current needs. Engaging with existing documentation, including [First-time contributors](https://6.docs.plone.org/contributing/first-time.html), is encouraged.\n\n## Good first steps\n1. Review the current documentation at [Plone Aurora Docs](https://plone-aurora.readthedocs.io/).\n2. Identify sections referring to Volto that need updates.\n3. Make notes on any layout improvements.\n4. Consider participating in discussions to clarify any uncertain points.\n5. Once ready, open a PR with your changes for review.",
         "path": "data/issues/summaries/plone/aurora/101.json"
-      }
-    },
-    {
-      "id": 3073749519,
-      "number": 7088,
-      "title": "unRegisterSlotComponent is in the code, but in the docs it is unregisterSlotComponent",
-      "html_url": "https://github.com/plone/volto/issues/7088",
-      "repository_full_name": "plone/volto",
-      "repository_url": "https://api.github.com/repos/plone/volto",
-      "state": "open",
-      "created_at": "2025-05-19T12:54:35Z",
-      "updated_at": "2026-07-19T00:51:36Z",
-      "comments": 5,
-      "author": {
-        "login": "silviubogan",
-        "html_url": "https://github.com/silviubogan"
-      },
-      "assignees": [],
-      "labels": [
-        "01 type: bug",
-        "33 needs: docs",
-        "41 lvl: easy",
-        "30 needs: triage",
-        "27 status: stale"
-      ],
-      "contributor_summary": {
-        "status": "available",
-        "generated_at": "2026-07-19T01:35:39Z",
-        "source_issue_updated_at": "2026-07-19T00:51:36Z",
-        "model": "gpt-4o-mini",
-        "summary_markdown": "```markdown\n## What this issue is about\nThis issue highlights a discrepancy between the code and documentation regarding the method name for unregistering slot components in Plone's Volto. The code uses `unRegisterSlotComponent`, while the documentation mentions `unregisterSlotComponent`, which is considered more grammatically correct.\n\n## What needs to be done\nThe goal is to align the code and documentation by ensuring that both refer to the method consistently. A correction will likely change `unRegisterSlotComponent` to `unregisterSlotComponent` in the codebase.\n\n## Helpful background\nThis issue is labeled as a bug, indicating it is crucial to fix documentation errors to prevent confusion for new contributors and users. There are ongoing discussions, and it might be worth checking the latest version of Volto for any updates related to this method.\n\n## Good first steps\n1. Review the current implementations of `unRegisterSlotComponent` in the codebase.\n2. Check the related documentation for mentions of `unregisterSlotComponent`.\n3. Propose changes through a pull request, clearly stating the adjustments made.\n4. Consider running tests to ensure no functionality is affected by the renaming.\n\nFeel free to ask questions if you're uncertain about the process or need guidance!\n```",
-        "path": "data/issues/summaries/plone/volto/7088.json"
       }
     },
     {
@@ -1910,36 +1973,6 @@
       }
     },
     {
-      "id": 1575854434,
-      "number": 4380,
-      "title": "Document openExternalLinkInNewTab config.settings",
-      "html_url": "https://github.com/plone/volto/issues/4380",
-      "repository_full_name": "plone/volto",
-      "repository_url": "https://api.github.com/repos/plone/volto",
-      "state": "open",
-      "created_at": "2023-02-08T10:20:24Z",
-      "updated_at": "2024-01-22T07:49:26Z",
-      "comments": 2,
-      "author": {
-        "login": "tiberiuichim",
-        "html_url": "https://github.com/tiberiuichim"
-      },
-      "assignees": [],
-      "labels": [
-        "01 type: bug",
-        "33 needs: docs",
-        "41 lvl: easy"
-      ],
-      "contributor_summary": {
-        "status": "available",
-        "generated_at": "2026-04-09T17:27:46Z",
-        "source_issue_updated_at": "2024-01-22T07:49:26Z",
-        "model": "gpt-4o-mini",
-        "summary_markdown": "## What this issue is about\nThis issue focuses on adding documentation for the `openExternalLinkInNewTab` setting in Volto, which is currently not mentioned in the settings reference. The setting controls whether external links open in a new tab or not.\n\n## What needs to be done\nYou need to update the Volto documentation to include the `openExternalLinkInNewTab` setting. Specifically, this involves adding a clear explanation of what the setting does and how to use it in the documentation file located [here](https://github.com/plone/volto/blob/main/docs/source/configuration/settings-reference.md).\n\n## Helpful background\nThe setting is currently defaulted to `false`, meaning external links do not open in a new tab. Proper documentation will help users understand and configure this setting effectively. If you're unsure about the exact details or how to implement it, feel free to reach out for clarification.\n\n## Good first steps\n1. Review the existing [settings-reference](https://6.docs.plone.org/volto/configuration/settings-reference.html) to see the format and style used.\n2. Create a draft for the new documentation section about `openExternalLinkInNewTab`.\n3. Consider checking if there are any related issues or existing comments for more context.\n4. Once you're ready, submit a pull request for review.\n\nFeel free to ask questions if anything is unclear!",
-        "path": "data/issues/summaries/plone/volto/4380.json"
-      }
-    },
-    {
       "id": 1564296112,
       "number": 4341,
       "title": "The ListingBody component should be exported unconnected",
@@ -2818,10 +2851,10 @@
   "message": null,
   "workflow": {
     "repository": "syslabcom/activity-recognition",
-    "run_id": "40599745839",
-    "run_number": "4147",
+    "run_id": "40608197675",
+    "run_number": "4148",
     "attempt": "1",
-    "url": "https://github.com/syslabcom/activity-recognition/actions/runs/40599745839",
-    "sha": "29164740162f47fb1908bbe34e818d633ffb6b7a"
+    "url": "https://github.com/syslabcom/activity-recognition/actions/runs/40608197675",
+    "sha": "b1efe1d6ac4ae9d62660d67ecba5d189f2519947"
   }
 }
