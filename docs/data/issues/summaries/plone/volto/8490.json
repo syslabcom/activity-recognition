@@ -1,0 +1,33 @@
+{
+  "version": 1,
+  "status": "success",
+  "generated_at": "2026-10-28T08:10:47Z",
+  "source_issue": {
+    "id": 6075074700,
+    "number": 8490,
+    "title": "ArrayWidget: long values overflow the field and their remove button is unreachable (regression from #8113)",
+    "html_url": "https://github.com/plone/volto/issues/8490",
+    "repository_full_name": "plone/volto",
+    "updated_at": "2026-10-28T08:08:05Z",
+    "labels": [
+      "02 type: regression",
+      "21 status: confirmed",
+      "41 lvl: easy",
+      "61 scope: editor"
+    ],
+    "comments": 0
+  },
+  "ai": {
+    "provider": "openai",
+    "model": "gpt-4o-mini"
+  },
+  "summary_markdown": "```markdown\n## What this issue is about\nThis issue addresses a regression involving the ArrayWidget in Volto. When long values are added to fields like \"Creators\" and \"Contributors,\" they overflow the field, making the remove button unreachable. This contrast with the \"Tags\" field, where long values are correctly truncated.\n\n## What needs to be done\nThe goal is to fix the overflow issue by ensuring that the ArrayWidget properly truncates long values with an ellipsis, allowing the remove button to stay visible. This can be achieved by modifying the relevant component to include `min-width: 0` (and preferably `max-width: '100%'`) for the wrapper div.\n\n## Helpful background\nThis regression stems from changes made in a previous issue (#8113) related to a new wrapper element introduced in the `SortableMultiValue`. This update interfered with the expected behavior of truncation in widgets.\n\n## Good first steps\n1. Familiarize yourself with the `SortableMultiValue` component in `packages/volto/src/components/manage/Widgets/SelectStyling.jsx`.\n2. Review the CSS styles affecting the widget to understand how the overflow is managed.\n3. Implement the changes by adding `min-width: 0` and `max-width: '100%'` as needed.\n4. Test the functionality to ensure that the remove button is accessible after making your changes. \n5. Prepare a pull request for review once your changes are ready.\n```",
+  "workflow": {
+    "repository": "syslabcom/activity-recognition",
+    "run_id": "40654917290",
+    "run_number": "4156",
+    "attempt": "1",
+    "url": "https://github.com/syslabcom/activity-recognition/actions/runs/40654917290",
+    "sha": "e3c3e2774bb7081d9b0dd429fcfa2ae15bbc79a5"
+  }
+}

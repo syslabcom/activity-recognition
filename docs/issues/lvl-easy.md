@@ -1,24 +1,25 @@
 ---
 title: "Plone issue list — Level: Easy"
 permalink: "/issues/lvl-easy/"
-generated_at: "2026-10-28T07:08:30Z"
+generated_at: "2026-10-28T08:10:40Z"
 organization: "plone"
-issue_count: 110
+issue_count: 111
 required_labels:
   - "41 lvl: easy"
 ---
 
 # Plone issue list — Level: Easy
 
-Generated: `2026-10-28T07:08:30Z`  
+Generated: `2026-10-28T08:10:40Z`  
 Organization: `plone`  
 Required label: `41 lvl: easy`  
-Issue count: `110`
+Issue count: `111`
 
 Sorted by last updated date, newest first.
 
 | Updated | Repository | Issue | Author | Labels |
 | --- | --- | --- | --- | --- |
+| 2026-10-28 08:08 UTC | `plone/volto` | [#8490 ArrayWidget: long values overflow the field and their remove button is unreachable (regression from #8113)](https://github.com/plone/volto/issues/8490) | `jensens` | `02 type: regression`, `21 status: confirmed`, `41 lvl: easy`, `61 scope: editor` |
 | 2026-10-28 00:54 UTC | `plone/volto` | [#5661 Checkbox label color not showing correctly](https://github.com/plone/volto/issues/5661) | `JanhaviAlekar` | `01 type: bug`, `21 status: confirmed`, `41 lvl: easy`, `61 scope: editor` |
 | 2026-10-28 00:54 UTC | `plone/volto` | [#4603 Table block: "minimalistic design" doesn't work together with "table color inverted"](https://github.com/plone/volto/issues/4603) | `tiberiuichim` | `01 type: bug`, `21 status: confirmed`, `41 lvl: easy`, `62 scope: viewer` |
 | 2026-10-28 00:54 UTC | `plone/volto` | [#2476 Simple text input labels are not aligned with the input content](https://github.com/plone/volto/issues/2476) | `tiberiuichim` | `01 type: bug`, `21 status: confirmed`, `41 lvl: easy`, `61 scope: editor` |
