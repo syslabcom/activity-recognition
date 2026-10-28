@@ -1,24 +1,30 @@
 ---
 title: "Plone issue list — Level: Easy"
 permalink: "/issues/lvl-easy/"
-generated_at: "2026-10-28T12:11:05Z"
+generated_at: "2026-10-28T13:07:57Z"
 organization: "plone"
-issue_count: 111
+issue_count: 115
 required_labels:
   - "41 lvl: easy"
 ---
 
 # Plone issue list — Level: Easy
 
-Generated: `2026-10-28T12:11:05Z`  
+Generated: `2026-10-28T13:07:57Z`  
 Organization: `plone`  
 Required label: `41 lvl: easy`  
-Issue count: `111`
+Issue count: `115`
 
 Sorted by last updated date, newest first.
 
 | Updated | Repository | Issue | Author | Labels |
 | --- | --- | --- | --- | --- |
+| 2026-10-28 12:50 UTC | `plone/volto` | [#4584 Locale should not be hardcoded in sort](https://github.com/plone/volto/issues/4584) | `tiberiuichim` | `01 type: bug`, `21 status: confirmed`, `41 lvl: easy`, `62 scope: viewer` |
+| 2026-10-28 12:49 UTC | `plone/volto` | [#1499 The translations link appears for all content types despite might be it's not ITranslatable](https://github.com/plone/volto/issues/1499) | `sneridagh` | `01 type: bug`, `21 status: confirmed`, `41 lvl: easy` |
+| 2026-10-28 12:49 UTC | `plone/volto` | [#4580 It should be possible to open linked items in a new tab](https://github.com/plone/volto/issues/4580) | `tiberiuichim` | `04 type: enhancement`, `41 lvl: easy`, `61 scope: editor` |
+| 2026-10-28 12:49 UTC | `plone/volto` | [#1302 Volto add-ons naming convention](https://github.com/plone/volto/issues/1302) | `cekk` | `41 lvl: easy`, `99 tag: docs` |
+| 2026-10-28 12:46 UTC | `plone/volto` | [#1775 Auto-generated text-area form fields should have at least 10 lines by default and should increase size as the user types in text](https://github.com/plone/volto/issues/1775) | `tisto` | `04 type: enhancement`, `41 lvl: easy` |
+| 2026-10-28 12:45 UTC | `plone/volto` | [#1404 Supported field types in Volto](https://github.com/plone/volto/issues/1404) | `pbauer` | `04 type: enhancement`, `41 lvl: easy` |
 | 2026-10-28 08:08 UTC | `plone/volto` | [#8490 ArrayWidget: long values overflow the field and their remove button is unreachable (regression from #8113)](https://github.com/plone/volto/issues/8490) | `jensens` | `02 type: regression`, `21 status: confirmed`, `41 lvl: easy`, `61 scope: editor` |
 | 2026-10-28 00:54 UTC | `plone/volto` | [#5661 Checkbox label color not showing correctly](https://github.com/plone/volto/issues/5661) | `JanhaviAlekar` | `01 type: bug`, `21 status: confirmed`, `41 lvl: easy`, `61 scope: editor` |
 | 2026-10-28 00:54 UTC | `plone/volto` | [#4603 Table block: "minimalistic design" doesn't work together with "table color inverted"](https://github.com/plone/volto/issues/4603) | `tiberiuichim` | `01 type: bug`, `21 status: confirmed`, `41 lvl: easy`, `62 scope: viewer` |
@@ -83,11 +89,9 @@ Sorted by last updated date, newest first.
 | 2026-03-04 09:06 UTC | `plone/documentation` | [#612 document feature of external links opening in new tab/window](https://github.com/plone/documentation/issues/612) | `tkimnguyen` | `33 needs: docs`, `41 lvl: easy`, `99 tag: good first issue`, `99 tag: hacktoberfest` |
 | 2026-01-29 22:02 UTC | `plone/plone.restapi` | [#285 Discrepancy in documentation for Authentication sometimes root used as plone sometimes Plone](https://github.com/plone/plone.restapi/issues/285) | `envy7` | `01 type: bug`, `41 lvl: easy` |
 | 2026-01-25 06:15 UTC | `plone/Products.CMFPlone` | [#3353 Show portal_timezone in date widgets](https://github.com/plone/Products.CMFPlone/issues/3353) | `MrTango` | `04 type: enhancement`, `31 needs: help`, `41 lvl: easy`, `99 tag: Plone 6.0` |
-| 2026-01-10 10:17 UTC | `plone/volto` | [#1775 Auto-generated text-area form fields should have at least 10 lines by default and should increase size as the user types in text](https://github.com/plone/volto/issues/1775) | `tisto` | `41 lvl: easy` |
 | 2026-01-10 09:25 UTC | `plone/volto` | [#1783 Document SchemaWidget, provide examples](https://github.com/plone/volto/issues/1783) | `tiberiuichim` | `33 needs: docs`, `41 lvl: easy` |
 | 2025-12-27 08:08 UTC | `plone/volto` | [#3605 \[DOCS\] How to use local custom fonts](https://github.com/plone/volto/issues/3605) | `rotavio` | `33 needs: docs`, `41 lvl: easy` |
 | 2025-12-01 05:29 UTC | `plone/plone.distribution` | [#134 Deduplicate documentation](https://github.com/plone/plone.distribution/issues/134) | `stevepiercy` | `21 status: confirmed`, `31 needs: help`, `33 needs: docs`, `41 lvl: easy` |
-| 2025-11-30 14:21 UTC | `plone/volto` | [#1404 Supported field types in Volto](https://github.com/plone/volto/issues/1404) | `pbauer` | `41 lvl: easy` |
 | 2025-06-01 03:07 UTC | `plone/plone.app.discussion` | [#88 Сlick Reply -> duplicate fields](https://github.com/plone/plone.app.discussion/issues/88) | `serge73` | `31 needs: help`, `02 type: regression`, `12 prio: high`, `21 status: confirmed`, `41 lvl: easy` |
 | 2025-04-28 07:46 UTC | `plone/cookieplone-templates` | [#197 Add canonical startpoint link to cookieplone make commands docs to the final console output and main READMEs](https://github.com/plone/cookieplone-templates/issues/197) | `acsr` | `04 type: enhancement`, `31 needs: help`, `33 needs: docs`, `41 lvl: easy` |
 | 2025-04-16 20:48 UTC | `plone/plone.i18n` | [#65 FileNameNormalizer/URLNormalizer does not support files with long file extensions](https://github.com/plone/plone.i18n/issues/65) | `pgrunewald` | `01 type: bug`, `14 prio: low`, `41 lvl: easy` |

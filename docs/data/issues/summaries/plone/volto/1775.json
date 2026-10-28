@@ -1,15 +1,16 @@
 {
   "version": 1,
   "status": "success",
-  "generated_at": "2026-04-09T12:26:39Z",
+  "generated_at": "2026-10-28T13:08:23Z",
   "source_issue": {
     "id": 686107116,
     "number": 1775,
     "title": "Auto-generated text-area form fields should have at least 10 lines by default and should increase size as the user types in text",
     "html_url": "https://github.com/plone/volto/issues/1775",
     "repository_full_name": "plone/volto",
-    "updated_at": "2026-01-10T10:17:38Z",
+    "updated_at": "2026-10-28T12:46:53Z",
     "labels": [
+      "04 type: enhancement",
       "41 lvl: easy"
     ],
     "comments": 16
@@ -18,13 +19,13 @@
     "provider": "openai",
     "model": "gpt-4o-mini"
   },
-  "summary_markdown": "```markdown\n## What this issue is about\nThis issue seeks to improve the **textarea form fields** in the Plone Volto project. The goal is to make these fields start with at least **10 lines** by default and allow them to **grow dynamically** as the user types, enhancing user experience by showing more text at once.\n\n## What needs to be done\n1. Implement a textarea component that starts with a minimum of 10 lines.\n2. Ensure the textarea expands as the user types, so they can see their entire input.\n\nThe discussion has indicated potential existing challenges with the current Textarea widget, and there's a suggestion to use the `react-textarea-autosize` module to achieve this effect.\n\n## Helpful background\nThe current Textarea functionality may not accommodate dynamic growth as desired, and existing CSS from Semantic UI might conflict with changes. Therefore, the introduction of `react-textarea-autosize` can provide more flexibility, including a `min-rows` property.\n\n## Good first steps\n1. Review the existing TextareaWidget code in `src/components/manage/Widgets/TextareaWidget.jsx`.\n2. Explore using the `react-textarea-autosize` module (you may need to install it).\n3. Check the project's contribution guidelines to ensure proper practices: [First-time contributors](https://6.docs.plone.org/contributing/first-time.html).\n\nFeel free to ask questions if parts of this issue are unclear!\n```",
+  "summary_markdown": "```markdown\n## What this issue is about\nThis issue aims to enhance the text-area form fields in the Volto framework by ensuring they have at least 10 lines by default and can dynamically increase in size as users type. This will help users see all their text without scrolling.\n\n## What needs to be done\n1. Update the Textarea widget to have a default of 10 rows.\n2. Implement functionality to allow the textarea to resize as the user types.\n3. Possible integration of the `react-textarea-autosize` module may be required for this feature.\n\n## Helpful background\nThe discussions indicate a desire to improve user experience with text areas. Current implementations might be limited due to CSS restrictions from `semantic-ui-react`, so exploring alternatives like `react-textarea-autosize` could be beneficial. Note that the conversation includes references to contributing guidelines and requirements for first-time contributors.\n\n## Good first steps\n1. Familiarize yourself with the relevant part of the codebase, particularly the `src/components/manage/Widgets/TextareaWidget.jsx`.\n2. Explore the potential usage of the `react-textarea-autosize` module.\n3. Review the [Plone contributing guidelines](https://6.docs.plone.org/contributing/index.html) to understand the expectations for contributions.\n4. Test your changes to ensure they work as intended before submitting a pull request.\n```",
   "workflow": {
     "repository": "syslabcom/activity-recognition",
-    "run_id": "24190027102",
-    "run_number": "51",
+    "run_id": "40693636092",
+    "run_number": "4161",
     "attempt": "1",
-    "url": "https://github.com/syslabcom/activity-recognition/actions/runs/24190027102",
-    "sha": "e0c67d2638fe739b442ccf9da44e8d59c9d3ed15"
+    "url": "https://github.com/syslabcom/activity-recognition/actions/runs/40693636092",
+    "sha": "fa8de92f8967124ddbb0816ce6ec66367aa4b889"
   }
 }

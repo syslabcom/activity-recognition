@@ -1,0 +1,33 @@
+{
+  "version": 1,
+  "status": "success",
+  "generated_at": "2026-10-28T13:08:03Z",
+  "source_issue": {
+    "id": 1634448383,
+    "number": 4584,
+    "title": "Locale should not be hardcoded in sort",
+    "html_url": "https://github.com/plone/volto/issues/4584",
+    "repository_full_name": "plone/volto",
+    "updated_at": "2026-10-28T12:50:11Z",
+    "labels": [
+      "01 type: bug",
+      "21 status: confirmed",
+      "41 lvl: easy",
+      "62 scope: viewer"
+    ],
+    "comments": 1
+  },
+  "ai": {
+    "provider": "openai",
+    "model": "gpt-4o-mini"
+  },
+  "summary_markdown": "## What this issue is about\nThis issue is about a bug in the Volto code where the sorting of facet options is hardcoded to English. This means that users from different locales might not see options sorted in their language, affecting usability.\n\n## What needs to be done\nThe main task is to modify how the sorting for facet options is handled so that it uses the current user’s locale instead of always defaulting to English. This will likely require checking the relevant code in `Facets.jsx` and updating the sorting function to use dynamic localization.\n\n## Helpful background\nCurrently, the sorting method `localeCompare` is being called with a hardcoded 'en' parameter. You can find this code at the specified line in `Facets.jsx`. Another resource is the `LanguageSelector.js` file, which shows how to obtain the current locale. \n\nSome discussion indicates that a related pull request (#4594) is open but has not yet been merged. \n\n## Good first steps\n1. Review the code in `Facets.jsx` and identify where changes are needed.\n2. Refer to the `LanguageSelector.js` for guidance on fetching the current locale.\n3. Test your changes to ensure facet options sort correctly for different locales.\n4. Consider documenting your approach and any challenges you encounter, as this could help future contributors. \n\nFeel free to reach out in the comments if you have questions!",
+  "workflow": {
+    "repository": "syslabcom/activity-recognition",
+    "run_id": "40693636092",
+    "run_number": "4161",
+    "attempt": "1",
+    "url": "https://github.com/syslabcom/activity-recognition/actions/runs/40693636092",
+    "sha": "fa8de92f8967124ddbb0816ce6ec66367aa4b889"
+  }
+}

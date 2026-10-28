@@ -1,7 +1,7 @@
 {
   "version": 1,
   "status": "success",
-  "generated_at": "2026-10-28T12:11:05Z",
+  "generated_at": "2026-10-28T13:07:57Z",
   "organization": "plone",
   "state": "open",
   "slug": "lvl-easy",
@@ -9,8 +9,191 @@
   "required_labels": [
     "41 lvl: easy"
   ],
-  "issue_count": 111,
+  "issue_count": 115,
   "issues": [
+    {
+      "id": 1634448383,
+      "number": 4584,
+      "title": "Locale should not be hardcoded in sort",
+      "html_url": "https://github.com/plone/volto/issues/4584",
+      "repository_full_name": "plone/volto",
+      "repository_url": "https://api.github.com/repos/plone/volto",
+      "state": "open",
+      "created_at": "2023-03-21T17:57:55Z",
+      "updated_at": "2026-10-28T12:50:11Z",
+      "comments": 1,
+      "author": {
+        "login": "tiberiuichim",
+        "html_url": "https://github.com/tiberiuichim"
+      },
+      "assignees": [
+        "lord2anil"
+      ],
+      "labels": [
+        "01 type: bug",
+        "21 status: confirmed",
+        "41 lvl: easy",
+        "62 scope: viewer"
+      ],
+      "contributor_summary": {
+        "status": "available",
+        "generated_at": "2026-10-28T13:08:03Z",
+        "source_issue_updated_at": "2026-10-28T12:50:11Z",
+        "model": "gpt-4o-mini",
+        "summary_markdown": "## What this issue is about\nThis issue is about a bug in the Volto code where the sorting of facet options is hardcoded to English. This means that users from different locales might not see options sorted in their language, affecting usability.\n\n## What needs to be done\nThe main task is to modify how the sorting for facet options is handled so that it uses the current user’s locale instead of always defaulting to English. This will likely require checking the relevant code in `Facets.jsx` and updating the sorting function to use dynamic localization.\n\n## Helpful background\nCurrently, the sorting method `localeCompare` is being called with a hardcoded 'en' parameter. You can find this code at the specified line in `Facets.jsx`. Another resource is the `LanguageSelector.js` file, which shows how to obtain the current locale. \n\nSome discussion indicates that a related pull request (#4594) is open but has not yet been merged. \n\n## Good first steps\n1. Review the code in `Facets.jsx` and identify where changes are needed.\n2. Refer to the `LanguageSelector.js` for guidance on fetching the current locale.\n3. Test your changes to ensure facet options sort correctly for different locales.\n4. Consider documenting your approach and any challenges you encounter, as this could help future contributors. \n\nFeel free to reach out in the comments if you have questions!",
+        "path": "data/issues/summaries/plone/volto/4584.json"
+      }
+    },
+    {
+      "id": 620914499,
+      "number": 1499,
+      "title": "The translations link appears for all content types despite might be it's not ITranslatable",
+      "html_url": "https://github.com/plone/volto/issues/1499",
+      "repository_full_name": "plone/volto",
+      "repository_url": "https://api.github.com/repos/plone/volto",
+      "state": "open",
+      "created_at": "2020-05-19T11:53:06Z",
+      "updated_at": "2026-10-28T12:49:33Z",
+      "comments": 1,
+      "author": {
+        "login": "sneridagh",
+        "html_url": "https://github.com/sneridagh"
+      },
+      "assignees": [],
+      "labels": [
+        "01 type: bug",
+        "21 status: confirmed",
+        "41 lvl: easy"
+      ],
+      "contributor_summary": {
+        "status": "available",
+        "generated_at": "2026-10-28T13:08:09Z",
+        "source_issue_updated_at": "2026-10-28T12:49:33Z",
+        "model": "gpt-4o-mini",
+        "summary_markdown": "## What this issue is about\nThis issue relates to a bug in Volto where the translations link appears for all content types, even for those that may not support translations (ITranslatable). \n\n## What needs to be done\nWe need to ensure that the \"Manage Translations\" link is only displayed for translatable content. The current implementation checks for site-wide multilingual settings, but it should also verify if the specific content type supports translations.\n\n## Helpful background\nAs of now, the translations link is displayed incorrectly for some content types. Recent changes partially addressed this, but further adjustment is needed in the `ManageTranslations.jsx` file. It currently accesses translation items without proper checks, which can lead to errors.\n\n## Good first steps\n1. Review the relevant code in `Toolbar/More.jsx` and `ManageTranslations.jsx`.\n2. Modify the link display logic to include checks for whether the content type is translatable.\n3. Test your changes to ensure that the translations link only appears for appropriate content types.\n4. After implementing the changes, update documentation or comments as needed and consider opening a pull request for review.\n\nFeel free to ask questions if you're unsure about any part of this process!",
+        "path": "data/issues/summaries/plone/volto/1499.json"
+      }
+    },
+    {
+      "id": 1632607637,
+      "number": 4580,
+      "title": "It should be possible to open linked items in a new tab",
+      "html_url": "https://github.com/plone/volto/issues/4580",
+      "repository_full_name": "plone/volto",
+      "repository_url": "https://api.github.com/repos/plone/volto",
+      "state": "open",
+      "created_at": "2023-03-20T17:59:50Z",
+      "updated_at": "2026-10-28T12:49:27Z",
+      "comments": 22,
+      "author": {
+        "login": "tiberiuichim",
+        "html_url": "https://github.com/tiberiuichim"
+      },
+      "assignees": [
+        "ichim-david",
+        "falgunmpatel"
+      ],
+      "labels": [
+        "04 type: enhancement",
+        "41 lvl: easy",
+        "61 scope: editor"
+      ],
+      "contributor_summary": {
+        "status": "available",
+        "generated_at": "2026-10-28T13:08:13Z",
+        "source_issue_updated_at": "2026-10-28T12:49:27Z",
+        "model": "gpt-4o-mini",
+        "summary_markdown": "```markdown\n## What this issue is about\nThis issue aims to enhance the Volto editor by allowing linked items to be opened in a new browser tab. This functionality will improve user experience when managing links within the editor.\n\n## What needs to be done\nThe main task is to refactor the existing links in the ObjectBrowserWidget component to use `<a>` tags, enabling them to open in new tabs. There is also a suggestion to indicate to users that these links will open in a new tab, though the details about how to implement this are still debated.\n\n## Helpful background\nThere are several open pull requests (PRs) related to this issue and some confusion among contributors regarding the direction of changes. It’s noted that clear communication and following project guidelines will help streamline the process.\n\n## Good first steps\n1. Familiarize yourself with the ObjectBrowserWidget component linked in the issue description.\n2. Discuss with team members about the best way to indicate links that open in new tabs.\n3. If you are a new contributor, consider reviewing existing PRs for guidance.\n4. Consider submitting a PR that conforms to the current coding standards and communicates clearly with others in the discussion.\n\nFeel free to ask questions if anything is unclear!\n```",
+        "path": "data/issues/summaries/plone/volto/4580.json"
+      }
+    },
+    {
+      "id": 589072118,
+      "number": 1302,
+      "title": "Volto add-ons naming convention",
+      "html_url": "https://github.com/plone/volto/issues/1302",
+      "repository_full_name": "plone/volto",
+      "repository_url": "https://api.github.com/repos/plone/volto",
+      "state": "open",
+      "created_at": "2020-03-27T11:35:46Z",
+      "updated_at": "2026-10-28T12:49:20Z",
+      "comments": 3,
+      "author": {
+        "login": "cekk",
+        "html_url": "https://github.com/cekk"
+      },
+      "assignees": [],
+      "labels": [
+        "41 lvl: easy",
+        "99 tag: docs"
+      ],
+      "contributor_summary": {
+        "status": "available",
+        "generated_at": "2026-10-28T13:08:19Z",
+        "source_issue_updated_at": "2026-10-28T12:49:20Z",
+        "model": "gpt-4o-mini",
+        "summary_markdown": "## What this issue is about\nThis issue discusses the naming conventions for Volto add-ons that are not part of the core. It aims to clarify how to name both front-end and back-end packages and emphasizes the importance of documenting these conventions.\n\n## What needs to be done\n1. Establish clear naming conventions for Volto add-ons:\n   - For front-end: Use `@collective/volto-my-package` or, if access is unavailable, use `volto-my-package`.\n   - For back-end: Use `collective.volto.my_package`.\n2. Update the documentation to include these naming conventions.\n\n## Helpful background\nThe conversation highlights the need for namespaces to prevent unmaintained add-ons and collisions in naming. It involves differing views on the use of the `@plone` organization for core add-ons and the potential for community-protected naming via the `collective` namespace.\n\n## Good first steps\n1. Review existing documentation and naming examples, such as those in the [awesome-volto repository](https://github.com/awesome-volto).\n2. Join the discussion in the comments for further clarification and contribute your thoughts.\n3. Begin drafting the documentation update that includes the established conventions discussed.\n4. Ensure proper testing and review processes are in place before finalizing any additions.",
+        "path": "data/issues/summaries/plone/volto/1302.json"
+      }
+    },
+    {
+      "id": 686107116,
+      "number": 1775,
+      "title": "Auto-generated text-area form fields should have at least 10 lines by default and should increase size as the user types in text",
+      "html_url": "https://github.com/plone/volto/issues/1775",
+      "repository_full_name": "plone/volto",
+      "repository_url": "https://api.github.com/repos/plone/volto",
+      "state": "open",
+      "created_at": "2020-08-26T08:07:49Z",
+      "updated_at": "2026-10-28T12:46:53Z",
+      "comments": 16,
+      "author": {
+        "login": "tisto",
+        "html_url": "https://github.com/tisto"
+      },
+      "assignees": [],
+      "labels": [
+        "04 type: enhancement",
+        "41 lvl: easy"
+      ],
+      "contributor_summary": {
+        "status": "available",
+        "generated_at": "2026-10-28T13:08:23Z",
+        "source_issue_updated_at": "2026-10-28T12:46:53Z",
+        "model": "gpt-4o-mini",
+        "summary_markdown": "```markdown\n## What this issue is about\nThis issue aims to enhance the text-area form fields in the Volto framework by ensuring they have at least 10 lines by default and can dynamically increase in size as users type. This will help users see all their text without scrolling.\n\n## What needs to be done\n1. Update the Textarea widget to have a default of 10 rows.\n2. Implement functionality to allow the textarea to resize as the user types.\n3. Possible integration of the `react-textarea-autosize` module may be required for this feature.\n\n## Helpful background\nThe discussions indicate a desire to improve user experience with text areas. Current implementations might be limited due to CSS restrictions from `semantic-ui-react`, so exploring alternatives like `react-textarea-autosize` could be beneficial. Note that the conversation includes references to contributing guidelines and requirements for first-time contributors.\n\n## Good first steps\n1. Familiarize yourself with the relevant part of the codebase, particularly the `src/components/manage/Widgets/TextareaWidget.jsx`.\n2. Explore the potential usage of the `react-textarea-autosize` module.\n3. Review the [Plone contributing guidelines](https://6.docs.plone.org/contributing/index.html) to understand the expectations for contributions.\n4. Test your changes to ensure they work as intended before submitting a pull request.\n```",
+        "path": "data/issues/summaries/plone/volto/1775.json"
+      }
+    },
+    {
+      "id": 604657916,
+      "number": 1404,
+      "title": "Supported field types in Volto",
+      "html_url": "https://github.com/plone/volto/issues/1404",
+      "repository_full_name": "plone/volto",
+      "repository_url": "https://api.github.com/repos/plone/volto",
+      "state": "open",
+      "created_at": "2020-04-22T10:50:53Z",
+      "updated_at": "2026-10-28T12:45:56Z",
+      "comments": 2,
+      "author": {
+        "login": "pbauer",
+        "html_url": "https://github.com/pbauer"
+      },
+      "assignees": [],
+      "labels": [
+        "04 type: enhancement",
+        "41 lvl: easy"
+      ],
+      "contributor_summary": {
+        "status": "available",
+        "generated_at": "2026-10-28T13:08:28Z",
+        "source_issue_updated_at": "2026-10-28T12:45:56Z",
+        "model": "gpt-4o-mini",
+        "summary_markdown": "```markdown\n## What this issue is about\nThis issue discusses enhancements to field types in Volto that are not fully supported or need fixing. The focus is on fields like `schema.Time`, `schema.Timedelta`, and `RelationChoice` that currently pose challenges within Volto.\n\n## What needs to be done\n1. Investigate serialization for unsupported field types (`schema.Time`, `schema.Timedelta`, `schema.Dict`).\n2. Improve the implementation of `RelationChoice` fields.\n3. Address issues with lists or sets using `value_type=schema.Choice`.\n4. Ensure that `directives.widget()` is acknowledged by Volto.\n\n## Helpful background\nThe issue highlights various problems in Volto regarding how specific fields function, referencing Plone 5 and its schema documentation. There are also sample illustrations of how these fields should look.\n\n## Good first steps\n1. Review the examples and screenshots in the references to grasp how these fields are intended to work.\n2. Test existing Volto field implementations and replicate the issues mentioned.\n3. Consider contributing code or insights based on findings.\n4. Engage with previous comments to understand the current state of the issue and existing pull requests.\n```",
+        "path": "data/issues/summaries/plone/volto/1404.json"
+      }
+    },
     {
       "id": 6075074700,
       "number": 8490,
@@ -2016,34 +2199,6 @@
       }
     },
     {
-      "id": 686107116,
-      "number": 1775,
-      "title": "Auto-generated text-area form fields should have at least 10 lines by default and should increase size as the user types in text",
-      "html_url": "https://github.com/plone/volto/issues/1775",
-      "repository_full_name": "plone/volto",
-      "repository_url": "https://api.github.com/repos/plone/volto",
-      "state": "open",
-      "created_at": "2020-08-26T08:07:49Z",
-      "updated_at": "2026-01-10T10:17:38Z",
-      "comments": 16,
-      "author": {
-        "login": "tisto",
-        "html_url": "https://github.com/tisto"
-      },
-      "assignees": [],
-      "labels": [
-        "41 lvl: easy"
-      ],
-      "contributor_summary": {
-        "status": "available",
-        "generated_at": "2026-04-09T12:26:39Z",
-        "source_issue_updated_at": "2026-01-10T10:17:38Z",
-        "model": "gpt-4o-mini",
-        "summary_markdown": "```markdown\n## What this issue is about\nThis issue seeks to improve the **textarea form fields** in the Plone Volto project. The goal is to make these fields start with at least **10 lines** by default and allow them to **grow dynamically** as the user types, enhancing user experience by showing more text at once.\n\n## What needs to be done\n1. Implement a textarea component that starts with a minimum of 10 lines.\n2. Ensure the textarea expands as the user types, so they can see their entire input.\n\nThe discussion has indicated potential existing challenges with the current Textarea widget, and there's a suggestion to use the `react-textarea-autosize` module to achieve this effect.\n\n## Helpful background\nThe current Textarea functionality may not accommodate dynamic growth as desired, and existing CSS from Semantic UI might conflict with changes. Therefore, the introduction of `react-textarea-autosize` can provide more flexibility, including a `min-rows` property.\n\n## Good first steps\n1. Review the existing TextareaWidget code in `src/components/manage/Widgets/TextareaWidget.jsx`.\n2. Explore using the `react-textarea-autosize` module (you may need to install it).\n3. Check the project's contribution guidelines to ensure proper practices: [First-time contributors](https://6.docs.plone.org/contributing/first-time.html).\n\nFeel free to ask questions if parts of this issue are unclear!\n```",
-        "path": "data/issues/summaries/plone/volto/1775.json"
-      }
-    },
-    {
       "id": 688684749,
       "number": 1783,
       "title": "Document SchemaWidget, provide examples",
@@ -2130,34 +2285,6 @@
         "model": "gpt-4o-mini",
         "summary_markdown": "## What this issue is about\nThis issue focuses on reducing duplicated documentation within the Plone distribution repository. Currently, there's overlap between the `README.md`, the `docs/` folder, and external documentation at https://6.docs.plone.org. The goal is to streamline our documentation into one reliable source.\n\n## What needs to be done\n1. **Remove duplicate documentation** found in this repository that already exists at the external documentation link.\n2. **Purge any code** that generates documentation within this repository, such as references in `Makefile`, `requirements-docs.txt`, and GitHub workflows.\n3. **Update the `README.md`** to include links directing users to the authoritative Plone 6 Documentation:\n   - [Plone distributions](https://6.docs.plone.org/conceptual-guides/distributions.html)\n   - [Create a Plone distribution](https://6.docs.plone.org/developer-guide/create-a-distribution.html)\n\n## Helpful background\nThis issue arose from a need to keep documentation consistent and easier to manage. References to multiple sources can lead to confusion and outdated information. This change aims to align our docs with the official Plone documentation.\n\n## Good first steps\n- Review the current `README.md` and documentation in the `docs/` folder to identify duplicates.\n- Begin exploring how documentation is generated in your local repository (e.g., check the `Makefile` and doc requirements).\n- Consider updating the `README.md` with the suggested links once duplicates are removed.",
         "path": "data/issues/summaries/plone/plone.distribution/134.json"
-      }
-    },
-    {
-      "id": 604657916,
-      "number": 1404,
-      "title": "Supported field types in Volto",
-      "html_url": "https://github.com/plone/volto/issues/1404",
-      "repository_full_name": "plone/volto",
-      "repository_url": "https://api.github.com/repos/plone/volto",
-      "state": "open",
-      "created_at": "2020-04-22T10:50:53Z",
-      "updated_at": "2025-11-30T14:21:09Z",
-      "comments": 2,
-      "author": {
-        "login": "pbauer",
-        "html_url": "https://github.com/pbauer"
-      },
-      "assignees": [],
-      "labels": [
-        "41 lvl: easy"
-      ],
-      "contributor_summary": {
-        "status": "available",
-        "generated_at": "2026-04-09T13:36:46Z",
-        "source_issue_updated_at": "2025-11-30T14:21:09Z",
-        "model": "gpt-4o-mini",
-        "summary_markdown": "```markdown\n## What this issue is about\nThis issue addresses the limited support for certain field types in Volto, specifically regarding serialization and implementation. Key field types like `Time`, `Timedelta`, and `Dict` are currently not usable. Additionally, there are concerns about the `RelationChoice` field and other choice-related fields.\n\n## What needs to be done\nImprovements must be made to ensure that unsupported field types and issues with choice fields are addressed. As of now, discussions are ongoing without a clear resolution or specific implementation path.\n\n## Helpful background\nYou can refer to [Plone 5 documentation](https://training.plone.org/5/mastering-plone/dexterity_reference.html) and [Plone 6 documentation](https://github.com/plone/training/blob/master/moreinfo/field_types.rst) for details on schema fields. Screenshots of various field types in Volto can provide visual context.\n\n## Good first steps\n1. Review the current schema fields and identify unsupported types.\n2. Look at the example schema provided in the issue description.\n3. Check existing open pull requests, such as [#1454](https://github.com/plone/volto/pull/1454), for potential improvements.\n4. Engage in discussions on the issue to clarify ambiguities and share insights.\n```",
-        "path": "data/issues/summaries/plone/volto/1404.json"
       }
     },
     {
@@ -3447,10 +3574,10 @@
   "message": null,
   "workflow": {
     "repository": "syslabcom/activity-recognition",
-    "run_id": "40685727954",
-    "run_number": "4160",
+    "run_id": "40693636092",
+    "run_number": "4161",
     "attempt": "1",
-    "url": "https://github.com/syslabcom/activity-recognition/actions/runs/40685727954",
-    "sha": "66ea896a9505a57f1117da611fbc0e6a82b17eaf"
+    "url": "https://github.com/syslabcom/activity-recognition/actions/runs/40693636092",
+    "sha": "fa8de92f8967124ddbb0816ce6ec66367aa4b889"
   }
 }

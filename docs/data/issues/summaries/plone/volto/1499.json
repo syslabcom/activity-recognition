@@ -1,0 +1,32 @@
+{
+  "version": 1,
+  "status": "success",
+  "generated_at": "2026-10-28T13:08:09Z",
+  "source_issue": {
+    "id": 620914499,
+    "number": 1499,
+    "title": "The translations link appears for all content types despite might be it's not ITranslatable",
+    "html_url": "https://github.com/plone/volto/issues/1499",
+    "repository_full_name": "plone/volto",
+    "updated_at": "2026-10-28T12:49:33Z",
+    "labels": [
+      "01 type: bug",
+      "21 status: confirmed",
+      "41 lvl: easy"
+    ],
+    "comments": 1
+  },
+  "ai": {
+    "provider": "openai",
+    "model": "gpt-4o-mini"
+  },
+  "summary_markdown": "## What this issue is about\nThis issue relates to a bug in Volto where the translations link appears for all content types, even for those that may not support translations (ITranslatable). \n\n## What needs to be done\nWe need to ensure that the \"Manage Translations\" link is only displayed for translatable content. The current implementation checks for site-wide multilingual settings, but it should also verify if the specific content type supports translations.\n\n## Helpful background\nAs of now, the translations link is displayed incorrectly for some content types. Recent changes partially addressed this, but further adjustment is needed in the `ManageTranslations.jsx` file. It currently accesses translation items without proper checks, which can lead to errors.\n\n## Good first steps\n1. Review the relevant code in `Toolbar/More.jsx` and `ManageTranslations.jsx`.\n2. Modify the link display logic to include checks for whether the content type is translatable.\n3. Test your changes to ensure that the translations link only appears for appropriate content types.\n4. After implementing the changes, update documentation or comments as needed and consider opening a pull request for review.\n\nFeel free to ask questions if you're unsure about any part of this process!",
+  "workflow": {
+    "repository": "syslabcom/activity-recognition",
+    "run_id": "40693636092",
+    "run_number": "4161",
+    "attempt": "1",
+    "url": "https://github.com/syslabcom/activity-recognition/actions/runs/40693636092",
+    "sha": "fa8de92f8967124ddbb0816ce6ec66367aa4b889"
+  }
+}

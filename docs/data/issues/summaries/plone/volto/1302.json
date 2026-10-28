@@ -1,0 +1,31 @@
+{
+  "version": 1,
+  "status": "success",
+  "generated_at": "2026-10-28T13:08:19Z",
+  "source_issue": {
+    "id": 589072118,
+    "number": 1302,
+    "title": "Volto add-ons naming convention",
+    "html_url": "https://github.com/plone/volto/issues/1302",
+    "repository_full_name": "plone/volto",
+    "updated_at": "2026-10-28T12:49:20Z",
+    "labels": [
+      "41 lvl: easy",
+      "99 tag: docs"
+    ],
+    "comments": 3
+  },
+  "ai": {
+    "provider": "openai",
+    "model": "gpt-4o-mini"
+  },
+  "summary_markdown": "## What this issue is about\nThis issue discusses the naming conventions for Volto add-ons that are not part of the core. It aims to clarify how to name both front-end and back-end packages and emphasizes the importance of documenting these conventions.\n\n## What needs to be done\n1. Establish clear naming conventions for Volto add-ons:\n   - For front-end: Use `@collective/volto-my-package` or, if access is unavailable, use `volto-my-package`.\n   - For back-end: Use `collective.volto.my_package`.\n2. Update the documentation to include these naming conventions.\n\n## Helpful background\nThe conversation highlights the need for namespaces to prevent unmaintained add-ons and collisions in naming. It involves differing views on the use of the `@plone` organization for core add-ons and the potential for community-protected naming via the `collective` namespace.\n\n## Good first steps\n1. Review existing documentation and naming examples, such as those in the [awesome-volto repository](https://github.com/awesome-volto).\n2. Join the discussion in the comments for further clarification and contribute your thoughts.\n3. Begin drafting the documentation update that includes the established conventions discussed.\n4. Ensure proper testing and review processes are in place before finalizing any additions.",
+  "workflow": {
+    "repository": "syslabcom/activity-recognition",
+    "run_id": "40693636092",
+    "run_number": "4161",
+    "attempt": "1",
+    "url": "https://github.com/syslabcom/activity-recognition/actions/runs/40693636092",
+    "sha": "fa8de92f8967124ddbb0816ce6ec66367aa4b889"
+  }
+}
