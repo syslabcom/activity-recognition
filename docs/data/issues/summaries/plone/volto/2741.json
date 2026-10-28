@@ -1,0 +1,33 @@
+{
+  "version": 1,
+  "status": "success",
+  "generated_at": "2026-10-28T01:09:21Z",
+  "source_issue": {
+    "id": 1026453447,
+    "number": 2741,
+    "title": "Search in contentsview without b_start",
+    "html_url": "https://github.com/plone/volto/issues/2741",
+    "repository_full_name": "plone/volto",
+    "updated_at": "2026-10-28T00:38:02Z",
+    "labels": [
+      "01 type: bug",
+      "21 status: confirmed",
+      "41 lvl: easy",
+      "61 scope: editor"
+    ],
+    "comments": 2
+  },
+  "ai": {
+    "provider": "openai",
+    "model": "gpt-4o-mini"
+  },
+  "summary_markdown": "## What this issue is about\nThis issue in the Volto project addresses a bug where searching from the second page of a contents view does not return results from the first page. When you search, it's expected to find all objects in the folder, not just those displayed on the current page.\n\n## What needs to be done\nThe current implementation keeps the user on the second page even when other results are available on the first page. The solution likely involves modifying the code to reset the current page to zero when a search filter is applied, ensuring that all potential matches are visible.\n\n## Helpful background\nWhen users navigate to the contents view and switch to pagination (e.g., page 2), searching for items only returns results for that page instead of the entire list. Key components involved in fixing this include `onChangeFilter` and `fetchContents` in the `Contents.jsx` file.\n\n## Good first steps\n1. Review the comments and the current code at the specified lines in `Contents.jsx`.\n2. Test the current implementation by replicating the search issue to see the problem firsthand.\n3. Consider implementing the suggested fix of resetting `currentPage` upon filtering.\n4. If you make changes, remember to test thoroughly and document any updates for clarity.",
+  "workflow": {
+    "repository": "syslabcom/activity-recognition",
+    "run_id": "40613199302",
+    "run_number": "4149",
+    "attempt": "1",
+    "url": "https://github.com/syslabcom/activity-recognition/actions/runs/40613199302",
+    "sha": "e3e2ea4a5530b9c24bc30958d6b2ae2b55f17eb2"
+  }
+}

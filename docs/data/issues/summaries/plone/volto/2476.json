@@ -1,0 +1,33 @@
+{
+  "version": 1,
+  "status": "success",
+  "generated_at": "2026-10-28T01:08:41Z",
+  "source_issue": {
+    "id": 900679924,
+    "number": 2476,
+    "title": "Simple text input labels are not aligned with the input content",
+    "html_url": "https://github.com/plone/volto/issues/2476",
+    "repository_full_name": "plone/volto",
+    "updated_at": "2026-10-28T00:54:10Z",
+    "labels": [
+      "01 type: bug",
+      "21 status: confirmed",
+      "41 lvl: easy",
+      "61 scope: editor"
+    ],
+    "comments": 1
+  },
+  "ai": {
+    "provider": "openai",
+    "model": "gpt-4o-mini"
+  },
+  "summary_markdown": "## What this issue is about\nThis issue addresses a bug in the Volto editor where simple text input labels are not visually aligned with their input fields. Currently, the label appears slightly higher than the input text, which can be visually unappealing.\n\n## What needs to be done\nThe goal is to align the label with the input text, specifically by adjusting or removing the bottom margin that causes the misalignment. The alignment issue is noted in the relevant CSS files.\n\n## Helpful background\nThe labels and inputs use Semantic UI styles, and the current setup includes a bottom margin on the label that contributes to the alignment problem. Keeping elements visually aligned is important for a cleaner user interface. \n\n## Good first steps\n1. Explore the relevant CSS files mentioned in the issue: `input.overrides` and `form.overrides`.\n2. Test the changes against the current version of Volto to ensure the issue is resolved.\n3. Consider documenting your approach and any findings, as this can help others facing similar challenges.\n4. Feel free to reach out for feedback or clarification if the issue appears ambiguous or if you have further questions!",
+  "workflow": {
+    "repository": "syslabcom/activity-recognition",
+    "run_id": "40613199302",
+    "run_number": "4149",
+    "attempt": "1",
+    "url": "https://github.com/syslabcom/activity-recognition/actions/runs/40613199302",
+    "sha": "e3e2ea4a5530b9c24bc30958d6b2ae2b55f17eb2"
+  }
+}

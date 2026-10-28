@@ -1,7 +1,7 @@
 {
   "version": 1,
   "status": "success",
-  "generated_at": "2026-10-28T00:21:11Z",
+  "generated_at": "2026-10-28T01:08:26Z",
   "organization": "plone",
   "state": "open",
   "slug": "lvl-easy",
@@ -9,8 +9,633 @@
   "required_labels": [
     "41 lvl: easy"
   ],
-  "issue_count": 92,
+  "issue_count": 110,
   "issues": [
+    {
+      "id": 2089996620,
+      "number": 5661,
+      "title": "Checkbox label color not showing correctly",
+      "html_url": "https://github.com/plone/volto/issues/5661",
+      "repository_full_name": "plone/volto",
+      "repository_url": "https://api.github.com/repos/plone/volto",
+      "state": "open",
+      "created_at": "2024-01-19T08:54:24Z",
+      "updated_at": "2026-10-28T00:54:24Z",
+      "comments": 7,
+      "author": {
+        "login": "JanhaviAlekar",
+        "html_url": "https://github.com/JanhaviAlekar"
+      },
+      "assignees": [],
+      "labels": [
+        "01 type: bug",
+        "21 status: confirmed",
+        "41 lvl: easy",
+        "61 scope: editor"
+      ],
+      "contributor_summary": {
+        "status": "available",
+        "generated_at": "2026-10-28T01:08:31Z",
+        "source_issue_updated_at": "2026-10-28T00:54:24Z",
+        "model": "gpt-4o-mini",
+        "summary_markdown": "```markdown\n## What this issue is about\nThis issue addresses a bug where the label color of a checkbox does not correctly change based on its checked state. When checked, the label turns a light gray color (#878f93), but it fails to revert to its original color (#000) when unchecked. Additionally, clicking outside of the checkbox incorrectly resets the label color.\n\n## What needs to be done\nThe goal is to ensure that the label color toggles correctly between its original and light versions based on the checkbox’s checked state. Discussions indicate that the label color should remain consistent as per accessibility standards, potentially only changing when the checkbox is enabled or disabled.\n\n## Helpful background\nThere has been some debate about the expected behavior of the label color, with various opinions on whether it should change at all. Current implementation issues must be understood to propose effective solutions. Relevant knowledge of React, CSS, and HTML may aid in fixing the bug.\n\n## Good first steps\n1. Familiarize yourself with the checkbox implementation in Volto.\n2. Reproduce the bug to see how the label color behaves in different states.\n3. Review existing discussions for guidance on expectations and potential solutions.\n4. Start testing changes locally and prepare a pull request with your solution.\n5. Follow the [Plone contributing guidelines](https://6.docs.plone.org/contributing/index.html) for best practices in your approach.\n```",
+        "path": "data/issues/summaries/plone/volto/5661.json"
+      }
+    },
+    {
+      "id": 1637760618,
+      "number": 4603,
+      "title": "Table block: \"minimalistic design\" doesn't work together with \"table color inverted\"",
+      "html_url": "https://github.com/plone/volto/issues/4603",
+      "repository_full_name": "plone/volto",
+      "repository_url": "https://api.github.com/repos/plone/volto",
+      "state": "open",
+      "created_at": "2023-03-23T15:24:40Z",
+      "updated_at": "2026-10-28T00:54:21Z",
+      "comments": 10,
+      "author": {
+        "login": "tiberiuichim",
+        "html_url": "https://github.com/tiberiuichim"
+      },
+      "assignees": [
+        "lord2anil"
+      ],
+      "labels": [
+        "01 type: bug",
+        "21 status: confirmed",
+        "41 lvl: easy",
+        "62 scope: viewer"
+      ],
+      "contributor_summary": {
+        "status": "available",
+        "generated_at": "2026-10-28T01:08:36Z",
+        "source_issue_updated_at": "2026-10-28T00:54:21Z",
+        "model": "gpt-4o-mini",
+        "summary_markdown": "## What this issue is about\nThis issue involves a bug with the Table block in Volto where the \"minimalistic design\" option does not properly work with the \"table color inverted\" setting. Specifically, the text color changes to white, but the background does not update, likely due to hardcoded styles.\n\n## What needs to be done\nThe main task is to investigate and possibly fix the CSS styles affecting the table’s background when using both \"minimalistic design\" and \"inverted\" options. A suggested solution involves creating a new CSS rule that correctly applies the inverted background.\n\n## Helpful background\nThe conversation around this issue indicates that it might stem from conflicts in the Semantic UI framework used by Volto. There are several discussions regarding what changes need to be made, but the information is somewhat scattered and might need further clarification. \n\n## Good first steps\n1. **Reproduce the issue** by creating a Table block and trying different settings.\n2. **Review existing code** in `TableBlockView.jsx` and related CSS files for style conflicts.\n3. If you feel confident, consider implementing the proposed fix and submitting a pull request (PR).\n4. Check out the [Volto contributing guidelines](https://6.docs.plone.org/volto/developer-guidelines/contributing.html) for more information on how to contribute effectively.",
+        "path": "data/issues/summaries/plone/volto/4603.json"
+      }
+    },
+    {
+      "id": 900679924,
+      "number": 2476,
+      "title": "Simple text input labels are not aligned with the input content",
+      "html_url": "https://github.com/plone/volto/issues/2476",
+      "repository_full_name": "plone/volto",
+      "repository_url": "https://api.github.com/repos/plone/volto",
+      "state": "open",
+      "created_at": "2021-05-25T11:32:15Z",
+      "updated_at": "2026-10-28T00:54:10Z",
+      "comments": 1,
+      "author": {
+        "login": "tiberiuichim",
+        "html_url": "https://github.com/tiberiuichim"
+      },
+      "assignees": [],
+      "labels": [
+        "01 type: bug",
+        "21 status: confirmed",
+        "41 lvl: easy",
+        "61 scope: editor"
+      ],
+      "contributor_summary": {
+        "status": "available",
+        "generated_at": "2026-10-28T01:08:41Z",
+        "source_issue_updated_at": "2026-10-28T00:54:10Z",
+        "model": "gpt-4o-mini",
+        "summary_markdown": "## What this issue is about\nThis issue addresses a bug in the Volto editor where simple text input labels are not visually aligned with their input fields. Currently, the label appears slightly higher than the input text, which can be visually unappealing.\n\n## What needs to be done\nThe goal is to align the label with the input text, specifically by adjusting or removing the bottom margin that causes the misalignment. The alignment issue is noted in the relevant CSS files.\n\n## Helpful background\nThe labels and inputs use Semantic UI styles, and the current setup includes a bottom margin on the label that contributes to the alignment problem. Keeping elements visually aligned is important for a cleaner user interface. \n\n## Good first steps\n1. Explore the relevant CSS files mentioned in the issue: `input.overrides` and `form.overrides`.\n2. Test the changes against the current version of Volto to ensure the issue is resolved.\n3. Consider documenting your approach and any findings, as this can help others facing similar challenges.\n4. Feel free to reach out for feedback or clarification if the issue appears ambiguous or if you have further questions!",
+        "path": "data/issues/summaries/plone/volto/2476.json"
+      }
+    },
+    {
+      "id": 2383183219,
+      "number": 6139,
+      "title": "Print is not complete with firefox",
+      "html_url": "https://github.com/plone/volto/issues/6139",
+      "repository_full_name": "plone/volto",
+      "repository_url": "https://api.github.com/repos/plone/volto",
+      "state": "open",
+      "created_at": "2024-07-01T08:23:58Z",
+      "updated_at": "2026-10-28T00:52:25Z",
+      "comments": 3,
+      "author": {
+        "login": "krissik",
+        "html_url": "https://github.com/krissik"
+      },
+      "assignees": [],
+      "labels": [
+        "01 type: bug",
+        "21 status: confirmed",
+        "41 lvl: easy",
+        "62 scope: viewer"
+      ],
+      "contributor_summary": {
+        "status": "available",
+        "generated_at": "2026-10-28T01:08:45Z",
+        "source_issue_updated_at": "2026-10-28T00:52:25Z",
+        "model": "gpt-4o-mini",
+        "summary_markdown": "## What this issue is about\nThis issue addresses a bug where printing from Firefox does not display all content on the page, as seen on demo.plone.org. It contrasts with the complete output experienced when printing from Chrome.\n\n## What needs to be done\nTo resolve this issue, we need to modify the CSS styles for the `body` element. Specifically, we should remove the `display: flex;` style and replace it with `display: block;` within the `@media print` block to ensure proper printing in Firefox.\n\n## Helpful background\nThe original issue was confirmed with Firefox version 127.0.1. Previous comments highlighted the need for the code to be altered in the project's CSS files, particularly focusing on `main.less` and `print.less` files within the Volto theme.\n\n## Good first steps\n1. **Check Out the Repo**: Clone the [Volto repository](https://github.com/plone/volto) and navigate to the `packages/volto/theme/themes/pastanaga/extras/` directory.\n2. **Locate and Edit CSS**: Open `main.less`, find the `body` CSS rule, and make the necessary changes.\n3. **Test Your Changes**: Before submitting, test how the print output appears in Firefox to confirm the fix.\n4. **Submit a Pull Request**: Commit your changes and create a pull request for review. Be sure to reference this issue for context! \n\nFeel free to ask questions if any part of this process is unclear. Happy coding!",
+        "path": "data/issues/summaries/plone/volto/6139.json"
+      }
+    },
+    {
+      "id": 1634559264,
+      "number": 4592,
+      "title": "Header UI not consistant for Tablet size view port",
+      "html_url": "https://github.com/plone/volto/issues/4592",
+      "repository_full_name": "plone/volto",
+      "repository_url": "https://api.github.com/repos/plone/volto",
+      "state": "open",
+      "created_at": "2023-03-21T19:18:39Z",
+      "updated_at": "2026-10-28T00:52:19Z",
+      "comments": 7,
+      "author": {
+        "login": "PriyanshuRj",
+        "html_url": "https://github.com/PriyanshuRj"
+      },
+      "assignees": [
+        "PriyanshuRj"
+      ],
+      "labels": [
+        "01 type: bug",
+        "21 status: confirmed",
+        "41 lvl: easy",
+        "62 scope: viewer"
+      ],
+      "contributor_summary": {
+        "status": "available",
+        "generated_at": "2026-10-28T01:08:49Z",
+        "source_issue_updated_at": "2026-10-28T00:52:19Z",
+        "model": "gpt-4o-mini",
+        "summary_markdown": "## What this issue is about\nThis issue addresses a bug in the Volto project where the header interface does not display consistently on tablet-sized screens. Instead of the navigation links stacking in a column, they remain in a row, which can lead to a confusing user experience.\n\n## What needs to be done\nThe dropdown menu that appears in the header when viewed on a tablet should have its navigation links arranged in a column format, similar to how they are displayed on mobile phones. This change will involve modifying the CSS styles for the menu.\n\n## Helpful background\nThe issue has been confirmed, and multiple users have expressed interest in fixing it. Currently, the menu layout uses Semantic UI’s stackable menu, which only changes to a column format below 768px. The goal is to adjust styling so that a column layout is applied for tablet views as well, specifically addressing the CSS in `main.less` and `Navigation.jsx`.\n\n## Good first steps\n1. **Familiarize yourself with the project**: Check out the Volto and contributing guidelines [here](https://6.docs.plone.org/contributing/index.html).\n2. **Review the relevant files**: Look at `Navigation.jsx` and `main.less` to understand the current setup.\n3. **Set up a local development environment**: Clone the repository and check for the bug in a tablet simulator (around 850px view).\n4. **Propose a fix**: Once you've identified a solution, make a pull request that implements the necessary changes.",
+        "path": "data/issues/summaries/plone/volto/4592.json"
+      }
+    },
+    {
+      "id": 1615390023,
+      "number": 4486,
+      "title": "Check reserved words on creating new content type instances",
+      "html_url": "https://github.com/plone/volto/issues/4486",
+      "repository_full_name": "plone/volto",
+      "repository_url": "https://api.github.com/repos/plone/volto",
+      "state": "open",
+      "created_at": "2023-03-08T14:41:24Z",
+      "updated_at": "2026-10-28T00:51:33Z",
+      "comments": 13,
+      "author": {
+        "login": "ksuess",
+        "html_url": "https://github.com/ksuess"
+      },
+      "assignees": [],
+      "labels": [
+        "01 type: bug",
+        "21 status: confirmed",
+        "41 lvl: easy",
+        "61 scope: editor"
+      ],
+      "contributor_summary": {
+        "status": "available",
+        "generated_at": "2026-10-28T01:08:53Z",
+        "source_issue_updated_at": "2026-10-28T00:51:33Z",
+        "model": "gpt-4o-mini",
+        "summary_markdown": "## What this issue is about\nThis issue addresses a problem where an editor should not be able to create a new page with certain \"reserved\" names, like \"register\", which conflicts with existing routes in Plone's frontend. These reserved words prevent confusion and errors in navigation.\n\n## What needs to be done\n1. Identify the reserved words by checking the routes defined in `src/routes.js`.\n2. Modify the ID generation during content creation by appending `-1` if a reserved word is used.\n3. Create an acceptance test for at least one reserved word, such as \"register\".\n\n## Helpful background\nReserved words are specific names that conflict with existing routes and should not be used as content IDs. The backend does not automatically handle these checks, so it’s essential to implement them in the frontend. Take a look at the `IdWidget` for guidance on how to perform these checks.\n\n## Good first steps\n1. Explore the `src/routes.js` to list reserved words.\n2. Review how ID is generated in the `Add.jsx` file.\n3. Set up a branch in the `plone/volto` repository to start coding.\n4. Write a test to verify the correct handling of at least one reserved word. Don’t hesitate to ask questions if you need further clarification!",
+        "path": "data/issues/summaries/plone/volto/4486.json"
+      }
+    },
+    {
+      "id": 3470093231,
+      "number": 7422,
+      "title": "Content rules Control panel is not translated",
+      "html_url": "https://github.com/plone/volto/issues/7422",
+      "repository_full_name": "plone/volto",
+      "repository_url": "https://api.github.com/repos/plone/volto",
+      "state": "open",
+      "created_at": "2025-09-30T15:48:07Z",
+      "updated_at": "2026-10-28T00:51:25Z",
+      "comments": 4,
+      "author": {
+        "login": "ericof",
+        "html_url": "https://github.com/ericof"
+      },
+      "assignees": [
+        "ericof"
+      ],
+      "labels": [
+        "01 type: bug",
+        "21 status: confirmed",
+        "41 lvl: easy"
+      ],
+      "contributor_summary": {
+        "status": "available",
+        "generated_at": "2026-10-28T01:08:58Z",
+        "source_issue_updated_at": "2026-10-28T00:51:25Z",
+        "model": "gpt-4o-mini",
+        "summary_markdown": "# Summary for Issue #7422: Content Rules Control Panel Translation\n\n## What this issue is about\nThis issue addresses the Content Rules Control Panel at `/controlpanel/rules` in Volto, which is not fully translated into languages other than English. Specifically, event names, statuses, and actions are displayed in English, affecting user experience for non-English speakers.\n\n## What needs to be done\nThe goal is to implement translations for the hardcoded text in the Content Rules Control Panel. The current untranslated items include 'Disable globally', 'enabled', 'not assigned', 'Configure', 'Edit', and 'Delete'. Additionally, the backend needs updates to handle translations for event vocabulary tokens.\n\n## Helpful background\nThe issue has been confirmed, with a check against Volto 19 revealing the ongoing problem. For a successful contribution, knowledge of how translations are managed in Volto and familiarity with React (specifically the `react-intl` library) will be beneficial.\n\n## Good first steps\n1. Familiarize yourself with the [Plone contribution guidelines](https://6.docs.plone.org/contributing/index.html).\n2. Review the relevant code in `packages/volto/src/components/manage/Controlpanels/Rules/Rules.jsx` and `ConfigureRule.jsx`.\n3. Consider setting up a local development environment to test changes.\n4. Reach out in the comments if you have questions or need clarification.",
+        "path": "data/issues/summaries/plone/volto/7422.json"
+      }
+    },
+    {
+      "id": 1407678992,
+      "number": 3760,
+      "title": "small wording inconsistencies",
+      "html_url": "https://github.com/plone/volto/issues/3760",
+      "repository_full_name": "plone/volto",
+      "repository_url": "https://api.github.com/repos/plone/volto",
+      "state": "open",
+      "created_at": "2022-10-13T12:01:36Z",
+      "updated_at": "2026-10-28T00:51:17Z",
+      "comments": 2,
+      "author": {
+        "login": "spereverde",
+        "html_url": "https://github.com/spereverde"
+      },
+      "assignees": [],
+      "labels": [
+        "01 type: bug",
+        "21 status: confirmed",
+        "41 lvl: easy"
+      ],
+      "contributor_summary": {
+        "status": "available",
+        "generated_at": "2026-10-28T01:09:02Z",
+        "source_issue_updated_at": "2026-10-28T00:51:17Z",
+        "model": "gpt-4o-mini",
+        "summary_markdown": "## What this issue is about\nThis issue addresses minor wording inconsistencies in the Volto UI's language files, which were identified while adding translations. Ensuring consistent spelling and terminology helps improve user experience and clarity.\n\n## What needs to be done\nReview and update the `volto.po` language file to standardize the spelling of various terms. Examples include inconsistencies in terms such as \"Add-on,\" \"column,\" and \"Log In\" vs. \"Log in.\" There are also variations in punctuation and usage that need to be resolved. \n\n## Helpful background\nConsistency in language is important for maintaining professionalism and usability in software applications. This issue references several specific instances where terminology varies, which can lead to confusion for users and translators. Notably, changing any msgid (message identifier) will affect existing translations, so these need to be managed carefully.\n\n## Good first steps\n1. Familiarize yourself with the `volto.po` file and the identified inconsistent terms.\n2. Review existing discussions to understand the suggested corrections and their contexts.\n3. Propose your updated terminology changes by creating a pull request.\n4. Test your changes to ensure they are reflected correctly in the UI.\n5. Communicate with team members regarding any transitions of msgid that impact translations.",
+        "path": "data/issues/summaries/plone/volto/3760.json"
+      }
+    },
+    {
+      "id": 2545288898,
+      "number": 6306,
+      "title": "Title block doesn't respect \"Disable new blocks\" restriction from DX Layout",
+      "html_url": "https://github.com/plone/volto/issues/6306",
+      "repository_full_name": "plone/volto",
+      "repository_url": "https://api.github.com/repos/plone/volto",
+      "state": "open",
+      "created_at": "2024-09-24T12:37:41Z",
+      "updated_at": "2026-10-28T00:45:08Z",
+      "comments": 6,
+      "author": {
+        "login": "avoinea",
+        "html_url": "https://github.com/avoinea"
+      },
+      "assignees": [],
+      "labels": [
+        "01 type: bug",
+        "21 status: confirmed",
+        "41 lvl: easy",
+        "61 scope: editor"
+      ],
+      "contributor_summary": {
+        "status": "available",
+        "generated_at": "2026-10-28T01:09:06Z",
+        "source_issue_updated_at": "2026-10-28T00:45:08Z",
+        "model": "gpt-4o-mini",
+        "summary_markdown": "```markdown\n## What this issue is about\nThis issue addresses a bug in Plone's Volto, where the Title block does not respect the \"Disable new blocks\" setting from the DX Layout. This means that when you enable this option and press Enter in the Title block, a new block is still created when it shouldn't be.\n\n## What needs to be done\nThe problem lies in how the Title block handles the \"Disable new blocks\" setting. The code needs to be updated to properly check this setting before allowing a new block to be created.\n\n## Helpful background\n- **Disable new blocks**: A setting that prevents users from adding new blocks once enabled.\n- The error affects both new and existing content types.\n- Prior discussions suggest that there are other related issues with similar settings not functioning correctly.\n\n## Good first steps\n1. Start by reviewing the relevant code in [Block/Edit.jsx](https://github.com/plone/volto/blob/157df05e5da7cc4349f2fefaa6e3566da56a8213/packages/volto/src/components/manage/Blocks/Block/Edit.jsx) and [Title/Edit.jsx](https://github.com/plone/volto/blob/157df05e5da7cc4349f2fefaa6e3566da56a8213/packages/volto/src/components/manage/Blocks/Title/Edit.jsx).\n2. Check how the \"disableNewBlocks\" flag is implemented and start devising a solution.\n3. Consider writing tests to ensure the flag works properly after your changes.\n4. Join the discussion for additional insights on related potential fixes or documentation needs.\n```",
+        "path": "data/issues/summaries/plone/volto/6306.json"
+      }
+    },
+    {
+      "id": 2423648518,
+      "number": 6183,
+      "title": "You cannot edit a user if you are authenticated with a Site Administrator.",
+      "html_url": "https://github.com/plone/volto/issues/6183",
+      "repository_full_name": "plone/volto",
+      "repository_url": "https://api.github.com/repos/plone/volto",
+      "state": "open",
+      "created_at": "2024-07-22T19:48:02Z",
+      "updated_at": "2026-10-28T00:39:40Z",
+      "comments": 15,
+      "author": {
+        "login": "wesleybl",
+        "html_url": "https://github.com/wesleybl"
+      },
+      "assignees": [],
+      "labels": [
+        "01 type: bug",
+        "21 status: confirmed",
+        "41 lvl: easy"
+      ],
+      "contributor_summary": {
+        "status": "available",
+        "generated_at": "2026-10-28T01:09:11Z",
+        "source_issue_updated_at": "2026-10-28T00:39:40Z",
+        "model": "gpt-4o-mini",
+        "summary_markdown": "```markdown\n## What this issue is about\nThis issue reports a bug in Volto where Site Administrators cannot edit other users’ information without encountering an error: \"You can only change your OWN login name.\" This occurs despite the username not being visible in the edit form.\n\n## What needs to be done\nWe need to ensure that the username is not sent in requests when Site Administrators attempt to edit other users. This change will prevent the unauthorized error and align Volto's behavior with the classic Plone UI, where changing usernames is not allowed.\n\n## Helpful background\nContributors should note that in the classic Plone UI, admins cannot change their username either. Discussions suggest that maintaining similar functionality across UI versions is beneficial for user experience. While current tests show this issue remains in Volto 19, the solution involves modifying the request payload to omit the username.\n\n## Good first steps\n1. Familiarize yourself with the `RenderUsers.jsx` file, particularly the `onEditUserSubmit` method, to understand how user data is submitted.\n2. Consider how to modify the payload to remove the username before it reaches the backend.\n3. Review the existing discussions, and feel free to ask questions if you need clarification. Contributions involving testing and documentation updates are also welcome to ensure everything works harmoniously.\n```",
+        "path": "data/issues/summaries/plone/volto/6183.json"
+      }
+    },
+    {
+      "id": 1931407127,
+      "number": 5296,
+      "title": "Returns are not preserved in teaser blocks (within grid block)",
+      "html_url": "https://github.com/plone/volto/issues/5296",
+      "repository_full_name": "plone/volto",
+      "repository_url": "https://api.github.com/repos/plone/volto",
+      "state": "open",
+      "created_at": "2023-10-07T16:14:43Z",
+      "updated_at": "2026-10-28T00:38:46Z",
+      "comments": 3,
+      "author": {
+        "login": "tisto",
+        "html_url": "https://github.com/tisto"
+      },
+      "assignees": [],
+      "labels": [
+        "01 type: bug",
+        "21 status: confirmed",
+        "41 lvl: easy",
+        "62 scope: viewer"
+      ],
+      "contributor_summary": {
+        "status": "available",
+        "generated_at": "2026-10-28T01:09:17Z",
+        "source_issue_updated_at": "2026-10-28T00:38:46Z",
+        "model": "gpt-4o-mini",
+        "summary_markdown": "```markdown\n## What this issue is about\nThis issue reports a bug where line returns (line breaks) in teaser blocks within grid blocks are not preserved when viewed. When you save a multi-line text, it shows up as a single line in the display.\n\n## What needs to be done\nTo fix this, the rendering of teaser descriptions needs to be adjusted. Currently, they are displayed in a way that removes line breaks. The issue requires the implementation of a CSS rule (`white-space: pre-line`) to maintain the formatting.\n\n## Helpful background\nTeaser blocks are components used to present brief summaries or descriptions. This problem affects all teaser blocks, not just those in grids. The relevant files to check are `schema.js` for the textarea input and `DefaultBody.jsx` for rendering.\n\n## Good first steps\n1. Familiarize yourself with the [Contributing to Plone](https://6.docs.plone.org/contributing/index.html) guidelines.\n2. Locate the relevant files mentioned above in the repository.\n3. Test the current behavior by replicating the steps described to understand the issue fully.\n4. Consider how adding the CSS rule can be implemented in the theme (`teaser.less`).\n5. If new to GitHub, review the [First-time contributors](https://6.docs.plone.org/contributing/first-time.html) guide for tips on submitting your changes.\n\nFeel free to ask questions in the comments if you're unsure about any steps!\n```",
+        "path": "data/issues/summaries/plone/volto/5296.json"
+      }
+    },
+    {
+      "id": 1026453447,
+      "number": 2741,
+      "title": "Search in contentsview without b_start",
+      "html_url": "https://github.com/plone/volto/issues/2741",
+      "repository_full_name": "plone/volto",
+      "repository_url": "https://api.github.com/repos/plone/volto",
+      "state": "open",
+      "created_at": "2021-10-14T14:13:51Z",
+      "updated_at": "2026-10-28T00:38:02Z",
+      "comments": 2,
+      "author": {
+        "login": "ksuess",
+        "html_url": "https://github.com/ksuess"
+      },
+      "assignees": [],
+      "labels": [
+        "01 type: bug",
+        "21 status: confirmed",
+        "41 lvl: easy",
+        "61 scope: editor"
+      ],
+      "contributor_summary": {
+        "status": "available",
+        "generated_at": "2026-10-28T01:09:21Z",
+        "source_issue_updated_at": "2026-10-28T00:38:02Z",
+        "model": "gpt-4o-mini",
+        "summary_markdown": "## What this issue is about\nThis issue in the Volto project addresses a bug where searching from the second page of a contents view does not return results from the first page. When you search, it's expected to find all objects in the folder, not just those displayed on the current page.\n\n## What needs to be done\nThe current implementation keeps the user on the second page even when other results are available on the first page. The solution likely involves modifying the code to reset the current page to zero when a search filter is applied, ensuring that all potential matches are visible.\n\n## Helpful background\nWhen users navigate to the contents view and switch to pagination (e.g., page 2), searching for items only returns results for that page instead of the entire list. Key components involved in fixing this include `onChangeFilter` and `fetchContents` in the `Contents.jsx` file.\n\n## Good first steps\n1. Review the comments and the current code at the specified lines in `Contents.jsx`.\n2. Test the current implementation by replicating the search issue to see the problem firsthand.\n3. Consider implementing the suggested fix of resetting `currentPage` upon filtering.\n4. If you make changes, remember to test thoroughly and document any updates for clarity.",
+        "path": "data/issues/summaries/plone/volto/2741.json"
+      }
+    },
+    {
+      "id": 512847566,
+      "number": 955,
+      "title": "user menu popup is not available on the site setup pages",
+      "html_url": "https://github.com/plone/volto/issues/955",
+      "repository_full_name": "plone/volto",
+      "repository_url": "https://api.github.com/repos/plone/volto",
+      "state": "open",
+      "created_at": "2019-10-26T15:18:19Z",
+      "updated_at": "2026-10-28T00:37:59Z",
+      "comments": 8,
+      "author": {
+        "login": "fredvd",
+        "html_url": "https://github.com/fredvd"
+      },
+      "assignees": [
+        "fabiSwDevBeg"
+      ],
+      "labels": [
+        "01 type: bug",
+        "21 status: confirmed",
+        "41 lvl: easy",
+        "61 scope: editor"
+      ],
+      "contributor_summary": {
+        "status": "available",
+        "generated_at": "2026-10-28T01:09:24Z",
+        "source_issue_updated_at": "2026-10-28T00:37:59Z",
+        "model": "gpt-4o-mini",
+        "summary_markdown": "## What this issue is about\nThis issue addresses a bug where the user menu icon is missing from the left sidebar on site setup pages. The problem stems from a condition in the code that controls the visibility of this menu.\n\n## What needs to be done\nThe likely fix involves modifying a condition in the code to ensure that the user menu is always displayed, regardless of the page being visited. Specifically, it has been noted that the user icon is dependent on the `hideDefaultViewButtons` property.\n\n## Helpful background\nThe missing menu is related to components in a file called `Toolbar.jsx`. Previous discussions have pointed to unresolved pull requests (PRs) attempting to fix this issue, so checking these PRs may provide insight. Note that there is some ongoing uncertainty whether the previous attempts have fully addressed the issue.\n\n## Good first steps\n1. Review the related PRs, especially #4565 and #8441, to understand current approaches.\n2. Modify the code as suggested to ensure the user menu appears on all relevant pages.\n3. Test your changes to confirm that the user menu works as intended.\n4. Follow the [Plone contribution guide](https://6.docs.plone.org/contributing/index.html) for pull requests.",
+        "path": "data/issues/summaries/plone/volto/955.json"
+      }
+    },
+    {
+      "id": 1842633508,
+      "number": 5072,
+      "title": "Cannot register HEAD request handlers in custom Express middleware",
+      "html_url": "https://github.com/plone/volto/issues/5072",
+      "repository_full_name": "plone/volto",
+      "repository_url": "https://api.github.com/repos/plone/volto",
+      "state": "open",
+      "created_at": "2023-08-09T07:13:18Z",
+      "updated_at": "2026-10-28T00:32:26Z",
+      "comments": 11,
+      "author": {
+        "login": "datakurre",
+        "html_url": "https://github.com/datakurre"
+      },
+      "assignees": [],
+      "labels": [
+        "01 type: bug",
+        "14 prio: low",
+        "21 status: confirmed",
+        "41 lvl: easy"
+      ],
+      "contributor_summary": {
+        "status": "available",
+        "generated_at": "2026-10-28T01:09:28Z",
+        "source_issue_updated_at": "2026-10-28T00:32:26Z",
+        "model": "gpt-4o-mini",
+        "summary_markdown": "```markdown\n## What this issue is about\nThis issue pertains to the inability to register custom `HEAD` request handlers in Volto's Express middleware due to a default handler that responds with a 200 OK and `Content-Type: text/html` for all `HEAD` requests. This affects the proper functioning of certain features, especially regarding files like PDFs or images.\n\n## What needs to be done\nWe need to modify the server setup to allow custom `HEAD` handlers to function correctly. This may involve removing or conditionally applying the wildcard handler that currently captures all `HEAD` requests or reordering the handlers so that custom ones are prioritized.\n\n## Helpful background\nThe default handler setup utilizes a wildcard (`/*`), which intercepts all requests. Although it serves testing purposes in CI, it interferes with metadata retrieval for tools and indexers that rely on accurate `HEAD` responses.\n\n## Good first steps\n1. Familiarize yourself with the [Volto documentation](https://6.docs.plone.org/contributing/volto.html).\n2. Review the server configuration in `src/server.jsx` to understand how handlers are registered.\n3. Consider exploring whether the CI utility that requires the `HEAD` handler is still relevant.\n4. Create a plan to adjust the ordering or presence of the current handler as discussed in the comments.\n5. Test your changes locally and ensure that they do not break existing functionality.\n```",
+        "path": "data/issues/summaries/plone/volto/5072.json"
+      }
+    },
+    {
+      "id": 1896702972,
+      "number": 5182,
+      "title": "Authentication cookie and `SameSite` property",
+      "html_url": "https://github.com/plone/volto/issues/5182",
+      "repository_full_name": "plone/volto",
+      "repository_url": "https://api.github.com/repos/plone/volto",
+      "state": "open",
+      "created_at": "2023-09-14T14:31:07Z",
+      "updated_at": "2026-10-28T00:32:05Z",
+      "comments": 7,
+      "author": {
+        "login": "erral",
+        "html_url": "https://github.com/erral"
+      },
+      "assignees": [],
+      "labels": [
+        "01 type: bug",
+        "21 status: confirmed",
+        "41 lvl: easy"
+      ],
+      "contributor_summary": {
+        "status": "available",
+        "generated_at": "2026-10-28T01:09:33Z",
+        "source_issue_updated_at": "2026-10-28T00:32:05Z",
+        "model": "gpt-4o-mini",
+        "summary_markdown": "## What this issue is about\n\nThis issue addresses a bug related to the authentication cookie (`auth_token`) in the Volto application. Currently, the cookie is not set with the appropriate `SameSite` attribute, which may lead to browser warnings and issues with cookie handling in Firefox and Chrome.\n\n## What needs to be done\n\nWe need to modify the code that sets the `auth_token` cookie to include the `SameSite` attribute. According to the discussion, setting it to `Lax` might be appropriate, but there is some ambiguity about whether cross-origin requests need to be supported.\n\n## Helpful background\n\nThe `SameSite` attribute helps protect against cross-site request forgery (CSRF) attacks by controlling when cookies are sent. The current implementation does not set this attribute, which has caused warnings in browsers like Firefox and unexpected behavior in Chrome. Discussions point towards needing backend changes, but the current cookie management may not support these adjustments without further investigation.\n\n## Good first steps\n\n1. Review the current cookie handling in `packages/volto/src/helpers/Cookies/cookies.js`.\n2. Test the impact of adding `sameSite: 'lax'` to the cookie options.\n3. Consider looking into the backend process for setting cookies if the complexities arise.\n4. If you’re unsure, feel free to ask questions in the issue comments for clarification!",
+        "path": "data/issues/summaries/plone/volto/5182.json"
+      }
+    },
+    {
+      "id": 1255337141,
+      "number": 3416,
+      "title": "Error on flattenHTMLToAppURL if apiPath is ++api++",
+      "html_url": "https://github.com/plone/volto/issues/3416",
+      "repository_full_name": "plone/volto",
+      "repository_url": "https://api.github.com/repos/plone/volto",
+      "state": "open",
+      "created_at": "2022-06-01T08:22:49Z",
+      "updated_at": "2026-10-28T00:31:54Z",
+      "comments": 1,
+      "author": {
+        "login": "mcasagrande18",
+        "html_url": "https://github.com/mcasagrande18"
+      },
+      "assignees": [],
+      "labels": [
+        "01 type: bug",
+        "21 status: confirmed",
+        "41 lvl: easy"
+      ],
+      "contributor_summary": {
+        "status": "available",
+        "generated_at": "2026-10-28T01:09:37Z",
+        "source_issue_updated_at": "2026-10-28T00:31:54Z",
+        "model": "gpt-4o-mini",
+        "summary_markdown": "```markdown\n## What this issue is about\nThis issue addresses a bug in the Volto framework where using `++api++` in the `apiPath` causes a `SyntaxError` when calling the `flattenHTMLToAppURL` function. The error occurs because certain characters, like `+`, are not escaped properly when used in a regular expression.\n\n## What needs to be done\nThe goal is to modify the `flattenHTMLToAppURL` function in `packages/volto/src/helpers/Url/Url.js` to ensure that the `apiPath` is properly escaped before being passed to `new RegExp`. This fix will prevent the `SyntaxError` from occurring when `++api++` is included.\n\n## Helpful background\nThe Volto version affected is 15.12.1, and the bug has been confirmed to still exist in later versions (e.g., Volto 19). Normally, `++api++` should not be included in the `apiPath`, as Volto adds it internally with `getApiSuffix()`. Therefore, careful handling of this path is crucial.\n\n## Good first steps\n1. Check out the file `Url.js` to understand how `flattenHTMLToAppURL` is implemented.\n2. Familiarize yourself with regular expressions and the concept of escaping characters.\n3. Try implementing a solution by adding an escaping function (like `escapeRegExp`) for the `apiPath`.\n4. Run tests to verify that the error no longer occurs when `++api++` is included.\n5. Document your changes and prepare for a pull request review.\n```",
+        "path": "data/issues/summaries/plone/volto/3416.json"
+      }
+    },
+    {
+      "id": 2343817868,
+      "number": 6090,
+      "title": "Icon view from Object browser is missing logic to introduce disabled class",
+      "html_url": "https://github.com/plone/volto/issues/6090",
+      "repository_full_name": "plone/volto",
+      "repository_url": "https://api.github.com/repos/plone/volto",
+      "state": "open",
+      "created_at": "2024-06-10T12:42:08Z",
+      "updated_at": "2026-10-28T00:29:50Z",
+      "comments": 4,
+      "author": {
+        "login": "ichim-david",
+        "html_url": "https://github.com/ichim-david"
+      },
+      "assignees": [
+        "ichim-david"
+      ],
+      "labels": [
+        "01 type: bug",
+        "21 status: confirmed",
+        "41 lvl: easy",
+        "61 scope: editor"
+      ],
+      "contributor_summary": {
+        "status": "available",
+        "generated_at": "2026-10-28T01:09:42Z",
+        "source_issue_updated_at": "2026-10-28T00:29:50Z",
+        "model": "gpt-4o-mini",
+        "summary_markdown": "```markdown\n## What this issue is about\nThis issue addresses a missing feature in the Icon View of the object browser in Plone's Volto. Currently, link-type items do not display a \"disabled\" class similarly to how they appear in the List View, which can lead to inconsistent visual feedback for users.\n\n## What needs to be done\nWe need to modify the `IconViewItem` component to apply a \"disabled\" class to non-image items, ensuring they visually match the behavior of the List View. This will improve the user experience by providing clearer context.\n\n## Helpful background\nThe \"disabled\" class visually indicates that an item is not actionable. This consistent styling is important for user interface clarity. Previous discussions confirm the necessity of this change but note that implementing the logic in the `Icon View` is still outstanding.\n\n## Good first steps\n1. Review the current implementation of the `IconViewItem` component in `packages/volto/src/components/manage/Sidebar/ObjectBrowserNav.jsx`.\n2. Identify where the existing logic for the \"disabled\" class is applied in the List View and adapt it for the Icon View.\n3. Make the changes and test the Icon View to ensure it behaves correctly.\n4. Consider adding tests or updating documentation if applicable.\n5. Ask for feedback or assistance from the community if needed.\n```",
+        "path": "data/issues/summaries/plone/volto/6090.json"
+      }
+    },
+    {
+      "id": 1239630709,
+      "number": 3366,
+      "title": "isDisabled is ignored in Url widget",
+      "html_url": "https://github.com/plone/volto/issues/3366",
+      "repository_full_name": "plone/volto",
+      "repository_url": "https://api.github.com/repos/plone/volto",
+      "state": "open",
+      "created_at": "2022-05-18T08:45:28Z",
+      "updated_at": "2026-10-28T00:29:42Z",
+      "comments": 5,
+      "author": {
+        "login": "mcasagrande18",
+        "html_url": "https://github.com/mcasagrande18"
+      },
+      "assignees": [],
+      "labels": [
+        "01 type: bug",
+        "21 status: confirmed",
+        "41 lvl: easy",
+        "61 scope: editor"
+      ],
+      "contributor_summary": {
+        "status": "available",
+        "generated_at": "2026-10-28T01:09:47Z",
+        "source_issue_updated_at": "2026-10-28T00:29:42Z",
+        "model": "gpt-4o-mini",
+        "summary_markdown": "```markdown\n## What this issue is about\nThis issue addresses a bug in the `UrlWidget` component of Volto where the `isDisabled` property does not function as expected. Even when `isDisabled` is set to true, the action buttons for selecting internal elements remain enabled.\n\n## What needs to be done\nThe goal is to ensure that all interactive elements, including the button for opening the object browser and the clear button, are disabled when `isDisabled` is true. Currently, only the input field respects this property.\n\n## Helpful background\n- The issue was reported by [mcasagrande18](https://github.com/mcasagrande18) and confirmed by others. \n- The source code can be found [here](https://github.com/plone/volto/blob/master/src/components/manage/Widgets/UrlWidget.jsx). \n- As per recent discussions, this bug still exists in the latest version (Volto 19).\n\n## Good first steps\n1. Review the code in `UrlWidget.jsx`, focusing on how `isDisabled` is currently implemented.\n2. Implement the logic to disable both action buttons when `isDisabled` is set to true.\n3. Create tests to ensure that all elements respect the `isDisabled` property.\n4. Consider updating any documentation if needed.\n5. Open a pull request for review once your changes are made!\n```",
+        "path": "data/issues/summaries/plone/volto/3366.json"
+      }
+    },
+    {
+      "id": 2882430914,
+      "number": 6787,
+      "title": "display field form errors in ObjectBrowserWidget.",
+      "html_url": "https://github.com/plone/volto/issues/6787",
+      "repository_full_name": "plone/volto",
+      "repository_url": "https://api.github.com/repos/plone/volto",
+      "state": "open",
+      "created_at": "2025-02-26T18:06:46Z",
+      "updated_at": "2026-10-28T00:29:26Z",
+      "comments": 8,
+      "author": {
+        "login": "alexandreIFB",
+        "html_url": "https://github.com/alexandreIFB"
+      },
+      "assignees": [],
+      "labels": [
+        "01 type: bug",
+        "21 status: confirmed",
+        "41 lvl: easy",
+        "61 scope: editor"
+      ],
+      "contributor_summary": {
+        "status": "available",
+        "generated_at": "2026-10-28T01:09:51Z",
+        "source_issue_updated_at": "2026-10-28T00:29:26Z",
+        "model": "gpt-4o-mini",
+        "summary_markdown": "```markdown\n## What this issue is about\nThis issue addresses a bug in the `ObjectBrowserWidget` where errors, such as those from required fields, do not visually appear on the form. This can confuse users, making it hard to identify issues when submitting.\n\n## What needs to be done\nThe solution requires modifying the error merging logic in the `ObjectBrowserWidget`. Currently, only internal errors are passed to the component that displays errors. The goal is to merge both internal and external errors so that users can see all relevant error messages.\n\n## Helpful background\nThe problem stems from functions called `validateManualLink` and `onSubmitManualLink`, where external errors from `this.props.error` are not integrated with internal errors in the component's state. Observations indicate the issue still persists with recent versions of Volto.\n\n## Good first steps\n1. **Explore the existing code**: Familiarize yourself with the `ObjectBrowserWidget` file, particularly lines 238-365 where the error handling issue occurs.\n2. **Test the bug**: Try saving the Teaser block without the required `href` to see the error in action.\n3. **Propose a fix**: Consider merging `this.state.errors` with `this.props.error` in the render method, as discussed in the comments.\n4. **Review documentation**: Ensure that any changes include updating related documentation, if necessary, and respond to any component reviews.\n```",
+        "path": "data/issues/summaries/plone/volto/6787.json"
+      }
+    },
+    {
+      "id": 2035319896,
+      "number": 5515,
+      "title": "Recurring dates keep switching back to wrong dates",
+      "html_url": "https://github.com/plone/volto/issues/5515",
+      "repository_full_name": "plone/volto",
+      "repository_url": "https://api.github.com/repos/plone/volto",
+      "state": "open",
+      "created_at": "2023-12-11T10:18:49Z",
+      "updated_at": "2026-10-28T00:29:21Z",
+      "comments": 8,
+      "author": {
+        "login": "cihanandac",
+        "html_url": "https://github.com/cihanandac"
+      },
+      "assignees": [],
+      "labels": [
+        "01 type: bug",
+        "21 status: confirmed",
+        "41 lvl: easy",
+        "61 scope: editor"
+      ],
+      "contributor_summary": {
+        "status": "available",
+        "generated_at": "2026-10-28T01:09:56Z",
+        "source_issue_updated_at": "2026-10-28T00:29:21Z",
+        "model": "gpt-4o-mini",
+        "summary_markdown": "```markdown\n## What this issue is about\nThis issue addresses a bug in the Plone Volto application where recurring event dates change unexpectedly after editing. Specifically, when users set an event to recur on a specific day each month and later edit the event, the dates revert to a specific date (e.g., the 11th) for all occurrences.\n\n## What needs to be done\nThe main task is to resolve the syncing issue in the recurrence settings. When editing an event, the recurrence settings should display and save the correct periodic settings (like \"second Monday\"), instead of defaulting to a specific day.\n\n## Helpful background\nThe application uses the `rrule` package to manage recurring dates. Issues noted include UI inconsistencies and the recurrence settings not properly reflecting the saved state. Ongoing discussions suggest the potential for reworking the `RecurrenceEditForm` component to address these issues.\n\n## Good first steps\n1. Replicate the issue either locally or on the [demo site](https://demo.plone.org/).\n2. Review the existing comments for insights, especially contributions from users who have identified possible fixes.\n3. Assist with writing tests for the new components as mentioned in a related pull request to ensure effective functionality.\n4. Engage with the community for guidance or suggestions on the architecture changes needed.\n```",
+        "path": "data/issues/summaries/plone/volto/5515.json"
+      }
+    },
     {
       "id": 3073749519,
       "number": 7088,
@@ -507,37 +1132,6 @@
         "model": "gpt-4o-mini",
         "summary_markdown": "```markdown\n## What this issue is about\nThis issue focuses on improving the documentation for `@plone/client`. It involves adjusting references to TanStack Query and implementing the `sphinxcontrib.httpexample` extension to enhance HTTP API examples.\n\n## What needs to be done\n1. Remove references to TanStack Query terminology from the documentation, ensuring that the remaining text is clear and grammatically correct.\n2. Configure the Volto documentation to include the `sphinxcontrib.httpexample` extension and update HTTP API examples accordingly.\n3. Forward port the final documentation updates to the `seven` branch, primarily to copy the new documents and make necessary changes.\n\n## Helpful background\nFamiliarity with the Volto documentation structure and basic understanding of HTTP API calls will be beneficial. The original discussion indicated some ambiguity about which specific files need updates regarding the HTTP examples.\n\n## Good first steps\n- Check the existing documentation in [volto/docs/source/client](https://github.com/plone/volto/tree/main/docs/source/client) for areas that may need modifications.\n- Start by removing outdated TanStack Query references and ensure the new text is understandable.\n- Review the documentation for configuring `sphinxcontrib.httpexample`.\n\nFeel free to ask questions in the comments if you're unsure about any part!\n```",
         "path": "data/issues/summaries/plone/volto/7947.json"
-      }
-    },
-    {
-      "id": 512847566,
-      "number": 955,
-      "title": "user menu popup is not available on the site setup pages",
-      "html_url": "https://github.com/plone/volto/issues/955",
-      "repository_full_name": "plone/volto",
-      "repository_url": "https://api.github.com/repos/plone/volto",
-      "state": "open",
-      "created_at": "2019-10-26T15:18:19Z",
-      "updated_at": "2026-09-27T10:01:09Z",
-      "comments": 7,
-      "author": {
-        "login": "fredvd",
-        "html_url": "https://github.com/fredvd"
-      },
-      "assignees": [
-        "fabiSwDevBeg"
-      ],
-      "labels": [
-        "01 type: bug",
-        "41 lvl: easy"
-      ],
-      "contributor_summary": {
-        "status": "available",
-        "generated_at": "2026-09-27T10:09:58Z",
-        "source_issue_updated_at": "2026-09-27T10:01:09Z",
-        "model": "gpt-4o-mini",
-        "summary_markdown": "## What this issue is about\nThis issue addresses a bug where the user menu icon is missing from the left sidebar on site setup pages in Volto. It has been noted that this icon is typically part of the \"DefaultViewButtons.\"\n\n## What needs to be done\nTo fix this issue, we should remove the condition that hides the user icon based on the \"DefaultViewButtons.\" This change will ensure that the user icon is always visible in the toolbar, regardless of the webpage.\n\n## Helpful background\nSeveral discussions indicate that a previous pull request (PR #4565) attempted to resolve this but was not successful and was closed. \n\nContributors have also pointed out the need to adhere to contributions guidelines, particularly for new contributors.\n\n## Good first steps\n1. Review the existing discussions and PRs related to this issue.\n2. Create a new PR that implements the suggested changes.\n3. Make sure to follow the [Plone contribution guidelines](https://6.docs.plone.org/contributing/index.html) to ensure your changes are aligned with project standards.\n\nFeel free to ask questions if anything is unclear. Your contributions are valuable, and we appreciate your help!",
-        "path": "data/issues/summaries/plone/volto/955.json"
       }
     },
     {
@@ -2152,35 +2746,6 @@
       }
     },
     {
-      "id": 1615390023,
-      "number": 4486,
-      "title": "Check reserved words on creating new content type instances",
-      "html_url": "https://github.com/plone/volto/issues/4486",
-      "repository_full_name": "plone/volto",
-      "repository_url": "https://api.github.com/repos/plone/volto",
-      "state": "open",
-      "created_at": "2023-03-08T14:41:24Z",
-      "updated_at": "2023-04-03T08:40:59Z",
-      "comments": 12,
-      "author": {
-        "login": "ksuess",
-        "html_url": "https://github.com/ksuess"
-      },
-      "assignees": [],
-      "labels": [
-        "01 type: bug",
-        "41 lvl: easy"
-      ],
-      "contributor_summary": {
-        "status": "available",
-        "generated_at": "2026-04-09T18:24:57Z",
-        "source_issue_updated_at": "2023-04-03T08:40:59Z",
-        "model": "gpt-4o-mini",
-        "summary_markdown": "```markdown\n## What this issue is about\nThis issue addresses a bug where editors can create content using reserved words (like \"register\"), which conflict with existing functionality (in this case, a registration form). The goal is to prevent the creation of such content by managing the IDs more effectively.\n\n## What needs to be done\n1. Identify the reserved words from the Volto routes (see [`src/routes.js`](https://github.com/plone/volto/blob/master/src/routes.js)).\n2. When creating content with a reserved name, append \"-1\" to the ID to ensure uniqueness, similar to the backend process.\n3. Implement an acceptance test to check for at least one reserved word, such as \"register\".\n\n## Helpful background\nThe issue revolves around preventing collisions with reserved keywords that are used for routing in the frontend. Understanding how IDs are generated and handled in Plone's architecture is essential.\n\n## Good first steps\n1. Familiarize yourself with the specified routes and how they define reserved words.\n2. Review existing code in [`Add.jsx`](https://github.com/plone/volto/blob/master/src/components/manage/Add/Add.jsx#L193-L212) for content creation.\n3. Consider how to run tests against the reserved words, referencing settings in `config.settings`.\n\nIf you're new to the codebase, don't hesitate to ask questions or seek clarification from the community!\n```",
-        "path": "data/issues/summaries/plone/volto/4486.json"
-      }
-    },
-    {
       "id": 193826289,
       "number": 1863,
       "title": "Putting space in \"Path Identifier\" allows site to  be created; however, site does not function",
@@ -2851,10 +3416,10 @@
   "message": null,
   "workflow": {
     "repository": "syslabcom/activity-recognition",
-    "run_id": "40608197675",
-    "run_number": "4148",
+    "run_id": "40613199302",
+    "run_number": "4149",
     "attempt": "1",
-    "url": "https://github.com/syslabcom/activity-recognition/actions/runs/40608197675",
-    "sha": "b1efe1d6ac4ae9d62660d67ecba5d189f2519947"
+    "url": "https://github.com/syslabcom/activity-recognition/actions/runs/40613199302",
+    "sha": "e3e2ea4a5530b9c24bc30958d6b2ae2b55f17eb2"
   }
 }

@@ -1,0 +1,33 @@
+{
+  "version": 1,
+  "status": "success",
+  "generated_at": "2026-10-28T01:08:31Z",
+  "source_issue": {
+    "id": 2089996620,
+    "number": 5661,
+    "title": "Checkbox label color not showing correctly",
+    "html_url": "https://github.com/plone/volto/issues/5661",
+    "repository_full_name": "plone/volto",
+    "updated_at": "2026-10-28T00:54:24Z",
+    "labels": [
+      "01 type: bug",
+      "21 status: confirmed",
+      "41 lvl: easy",
+      "61 scope: editor"
+    ],
+    "comments": 7
+  },
+  "ai": {
+    "provider": "openai",
+    "model": "gpt-4o-mini"
+  },
+  "summary_markdown": "```markdown\n## What this issue is about\nThis issue addresses a bug where the label color of a checkbox does not correctly change based on its checked state. When checked, the label turns a light gray color (#878f93), but it fails to revert to its original color (#000) when unchecked. Additionally, clicking outside of the checkbox incorrectly resets the label color.\n\n## What needs to be done\nThe goal is to ensure that the label color toggles correctly between its original and light versions based on the checkbox’s checked state. Discussions indicate that the label color should remain consistent as per accessibility standards, potentially only changing when the checkbox is enabled or disabled.\n\n## Helpful background\nThere has been some debate about the expected behavior of the label color, with various opinions on whether it should change at all. Current implementation issues must be understood to propose effective solutions. Relevant knowledge of React, CSS, and HTML may aid in fixing the bug.\n\n## Good first steps\n1. Familiarize yourself with the checkbox implementation in Volto.\n2. Reproduce the bug to see how the label color behaves in different states.\n3. Review existing discussions for guidance on expectations and potential solutions.\n4. Start testing changes locally and prepare a pull request with your solution.\n5. Follow the [Plone contributing guidelines](https://6.docs.plone.org/contributing/index.html) for best practices in your approach.\n```",
+  "workflow": {
+    "repository": "syslabcom/activity-recognition",
+    "run_id": "40613199302",
+    "run_number": "4149",
+    "attempt": "1",
+    "url": "https://github.com/syslabcom/activity-recognition/actions/runs/40613199302",
+    "sha": "e3e2ea4a5530b9c24bc30958d6b2ae2b55f17eb2"
+  }
+}

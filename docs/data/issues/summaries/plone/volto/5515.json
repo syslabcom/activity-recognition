@@ -1,0 +1,33 @@
+{
+  "version": 1,
+  "status": "success",
+  "generated_at": "2026-10-28T01:09:56Z",
+  "source_issue": {
+    "id": 2035319896,
+    "number": 5515,
+    "title": "Recurring dates keep switching back to wrong dates",
+    "html_url": "https://github.com/plone/volto/issues/5515",
+    "repository_full_name": "plone/volto",
+    "updated_at": "2026-10-28T00:29:21Z",
+    "labels": [
+      "01 type: bug",
+      "21 status: confirmed",
+      "41 lvl: easy",
+      "61 scope: editor"
+    ],
+    "comments": 8
+  },
+  "ai": {
+    "provider": "openai",
+    "model": "gpt-4o-mini"
+  },
+  "summary_markdown": "```markdown\n## What this issue is about\nThis issue addresses a bug in the Plone Volto application where recurring event dates change unexpectedly after editing. Specifically, when users set an event to recur on a specific day each month and later edit the event, the dates revert to a specific date (e.g., the 11th) for all occurrences.\n\n## What needs to be done\nThe main task is to resolve the syncing issue in the recurrence settings. When editing an event, the recurrence settings should display and save the correct periodic settings (like \"second Monday\"), instead of defaulting to a specific day.\n\n## Helpful background\nThe application uses the `rrule` package to manage recurring dates. Issues noted include UI inconsistencies and the recurrence settings not properly reflecting the saved state. Ongoing discussions suggest the potential for reworking the `RecurrenceEditForm` component to address these issues.\n\n## Good first steps\n1. Replicate the issue either locally or on the [demo site](https://demo.plone.org/).\n2. Review the existing comments for insights, especially contributions from users who have identified possible fixes.\n3. Assist with writing tests for the new components as mentioned in a related pull request to ensure effective functionality.\n4. Engage with the community for guidance or suggestions on the architecture changes needed.\n```",
+  "workflow": {
+    "repository": "syslabcom/activity-recognition",
+    "run_id": "40613199302",
+    "run_number": "4149",
+    "attempt": "1",
+    "url": "https://github.com/syslabcom/activity-recognition/actions/runs/40613199302",
+    "sha": "e3e2ea4a5530b9c24bc30958d6b2ae2b55f17eb2"
+  }
+}

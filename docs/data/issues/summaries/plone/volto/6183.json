@@ -1,0 +1,32 @@
+{
+  "version": 1,
+  "status": "success",
+  "generated_at": "2026-10-28T01:09:11Z",
+  "source_issue": {
+    "id": 2423648518,
+    "number": 6183,
+    "title": "You cannot edit a user if you are authenticated with a Site Administrator.",
+    "html_url": "https://github.com/plone/volto/issues/6183",
+    "repository_full_name": "plone/volto",
+    "updated_at": "2026-10-28T00:39:40Z",
+    "labels": [
+      "01 type: bug",
+      "21 status: confirmed",
+      "41 lvl: easy"
+    ],
+    "comments": 15
+  },
+  "ai": {
+    "provider": "openai",
+    "model": "gpt-4o-mini"
+  },
+  "summary_markdown": "```markdown\n## What this issue is about\nThis issue reports a bug in Volto where Site Administrators cannot edit other users’ information without encountering an error: \"You can only change your OWN login name.\" This occurs despite the username not being visible in the edit form.\n\n## What needs to be done\nWe need to ensure that the username is not sent in requests when Site Administrators attempt to edit other users. This change will prevent the unauthorized error and align Volto's behavior with the classic Plone UI, where changing usernames is not allowed.\n\n## Helpful background\nContributors should note that in the classic Plone UI, admins cannot change their username either. Discussions suggest that maintaining similar functionality across UI versions is beneficial for user experience. While current tests show this issue remains in Volto 19, the solution involves modifying the request payload to omit the username.\n\n## Good first steps\n1. Familiarize yourself with the `RenderUsers.jsx` file, particularly the `onEditUserSubmit` method, to understand how user data is submitted.\n2. Consider how to modify the payload to remove the username before it reaches the backend.\n3. Review the existing discussions, and feel free to ask questions if you need clarification. Contributions involving testing and documentation updates are also welcome to ensure everything works harmoniously.\n```",
+  "workflow": {
+    "repository": "syslabcom/activity-recognition",
+    "run_id": "40613199302",
+    "run_number": "4149",
+    "attempt": "1",
+    "url": "https://github.com/syslabcom/activity-recognition/actions/runs/40613199302",
+    "sha": "e3e2ea4a5530b9c24bc30958d6b2ae2b55f17eb2"
+  }
+}

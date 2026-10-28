@@ -1,0 +1,33 @@
+{
+  "version": 1,
+  "status": "success",
+  "generated_at": "2026-10-28T01:08:45Z",
+  "source_issue": {
+    "id": 2383183219,
+    "number": 6139,
+    "title": "Print is not complete with firefox",
+    "html_url": "https://github.com/plone/volto/issues/6139",
+    "repository_full_name": "plone/volto",
+    "updated_at": "2026-10-28T00:52:25Z",
+    "labels": [
+      "01 type: bug",
+      "21 status: confirmed",
+      "41 lvl: easy",
+      "62 scope: viewer"
+    ],
+    "comments": 3
+  },
+  "ai": {
+    "provider": "openai",
+    "model": "gpt-4o-mini"
+  },
+  "summary_markdown": "## What this issue is about\nThis issue addresses a bug where printing from Firefox does not display all content on the page, as seen on demo.plone.org. It contrasts with the complete output experienced when printing from Chrome.\n\n## What needs to be done\nTo resolve this issue, we need to modify the CSS styles for the `body` element. Specifically, we should remove the `display: flex;` style and replace it with `display: block;` within the `@media print` block to ensure proper printing in Firefox.\n\n## Helpful background\nThe original issue was confirmed with Firefox version 127.0.1. Previous comments highlighted the need for the code to be altered in the project's CSS files, particularly focusing on `main.less` and `print.less` files within the Volto theme.\n\n## Good first steps\n1. **Check Out the Repo**: Clone the [Volto repository](https://github.com/plone/volto) and navigate to the `packages/volto/theme/themes/pastanaga/extras/` directory.\n2. **Locate and Edit CSS**: Open `main.less`, find the `body` CSS rule, and make the necessary changes.\n3. **Test Your Changes**: Before submitting, test how the print output appears in Firefox to confirm the fix.\n4. **Submit a Pull Request**: Commit your changes and create a pull request for review. Be sure to reference this issue for context! \n\nFeel free to ask questions if any part of this process is unclear. Happy coding!",
+  "workflow": {
+    "repository": "syslabcom/activity-recognition",
+    "run_id": "40613199302",
+    "run_number": "4149",
+    "attempt": "1",
+    "url": "https://github.com/syslabcom/activity-recognition/actions/runs/40613199302",
+    "sha": "e3e2ea4a5530b9c24bc30958d6b2ae2b55f17eb2"
+  }
+}

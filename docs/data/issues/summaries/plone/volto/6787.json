@@ -1,0 +1,33 @@
+{
+  "version": 1,
+  "status": "success",
+  "generated_at": "2026-10-28T01:09:51Z",
+  "source_issue": {
+    "id": 2882430914,
+    "number": 6787,
+    "title": "display field form errors in ObjectBrowserWidget.",
+    "html_url": "https://github.com/plone/volto/issues/6787",
+    "repository_full_name": "plone/volto",
+    "updated_at": "2026-10-28T00:29:26Z",
+    "labels": [
+      "01 type: bug",
+      "21 status: confirmed",
+      "41 lvl: easy",
+      "61 scope: editor"
+    ],
+    "comments": 8
+  },
+  "ai": {
+    "provider": "openai",
+    "model": "gpt-4o-mini"
+  },
+  "summary_markdown": "```markdown\n## What this issue is about\nThis issue addresses a bug in the `ObjectBrowserWidget` where errors, such as those from required fields, do not visually appear on the form. This can confuse users, making it hard to identify issues when submitting.\n\n## What needs to be done\nThe solution requires modifying the error merging logic in the `ObjectBrowserWidget`. Currently, only internal errors are passed to the component that displays errors. The goal is to merge both internal and external errors so that users can see all relevant error messages.\n\n## Helpful background\nThe problem stems from functions called `validateManualLink` and `onSubmitManualLink`, where external errors from `this.props.error` are not integrated with internal errors in the component's state. Observations indicate the issue still persists with recent versions of Volto.\n\n## Good first steps\n1. **Explore the existing code**: Familiarize yourself with the `ObjectBrowserWidget` file, particularly lines 238-365 where the error handling issue occurs.\n2. **Test the bug**: Try saving the Teaser block without the required `href` to see the error in action.\n3. **Propose a fix**: Consider merging `this.state.errors` with `this.props.error` in the render method, as discussed in the comments.\n4. **Review documentation**: Ensure that any changes include updating related documentation, if necessary, and respond to any component reviews.\n```",
+  "workflow": {
+    "repository": "syslabcom/activity-recognition",
+    "run_id": "40613199302",
+    "run_number": "4149",
+    "attempt": "1",
+    "url": "https://github.com/syslabcom/activity-recognition/actions/runs/40613199302",
+    "sha": "e3e2ea4a5530b9c24bc30958d6b2ae2b55f17eb2"
+  }
+}

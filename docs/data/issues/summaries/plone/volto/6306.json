@@ -1,0 +1,33 @@
+{
+  "version": 1,
+  "status": "success",
+  "generated_at": "2026-10-28T01:09:06Z",
+  "source_issue": {
+    "id": 2545288898,
+    "number": 6306,
+    "title": "Title block doesn't respect \"Disable new blocks\" restriction from DX Layout",
+    "html_url": "https://github.com/plone/volto/issues/6306",
+    "repository_full_name": "plone/volto",
+    "updated_at": "2026-10-28T00:45:08Z",
+    "labels": [
+      "01 type: bug",
+      "21 status: confirmed",
+      "41 lvl: easy",
+      "61 scope: editor"
+    ],
+    "comments": 6
+  },
+  "ai": {
+    "provider": "openai",
+    "model": "gpt-4o-mini"
+  },
+  "summary_markdown": "```markdown\n## What this issue is about\nThis issue addresses a bug in Plone's Volto, where the Title block does not respect the \"Disable new blocks\" setting from the DX Layout. This means that when you enable this option and press Enter in the Title block, a new block is still created when it shouldn't be.\n\n## What needs to be done\nThe problem lies in how the Title block handles the \"Disable new blocks\" setting. The code needs to be updated to properly check this setting before allowing a new block to be created.\n\n## Helpful background\n- **Disable new blocks**: A setting that prevents users from adding new blocks once enabled.\n- The error affects both new and existing content types.\n- Prior discussions suggest that there are other related issues with similar settings not functioning correctly.\n\n## Good first steps\n1. Start by reviewing the relevant code in [Block/Edit.jsx](https://github.com/plone/volto/blob/157df05e5da7cc4349f2fefaa6e3566da56a8213/packages/volto/src/components/manage/Blocks/Block/Edit.jsx) and [Title/Edit.jsx](https://github.com/plone/volto/blob/157df05e5da7cc4349f2fefaa6e3566da56a8213/packages/volto/src/components/manage/Blocks/Title/Edit.jsx).\n2. Check how the \"disableNewBlocks\" flag is implemented and start devising a solution.\n3. Consider writing tests to ensure the flag works properly after your changes.\n4. Join the discussion for additional insights on related potential fixes or documentation needs.\n```",
+  "workflow": {
+    "repository": "syslabcom/activity-recognition",
+    "run_id": "40613199302",
+    "run_number": "4149",
+    "attempt": "1",
+    "url": "https://github.com/syslabcom/activity-recognition/actions/runs/40613199302",
+    "sha": "e3e2ea4a5530b9c24bc30958d6b2ae2b55f17eb2"
+  }
+}

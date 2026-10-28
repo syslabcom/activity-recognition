@@ -1,0 +1,33 @@
+{
+  "version": 1,
+  "status": "success",
+  "generated_at": "2026-10-28T01:09:28Z",
+  "source_issue": {
+    "id": 1842633508,
+    "number": 5072,
+    "title": "Cannot register HEAD request handlers in custom Express middleware",
+    "html_url": "https://github.com/plone/volto/issues/5072",
+    "repository_full_name": "plone/volto",
+    "updated_at": "2026-10-28T00:32:26Z",
+    "labels": [
+      "01 type: bug",
+      "14 prio: low",
+      "21 status: confirmed",
+      "41 lvl: easy"
+    ],
+    "comments": 11
+  },
+  "ai": {
+    "provider": "openai",
+    "model": "gpt-4o-mini"
+  },
+  "summary_markdown": "```markdown\n## What this issue is about\nThis issue pertains to the inability to register custom `HEAD` request handlers in Volto's Express middleware due to a default handler that responds with a 200 OK and `Content-Type: text/html` for all `HEAD` requests. This affects the proper functioning of certain features, especially regarding files like PDFs or images.\n\n## What needs to be done\nWe need to modify the server setup to allow custom `HEAD` handlers to function correctly. This may involve removing or conditionally applying the wildcard handler that currently captures all `HEAD` requests or reordering the handlers so that custom ones are prioritized.\n\n## Helpful background\nThe default handler setup utilizes a wildcard (`/*`), which intercepts all requests. Although it serves testing purposes in CI, it interferes with metadata retrieval for tools and indexers that rely on accurate `HEAD` responses.\n\n## Good first steps\n1. Familiarize yourself with the [Volto documentation](https://6.docs.plone.org/contributing/volto.html).\n2. Review the server configuration in `src/server.jsx` to understand how handlers are registered.\n3. Consider exploring whether the CI utility that requires the `HEAD` handler is still relevant.\n4. Create a plan to adjust the ordering or presence of the current handler as discussed in the comments.\n5. Test your changes locally and ensure that they do not break existing functionality.\n```",
+  "workflow": {
+    "repository": "syslabcom/activity-recognition",
+    "run_id": "40613199302",
+    "run_number": "4149",
+    "attempt": "1",
+    "url": "https://github.com/syslabcom/activity-recognition/actions/runs/40613199302",
+    "sha": "e3e2ea4a5530b9c24bc30958d6b2ae2b55f17eb2"
+  }
+}

@@ -1,24 +1,44 @@
 ---
 title: "Plone issue list — Level: Easy"
 permalink: "/issues/lvl-easy/"
-generated_at: "2026-10-28T00:21:11Z"
+generated_at: "2026-10-28T01:08:26Z"
 organization: "plone"
-issue_count: 92
+issue_count: 110
 required_labels:
   - "41 lvl: easy"
 ---
 
 # Plone issue list — Level: Easy
 
-Generated: `2026-10-28T00:21:11Z`  
+Generated: `2026-10-28T01:08:26Z`  
 Organization: `plone`  
 Required label: `41 lvl: easy`  
-Issue count: `92`
+Issue count: `110`
 
 Sorted by last updated date, newest first.
 
 | Updated | Repository | Issue | Author | Labels |
 | --- | --- | --- | --- | --- |
+| 2026-10-28 00:54 UTC | `plone/volto` | [#5661 Checkbox label color not showing correctly](https://github.com/plone/volto/issues/5661) | `JanhaviAlekar` | `01 type: bug`, `21 status: confirmed`, `41 lvl: easy`, `61 scope: editor` |
+| 2026-10-28 00:54 UTC | `plone/volto` | [#4603 Table block: "minimalistic design" doesn't work together with "table color inverted"](https://github.com/plone/volto/issues/4603) | `tiberiuichim` | `01 type: bug`, `21 status: confirmed`, `41 lvl: easy`, `62 scope: viewer` |
+| 2026-10-28 00:54 UTC | `plone/volto` | [#2476 Simple text input labels are not aligned with the input content](https://github.com/plone/volto/issues/2476) | `tiberiuichim` | `01 type: bug`, `21 status: confirmed`, `41 lvl: easy`, `61 scope: editor` |
+| 2026-10-28 00:52 UTC | `plone/volto` | [#6139 Print is not complete with firefox](https://github.com/plone/volto/issues/6139) | `krissik` | `01 type: bug`, `21 status: confirmed`, `41 lvl: easy`, `62 scope: viewer` |
+| 2026-10-28 00:52 UTC | `plone/volto` | [#4592 Header UI not consistant for Tablet size view port](https://github.com/plone/volto/issues/4592) | `PriyanshuRj` | `01 type: bug`, `21 status: confirmed`, `41 lvl: easy`, `62 scope: viewer` |
+| 2026-10-28 00:51 UTC | `plone/volto` | [#4486 Check reserved words on creating new content type instances](https://github.com/plone/volto/issues/4486) | `ksuess` | `01 type: bug`, `21 status: confirmed`, `41 lvl: easy`, `61 scope: editor` |
+| 2026-10-28 00:51 UTC | `plone/volto` | [#7422 Content rules Control panel is not translated](https://github.com/plone/volto/issues/7422) | `ericof` | `01 type: bug`, `21 status: confirmed`, `41 lvl: easy` |
+| 2026-10-28 00:51 UTC | `plone/volto` | [#3760 small wording inconsistencies](https://github.com/plone/volto/issues/3760) | `spereverde` | `01 type: bug`, `21 status: confirmed`, `41 lvl: easy` |
+| 2026-10-28 00:45 UTC | `plone/volto` | [#6306 Title block doesn't respect "Disable new blocks" restriction from DX Layout](https://github.com/plone/volto/issues/6306) | `avoinea` | `01 type: bug`, `21 status: confirmed`, `41 lvl: easy`, `61 scope: editor` |
+| 2026-10-28 00:39 UTC | `plone/volto` | [#6183 You cannot edit a user if you are authenticated with a Site Administrator.](https://github.com/plone/volto/issues/6183) | `wesleybl` | `01 type: bug`, `21 status: confirmed`, `41 lvl: easy` |
+| 2026-10-28 00:38 UTC | `plone/volto` | [#5296 Returns are not preserved in teaser blocks (within grid block)](https://github.com/plone/volto/issues/5296) | `tisto` | `01 type: bug`, `21 status: confirmed`, `41 lvl: easy`, `62 scope: viewer` |
+| 2026-10-28 00:38 UTC | `plone/volto` | [#2741 Search in contentsview without b_start](https://github.com/plone/volto/issues/2741) | `ksuess` | `01 type: bug`, `21 status: confirmed`, `41 lvl: easy`, `61 scope: editor` |
+| 2026-10-28 00:37 UTC | `plone/volto` | [#955 user menu popup is not available on the site setup pages](https://github.com/plone/volto/issues/955) | `fredvd` | `01 type: bug`, `21 status: confirmed`, `41 lvl: easy`, `61 scope: editor` |
+| 2026-10-28 00:32 UTC | `plone/volto` | [#5072 Cannot register HEAD request handlers in custom Express middleware](https://github.com/plone/volto/issues/5072) | `datakurre` | `01 type: bug`, `14 prio: low`, `21 status: confirmed`, `41 lvl: easy` |
+| 2026-10-28 00:32 UTC | `plone/volto` | [#5182 Authentication cookie and `SameSite` property](https://github.com/plone/volto/issues/5182) | `erral` | `01 type: bug`, `21 status: confirmed`, `41 lvl: easy` |
+| 2026-10-28 00:31 UTC | `plone/volto` | [#3416 Error on flattenHTMLToAppURL if apiPath is ++api++](https://github.com/plone/volto/issues/3416) | `mcasagrande18` | `01 type: bug`, `21 status: confirmed`, `41 lvl: easy` |
+| 2026-10-28 00:29 UTC | `plone/volto` | [#6090 Icon view from Object browser is missing logic to introduce disabled class](https://github.com/plone/volto/issues/6090) | `ichim-david` | `01 type: bug`, `21 status: confirmed`, `41 lvl: easy`, `61 scope: editor` |
+| 2026-10-28 00:29 UTC | `plone/volto` | [#3366 isDisabled is ignored in Url widget](https://github.com/plone/volto/issues/3366) | `mcasagrande18` | `01 type: bug`, `21 status: confirmed`, `41 lvl: easy`, `61 scope: editor` |
+| 2026-10-28 00:29 UTC | `plone/volto` | [#6787 display field form errors in ObjectBrowserWidget.](https://github.com/plone/volto/issues/6787) | `alexandreIFB` | `01 type: bug`, `21 status: confirmed`, `41 lvl: easy`, `61 scope: editor` |
+| 2026-10-28 00:29 UTC | `plone/volto` | [#5515 Recurring dates keep switching back to wrong dates](https://github.com/plone/volto/issues/5515) | `cihanandac` | `01 type: bug`, `21 status: confirmed`, `41 lvl: easy`, `61 scope: editor` |
 | 2026-10-27 23:58 UTC | `plone/volto` | [#7088 unRegisterSlotComponent is in the code, but in the docs it is unregisterSlotComponent](https://github.com/plone/volto/issues/7088) | `silviubogan` | `33 needs: docs`, `41 lvl: easy`, `30 needs: triage`, `27 status: stale`, `99 tag: docs` |
 | 2026-10-27 23:58 UTC | `plone/volto` | [#4380 Document openExternalLinkInNewTab config.settings](https://github.com/plone/volto/issues/4380) | `tiberiuichim` | `33 needs: docs`, `41 lvl: easy`, `99 tag: docs` |
 | 2026-10-27 23:58 UTC | `plone/volto` | [#2074 Remove use of __CLIENT__ in volto code](https://github.com/plone/volto/issues/2074) | `tiberiuichim` | `04 type: enhancement`, `41 lvl: easy` |
@@ -35,7 +55,6 @@ Sorted by last updated date, newest first.
 | 2026-10-27 21:16 UTC | `plone/volto` | [#3438 Properly internationalize the When component in EventDatesInfo.jsx ](https://github.com/plone/volto/issues/3438) | `erral` | `01 type: bug`, `21 status: confirmed`, `41 lvl: easy`, `62 scope: viewer` |
 | 2026-10-27 21:16 UTC | `plone/volto` | [#2270 Outdated config registry docs in the official documentation](https://github.com/plone/volto/issues/2270) | `tiberiuichim` | `01 type: bug`, `33 needs: docs`, `41 lvl: easy` |
 | 2026-10-02 00:53 UTC | `plone/volto` | [#7947 Improve `@plone/client` documentation](https://github.com/plone/volto/issues/7947) | `stevepiercy` | `04 type: enhancement`, `31 needs: help`, `33 needs: docs`, `41 lvl: easy`, `dependencies`, `27 status: stale` |
-| 2026-09-27 10:01 UTC | `plone/volto` | [#955 user menu popup is not available on the site setup pages](https://github.com/plone/volto/issues/955) | `fredvd` | `01 type: bug`, `41 lvl: easy` |
 | 2026-09-13 19:21 UTC | `plone/documentation` | [#2065 Add Plone documentation to sites that attract first-time contributors](https://github.com/plone/documentation/issues/2065) | `stevepiercy` | `33 needs: docs`, `41 lvl: easy`, `99 tag: good first issue`, `99 tag: hacktoberfest` |
 | 2026-08-20 21:49 UTC | `plone/documentation` | [#2100 Upgrade to Vale 3.18.0 to support MyST, moar new features  🎉](https://github.com/plone/documentation/issues/2100) | `stevepiercy` | `31 needs: help`, `41 lvl: easy`, `99 tag: Plone 6.x`, `dependencies`, `99 tag: good first issue`, `99 tag: hacktoberfest` |
 | 2026-08-15 18:00 UTC | `plone/aurora` | [#101 Polish documentation renames, and overall shape](https://github.com/plone/aurora/issues/101) | `sneridagh` | `31 needs: help`, `33 needs: docs`, `41 lvl: easy`, `99 tag: good first issue`, `99 tag: hacktoberfest` |
@@ -88,7 +107,6 @@ Sorted by last updated date, newest first.
 | 2023-05-30 20:26 UTC | `plone/meta` | [#16 Linter: refurb](https://github.com/plone/meta/issues/16) | `gforcada` | `04 type: enhancement`, `14 prio: low`, `41 lvl: easy` |
 | 2023-05-30 20:26 UTC | `plone/meta` | [#17 Linter: docformatter](https://github.com/plone/meta/issues/17) | `gforcada` | `04 type: enhancement`, `14 prio: low`, `41 lvl: easy` |
 | 2023-05-30 20:26 UTC | `plone/meta` | [#30 Linter: rstcheck](https://github.com/plone/meta/issues/30) | `gforcada` | `04 type: enhancement`, `14 prio: low`, `41 lvl: easy` |
-| 2023-04-03 08:40 UTC | `plone/volto` | [#4486 Check reserved words on creating new content type instances](https://github.com/plone/volto/issues/4486) | `ksuess` | `01 type: bug`, `41 lvl: easy` |
 | 2023-03-13 10:29 UTC | `plone/Products.CMFPlone` | [#1863 Putting space in "Path Identifier" allows site to  be created; however, site does not function](https://github.com/plone/Products.CMFPlone/issues/1863) | `rileydog` | `01 type: bug`, `31 needs: help`, `14 prio: low`, `41 lvl: easy` |
 | 2022-08-24 09:58 UTC | `plone/Products.CMFPlone` | [#1094 Inconsistent wrapping between portlets](https://github.com/plone/Products.CMFPlone/issues/1094) | `zopyx` | `01 type: bug`, `31 needs: help`, `14 prio: low`, `41 lvl: easy`, `99 tag: Plone 6.0` |
 | 2021-06-16 10:05 UTC | `plone/plone.app.contenttypes` | [#605 Plone Image description field is used for alt-attribute but not explained](https://github.com/plone/plone.app.contenttypes/issues/605) | `iham` | `04 type: enhancement`, `05 type: question`, `13 prio: normal`, `41 lvl: easy` |

@@ -1,0 +1,33 @@
+{
+  "version": 1,
+  "status": "success",
+  "generated_at": "2026-10-28T01:09:47Z",
+  "source_issue": {
+    "id": 1239630709,
+    "number": 3366,
+    "title": "isDisabled is ignored in Url widget",
+    "html_url": "https://github.com/plone/volto/issues/3366",
+    "repository_full_name": "plone/volto",
+    "updated_at": "2026-10-28T00:29:42Z",
+    "labels": [
+      "01 type: bug",
+      "21 status: confirmed",
+      "41 lvl: easy",
+      "61 scope: editor"
+    ],
+    "comments": 5
+  },
+  "ai": {
+    "provider": "openai",
+    "model": "gpt-4o-mini"
+  },
+  "summary_markdown": "```markdown\n## What this issue is about\nThis issue addresses a bug in the `UrlWidget` component of Volto where the `isDisabled` property does not function as expected. Even when `isDisabled` is set to true, the action buttons for selecting internal elements remain enabled.\n\n## What needs to be done\nThe goal is to ensure that all interactive elements, including the button for opening the object browser and the clear button, are disabled when `isDisabled` is true. Currently, only the input field respects this property.\n\n## Helpful background\n- The issue was reported by [mcasagrande18](https://github.com/mcasagrande18) and confirmed by others. \n- The source code can be found [here](https://github.com/plone/volto/blob/master/src/components/manage/Widgets/UrlWidget.jsx). \n- As per recent discussions, this bug still exists in the latest version (Volto 19).\n\n## Good first steps\n1. Review the code in `UrlWidget.jsx`, focusing on how `isDisabled` is currently implemented.\n2. Implement the logic to disable both action buttons when `isDisabled` is set to true.\n3. Create tests to ensure that all elements respect the `isDisabled` property.\n4. Consider updating any documentation if needed.\n5. Open a pull request for review once your changes are made!\n```",
+  "workflow": {
+    "repository": "syslabcom/activity-recognition",
+    "run_id": "40613199302",
+    "run_number": "4149",
+    "attempt": "1",
+    "url": "https://github.com/syslabcom/activity-recognition/actions/runs/40613199302",
+    "sha": "e3e2ea4a5530b9c24bc30958d6b2ae2b55f17eb2"
+  }
+}

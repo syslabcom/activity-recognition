@@ -1,0 +1,33 @@
+{
+  "version": 1,
+  "status": "success",
+  "generated_at": "2026-10-28T01:09:42Z",
+  "source_issue": {
+    "id": 2343817868,
+    "number": 6090,
+    "title": "Icon view from Object browser is missing logic to introduce disabled class",
+    "html_url": "https://github.com/plone/volto/issues/6090",
+    "repository_full_name": "plone/volto",
+    "updated_at": "2026-10-28T00:29:50Z",
+    "labels": [
+      "01 type: bug",
+      "21 status: confirmed",
+      "41 lvl: easy",
+      "61 scope: editor"
+    ],
+    "comments": 4
+  },
+  "ai": {
+    "provider": "openai",
+    "model": "gpt-4o-mini"
+  },
+  "summary_markdown": "```markdown\n## What this issue is about\nThis issue addresses a missing feature in the Icon View of the object browser in Plone's Volto. Currently, link-type items do not display a \"disabled\" class similarly to how they appear in the List View, which can lead to inconsistent visual feedback for users.\n\n## What needs to be done\nWe need to modify the `IconViewItem` component to apply a \"disabled\" class to non-image items, ensuring they visually match the behavior of the List View. This will improve the user experience by providing clearer context.\n\n## Helpful background\nThe \"disabled\" class visually indicates that an item is not actionable. This consistent styling is important for user interface clarity. Previous discussions confirm the necessity of this change but note that implementing the logic in the `Icon View` is still outstanding.\n\n## Good first steps\n1. Review the current implementation of the `IconViewItem` component in `packages/volto/src/components/manage/Sidebar/ObjectBrowserNav.jsx`.\n2. Identify where the existing logic for the \"disabled\" class is applied in the List View and adapt it for the Icon View.\n3. Make the changes and test the Icon View to ensure it behaves correctly.\n4. Consider adding tests or updating documentation if applicable.\n5. Ask for feedback or assistance from the community if needed.\n```",
+  "workflow": {
+    "repository": "syslabcom/activity-recognition",
+    "run_id": "40613199302",
+    "run_number": "4149",
+    "attempt": "1",
+    "url": "https://github.com/syslabcom/activity-recognition/actions/runs/40613199302",
+    "sha": "e3e2ea4a5530b9c24bc30958d6b2ae2b55f17eb2"
+  }
+}
