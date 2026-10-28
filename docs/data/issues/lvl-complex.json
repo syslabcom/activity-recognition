@@ -1,7 +1,7 @@
 {
   "version": 1,
   "status": "success",
-  "generated_at": "2026-10-28T13:07:57Z",
+  "generated_at": "2026-10-28T14:08:09Z",
   "organization": "plone",
   "state": "open",
   "slug": "lvl-complex",
@@ -9,8 +9,103 @@
   "required_labels": [
     "43 lvl: complex"
   ],
-  "issue_count": 53,
+  "issue_count": 50,
   "issues": [
+    {
+      "id": 763844980,
+      "number": 2061,
+      "title": "Copy&Paste feature overlaps with DX Layout restrictions",
+      "html_url": "https://github.com/plone/volto/issues/2061",
+      "repository_full_name": "plone/volto",
+      "repository_url": "https://api.github.com/repos/plone/volto",
+      "state": "open",
+      "created_at": "2020-12-12T13:45:50Z",
+      "updated_at": "2026-10-28T13:34:02Z",
+      "comments": 2,
+      "author": {
+        "login": "avoinea",
+        "html_url": "https://github.com/avoinea"
+      },
+      "assignees": [],
+      "labels": [
+        "02 type: regression",
+        "21 status: confirmed",
+        "43 lvl: complex",
+        "61 scope: editor"
+      ],
+      "contributor_summary": {
+        "status": "available",
+        "generated_at": "2026-10-28T14:08:30Z",
+        "source_issue_updated_at": "2026-10-28T13:34:02Z",
+        "model": "gpt-4o-mini",
+        "summary_markdown": "```markdown\n## What this issue is about\nThis issue addresses a problem where the copy and paste feature allows users to bypass layout restrictions set in the editor for certain blocks. When restrictions are specified to prevent creating new blocks, users can still create them through copying and pasting.\n\n## What needs to be done\nWe need to develop a mechanism to enforce block-level restrictions specifically for the copy and paste functionality. This includes defining clear rules on how these restrictions should be applied and exposing them as an API for reuse.\n\n## Helpful background\nCurrently, there is partial support for blocking copy actions via the `cloneData` function in block configurations, but it's not sufficient to manage paste operations properly. The existing functionality does not respect layout restrictions consistently, particularly for cut actions.\n\n## Good first steps\n1. Review the current implementation of `pasteBlocks` to understand how it interacts with block configurations.\n2. Explore how `cloneData` is currently used and how to adapt it for both copying and pasting.\n3. Familiarize yourself with the restrictions system in the editor context.\n4. Consider discussing potential rules with the community for defining how the restrictions should be enforced.\n5. Testing will be crucial to ensure these changes work as intended after implementation.\n```",
+        "path": "data/issues/summaries/plone/volto/2061.json"
+      }
+    },
+    {
+      "id": 623198285,
+      "number": 1516,
+      "title": "Metadata block or easy way to insert document metadata inside text block",
+      "html_url": "https://github.com/plone/volto/issues/1516",
+      "repository_full_name": "plone/volto",
+      "repository_url": "https://api.github.com/repos/plone/volto",
+      "state": "open",
+      "created_at": "2020-05-22T13:16:23Z",
+      "updated_at": "2026-10-28T13:32:14Z",
+      "comments": 6,
+      "author": {
+        "login": "avoinea",
+        "html_url": "https://github.com/avoinea"
+      },
+      "assignees": [
+        "avoinea"
+      ],
+      "labels": [
+        "04 type: enhancement",
+        "43 lvl: complex",
+        "99 tag: sprint",
+        "61 scope: editor"
+      ],
+      "contributor_summary": {
+        "status": "available",
+        "generated_at": "2026-10-28T14:09:01Z",
+        "source_issue_updated_at": "2026-10-28T13:32:14Z",
+        "model": "gpt-4o-mini",
+        "summary_markdown": "```markdown\n## What this issue is about\nThis issue proposes adding a new feature to the Plone Volto editor, allowing users to easily insert document metadata (like publishing date or tags) within text blocks. This enhancement aims to facilitate the creation of dynamic pages by enabling the integration of metadata content seamlessly.\n\n## What needs to be done\nA new block type or button should be developed that allows users to display metadata anywhere in the content area. Discussions suggest that integrating this feature into the core of Volto would provide significant benefits for managing page-specific metadata.\n\n## Helpful background\nThe idea is based on current use cases where displaying context or subjects within content is crucial. There are existing add-ons that provide related functionalities, but there is a conversation about the merits of including this feature directly in Volto's core.\n\n## Good first steps\n1. Familiarize yourself with the existing add-ons mentioned, particularly [volto-metadata-block](https://github.com/eea/volto-metadata-block) and [volto-slate-metadata-mentions](https://github.com/eea/volto-slate-metadata-mentions).\n2. Review the current structure of text blocks in Volto to understand where this feature could fit in.\n3. Join the discussion on GitHub to share your thoughts or ask questions about implementation specifics.\n4. After initial research, consider prototyping a simple version of the feature to gather feedback.\n```",
+        "path": "data/issues/summaries/plone/volto/1516.json"
+      }
+    },
+    {
+      "id": 1521394653,
+      "number": 4232,
+      "title": "Move new CSRF docs from Classic UI to Backend?",
+      "html_url": "https://github.com/plone/volto/issues/4232",
+      "repository_full_name": "plone/volto",
+      "repository_url": "https://api.github.com/repos/plone/volto",
+      "state": "open",
+      "created_at": "2023-01-05T20:46:50Z",
+      "updated_at": "2026-10-28T13:30:52Z",
+      "comments": 20,
+      "author": {
+        "login": "stevepiercy",
+        "html_url": "https://github.com/stevepiercy"
+      },
+      "assignees": [],
+      "labels": [
+        "04 type: enhancement",
+        "33 needs: docs",
+        "43 lvl: complex",
+        "99 tag: docs"
+      ],
+      "contributor_summary": {
+        "status": "available",
+        "generated_at": "2026-10-28T14:09:22Z",
+        "source_issue_updated_at": "2026-10-28T13:30:52Z",
+        "model": "gpt-4o-mini",
+        "summary_markdown": "```markdown\n## What this issue is about\nThis issue discusses whether the newly created Cross-Site Request Forgery (CSRF) documentation page, currently under \"Classic UI,\" should be moved to \"Backend\" and if it needs updates specific to Volto.\n\n## What needs to be done\n1. **Move Documentation**: Transition the CSRF page from \"Classic UI\" to \"Backend.\"\n2. **Content Updates**: Review and update the content to clarify that automatic CSRF protection may only apply to Classic UI, as there are unresolved questions about CSRF checks in Volto.\n\n## Helpful background\nThe discussion around CSRF protection indicates uncertainty in the Volto framework. Various participants have differing views on whether CSRF should be disabled or how it is managed in REST API calls. A comprehensive understanding of these processes is required before finalizing documentation.\n\n## Good first steps\n- Start by reviewing the current CSRF documentation.\n- Check the discussions and linked resources mentioned in the comments for insights on CSRF behavior in Volto.\n- Engage with the community for clarification on any uncertainties.\n- Make initial changes to the documentation and share them for feedback before a pull request.\n```",
+        "path": "data/issues/summaries/plone/volto/4232.json"
+      }
+    },
     {
       "id": 1631010525,
       "number": 4576,
@@ -164,38 +259,6 @@
         "model": "gpt-4o-mini",
         "summary_markdown": "```markdown\n## What this issue is about\nThis issue proposes improvements to the \"Link Widget\" used for adding internal and external links in Plone, aiming to enhance user experience and unify functionality across various components.\n\n## What needs to be done\nThe main tasks involve defining the widget's final design, deciding what content appears by default (e.g., recent user-created content), and implementing features for saving, editing, and deleting links. It's also necessary to check for edge cases in these functionalities.\n\n## Helpful background\nThis request stems from a common need in modern applications for easy link integration, as seen in tools like Google Drive and WordPress. The existing functionality can be enhanced to provide a more streamlined experience for users.\n\n## Good first steps\n1. Familiarize yourself with the current Link Widget components.\n2. Review similar widgets in other applications for inspiration.\n3. Engage in discussions with the team to clarify design preferences and feature requirements.\n4. Be prepared for testing and documentation updates as part of the implementation.\n5. Note that this work is still being discussed; the planning may shift depending on project priorities, especially with upcoming releases like Plone 6.2 or 6.3.\n```",
         "path": "data/issues/summaries/plone/volto/4303.json"
-      }
-    },
-    {
-      "id": 3532029184,
-      "number": 7527,
-      "title": "View for Listing block",
-      "html_url": "https://github.com/plone/volto/issues/7527",
-      "repository_full_name": "plone/volto",
-      "repository_url": "https://api.github.com/repos/plone/volto",
-      "state": "open",
-      "created_at": "2025-10-20T11:05:46Z",
-      "updated_at": "2026-07-07T00:57:53Z",
-      "comments": 4,
-      "author": {
-        "login": "ebrehault",
-        "html_url": "https://github.com/ebrehault"
-      },
-      "assignees": [
-        "ebrehault"
-      ],
-      "labels": [
-        "04 type: enhancement",
-        "43 lvl: complex",
-        "27 status: stale"
-      ],
-      "contributor_summary": {
-        "status": "available",
-        "generated_at": "2026-07-07T01:36:15Z",
-        "source_issue_updated_at": "2026-07-07T00:57:53Z",
-        "model": "gpt-4o-mini",
-        "summary_markdown": "```markdown\n## What this issue is about\nThis issue is focused on creating a view for the Listing block in the Plone/Volto project. The Listing block is used to present content in a structured way, and enhancements are planned as part of the future \"Seven\" project.\n\n## What needs to be done\nThe specifics of what needs to be implemented have not been clearly detailed in the discussions. It's unclear which variations of the Listing block are targeted or the exact requirements for this view.\n\n## Helpful background\nThis issue is marked as complex and is intended for more experienced contributors. It’s important to note that ongoing work has been referenced, indicating that the original author is already addressing this issue. Please also review relevant labels like `lvl: complex` for additional context.\n\n## Good first steps\nIf you're new to Plone or this specific area, consider exploring simpler issues or contributing to other discussions first. I recommend checking the [First-time contributors guide](https://6.docs.plone.org/contributing/first-time.html) for essential best practices. If you're still interested in this issue, it may be best to reach out for more clarification before proceeding.\n```",
-        "path": "data/issues/summaries/plone/volto/7527.json"
       }
     },
     {
@@ -526,68 +589,6 @@
         "model": "gpt-4o-mini",
         "summary_markdown": "```markdown\n## What this issue is about\nThis issue addresses the need to upgrade some outdated libraries used in Volto, such as `react-intl` and `redux`. The goal is to ensure that Volto uses maintained versions of these foundational libraries.\n\n## What needs to be done\n- Upgrade `react-intl` and `redux` to their latest maintained versions.\n- Adjust the codebase as needed to accommodate changes in these libraries.\n- Evaluate if we need to maintain current tooling related to localization (using .po files).\n\n## Helpful background\nThe discussion includes a specific PLIP related to `react-intl` that may require coordination. The upgrades aim to enhance functionality and stability but may involve some adjustments to existing code.\n\n## Good first steps\n1. Familiarize yourself with the relevant documentation for new contributors: [Contributing to Plone](https://6.docs.plone.org/contributing/index.html) and [Contributing to Volto](https://6.docs.plone.org/contributing/volto.html).\n2. Review the existing library usage in the project to identify the necessary changes.\n3. Consider reaching out to the community for guidance and support if you have questions.\n4. Document your findings and any changes you make for future contributors.\n```",
         "path": "data/issues/summaries/plone/volto/6327.json"
-      }
-    },
-    {
-      "id": 1521394653,
-      "number": 4232,
-      "title": "Move new CSRF docs from Classic UI to Backend?",
-      "html_url": "https://github.com/plone/volto/issues/4232",
-      "repository_full_name": "plone/volto",
-      "repository_url": "https://api.github.com/repos/plone/volto",
-      "state": "open",
-      "created_at": "2023-01-05T20:46:50Z",
-      "updated_at": "2026-05-18T10:28:01Z",
-      "comments": 20,
-      "author": {
-        "login": "stevepiercy",
-        "html_url": "https://github.com/stevepiercy"
-      },
-      "assignees": [],
-      "labels": [
-        "04 type: enhancement",
-        "33 needs: docs",
-        "43 lvl: complex"
-      ],
-      "contributor_summary": {
-        "status": "available",
-        "generated_at": "2026-05-18T11:23:38Z",
-        "source_issue_updated_at": "2026-05-18T10:28:01Z",
-        "model": "gpt-4o-mini",
-        "summary_markdown": "```markdown\n## What this issue is about\nThis issue discusses whether the documentation for Cross-Site Request Forgery (CSRF) should be moved from the Classic UI section to the Backend section. It raises questions about whether additional content specific to Volto is needed. \n\n## What needs to be done\n1. Move the CSRF documentation from Classic UI to Backend.\n2. Update the documentation to clarify that automatic CSRF protection may only apply to the Classic UI.\n3. Consider whether any additional checks are necessary for handling CSRF in Volto's REST API.\n\n## Helpful background\nThe discussion has highlighted some ambiguity regarding CSRF protection in Volto. It's suggested that while CSRF may not be strictly required for JSON web services, proper request validation and CORS settings are crucial. Some contributors believe the current approach to CSRF protection in Volto might need refinement.\n\n## Good first steps\n1. Review the existing documentation on CSRF to understand its current content.\n2. Gather insights from the ongoing conversation for any additional information that needs to be clarified.\n3. Collaborate with team members to finalize the content before moving the documentation.\n4. Be aware that this issue is considered moderate in difficulty due to ongoing discussions and lack of definitive agreements.\n```",
-        "path": "data/issues/summaries/plone/volto/4232.json"
-      }
-    },
-    {
-      "id": 623198285,
-      "number": 1516,
-      "title": "Metadata block or easy way to insert document metadata inside text block",
-      "html_url": "https://github.com/plone/volto/issues/1516",
-      "repository_full_name": "plone/volto",
-      "repository_url": "https://api.github.com/repos/plone/volto",
-      "state": "open",
-      "created_at": "2020-05-22T13:16:23Z",
-      "updated_at": "2026-05-18T10:24:31Z",
-      "comments": 6,
-      "author": {
-        "login": "avoinea",
-        "html_url": "https://github.com/avoinea"
-      },
-      "assignees": [
-        "avoinea"
-      ],
-      "labels": [
-        "04 type: enhancement",
-        "43 lvl: complex",
-        "99 tag: sprint"
-      ],
-      "contributor_summary": {
-        "status": "available",
-        "generated_at": "2026-05-18T11:23:45Z",
-        "source_issue_updated_at": "2026-05-18T10:24:31Z",
-        "model": "gpt-4o-mini",
-        "summary_markdown": "```markdown\n## What this issue is about\nThis issue addresses the need for a new feature in Plone called a \"metadata block.\" This block will allow users to insert document metadata (like publishing dates and tags) directly into text blocks. It aims to enhance the dynamic capabilities of pages by making metadata more accessible and usable.\n\n## What needs to be done\nWe need to develop a block or button that integrates this metadata functionality into the existing text block editor. Discussions suggest that incorporating a \"mention\" feature could be beneficial, allowing users to easily insert metadata throughout their content.\n\n## Helpful background\nCurrent discussions show varying opinions on whether this feature should be included in the core of Volto. While some contributors recommend adding metadata capabilities, there are concerns about bloating the core with additional blocks. Existing add-ons can provide similar functionality, but integrating it more seamlessly might improve user experience.\n\n## Good first steps\n1. Review the existing branch: [eea-metadata-mentions](https://github.com/plone/volto/tree/eea-metadata-mentions).\n2. Familiarize yourself with similar add-ons: [volto-metadata-block](https://github.com/eea/volto-metadata-block) and [volto-slate-metadata-mentions](https://github.com/eea/volto-slate-metadata-mentions).\n3. Engage in discussions for clarity and to share your thoughts on the proposed features.\n4. Collaborate with peers for potential testing, documentation, or code reviews.\n```",
-        "path": "data/issues/summaries/plone/volto/1516.json"
       }
     },
     {
@@ -1231,35 +1232,6 @@
       }
     },
     {
-      "id": 614748550,
-      "number": 1466,
-      "title": "Unable to edit frontpage in Volto site without \"Manage portal\" permission",
-      "html_url": "https://github.com/plone/volto/issues/1466",
-      "repository_full_name": "plone/volto",
-      "repository_url": "https://api.github.com/repos/plone/volto",
-      "state": "open",
-      "created_at": "2020-05-08T13:37:43Z",
-      "updated_at": "2024-01-14T10:06:30Z",
-      "comments": 5,
-      "author": {
-        "login": "tiberiuichim",
-        "html_url": "https://github.com/tiberiuichim"
-      },
-      "assignees": [],
-      "labels": [
-        "04 type: enhancement",
-        "43 lvl: complex"
-      ],
-      "contributor_summary": {
-        "status": "available",
-        "generated_at": "2026-04-09T17:27:51Z",
-        "source_issue_updated_at": "2024-01-14T10:06:30Z",
-        "model": "gpt-4o-mini",
-        "summary_markdown": "```markdown\n## What this issue is about\nThis issue addresses a limitation in Volto where users need the \"Manage portal\" permission to edit the front page of a Plone site. This requirement seems overly strict, given that the front page isn't a standard content type within Plone.\n\n## What needs to be done\nThe goal is to explore a more user-friendly way to handle editing permissions for the front page. This may involve enhancing how the \"layout\" property from Plone interacts with Volto's content serialization process.\n\n## Helpful background\nCurrently, Volto doesn't treat the Plone site root like typical content, which complicates editing. A proposed solution involves modifying the ContentGet service to serialize additional content linked to the \"default_page\" property, allowing it to be displayed alongside the current content.\n\n## Good first steps\n1. Familiarize yourself with Volto and how it interfaces with Plone.\n2. Review the existing discussions and proposals linked above, especially the pull requests mentioned ([PR 944](https://github.com/plone/plone.restapi/pull/944) and [PR 983](https://github.com/plone/plone.restapi/pull/983)).\n3. Consider how the \"layout\" property could be utilized in a way that makes editing more accessible.\n4. Share your ideas or commits in this issue for feedback and collaboration.\n```",
-        "path": "data/issues/summaries/plone/volto/1466.json"
-      }
-    },
-    {
       "id": 1956446393,
       "number": 3866,
       "title": "a11y - Icon for toolbar button \"user\" - cms ui",
@@ -1441,35 +1413,6 @@
       }
     },
     {
-      "id": 763844980,
-      "number": 2061,
-      "title": "Copy&Paste feature overlaps with DX Layout restrictions",
-      "html_url": "https://github.com/plone/volto/issues/2061",
-      "repository_full_name": "plone/volto",
-      "repository_url": "https://api.github.com/repos/plone/volto",
-      "state": "open",
-      "created_at": "2020-12-12T13:45:50Z",
-      "updated_at": "2020-12-13T12:21:51Z",
-      "comments": 1,
-      "author": {
-        "login": "avoinea",
-        "html_url": "https://github.com/avoinea"
-      },
-      "assignees": [],
-      "labels": [
-        "02 type: regression",
-        "43 lvl: complex"
-      ],
-      "contributor_summary": {
-        "status": "available",
-        "generated_at": "2026-04-09T19:30:44Z",
-        "source_issue_updated_at": "2020-12-13T12:21:51Z",
-        "model": "gpt-4o-mini",
-        "summary_markdown": "## What this issue is about\nThis issue discusses a problem where the copy and paste feature allows users to bypass layout restrictions meant to prevent the creation of new blocks in Plone's Volto. It suggests a need for a way to limit this feature at the block level.\n\n## What needs to be done\nWe need to develop a method to disable the copy and paste functionality for specific blocks. This will involve creating rules around how these restrictions should work and providing an API for implementation.\n\n## Helpful background\nCurrently, there is some built-in functionality in the `pasteBlocks` method, where blocks can define a `cloneData` function in their configuration. However, it might not be sufficient to enforce copy restrictions effectively. Clear rules must be established for this feature, as the existing discussion indicates some ambiguity around implementation details.\n\n## Good first steps\n1. Review the `pasteBlocks` function and the `cloneData` implementation in the codebase.\n2. Start thinking about what rules should govern the copy/paste functionality for blocks.\n3. Consider drafting a potential API design that could expose these rules for reuse in the platform.\n4. Engage with the community for feedback on your ideas and check for any existing discussions that might help clarify the requirements.",
-        "path": "data/issues/summaries/plone/volto/2061.json"
-      }
-    },
-    {
       "id": 124127878,
       "number": 293,
       "title": "adopt_roles does not work as I expected",
@@ -1529,37 +1472,6 @@
         "model": "gpt-4o-mini",
         "summary_markdown": "```markdown\n## What this issue is about\nThis issue aims to improve performance in the `rules.xml` of `bobtemplates.plone` by encouraging the use of XPath with absolute selectors instead of CSS selectors. The motivation is based on recent experiences showing that CSS selectors can lead to slow, global queries.\n\n## What needs to be done\nTo enhance performance, we should replace existing CSS selectors with more efficient XPath queries. The specific examples discussed involve changing rules for the `#visual-portal-wrapper`, as outlined by contributors, though there is some disagreement on whether XPath should be the standard approach.\n\n## Helpful background\nThe issue of performance relates to how many global searches are triggered by CSS selectors, which can be costly. XPath can be more explicit and often results in faster queries, particularly on longer pages. However, some contributors have suggested alternatives, and there is no consensus on making XPath the preferred method.\n\n## Good first steps\n- Review the current `rules.xml` file in `bobtemplates.plone`.\n- Identify instances where CSS selectors are used for `#visual-portal-wrapper`.\n- Experiment with replacing those with the recommended XPath examples.\n- Consider discussing findings with other contributors for feedback and possible adjustments.\n- Familiarize yourself with XPath if you are new to it, as it's a bit more complex than CSS selectors but quite powerful.\n```",
         "path": "data/issues/summaries/plone/bobtemplates.plone/146.json"
-      }
-    },
-    {
-      "id": 223134556,
-      "number": 7,
-      "title": "Collaborative editing",
-      "html_url": "https://github.com/plone/volto/issues/7",
-      "repository_full_name": "plone/volto",
-      "repository_url": "https://api.github.com/repos/plone/volto",
-      "state": "open",
-      "created_at": "2017-04-20T17:01:31Z",
-      "updated_at": "2017-04-27T13:21:40Z",
-      "comments": 2,
-      "author": {
-        "login": "robgietema",
-        "html_url": "https://github.com/robgietema"
-      },
-      "assignees": [],
-      "labels": [
-        "04 type: enhancement",
-        "14 prio: low",
-        "21 status: confirmed",
-        "43 lvl: complex"
-      ],
-      "contributor_summary": {
-        "status": "available",
-        "generated_at": "2026-04-09T20:20:49Z",
-        "source_issue_updated_at": "2017-04-27T13:21:40Z",
-        "model": "gpt-4o-mini",
-        "summary_markdown": "## What this issue is about\nThis issue discusses the enhancement of adding collaborative editing features to the Plone Volto application. The goal is to allow multiple users to edit content simultaneously, enhancing teamwork and improving user experience.\n\n## What needs to be done\nWe need to implement collaborative editing functionality, utilizing an editor framework that supports document structure as a tree, which can be compared (diffed). It will involve extending the current editor features, like images and links, based on the existing medium-like styles.\n\n## Helpful background\nCollaborative editing allows multiple people to work on the same document at the same time. This specific enhancement leverages an editing framework that saves the editor state in an immutable object. The current Volto editor supports block and inline styles, which can be expanded to include more features.\n\n## Good first steps\n1. Familiarize yourself with the current editor used in Volto.\n2. Review existing discussions and ideas around collaborative editing in this issue.\n3. Consider how the proposed features can integrate with the current structure.\n4. If you're unfamiliar with certain terms or technologies mentioned, don’t hesitate to ask for clarification in the comments!\n5. Coordinate with existing contributors for feedback on your ideas.",
-        "path": "data/issues/summaries/plone/volto/7.json"
       }
     },
     {
@@ -1626,10 +1538,10 @@
   "message": null,
   "workflow": {
     "repository": "syslabcom/activity-recognition",
-    "run_id": "40693636092",
-    "run_number": "4161",
+    "run_id": "40702949798",
+    "run_number": "4162",
     "attempt": "1",
-    "url": "https://github.com/syslabcom/activity-recognition/actions/runs/40693636092",
-    "sha": "fa8de92f8967124ddbb0816ce6ec66367aa4b889"
+    "url": "https://github.com/syslabcom/activity-recognition/actions/runs/40702949798",
+    "sha": "8189e6e15b7b25516f2fe71b09231fc651219263"
   }
 }

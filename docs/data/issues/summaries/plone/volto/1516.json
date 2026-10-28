@@ -1,18 +1,19 @@
 {
   "version": 1,
   "status": "success",
-  "generated_at": "2026-05-18T11:23:45Z",
+  "generated_at": "2026-10-28T14:09:01Z",
   "source_issue": {
     "id": 623198285,
     "number": 1516,
     "title": "Metadata block or easy way to insert document metadata inside text block",
     "html_url": "https://github.com/plone/volto/issues/1516",
     "repository_full_name": "plone/volto",
-    "updated_at": "2026-05-18T10:24:31Z",
+    "updated_at": "2026-10-28T13:32:14Z",
     "labels": [
       "04 type: enhancement",
       "43 lvl: complex",
-      "99 tag: sprint"
+      "99 tag: sprint",
+      "61 scope: editor"
     ],
     "comments": 6
   },
@@ -20,13 +21,13 @@
     "provider": "openai",
     "model": "gpt-4o-mini"
   },
-  "summary_markdown": "```markdown\n## What this issue is about\nThis issue addresses the need for a new feature in Plone called a \"metadata block.\" This block will allow users to insert document metadata (like publishing dates and tags) directly into text blocks. It aims to enhance the dynamic capabilities of pages by making metadata more accessible and usable.\n\n## What needs to be done\nWe need to develop a block or button that integrates this metadata functionality into the existing text block editor. Discussions suggest that incorporating a \"mention\" feature could be beneficial, allowing users to easily insert metadata throughout their content.\n\n## Helpful background\nCurrent discussions show varying opinions on whether this feature should be included in the core of Volto. While some contributors recommend adding metadata capabilities, there are concerns about bloating the core with additional blocks. Existing add-ons can provide similar functionality, but integrating it more seamlessly might improve user experience.\n\n## Good first steps\n1. Review the existing branch: [eea-metadata-mentions](https://github.com/plone/volto/tree/eea-metadata-mentions).\n2. Familiarize yourself with similar add-ons: [volto-metadata-block](https://github.com/eea/volto-metadata-block) and [volto-slate-metadata-mentions](https://github.com/eea/volto-slate-metadata-mentions).\n3. Engage in discussions for clarity and to share your thoughts on the proposed features.\n4. Collaborate with peers for potential testing, documentation, or code reviews.\n```",
+  "summary_markdown": "```markdown\n## What this issue is about\nThis issue proposes adding a new feature to the Plone Volto editor, allowing users to easily insert document metadata (like publishing date or tags) within text blocks. This enhancement aims to facilitate the creation of dynamic pages by enabling the integration of metadata content seamlessly.\n\n## What needs to be done\nA new block type or button should be developed that allows users to display metadata anywhere in the content area. Discussions suggest that integrating this feature into the core of Volto would provide significant benefits for managing page-specific metadata.\n\n## Helpful background\nThe idea is based on current use cases where displaying context or subjects within content is crucial. There are existing add-ons that provide related functionalities, but there is a conversation about the merits of including this feature directly in Volto's core.\n\n## Good first steps\n1. Familiarize yourself with the existing add-ons mentioned, particularly [volto-metadata-block](https://github.com/eea/volto-metadata-block) and [volto-slate-metadata-mentions](https://github.com/eea/volto-slate-metadata-mentions).\n2. Review the current structure of text blocks in Volto to understand where this feature could fit in.\n3. Join the discussion on GitHub to share your thoughts or ask questions about implementation specifics.\n4. After initial research, consider prototyping a simple version of the feature to gather feedback.\n```",
   "workflow": {
     "repository": "syslabcom/activity-recognition",
-    "run_id": "26030380574",
-    "run_number": "895",
+    "run_id": "40702949798",
+    "run_number": "4162",
     "attempt": "1",
-    "url": "https://github.com/syslabcom/activity-recognition/actions/runs/26030380574",
-    "sha": "fa2346b25110d8f5bb79f199b45634ae384d4c02"
+    "url": "https://github.com/syslabcom/activity-recognition/actions/runs/40702949798",
+    "sha": "8189e6e15b7b25516f2fe71b09231fc651219263"
   }
 }

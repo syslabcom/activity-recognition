@@ -1,0 +1,33 @@
+{
+  "version": 1,
+  "status": "success",
+  "generated_at": "2026-10-28T14:08:26Z",
+  "source_issue": {
+    "id": 6080170240,
+    "number": 8491,
+    "title": "siteTitleFormat.titleAndSiteTitleSeparator is ignored: ContentMetadataTags reads the wrong settings key",
+    "html_url": "https://github.com/plone/volto/issues/8491",
+    "repository_full_name": "plone/volto",
+    "updated_at": "2026-10-28T13:43:50Z",
+    "labels": [
+      "01 type: bug",
+      "21 status: confirmed",
+      "41 lvl: easy",
+      "62 scope: viewer"
+    ],
+    "comments": 0
+  },
+  "ai": {
+    "provider": "openai",
+    "model": "gpt-4o-mini"
+  },
+  "summary_markdown": "## What this issue is about\nThis issue is about a bug in Volto where a custom separator for the browser title (between the page title and site title) is not being applied correctly. Instead of using your custom separator, it defaults to a hyphen (“-”).\n\n## What needs to be done\nThe code needs to be updated to read the separator from the correct configuration key, `config?.settings?.siteTitleFormat?.titleAndSiteTitleSeparator`, instead of using the top-level settings key. The top-level key should still be available as a fallback.\n\n## Helpful background\nThe `siteTitleFormat.titleAndSiteTitleSeparator` is part of the site's configuration, allowing you to customize how page and site titles are displayed. The issue was identified when testing the feature against the expected behavior outlined in the documentation.\n\n## Good first steps\n1. Familiarize yourself with the relevant files:\n   - `packages/volto/src/components/theme/ContentMetadataTags/ContentMetadataTags.jsx`\n   - `packages/volto/src/config/index.js`\n   \n2. Verify the existing code that retrieves the title separator.\n3. Make the necessary code changes to read from `siteTitleFormat`.\n4. Test the fix to ensure that the browser title reflects the custom separator.\n5. Review your changes in the context of existing documentation and configuration settings. \n\nFeel free to reach out for help or clarification during the process!",
+  "workflow": {
+    "repository": "syslabcom/activity-recognition",
+    "run_id": "40702949798",
+    "run_number": "4162",
+    "attempt": "1",
+    "url": "https://github.com/syslabcom/activity-recognition/actions/runs/40702949798",
+    "sha": "8189e6e15b7b25516f2fe71b09231fc651219263"
+  }
+}

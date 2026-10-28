@@ -1,0 +1,31 @@
+{
+  "version": 1,
+  "status": "success",
+  "generated_at": "2026-10-28T14:09:37Z",
+  "source_issue": {
+    "id": 848987866,
+    "number": 2329,
+    "title": "Ship with REACT_EDITOR=none as .env",
+    "html_url": "https://github.com/plone/volto/issues/2329",
+    "repository_full_name": "plone/volto",
+    "updated_at": "2026-10-28T13:30:17Z",
+    "labels": [
+      "04 type: enhancement",
+      "41 lvl: easy"
+    ],
+    "comments": 0
+  },
+  "ai": {
+    "provider": "openai",
+    "model": "gpt-4o-mini"
+  },
+  "summary_markdown": "## What this issue is about\nThis issue is focused on making the development experience smoother for Volto contributors. The author reports a problem where an error during the `yarn start` command leads to a confusing situation with Vim, making it difficult to exit. They suggest either modifying the command to `REACT_EDITOR=none razzle start` or providing an `.env` file to manage this setting.\n\n## What needs to be done\nThe enhancement involves either modifying the existing start command to include `REACT_EDITOR=none` or creating a new `.env` file with this environment variable set. This change aims to help users who may face similar issues.\n\n## Helpful background\nThe `REACT_EDITOR` environment variable controls which text editor opens during development when errors occur. The specific problem noted is not necessarily applicable to everyone but could help streamline the setup for new developers in the Volto project, avoiding potential confusion.\n\n## Good first steps\n1. Review the current `yarn start` command in the Volto project.\n2. Decide whether to modify the command or create an `.env` file.\n3. If you choose the second option, create a draft for how the `.env` file should look.\n4. Test your changes to ensure they work as expected.\n5. Consider writing documentation for future users. \n\nFeel free to reach out in this issue if you have questions!",
+  "workflow": {
+    "repository": "syslabcom/activity-recognition",
+    "run_id": "40702949798",
+    "run_number": "4162",
+    "attempt": "1",
+    "url": "https://github.com/syslabcom/activity-recognition/actions/runs/40702949798",
+    "sha": "8189e6e15b7b25516f2fe71b09231fc651219263"
+  }
+}

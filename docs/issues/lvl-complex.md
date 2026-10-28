@@ -1,30 +1,32 @@
 ---
 title: "Plone issue list — Level: Complex"
 permalink: "/issues/lvl-complex/"
-generated_at: "2026-10-28T13:07:57Z"
+generated_at: "2026-10-28T14:08:09Z"
 organization: "plone"
-issue_count: 53
+issue_count: 50
 required_labels:
   - "43 lvl: complex"
 ---
 
 # Plone issue list — Level: Complex
 
-Generated: `2026-10-28T13:07:57Z`  
+Generated: `2026-10-28T14:08:09Z`  
 Organization: `plone`  
 Required label: `43 lvl: complex`  
-Issue count: `53`
+Issue count: `50`
 
 Sorted by last updated date, newest first.
 
 | Updated | Repository | Issue | Author | Labels |
 | --- | --- | --- | --- | --- |
+| 2026-10-28 13:34 UTC | `plone/volto` | [#2061 Copy&Paste feature overlaps with DX Layout restrictions](https://github.com/plone/volto/issues/2061) | `avoinea` | `02 type: regression`, `21 status: confirmed`, `43 lvl: complex`, `61 scope: editor` |
+| 2026-10-28 13:32 UTC | `plone/volto` | [#1516 Metadata block or easy way to insert document metadata inside text block](https://github.com/plone/volto/issues/1516) | `avoinea` | `04 type: enhancement`, `43 lvl: complex`, `99 tag: sprint`, `61 scope: editor` |
+| 2026-10-28 13:30 UTC | `plone/volto` | [#4232 Move new CSRF docs from Classic UI to Backend?](https://github.com/plone/volto/issues/4232) | `stevepiercy` | `04 type: enhancement`, `33 needs: docs`, `43 lvl: complex`, `99 tag: docs` |
 | 2026-10-27 22:22 UTC | `plone/volto` | [#4576 Deployment documentation needs to show Seamless mode first, rather then classic "simple"](https://github.com/plone/volto/issues/4576) | `tiberiuichim` | `33 needs: docs`, `43 lvl: complex`, `99 tag: docs-reorg`, `99 tag: docs` |
 | 2026-10-27 20:52 UTC | `plone/aurora` | [#318 \[Aurora\] - Make APISUFFIX configurable via environment variables](https://github.com/plone/aurora/issues/318) | `avoinea` | `01 type: bug`, `43 lvl: complex`, `30 needs: triage` |
 | 2026-09-29 13:37 UTC | `plone/plone.app.dexterity` | [#454 Blicca template separation analysis and follow up](https://github.com/plone/plone.app.dexterity/issues/454) | `petschki` | `04 type: enhancement`, `43 lvl: complex`, `12 prio: high`, `31 needs: help`, `53 target: major` |
 | 2026-09-14 02:17 UTC | `plone/Products.CMFPlone` | [#3987 Create Site Manager and Editor Guide for Plone 7](https://github.com/plone/Products.CMFPlone/issues/3987) | `stevepiercy` | `03 type: feature (plip)`, `43 lvl: complex` |
 | 2026-08-12 07:21 UTC | `plone/volto` | [#4303 Link Widget Improvement (add/select/modify)](https://github.com/plone/volto/issues/4303) | `sneridagh` | `03 type: feature (plip)`, `43 lvl: complex` |
-| 2026-07-07 00:57 UTC | `plone/volto` | [#7527 View for Listing block](https://github.com/plone/volto/issues/7527) | `ebrehault` | `04 type: enhancement`, `43 lvl: complex`, `27 status: stale` |
 | 2026-07-02 22:11 UTC | `plone/volto` | [#6967 Move videos from the User Manual to a CDN or YouTube](https://github.com/plone/volto/issues/6967) | `stevepiercy` | `04 type: enhancement`, `31 needs: help`, `43 lvl: complex`, `06 type: plip task` |
 | 2026-06-22 15:35 UTC | `plone/volto` | [#5300 PLIP: Keyword Manager](https://github.com/plone/volto/issues/5300) | `tisto` | `03 type: feature (plip)`, `43 lvl: complex` |
 | 2026-06-04 09:34 UTC | `plone/aurora` | [#27 Search the control panel to find a setting](https://github.com/plone/aurora/issues/27) | `ksuess` | `43 lvl: complex`, `discussion`, `30 needs: triage` |
@@ -36,8 +38,6 @@ Sorted by last updated date, newest first.
 | 2026-05-18 10:53 UTC | `plone/volto` | [#1478 Proposal: have a list of "smart fields" in Volto blocks](https://github.com/plone/volto/issues/1478) | `tiberiuichim` | `03 type: feature (plip)`, `43 lvl: complex` |
 | 2026-05-18 10:51 UTC | `plone/volto` | [#4460 Refactor class components to functional components](https://github.com/plone/volto/issues/4460) | `sneridagh` | `03 type: feature (plip)`, `43 lvl: complex` |
 | 2026-05-18 10:42 UTC | `plone/volto` | [#6327 Library Upgrades for the next major (19).](https://github.com/plone/volto/issues/6327) | `tisto` | `03 type: feature (plip)`, `43 lvl: complex` |
-| 2026-05-18 10:28 UTC | `plone/volto` | [#4232 Move new CSRF docs from Classic UI to Backend?](https://github.com/plone/volto/issues/4232) | `stevepiercy` | `04 type: enhancement`, `33 needs: docs`, `43 lvl: complex` |
-| 2026-05-18 10:24 UTC | `plone/volto` | [#1516 Metadata block or easy way to insert document metadata inside text block](https://github.com/plone/volto/issues/1516) | `avoinea` | `04 type: enhancement`, `43 lvl: complex`, `99 tag: sprint` |
 | 2026-03-23 19:04 UTC | `plone/documentation` | [#1902 Create Plone site administrator guide](https://github.com/plone/documentation/issues/1902) | `stevepiercy` | `05 type: question`, `43 lvl: complex` |
 | 2026-03-23 17:35 UTC | `plone/Products.CMFPlone` | [#1976 z3c.form fields with a default value cannot be set to None or ""](https://github.com/plone/Products.CMFPlone/issues/1976) | `thet` | `01 type: bug`, `31 needs: help`, `12 prio: high`, `21 status: confirmed`, `43 lvl: complex` |
 | 2026-02-14 00:25 UTC | `plone/Products.CMFPlone` | [#4273 PLIP: Make Products.CMFEditions a Core Add-on](https://github.com/plone/Products.CMFPlone/issues/4273) | `jensens` | `03 type: feature (plip)`, `43 lvl: complex`, `52 target: minor`, `99 tag:backend` |
@@ -59,16 +59,13 @@ Sorted by last updated date, newest first.
 | 2025-02-03 21:16 UTC | `plone/volto` | [#6628 PLIP Process for User Interfacing Changing PLIPs](https://github.com/plone/volto/issues/6628) | `tisto` | `03 type: feature (plip)`, `43 lvl: complex` |
 | 2025-01-07 05:29 UTC | `plone/documentation` | [#1785 Switch from `pipx` and `venv` to `uv` and friends](https://github.com/plone/documentation/issues/1785) | `stevepiercy` | `43 lvl: complex` |
 | 2024-11-24 07:01 UTC | `plone/documentation` | [#729 consolidate POSKeyError info, include plonechix help](https://github.com/plone/documentation/issues/729) | `tkimnguyen` | `31 needs: help`, `33 needs: docs`, `43 lvl: complex`, `99 tag: Plone 6.x` |
-| 2024-01-14 10:06 UTC | `plone/volto` | [#1466 Unable to edit frontpage in Volto site without "Manage portal" permission](https://github.com/plone/volto/issues/1466) | `tiberiuichim` | `04 type: enhancement`, `43 lvl: complex` |
 | 2024-01-11 12:33 UTC | `plone/Products.CMFPlone` | [#3866 a11y - Icon for toolbar button "user" - cms ui](https://github.com/plone/Products.CMFPlone/issues/3866) | `stevepiercy` | `99 tag: UX Accessibility`, `43 lvl: complex` |
 | 2023-11-23 17:36 UTC | `plone/meta` | [#183 Script: remove `pkg_resources` namespace declarations](https://github.com/plone/meta/issues/183) | `gforcada` | `04 type: enhancement`, `12 prio: high`, `43 lvl: complex` |
 | 2023-11-17 14:00 UTC | `plone/meta` | [#100 Do releases with `tox`](https://github.com/plone/meta/issues/100) | `gforcada` | `04 type: enhancement`, `13 prio: normal`, `43 lvl: complex` |
 | 2023-11-13 10:53 UTC | `plone/meta` | [#187 Add a GHA to create Github  releases](https://github.com/plone/meta/issues/187) | `gforcada` | `04 type: enhancement`, `14 prio: low`, `43 lvl: complex` |
 | 2023-10-14 12:25 UTC | `plone/meta` | [#167 enforce layers split](https://github.com/plone/meta/issues/167) | `gforcada` | `04 type: enhancement`, `14 prio: low`, `43 lvl: complex` |
 | 2022-08-24 22:13 UTC | `plone/Products.CMFPlone` | [#960 Autocomplete widget not normalizing on search](https://github.com/plone/Products.CMFPlone/issues/960) | `hvelarde` | `04 type: enhancement`, `31 needs: help`, `13 prio: normal`, `21 status: confirmed`, `43 lvl: complex` |
-| 2020-12-13 12:21 UTC | `plone/volto` | [#2061 Copy&Paste feature overlaps with DX Layout restrictions](https://github.com/plone/volto/issues/2061) | `avoinea` | `02 type: regression`, `43 lvl: complex` |
 | 2018-11-07 17:06 UTC | `plone/plone.api` | [#293 adopt_roles does not work as I expected](https://github.com/plone/plone.api/issues/293) | `pbauer` | `01 type: bug`, `31 needs: help`, `21 status: confirmed`, `43 lvl: complex` |
 | 2018-10-23 08:58 UTC | `plone/bobtemplates.plone` | [#146 Encourage usage of XPath in rules.xml](https://github.com/plone/bobtemplates.plone/issues/146) | `jensens` | `04 type: enhancement`, `31 needs: help`, `14 prio: low`, `43 lvl: complex` |
-| 2017-04-27 13:21 UTC | `plone/volto` | [#7 Collaborative editing](https://github.com/plone/volto/issues/7) | `robgietema` | `04 type: enhancement`, `14 prio: low`, `21 status: confirmed`, `43 lvl: complex` |
 | 2017-01-04 12:27 UTC | `plone/plone.app.querystring` | [#66 RegistryReader has bad performance on sites with a lot of users](https://github.com/plone/plone.app.querystring/issues/66) | `datakurre` | `01 type: bug`, `31 needs: help`, `99 tag: Plone 5.x`, `43 lvl: complex` |
 | 2016-03-09 18:41 UTC | `plone/plone.recipe.codeanalysis` | [#17 pre-commit hook should only be run on modified files](https://github.com/plone/plone.recipe.codeanalysis/issues/17) | `hvelarde` | `04 type: enhancement`, `43 lvl: complex` |

@@ -1,31 +1,31 @@
 {
   "version": 1,
   "status": "success",
-  "generated_at": "2026-05-19T09:14:09Z",
+  "generated_at": "2026-10-28T14:08:17Z",
   "source_issue": {
     "id": 2083336469,
     "number": 5630,
     "title": "Unify the use of the optional `preview_image_link` across Volto",
     "html_url": "https://github.com/plone/volto/issues/5630",
     "repository_full_name": "plone/volto",
-    "updated_at": "2026-05-19T08:43:44Z",
+    "updated_at": "2026-10-28T13:58:37Z",
     "labels": [
       "04 type: enhancement",
       "42 lvl: moderate"
     ],
-    "comments": 6
+    "comments": 7
   },
   "ai": {
     "provider": "openai",
     "model": "gpt-4o-mini"
   },
-  "summary_markdown": "```markdown\n## What this issue is about\nThis issue proposes to unify the use of `preview_image_link` in Volto to allow better reuse of images across content types instead of duplicating them with `preview_image`. The aim is to support this change smoothly throughout the Volto codebase.\n\n## What needs to be done\n1. Update the code to ensure that `preview_image_link` is correctly used wherever `preview_image` is currently implemented.\n2. Modify new instances of Volto to enable `preview_image_link` by default for new sites, while retaining the `preview_image` option for existing sites to avoid migration issues.\n\n## Helpful background\n`preview_image` currently stores images as a direct attribute, which can duplicate images. The new `preview_image_link` uses a RelationChoice pointer, helping in scenarios like implementing a Digital Asset Management System (DAMS).\n\n## Good first steps\n1. Explore the Volto codebase for any hardcoded instances of `preview_image`.\n2. Test the `preview_image_link` functionality and consider how it can be documented for clarity.\n3. Engage with fellow contributors for feedback and guidance, especially around the implications of enabling this feature by default in new sites.\n```",
+  "summary_markdown": "```markdown\n## What this issue is about\nThis issue aims to unify the use of `preview_image_link` across the Volto codebase. Currently, Volto uses `preview_image`—which can lead to image duplication. The goal is to establish `preview_image_link`, which allows for reusable images, as a standard method.\n\n## What needs to be done\nThe main task is to locate all instances of `preview_image` in the code and ensure they support `preview_image_link` as a valid alternative. This will involve checking that the functionality works seamlessly and is properly documented.\n\n## Helpful background\nWhile the `preview_image_link` functionality is implemented in Volto, it is not enabled by default. Discussions have raised considerations about migration and compatibility with existing sites, especially regarding how images are handled for new versus existing installations.\n\n## Good first steps\n1. Familiarize yourself with the existing use of `preview_image` in the codebase.\n2. Review the documentation related to `preview_image_link`.\n3. Begin identifying code paths that require updates or documentation improvements.\n4. Collaborate with team members for insights or to clarify any uncertainties during your exploration.\n5. Prepare to help create tests to validate that `preview_image_link` functions correctly.\n```",
   "workflow": {
     "repository": "syslabcom/activity-recognition",
-    "run_id": "26087797707",
-    "run_number": "910",
+    "run_id": "40702949798",
+    "run_number": "4162",
     "attempt": "1",
-    "url": "https://github.com/syslabcom/activity-recognition/actions/runs/26087797707",
-    "sha": "8de4d8fdccf0abeddf9b7f2b4fa9d4129bff3ff5"
+    "url": "https://github.com/syslabcom/activity-recognition/actions/runs/40702949798",
+    "sha": "8189e6e15b7b25516f2fe71b09231fc651219263"
   }
 }

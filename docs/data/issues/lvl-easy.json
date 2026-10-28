@@ -1,7 +1,7 @@
 {
   "version": 1,
   "status": "success",
-  "generated_at": "2026-10-28T13:07:57Z",
+  "generated_at": "2026-10-28T14:08:09Z",
   "organization": "plone",
   "state": "open",
   "slug": "lvl-easy",
@@ -9,8 +9,412 @@
   "required_labels": [
     "41 lvl: easy"
   ],
-  "issue_count": 115,
+  "issue_count": 124,
   "issues": [
+    {
+      "id": 224720089,
+      "number": 27,
+      "title": "Workflow comment and include contained items",
+      "html_url": "https://github.com/plone/volto/issues/27",
+      "repository_full_name": "plone/volto",
+      "repository_url": "https://api.github.com/repos/plone/volto",
+      "state": "open",
+      "created_at": "2017-04-27T09:09:29Z",
+      "updated_at": "2026-10-28T13:55:24Z",
+      "comments": 1,
+      "author": {
+        "login": "robgietema",
+        "html_url": "https://github.com/robgietema"
+      },
+      "assignees": [],
+      "labels": [
+        "04 type: enhancement",
+        "13 prio: normal",
+        "41 lvl: easy",
+        "26 status: blocked"
+      ],
+      "contributor_summary": {
+        "status": "available",
+        "generated_at": "2026-10-28T14:08:22Z",
+        "source_issue_updated_at": "2026-10-28T13:55:24Z",
+        "model": "gpt-4o-mini",
+        "summary_markdown": "# Workflow comment and include contained items\n\n## What this issue is about\nThis issue is for enhancing the workflow in the Volto project by adding support for comments in the workflow and the ability to include contained items in workflow actions.\n\n## What needs to be done\n- Implement a workflow comment field.\n- Add support for including contained items in the workflow dropdown menu.\n\nPlease note that this issue is currently blocked by another issue in the Plone REST API. You can view that [here](https://github.com/plone/plone.restapi/issues/333).\n\n## Helpful background\nThe issue has partly been addressed, as the contents view modal now allows for the inclusion of contained items. However, the workflow comment feature and complete dropdown functionality are still pending. \n\n## Good first steps\n1. Familiarize yourself with the existing functionality in the `ContentsWorkflowModal.jsx` file in Volto.\n2. Review the blocked issue for context on why this enhancement cannot be fully implemented yet.\n3. Consider discussing any ideas or questions in the comments section for clarification.\n4. Your contributions will likely need to be tested and reviewed after implementation.",
+        "path": "data/issues/summaries/plone/volto/27.json"
+      }
+    },
+    {
+      "id": 6080170240,
+      "number": 8491,
+      "title": "siteTitleFormat.titleAndSiteTitleSeparator is ignored: ContentMetadataTags reads the wrong settings key",
+      "html_url": "https://github.com/plone/volto/issues/8491",
+      "repository_full_name": "plone/volto",
+      "repository_url": "https://api.github.com/repos/plone/volto",
+      "state": "open",
+      "created_at": "2026-10-28T13:43:50Z",
+      "updated_at": "2026-10-28T13:43:50Z",
+      "comments": 0,
+      "author": {
+        "login": "jensens",
+        "html_url": "https://github.com/jensens"
+      },
+      "assignees": [],
+      "labels": [
+        "01 type: bug",
+        "21 status: confirmed",
+        "41 lvl: easy",
+        "62 scope: viewer"
+      ],
+      "contributor_summary": {
+        "status": "available",
+        "generated_at": "2026-10-28T14:08:26Z",
+        "source_issue_updated_at": "2026-10-28T13:43:50Z",
+        "model": "gpt-4o-mini",
+        "summary_markdown": "## What this issue is about\nThis issue is about a bug in Volto where a custom separator for the browser title (between the page title and site title) is not being applied correctly. Instead of using your custom separator, it defaults to a hyphen (“-”).\n\n## What needs to be done\nThe code needs to be updated to read the separator from the correct configuration key, `config?.settings?.siteTitleFormat?.titleAndSiteTitleSeparator`, instead of using the top-level settings key. The top-level key should still be available as a fallback.\n\n## Helpful background\nThe `siteTitleFormat.titleAndSiteTitleSeparator` is part of the site's configuration, allowing you to customize how page and site titles are displayed. The issue was identified when testing the feature against the expected behavior outlined in the documentation.\n\n## Good first steps\n1. Familiarize yourself with the relevant files:\n   - `packages/volto/src/components/theme/ContentMetadataTags/ContentMetadataTags.jsx`\n   - `packages/volto/src/config/index.js`\n   \n2. Verify the existing code that retrieves the title separator.\n3. Make the necessary code changes to read from `siteTitleFormat`.\n4. Test the fix to ensure that the browser title reflects the custom separator.\n5. Review your changes in the context of existing documentation and configuration settings. \n\nFeel free to reach out for help or clarification during the process!",
+        "path": "data/issues/summaries/plone/volto/8491.json"
+      }
+    },
+    {
+      "id": 4677536171,
+      "number": 8342,
+      "title": "sitemap-index.xml served with Content-Disposition: attachment, breaking Google Search Console",
+      "html_url": "https://github.com/plone/volto/issues/8342",
+      "repository_full_name": "plone/volto",
+      "repository_url": "https://api.github.com/repos/plone/volto",
+      "state": "open",
+      "created_at": "2026-06-16T20:09:07Z",
+      "updated_at": "2026-10-28T13:33:52Z",
+      "comments": 1,
+      "author": {
+        "login": "alexandreIFB",
+        "html_url": "https://github.com/alexandreIFB"
+      },
+      "assignees": [],
+      "labels": [
+        "01 type: bug",
+        "21 status: confirmed",
+        "41 lvl: easy",
+        "62 scope: viewer"
+      ],
+      "contributor_summary": {
+        "status": "available",
+        "generated_at": "2026-10-28T14:08:34Z",
+        "source_issue_updated_at": "2026-10-28T13:33:52Z",
+        "model": "gpt-4o-mini",
+        "summary_markdown": "## What this issue is about\nThis issue involves the `sitemap-index.xml` endpoint in Plone's Volto project. Currently, it incorrectly returns a `Content-Disposition: attachment` header, causing problems for search engine crawlers like Google Search Console, which expect this sitemap to be served as inline content.\n\n## What needs to be done\nWe need to change the response header for `sitemap-index.xml` so that it does not include `Content-Disposition: attachment`. This adjustment will allow search engines to appropriately handle the XML sitemap, improving compatibility and functionality.\n\n## Helpful background\nThe `Content-Disposition` header influences how web browsers and other clients treat files. In this case, it mistakenly indicates that the XML response is a file for download rather than a web resource to be parsed. The issue was originally noted by looking at the `sitemapIndex` handler code in the `sitemap.js` file.\n\n## Good first steps\n1. **Investigate the code:** Look at the `sitemapIndex` handler in `packages/volto/src/express-middleware/sitemap.js`, specifically around line 42.\n2. **Modify the header:** Change or remove the `Content-Disposition` header to reflect the expected inline content behavior.\n3. **Test the change:** After updating the code, use a command like `curl -I https://<your-site>/sitemap-index.xml` to verify the headers.\n4. **Document the change:** Update any related documentation or notes for clarity. \n\nFeel free to reach out if you have questions or need assistance!",
+        "path": "data/issues/summaries/plone/volto/8342.json"
+      }
+    },
+    {
+      "id": 4812628116,
+      "number": 8367,
+      "title": "/change-password renders the full form to anonymous visitors",
+      "html_url": "https://github.com/plone/volto/issues/8367",
+      "repository_full_name": "plone/volto",
+      "repository_url": "https://api.github.com/repos/plone/volto",
+      "state": "open",
+      "created_at": "2026-07-05T11:25:29Z",
+      "updated_at": "2026-10-28T13:33:45Z",
+      "comments": 1,
+      "author": {
+        "login": "mpalomaki",
+        "html_url": "https://github.com/mpalomaki"
+      },
+      "assignees": [],
+      "labels": [
+        "01 type: bug",
+        "21 status: confirmed",
+        "41 lvl: easy"
+      ],
+      "contributor_summary": {
+        "status": "available",
+        "generated_at": "2026-10-28T14:08:38Z",
+        "source_issue_updated_at": "2026-10-28T13:33:45Z",
+        "model": "gpt-4o-mini",
+        "summary_markdown": "```markdown\n## What this issue is about\nThis issue addresses a bug in the Volto application where signed-out visitors can access the full change-password form at the `/change-password` route. This form is rendered completely, enabling interaction that cannot succeed, as there is no user token available.\n\n## What needs to be done\nTo fix this, the form should only render for authenticated users. This can be achieved by adding a guard in the `ChangePassword` component to check for a valid token. Alternatively, the `/change-password` route could be removed from the list of public non-content routes.\n\n## Helpful background\nThe issue stems from three areas in the Volto code:\n1. The `/change-password` route registration lacks an authentication wrapper.\n2. It's listed as a public route.\n3. The form renders unconditionally, regardless of user authentication.\n\nBoth the author and other contributors confirmed the bug is still present, and a proposed fix (PR #8414) is in progress.\n\n## Good first steps\n1. Review the current implementation in `ChangePassword.jsx` to understand how the form is rendered.\n2. Look into the `NonContentRoutesPublic.jsx` file to see how routes are managed.\n3. Consider testing the existing behavior by accessing the `/change-password` route while signed out.\n4. Join the discussion or contribute to PR #8414 or propose additional improvements.\n```",
+        "path": "data/issues/summaries/plone/volto/8367.json"
+      }
+    },
+    {
+      "id": 4987089114,
+      "number": 8394,
+      "title": "a11y - Default sidebar - shrink/expand sidebar button - cms ui",
+      "html_url": "https://github.com/plone/volto/issues/8394",
+      "repository_full_name": "plone/volto",
+      "repository_url": "https://api.github.com/repos/plone/volto",
+      "state": "open",
+      "created_at": "2026-07-27T10:49:23Z",
+      "updated_at": "2026-10-28T13:33:36Z",
+      "comments": 1,
+      "author": {
+        "login": "Wagner3UB",
+        "html_url": "https://github.com/Wagner3UB"
+      },
+      "assignees": [
+        "Humanaice"
+      ],
+      "labels": [
+        "01 type: bug",
+        "21 status: confirmed",
+        "41 lvl: easy",
+        "61 scope: editor"
+      ],
+      "contributor_summary": {
+        "status": "available",
+        "generated_at": "2026-10-28T14:08:43Z",
+        "source_issue_updated_at": "2026-10-28T13:33:36Z",
+        "model": "gpt-4o-mini",
+        "summary_markdown": "## What this issue is about\nThis issue addresses a bug in the Volto CMS where the “expand/shrink” button in the right sidebar isn't focusable using the keyboard. This makes it difficult for users who rely on keyboard navigation to interact with that button.\n\n## What needs to be done\nThe goal is to make the shrink/expand button:\n- Focusable with keyboard navigation.\n- Visibly show a focus indicator (like a border) when it’s selected.\n\n## Helpful background\nThe problem was confirmed by a community member, indicating that the CSS rules in the sidebar theme are removing the visible focus ring from the button. A potential fix could involve adding a `:focus-visible` style to the button in the CSS file.\n\n## Good first steps\n1. Familiarize yourself with the relevant files in `packages/volto/src/components/manage/Sidebar/Sidebar.jsx` and `packages/volto/theme/themes/pastanaga/extras/sidebar.less`.\n2. Check how focus is currently handled and identify the CSS adjustments needed.\n3. Once you implement changes, test using a keyboard to ensure the button is focusable with a visible indicator.\n4. Consider coordinating with others or reviewing existing comments to ensure no conflicting suggestions exist. \n\nFeel free to reach out for any clarifications!",
+        "path": "data/issues/summaries/plone/volto/8394.json"
+      }
+    },
+    {
+      "id": 5524877927,
+      "number": 8433,
+      "title": "Username & password should not autocomplete on new user form",
+      "html_url": "https://github.com/plone/volto/issues/8433",
+      "repository_full_name": "plone/volto",
+      "repository_url": "https://api.github.com/repos/plone/volto",
+      "state": "open",
+      "created_at": "2026-09-21T09:01:23Z",
+      "updated_at": "2026-10-28T13:33:21Z",
+      "comments": 3,
+      "author": {
+        "login": "davisagli",
+        "html_url": "https://github.com/davisagli"
+      },
+      "assignees": [],
+      "labels": [
+        "01 type: bug",
+        "21 status: confirmed",
+        "41 lvl: easy",
+        "99 tag: UX Accessibility",
+        "61 scope: editor"
+      ],
+      "contributor_summary": {
+        "status": "available",
+        "generated_at": "2026-10-28T14:08:47Z",
+        "source_issue_updated_at": "2026-10-28T13:33:21Z",
+        "model": "gpt-4o-mini",
+        "summary_markdown": "```markdown\n## What this issue is about\nThis issue addresses a bug regarding the \"Add New User\" form in the Users control panel of Plone. When filling out this form, your browser may automatically suggest your saved username and password, which can lead to confusion. The goal is to disable this autocomplete feature for better user experience.\n\n## What needs to be done\nYou need to modify the code in the `UsersControlpanel.jsx` file to ensure that the `username` and `password` fields do not trigger autocomplete. Currently, it seems that the autocomplete settings are either missing or incorrect.\n\n## Helpful background\nThe issue is confirmed and has been present in the main Volto branch. Some details from the discussion indicate that while the password field uses `autoComplete=\"off\"`, browsers often ignore this for passwords. Instead, it should use `autoComplete=\"new-password\"` for better compliance. Your modifications should address this.\n\n## Good first steps\n1. Review the file `UsersControlpanel.jsx`, focusing on the username and password input fields.\n2. Change the autocomplete attributes to disable autofill effectively.\n3. After making changes, conduct tests to ensure that the fields behave as expected in various browsers.\n4. Check the [Plone Contributor Agreement](https://6.docs.plone.org/volto/contributing/index.html) to start contributing.\n5. Consider opening a pull request once you've made and tested your changes!\n```",
+        "path": "data/issues/summaries/plone/volto/8433.json"
+      }
+    },
+    {
+      "id": 5921904021,
+      "number": 8465,
+      "title": "Fix padding of links and references menu table",
+      "html_url": "https://github.com/plone/volto/issues/8465",
+      "repository_full_name": "plone/volto",
+      "repository_url": "https://api.github.com/repos/plone/volto",
+      "state": "open",
+      "created_at": "2026-10-19T10:08:13Z",
+      "updated_at": "2026-10-28T13:33:12Z",
+      "comments": 1,
+      "author": {
+        "login": "TimoBroeskamp",
+        "html_url": "https://github.com/TimoBroeskamp"
+      },
+      "assignees": [
+        "TimoBroeskamp"
+      ],
+      "labels": [
+        "01 type: bug",
+        "21 status: confirmed",
+        "41 lvl: easy",
+        "62 scope: viewer"
+      ],
+      "contributor_summary": {
+        "status": "available",
+        "generated_at": "2026-10-28T14:08:53Z",
+        "source_issue_updated_at": "2026-10-28T13:33:12Z",
+        "model": "gpt-4o-mini",
+        "summary_markdown": "## What this issue is about\nThis issue addresses a bug related to the insufficient padding of the links and references menu table in Volto. The lack of padding affects the table's appearance, making it inconsistent with other rows.\n\n## What needs to be done\nThe goal is to correct the padding for the `Table.HeaderCell` used within the table. Currently, the header cells do not have the right padding due to their placement in the table structure.\n\n## Helpful background\nThe issue was confirmed by a contributor and relates to the usage of Semantic UI’s table components. There’s a potential fix in a pull request (#8466) that needs review, but it suggests adding the style in a module (volto-slate) instead of within the core theme styles, which may require further discussion.\n\n## Good first steps\n1. Familiarize yourself with the relevant files, especially `LinksToItem.jsx` where the issue originates.\n2. Review the ongoing pull request (#8466) to understand the proposed solution.\n3. If eager to contribute, consider testing the changes locally and providing feedback on the PR.\n4. Join the conversation by commenting on the existing issue if you have any suggestions or need clarification on the style preferences.",
+        "path": "data/issues/summaries/plone/volto/8465.json"
+      }
+    },
+    {
+      "id": 1145243237,
+      "number": 3092,
+      "title": "Improve spellcheck",
+      "html_url": "https://github.com/plone/volto/issues/3092",
+      "repository_full_name": "plone/volto",
+      "repository_url": "https://api.github.com/repos/plone/volto",
+      "state": "open",
+      "created_at": "2022-02-21T02:25:04Z",
+      "updated_at": "2026-10-28T13:32:26Z",
+      "comments": 16,
+      "author": {
+        "login": "stevepiercy",
+        "html_url": "https://github.com/stevepiercy"
+      },
+      "assignees": [],
+      "labels": [
+        "04 type: enhancement",
+        "31 needs: help",
+        "33 needs: docs",
+        "41 lvl: easy",
+        "99 tag: docs"
+      ],
+      "contributor_summary": {
+        "status": "available",
+        "generated_at": "2026-10-28T14:08:56Z",
+        "source_issue_updated_at": "2026-10-28T13:32:26Z",
+        "model": "gpt-4o-mini",
+        "summary_markdown": "```markdown\n## What this issue is about\nThis issue focuses on improving the spellcheck functionality in the Volto project. It involves ensuring consistent spelling for terms like \"JavaScript\" and \"NodeJS\" to maintain clarity and professionalism in the documentation.\n\n## What needs to be done\n- Update the `accept.txt` and `reject.txt` files in `styles/Vocab/Plone/` to include the preferred spellings and remove incorrect ones.\n- Be careful not to disrupt any coding syntax that may use these terms.\n\n## Helpful background\nThe project uses Vale for spellchecking. Refer to [Vale documentation](https://vale.sh/docs/topics/vocab/) for detailed guidance on how to manage vocabulary files. Check the [Plone contribution documentation](https://6.docs.plone.org/contributing/documentation/setup-build.html#vale) for setup instructions.\n\n## Good first steps\n1. Familiarize yourself with the current contents of the `accept.txt` and `reject.txt` files.\n2. Start with a small number of changes to avoid overwhelming reviews. Incremental changes are easier to manage than large pull requests.\n3. If you're new to the process, take a look at the general [contributing guide](https://6.docs.plone.org/contributing/index.html).\n4. Don’t hesitate to ask questions in the comments if you need clarification!\n```",
+        "path": "data/issues/summaries/plone/volto/3092.json"
+      }
+    },
+    {
+      "id": 3988967668,
+      "number": 7947,
+      "title": "Improve `@plone/client` documentation",
+      "html_url": "https://github.com/plone/volto/issues/7947",
+      "repository_full_name": "plone/volto",
+      "repository_url": "https://api.github.com/repos/plone/volto",
+      "state": "open",
+      "created_at": "2026-02-25T11:42:33Z",
+      "updated_at": "2026-10-28T13:31:44Z",
+      "comments": 10,
+      "author": {
+        "login": "stevepiercy",
+        "html_url": "https://github.com/stevepiercy"
+      },
+      "assignees": [],
+      "labels": [
+        "04 type: enhancement",
+        "31 needs: help",
+        "33 needs: docs",
+        "41 lvl: easy",
+        "dependencies",
+        "99 tag: docs"
+      ],
+      "contributor_summary": {
+        "status": "available",
+        "generated_at": "2026-10-28T14:09:05Z",
+        "source_issue_updated_at": "2026-10-28T13:31:44Z",
+        "model": "gpt-4o-mini",
+        "summary_markdown": "```markdown\n## What this issue is about\nThis issue involves improving the documentation for `@plone/client`. It primarily focuses on enhancing clarity and removing outdated references.\n\n## What needs to be done\n1. **Remove references** to TanStack Query terminology (like mutators and hooks) while ensuring the remaining text is clear and grammatically correct.\n2. **Integrate the `sphinxcontrib.httpexample` extension** for HTTP API calls. This will require a configuration update in `docs/source/conf.py` and creating examples based on the extension’s documentation.\n3. **Forward port** any final results to the `seven` branch. Note: the `seven` branch may have limited files to update.\n\n## Helpful background\nThe discussion shows some uncertainty about where specific updates are needed. Parts of the documentation might still need review and clarification to ensure consistency across branches.\n\n## Good first steps\n1. Review the current documentation files in the [Volto repository](https://github.com/plone/volto/tree/main/docs/source/client) to identify where TanStack references should be removed.\n2. Familiarize yourself with the [sphinxcontrib.httpexample documentation](https://sphinxcontrib-httpexample.readthedocs.io/en/latest/index.html) to understand how to implement HTTP examples effectively.\n3. Discuss any findings or questions in this issue to guide your contributions.\n```",
+        "path": "data/issues/summaries/plone/volto/7947.json"
+      }
+    },
+    {
+      "id": 1048517961,
+      "number": 2825,
+      "title": "Document how to do live debugging with Volto server",
+      "html_url": "https://github.com/plone/volto/issues/2825",
+      "repository_full_name": "plone/volto",
+      "repository_url": "https://api.github.com/repos/plone/volto",
+      "state": "open",
+      "created_at": "2021-11-09T11:53:55Z",
+      "updated_at": "2026-10-28T13:31:08Z",
+      "comments": 0,
+      "author": {
+        "login": "tiberiuichim",
+        "html_url": "https://github.com/tiberiuichim"
+      },
+      "assignees": [],
+      "labels": [
+        "04 type: enhancement",
+        "33 needs: docs",
+        "41 lvl: easy",
+        "99 tag: docs"
+      ],
+      "contributor_summary": {
+        "status": "available",
+        "generated_at": "2026-10-28T14:09:18Z",
+        "source_issue_updated_at": "2026-10-28T13:31:08Z",
+        "model": "gpt-4o-mini",
+        "summary_markdown": "## What this issue is about\nThis issue aims to improve documentation on how to perform live debugging with the Volto server. Live debugging allows developers to inspect and fix issues in their code as it runs, which can be very helpful for enhancing development efficiency.\n\n## What needs to be done\n1. Update the documentation to include instructions for modifying the `start:prod` script in `package.json` to enable debugging.\n2. The new script should look like this:\n   ```bash\n   NODE_ENV=production node --inspect build/server.js\n   ```\n3. Add guidance on accessing Chrome's remote debugging tool via `chrome://inspect/#devices`.\n\n## Helpful background\nCurrently, the documentation on live debugging with Volto is lacking. The provided details are minimal, and there are no additional comments or clarifications from other contributors. It's essential for new developers to understand how to set this up without confusion.\n\n## Good first steps\n- Familiarize yourself with the existing documentation about Volto.\n- Test the proposed changes by implementing the script modification and checking the debugging functionality.\n- Document your findings clearly for future contributors.\n- Consider discussing your approach in the comments if you have questions or need further clarification.",
+        "path": "data/issues/summaries/plone/volto/2825.json"
+      }
+    },
+    {
+      "id": 1410407963,
+      "number": 3778,
+      "title": "Relax requirements for razzle.extend.js",
+      "html_url": "https://github.com/plone/volto/issues/3778",
+      "repository_full_name": "plone/volto",
+      "repository_url": "https://api.github.com/repos/plone/volto",
+      "state": "open",
+      "created_at": "2022-10-16T07:55:46Z",
+      "updated_at": "2026-10-28T13:30:49Z",
+      "comments": 0,
+      "author": {
+        "login": "tiberiuichim",
+        "html_url": "https://github.com/tiberiuichim"
+      },
+      "assignees": [],
+      "labels": [
+        "04 type: enhancement",
+        "41 lvl: easy"
+      ],
+      "contributor_summary": {
+        "status": "available",
+        "generated_at": "2026-10-28T14:09:27Z",
+        "source_issue_updated_at": "2026-10-28T13:30:49Z",
+        "model": "gpt-4o-mini",
+        "summary_markdown": "## What this issue is about\nThis issue discusses the current requirement in `razzle.extend.js` to export both `plugins` and `modify` from a module. The goal is to relax this requirement, allowing developers to omit either export based on their needs.\n\n## What needs to be done\nWe need to adjust the code structure in `razzle.extend.js` so that it's possible to export only `plugins`, only `modify`, or both. This change should enhance flexibility for developers creating plugins without unnecessary boilerplate code.\n\n## Helpful background\nThe `plugins` export allows developers to add custom functionality to their application, while the `modify` export enables configuration adjustments. Currently, developers must export both, even if one is not needed, which can complicate module definitions unnecessarily.\n\n## Good first steps\n1. **Explore the Code**: Review the existing implementation of `razzle.extend.js` to understand how `plugins` and `modify` are currently being used.\n2. **Identify Changes**: Determine how to allow for optional exports in a way that maintains existing functionality.\n3. **Implement the Adjustment**: Write the code changes with the option to omit either export.\n4. **Testing**: Create tests to ensure that both single and dual exports function correctly.\n5. **Documentation**: Update any relevant documentation to reflect the new flexibility.\n\nFeel free to ask questions if you need clarification!",
+        "path": "data/issues/summaries/plone/volto/3778.json"
+      }
+    },
+    {
+      "id": 848987866,
+      "number": 2329,
+      "title": "Ship with REACT_EDITOR=none as .env",
+      "html_url": "https://github.com/plone/volto/issues/2329",
+      "repository_full_name": "plone/volto",
+      "repository_url": "https://api.github.com/repos/plone/volto",
+      "state": "open",
+      "created_at": "2021-04-02T06:04:42Z",
+      "updated_at": "2026-10-28T13:30:17Z",
+      "comments": 0,
+      "author": {
+        "login": "tiberiuichim",
+        "html_url": "https://github.com/tiberiuichim"
+      },
+      "assignees": [],
+      "labels": [
+        "04 type: enhancement",
+        "41 lvl: easy"
+      ],
+      "contributor_summary": {
+        "status": "available",
+        "generated_at": "2026-10-28T14:09:37Z",
+        "source_issue_updated_at": "2026-10-28T13:30:17Z",
+        "model": "gpt-4o-mini",
+        "summary_markdown": "## What this issue is about\nThis issue is focused on making the development experience smoother for Volto contributors. The author reports a problem where an error during the `yarn start` command leads to a confusing situation with Vim, making it difficult to exit. They suggest either modifying the command to `REACT_EDITOR=none razzle start` or providing an `.env` file to manage this setting.\n\n## What needs to be done\nThe enhancement involves either modifying the existing start command to include `REACT_EDITOR=none` or creating a new `.env` file with this environment variable set. This change aims to help users who may face similar issues.\n\n## Helpful background\nThe `REACT_EDITOR` environment variable controls which text editor opens during development when errors occur. The specific problem noted is not necessarily applicable to everyone but could help streamline the setup for new developers in the Volto project, avoiding potential confusion.\n\n## Good first steps\n1. Review the current `yarn start` command in the Volto project.\n2. Decide whether to modify the command or create an `.env` file.\n3. If you choose the second option, create a draft for how the `.env` file should look.\n4. Test your changes to ensure they work as expected.\n5. Consider writing documentation for future users. \n\nFeel free to reach out in this issue if you have questions!",
+        "path": "data/issues/summaries/plone/volto/2329.json"
+      }
+    },
+    {
+      "id": 746803333,
+      "number": 2002,
+      "title": "components/manage/Actions is not used anywhere",
+      "html_url": "https://github.com/plone/volto/issues/2002",
+      "repository_full_name": "plone/volto",
+      "repository_url": "https://api.github.com/repos/plone/volto",
+      "state": "open",
+      "created_at": "2020-11-19T17:57:06Z",
+      "updated_at": "2026-10-28T13:30:14Z",
+      "comments": 0,
+      "author": {
+        "login": "tiberiuichim",
+        "html_url": "https://github.com/tiberiuichim"
+      },
+      "assignees": [],
+      "labels": [
+        "04 type: enhancement",
+        "41 lvl: easy"
+      ],
+      "contributor_summary": {
+        "status": "available",
+        "generated_at": "2026-10-28T14:09:41Z",
+        "source_issue_updated_at": "2026-10-28T13:30:14Z",
+        "model": "gpt-4o-mini",
+        "summary_markdown": "## What this issue is about\nThis issue concerns the `components/manage/Actions` component in the Plone Volto repository. The author, [tiberiuichim](https://github.com/tiberiuichim), has noticed that this component is not referenced anywhere in the codebase. This raises questions about whether it is still needed or if it might be considered \"dead code.\"\n\n## What needs to be done\nWe need to investigate the `Actions` component to determine its usage status. If it is indeed unused, we should consider removing it from the codebase. If any aspects of it are needed, we may need to implement changes or find appropriate references.\n\n## Helpful background\nThis component is intended to manage actions in the Volto application. Understanding its context may require familiarity with Plone’s architecture and where components fit into the overall structure. As of now, there is no documentation or comments available regarding its purpose or utility.\n\n## Good first steps\n1. **Explore the Code**: Look through the repository to find any references to `components/manage/Actions`.\n2. **Reach out**: Engage with the community or leave a comment here if you need clarification or insights about this component.\n3. **Document Your Findings**: Share any findings in the comments, which can help guide next steps for cleanup or usage. Testing may also be required based on your discoveries.",
+        "path": "data/issues/summaries/plone/volto/2002.json"
+      }
+    },
     {
       "id": 1634448383,
       "number": 4584,
@@ -163,35 +567,6 @@
         "model": "gpt-4o-mini",
         "summary_markdown": "```markdown\n## What this issue is about\nThis issue aims to enhance the text-area form fields in the Volto framework by ensuring they have at least 10 lines by default and can dynamically increase in size as users type. This will help users see all their text without scrolling.\n\n## What needs to be done\n1. Update the Textarea widget to have a default of 10 rows.\n2. Implement functionality to allow the textarea to resize as the user types.\n3. Possible integration of the `react-textarea-autosize` module may be required for this feature.\n\n## Helpful background\nThe discussions indicate a desire to improve user experience with text areas. Current implementations might be limited due to CSS restrictions from `semantic-ui-react`, so exploring alternatives like `react-textarea-autosize` could be beneficial. Note that the conversation includes references to contributing guidelines and requirements for first-time contributors.\n\n## Good first steps\n1. Familiarize yourself with the relevant part of the codebase, particularly the `src/components/manage/Widgets/TextareaWidget.jsx`.\n2. Explore the potential usage of the `react-textarea-autosize` module.\n3. Review the [Plone contributing guidelines](https://6.docs.plone.org/contributing/index.html) to understand the expectations for contributions.\n4. Test your changes to ensure they work as intended before submitting a pull request.\n```",
         "path": "data/issues/summaries/plone/volto/1775.json"
-      }
-    },
-    {
-      "id": 604657916,
-      "number": 1404,
-      "title": "Supported field types in Volto",
-      "html_url": "https://github.com/plone/volto/issues/1404",
-      "repository_full_name": "plone/volto",
-      "repository_url": "https://api.github.com/repos/plone/volto",
-      "state": "open",
-      "created_at": "2020-04-22T10:50:53Z",
-      "updated_at": "2026-10-28T12:45:56Z",
-      "comments": 2,
-      "author": {
-        "login": "pbauer",
-        "html_url": "https://github.com/pbauer"
-      },
-      "assignees": [],
-      "labels": [
-        "04 type: enhancement",
-        "41 lvl: easy"
-      ],
-      "contributor_summary": {
-        "status": "available",
-        "generated_at": "2026-10-28T13:08:28Z",
-        "source_issue_updated_at": "2026-10-28T12:45:56Z",
-        "model": "gpt-4o-mini",
-        "summary_markdown": "```markdown\n## What this issue is about\nThis issue discusses enhancements to field types in Volto that are not fully supported or need fixing. The focus is on fields like `schema.Time`, `schema.Timedelta`, and `RelationChoice` that currently pose challenges within Volto.\n\n## What needs to be done\n1. Investigate serialization for unsupported field types (`schema.Time`, `schema.Timedelta`, `schema.Dict`).\n2. Improve the implementation of `RelationChoice` fields.\n3. Address issues with lists or sets using `value_type=schema.Choice`.\n4. Ensure that `directives.widget()` is acknowledged by Volto.\n\n## Helpful background\nThe issue highlights various problems in Volto regarding how specific fields function, referencing Plone 5 and its schema documentation. There are also sample illustrations of how these fields should look.\n\n## Good first steps\n1. Review the examples and screenshots in the references to grasp how these fields are intended to work.\n2. Test existing Volto field implementations and replicate the issues mentioned.\n3. Consider contributing code or insights based on findings.\n4. Engage with previous comments to understand the current state of the issue and existing pull requests.\n```",
-        "path": "data/issues/summaries/plone/volto/1404.json"
       }
     },
     {
@@ -1316,39 +1691,6 @@
       }
     },
     {
-      "id": 3988967668,
-      "number": 7947,
-      "title": "Improve `@plone/client` documentation",
-      "html_url": "https://github.com/plone/volto/issues/7947",
-      "repository_full_name": "plone/volto",
-      "repository_url": "https://api.github.com/repos/plone/volto",
-      "state": "open",
-      "created_at": "2026-02-25T11:42:33Z",
-      "updated_at": "2026-10-02T00:53:27Z",
-      "comments": 10,
-      "author": {
-        "login": "stevepiercy",
-        "html_url": "https://github.com/stevepiercy"
-      },
-      "assignees": [],
-      "labels": [
-        "04 type: enhancement",
-        "31 needs: help",
-        "33 needs: docs",
-        "41 lvl: easy",
-        "dependencies",
-        "27 status: stale"
-      ],
-      "contributor_summary": {
-        "status": "available",
-        "generated_at": "2026-10-02T01:27:10Z",
-        "source_issue_updated_at": "2026-10-02T00:53:27Z",
-        "model": "gpt-4o-mini",
-        "summary_markdown": "```markdown\n## What this issue is about\nThis issue focuses on improving the documentation for `@plone/client`. It involves adjusting references to TanStack Query and implementing the `sphinxcontrib.httpexample` extension to enhance HTTP API examples.\n\n## What needs to be done\n1. Remove references to TanStack Query terminology from the documentation, ensuring that the remaining text is clear and grammatically correct.\n2. Configure the Volto documentation to include the `sphinxcontrib.httpexample` extension and update HTTP API examples accordingly.\n3. Forward port the final documentation updates to the `seven` branch, primarily to copy the new documents and make necessary changes.\n\n## Helpful background\nFamiliarity with the Volto documentation structure and basic understanding of HTTP API calls will be beneficial. The original discussion indicated some ambiguity about which specific files need updates regarding the HTTP examples.\n\n## Good first steps\n- Check the existing documentation in [volto/docs/source/client](https://github.com/plone/volto/tree/main/docs/source/client) for areas that may need modifications.\n- Start by removing outdated TanStack Query references and ensure the new text is understandable.\n- Review the documentation for configuring `sphinxcontrib.httpexample`.\n\nFeel free to ask questions in the comments if you're unsure about any part!\n```",
-        "path": "data/issues/summaries/plone/volto/7947.json"
-      }
-    },
-    {
       "id": 4020920049,
       "number": 2065,
       "title": "Add Plone documentation to sites that attract first-time contributors",
@@ -1503,37 +1845,6 @@
         "model": "gpt-4o-mini",
         "summary_markdown": "## What this issue is about\nThis issue focuses on enhancing the Volto project by integrating Cypress to measure code coverage. Code coverage helps us understand which parts of our code are being tested, ensuring better quality and fewer bugs.\n\n## What needs to be done\nWe need to implement Cypress tests that can report code coverage. There's an existing solution from one of our contributors, so your job will be to help finalize and integrate this into the project.\n\n## Helpful background\nCypress is a testing framework popular for end-to-end testing. Code coverage measures how much of your source code is covered by tests, which is crucial for maintaining high-quality software. For detailed information on Cypress and code coverage, check [here](https://docs.cypress.io/guides/tooling/code-coverage.html#E2E-code-coverage).\n\n## Good first steps\n1. Familiarize yourself with Cypress by reviewing its [documentation](https://docs.cypress.io/).\n2. Check the discussions in this issue for any updates or solutions proposed by others—especially look for contributions by @valentinab25.\n3. If you're new, make sure to read the [First-time contributors](https://6.docs.plone.org/contributing/first-time.html) guide, which outlines useful tips and things to avoid. \n4. Consider reaching out in the comments if you have questions or need clarification. Happy contributing!",
         "path": "data/issues/summaries/plone/volto/1603.json"
-      }
-    },
-    {
-      "id": 1145243237,
-      "number": 3092,
-      "title": "Improve spellcheck",
-      "html_url": "https://github.com/plone/volto/issues/3092",
-      "repository_full_name": "plone/volto",
-      "repository_url": "https://api.github.com/repos/plone/volto",
-      "state": "open",
-      "created_at": "2022-02-21T02:25:04Z",
-      "updated_at": "2026-05-18T10:32:03Z",
-      "comments": 16,
-      "author": {
-        "login": "stevepiercy",
-        "html_url": "https://github.com/stevepiercy"
-      },
-      "assignees": [],
-      "labels": [
-        "04 type: enhancement",
-        "31 needs: help",
-        "33 needs: docs",
-        "41 lvl: easy"
-      ],
-      "contributor_summary": {
-        "status": "available",
-        "generated_at": "2026-05-18T11:23:16Z",
-        "source_issue_updated_at": "2026-05-18T10:32:03Z",
-        "model": "gpt-4o-mini",
-        "summary_markdown": "```markdown\n## What this issue is about\nThis issue focuses on improving spellcheck and ensuring consistent spellings in the Volto project. Specifically, suggestions include standardizing terms such as \"JavaScript\" and \"NodeJS\" while being careful not to accidentally alter commands or code blocks.\n\n## What needs to be done\nYou need to update `styles/Vocab/Plone/accept.txt` and `styles/Vocab/Plone/reject.txt` with the appropriate terms. The 'accept' file should include accepted spellings, whereas the 'reject' file should specify terms to avoid. \n\n## Helpful background\nSpellcheck in Volto utilizes a tool called Vale. It's important to familiarize yourself with how Vale works, particularly through the linked documentation: [Vale Documentation](https://vale.sh/docs/topics/vocab/). The issue is currently open, and adjustments can still be made based on ongoing discussions.\n\n## Good first steps\n1. Review the current list of accepted and rejected terms in `accept.txt` and `reject.txt`.\n2. Make a few consistent spelling changes that you feel comfortable with.\n3. Run the Vale command to test your changes.\n4. Create a pull request for review, focusing on small, manageable updates to facilitate easier reviews.\n5. Check the contribution guidelines [here](https://6.docs.plone.org/contributing/index.html) to ensure you're following best practices.\n```",
-        "path": "data/issues/summaries/plone/volto/3092.json"
       }
     },
     {
@@ -3027,37 +3338,6 @@
       }
     },
     {
-      "id": 224720089,
-      "number": 27,
-      "title": "Workflow comment and include contained items",
-      "html_url": "https://github.com/plone/volto/issues/27",
-      "repository_full_name": "plone/volto",
-      "repository_url": "https://api.github.com/repos/plone/volto",
-      "state": "open",
-      "created_at": "2017-04-27T09:09:29Z",
-      "updated_at": "2021-01-04T18:57:52Z",
-      "comments": 0,
-      "author": {
-        "login": "robgietema",
-        "html_url": "https://github.com/robgietema"
-      },
-      "assignees": [],
-      "labels": [
-        "04 type: enhancement",
-        "13 prio: normal",
-        "41 lvl: easy",
-        "26 status: blocked"
-      ],
-      "contributor_summary": {
-        "status": "available",
-        "generated_at": "2026-04-09T19:30:32Z",
-        "source_issue_updated_at": "2021-01-04T18:57:52Z",
-        "model": "gpt-4o-mini",
-        "summary_markdown": "## What this issue is about\nThis issue focuses on enhancing the workflow in the Volto project by enabling the inclusion of comments and contained items. This functionality will improve how users interact with and manage items and their comments within the Plone ecosystem.\n\n## What needs to be done\nThe main task is to implement the feature that allows workflow comments to include contained items. However, this enhancement is currently blocked, as noted in the issue description. You can find more details on the blocking issue [here](https://github.com/plone/plone.restapi/issues/333).\n\n## Helpful background\nWorkflow comments are a way to communicate context and status changes about items. Including contained items will allow for a richer interaction model. It's important to familiarize yourself with the existing workflow and comments functionalities in Volto and the Plone REST API.\n\n## Good first steps\n1. Review the existing implementation of workflows and comments in Volto.\n2. Familiarize yourself with the blocking issue (#333) and understand its implications.\n3. Join discussions or seek clarification on the possible approaches to take, as the details of implementation may be ambiguous or outdated.\n4. Consider how you can contribute, whether it's coding, providing feedback, or improving documentation.",
-        "path": "data/issues/summaries/plone/volto/27.json"
-      }
-    },
-    {
       "id": 446086080,
       "number": 54,
       "title": "Point the user to the install docs, if \"plonecli build\" fails",
@@ -3574,10 +3854,10 @@
   "message": null,
   "workflow": {
     "repository": "syslabcom/activity-recognition",
-    "run_id": "40693636092",
-    "run_number": "4161",
+    "run_id": "40702949798",
+    "run_number": "4162",
     "attempt": "1",
-    "url": "https://github.com/syslabcom/activity-recognition/actions/runs/40693636092",
-    "sha": "fa8de92f8967124ddbb0816ce6ec66367aa4b889"
+    "url": "https://github.com/syslabcom/activity-recognition/actions/runs/40702949798",
+    "sha": "8189e6e15b7b25516f2fe71b09231fc651219263"
   }
 }

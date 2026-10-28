@@ -1,7 +1,7 @@
 {
   "version": 1,
   "status": "success",
-  "generated_at": "2026-10-28T13:07:57Z",
+  "generated_at": "2026-10-28T14:08:09Z",
   "organization": "plone",
   "state": "open",
   "slug": "lvl-moderate",
@@ -11,6 +11,153 @@
   ],
   "issue_count": 70,
   "issues": [
+    {
+      "id": 2083336469,
+      "number": 5630,
+      "title": "Unify the use of the optional `preview_image_link` across Volto",
+      "html_url": "https://github.com/plone/volto/issues/5630",
+      "repository_full_name": "plone/volto",
+      "repository_url": "https://api.github.com/repos/plone/volto",
+      "state": "open",
+      "created_at": "2024-01-16T08:47:42Z",
+      "updated_at": "2026-10-28T13:58:37Z",
+      "comments": 7,
+      "author": {
+        "login": "sneridagh",
+        "html_url": "https://github.com/sneridagh"
+      },
+      "assignees": [],
+      "labels": [
+        "04 type: enhancement",
+        "42 lvl: moderate"
+      ],
+      "contributor_summary": {
+        "status": "available",
+        "generated_at": "2026-10-28T14:08:17Z",
+        "source_issue_updated_at": "2026-10-28T13:58:37Z",
+        "model": "gpt-4o-mini",
+        "summary_markdown": "```markdown\n## What this issue is about\nThis issue aims to unify the use of `preview_image_link` across the Volto codebase. Currently, Volto uses `preview_image`—which can lead to image duplication. The goal is to establish `preview_image_link`, which allows for reusable images, as a standard method.\n\n## What needs to be done\nThe main task is to locate all instances of `preview_image` in the code and ensure they support `preview_image_link` as a valid alternative. This will involve checking that the functionality works seamlessly and is properly documented.\n\n## Helpful background\nWhile the `preview_image_link` functionality is implemented in Volto, it is not enabled by default. Discussions have raised considerations about migration and compatibility with existing sites, especially regarding how images are handled for new versus existing installations.\n\n## Good first steps\n1. Familiarize yourself with the existing use of `preview_image` in the codebase.\n2. Review the documentation related to `preview_image_link`.\n3. Begin identifying code paths that require updates or documentation improvements.\n4. Collaborate with team members for insights or to clarify any uncertainties during your exploration.\n5. Prepare to help create tests to validate that `preview_image_link` functions correctly.\n```",
+        "path": "data/issues/summaries/plone/volto/5630.json"
+      }
+    },
+    {
+      "id": 614573796,
+      "number": 1459,
+      "title": "Workflow Manager",
+      "html_url": "https://github.com/plone/volto/issues/1459",
+      "repository_full_name": "plone/volto",
+      "repository_url": "https://api.github.com/repos/plone/volto",
+      "state": "open",
+      "created_at": "2020-05-08T07:50:20Z",
+      "updated_at": "2026-10-28T13:31:21Z",
+      "comments": 1,
+      "author": {
+        "login": "tisto",
+        "html_url": "https://github.com/tisto"
+      },
+      "assignees": [
+        "iRohitSingh"
+      ],
+      "labels": [
+        "04 type: enhancement",
+        "42 lvl: moderate",
+        "61 scope: editor"
+      ],
+      "contributor_summary": {
+        "status": "available",
+        "generated_at": "2026-10-28T14:09:09Z",
+        "source_issue_updated_at": "2026-10-28T13:31:21Z",
+        "model": "gpt-4o-mini",
+        "summary_markdown": "## What this issue is about\nThis issue is focused on enhancing the Workflow Manager in the Volto project, which is part of Plone. A visual representation of the current workflow has been provided to help illustrate the existing setup.\n\n## What needs to be done\nThe goal is to improve the Workflow Manager's functionality. Specific tasks were not detailed in the discussions, so expect some ambiguity about exact requirements and implementation steps.\n\n## Helpful background\nThe Workflow Manager helps users manage content states and transitions in the Plone CMS. Understanding workflows—how content moves from draft to published states—is essential. The comments indicate there's a connection to GSoC (Google Summer of Code), which might provide insights on further developments. \n\n## Good first steps\n1. Familiarize yourself with the current Workflow Manager and its functionalities.\n2. Review the existing visuals provided in the issue description.\n3. Reach out to the assignee, [iRohitSingh](https://github.com/iRohitSingh), for clarification, especially regarding GSoC details and the status of this enhancement.\n4. Consider checking the repository for related documentation or any existing tests to understand the context better.",
+        "path": "data/issues/summaries/plone/volto/1459.json"
+      }
+    },
+    {
+      "id": 2194664319,
+      "number": 5896,
+      "title": "It's confusing how to change my password as a logged in user",
+      "html_url": "https://github.com/plone/volto/issues/5896",
+      "repository_full_name": "plone/volto",
+      "repository_url": "https://api.github.com/repos/plone/volto",
+      "state": "open",
+      "created_at": "2024-03-19T11:06:08Z",
+      "updated_at": "2026-10-28T13:31:13Z",
+      "comments": 9,
+      "author": {
+        "login": "JeffersonBledsoe",
+        "html_url": "https://github.com/JeffersonBledsoe"
+      },
+      "assignees": [],
+      "labels": [
+        "04 type: enhancement",
+        "42 lvl: moderate",
+        "61 scope: editor"
+      ],
+      "contributor_summary": {
+        "status": "available",
+        "generated_at": "2026-10-28T14:09:14Z",
+        "source_issue_updated_at": "2026-10-28T13:31:13Z",
+        "model": "gpt-4o-mini",
+        "summary_markdown": "## What this issue is about\nThe current process for changing a password in Volto is confusing, as it only allows users to reset their password via the `/login` route using the \"Forgot your password\" link. We aim to improve this by enabling users to change their password directly from their user profile.\n\n## What needs to be done\nWe propose to add a \"Change my password\" feature in the user preferences menu, similar to how it's done in Classic Plone. This will involve ensuring proper authentication for the `/change-password` page and possibly improving the UI for the login-help section.\n\n## Helpful background\nDiscussions have highlighted that in Classic Plone, the password change option is found in the user preferences. There have also been suggestions to address the authentication issues to ensure users cannot access the change-password page without being logged in.\n\n## Good first steps\n1. Review the current user preferences layout and propose changes to include a password change option.\n2. Ensure that the `/change-password` page requires authentication.\n3. Attend the Volto Team meetings to discuss the workflow and gather insights from other contributors.\n4. Look into integrating a function to retrieve usernames based on email for the login help feature.",
+        "path": "data/issues/summaries/plone/volto/5896.json"
+      }
+    },
+    {
+      "id": 335082047,
+      "number": 182,
+      "title": "Page transitions for React Router",
+      "html_url": "https://github.com/plone/volto/issues/182",
+      "repository_full_name": "plone/volto",
+      "repository_url": "https://api.github.com/repos/plone/volto",
+      "state": "open",
+      "created_at": "2018-06-23T08:41:50Z",
+      "updated_at": "2026-10-28T13:30:32Z",
+      "comments": 2,
+      "author": {
+        "login": "davisagli",
+        "html_url": "https://github.com/davisagli"
+      },
+      "assignees": [],
+      "labels": [
+        "04 type: enhancement",
+        "13 prio: normal",
+        "21 status: confirmed",
+        "31 needs: help",
+        "42 lvl: moderate",
+        "62 scope: viewer"
+      ],
+      "contributor_summary": {
+        "status": "available",
+        "generated_at": "2026-10-28T14:09:33Z",
+        "source_issue_updated_at": "2026-10-28T13:30:32Z",
+        "model": "gpt-4o-mini",
+        "summary_markdown": "## What this issue is about\nThis issue addresses the need for adding a loading spinner during page transitions in the Volto project. Currently, when users navigate through the site, it feels unresponsive since the browser doesn’t show any loading indication despite API requests happening in the background.\n\n## What needs to be done\nThe goal is to implement a loading spinner that appears when navigating between pages, improving the user experience by visually indicating that content is loading. The suggestion is to replace the logo in the toolbar temporarily with this spinner.\n\n## Helpful background\nAs noted, page transitions occur through API calls, which can make the site feel sluggish without visual feedback. React Router is used for navigation, and integrating animations or spinners here would enhance perceived performance.\n\n## Good first steps\n1. Check the existing implementation of React Router in the Volto project.\n2. Explore options for integrating a loading spinner when routes change.\n3. Review the conversations in this issue for community insights and nuances. \n4. Consider testing the spinner across different areas to ensure it operates smoothly.\n5. Feel free to ask for help if you’re unsure about any steps!",
+        "path": "data/issues/summaries/plone/volto/182.json"
+      }
+    },
+    {
+      "id": 6079925695,
+      "number": 328,
+      "title": "Build Storybook for a PR preview on `Aurora` branch",
+      "html_url": "https://github.com/plone/aurora/issues/328",
+      "repository_full_name": "plone/aurora",
+      "repository_url": "https://api.github.com/repos/plone/aurora",
+      "state": "open",
+      "created_at": "2025-05-30T10:54:47Z",
+      "updated_at": "2026-10-28T13:29:52Z",
+      "comments": 4,
+      "author": {
+        "login": "stevepiercy",
+        "html_url": "https://github.com/stevepiercy"
+      },
+      "assignees": [],
+      "labels": [
+        "04 type: enhancement",
+        "31 needs: help",
+        "33 needs: docs",
+        "42 lvl: moderate"
+      ]
+    },
     {
       "id": 2019631898,
       "number": 5466,
@@ -228,95 +375,6 @@
         "model": "gpt-4o-mini",
         "summary_markdown": "```markdown\n## What this issue is about\nThis issue addresses the need for a clear deprecation policy and guidelines in the Volto documentation. Currently, there are no dedicated resources for developers on how to deprecate features effectively, despite having similar guidance available for Plone 6.\n\n## What needs to be done\nWe need to create a section specifically about deprecation in Volto. This could take the form of a dedicated \"Deprecation policy\" page or add guidelines to the existing Version policy. It should include practical examples and Volto-specific details that adapt current Plone 6 documentation.\n\n## Helpful background\nThe discussion indicates that adapting existing guidance from Plone 6 could be beneficial. There is agreement among contributors on the importance of these guidelines, but no consensus on the structure or format as of now. This requires further discussion among the team to finalize an approach.\n\n## Good first steps\n1. Review the existing Plone 6 deprecation guides to understand the content.\n2. Participate in upcoming team discussions to share your ideas on how to structure the new documentation.\n3. Once a path is agreed upon, you can help draft or refine the new documentation section.\n4. If you're unsure, feel free to reach out to team members for guidance and support.\n```",
         "path": "data/issues/summaries/plone/volto/7696.json"
-      }
-    },
-    {
-      "id": 3102884999,
-      "number": 7159,
-      "title": "Build Storybook for a PR preview on `Aurora` branch",
-      "html_url": "https://github.com/plone/volto/issues/7159",
-      "repository_full_name": "plone/volto",
-      "repository_url": "https://api.github.com/repos/plone/volto",
-      "state": "open",
-      "created_at": "2025-05-30T10:54:47Z",
-      "updated_at": "2026-06-02T09:29:25Z",
-      "comments": 8,
-      "author": {
-        "login": "stevepiercy",
-        "html_url": "https://github.com/stevepiercy"
-      },
-      "assignees": [],
-      "labels": [
-        "04 type: enhancement",
-        "31 needs: help",
-        "33 needs: docs",
-        "42 lvl: moderate"
-      ],
-      "contributor_summary": {
-        "status": "available",
-        "generated_at": "2026-06-02T09:30:19Z",
-        "source_issue_updated_at": "2026-06-02T09:29:25Z",
-        "model": "gpt-4o-mini",
-        "summary_markdown": "```markdown\n## What this issue is about\nThis issue discusses the possibility of building Storybook for previewing pull requests (PRs) on the `Aurora` branch of Volto. Currently, any link to Storybook in preview PRs redirects to the stable version, which makes it difficult to view changes.\n\n## What needs to be done\nWe need to explore how to configure the build process so that PR-specific Storybook URLs are generated instead of redirecting to the stable version. This involves potentially changing redirect settings based on notification of changes in relevant branches.\n\n## Helpful background\nThe discussion indicates there may be uncertainties about the exact implementations needed to achieve this. The comments suggest some ways forward, but details on configuration may require further investigation, especially with integration in Read the Docs (RTD).\n\n## Good first steps\n1. Check the current configuration in `docs/conf.py` and `.readthedocs.yaml` for any redirect settings related to Storybook.\n2. Review the existing documentation for Read the Docs related to building PRs.\n3. Look into the links shared in comments for broader context.\n4. Engage with team members in the next Volto meeting for additional insights and support.\n```",
-        "path": "data/issues/summaries/plone/volto/7159.json"
-      }
-    },
-    {
-      "id": 2083336469,
-      "number": 5630,
-      "title": "Unify the use of the optional `preview_image_link` across Volto",
-      "html_url": "https://github.com/plone/volto/issues/5630",
-      "repository_full_name": "plone/volto",
-      "repository_url": "https://api.github.com/repos/plone/volto",
-      "state": "open",
-      "created_at": "2024-01-16T08:47:42Z",
-      "updated_at": "2026-05-19T08:43:44Z",
-      "comments": 6,
-      "author": {
-        "login": "sneridagh",
-        "html_url": "https://github.com/sneridagh"
-      },
-      "assignees": [],
-      "labels": [
-        "04 type: enhancement",
-        "42 lvl: moderate"
-      ],
-      "contributor_summary": {
-        "status": "available",
-        "generated_at": "2026-05-19T09:14:09Z",
-        "source_issue_updated_at": "2026-05-19T08:43:44Z",
-        "model": "gpt-4o-mini",
-        "summary_markdown": "```markdown\n## What this issue is about\nThis issue proposes to unify the use of `preview_image_link` in Volto to allow better reuse of images across content types instead of duplicating them with `preview_image`. The aim is to support this change smoothly throughout the Volto codebase.\n\n## What needs to be done\n1. Update the code to ensure that `preview_image_link` is correctly used wherever `preview_image` is currently implemented.\n2. Modify new instances of Volto to enable `preview_image_link` by default for new sites, while retaining the `preview_image` option for existing sites to avoid migration issues.\n\n## Helpful background\n`preview_image` currently stores images as a direct attribute, which can duplicate images. The new `preview_image_link` uses a RelationChoice pointer, helping in scenarios like implementing a Digital Asset Management System (DAMS).\n\n## Good first steps\n1. Explore the Volto codebase for any hardcoded instances of `preview_image`.\n2. Test the `preview_image_link` functionality and consider how it can be documented for clarity.\n3. Engage with fellow contributors for feedback and guidance, especially around the implications of enabling this feature by default in new sites.\n```",
-        "path": "data/issues/summaries/plone/volto/5630.json"
-      }
-    },
-    {
-      "id": 2194664319,
-      "number": 5896,
-      "title": "It's confusing how to change my password as a logged in user",
-      "html_url": "https://github.com/plone/volto/issues/5896",
-      "repository_full_name": "plone/volto",
-      "repository_url": "https://api.github.com/repos/plone/volto",
-      "state": "open",
-      "created_at": "2024-03-19T11:06:08Z",
-      "updated_at": "2026-05-18T10:43:34Z",
-      "comments": 9,
-      "author": {
-        "login": "JeffersonBledsoe",
-        "html_url": "https://github.com/JeffersonBledsoe"
-      },
-      "assignees": [],
-      "labels": [
-        "04 type: enhancement",
-        "42 lvl: moderate"
-      ],
-      "contributor_summary": {
-        "status": "available",
-        "generated_at": "2026-05-18T11:22:47Z",
-        "source_issue_updated_at": "2026-05-18T10:43:34Z",
-        "model": "gpt-4o-mini",
-        "summary_markdown": "```markdown\n## What this issue is about\nThis issue addresses the confusion users face when trying to change their passwords in Volto. Currently, users must go through the \"Forgot your password?\" option via the `/login` route. The aim is to allow users to change their passwords from their personal profile.\n\n## What needs to be done\nTo enhance user experience, we want to:\n- Add an option in the user preferences to change the password directly.\n- Ensure the `/change-password` page requires user authentication, displaying an \"Unauthorized\" notification for unauthenticated attempts.\n- Possibly include a \"Get help\" link for users who encounter issues.\n\n## Helpful background\nIn Classic Plone, users can change their passwords through the `@@personal-preferences` section. It's suggested we keep the navigation and functionality consistent with that model. Key discussions about functionality and navigation improvements are ongoing.\n\n## Good first steps\n1. Familiarize yourself with the current user preferences implementation.\n2. Review how the `@@change-password` link is integrated in Classic Plone.\n3. Consider designing the UI to include the password change feature.\n4. Attend the upcoming Volto Team meeting for further insights and coordination.\n5. Explore user authentication handling and permissions, especially regarding how users can return their passwords via email.\n```",
-        "path": "data/issues/summaries/plone/volto/5896.json"
       }
     },
     {
@@ -1566,38 +1624,6 @@
       }
     },
     {
-      "id": 335082047,
-      "number": 182,
-      "title": "Page transitions for React Router",
-      "html_url": "https://github.com/plone/volto/issues/182",
-      "repository_full_name": "plone/volto",
-      "repository_url": "https://api.github.com/repos/plone/volto",
-      "state": "open",
-      "created_at": "2018-06-23T08:41:50Z",
-      "updated_at": "2023-12-12T17:47:34Z",
-      "comments": 2,
-      "author": {
-        "login": "davisagli",
-        "html_url": "https://github.com/davisagli"
-      },
-      "assignees": [],
-      "labels": [
-        "04 type: enhancement",
-        "13 prio: normal",
-        "21 status: confirmed",
-        "31 needs: help",
-        "42 lvl: moderate"
-      ],
-      "contributor_summary": {
-        "status": "available",
-        "generated_at": "2026-04-09T17:28:11Z",
-        "source_issue_updated_at": "2023-12-12T17:47:34Z",
-        "model": "gpt-4o-mini",
-        "summary_markdown": "```markdown\n## What this issue is about\nThis issue addresses the lack of visual feedback during page transitions in Volto when using React Router. Currently, there is no spinner or loading indicator, which can make the site feel unresponsive, even though navigation is efficient.\n\n## What needs to be done\nTo improve user experience, we should implement a loading spinner that appears during API requests (page transitions). One suggestion is to replace the logo in the toolbar with the spinner while the new page loads. \n\n## Helpful background\nWhen navigating, the application sends API requests without a browser loading indicator, which can confuse users. Adding a visual cue like a spinner is a common way to signal that a page is loading.\n\n## Good first steps\n1. Review React Router documentation to understand how to integrate a loading spinner.\n2. Examine existing components in the Volto codebase for modifying the toolbar.\n3. Consider creating a simple loading spinner animation for this feature.\n4. If you're unsure about any part of the implementation, feel free to ask for clarification in the comments or check for clarity on the issue’s status, as some discussions may have changed over time.\n5. After implementing, ensure to test the changes thoroughly for a smooth user experience.\n```",
-        "path": "data/issues/summaries/plone/volto/182.json"
-      }
-    },
-    {
       "id": 1778434053,
       "number": 153,
       "title": "Validate that template's markup is valid",
@@ -1912,37 +1938,6 @@
       }
     },
     {
-      "id": 614573796,
-      "number": 1459,
-      "title": "Workflow Manager",
-      "html_url": "https://github.com/plone/volto/issues/1459",
-      "repository_full_name": "plone/volto",
-      "repository_url": "https://api.github.com/repos/plone/volto",
-      "state": "open",
-      "created_at": "2020-05-08T07:50:20Z",
-      "updated_at": "2022-12-03T16:46:53Z",
-      "comments": 1,
-      "author": {
-        "login": "tisto",
-        "html_url": "https://github.com/tisto"
-      },
-      "assignees": [
-        "iRohitSingh"
-      ],
-      "labels": [
-        "04 type: enhancement",
-        "42 lvl: moderate"
-      ],
-      "contributor_summary": {
-        "status": "available",
-        "generated_at": "2026-04-09T19:29:34Z",
-        "source_issue_updated_at": "2022-12-03T16:46:53Z",
-        "model": "gpt-4o-mini",
-        "summary_markdown": "## What this issue is about\nThis issue involves enhancing the Workflow Manager in the Plone Volto project. The goal is to improve how workflows are managed within the system, as shown in the accompanying images. Currently, the discussion is open, and there is some ambiguity regarding the specifics of the implementation.\n\n## What needs to be done\nWe aim to enhance workflow management features. However, the detailed requirements and implementation steps are not clearly defined in the issue discussion. Coordination with the current assignee, iRohitSingh, is needed to get an updated status and direction for the work.\n\n## Helpful background\nWorkflow management is crucial for controlling content approval processes in Plone. Understanding how workflows function in the system will be beneficial. You can find more information on Plone's documentation site about workflows and their configurations.\n\n## Good first steps\n1. Review the current Workflow Manager in Volto.\n2. Check out the linked images to understand existing workflows.\n3. Reach out to iRohitSingh for the latest updates and guidance on your contribution.\n4. Consider familiarizing yourself with relevant workflows in the Plone documentation to better understand the context.",
-        "path": "data/issues/summaries/plone/volto/1459.json"
-      }
-    },
-    {
       "id": 106998535,
       "number": 1018,
       "title": "Uploade \"site logo\" not validated ",
@@ -2187,10 +2182,10 @@
   "message": null,
   "workflow": {
     "repository": "syslabcom/activity-recognition",
-    "run_id": "40693636092",
-    "run_number": "4161",
+    "run_id": "40702949798",
+    "run_number": "4162",
     "attempt": "1",
-    "url": "https://github.com/syslabcom/activity-recognition/actions/runs/40693636092",
-    "sha": "fa8de92f8967124ddbb0816ce6ec66367aa4b889"
+    "url": "https://github.com/syslabcom/activity-recognition/actions/runs/40702949798",
+    "sha": "8189e6e15b7b25516f2fe71b09231fc651219263"
   }
 }

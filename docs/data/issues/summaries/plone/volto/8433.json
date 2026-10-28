@@ -1,0 +1,34 @@
+{
+  "version": 1,
+  "status": "success",
+  "generated_at": "2026-10-28T14:08:47Z",
+  "source_issue": {
+    "id": 5524877927,
+    "number": 8433,
+    "title": "Username & password should not autocomplete on new user form",
+    "html_url": "https://github.com/plone/volto/issues/8433",
+    "repository_full_name": "plone/volto",
+    "updated_at": "2026-10-28T13:33:21Z",
+    "labels": [
+      "01 type: bug",
+      "21 status: confirmed",
+      "41 lvl: easy",
+      "99 tag: UX Accessibility",
+      "61 scope: editor"
+    ],
+    "comments": 3
+  },
+  "ai": {
+    "provider": "openai",
+    "model": "gpt-4o-mini"
+  },
+  "summary_markdown": "```markdown\n## What this issue is about\nThis issue addresses a bug regarding the \"Add New User\" form in the Users control panel of Plone. When filling out this form, your browser may automatically suggest your saved username and password, which can lead to confusion. The goal is to disable this autocomplete feature for better user experience.\n\n## What needs to be done\nYou need to modify the code in the `UsersControlpanel.jsx` file to ensure that the `username` and `password` fields do not trigger autocomplete. Currently, it seems that the autocomplete settings are either missing or incorrect.\n\n## Helpful background\nThe issue is confirmed and has been present in the main Volto branch. Some details from the discussion indicate that while the password field uses `autoComplete=\"off\"`, browsers often ignore this for passwords. Instead, it should use `autoComplete=\"new-password\"` for better compliance. Your modifications should address this.\n\n## Good first steps\n1. Review the file `UsersControlpanel.jsx`, focusing on the username and password input fields.\n2. Change the autocomplete attributes to disable autofill effectively.\n3. After making changes, conduct tests to ensure that the fields behave as expected in various browsers.\n4. Check the [Plone Contributor Agreement](https://6.docs.plone.org/volto/contributing/index.html) to start contributing.\n5. Consider opening a pull request once you've made and tested your changes!\n```",
+  "workflow": {
+    "repository": "syslabcom/activity-recognition",
+    "run_id": "40702949798",
+    "run_number": "4162",
+    "attempt": "1",
+    "url": "https://github.com/syslabcom/activity-recognition/actions/runs/40702949798",
+    "sha": "8189e6e15b7b25516f2fe71b09231fc651219263"
+  }
+}

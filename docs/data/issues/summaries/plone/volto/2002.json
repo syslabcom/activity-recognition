@@ -1,0 +1,31 @@
+{
+  "version": 1,
+  "status": "success",
+  "generated_at": "2026-10-28T14:09:41Z",
+  "source_issue": {
+    "id": 746803333,
+    "number": 2002,
+    "title": "components/manage/Actions is not used anywhere",
+    "html_url": "https://github.com/plone/volto/issues/2002",
+    "repository_full_name": "plone/volto",
+    "updated_at": "2026-10-28T13:30:14Z",
+    "labels": [
+      "04 type: enhancement",
+      "41 lvl: easy"
+    ],
+    "comments": 0
+  },
+  "ai": {
+    "provider": "openai",
+    "model": "gpt-4o-mini"
+  },
+  "summary_markdown": "## What this issue is about\nThis issue concerns the `components/manage/Actions` component in the Plone Volto repository. The author, [tiberiuichim](https://github.com/tiberiuichim), has noticed that this component is not referenced anywhere in the codebase. This raises questions about whether it is still needed or if it might be considered \"dead code.\"\n\n## What needs to be done\nWe need to investigate the `Actions` component to determine its usage status. If it is indeed unused, we should consider removing it from the codebase. If any aspects of it are needed, we may need to implement changes or find appropriate references.\n\n## Helpful background\nThis component is intended to manage actions in the Volto application. Understanding its context may require familiarity with Plone’s architecture and where components fit into the overall structure. As of now, there is no documentation or comments available regarding its purpose or utility.\n\n## Good first steps\n1. **Explore the Code**: Look through the repository to find any references to `components/manage/Actions`.\n2. **Reach out**: Engage with the community or leave a comment here if you need clarification or insights about this component.\n3. **Document Your Findings**: Share any findings in the comments, which can help guide next steps for cleanup or usage. Testing may also be required based on your discoveries.",
+  "workflow": {
+    "repository": "syslabcom/activity-recognition",
+    "run_id": "40702949798",
+    "run_number": "4162",
+    "attempt": "1",
+    "url": "https://github.com/syslabcom/activity-recognition/actions/runs/40702949798",
+    "sha": "8189e6e15b7b25516f2fe71b09231fc651219263"
+  }
+}

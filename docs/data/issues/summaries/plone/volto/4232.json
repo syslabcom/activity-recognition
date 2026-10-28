@@ -1,18 +1,19 @@
 {
   "version": 1,
   "status": "success",
-  "generated_at": "2026-05-18T11:23:38Z",
+  "generated_at": "2026-10-28T14:09:22Z",
   "source_issue": {
     "id": 1521394653,
     "number": 4232,
     "title": "Move new CSRF docs from Classic UI to Backend?",
     "html_url": "https://github.com/plone/volto/issues/4232",
     "repository_full_name": "plone/volto",
-    "updated_at": "2026-05-18T10:28:01Z",
+    "updated_at": "2026-10-28T13:30:52Z",
     "labels": [
       "04 type: enhancement",
       "33 needs: docs",
-      "43 lvl: complex"
+      "43 lvl: complex",
+      "99 tag: docs"
     ],
     "comments": 20
   },
@@ -20,13 +21,13 @@
     "provider": "openai",
     "model": "gpt-4o-mini"
   },
-  "summary_markdown": "```markdown\n## What this issue is about\nThis issue discusses whether the documentation for Cross-Site Request Forgery (CSRF) should be moved from the Classic UI section to the Backend section. It raises questions about whether additional content specific to Volto is needed. \n\n## What needs to be done\n1. Move the CSRF documentation from Classic UI to Backend.\n2. Update the documentation to clarify that automatic CSRF protection may only apply to the Classic UI.\n3. Consider whether any additional checks are necessary for handling CSRF in Volto's REST API.\n\n## Helpful background\nThe discussion has highlighted some ambiguity regarding CSRF protection in Volto. It's suggested that while CSRF may not be strictly required for JSON web services, proper request validation and CORS settings are crucial. Some contributors believe the current approach to CSRF protection in Volto might need refinement.\n\n## Good first steps\n1. Review the existing documentation on CSRF to understand its current content.\n2. Gather insights from the ongoing conversation for any additional information that needs to be clarified.\n3. Collaborate with team members to finalize the content before moving the documentation.\n4. Be aware that this issue is considered moderate in difficulty due to ongoing discussions and lack of definitive agreements.\n```",
+  "summary_markdown": "```markdown\n## What this issue is about\nThis issue discusses whether the newly created Cross-Site Request Forgery (CSRF) documentation page, currently under \"Classic UI,\" should be moved to \"Backend\" and if it needs updates specific to Volto.\n\n## What needs to be done\n1. **Move Documentation**: Transition the CSRF page from \"Classic UI\" to \"Backend.\"\n2. **Content Updates**: Review and update the content to clarify that automatic CSRF protection may only apply to Classic UI, as there are unresolved questions about CSRF checks in Volto.\n\n## Helpful background\nThe discussion around CSRF protection indicates uncertainty in the Volto framework. Various participants have differing views on whether CSRF should be disabled or how it is managed in REST API calls. A comprehensive understanding of these processes is required before finalizing documentation.\n\n## Good first steps\n- Start by reviewing the current CSRF documentation.\n- Check the discussions and linked resources mentioned in the comments for insights on CSRF behavior in Volto.\n- Engage with the community for clarification on any uncertainties.\n- Make initial changes to the documentation and share them for feedback before a pull request.\n```",
   "workflow": {
     "repository": "syslabcom/activity-recognition",
-    "run_id": "26030380574",
-    "run_number": "895",
+    "run_id": "40702949798",
+    "run_number": "4162",
     "attempt": "1",
-    "url": "https://github.com/syslabcom/activity-recognition/actions/runs/26030380574",
-    "sha": "fa2346b25110d8f5bb79f199b45634ae384d4c02"
+    "url": "https://github.com/syslabcom/activity-recognition/actions/runs/40702949798",
+    "sha": "8189e6e15b7b25516f2fe71b09231fc651219263"
   }
 }

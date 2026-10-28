@@ -1,7 +1,7 @@
 ---
 title: "Plone issue list — Level: Moderate"
 permalink: "/issues/lvl-moderate/"
-generated_at: "2026-10-28T13:07:57Z"
+generated_at: "2026-10-28T14:08:09Z"
 organization: "plone"
 issue_count: 70
 required_labels:
@@ -10,7 +10,7 @@ required_labels:
 
 # Plone issue list — Level: Moderate
 
-Generated: `2026-10-28T13:07:57Z`  
+Generated: `2026-10-28T14:08:09Z`  
 Organization: `plone`  
 Required label: `42 lvl: moderate`  
 Issue count: `70`
@@ -19,6 +19,11 @@ Sorted by last updated date, newest first.
 
 | Updated | Repository | Issue | Author | Labels |
 | --- | --- | --- | --- | --- |
+| 2026-10-28 13:58 UTC | `plone/volto` | [#5630 Unify the use of the optional `preview_image_link` across Volto](https://github.com/plone/volto/issues/5630) | `sneridagh` | `04 type: enhancement`, `42 lvl: moderate` |
+| 2026-10-28 13:31 UTC | `plone/volto` | [#1459 Workflow Manager](https://github.com/plone/volto/issues/1459) | `tisto` | `04 type: enhancement`, `42 lvl: moderate`, `61 scope: editor` |
+| 2026-10-28 13:31 UTC | `plone/volto` | [#5896 It's confusing how to change my password as a logged in user](https://github.com/plone/volto/issues/5896) | `JeffersonBledsoe` | `04 type: enhancement`, `42 lvl: moderate`, `61 scope: editor` |
+| 2026-10-28 13:30 UTC | `plone/volto` | [#182 Page transitions for React Router](https://github.com/plone/volto/issues/182) | `davisagli` | `04 type: enhancement`, `13 prio: normal`, `21 status: confirmed`, `31 needs: help`, `42 lvl: moderate`, `62 scope: viewer` |
+| 2026-10-28 13:29 UTC | `plone/aurora` | [#328 Build Storybook for a PR preview on `Aurora` branch](https://github.com/plone/aurora/issues/328) | `stevepiercy` | `04 type: enhancement`, `31 needs: help`, `33 needs: docs`, `42 lvl: moderate` |
 | 2026-10-27 22:22 UTC | `plone/volto` | [#5466 Sidebar and toolbar shrink/ expanded functionality should work correctly for screen reader users](https://github.com/plone/volto/issues/5466) | `JeffersonBledsoe` | `01 type: bug`, `42 lvl: moderate`, `99 tag: UX Accessibility`, `61 scope: editor` |
 | 2026-10-27 21:36 UTC | `plone/volto` | [#5499 Fix LESS syntax highlighting](https://github.com/plone/volto/issues/5499) | `stevepiercy` | `01 type: bug`, `21 status: confirmed`, `33 needs: docs`, `42 lvl: moderate` |
 | 2026-10-27 21:32 UTC | `plone/volto` | [#3834 Document cypress commands, retrofit them to existing tests](https://github.com/plone/volto/issues/3834) | `tiberiuichim` | `33 needs: docs`, `42 lvl: moderate`, `99 tag: docs` |
@@ -26,9 +31,6 @@ Sorted by last updated date, newest first.
 | 2026-09-29 13:05 UTC | `plone/Products.CMFPlone` | [#3953 PLIP: Start separating Blicca (Classic UI) code from the core](https://github.com/plone/Products.CMFPlone/issues/3953) | `tisto` | `31 needs: help`, `99 tag: cleanup`, `03 type: feature (plip)`, `13 prio: normal`, `42 lvl: moderate`, `53 target: major`, `99 tag: Classic UI` |
 | 2026-09-28 00:07 UTC | `plone/aurora` | [#179 System requirements should be updated](https://github.com/plone/aurora/issues/179) | `stevepiercy` | `33 needs: docs`, `42 lvl: moderate` |
 | 2026-06-29 01:19 UTC | `plone/volto` | [#7696 Add deprecation policy or guide to documentation](https://github.com/plone/volto/issues/7696) | `stevepiercy` | `04 type: enhancement`, `33 needs: docs`, `42 lvl: moderate`, `discussion` |
-| 2026-06-02 09:29 UTC | `plone/volto` | [#7159 Build Storybook for a PR preview on `Aurora` branch](https://github.com/plone/volto/issues/7159) | `stevepiercy` | `04 type: enhancement`, `31 needs: help`, `33 needs: docs`, `42 lvl: moderate` |
-| 2026-05-19 08:43 UTC | `plone/volto` | [#5630 Unify the use of the optional `preview_image_link` across Volto](https://github.com/plone/volto/issues/5630) | `sneridagh` | `04 type: enhancement`, `42 lvl: moderate` |
-| 2026-05-18 10:43 UTC | `plone/volto` | [#5896 It's confusing how to change my password as a logged in user](https://github.com/plone/volto/issues/5896) | `JeffersonBledsoe` | `04 type: enhancement`, `42 lvl: moderate` |
 | 2026-05-18 10:40 UTC | `plone/volto` | [#5627 Update i18n machinery to latest `react-intl`](https://github.com/plone/volto/issues/5627) | `sneridagh` | `03 type: feature (plip)`, `42 lvl: moderate` |
 | 2026-03-23 22:38 UTC | `plone/Products.CMFPlone` | [#3837 Plone 6.0 Classic-UI: where can I set default pattern options](https://github.com/plone/Products.CMFPlone/issues/3837) | `fredvd` | `01 type: bug`, `99 tag: UX Integrator/Themer`, `13 prio: normal`, `21 status: confirmed`, `42 lvl: moderate`, `99 tag: resource registry`, `99 tag: Plone 6.0` |
 | 2026-03-23 21:55 UTC | `plone/Products.CMFPlone` | [#3428 The renderer of sendto_template.pt is corrupting the whitespace](https://github.com/plone/Products.CMFPlone/issues/3428) | `Rudd-O` | `01 type: bug`, `02 type: regression`, `31 needs: help`, `42 lvl: moderate` |
@@ -69,7 +71,6 @@ Sorted by last updated date, newest first.
 | 2024-02-04 21:57 UTC | `plone/volto` | [#3198 Documenting URL helpers API](https://github.com/plone/volto/issues/3198) | `tiberiuichim` | `04 type: enhancement`, `33 needs: docs`, `42 lvl: moderate` |
 | 2024-01-09 07:21 UTC | `plone/volto` | [#293 Embed (via iFrame) Block](https://github.com/plone/volto/issues/293) | `robgietema` | `04 type: enhancement`, `14 prio: low`, `21 status: confirmed`, `42 lvl: moderate` |
 | 2024-01-08 11:54 UTC | `plone/documentation` | [#1360 Backend instructions should explain how to add add-ons](https://github.com/plone/documentation/issues/1360) | `Rudd-O` | `42 lvl: moderate`, `99 tag: backend` |
-| 2023-12-12 17:47 UTC | `plone/volto` | [#182 Page transitions for React Router](https://github.com/plone/volto/issues/182) | `davisagli` | `04 type: enhancement`, `13 prio: normal`, `21 status: confirmed`, `31 needs: help`, `42 lvl: moderate` |
 | 2023-10-14 12:19 UTC | `plone/meta` | [#153 Validate that template's markup is valid](https://github.com/plone/meta/issues/153) | `gforcada` | `04 type: enhancement`, `13 prio: normal`, `42 lvl: moderate` |
 | 2023-06-29 10:46 UTC | `plone/meta` | [#129 Add basic configuration for `MANIFEST.in`?](https://github.com/plone/meta/issues/129) | `gforcada` | `04 type: enhancement`, `14 prio: low`, `42 lvl: moderate` |
 | 2023-05-27 11:16 UTC | `plone/meta` | [#97 Improve coverage reports](https://github.com/plone/meta/issues/97) | `gforcada` | `04 type: enhancement`, `13 prio: normal`, `42 lvl: moderate` |
@@ -80,7 +81,6 @@ Sorted by last updated date, newest first.
 | 2023-03-12 15:05 UTC | `plone/Products.CMFPlone` | [#701 The 'home' button is selected in 'Site Setup'](https://github.com/plone/Products.CMFPlone/issues/701) | `jaroel` | `04 type: enhancement`, `31 needs: help`, `14 prio: low`, `21 status: confirmed`, `42 lvl: moderate` |
 | 2023-03-12 14:30 UTC | `plone/Products.CMFPlone` | [#1298 Portal default timezone settings should be taken into account for effective/expiration dates](https://github.com/plone/Products.CMFPlone/issues/1298) | `agitator` | `01 type: bug`, `31 needs: help`, `12 prio: high`, `42 lvl: moderate` |
 | 2023-03-12 14:17 UTC | `plone/Products.CMFPlone` | [#674 optionally create more complex demo content for new Plone sites](https://github.com/plone/Products.CMFPlone/issues/674) | `tkimnguyen` | `04 type: enhancement`, `31 needs: help`, `14 prio: low`, `42 lvl: moderate` |
-| 2022-12-03 16:46 UTC | `plone/volto` | [#1459 Workflow Manager](https://github.com/plone/volto/issues/1459) | `tisto` | `04 type: enhancement`, `42 lvl: moderate` |
 | 2022-08-24 22:02 UTC | `plone/Products.CMFPlone` | [#1018 Uploade "site logo" not validated ](https://github.com/plone/Products.CMFPlone/issues/1018) | `zopyx` | `01 type: bug`, `99 tag: UX Site Admin`, `31 needs: help`, `14 prio: low`, `42 lvl: moderate` |
 | 2022-05-02 13:53 UTC | `plone/volto` | [#3095 Locking Control Panel](https://github.com/plone/volto/issues/3095) | `tisto` | `04 type: enhancement`, `42 lvl: moderate` |
 | 2022-05-02 09:13 UTC | `plone/plone.app.discussion` | [#196 Todo: Remove traces of LinguaPlone](https://github.com/plone/plone.app.discussion/issues/196) | `jensens` | `31 needs: help`, `04 type: enhancement`, `13 prio: normal`, `42 lvl: moderate` |

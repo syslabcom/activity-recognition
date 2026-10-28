@@ -1,0 +1,31 @@
+{
+  "version": 1,
+  "status": "success",
+  "generated_at": "2026-10-28T14:09:27Z",
+  "source_issue": {
+    "id": 1410407963,
+    "number": 3778,
+    "title": "Relax requirements for razzle.extend.js",
+    "html_url": "https://github.com/plone/volto/issues/3778",
+    "repository_full_name": "plone/volto",
+    "updated_at": "2026-10-28T13:30:49Z",
+    "labels": [
+      "04 type: enhancement",
+      "41 lvl: easy"
+    ],
+    "comments": 0
+  },
+  "ai": {
+    "provider": "openai",
+    "model": "gpt-4o-mini"
+  },
+  "summary_markdown": "## What this issue is about\nThis issue discusses the current requirement in `razzle.extend.js` to export both `plugins` and `modify` from a module. The goal is to relax this requirement, allowing developers to omit either export based on their needs.\n\n## What needs to be done\nWe need to adjust the code structure in `razzle.extend.js` so that it's possible to export only `plugins`, only `modify`, or both. This change should enhance flexibility for developers creating plugins without unnecessary boilerplate code.\n\n## Helpful background\nThe `plugins` export allows developers to add custom functionality to their application, while the `modify` export enables configuration adjustments. Currently, developers must export both, even if one is not needed, which can complicate module definitions unnecessarily.\n\n## Good first steps\n1. **Explore the Code**: Review the existing implementation of `razzle.extend.js` to understand how `plugins` and `modify` are currently being used.\n2. **Identify Changes**: Determine how to allow for optional exports in a way that maintains existing functionality.\n3. **Implement the Adjustment**: Write the code changes with the option to omit either export.\n4. **Testing**: Create tests to ensure that both single and dual exports function correctly.\n5. **Documentation**: Update any relevant documentation to reflect the new flexibility.\n\nFeel free to ask questions if you need clarification!",
+  "workflow": {
+    "repository": "syslabcom/activity-recognition",
+    "run_id": "40702949798",
+    "run_number": "4162",
+    "attempt": "1",
+    "url": "https://github.com/syslabcom/activity-recognition/actions/runs/40702949798",
+    "sha": "8189e6e15b7b25516f2fe71b09231fc651219263"
+  }
+}

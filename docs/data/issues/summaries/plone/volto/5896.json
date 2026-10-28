@@ -1,17 +1,18 @@
 {
   "version": 1,
   "status": "success",
-  "generated_at": "2026-05-18T11:22:47Z",
+  "generated_at": "2026-10-28T14:09:14Z",
   "source_issue": {
     "id": 2194664319,
     "number": 5896,
     "title": "It's confusing how to change my password as a logged in user",
     "html_url": "https://github.com/plone/volto/issues/5896",
     "repository_full_name": "plone/volto",
-    "updated_at": "2026-05-18T10:43:34Z",
+    "updated_at": "2026-10-28T13:31:13Z",
     "labels": [
       "04 type: enhancement",
-      "42 lvl: moderate"
+      "42 lvl: moderate",
+      "61 scope: editor"
     ],
     "comments": 9
   },
@@ -19,13 +20,13 @@
     "provider": "openai",
     "model": "gpt-4o-mini"
   },
-  "summary_markdown": "```markdown\n## What this issue is about\nThis issue addresses the confusion users face when trying to change their passwords in Volto. Currently, users must go through the \"Forgot your password?\" option via the `/login` route. The aim is to allow users to change their passwords from their personal profile.\n\n## What needs to be done\nTo enhance user experience, we want to:\n- Add an option in the user preferences to change the password directly.\n- Ensure the `/change-password` page requires user authentication, displaying an \"Unauthorized\" notification for unauthenticated attempts.\n- Possibly include a \"Get help\" link for users who encounter issues.\n\n## Helpful background\nIn Classic Plone, users can change their passwords through the `@@personal-preferences` section. It's suggested we keep the navigation and functionality consistent with that model. Key discussions about functionality and navigation improvements are ongoing.\n\n## Good first steps\n1. Familiarize yourself with the current user preferences implementation.\n2. Review how the `@@change-password` link is integrated in Classic Plone.\n3. Consider designing the UI to include the password change feature.\n4. Attend the upcoming Volto Team meeting for further insights and coordination.\n5. Explore user authentication handling and permissions, especially regarding how users can return their passwords via email.\n```",
+  "summary_markdown": "## What this issue is about\nThe current process for changing a password in Volto is confusing, as it only allows users to reset their password via the `/login` route using the \"Forgot your password\" link. We aim to improve this by enabling users to change their password directly from their user profile.\n\n## What needs to be done\nWe propose to add a \"Change my password\" feature in the user preferences menu, similar to how it's done in Classic Plone. This will involve ensuring proper authentication for the `/change-password` page and possibly improving the UI for the login-help section.\n\n## Helpful background\nDiscussions have highlighted that in Classic Plone, the password change option is found in the user preferences. There have also been suggestions to address the authentication issues to ensure users cannot access the change-password page without being logged in.\n\n## Good first steps\n1. Review the current user preferences layout and propose changes to include a password change option.\n2. Ensure that the `/change-password` page requires authentication.\n3. Attend the Volto Team meetings to discuss the workflow and gather insights from other contributors.\n4. Look into integrating a function to retrieve usernames based on email for the login help feature.",
   "workflow": {
     "repository": "syslabcom/activity-recognition",
-    "run_id": "26030380574",
-    "run_number": "895",
+    "run_id": "40702949798",
+    "run_number": "4162",
     "attempt": "1",
-    "url": "https://github.com/syslabcom/activity-recognition/actions/runs/26030380574",
-    "sha": "fa2346b25110d8f5bb79f199b45634ae384d4c02"
+    "url": "https://github.com/syslabcom/activity-recognition/actions/runs/40702949798",
+    "sha": "8189e6e15b7b25516f2fe71b09231fc651219263"
   }
 }
