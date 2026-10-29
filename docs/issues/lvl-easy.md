@@ -1,7 +1,7 @@
 ---
 title: "Plone issue list — Level: Easy"
 permalink: "/issues/lvl-easy/"
-generated_at: "2026-10-29T08:10:27Z"
+generated_at: "2026-10-29T09:08:47Z"
 organization: "plone"
 issue_count: 124
 required_labels:
@@ -10,7 +10,7 @@ required_labels:
 
 # Plone issue list — Level: Easy
 
-Generated: `2026-10-29T08:10:27Z`  
+Generated: `2026-10-29T09:08:47Z`  
 Organization: `plone`  
 Required label: `41 lvl: easy`  
 Issue count: `124`
@@ -19,8 +19,8 @@ Sorted by last updated date, newest first.
 
 | Updated | Repository | Issue | Author | Labels |
 | --- | --- | --- | --- | --- |
+| 2026-10-29 08:27 UTC | `plone/volto` | [#8491 siteTitleFormat.titleAndSiteTitleSeparator is ignored: ContentMetadataTags reads the wrong settings key](https://github.com/plone/volto/issues/8491) | `jensens` | `01 type: bug`, `21 status: confirmed`, `41 lvl: easy`, `62 scope: viewer` |
 | 2026-10-28 13:55 UTC | `plone/volto` | [#27 Workflow comment and include contained items](https://github.com/plone/volto/issues/27) | `robgietema` | `04 type: enhancement`, `13 prio: normal`, `41 lvl: easy`, `26 status: blocked` |
-| 2026-10-28 13:43 UTC | `plone/volto` | [#8491 siteTitleFormat.titleAndSiteTitleSeparator is ignored: ContentMetadataTags reads the wrong settings key](https://github.com/plone/volto/issues/8491) | `jensens` | `01 type: bug`, `21 status: confirmed`, `41 lvl: easy`, `62 scope: viewer` |
 | 2026-10-28 13:33 UTC | `plone/volto` | [#8342 sitemap-index.xml served with Content-Disposition: attachment, breaking Google Search Console](https://github.com/plone/volto/issues/8342) | `alexandreIFB` | `01 type: bug`, `21 status: confirmed`, `41 lvl: easy`, `62 scope: viewer` |
 | 2026-10-28 13:33 UTC | `plone/volto` | [#8367 /change-password renders the full form to anonymous visitors](https://github.com/plone/volto/issues/8367) | `mpalomaki` | `01 type: bug`, `21 status: confirmed`, `41 lvl: easy` |
 | 2026-10-28 13:33 UTC | `plone/volto` | [#8394 a11y - Default sidebar - shrink/expand sidebar button - cms ui](https://github.com/plone/volto/issues/8394) | `Wagner3UB` | `01 type: bug`, `21 status: confirmed`, `41 lvl: easy`, `61 scope: editor` |

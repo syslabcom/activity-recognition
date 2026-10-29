@@ -1,7 +1,7 @@
 {
   "version": 1,
   "status": "success",
-  "generated_at": "2026-10-29T08:10:27Z",
+  "generated_at": "2026-10-29T09:08:47Z",
   "organization": "plone",
   "state": "open",
   "slug": "lvl-easy",
@@ -11,6 +11,37 @@
   ],
   "issue_count": 124,
   "issues": [
+    {
+      "id": 6080170240,
+      "number": 8491,
+      "title": "siteTitleFormat.titleAndSiteTitleSeparator is ignored: ContentMetadataTags reads the wrong settings key",
+      "html_url": "https://github.com/plone/volto/issues/8491",
+      "repository_full_name": "plone/volto",
+      "repository_url": "https://api.github.com/repos/plone/volto",
+      "state": "open",
+      "created_at": "2026-10-28T13:43:50Z",
+      "updated_at": "2026-10-29T08:27:21Z",
+      "comments": 1,
+      "author": {
+        "login": "jensens",
+        "html_url": "https://github.com/jensens"
+      },
+      "assignees": [],
+      "labels": [
+        "01 type: bug",
+        "21 status: confirmed",
+        "41 lvl: easy",
+        "62 scope: viewer"
+      ],
+      "contributor_summary": {
+        "status": "available",
+        "generated_at": "2026-10-28T14:08:26Z",
+        "source_issue_updated_at": "2026-10-28T13:43:50Z",
+        "model": "gpt-4o-mini",
+        "summary_markdown": "## What this issue is about\nThis issue is about a bug in Volto where a custom separator for the browser title (between the page title and site title) is not being applied correctly. Instead of using your custom separator, it defaults to a hyphen (“-”).\n\n## What needs to be done\nThe code needs to be updated to read the separator from the correct configuration key, `config?.settings?.siteTitleFormat?.titleAndSiteTitleSeparator`, instead of using the top-level settings key. The top-level key should still be available as a fallback.\n\n## Helpful background\nThe `siteTitleFormat.titleAndSiteTitleSeparator` is part of the site's configuration, allowing you to customize how page and site titles are displayed. The issue was identified when testing the feature against the expected behavior outlined in the documentation.\n\n## Good first steps\n1. Familiarize yourself with the relevant files:\n   - `packages/volto/src/components/theme/ContentMetadataTags/ContentMetadataTags.jsx`\n   - `packages/volto/src/config/index.js`\n   \n2. Verify the existing code that retrieves the title separator.\n3. Make the necessary code changes to read from `siteTitleFormat`.\n4. Test the fix to ensure that the browser title reflects the custom separator.\n5. Review your changes in the context of existing documentation and configuration settings. \n\nFeel free to reach out for help or clarification during the process!",
+        "path": "data/issues/summaries/plone/volto/8491.json"
+      }
+    },
     {
       "id": 224720089,
       "number": 27,
@@ -40,37 +71,6 @@
         "model": "gpt-4o-mini",
         "summary_markdown": "# Workflow comment and include contained items\n\n## What this issue is about\nThis issue is for enhancing the workflow in the Volto project by adding support for comments in the workflow and the ability to include contained items in workflow actions.\n\n## What needs to be done\n- Implement a workflow comment field.\n- Add support for including contained items in the workflow dropdown menu.\n\nPlease note that this issue is currently blocked by another issue in the Plone REST API. You can view that [here](https://github.com/plone/plone.restapi/issues/333).\n\n## Helpful background\nThe issue has partly been addressed, as the contents view modal now allows for the inclusion of contained items. However, the workflow comment feature and complete dropdown functionality are still pending. \n\n## Good first steps\n1. Familiarize yourself with the existing functionality in the `ContentsWorkflowModal.jsx` file in Volto.\n2. Review the blocked issue for context on why this enhancement cannot be fully implemented yet.\n3. Consider discussing any ideas or questions in the comments section for clarification.\n4. Your contributions will likely need to be tested and reviewed after implementation.",
         "path": "data/issues/summaries/plone/volto/27.json"
-      }
-    },
-    {
-      "id": 6080170240,
-      "number": 8491,
-      "title": "siteTitleFormat.titleAndSiteTitleSeparator is ignored: ContentMetadataTags reads the wrong settings key",
-      "html_url": "https://github.com/plone/volto/issues/8491",
-      "repository_full_name": "plone/volto",
-      "repository_url": "https://api.github.com/repos/plone/volto",
-      "state": "open",
-      "created_at": "2026-10-28T13:43:50Z",
-      "updated_at": "2026-10-28T13:43:50Z",
-      "comments": 0,
-      "author": {
-        "login": "jensens",
-        "html_url": "https://github.com/jensens"
-      },
-      "assignees": [],
-      "labels": [
-        "01 type: bug",
-        "21 status: confirmed",
-        "41 lvl: easy",
-        "62 scope: viewer"
-      ],
-      "contributor_summary": {
-        "status": "available",
-        "generated_at": "2026-10-28T14:08:26Z",
-        "source_issue_updated_at": "2026-10-28T13:43:50Z",
-        "model": "gpt-4o-mini",
-        "summary_markdown": "## What this issue is about\nThis issue is about a bug in Volto where a custom separator for the browser title (between the page title and site title) is not being applied correctly. Instead of using your custom separator, it defaults to a hyphen (“-”).\n\n## What needs to be done\nThe code needs to be updated to read the separator from the correct configuration key, `config?.settings?.siteTitleFormat?.titleAndSiteTitleSeparator`, instead of using the top-level settings key. The top-level key should still be available as a fallback.\n\n## Helpful background\nThe `siteTitleFormat.titleAndSiteTitleSeparator` is part of the site's configuration, allowing you to customize how page and site titles are displayed. The issue was identified when testing the feature against the expected behavior outlined in the documentation.\n\n## Good first steps\n1. Familiarize yourself with the relevant files:\n   - `packages/volto/src/components/theme/ContentMetadataTags/ContentMetadataTags.jsx`\n   - `packages/volto/src/config/index.js`\n   \n2. Verify the existing code that retrieves the title separator.\n3. Make the necessary code changes to read from `siteTitleFormat`.\n4. Test the fix to ensure that the browser title reflects the custom separator.\n5. Review your changes in the context of existing documentation and configuration settings. \n\nFeel free to reach out for help or clarification during the process!",
-        "path": "data/issues/summaries/plone/volto/8491.json"
       }
     },
     {
@@ -3854,10 +3854,10 @@
   "message": null,
   "workflow": {
     "repository": "syslabcom/activity-recognition",
-    "run_id": "40840238551",
-    "run_number": "4180",
+    "run_id": "40847322378",
+    "run_number": "4181",
     "attempt": "1",
-    "url": "https://github.com/syslabcom/activity-recognition/actions/runs/40840238551",
-    "sha": "9d9df035d6ee48272463f2afa6ab57b01b2bbb0c"
+    "url": "https://github.com/syslabcom/activity-recognition/actions/runs/40847322378",
+    "sha": "4786cabe431cb22980320ffa8ef397cc492314e1"
   }
 }
