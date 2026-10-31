@@ -1,7 +1,7 @@
 {
   "version": 1,
   "status": "success",
-  "generated_at": "2026-10-31T12:08:25Z",
+  "generated_at": "2026-10-31T13:05:09Z",
   "organization": "plone",
   "state": "open",
   "slug": "good-first-onboarding",
@@ -20,8 +20,8 @@
       "repository_url": "https://api.github.com/repos/plone/documentation",
       "state": "open",
       "created_at": "2026-10-13T09:47:11Z",
-      "updated_at": "2026-10-13T09:53:14Z",
-      "comments": 0,
+      "updated_at": "2026-10-31T12:10:35Z",
+      "comments": 1,
       "author": {
         "login": "stevepiercy",
         "html_url": "https://github.com/stevepiercy"
@@ -33,10 +33,10 @@
       ],
       "contributor_summary": {
         "status": "available",
-        "generated_at": "2026-10-13T10:13:07Z",
-        "source_issue_updated_at": "2026-10-13T09:53:14Z",
+        "generated_at": "2026-10-31T13:05:14Z",
+        "source_issue_updated_at": "2026-10-31T12:10:35Z",
         "model": "gpt-4o-mini",
-        "summary_markdown": "## What this issue is about\nThis issue focuses on improving the documentation for backend vocabularies in Plone. Vocabularies help define a set of values for fields, and clear documentation will assist developers in using them effectively.\n\n## What needs to be done\nTo address this issue, we need to:\n- Change \"UV\" to lowercase as per style guidelines.\n- Fix an error where the command `plonecli create addon src/collective.myaddon` fails.\n- Update the documentation to remove redundant information by linking directly to the existing Plone REST API documentation on vocabularies.\n\n## Helpful background\nVocabularies in Plone are primarily accessed via the Plone REST API at the `@vocabularies` endpoint. Familiarizing yourself with the existing documentation can help automate the writing process for this task. You can find the reference [here](https://6.docs.plone.org/plone.restapi/docs/source/endpoints/vocabularies.html).\n\n## Good first steps\n1. Review the current backend vocabularies documentation to identify parts that need improvement.\n2. Test the `plonecli create addon` command to understand the failure and troubleshoot it.\n3. Start by making the documentation changes, ensuring to link to the relevant resources as stated.\n4. Once you complete your changes, consider submitting a pull request for review. Don't hesitate to ask for help if needed!",
+        "summary_markdown": "## What this issue is about\nThis issue focuses on improving the documentation related to backends and vocabularies in Plone. Clear and accurate documentation is essential for users to effectively utilize these features.\n\n## What needs to be done\n1. **Lowercase \"uv\"**: Update instances of \"uv\" to be in lowercase.\n2. **Fix command errors**: Address the issue where the command `plonecli create addon src/collective.myaddon` fails to execute correctly.\n3. **Link documentation**: Remove duplicate information and create a link to the relevant documentation on vocabularies in the Plone REST API.\n\n## Helpful background\nVocabularies in Plone allow you to manage lists of values that can be used throughout your applications. The Plone REST API provides access to these vocabularies via the `@vocabularies` endpoint. Familiarity with MyST documentation formatting will be helpful for linking.\n\n## Good first steps\n1. Review the current documentation related to vocabularies and identify sections that need changes.\n2. Check out the discussion linked in the issue for context, especially @davisagli's comments.\n3. If you're interested, feel free to follow up on this in the comments or take on one of the tasks. Testing your changes and updating the documentation accordingly will be expected.",
         "path": "data/issues/summaries/plone/documentation/2116.json"
       }
     },
@@ -431,10 +431,10 @@
   "message": null,
   "workflow": {
     "repository": "syslabcom/activity-recognition",
-    "run_id": "41199753630",
-    "run_number": "4232",
+    "run_id": "41203954652",
+    "run_number": "4233",
     "attempt": "1",
-    "url": "https://github.com/syslabcom/activity-recognition/actions/runs/41199753630",
-    "sha": "c9550fd8079a44d9044884e1bb60b01f76c9f3a6"
+    "url": "https://github.com/syslabcom/activity-recognition/actions/runs/41203954652",
+    "sha": "fcff88c4ee20f1dd489dfcbf4d7ee07636f9f988"
   }
 }
