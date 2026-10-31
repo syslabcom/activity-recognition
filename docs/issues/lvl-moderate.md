@@ -1,7 +1,7 @@
 ---
 title: "Plone issue list — Level: Moderate"
 permalink: "/issues/lvl-moderate/"
-generated_at: "2026-10-31T20:05:30Z"
+generated_at: "2026-10-31T21:05:05Z"
 organization: "plone"
 issue_count: 70
 required_labels:
@@ -10,7 +10,7 @@ required_labels:
 
 # Plone issue list — Level: Moderate
 
-Generated: `2026-10-31T20:05:30Z`  
+Generated: `2026-10-31T21:05:05Z`  
 Organization: `plone`  
 Required label: `42 lvl: moderate`  
 Issue count: `70`
