@@ -1,7 +1,7 @@
 {
   "version": 1,
   "status": "success",
-  "generated_at": "2026-11-04T14:07:29Z",
+  "generated_at": "2026-11-04T15:06:45Z",
   "organization": "plone",
   "state": "open",
   "slug": "lvl-easy",
@@ -35,10 +35,10 @@
       ],
       "contributor_summary": {
         "status": "available",
-        "generated_at": "2026-10-28T14:08:26Z",
-        "source_issue_updated_at": "2026-10-28T13:43:50Z",
+        "generated_at": "2026-11-04T15:06:52Z",
+        "source_issue_updated_at": "2026-10-29T08:27:21Z",
         "model": "gpt-4o-mini",
-        "summary_markdown": "## What this issue is about\nThis issue is about a bug in Volto where a custom separator for the browser title (between the page title and site title) is not being applied correctly. Instead of using your custom separator, it defaults to a hyphen (“-”).\n\n## What needs to be done\nThe code needs to be updated to read the separator from the correct configuration key, `config?.settings?.siteTitleFormat?.titleAndSiteTitleSeparator`, instead of using the top-level settings key. The top-level key should still be available as a fallback.\n\n## Helpful background\nThe `siteTitleFormat.titleAndSiteTitleSeparator` is part of the site's configuration, allowing you to customize how page and site titles are displayed. The issue was identified when testing the feature against the expected behavior outlined in the documentation.\n\n## Good first steps\n1. Familiarize yourself with the relevant files:\n   - `packages/volto/src/components/theme/ContentMetadataTags/ContentMetadataTags.jsx`\n   - `packages/volto/src/config/index.js`\n   \n2. Verify the existing code that retrieves the title separator.\n3. Make the necessary code changes to read from `siteTitleFormat`.\n4. Test the fix to ensure that the browser title reflects the custom separator.\n5. Review your changes in the context of existing documentation and configuration settings. \n\nFeel free to reach out for help or clarification during the process!",
+        "summary_markdown": "```markdown\n## What this issue is about\nThis issue is about a bug in the Volto project where a custom separator for the page title and site title is ignored. Instead of using the specified separator, it defaults to using a dash (`-`). The incorrect key is being read from the configuration settings.\n\n## What needs to be done\nThe goal is to modify the `ContentMetadataTags.jsx` component to read the separator from `config?.settings?.siteTitleFormat?.titleAndSiteTitleSeparator`, while keeping the top-level key as a fallback. This will ensure that the correct separator is used as documented.\n\n## Helpful background\nThe separator is intended to be defined in the configuration under `siteTitleFormat`, where it can be customized. For example, it can be set to `|` instead of the default `-`. The issue was originally identified while triaging another ticket.\n\n## Good first steps\n1. Clone the repository and navigate to the `ContentMetadataTags.jsx` file in `packages/volto/src/components/theme/ContentMetadataTags/`.\n2. Update the code to read the separator from the correct configuration path.\n3. Ensure to implement a test case that verifies the custom separator works as expected.\n4. Consider adding a news entry to document this change.\n5. After making changes, submit your pull request for review!\n```",
         "path": "data/issues/summaries/plone/volto/8491.json"
       }
     },
@@ -3854,10 +3854,10 @@
   "message": null,
   "workflow": {
     "repository": "syslabcom/activity-recognition",
-    "run_id": "41844418704",
-    "run_number": "4330",
+    "run_id": "41854316111",
+    "run_number": "4331",
     "attempt": "1",
-    "url": "https://github.com/syslabcom/activity-recognition/actions/runs/41844418704",
-    "sha": "514abaacb36d21e54fdb2cd4e3b9a453a7d452b0"
+    "url": "https://github.com/syslabcom/activity-recognition/actions/runs/41854316111",
+    "sha": "8a09b933af625d4bc1d325d4d1749fa38ccb3b14"
   }
 }
