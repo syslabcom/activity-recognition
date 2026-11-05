@@ -1,7 +1,7 @@
 ---
 title: "Plone issue list — Level: Easy"
 permalink: "/issues/lvl-easy/"
-generated_at: "2026-11-05T06:11:48Z"
+generated_at: "2026-11-05T07:07:30Z"
 organization: "plone"
 issue_count: 124
 required_labels:
@@ -10,7 +10,7 @@ required_labels:
 
 # Plone issue list — Level: Easy
 
-Generated: `2026-11-05T06:11:48Z`  
+Generated: `2026-11-05T07:07:30Z`  
 Organization: `plone`  
 Required label: `41 lvl: easy`  
 Issue count: `124`
@@ -19,6 +19,7 @@ Sorted by last updated date, newest first.
 
 | Updated | Repository | Issue | Author | Labels |
 | --- | --- | --- | --- | --- |
+| 2026-11-05 06:17 UTC | `plone/volto` | [#7862 Docs : Missing react page in documentation for - 'contributing to volto'](https://github.com/plone/volto/issues/7862) | `boss6825` | `41 lvl: easy`, `99 tag: docs` |
 | 2026-10-29 08:27 UTC | `plone/volto` | [#8491 siteTitleFormat.titleAndSiteTitleSeparator is ignored: ContentMetadataTags reads the wrong settings key](https://github.com/plone/volto/issues/8491) | `jensens` | `01 type: bug`, `21 status: confirmed`, `41 lvl: easy`, `62 scope: viewer` |
 | 2026-10-28 13:55 UTC | `plone/volto` | [#27 Workflow comment and include contained items](https://github.com/plone/volto/issues/27) | `robgietema` | `04 type: enhancement`, `13 prio: normal`, `41 lvl: easy`, `26 status: blocked` |
 | 2026-10-28 13:33 UTC | `plone/volto` | [#8342 sitemap-index.xml served with Content-Disposition: attachment, breaking Google Search Console](https://github.com/plone/volto/issues/8342) | `alexandreIFB` | `01 type: bug`, `21 status: confirmed`, `41 lvl: easy`, `62 scope: viewer` |
@@ -63,7 +64,6 @@ Sorted by last updated date, newest first.
 | 2026-10-27 23:58 UTC | `plone/volto` | [#2074 Remove use of __CLIENT__ in volto code](https://github.com/plone/volto/issues/2074) | `tiberiuichim` | `04 type: enhancement`, `41 lvl: easy` |
 | 2026-10-27 23:34 UTC | `plone/volto` | [#3513 Form component doesn't display error message when white-spaces as input given to it](https://github.com/plone/volto/issues/3513) | `mdsahiloss` | `01 type: bug`, `21 status: confirmed`, `41 lvl: easy`, `61 scope: editor` |
 | 2026-10-27 23:00 UTC | `plone/volto` | [#8487 Video block: YouTube playlist URL without a video id shows a broken placeholder image](https://github.com/plone/volto/issues/8487) | `jensens` | `01 type: bug`, `41 lvl: easy`, `62 scope: viewer` |
-| 2026-10-27 22:23 UTC | `plone/volto` | [#7862 Docs : Missing react page in documentation for - 'contributing to volto'](https://github.com/plone/volto/issues/7862) | `boss6825` | `41 lvl: easy`, `99 tag: docs` |
 | 2026-10-27 22:23 UTC | `plone/volto` | [#7265 Typing error when using `description` in schema with TextWidget – prop is unused and should be removed](https://github.com/plone/volto/issues/7265) | `alexandreIFB` | `01 type: bug`, `21 status: confirmed`, `41 lvl: easy` |
 | 2026-10-27 22:21 UTC | `plone/volto` | [#3762 Listing block headline should integrate with TOC](https://github.com/plone/volto/issues/3762) | `tiberiuichim` | `01 type: bug`, `21 status: confirmed`, `41 lvl: easy`, `62 scope: viewer` |
 | 2026-10-27 22:21 UTC | `plone/volto` | [#1997 "manage-translations" view can be viewed by anonymous](https://github.com/plone/volto/issues/1997) | `tisto` | `01 type: bug`, `21 status: confirmed`, `41 lvl: easy` |
