@@ -1,19 +1,19 @@
 ---
 title: "Plone issue list — Level: Easy"
 permalink: "/issues/lvl-easy/"
-generated_at: "2026-11-05T21:05:13Z"
+generated_at: "2026-11-05T22:05:53Z"
 organization: "plone"
-issue_count: 124
+issue_count: 123
 required_labels:
   - "41 lvl: easy"
 ---
 
 # Plone issue list — Level: Easy
 
-Generated: `2026-11-05T21:05:13Z`  
+Generated: `2026-11-05T22:05:53Z`  
 Organization: `plone`  
 Required label: `41 lvl: easy`  
-Issue count: `124`
+Issue count: `123`
 
 Sorted by last updated date, newest first.
 
@@ -24,7 +24,6 @@ Sorted by last updated date, newest first.
 | 2026-10-28 13:55 UTC | `plone/volto` | [#27 Workflow comment and include contained items](https://github.com/plone/volto/issues/27) | `robgietema` | `04 type: enhancement`, `13 prio: normal`, `41 lvl: easy`, `26 status: blocked` |
 | 2026-10-28 13:33 UTC | `plone/volto` | [#8342 sitemap-index.xml served with Content-Disposition: attachment, breaking Google Search Console](https://github.com/plone/volto/issues/8342) | `alexandreIFB` | `01 type: bug`, `21 status: confirmed`, `41 lvl: easy`, `62 scope: viewer` |
 | 2026-10-28 13:33 UTC | `plone/volto` | [#8367 /change-password renders the full form to anonymous visitors](https://github.com/plone/volto/issues/8367) | `mpalomaki` | `01 type: bug`, `21 status: confirmed`, `41 lvl: easy` |
-| 2026-10-28 13:33 UTC | `plone/volto` | [#8394 a11y - Default sidebar - shrink/expand sidebar button - cms ui](https://github.com/plone/volto/issues/8394) | `Wagner3UB` | `01 type: bug`, `21 status: confirmed`, `41 lvl: easy`, `61 scope: editor` |
 | 2026-10-28 13:33 UTC | `plone/volto` | [#8433 Username & password should not autocomplete on new user form](https://github.com/plone/volto/issues/8433) | `davisagli` | `01 type: bug`, `21 status: confirmed`, `41 lvl: easy`, `99 tag: UX Accessibility`, `61 scope: editor` |
 | 2026-10-28 13:33 UTC | `plone/volto` | [#8465 Fix padding of links and references menu table](https://github.com/plone/volto/issues/8465) | `TimoBroeskamp` | `01 type: bug`, `21 status: confirmed`, `41 lvl: easy`, `62 scope: viewer` |
 | 2026-10-28 13:32 UTC | `plone/volto` | [#3092 Improve spellcheck](https://github.com/plone/volto/issues/3092) | `stevepiercy` | `04 type: enhancement`, `31 needs: help`, `33 needs: docs`, `41 lvl: easy`, `99 tag: docs` |
