@@ -1,7 +1,7 @@
 {
   "version": 1,
   "status": "success",
-  "generated_at": "2026-11-05T17:06:03Z",
+  "generated_at": "2026-11-05T18:08:34Z",
   "organization": "plone",
   "state": "open",
   "slug": "lvl-moderate",
@@ -2159,10 +2159,10 @@
   "message": null,
   "workflow": {
     "repository": "syslabcom/activity-recognition",
-    "run_id": "42071226891",
-    "run_number": "4357",
+    "run_id": "42081357273",
+    "run_number": "4358",
     "attempt": "1",
-    "url": "https://github.com/syslabcom/activity-recognition/actions/runs/42071226891",
-    "sha": "d60eb7486a29aa36aa12142e404e770d02aa11b1"
+    "url": "https://github.com/syslabcom/activity-recognition/actions/runs/42081357273",
+    "sha": "89e80e15b734cf3fe016667785baa47798300a59"
   }
 }
