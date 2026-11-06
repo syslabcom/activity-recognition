@@ -1,17 +1,34 @@
 {
   "version": 1,
-  "generated_at": "2026-10-27T07:35:54Z",
+  "generated_at": "2026-11-06T07:22:14Z",
   "tasks": [
     {
       "slug": "github-activity-digest",
       "title": "GitHub Activity Digest",
       "latest": {
         "status": "success",
-        "generated_at": "2026-10-27T07:35:54Z",
+        "generated_at": "2026-11-06T07:22:14Z",
         "json_path": "data/github-activity-digest/latest.json",
         "markdown_path": "data/github-activity-digest/latest.md"
       },
       "runs": [
+        {
+          "status": "success",
+          "generated_at": "2026-11-06T07:22:14Z",
+          "period": {
+            "days": 7,
+            "start": "2026-10-30",
+            "end": "2026-11-06"
+          },
+          "counts": {
+            "repos_processed": 432,
+            "active_repos": 61
+          },
+          "json_path": "data/github-activity-digest/runs/2026-11-06T07-22-14Z.json",
+          "markdown_path": "data/github-activity-digest/runs/2026-11-06T07-22-14Z.md",
+          "workflow_url": "https://github.com/syslabcom/activity-recognition/actions/runs/42179875341",
+          "summary_excerpt": "# 📊 WEEKLY SUMMARY 2026-10-30 to 2026-11-06 This week in the Plone ecosystem, we saw significant contributions across multiple repositories, including enhancements to release mana…"
+        },
         {
           "status": "success",
           "generated_at": "2026-10-27T07:35:54Z",

@@ -1,0 +1,57 @@
+{
+  "version": 1,
+  "task": {
+    "slug": "github-activity-digest",
+    "title": "GitHub Activity Digest"
+  },
+  "status": "success",
+  "generated_at": "2026-11-06T07:22:14Z",
+  "message": null,
+  "period": {
+    "days": 7,
+    "start": "2026-10-30",
+    "end": "2026-11-06"
+  },
+  "source": {
+    "repository": "syslabcom/github-activity-digest",
+    "action_ref": null,
+    "config_path": "digest/config.json",
+    "mode": "organization",
+    "organization": "plone",
+    "user": "pilz",
+    "topics": [],
+    "repositories": []
+  },
+  "filters": {
+    "exclude_repos": [],
+    "include_repos": [],
+    "only_public": false,
+    "only_private": false,
+    "max_repos": 500
+  },
+  "counts": {
+    "repos_processed": 432,
+    "active_repos": 61
+  },
+  "ai": {
+    "provider": "openai",
+    "model": "gpt-4o-mini",
+    "language": "English",
+    "prompt_template": "prompt-template-activity-recognition.txt"
+  },
+  "summary": "# 📊 WEEKLY SUMMARY  \n2026-10-30 to 2026-11-06  \n\nThis week in the Plone ecosystem, we saw significant contributions across multiple repositories, including enhancements to release management, testing infrastructure, and accessibility improvements in user interfaces. Contributors focused heavily on dependency updates, maintenance work, and documentation enhancements, reflecting ongoing commitment to improving the Plone framework and its related tools.\n\n## 📦 plone/plone.event  \n[15 files changed, +67/-54 lines, 5 pull requests merged]  \nReleases were prepared and development resumed for version 3.0.2. Notable updates included a pre-commit autoupdate and dependency bumps, ensuring the latest tools are integrated.\n\n## 📦 plone/plone.app.multilingual  \n[11 files changed, +37/-19 lines, 2 pull requests merged]  \nDevelopment back to version 10.0.0a2 was initiated, with the preparation of release 10.0.0a1 and a pre-commit autoupdate to keep dependencies current.\n\n## 📦 plone/plone.app.querystring  \n[19 files changed, +228/-42 lines, 3 pull requests merged]  \nA significant enhancement was introduced to avoid unnecessary slow query filters with empty range parameters, improving performance. This included various pre-commit updates for code quality.\n\n## 📦 plone/plone.namedfile  \n[5 files changed, +20/-7 lines, 2 pull requests merged]  \nWork resumed on version 8.1.3, with preparation for release 8.1.2 emphasizing stability and ongoing maintenance.\n\n## 📦 plone/plone.scale  \n[10 files changed, +27/-20 lines, 2 pull requests merged]  \nContinued quality improvements included a pre-commit autoupdate and a dependency bump, refining the underlying infrastructure.\n\n## 📦 plone/plone.app.linkintegrity  \n[15 files changed, +47/-38 lines, 2 pull requests merged]  \nEnhancements were made including a pre-commit autopdate and updates to ensure stability and functionality in link management.\n\n## 📦 plone/plone.app.testing  \n[4 files changed, +12/-12 lines, 2 pull requests merged]  \nUpdates included enhancing testing frameworks to support newer dependencies, ensuring compatibility with the latest development practices.\n\n## 📦 plone/documentation  \n[6 files changed, +273/-20 lines, 2 pull requests merged]  \nMajor updates included the documentation of the `plone/nick` container image, improving clarity and adding essential information for users.\n\n## 📦 plone/plone.client  \n[452 files changed, +40650/-1493 lines, 8 pull requests merged]  \nThis week saw a leap in overall improvements, updating various dependency management files and incorporating fixes across the board to enhance functionality.\n\n## 📦 plone/training  \n[5 files changed, +0/-201 lines, 4 pull requests merged]  \nThe removal of outdated deploy workflows from multiple branches signaled a shift to improved practices for deployment and resource organization.\n\n## 📦 plone/plonetheme.barceloneta  \n[4 files changed, +12/-12 lines, 2 pull requests merged]  \nUpdates included a pre-commit autoupdate and essential dependency checks to maintain high code quality.\n\n## 📦 plone/plone-uuid  \n[2 files changed, +10/-10 lines, 1 pull request merged]  \nAdditional pre-commit configurations were integrated to streamline code quality checks.\n\n## 📦 plone/Products.PlonePAS  \n[7 files changed, +12/-12 lines, 1 pull request merged]  \nA pre-commit autoupdate was completed to keep up with the latest quality standards across the codebase.\n\n## 📦 plone/Products.CMFDiffTool  \n[12 files changed, +124/-64 lines, 3 pull requests merged]  \nSignificant enhancements were made to test reliability and user experience with detailed feedback mechanisms.\n\n## 📦 plone/plone.outputfilters  \n[4 files changed, +12/-12 lines, 2 pull requests merged]  \nUpdates were made to pre-commit configurations, improving the overall workflow.\n\n## 📦 plone/plone.batching  \n[26 files changed, +80/-40 lines, 4 pull requests merged]  \nDevelopments focused on implementing a testing matrix, ensuring compatibility across different environments.\n\n## 📦 plone/plone.releaser  \n[6 files changed, +14/-6 lines, 3 pull requests merged]  \nBumps for the setup-uv dependency were made, aligning with other repositories for consistent version control.\n\n## 📦 plone/.github  \n[2 files changed, +16/-0 lines, 1 pull request merged]  \nA new security email address was added, aligning with best practices for community engagement and security oversight.\n\n## 📦 plone/plone.app.registry  \n[4 files changed, +10/-10 lines, 1 pull request merged]  \nPre-commit updates and dependency checks were implemented to enhance code quality.\n\n## 📦 plone/plone.staticresources  \n[2 files changed, +10/-10 lines, 1 pull request merged]  \nA pre-commit autoupdate was performed, ensuring the latest tools and configurations are applied.\n\n## 📦 plone/Products.CMFEditions  \n[31 files changed, +84/-40 lines, 3 pull requests merged]  \nSignificant updates and improvements were made with a focus on enhancing the overall functionality and documentation.\n\n## 📦 plone/Products.MimetypesRegistry  \n[29 files changed, +82/-38 lines, 3 pull requests merged]  \nThe focus was on enhancing the test matrix and improving overall package management for consistency.\n\n## 📦 plone/container-aurora  \n[10 files changed, +52/-2 lines, 1 pull request merged]  \nUpdates included a weekly rebuild of images to ensure current OS packages are available for the container, enhancing reliability.\n\nThis week, significant strides were taken across the Plone organization, demonstrating ongoing resilience and innovation within the community. As always, the effort from all contributors is essential for maintaining the project's momentum and quality.\n\n### 🔍 Contributors\n- Maurits van Rees\n- David Glick\n- Victor Fernandez de Alba\n- Érico Andrei\n- Jens Klein\n- Gil Forcada\n- Roger Boixader Güell\n- Piero Nicolli\n- Georg Bernhard\n- Upptime Bot\n- Timo Stollenwerk\n- Nils Plützer\n- Humanaice\n- iFlameing\n- aryap22\n\nAutomatically generated from 61 active repositories.",
+  "artifacts": {
+    "latest_json_path": "data/github-activity-digest/latest.json",
+    "latest_markdown_path": "data/github-activity-digest/latest.md",
+    "run_json_path": "data/github-activity-digest/runs/2026-11-06T07-22-14Z.json",
+    "run_markdown_path": "data/github-activity-digest/runs/2026-11-06T07-22-14Z.md"
+  },
+  "workflow": {
+    "repository": "syslabcom/activity-recognition",
+    "run_id": "42179875341",
+    "run_number": "221",
+    "attempt": "1",
+    "url": "https://github.com/syslabcom/activity-recognition/actions/runs/42179875341",
+    "sha": "4204a46f3476777912c6ff05704590cfcd7a0a05"
+  }
+}

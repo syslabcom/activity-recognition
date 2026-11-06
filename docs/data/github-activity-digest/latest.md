@@ -1,143 +1,117 @@
-# 📊 WEEKLY SUMMARY
-**2026-10-20 to 2026-10-27**
+# 📊 WEEKLY SUMMARY  
+2026-10-30 to 2026-11-06  
 
-This week, the Plone organization saw significant activity across numerous repositories, focusing primarily on dependency updates, bug fixes, and enhancements. Notably, various contributors worked on integrating new features and maintaining existing functionalities, showcasing ongoing efforts to improve the Plone ecosystem.
+This week in the Plone ecosystem, we saw significant contributions across multiple repositories, including enhancements to release management, testing infrastructure, and accessibility improvements in user interfaces. Contributors focused heavily on dependency updates, maintenance work, and documentation enhancements, reflecting ongoing commitment to improving the Plone framework and its related tools.
 
-## 📦 plone/plone.event
-[6 files changed, +43/-3 lines, 2 pull requests merged]
-Notable updates include a change to the use of `re.MULTILINE` in regex substitutions to avoid deprecation warnings in Python 3.13+, and added tests to ensure `DTSTART` lines are properly removed from the recurrence rules.
+## 📦 plone/plone.event  
+[15 files changed, +67/-54 lines, 5 pull requests merged]  
+Releases were prepared and development resumed for version 3.0.2. Notable updates included a pre-commit autoupdate and dependency bumps, ensuring the latest tools are integrated.
 
-## 📦 plone/plone.reload
-[2 files changed, +2/-2 lines, 1 pull request merged]
-Updated dependencies to the latest version of `astral-sh/setup-uv` for improved stability and performance.
+## 📦 plone/plone.app.multilingual  
+[11 files changed, +37/-19 lines, 2 pull requests merged]  
+Development back to version 10.0.0a2 was initiated, with the preparation of release 10.0.0a1 and a pre-commit autoupdate to keep dependencies current.
 
-## 📦 plone/plone.resource
-[2 files changed, +2/-2 lines, 1 pull request merged]
-This update includes a dependency bump for `astral-sh/setup-uv`, similar to other repositories this week.
+## 📦 plone/plone.app.querystring  
+[19 files changed, +228/-42 lines, 3 pull requests merged]  
+A significant enhancement was introduced to avoid unnecessary slow query filters with empty range parameters, improving performance. This included various pre-commit updates for code quality.
 
-## 📦 plone/plone.app.blocks
-[2 files changed, +2/-2 lines, 1 pull request merged]
-A minor update focused on dependency management by bumping the `astral-sh/setup-uv` package.
+## 📦 plone/plone.namedfile  
+[5 files changed, +20/-7 lines, 2 pull requests merged]  
+Work resumed on version 8.1.3, with preparation for release 8.1.2 emphasizing stability and ongoing maintenance.
 
-## 📦 plone/plone.subrequest
-[3 files changed, +3/-3 lines, 1 pull request merged]
-This repository also received an update to the `astral-sh/setup-uv` dependency.
+## 📦 plone/plone.scale  
+[10 files changed, +27/-20 lines, 2 pull requests merged]  
+Continued quality improvements included a pre-commit autoupdate and a dependency bump, refining the underlying infrastructure.
 
-## 📦 plone/five.intid
-[2 files changed, +2/-2 lines, 1 pull request merged]
-Another straightforward update with a dependency bump for `astral-sh/setup-uv`.
+## 📦 plone/plone.app.linkintegrity  
+[15 files changed, +47/-38 lines, 2 pull requests merged]  
+Enhancements were made including a pre-commit autopdate and updates to ensure stability and functionality in link management.
 
-## 📦 plone/plone.scale
-[2 files changed, +2/-2 lines, 1 pull request merged]
-Updated `astral-sh/setup-uv` consistency with other repositories.
+## 📦 plone/plone.app.testing  
+[4 files changed, +12/-12 lines, 2 pull requests merged]  
+Updates included enhancing testing frameworks to support newer dependencies, ensuring compatibility with the latest development practices.
 
-## 📦 plone/plone.schemaeditor
-[2 files changed, +2/-2 lines, 1 pull request merged]
-Bumped dependency version for `astral-sh/setup-uv`.
+## 📦 plone/documentation  
+[6 files changed, +273/-20 lines, 2 pull requests merged]  
+Major updates included the documentation of the `plone/nick` container image, improving clarity and adding essential information for users.
 
-## 📦 plone/plone.testing
-[2 files changed, +2/-2 lines, 1 pull request merged]
-Maintained dependency alignment by updating `astral-sh/setup-uv`.
+## 📦 plone/plone.client  
+[452 files changed, +40650/-1493 lines, 8 pull requests merged]  
+This week saw a leap in overall improvements, updating various dependency management files and incorporating fixes across the board to enhance functionality.
 
-## 📦 plone/plone.app.versioningbehavior
-[2 files changed, +2/-2 lines, 1 pull request merged]
-Earlier dependency updates were made focusing on the `astral-sh/setup-uv` package.
+## 📦 plone/training  
+[5 files changed, +0/-201 lines, 4 pull requests merged]  
+The removal of outdated deploy workflows from multiple branches signaled a shift to improved practices for deployment and resource organization.
 
-## 📦 plone/plone.app.layout
-[1 files changed, +1/-1 lines, 1 pull request merged]
-A simple dependency bump for `astral-sh/setup-uv`.
+## 📦 plone/plonetheme.barceloneta  
+[4 files changed, +12/-12 lines, 2 pull requests merged]  
+Updates included a pre-commit autoupdate and essential dependency checks to maintain high code quality.
 
-## 📦 plone/plone.app.upgrade
-[2 files changed, +2/-2 lines, 1 pull request merged]
-This repository focused on keeping dependencies current with similar updates.
+## 📦 plone/plone-uuid  
+[2 files changed, +10/-10 lines, 1 pull request merged]  
+Additional pre-commit configurations were integrated to streamline code quality checks.
 
-## 📦 plone/buildout.coredev
-[38 files changed, +249/-306 lines, 5 pull requests merged]
-Significant updates were made, including upgrading critical packages like `pip`, `certifi`, and `Pillow`, enhancing overall performance and security.
+## 📦 plone/Products.PlonePAS  
+[7 files changed, +12/-12 lines, 1 pull request merged]  
+A pre-commit autoupdate was completed to keep up with the latest quality standards across the codebase.
 
-## 📦 plone/plone.dexterity
-[3 files changed, +3/-3 lines, 1 pull request merged]
-Another dependency update to `astral-sh/setup-uv` for improved functionality.
+## 📦 plone/Products.CMFDiffTool  
+[12 files changed, +124/-64 lines, 3 pull requests merged]  
+Significant enhancements were made to test reliability and user experience with detailed feedback mechanisms.
 
-## 📦 plone/plone.autoform
-[2 files changed, +2/-2 lines, 1 pull request merged]
-Updated for the `astral-sh/setup-uv` package.
+## 📦 plone/plone.outputfilters  
+[4 files changed, +12/-12 lines, 2 pull requests merged]  
+Updates were made to pre-commit configurations, improving the overall workflow.
 
-## 📦 plone/plone.folder
-[2 files changed, +2/-2 lines, 1 pull request merged]
-Continued to rely on updated `astral-sh/setup-uv`.
+## 📦 plone/plone.batching  
+[26 files changed, +80/-40 lines, 4 pull requests merged]  
+Developments focused on implementing a testing matrix, ensuring compatibility across different environments.
 
-## 📦 plone/plone.app.upgrade
-[2 files changed, +2/-2 lines, 1 pull request merged]
-Updated dependencies to improve stability and maintain consistency across the project.
+## 📦 plone/plone.releaser  
+[6 files changed, +14/-6 lines, 3 pull requests merged]  
+Bumps for the setup-uv dependency were made, aligning with other repositories for consistent version control.
 
-## 📦 plone/plone.client
-[346 files changed, +25579/-9174 lines, 5 pull requests merged]
-Major enhancements included grouping command line help into panels and bumping several dependencies.
+## 📦 plone/.github  
+[2 files changed, +16/-0 lines, 1 pull request merged]  
+A new security email address was added, aligning with best practices for community engagement and security oversight.
 
-## 📦 plone/plone.i18n
-[2 files changed, +2/-2 lines, 1 pull request merged]
-Bumped dependency for `astral-sh/setup-uv`, like other repositories.
+## 📦 plone/plone.app.registry  
+[4 files changed, +10/-10 lines, 1 pull request merged]  
+Pre-commit updates and dependency checks were implemented to enhance code quality.
 
-## 📦 plone/Products.PlonePAS
-[2 files changed, +2/-2 lines, 1 pull request merged]
-Maintaining dependencies updated to `astral-sh/setup-uv`.
+## 📦 plone/plone.staticresources  
+[2 files changed, +10/-10 lines, 1 pull request merged]  
+A pre-commit autoupdate was performed, ensuring the latest tools and configurations are applied.
 
-## 📦 plone/plone.app.content
-[6 files changed, +13/-7 lines, 0 pull requests merged]
-Notable development was done including permissions checks and added functionality for managing principals vocabs.
+## 📦 plone/Products.CMFEditions  
+[31 files changed, +84/-40 lines, 3 pull requests merged]  
+Significant updates and improvements were made with a focus on enhancing the overall functionality and documentation.
 
-## 📦 plone/training
-[32 files changed, +1179/-25 lines, 3 pull requests merged]
-Extensive updates with new training documentation and adjustments toward improving the existing content.
+## 📦 plone/Products.MimetypesRegistry  
+[29 files changed, +82/-38 lines, 3 pull requests merged]  
+The focus was on enhancing the test matrix and improving overall package management for consistency.
 
-## 📦 plone/volto
-[518 files changed, +2197/-2240 lines, 8 pull requests merged]
-Significant enhancements focused on fixing links, improving accessibility features, and restoring UI elements.
+## 📦 plone/container-aurora  
+[10 files changed, +52/-2 lines, 1 pull request merged]  
+Updates included a weekly rebuild of images to ensure current OS packages are available for the container, enhancing reliability.
 
-## 📦 plone/plone-ping
-[241 files changed, +399/-398 lines, 0 pull requests merged]
-Automated updates related to the status of various sites.
+This week, significant strides were taken across the Plone organization, demonstrating ongoing resilience and innovation within the community. As always, the effort from all contributors is essential for maintaining the project's momentum and quality.
 
-## 📦 plone/container-backend
-[16 files changed, +26/-9 lines, 2 pull requests merged]
-Key improvements included upgrades to Plone 6.2.2.1 security release and updates on UV and OS packages.
-
-## 📦 plone/cookiecutter-zope-instance
-[4 files changed, +8/-2 lines, 1 pull request merged]
-A notable increase in support for tests on Python 3.15.
-
-## 📦 plone/nick
-[9497 files changed, +520027/-188563 lines, 0 pull requests merged]
-A transformational week focused on significant updates across multiple domains, including permission management and enhanced organizational support.
-
-## 📦 plone/repoplone
-[2 files changed, +14/-12 lines, 1 pull request merged]
-Automated updates from the bot.
-
-## 📦 plone/plone-contributor-statistics
-[5740 files changed, +136983/-42767 lines, 0 pull requests merged]
-Comprehensive documentation efforts and restructuring to assure effective contributor statistics are maintained.
-
-## 📦 plone/aurora
-[184 files changed, +3144/-2004 lines, 5 pull requests merged]
-Major contributions to the project related to reorganization and UI enhancements based on design feedback.
-
-In summary, this week reflects a vibrant activity within the Plone organization, with strong contributions from both individual developers and bots ensuring that repositories remain up-to-date, secure, and functional.
-
-### Contributors:
-- David Glick (@davisagli)
-- Érico Andrei (@ericof)
-- Victor Fernandez de Alba (@sneridagh)
-- Jens W. Klein (@jensens)
-- Mauro Amico (@mamico)
-- Rob Gietema (@robgietema)
-- Sabrina Bongiovanni (@sabrina-bongiovanni)
-- Steve Piercy (@stevepiercy)
-- Peter Mathis (@petschki)
-- Somil Gupta (@Somilg11)
-- Wagner Trezub (@Wagner3UB)
-- Dependabot (@dependabot[bot])
-- Upptime Bot (@upptime-bot)
+### 🔍 Contributors
+- Maurits van Rees
+- David Glick
+- Victor Fernandez de Alba
+- Érico Andrei
+- Jens Klein
+- Gil Forcada
+- Roger Boixader Güell
+- Piero Nicolli
+- Georg Bernhard
+- Upptime Bot
+- Timo Stollenwerk
+- Nils Plützer
+- Humanaice
+- iFlameing
+- aryap22
 
 Automatically generated from 61 active repositories.
