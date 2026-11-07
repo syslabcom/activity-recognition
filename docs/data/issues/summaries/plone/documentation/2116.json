@@ -1,31 +1,31 @@
 {
   "version": 1,
   "status": "success",
-  "generated_at": "2026-10-31T13:05:14Z",
+  "generated_at": "2026-11-07T14:05:20Z",
   "source_issue": {
     "id": 5828149215,
     "number": 2116,
     "title": "Improve backend/vocabularies documentation",
     "html_url": "https://github.com/plone/documentation/issues/2116",
     "repository_full_name": "plone/documentation",
-    "updated_at": "2026-10-31T12:10:35Z",
+    "updated_at": "2026-11-02T09:29:14Z",
     "labels": [
       "31 needs: help",
       "99 tag: good first issue"
     ],
-    "comments": 1
+    "comments": 2
   },
   "ai": {
     "provider": "openai",
     "model": "gpt-4o-mini"
   },
-  "summary_markdown": "## What this issue is about\nThis issue focuses on improving the documentation related to backends and vocabularies in Plone. Clear and accurate documentation is essential for users to effectively utilize these features.\n\n## What needs to be done\n1. **Lowercase \"uv\"**: Update instances of \"uv\" to be in lowercase.\n2. **Fix command errors**: Address the issue where the command `plonecli create addon src/collective.myaddon` fails to execute correctly.\n3. **Link documentation**: Remove duplicate information and create a link to the relevant documentation on vocabularies in the Plone REST API.\n\n## Helpful background\nVocabularies in Plone allow you to manage lists of values that can be used throughout your applications. The Plone REST API provides access to these vocabularies via the `@vocabularies` endpoint. Familiarity with MyST documentation formatting will be helpful for linking.\n\n## Good first steps\n1. Review the current documentation related to vocabularies and identify sections that need changes.\n2. Check out the discussion linked in the issue for context, especially @davisagli's comments.\n3. If you're interested, feel free to follow up on this in the comments or take on one of the tasks. Testing your changes and updating the documentation accordingly will be expected.",
+  "summary_markdown": "## What this issue is about\nThis issue focuses on improving the documentation for backends and vocabularies in Plone. It aims to clarify existing content and ensure users can effectively leverage the Plone REST API.\n\n## What needs to be done\nTo close this issue, you'll need to:\n- Change \"uv\" to lowercase, noting that using `uvx` instead of installing a tool is a personal preference.\n- Address a failure when executing `plonecli create addon src/collective.myaddon`. Investigate and fix this issue.\n- Remove redundant information by linking directly to the Plone REST API vocabulary documentation using the `{doc}` MyST reference format.\n\n## Helpful background\nVocabularies in Plone are used to manage sets of values that elements like fields can reference. The Plone REST API allows access to these vocabularies through the `@vocabularies` endpoint. Familiarity with REST concepts and basic documentation standards (MyST format) will be helpful here.\n\n## Good first steps\n1. Review the existing documentation and pull request comments for insights.\n2. Try running the command `plonecli create addon src/collective.myaddon` to see the error firsthand.\n3. Explore the referenced API documentation for context on vocabularies.\n4. If you’re ready, you can start drafting changes or improvements to the documentation. Don't hesitate to ask for clarification from others who are interested, as the discussion around this issue has some ambiguity.",
   "workflow": {
     "repository": "syslabcom/activity-recognition",
-    "run_id": "41203954652",
-    "run_number": "4233",
+    "run_id": "42379917517",
+    "run_number": "4402",
     "attempt": "1",
-    "url": "https://github.com/syslabcom/activity-recognition/actions/runs/41203954652",
-    "sha": "fcff88c4ee20f1dd489dfcbf4d7ee07636f9f988"
+    "url": "https://github.com/syslabcom/activity-recognition/actions/runs/42379917517",
+    "sha": "071dd8ae336d509a41f34732774633cf1c652bb6"
   }
 }
