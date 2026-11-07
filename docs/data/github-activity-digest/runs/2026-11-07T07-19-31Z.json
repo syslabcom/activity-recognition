@@ -1,0 +1,57 @@
+{
+  "version": 1,
+  "task": {
+    "slug": "github-activity-digest",
+    "title": "GitHub Activity Digest"
+  },
+  "status": "success",
+  "generated_at": "2026-11-07T07:19:31Z",
+  "message": null,
+  "period": {
+    "days": 7,
+    "start": "2026-10-31",
+    "end": "2026-11-07"
+  },
+  "source": {
+    "repository": "syslabcom/github-activity-digest",
+    "action_ref": null,
+    "config_path": "digest/config.json",
+    "mode": "organization",
+    "organization": "plone",
+    "user": "pilz",
+    "topics": [],
+    "repositories": []
+  },
+  "filters": {
+    "exclude_repos": [],
+    "include_repos": [],
+    "only_public": false,
+    "only_private": false,
+    "max_repos": 500
+  },
+  "counts": {
+    "repos_processed": 432,
+    "active_repos": 61
+  },
+  "ai": {
+    "provider": "openai",
+    "model": "gpt-4o-mini",
+    "language": "English",
+    "prompt_template": "prompt-template-activity-recognition.txt"
+  },
+  "summary": "# 📊 WEEKLY SUMMARY  \n**2026-10-31 to 2026-11-07**  \n\nThis week, the Plone organization saw significant activity across multiple repositories, focusing on dependency updates, performance enhancements, and documentation improvements. Notable contributions include new features in the Volto framework and enhancements to the Aurora project, reflecting ongoing efforts to improve usability and reliability within the ecosystem.\n\n## 📦 plone/plone.event  \n**[15 files changed, +67/-54 lines, 4 pull requests merged]**  \nKey updates include a pre-commit autoupdate and two dependency bumps. Maurits van Rees prepared release 3.0.1 and transitioned back to development for 3.0.2.\n\n## 📦 plone/plone.app.multilingual  \n**[11 files changed, +37/-19 lines, 2 pull requests merged]**  \nThis repository mainly focused on pre-commit updates, enhancing the code quality and maintaining the project’s health.\n\n## 📦 plone/plone.app.querystring  \n**[19 files changed, +228/-42 lines, 3 pull requests merged]**  \nNoteworthy improvements include avoiding unnecessary slow query filters, resulting in enhanced query performance. Additionally, maintenance updates were made through pre-commit hooks.\n\n## 📦 plone/plone.namedfile  \n**[5 files changed, +20/-7 lines, 2 pull requests merged]**  \nMaurits van Rees prepared release 8.1.2 and transitioned back to development for the next iteration.\n\n## 📦 plone/plone.scale  \n**[10 files changed, +27/-20 lines, 2 pull requests merged]**  \nPre-commit updates were made alongside routine dependency bumps to ensure compatibility and improved performance.\n\n## 📦 plone/plone.app.linkintegrity  \n**[15 files changed, +47/-38 lines, 2 pull requests merged]**  \nUpdates included pre-commit hooks and dependency management, enhancing code quality and consistency across the project.\n\n## 📦 plone/plone.portlets  \n**[7 files changed, +19/-11 lines, 2 pull requests merged]**  \nSimilar to other repositories, updates focused on pre-commit autoupdates and regular dependency management to maintain code health.\n\n## 📦 plone/plone.app.redirector  \n**[6 files changed, +14/-14 lines, 2 pull requests merged]**  \nThis repository also benefited from pre-commit updates and minor dependency bumps.\n\n## 📦 plone/plone.app.content  \n**[6 files changed, +16/-16 lines, 1 pull request merged]**  \nPre-commit hooks were implemented for maintaining coding standards in this repository.\n\n## 📦 plone/plone.github  \n**[2 files changed, +16/-0 lines, 1 pull request merged]**  \nA security email address was added to enhance communication regarding vulnerabilities and security concerns.\n\n## 📦 plone/buildout.coredev  \n**[147 files changed, +2304/-1102 lines, 6 pull requests merged]**  \nA major push included numerous security updates and upgraded package pins in the 6.0.x branch, significantly enhancing the stability and security of the buildout process.\n\n## 📦 plone/Products.PlonePAS  \n**[4 files changed, +12/-12 lines, 1 pull request merged]**  \nRoutine housekeeping focused on dependency management and pre-commit updates.\n\n## 📦 plone/Products.MimetypesRegistry  \n**[29 files changed, +82/-38 lines, 3 pull requests merged]**  \nUpdates to the package's dependencies and documentation improvements were notable highlights in this week’s progress.\n\n## 📦 plone/plone.restapi  \n**[45 files changed, +1210/-183 lines, 7 pull requests merged]**  \nThis repository underwent significant enhancements, including adding new features for control panel interactions and improving documentation.\n\n## 📦 plone/plone.i18n  \n**[14 files changed, +87/-22 lines, 2 pull requests merged]**  \nContributors created additional language normalization rules and enhanced existing functionalities.\n\n## 📦 plone/volto  \n**[191 files changed, +1821/-635 lines, 7 pull requests merged]**  \nKey updates focused on improving accessibility and feature integration within the Volto interface, enhancing user experience.\n\n## 📦 plone/container-frontend  \n**[10 files changed, +93/-17 lines, 1 pull request merged]**  \nEfficiency improvements in dependency handling were implemented.\n\n## 📦 plone/nick  \n**[463 files changed, +40044/-27400 lines, 6 pull requests merged]**  \nMajor enhancements introduced a new mail transport method and improved internationalization support.\n\n## 📦 plone/plone.exportimport  \n**[7 files changed, +16/-6 lines, 2 pull requests merged]**  \nSimple yet necessary updates were made to maintain compatibility with the latest dependencies.\n\n## 📦 plone/Products.CMFEditions  \n**[31 files changed, +84/-40 lines, 4 pull requests merged]**  \nThe main focus was on stabilizing the plugin with performance improvements and better integration with the overall ecosystem.\n\n## 📦 plone/plone.releaser  \n**[6 files changed, +14/-6 lines, 3 pull requests merged]**  \nRoutine dependency updates and enhanced documentation were the main features delivered.\n\n## 📦 plone/plone.api  \n**[4 files changed, +9/-3 lines, 2 pull requests merged]**  \nMinor maintenance tasks were completed as part of the week’s efforts.\n\n## 📦 plone/trainings  \n**[5 files changed, +0/-201 lines, 3 pull requests merged]**  \nFocus was on streamlining deployment workflows across multiple training branches.\n\nThis week highlighted the continued dedication of the Plone community to maintaining and improving the ecosystem. The significant merged pull requests reflect a strong commitment to quality and performance within various projects across the organization.\n\n### Contributors  \n- Maurits van Rees  \n- dependabot[bot]  \n- jensens  \n- sneridagh  \n- ericof  \n- davisagli  \n- pnicolli  \n- Timo Stollenwerk  \n\nAutomatically generated from 61 active repositories.",
+  "artifacts": {
+    "latest_json_path": "data/github-activity-digest/latest.json",
+    "latest_markdown_path": "data/github-activity-digest/latest.md",
+    "run_json_path": "data/github-activity-digest/runs/2026-11-07T07-19-31Z.json",
+    "run_markdown_path": "data/github-activity-digest/runs/2026-11-07T07-19-31Z.md"
+  },
+  "workflow": {
+    "repository": "syslabcom/activity-recognition",
+    "run_id": "42350445174",
+    "run_number": "222",
+    "attempt": "1",
+    "url": "https://github.com/syslabcom/activity-recognition/actions/runs/42350445174",
+    "sha": "d2c71aa187cba777aa1bd66f4324722ef49c4f6f"
+  }
+}
