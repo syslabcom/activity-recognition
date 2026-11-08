@@ -1,110 +1,94 @@
-# 📊 WEEKLY SUMMARY  
-**2026-10-31 to 2026-11-07**  
+# 📊 WEEKLY SUMMARY
+**2026-11-01 to 2026-11-08**
 
-This week, the Plone organization saw significant activity across multiple repositories, focusing on dependency updates, performance enhancements, and documentation improvements. Notable contributions include new features in the Volto framework and enhancements to the Aurora project, reflecting ongoing efforts to improve usability and reliability within the ecosystem.
+This week, the Plone ecosystem saw extensive activity across various repositories, with contributors making meaningful updates, bug fixes, and enhancements. Notably, security updates were rolled out, and several repositories showcased improvements in functionality and performance.
 
-## 📦 plone/plone.event  
-**[15 files changed, +67/-54 lines, 4 pull requests merged]**  
-Key updates include a pre-commit autoupdate and two dependency bumps. Maurits van Rees prepared release 3.0.1 and transitioned back to development for 3.0.2.
+## 📦 plone/plone.event
+**[15 files changed, +67/-54 lines, 2 pull requests merged]**  
+Updates included the preparation for release versions, with significant changes related to pre-commit configurations. The repository now has an updated build dependency and improved linting tools integrations.
 
-## 📦 plone/plone.app.multilingual  
+## 📦 plone/plone.app.multilingual
 **[11 files changed, +37/-19 lines, 2 pull requests merged]**  
-This repository mainly focused on pre-commit updates, enhancing the code quality and maintaining the project’s health.
+This repository prepared the next alpha release and improved its pre-commit configurations to keep dependencies up-to-date.
 
-## 📦 plone/plone.app.querystring  
+## 📦 plone/plone.app.querystring
 **[19 files changed, +228/-42 lines, 3 pull requests merged]**  
-Noteworthy improvements include avoiding unnecessary slow query filters, resulting in enhanced query performance. Additionally, maintenance updates were made through pre-commit hooks.
+A performance enhancement was introduced to avoid unnecessary slow query filters, enhancing query execution speed. Additionally, the project saw routine maintenance and updates to dependencies.
 
-## 📦 plone/plone.namedfile  
-**[5 files changed, +20/-7 lines, 2 pull requests merged]**  
-Maurits van Rees prepared release 8.1.2 and transitioned back to development for the next iteration.
+## 📦 plone/plone.namedfile
+**[5 files changed, +20/-7 lines, 0 pull requests merged]**  
+Contributions included preparation for the upcoming version releases and minor updates to improve coding practices.
 
-## 📦 plone/plone.scale  
+## 📦 plone/plone.scale
 **[10 files changed, +27/-20 lines, 2 pull requests merged]**  
-Pre-commit updates were made alongside routine dependency bumps to ensure compatibility and improved performance.
+Updates included enhancements to dependency management as well as pre-commit autoupdates, ensuring a more secure and maintainable codebase.
 
-## 📦 plone/plone.app.linkintegrity  
+## 📦 plone/plone.app.linkintegrity
 **[15 files changed, +47/-38 lines, 2 pull requests merged]**  
-Updates included pre-commit hooks and dependency management, enhancing code quality and consistency across the project.
+Notable improvements to the project were made, including an enhancement in managing dependencies related to link integrity checks and performance.
 
-## 📦 plone/plone.portlets  
-**[7 files changed, +19/-11 lines, 2 pull requests merged]**  
-Similar to other repositories, updates focused on pre-commit autoupdates and regular dependency management to maintain code health.
+## 📦 plone/plone.protect
+**[4 files changed, +12/-12 lines, 2 pull requests merged]**  
+The repository received dependency updates and configuration improvements to enhance security.
 
-## 📦 plone/plone.app.redirector  
-**[6 files changed, +14/-14 lines, 2 pull requests merged]**  
-This repository also benefited from pre-commit updates and minor dependency bumps.
-
-## 📦 plone/plone.app.content  
-**[6 files changed, +16/-16 lines, 1 pull request merged]**  
-Pre-commit hooks were implemented for maintaining coding standards in this repository.
-
-## 📦 plone/plone.github  
+## 📦 plone/.github
 **[2 files changed, +16/-0 lines, 1 pull request merged]**  
-A security email address was added to enhance communication regarding vulnerabilities and security concerns.
+Added a security email address essential for OSS Scanner enrolment.
 
-## 📦 plone/buildout.coredev  
-**[147 files changed, +2304/-1102 lines, 6 pull requests merged]**  
-A major push included numerous security updates and upgraded package pins in the 6.0.x branch, significantly enhancing the stability and security of the buildout process.
+## 📦 plone/plone.api
+**[4 files changed, +9/-3 lines, 0 pull requests merged]**  
+Minor updates were made for the next release version, focusing on maintaining the API's integrity.
 
-## 📦 plone/Products.PlonePAS  
+## 📦 plone/plone.github
+**[115 files changed, +89188/-101 lines, 0 pull requests merged]**  
+Extensive updates were made to documentation and the repository's structure, largely focusing on community engagement and project visibility.
+
+## 📦 plone/Products.MimetypesRegistry
+**[28 files changed, +81/-37 lines, 3 pull requests merged]**  
+The project underwent a refactor to improve its configuration management processes and integrated pre-commit updates to enhance development practices.
+
+## 📦 plone/plone.app.robotframework
+**[4 files changed, +14/-14 lines, 1 pull request merged]**  
+Routine updates through pre-commit configurations improved the repository's coding standards.
+
+## 📦 plone/Products.CMFEditions
+**[31 files changed, +84/-40 lines, 2 pull requests merged]**  
+Implementations include major enhancements focused on version compatibility and security alongside regular maintenance updates.
+
+## 📦 plone/plone.app.testing
 **[4 files changed, +12/-12 lines, 1 pull request merged]**  
-Routine housekeeping focused on dependency management and pre-commit updates.
+Primarily saw pre-commit updates and configuration improvements.
 
-## 📦 plone/Products.MimetypesRegistry  
-**[29 files changed, +82/-38 lines, 3 pull requests merged]**  
-Updates to the package's dependencies and documentation improvements were notable highlights in this week’s progress.
+## 📦 plone/plone.restapi
+**[41 files changed, +1166/-173 lines, 0 pull requests merged]**  
+Significant contributions made by various contributors aimed at enhancing API functionalities and updating dependencies, improving both performance and developer experience.
 
-## 📦 plone/plone.restapi  
-**[45 files changed, +1210/-183 lines, 7 pull requests merged]**  
-This repository underwent significant enhancements, including adding new features for control panel interactions and improving documentation.
+## 📦 plone/plone.volto
+**[191 files changed, +1821/-635 lines, 0 pull requests merged]**  
+Multiple contributors focused on enhancing the Volto UI, adding a more robust toolbar, and implementing several performance improvements.
 
-## 📦 plone/plone.i18n  
-**[14 files changed, +87/-22 lines, 2 pull requests merged]**  
-Contributors created additional language normalization rules and enhanced existing functionalities.
+## 📦 plone/documentation
+**[4 files changed, +7/-3 lines, 1 pull request merged]**  
+Contributions included adding glossary terms and improving documentation clarity.
 
-## 📦 plone/volto  
-**[191 files changed, +1821/-635 lines, 7 pull requests merged]**  
-Key updates focused on improving accessibility and feature integration within the Volto interface, enhancing user experience.
+## 📦 plone/janite
+**[4 files changed, +700/-300 lines, 2 pull requests merged]**  
+Added enhancements and visibility improvements, especially targeting user engagement with updated interface components.
 
-## 📦 plone/container-frontend  
-**[10 files changed, +93/-17 lines, 1 pull request merged]**  
-Efficiency improvements in dependency handling were implemented.
+## 📦 plone/volto
+**[191 files changed, +1821/-635 lines, 5 pull requests merged]**  
+Culminated in the introduction of new features, optimizations for accessibility, and various interface improvements.
 
-## 📦 plone/nick  
-**[463 files changed, +40044/-27400 lines, 6 pull requests merged]**  
-Major enhancements introduced a new mail transport method and improved internationalization support.
+### Contributors
+- Maurits van Rees
+- David Glick
+- Érico Andrei
+- Victor Fernandez de Alba
+- Jens W. Klein
+- Rob Gietema
+- Gil Forcada Codinachs
+- Piero Nicolli
+- Steve Piercy
+- Upptime Bot
 
-## 📦 plone/plone.exportimport  
-**[7 files changed, +16/-6 lines, 2 pull requests merged]**  
-Simple yet necessary updates were made to maintain compatibility with the latest dependencies.
-
-## 📦 plone/Products.CMFEditions  
-**[31 files changed, +84/-40 lines, 4 pull requests merged]**  
-The main focus was on stabilizing the plugin with performance improvements and better integration with the overall ecosystem.
-
-## 📦 plone/plone.releaser  
-**[6 files changed, +14/-6 lines, 3 pull requests merged]**  
-Routine dependency updates and enhanced documentation were the main features delivered.
-
-## 📦 plone/plone.api  
-**[4 files changed, +9/-3 lines, 2 pull requests merged]**  
-Minor maintenance tasks were completed as part of the week’s efforts.
-
-## 📦 plone/trainings  
-**[5 files changed, +0/-201 lines, 3 pull requests merged]**  
-Focus was on streamlining deployment workflows across multiple training branches.
-
-This week highlighted the continued dedication of the Plone community to maintaining and improving the ecosystem. The significant merged pull requests reflect a strong commitment to quality and performance within various projects across the organization.
-
-### Contributors  
-- Maurits van Rees  
-- dependabot[bot]  
-- jensens  
-- sneridagh  
-- ericof  
-- davisagli  
-- pnicolli  
-- Timo Stollenwerk  
-
-Automatically generated from 61 active repositories.
+Automatically generated from 58 active repositories.
