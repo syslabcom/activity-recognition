@@ -1,0 +1,33 @@
+{
+  "version": 1,
+  "status": "success",
+  "generated_at": "2026-11-10T17:07:18Z",
+  "source_issue": {
+    "id": 6310889099,
+    "number": 36,
+    "title": "Add values.schema.json and generate the values reference",
+    "html_url": "https://github.com/plone/helm-charts/issues/36",
+    "repository_full_name": "plone/helm-charts",
+    "updated_at": "2026-11-10T16:14:47Z",
+    "labels": [
+      "03 type: feature (plip)",
+      "12 prio: high",
+      "42 lvl: moderate",
+      "52 target: minor"
+    ],
+    "comments": 0
+  },
+  "ai": {
+    "provider": "openai",
+    "model": "gpt-4o-mini"
+  },
+  "summary_markdown": "## What this issue is about\nThis issue aims to improve the Plone Helm charts by adding a `values.schema.json` file. This schema will help catch errors in configuration, such as typos, which can otherwise go unnoticed. It also seeks to automate the generation of the values reference documentation.\n\n## What needs to be done\n1. Create a `values.schema.json` file that defines types, enums, and disallows unknown keys for each key in `values.yaml`.\n2. Ensure that the schema is compatible with existing configuration and utilizes `plone.validate` for consistent rules.\n3. Update the documentation to automatically generate the values reference located in `docs/reference/values.md` using the command `make docs`. This process should ensure that the CI (Continuous Integration) checks for discrepancies.\n\n## Helpful background\nA schema provides structure and validation rules for configuration files, helping prevent issues due to incorrect settings. This improvement will enhance documentation accuracy and foster better practice in managing configurations.\n\n## Good first steps\n1. Familiarize yourself with the current `values.yaml` structure.\n2. Review any existing documentation for insights on how the values reference is currently maintained.\n3. Start by drafting the `values.schema.json` based on the `values.yaml` contents.\n4. Make sure to run `make docs` locally and check if the outputs are generated correctly. \n\nFeel free to reach out for clarification if needed!",
+  "workflow": {
+    "repository": "syslabcom/activity-recognition",
+    "run_id": "42861276315",
+    "run_number": "4477",
+    "attempt": "1",
+    "url": "https://github.com/syslabcom/activity-recognition/actions/runs/42861276315",
+    "sha": "c81163be5603b4b0d1b5cfe3b20c661709d88f1d"
+  }
+}

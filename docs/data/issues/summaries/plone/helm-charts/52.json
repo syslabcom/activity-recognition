@@ -1,0 +1,32 @@
+{
+  "version": 1,
+  "status": "success",
+  "generated_at": "2026-11-10T17:05:56Z",
+  "source_issue": {
+    "id": 6310907133,
+    "number": 52,
+    "title": "Several hostnames, a canonical host, and redirects",
+    "html_url": "https://github.com/plone/helm-charts/issues/52",
+    "repository_full_name": "plone/helm-charts",
+    "updated_at": "2026-11-10T16:15:44Z",
+    "labels": [
+      "03 type: feature (plip)",
+      "13 prio: normal",
+      "42 lvl: moderate"
+    ],
+    "comments": 0
+  },
+  "ai": {
+    "provider": "openai",
+    "model": "gpt-4o-mini"
+  },
+  "summary_markdown": "## What this issue is about\nThis issue is focused on enhancing how hostnames are managed in the Plone Helm charts. Currently, routes only accept a single `routing.hostname`, which is used for virtual host rewriting. The goal is to support multiple hostnames along with a canonical hostname and set up optional redirects (like `www` to non-`www` and HTTP to HTTPS).\n\n## What needs to be done\nYou will need to implement a feature that allows multiple hostnames with a main canonical hostname. This includes configuring optional redirects using the `RequestRedirect` filters in the existing Gateway API. Note that this task depends on issue #29.\n\n## Helpful background\nUnderstanding how virtual hosts and redirects function within the Plone Helm charts will help you. Familiarize yourself with the concepts of canonical hostnames (the main, preferred address) and how to use the Gateway API for managing redirects. \n\n## Good first steps\n1. Review the current code and documentation related to `routing.hostname` and issue #29 for insights.\n2. Set up your development environment for the Plone Helm charts.\n3. Begin drafting ideas on how to implement the support for multiple hostnames and canonical redirects.\n4. Feel free to ask questions or seek clarification within the issue discussion; collaboration is encouraged!",
+  "workflow": {
+    "repository": "syslabcom/activity-recognition",
+    "run_id": "42861276315",
+    "run_number": "4477",
+    "attempt": "1",
+    "url": "https://github.com/syslabcom/activity-recognition/actions/runs/42861276315",
+    "sha": "c81163be5603b4b0d1b5cfe3b20c661709d88f1d"
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "version": 1,
+  "status": "success",
+  "generated_at": "2026-11-10T17:07:24Z",
+  "source_issue": {
+    "id": 6310887836,
+    "number": 35,
+    "title": "Replace test.sh with Makefile targets that match CI",
+    "html_url": "https://github.com/plone/helm-charts/issues/35",
+    "repository_full_name": "plone/helm-charts",
+    "updated_at": "2026-11-10T16:14:43Z",
+    "labels": [
+      "04 type: enhancement",
+      "13 prio: normal",
+      "41 lvl: easy"
+    ],
+    "comments": 0
+  },
+  "ai": {
+    "provider": "openai",
+    "model": "gpt-4o-mini"
+  },
+  "summary_markdown": "## What this issue is about\nThis issue focuses on replacing the outdated `test.sh` script in the Plone Helm Charts repository. The script currently includes commands that are not aligned with the current CI (Continuous Integration) workflow, which can cause inconsistencies in testing.\n\n## What needs to be done\nYou need to create Makefile targets that replicate the commands in the CI workflow, ensuring they include the necessary updates, like the `--kube-version` flag. Additionally, you'll document these Makefile targets in the `CONTRIBUTING` guidelines.\n\n## Helpful background\nThe current `test.sh` script mentions `k3d` and `k8s-diagrams` but isn’t compatible with the latest CI processes. Understanding Makefiles (a tool that automates command execution) will help, as we’ll be replacing the script with Makefile targets.\n\n## Good first steps\n1. Review the existing `test.sh` script and the CI workflow to understand the commands used.\n2. Start familiarizing yourself with Makefiles if you're not already comfortable with them.\n3. Begin drafting your Makefile targets based on the CI commands.\n4. Discuss any uncertainties with the maintainer or team.\n5. Once you've created the targets, you can work on updating the `CONTRIBUTING` documentation accordingly.\n\nFeel free to reach out if you have any questions!",
+  "workflow": {
+    "repository": "syslabcom/activity-recognition",
+    "run_id": "42861276315",
+    "run_number": "4477",
+    "attempt": "1",
+    "url": "https://github.com/syslabcom/activity-recognition/actions/runs/42861276315",
+    "sha": "c81163be5603b4b0d1b5cfe3b20c661709d88f1d"
+  }
+}

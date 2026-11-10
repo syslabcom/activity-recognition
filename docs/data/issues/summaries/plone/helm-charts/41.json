@@ -1,0 +1,33 @@
+{
+  "version": 1,
+  "status": "success",
+  "generated_at": "2026-11-10T17:06:52Z",
+  "source_issue": {
+    "id": 6310894512,
+    "number": 41,
+    "title": "Pack CronJob: inherit the backend's environment and placement, run at night",
+    "html_url": "https://github.com/plone/helm-charts/issues/41",
+    "repository_full_name": "plone/helm-charts",
+    "updated_at": "2026-11-10T16:15:04Z",
+    "labels": [
+      "01 type: bug",
+      "13 prio: normal",
+      "41 lvl: easy",
+      "51 target: patch"
+    ],
+    "comments": 0
+  },
+  "ai": {
+    "provider": "openai",
+    "model": "gpt-4o-mini"
+  },
+  "summary_markdown": "# Issue #41: Pack CronJob Enhancements\n\n## What this issue is about\nThis issue focuses on improving the Pack CronJob by ensuring it inherits crucial settings from the backend. It currently lacks the ability to use the backend's environment configurations like `env`, `nodeSelector`, `tolerations`, and `affinity`, which can lead to scheduling issues. Additionally, its default time is set to mid-morning in Europe.\n\n## What needs to be done\nWe need to update the Pack CronJob so that it:\n- Inherits environment variables and placement configurations from the backend.\n- Allows for `pack.*` overrides.\n- Adds a `timeZone` value and sets the default schedule to a night hour.\n\n## Helpful background\nCronJobs are scheduled tasks that run at specified times. The backend's environment settings are essential for proper execution. This issue is aimed at improving the scheduling reliability and flexibility of the CronJob.\n\n## Good first steps\n1. Check the existing CronJob configuration in the codebase.\n2. Review how the backend settings are currently defined.\n3. Write a proposal for implementing the inheritance and scheduling changes.\n4. Start with a small code change and run tests to verify functionality.\n\nDon't hesitate to ask questions if any part of the issue is unclear!",
+  "workflow": {
+    "repository": "syslabcom/activity-recognition",
+    "run_id": "42861276315",
+    "run_number": "4477",
+    "attempt": "1",
+    "url": "https://github.com/syslabcom/activity-recognition/actions/runs/42861276315",
+    "sha": "c81163be5603b4b0d1b5cfe3b20c661709d88f1d"
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "version": 1,
+  "status": "success",
+  "generated_at": "2026-11-10T17:06:12Z",
+  "source_issue": {
+    "id": 6310903394,
+    "number": 49,
+    "title": "ZEO backup and restore guide",
+    "html_url": "https://github.com/plone/helm-charts/issues/49",
+    "repository_full_name": "plone/helm-charts",
+    "updated_at": "2026-11-10T16:15:32Z",
+    "labels": [
+      "04 type: enhancement",
+      "12 prio: high",
+      "33 needs: docs",
+      "42 lvl: moderate"
+    ],
+    "comments": 0
+  },
+  "ai": {
+    "provider": "openai",
+    "model": "gpt-4o-mini"
+  },
+  "summary_markdown": "## What this issue is about\nThis issue is focused on creating a guide for backing up and restoring the ZEO (Zope Enterprise Objects) volume, which contains important data files like `Data.fs` and blobs. Currently, there's no documentation regarding these processes, which is essential for users to ensure their data's safety.\n\n## What needs to be done\nA comprehensive procedure needs to be written to illustrate how to effectively back up and restore the ZEO volume. It should clarify that packing is a maintenance task, not a backup solution. \n\n## Helpful background\nUnderstanding ZEO is crucial, as it is used in Plone for managing and storing data in a distributed setup. The current conversation surrounding this issue is limited and does not provide extensive details or alternative suggestions. If you're unfamiliar with ZEO, consider reviewing its basic concepts to grasp the context better.\n\n## Good first steps\n1. Research best practices for backing up ZEO volumes, focusing on `Data.fs` and blob storage.\n2. Draft an initial backup and restore procedure document.\n3. Clarify the differences between backup and maintenance tasks like packing.\n4. Once your draft is ready, be prepared to test it and seek feedback for improvements.",
+  "workflow": {
+    "repository": "syslabcom/activity-recognition",
+    "run_id": "42861276315",
+    "run_number": "4477",
+    "attempt": "1",
+    "url": "https://github.com/syslabcom/activity-recognition/actions/runs/42861276315",
+    "sha": "c81163be5603b4b0d1b5cfe3b20c661709d88f1d"
+  }
+}

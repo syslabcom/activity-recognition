@@ -1,0 +1,33 @@
+{
+  "version": 1,
+  "status": "success",
+  "generated_at": "2026-11-10T17:06:17Z",
+  "source_issue": {
+    "id": 6310901894,
+    "number": 48,
+    "title": "Backup values for CloudNativePG, and a tested restore guide",
+    "html_url": "https://github.com/plone/helm-charts/issues/48",
+    "repository_full_name": "plone/helm-charts",
+    "updated_at": "2026-11-10T16:15:29Z",
+    "labels": [
+      "03 type: feature (plip)",
+      "11 prio: blocker",
+      "33 needs: docs",
+      "43 lvl: complex"
+    ],
+    "comments": 0
+  },
+  "ai": {
+    "provider": "openai",
+    "model": "gpt-4o-mini"
+  },
+  "summary_markdown": "# Summary for Issue #48\n\n## What this issue is about\nThis issue focuses on enhancing the backup capabilities for the CloudNativePG installation within the Helm charts for Plone. Currently, there's no backup setup, nor documentation for restoring data.\n\n## What needs to be done\n1. **Implement Backup Values**: Define values such as `backup.destination` (for S3-compatible storage), `backup.schedule`, and `backup.retention` linked to the `cluster` chart.\n2. **Create Restore Guide**: Write a how-to guide for restoring data into a new release and verifying its content.\n3. **Set Up CI Job**: Develop a scheduled Continuous Integration (CI) job that tests the restore process using MinIO.\n\nPlease note: This issue depends on another issue (#20) that might need to be resolved first.\n\n## Helpful background\nThis task is labeled as complex and is considered a blocker for the project due to its importance for data integrity. Familiarity with Helm charts and CI practices will be beneficial.\n\n## Good first steps\n- Review existing documentation related to backup and restore processes.\n- Familiarize yourself with the relevant parts of the CloudNativePG chart.\n- Reach out in the comments for clarification or guidance, especially regarding dependencies or implementation details.",
+  "workflow": {
+    "repository": "syslabcom/activity-recognition",
+    "run_id": "42861276315",
+    "run_number": "4477",
+    "attempt": "1",
+    "url": "https://github.com/syslabcom/activity-recognition/actions/runs/42861276315",
+    "sha": "c81163be5603b4b0d1b5cfe3b20c661709d88f1d"
+  }
+}

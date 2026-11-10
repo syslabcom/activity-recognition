@@ -1,0 +1,32 @@
+{
+  "version": 1,
+  "status": "success",
+  "generated_at": "2026-11-10T17:05:44Z",
+  "source_issue": {
+    "id": 6310916410,
+    "number": 60,
+    "title": "Update the Plone image tags automatically",
+    "html_url": "https://github.com/plone/helm-charts/issues/60",
+    "repository_full_name": "plone/helm-charts",
+    "updated_at": "2026-11-10T16:16:15Z",
+    "labels": [
+      "04 type: enhancement",
+      "13 prio: normal",
+      "42 lvl: moderate"
+    ],
+    "comments": 0
+  },
+  "ai": {
+    "provider": "openai",
+    "model": "gpt-4o-mini"
+  },
+  "summary_markdown": "## What this issue is about\nThis issue focuses on improving how we manage the Plone image tags in our Helm charts. Currently, Dependabot does not monitor the tags specified in `values.yaml` and `appVersion`. The goal is to automate updates for these tags using Renovate or a scheduled workflow when there are new releases of Plone components (like plone-backend, plone-frontend, or plone-zeo).\n\n## What needs to be done\nWe need to implement a solution that automatically opens a pull request to update the image tags in the Helm charts whenever there is a new release of Plone components. Look into using Renovate or setting up a scheduled GitHub Actions workflow for this purpose.\n\n## Helpful background\nUnderstanding how Helm charts and image tags work in the context of Kubernetes will be beneficial. Image tags are used to specify versions of the Docker images that your application uses, ensuring consistent deployments.\n\n## Good first steps\n1. Familiarize yourself with the structure of `values.yaml` and the role of image tags in our project.\n2. Browse existing issues or discussions related to issue #26, as this is a dependency.\n3. Explore how to use Renovate and GitHub Actions if you're not familiar with them.\n4. Start drafting a plan for how to implement the scheduled updates or Renovate integration.",
+  "workflow": {
+    "repository": "syslabcom/activity-recognition",
+    "run_id": "42861276315",
+    "run_number": "4477",
+    "attempt": "1",
+    "url": "https://github.com/syslabcom/activity-recognition/actions/runs/42861276315",
+    "sha": "c81163be5603b4b0d1b5cfe3b20c661709d88f1d"
+  }
+}

@@ -1,24 +1,28 @@
 ---
 title: "Plone issue list — Level: Complex"
 permalink: "/issues/lvl-complex/"
-generated_at: "2026-11-10T16:07:30Z"
+generated_at: "2026-11-10T17:05:28Z"
 organization: "plone"
-issue_count: 50
+issue_count: 54
 required_labels:
   - "43 lvl: complex"
 ---
 
 # Plone issue list — Level: Complex
 
-Generated: `2026-11-10T16:07:30Z`  
+Generated: `2026-11-10T17:05:28Z`  
 Organization: `plone`  
 Required label: `43 lvl: complex`  
-Issue count: `50`
+Issue count: `54`
 
 Sorted by last updated date, newest first.
 
 | Updated | Repository | Issue | Author | Labels |
 | --- | --- | --- | --- | --- |
+| 2026-11-10 16:15 UTC | `plone/helm-charts` | [#48 Backup values for CloudNativePG, and a tested restore guide](https://github.com/plone/helm-charts/issues/48) | `ericof` | `03 type: feature (plip)`, `11 prio: blocker`, `33 needs: docs`, `43 lvl: complex` |
+| 2026-11-10 16:15 UTC | `plone/helm-charts` | [#46 Plone's recommended VCL as default, with purging from Plone](https://github.com/plone/helm-charts/issues/46) | `ericof` | `03 type: feature (plip)`, `12 prio: high`, `43 lvl: complex`, `52 target: minor` |
+| 2026-11-10 16:14 UTC | `plone/helm-charts` | [#29 Functional tests through a real Gateway in kind](https://github.com/plone/helm-charts/issues/29) | `ericof` | `04 type: enhancement`, `11 prio: blocker`, `34 needs: tests`, `43 lvl: complex` |
+| 2026-11-10 16:13 UTC | `plone/helm-charts` | [#19 Set the admin password from a Secret, generated when not given](https://github.com/plone/helm-charts/issues/19) | `ericof` | `03 type: feature (plip)`, `11 prio: blocker`, `43 lvl: complex`, `52 target: minor` |
 | 2026-10-28 13:34 UTC | `plone/volto` | [#2061 Copy&Paste feature overlaps with DX Layout restrictions](https://github.com/plone/volto/issues/2061) | `avoinea` | `02 type: regression`, `21 status: confirmed`, `43 lvl: complex`, `61 scope: editor` |
 | 2026-10-28 13:32 UTC | `plone/volto` | [#1516 Metadata block or easy way to insert document metadata inside text block](https://github.com/plone/volto/issues/1516) | `avoinea` | `04 type: enhancement`, `43 lvl: complex`, `99 tag: sprint`, `61 scope: editor` |
 | 2026-10-28 13:30 UTC | `plone/volto` | [#4232 Move new CSRF docs from Classic UI to Backend?](https://github.com/plone/volto/issues/4232) | `stevepiercy` | `04 type: enhancement`, `33 needs: docs`, `43 lvl: complex`, `99 tag: docs` |

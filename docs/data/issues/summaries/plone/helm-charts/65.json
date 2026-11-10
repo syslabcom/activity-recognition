@@ -1,0 +1,32 @@
+{
+  "version": 1,
+  "status": "success",
+  "generated_at": "2026-11-10T17:05:39Z",
+  "source_issue": {
+    "id": 6310922515,
+    "number": 65,
+    "title": "Slim the root README to a portal",
+    "html_url": "https://github.com/plone/helm-charts/issues/65",
+    "repository_full_name": "plone/helm-charts",
+    "updated_at": "2026-11-10T16:16:35Z",
+    "labels": [
+      "04 type: enhancement",
+      "14 prio: low",
+      "41 lvl: easy"
+    ],
+    "comments": 0
+  },
+  "ai": {
+    "provider": "openai",
+    "model": "gpt-4o-mini"
+  },
+  "summary_markdown": "## What this issue is about\nThis issue focuses on simplifying the root README file of the Plone Helm Charts repository. The current README unnecessarily repeats sections found in the documentation, such as the Gateway API, ingress-nginx, and scenario details.\n\n## What needs to be done\nThe goal is to slim down the README to include only a brief description, a quick start guide, and relevant links. This will make the README more user-friendly and easier to navigate.\n\n## Helpful background\nA README (Read Me) file serves as an introduction to a project, offering guidance to new users and contributors. By removing redundant content, we can avoid confusion and provide clearer information.\n\n## Good first steps\n1. Review the current README to identify all repeated sections.\n2. Draft a shorter version that includes only essential information: a brief overview, quick start instructions, and links to detailed documentation.\n3. Share your draft for feedback, ensuring it meets clarity and usefulness goals.\n4. Be prepared for testing changes and possibly updating documentation related to the project post-modification. \n\nFeel free to reach out if you have questions or need assistance!",
+  "workflow": {
+    "repository": "syslabcom/activity-recognition",
+    "run_id": "42861276315",
+    "run_number": "4477",
+    "attempt": "1",
+    "url": "https://github.com/syslabcom/activity-recognition/actions/runs/42861276315",
+    "sha": "c81163be5603b4b0d1b5cfe3b20c661709d88f1d"
+  }
+}

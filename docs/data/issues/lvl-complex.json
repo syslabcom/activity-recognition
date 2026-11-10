@@ -1,7 +1,7 @@
 {
   "version": 1,
   "status": "success",
-  "generated_at": "2026-11-10T16:07:30Z",
+  "generated_at": "2026-11-10T17:05:28Z",
   "organization": "plone",
   "state": "open",
   "slug": "lvl-complex",
@@ -9,8 +9,124 @@
   "required_labels": [
     "43 lvl: complex"
   ],
-  "issue_count": 50,
+  "issue_count": 54,
   "issues": [
+    {
+      "id": 6310901894,
+      "number": 48,
+      "title": "Backup values for CloudNativePG, and a tested restore guide",
+      "html_url": "https://github.com/plone/helm-charts/issues/48",
+      "repository_full_name": "plone/helm-charts",
+      "repository_url": "https://api.github.com/repos/plone/helm-charts",
+      "state": "open",
+      "created_at": "2026-11-10T16:15:27Z",
+      "updated_at": "2026-11-10T16:15:29Z",
+      "comments": 0,
+      "author": {
+        "login": "ericof",
+        "html_url": "https://github.com/ericof"
+      },
+      "assignees": [
+        "ericof"
+      ],
+      "labels": [
+        "03 type: feature (plip)",
+        "11 prio: blocker",
+        "33 needs: docs",
+        "43 lvl: complex"
+      ],
+      "contributor_summary": {
+        "status": "available",
+        "generated_at": "2026-11-10T17:06:17Z",
+        "source_issue_updated_at": "2026-11-10T16:15:29Z",
+        "model": "gpt-4o-mini",
+        "summary_markdown": "# Summary for Issue #48\n\n## What this issue is about\nThis issue focuses on enhancing the backup capabilities for the CloudNativePG installation within the Helm charts for Plone. Currently, there's no backup setup, nor documentation for restoring data.\n\n## What needs to be done\n1. **Implement Backup Values**: Define values such as `backup.destination` (for S3-compatible storage), `backup.schedule`, and `backup.retention` linked to the `cluster` chart.\n2. **Create Restore Guide**: Write a how-to guide for restoring data into a new release and verifying its content.\n3. **Set Up CI Job**: Develop a scheduled Continuous Integration (CI) job that tests the restore process using MinIO.\n\nPlease note: This issue depends on another issue (#20) that might need to be resolved first.\n\n## Helpful background\nThis task is labeled as complex and is considered a blocker for the project due to its importance for data integrity. Familiarity with Helm charts and CI practices will be beneficial.\n\n## Good first steps\n- Review existing documentation related to backup and restore processes.\n- Familiarize yourself with the relevant parts of the CloudNativePG chart.\n- Reach out in the comments for clarification or guidance, especially regarding dependencies or implementation details.",
+        "path": "data/issues/summaries/plone/helm-charts/48.json"
+      }
+    },
+    {
+      "id": 6310899823,
+      "number": 46,
+      "title": "Plone's recommended VCL as default, with purging from Plone",
+      "html_url": "https://github.com/plone/helm-charts/issues/46",
+      "repository_full_name": "plone/helm-charts",
+      "repository_url": "https://api.github.com/repos/plone/helm-charts",
+      "state": "open",
+      "created_at": "2026-11-10T16:15:20Z",
+      "updated_at": "2026-11-10T16:15:21Z",
+      "comments": 0,
+      "author": {
+        "login": "ericof",
+        "html_url": "https://github.com/ericof"
+      },
+      "assignees": [
+        "ericof"
+      ],
+      "labels": [
+        "03 type: feature (plip)",
+        "12 prio: high",
+        "43 lvl: complex",
+        "52 target: minor"
+      ],
+      "contributor_summary": {
+        "status": "available",
+        "generated_at": "2026-11-10T17:06:29Z",
+        "source_issue_updated_at": "2026-11-10T16:15:21Z",
+        "model": "gpt-4o-mini",
+        "summary_markdown": "## What this issue is about\nThis issue proposes updating Plone's default Varnish Configuration Language (VCL) to improve its functionality. Currently, the default VCL has limitations in handling cache purging, cookie normalization, and backend probes, which affects how Plone caches and serves content effectively.\n\n## What needs to be done\nWe need to create a new VCL based on Plone's documented configuration. This new version should include proper handling for cache purging, so changes in Plone can be reflected quickly. The implementation should ensure that all Varnish pods receive these purges and set appropriate Access Control Lists (ACLs).\n\n## Helpful background\nVCL is a scripting language for configuring Varnish, a web application accelerator. Effective use of VCL allows Plone to cache content smartly and handle purging correctly, which means reducing the server load and speeding up content delivery.\n\n## Good first steps\n1. Review the current default VCL and identify specific areas needing improvement.\n2. Familiarize yourself with Plone's documented Varnish configuration.\n3. Consider how purging works in caching systems; implementing this will involve functional tests to ensure pages are properly updated after edits.\n4. Keep in mind, this issue depends on related issues (#45 and #29), so checking those may provide extra context.",
+        "path": "data/issues/summaries/plone/helm-charts/46.json"
+      }
+    },
+    {
+      "id": 6310881827,
+      "number": 29,
+      "title": "Functional tests through a real Gateway in kind",
+      "html_url": "https://github.com/plone/helm-charts/issues/29",
+      "repository_full_name": "plone/helm-charts",
+      "repository_url": "https://api.github.com/repos/plone/helm-charts",
+      "state": "open",
+      "created_at": "2026-11-10T16:14:22Z",
+      "updated_at": "2026-11-10T16:14:23Z",
+      "comments": 0,
+      "author": {
+        "login": "ericof",
+        "html_url": "https://github.com/ericof"
+      },
+      "assignees": [
+        "ericof"
+      ],
+      "labels": [
+        "04 type: enhancement",
+        "11 prio: blocker",
+        "34 needs: tests",
+        "43 lvl: complex"
+      ]
+    },
+    {
+      "id": 6310870707,
+      "number": 19,
+      "title": "Set the admin password from a Secret, generated when not given",
+      "html_url": "https://github.com/plone/helm-charts/issues/19",
+      "repository_full_name": "plone/helm-charts",
+      "repository_url": "https://api.github.com/repos/plone/helm-charts",
+      "state": "open",
+      "created_at": "2026-11-10T16:13:46Z",
+      "updated_at": "2026-11-10T16:13:47Z",
+      "comments": 0,
+      "author": {
+        "login": "ericof",
+        "html_url": "https://github.com/ericof"
+      },
+      "assignees": [
+        "ericof"
+      ],
+      "labels": [
+        "03 type: feature (plip)",
+        "11 prio: blocker",
+        "43 lvl: complex",
+        "52 target: minor"
+      ]
+    },
     {
       "id": 763844980,
       "number": 2061,
@@ -1538,10 +1654,10 @@
   "message": null,
   "workflow": {
     "repository": "syslabcom/activity-recognition",
-    "run_id": "42851379154",
-    "run_number": "4476",
+    "run_id": "42861276315",
+    "run_number": "4477",
     "attempt": "1",
-    "url": "https://github.com/syslabcom/activity-recognition/actions/runs/42851379154",
-    "sha": "b220c067b26cfe7b6e6bbe1ae9d5b2e861fb7ece"
+    "url": "https://github.com/syslabcom/activity-recognition/actions/runs/42861276315",
+    "sha": "c81163be5603b4b0d1b5cfe3b20c661709d88f1d"
   }
 }

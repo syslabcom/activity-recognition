@@ -1,0 +1,33 @@
+{
+  "version": 1,
+  "status": "success",
+  "generated_at": "2026-11-10T17:06:23Z",
+  "source_issue": {
+    "id": 6310900884,
+    "number": 47,
+    "title": "Remove global.plone and varnish.ploneFrontend",
+    "html_url": "https://github.com/plone/helm-charts/issues/47",
+    "repository_full_name": "plone/helm-charts",
+    "updated_at": "2026-11-10T16:15:25Z",
+    "labels": [
+      "04 type: enhancement",
+      "13 prio: normal",
+      "42 lvl: moderate",
+      "53 target: major"
+    ],
+    "comments": 0
+  },
+  "ai": {
+    "provider": "openai",
+    "model": "gpt-4o-mini"
+  },
+  "summary_markdown": "## What this issue is about\nThis issue aims to enhance the Plone Helm Charts by removing `global.plone` and `varnish.ploneFrontend`. These configurations are redundant and should be eliminated once the new VCL (Varnish Configuration Language) chart is fully implemented.\n\n## What needs to be done\n1. Once the VCL chart is ready, remove the specified values that duplicate other subchart values.\n2. Update upgrade notes to inform users of these changes.\n\n## Helpful background\nThis enhancement is part of ongoing improvements to streamline configuration in Plone’s Helm Charts. Helm Charts are used for managing Kubernetes applications, simplifying the deployment and setup process. The terms \"global values\" and \"subcharts\" refer to configuration settings that can affect the whole application or specific components, respectively.\n\nThe issue is currently linked to another, #45, which may influence priorities or implementation details. There are no comments or additional details to clarify specific concerns or approaches.\n\n## Good first steps\n1. Review the current configurations for `global.plone` and `varnish.ploneFrontend` in the repository.\n2. Familiarize yourself with the new VCL chart and how it operates.\n3. Reach out in the issue thread if you have questions or suggestions regarding these changes. Once ready, make a pull request to implement the modifications.",
+  "workflow": {
+    "repository": "syslabcom/activity-recognition",
+    "run_id": "42861276315",
+    "run_number": "4477",
+    "attempt": "1",
+    "url": "https://github.com/syslabcom/activity-recognition/actions/runs/42861276315",
+    "sha": "c81163be5603b4b0d1b5cfe3b20c661709d88f1d"
+  }
+}

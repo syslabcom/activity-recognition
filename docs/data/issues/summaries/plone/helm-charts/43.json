@@ -1,0 +1,32 @@
+{
+  "version": 1,
+  "status": "success",
+  "generated_at": "2026-11-10T17:06:40Z",
+  "source_issue": {
+    "id": 6310896561,
+    "number": 43,
+    "title": "Publish to GHCR as OCI, sign with cosign, and list on Artifact Hub",
+    "html_url": "https://github.com/plone/helm-charts/issues/43",
+    "repository_full_name": "plone/helm-charts",
+    "updated_at": "2026-11-10T16:15:10Z",
+    "labels": [
+      "04 type: enhancement",
+      "13 prio: normal",
+      "42 lvl: moderate"
+    ],
+    "comments": 0
+  },
+  "ai": {
+    "provider": "openai",
+    "model": "gpt-4o-mini"
+  },
+  "summary_markdown": "## What this issue is about\nThis issue focuses on enhancing the Plone Helm Charts by enabling them to be published to GitHub Container Registry (GHCR) as OCI (Open Container Initiative) images. Additionally, we want to sign these images with cosign and list the charts on Artifact Hub.\n\n## What needs to be done\n1. **Publish to GHCR**: Push each release to `oci://ghcr.io/plone/charts`.\n2. **Sign Images**: Use cosign to sign the published images.\n3. **Register on Artifact Hub**: Create a listing for the charts, including an icon and essential annotations in the `Chart.yaml` file.\n\n## Helpful background\nThe Plone Helm Charts are currently only available in the GitHub Pages repository. The enhancement aims to improve discoverability and security. Artifact Hub is a platform for finding and publishing Helm Charts, which is widely used in the Kubernetes community.\n\n## Good first steps\n1. Familiarize yourself with [Helm](https://helm.sh/docs/) as it is essential for managing Kubernetes applications.\n2. Review the already published charts in the GitHub repository to understand the current structure.\n3. Look into the documentation for [cosign](https://github.com/sigstore/cosign) regarding image signing practices.\n4. Consider exploring any dependencies mentioned in related issues, as they may provide additional insights or necessary tasks.\n\nFeel free to reach out for clarification on any part of the process!",
+  "workflow": {
+    "repository": "syslabcom/activity-recognition",
+    "run_id": "42861276315",
+    "run_number": "4477",
+    "attempt": "1",
+    "url": "https://github.com/syslabcom/activity-recognition/actions/runs/42861276315",
+    "sha": "c81163be5603b4b0d1b5cfe3b20c661709d88f1d"
+  }
+}

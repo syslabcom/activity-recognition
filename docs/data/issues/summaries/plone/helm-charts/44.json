@@ -1,0 +1,33 @@
+{
+  "version": 1,
+  "status": "success",
+  "generated_at": "2026-11-10T17:06:34Z",
+  "source_issue": {
+    "id": 6310897472,
+    "number": 44,
+    "title": "Escape the RelStorage connection string, and add sslmode",
+    "html_url": "https://github.com/plone/helm-charts/issues/44",
+    "repository_full_name": "plone/helm-charts",
+    "updated_at": "2026-11-10T16:15:14Z",
+    "labels": [
+      "01 type: bug",
+      "13 prio: normal",
+      "41 lvl: easy",
+      "51 target: patch"
+    ],
+    "comments": 0
+  },
+  "ai": {
+    "provider": "openai",
+    "model": "gpt-4o-mini"
+  },
+  "summary_markdown": "## What this issue is about\nThis issue focuses on improving the `RELSTORAGE_DSN` connection string used for external PostgreSQL servers in the Plone Helm charts. Currently, if the password contains certain characters, it breaks the connection string. Additionally, there's no option to specify `sslmode`, which is important for secure connections.\n\n## What needs to be done\nThe goal is to:\n1. Escape special characters (like `'` or `\\\\`) in the password within the connection string.\n2. Include an option to set `sslmode` for enhanced security.\n3. Explore building the connection string from the `uri` key of the CloudNativePG secret.\n\n### Note\nThis issue depends on Issue #31, so review any related discussions there.\n\n## Helpful background\nUnderstanding how connection strings work and the importance of secure database connections is key. In this case, special characters in passwords can disrupt the string format.\n\n## Good first steps\n1. Familiarize yourself with the connection string format for RelStorage.\n2. Consider how escaping characters can be implemented.\n3. Review the code related to `RELSTORAGE_DSN` in the Helm charts.\n4. Check out Issue #31 for additional context or related changes.\n\nIf you have questions, feel free to ask for clarification!",
+  "workflow": {
+    "repository": "syslabcom/activity-recognition",
+    "run_id": "42861276315",
+    "run_number": "4477",
+    "attempt": "1",
+    "url": "https://github.com/syslabcom/activity-recognition/actions/runs/42861276315",
+    "sha": "c81163be5603b4b0d1b5cfe3b20c661709d88f1d"
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "version": 1,
+  "status": "success",
+  "generated_at": "2026-11-10T17:07:29Z",
+  "source_issue": {
+    "id": 6310886883,
+    "number": 34,
+    "title": "CI scenarios for external PostgreSQL, external ZEO, Classic UI on ZEO, and Varnish with Gateway API",
+    "html_url": "https://github.com/plone/helm-charts/issues/34",
+    "repository_full_name": "plone/helm-charts",
+    "updated_at": "2026-11-10T16:14:40Z",
+    "labels": [
+      "04 type: enhancement",
+      "13 prio: normal",
+      "34 needs: tests",
+      "42 lvl: moderate"
+    ],
+    "comments": 0
+  },
+  "ai": {
+    "provider": "openai",
+    "model": "gpt-4o-mini"
+  },
+  "summary_markdown": "# CI scenarios for external PostgreSQL, external ZEO, Classic UI on ZEO, and Varnish with Gateway API\n\n## What this issue is about\nThis issue focuses on enhancing the continuous integration (CI) tests for Plone's Helm charts. Currently, the CI only tests four scenarios, while there are several more described in the documentation that aren't being tested.\n\n## What needs to be done\nYou'll need to add a values file for each untested scenario, including:\n- External PostgreSQL\n- External ZEO\n- Classic UI on ZEO\n- Varnish with Gateway API\n- Classic UI with Varnish  \nMake sure to include functional checks in each values file.\n\n## Helpful background\nValues files are used in Helm charts to define configurations and settings for deployments. This enhancement will ensure that our CI process aligns better with our documentation and expected use cases. Note that this issue is dependent on issue #29, so check that for context.\n\n## Good first steps\n1. Familiarize yourself with the existing CI tests in `charts/plone/ci`.\n2. Review the documentation for the untested scenarios.\n3. Create a draft values file for one of the scenarios to start.\n4. Engage with the conversation around issue #29 for any specific implementations that may be relevant.\n\nFeel free to ask questions if anything is unclear; the community is here to help!",
+  "workflow": {
+    "repository": "syslabcom/activity-recognition",
+    "run_id": "42861276315",
+    "run_number": "4477",
+    "attempt": "1",
+    "url": "https://github.com/syslabcom/activity-recognition/actions/runs/42861276315",
+    "sha": "c81163be5603b4b0d1b5cfe3b20c661709d88f1d"
+  }
+}

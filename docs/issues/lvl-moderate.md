@@ -1,24 +1,40 @@
 ---
 title: "Plone issue list — Level: Moderate"
 permalink: "/issues/lvl-moderate/"
-generated_at: "2026-11-10T16:07:30Z"
+generated_at: "2026-11-10T17:05:28Z"
 organization: "plone"
-issue_count: 69
+issue_count: 85
 required_labels:
   - "42 lvl: moderate"
 ---
 
 # Plone issue list — Level: Moderate
 
-Generated: `2026-11-10T16:07:30Z`  
+Generated: `2026-11-10T17:05:28Z`  
 Organization: `plone`  
 Required label: `42 lvl: moderate`  
-Issue count: `69`
+Issue count: `85`
 
 Sorted by last updated date, newest first.
 
 | Updated | Repository | Issue | Author | Labels |
 | --- | --- | --- | --- | --- |
+| 2026-11-10 16:16 UTC | `plone/helm-charts` | [#60 Update the Plone image tags automatically](https://github.com/plone/helm-charts/issues/60) | `ericof` | `04 type: enhancement`, `13 prio: normal`, `42 lvl: moderate` |
+| 2026-11-10 16:15 UTC | `plone/helm-charts` | [#53 Example values files for development and production](https://github.com/plone/helm-charts/issues/53) | `ericof` | `04 type: enhancement`, `12 prio: high`, `42 lvl: moderate` |
+| 2026-11-10 16:15 UTC | `plone/helm-charts` | [#52 Several hostnames, a canonical host, and redirects](https://github.com/plone/helm-charts/issues/52) | `ericof` | `03 type: feature (plip)`, `13 prio: normal`, `42 lvl: moderate` |
+| 2026-11-10 16:15 UTC | `plone/helm-charts` | [#51 Autoscaling and an optional NetworkPolicy](https://github.com/plone/helm-charts/issues/51) | `ericof` | `03 type: feature (plip)`, `13 prio: normal`, `42 lvl: moderate` |
+| 2026-11-10 16:15 UTC | `plone/helm-charts` | [#50 Extension points: extra volumes, init containers, sidecars, envFrom, labels, topology spread, priority class](https://github.com/plone/helm-charts/issues/50) | `ericof` | `03 type: feature (plip)`, `13 prio: normal`, `42 lvl: moderate` |
+| 2026-11-10 16:15 UTC | `plone/helm-charts` | [#49 ZEO backup and restore guide](https://github.com/plone/helm-charts/issues/49) | `ericof` | `04 type: enhancement`, `12 prio: high`, `33 needs: docs`, `42 lvl: moderate` |
+| 2026-11-10 16:15 UTC | `plone/helm-charts` | [#47 Remove global.plone and varnish.ploneFrontend](https://github.com/plone/helm-charts/issues/47) | `ericof` | `04 type: enhancement`, `13 prio: normal`, `42 lvl: moderate`, `53 target: major` |
+| 2026-11-10 16:15 UTC | `plone/helm-charts` | [#43 Publish to GHCR as OCI, sign with cosign, and list on Artifact Hub](https://github.com/plone/helm-charts/issues/43) | `ericof` | `04 type: enhancement`, `13 prio: normal`, `42 lvl: moderate` |
+| 2026-11-10 16:15 UTC | `plone/helm-charts` | [#40 Restricted security contexts and a chart ServiceAccount](https://github.com/plone/helm-charts/issues/40) | `ericof` | `04 type: enhancement`, `12 prio: high`, `42 lvl: moderate` |
+| 2026-11-10 16:14 UTC | `plone/helm-charts` | [#38 Roll out the backend without downtime](https://github.com/plone/helm-charts/issues/38) | `ericof` | `04 type: enhancement`, `12 prio: high`, `42 lvl: moderate`, `53 target: major` |
+| 2026-11-10 16:14 UTC | `plone/helm-charts` | [#36 Add values.schema.json and generate the values reference](https://github.com/plone/helm-charts/issues/36) | `ericof` | `03 type: feature (plip)`, `12 prio: high`, `42 lvl: moderate`, `52 target: minor` |
+| 2026-11-10 16:14 UTC | `plone/helm-charts` | [#34 CI scenarios for external PostgreSQL, external ZEO, Classic UI on ZEO, and Varnish with Gateway API](https://github.com/plone/helm-charts/issues/34) | `ericof` | `04 type: enhancement`, `13 prio: normal`, `34 needs: tests`, `42 lvl: moderate` |
+| 2026-11-10 16:14 UTC | `plone/helm-charts` | [#32 Upgrade test from the last published release, with content checks](https://github.com/plone/helm-charts/issues/32) | `ericof` | `04 type: enhancement`, `12 prio: high`, `34 needs: tests`, `42 lvl: moderate` |
+| 2026-11-10 16:14 UTC | `plone/helm-charts` | [#31 Unit tests with helm-unittest, and kubeconform across Kubernetes 1.29 to 1.37](https://github.com/plone/helm-charts/issues/31) | `ericof` | `04 type: enhancement`, `12 prio: high`, `34 needs: tests`, `42 lvl: moderate` |
+| 2026-11-10 16:14 UTC | `plone/helm-charts` | [#30 Add a helm test hook with the smoke checks](https://github.com/plone/helm-charts/issues/30) | `ericof` | `03 type: feature (plip)`, `12 prio: high`, `42 lvl: moderate` |
+| 2026-11-10 16:14 UTC | `plone/helm-charts` | [#26 Fix Dependabot's Helm dependency updates](https://github.com/plone/helm-charts/issues/26) | `ericof` | `01 type: bug`, `12 prio: high`, `42 lvl: moderate` |
 | 2026-10-28 13:58 UTC | `plone/volto` | [#5630 Unify the use of the optional `preview_image_link` across Volto](https://github.com/plone/volto/issues/5630) | `sneridagh` | `04 type: enhancement`, `42 lvl: moderate` |
 | 2026-10-28 13:31 UTC | `plone/volto` | [#1459 Workflow Manager](https://github.com/plone/volto/issues/1459) | `tisto` | `04 type: enhancement`, `42 lvl: moderate`, `61 scope: editor` |
 | 2026-10-28 13:31 UTC | `plone/volto` | [#5896 It's confusing how to change my password as a logged in user](https://github.com/plone/volto/issues/5896) | `JeffersonBledsoe` | `04 type: enhancement`, `42 lvl: moderate`, `61 scope: editor` |

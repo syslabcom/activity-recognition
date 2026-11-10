@@ -1,0 +1,32 @@
+{
+  "version": 1,
+  "status": "success",
+  "generated_at": "2026-11-10T17:06:48Z",
+  "source_issue": {
+    "id": 6310895605,
+    "number": 42,
+    "title": "Run the documentation link check in CI, and check the published pages",
+    "html_url": "https://github.com/plone/helm-charts/issues/42",
+    "repository_full_name": "plone/helm-charts",
+    "updated_at": "2026-11-10T16:15:07Z",
+    "labels": [
+      "04 type: enhancement",
+      "13 prio: normal",
+      "41 lvl: easy"
+    ],
+    "comments": 0
+  },
+  "ai": {
+    "provider": "openai",
+    "model": "gpt-4o-mini"
+  },
+  "summary_markdown": "## What this issue is about\nThis issue is focused on enhancing the continuous integration (CI) process for the Plone Helm Charts repository. Specifically, it involves running a link check for the documentation to ensure all links are valid and that the published pages are accessible.\n\n## What needs to be done\n1. Integrate the existing command `make docs-linkcheck` into the CI workflow.\n2. Set this link check to run on pull requests and on a weekly schedule, without blocking the CI initially.\n3. After a deployment, check a selection of published pages to confirm they load correctly.\n\n## Helpful background\nRunning a link check helps catch broken links in documentation, which improves user experience. The CI (Continuous Integration) process automates testing and checks for code changes, making it easier to maintain quality.\n\n## Good first steps\n1. Familiarize yourself with the existing CI setup in the repository.\n2. Explore how to modify the CI configuration files to add the link check command.\n3. Consider how to set a schedule for the CI tasks, particularly for the weekly check.\n4. Begin a discussion in the issue comments if you have questions or need clarification on any points. \n\nWe encourage contributions, especially for those new to this part of Plone!",
+  "workflow": {
+    "repository": "syslabcom/activity-recognition",
+    "run_id": "42861276315",
+    "run_number": "4477",
+    "attempt": "1",
+    "url": "https://github.com/syslabcom/activity-recognition/actions/runs/42861276315",
+    "sha": "c81163be5603b4b0d1b5cfe3b20c661709d88f1d"
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "version": 1,
+  "status": "success",
+  "generated_at": "2026-11-10T17:07:04Z",
+  "source_issue": {
+    "id": 6310892195,
+    "number": 39,
+    "title": "Split the backend probes, and add a frontend startup probe",
+    "html_url": "https://github.com/plone/helm-charts/issues/39",
+    "repository_full_name": "plone/helm-charts",
+    "updated_at": "2026-11-10T16:14:57Z",
+    "labels": [
+      "01 type: bug",
+      "12 prio: high",
+      "41 lvl: easy"
+    ],
+    "comments": 0
+  },
+  "ai": {
+    "provider": "openai",
+    "model": "gpt-4o-mini"
+  },
+  "summary_markdown": "## What this issue is about\nThis issue addresses the need to improve the probes used in our backend and frontend services in Plone. Currently, the backend probes for startup, readiness, and liveness all make the same request, which can lead to failures if the database is slow, causing all pods to restart simultaneously. Additionally, the frontend service lacks a startup probe altogether.\n\n## What needs to be done\n1. Separate the backend probes to ensure better reliability:\n   - Implement a lightweight liveness check that doesn’t touch the database.\n   - Use the appropriate health view for the readiness probe.\n2. Add a startup probe for the frontend service to monitor its initialization process.\n\n## Helpful background\nIn Kubernetes, probes are essential for monitoring the health of services. Each type of probe has a specific role:\n- **Liveness Probe**: Determines if the application is running.\n- **Readiness Probe**: Checks if the application is ready to handle requests.\n- **Startup Probe**: Monitors the startup process, ensuring the app is ready before other checks.\n\n## Good first steps\n1. Familiarize yourself with the existing probe implementations in the project.\n2. Review the documentation on Kubernetes probes [here](https://kubernetes.io/docs/concepts/workloads/pods/pod-lifecycle/#container-probes).\n3. Consider how to implement separate checks for liveness and readiness.\n4. Plan the structure of a startup probe for the frontend.\n\nFeel free to reach out if you have questions or need guidance!",
+  "workflow": {
+    "repository": "syslabcom/activity-recognition",
+    "run_id": "42861276315",
+    "run_number": "4477",
+    "attempt": "1",
+    "url": "https://github.com/syslabcom/activity-recognition/actions/runs/42861276315",
+    "sha": "c81163be5603b4b0d1b5cfe3b20c661709d88f1d"
+  }
+}

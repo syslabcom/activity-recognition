@@ -1,0 +1,33 @@
+{
+  "version": 1,
+  "status": "success",
+  "generated_at": "2026-11-10T17:06:29Z",
+  "source_issue": {
+    "id": 6310899823,
+    "number": 46,
+    "title": "Plone's recommended VCL as default, with purging from Plone",
+    "html_url": "https://github.com/plone/helm-charts/issues/46",
+    "repository_full_name": "plone/helm-charts",
+    "updated_at": "2026-11-10T16:15:21Z",
+    "labels": [
+      "03 type: feature (plip)",
+      "12 prio: high",
+      "43 lvl: complex",
+      "52 target: minor"
+    ],
+    "comments": 0
+  },
+  "ai": {
+    "provider": "openai",
+    "model": "gpt-4o-mini"
+  },
+  "summary_markdown": "## What this issue is about\nThis issue proposes updating Plone's default Varnish Configuration Language (VCL) to improve its functionality. Currently, the default VCL has limitations in handling cache purging, cookie normalization, and backend probes, which affects how Plone caches and serves content effectively.\n\n## What needs to be done\nWe need to create a new VCL based on Plone's documented configuration. This new version should include proper handling for cache purging, so changes in Plone can be reflected quickly. The implementation should ensure that all Varnish pods receive these purges and set appropriate Access Control Lists (ACLs).\n\n## Helpful background\nVCL is a scripting language for configuring Varnish, a web application accelerator. Effective use of VCL allows Plone to cache content smartly and handle purging correctly, which means reducing the server load and speeding up content delivery.\n\n## Good first steps\n1. Review the current default VCL and identify specific areas needing improvement.\n2. Familiarize yourself with Plone's documented Varnish configuration.\n3. Consider how purging works in caching systems; implementing this will involve functional tests to ensure pages are properly updated after edits.\n4. Keep in mind, this issue depends on related issues (#45 and #29), so checking those may provide extra context.",
+  "workflow": {
+    "repository": "syslabcom/activity-recognition",
+    "run_id": "42861276315",
+    "run_number": "4477",
+    "attempt": "1",
+    "url": "https://github.com/syslabcom/activity-recognition/actions/runs/42861276315",
+    "sha": "c81163be5603b4b0d1b5cfe3b20c661709d88f1d"
+  }
+}

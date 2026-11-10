@@ -1,0 +1,32 @@
+{
+  "version": 1,
+  "status": "success",
+  "generated_at": "2026-11-10T17:06:08Z",
+  "source_issue": {
+    "id": 6310904361,
+    "number": 50,
+    "title": "Extension points: extra volumes, init containers, sidecars, envFrom, labels, topology spread, priority class",
+    "html_url": "https://github.com/plone/helm-charts/issues/50",
+    "repository_full_name": "plone/helm-charts",
+    "updated_at": "2026-11-10T16:15:36Z",
+    "labels": [
+      "03 type: feature (plip)",
+      "13 prio: normal",
+      "42 lvl: moderate"
+    ],
+    "comments": 0
+  },
+  "ai": {
+    "provider": "openai",
+    "model": "gpt-4o-mini"
+  },
+  "summary_markdown": "## What this issue is about\nThis issue addresses the need for adding various configuration options to workloads in our Helm charts, including extra volumes, init containers, sidecars, environment variables (`envFrom`), labels, topology spread constraints, priority classes, and service annotations.\n\n## What needs to be done\nWe want to extend our current workloads to support these features using the common key names found in similar Helm charts. These enhancements will improve the flexibility and usability of our deployments.\n\n## Helpful background\nCurrently, workloads lack the ability to add the mentioned configurations, which can limit deployment customization. The request is tied to a previous issue (#36), which may provide context for what needs to be improved.\n\n## Good first steps\n1. Familiarize yourself with Helm charts and the specific configurations we want to implement (you can check the official Helm documentation if you're new).\n2. Review issue #36 for additional context.\n3. Start by discussing potential implementation ideas with other contributors on this issue.\n4. Once you have a plan, consider drafting a proposal or starting to implement the features. Be prepared to document your changes and engage in code review.",
+  "workflow": {
+    "repository": "syslabcom/activity-recognition",
+    "run_id": "42861276315",
+    "run_number": "4477",
+    "attempt": "1",
+    "url": "https://github.com/syslabcom/activity-recognition/actions/runs/42861276315",
+    "sha": "c81163be5603b4b0d1b5cfe3b20c661709d88f1d"
+  }
+}

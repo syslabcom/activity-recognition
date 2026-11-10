@@ -1,0 +1,33 @@
+{
+  "version": 1,
+  "status": "success",
+  "generated_at": "2026-11-10T17:07:13Z",
+  "source_issue": {
+    "id": 6310891175,
+    "number": 38,
+    "title": "Roll out the backend without downtime",
+    "html_url": "https://github.com/plone/helm-charts/issues/38",
+    "repository_full_name": "plone/helm-charts",
+    "updated_at": "2026-11-10T16:14:53Z",
+    "labels": [
+      "04 type: enhancement",
+      "12 prio: high",
+      "42 lvl: moderate",
+      "53 target: major"
+    ],
+    "comments": 0
+  },
+  "ai": {
+    "provider": "openai",
+    "model": "gpt-4o-mini"
+  },
+  "summary_markdown": "## What this issue is about\nThis issue focuses on enhancing our backend deployment process to ensure there is no downtime during upgrades. Specifically, it aims to follow the strategies discussed in a previous issue (#37) regarding deployment configurations.\n\n## What needs to be done\n1. Adjust the deployment configuration to set `maxSurge: 1` and `maxUnavailable: 0`.\n2. Remove the headless director service as outlined.\n3. Write upgrade notes to guide users through the process.\n4. Ensure no requests fail during an upgrade with a single backend replica.\n\n## Helpful background\nDowntime can disrupt user experiences, especially during upgrades. The terms used:\n- **maxSurge**: The maximum number of pods that can be created above the desired number.\n- **maxUnavailable**: The maximum number of pods that can be unavailable during the upgrade.\n\nThis issue relies on conclusions from issue #37, so you may want to review that for context.\n\n## Good first steps\n- Familiarize yourself with the deployment configuration settings.\n- Review the previous issue (#37) for detailed decisions and context.\n- Start by experimenting with the deployment settings in a test environment.\n- If you're comfortable, consider drafting the upgrade notes based on your findings.\n\nThis is a moderate-level task with high priority, so your contributions will be valuable!",
+  "workflow": {
+    "repository": "syslabcom/activity-recognition",
+    "run_id": "42861276315",
+    "run_number": "4477",
+    "attempt": "1",
+    "url": "https://github.com/syslabcom/activity-recognition/actions/runs/42861276315",
+    "sha": "c81163be5603b4b0d1b5cfe3b20c661709d88f1d"
+  }
+}

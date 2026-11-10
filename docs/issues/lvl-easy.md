@@ -1,24 +1,38 @@
 ---
 title: "Plone issue list — Level: Easy"
 permalink: "/issues/lvl-easy/"
-generated_at: "2026-11-10T16:07:30Z"
+generated_at: "2026-11-10T17:05:28Z"
 organization: "plone"
-issue_count: 123
+issue_count: 137
 required_labels:
   - "41 lvl: easy"
 ---
 
 # Plone issue list — Level: Easy
 
-Generated: `2026-11-10T16:07:30Z`  
+Generated: `2026-11-10T17:05:28Z`  
 Organization: `plone`  
 Required label: `41 lvl: easy`  
-Issue count: `123`
+Issue count: `137`
 
 Sorted by last updated date, newest first.
 
 | Updated | Repository | Issue | Author | Labels |
 | --- | --- | --- | --- | --- |
+| 2026-11-10 16:16 UTC | `plone/helm-charts` | [#65 Slim the root README to a portal](https://github.com/plone/helm-charts/issues/65) | `ericof` | `04 type: enhancement`, `14 prio: low`, `41 lvl: easy` |
+| 2026-11-10 16:15 UTC | `plone/helm-charts` | [#44 Escape the RelStorage connection string, and add sslmode](https://github.com/plone/helm-charts/issues/44) | `ericof` | `01 type: bug`, `13 prio: normal`, `41 lvl: easy`, `51 target: patch` |
+| 2026-11-10 16:15 UTC | `plone/helm-charts` | [#42 Run the documentation link check in CI, and check the published pages](https://github.com/plone/helm-charts/issues/42) | `ericof` | `04 type: enhancement`, `13 prio: normal`, `41 lvl: easy` |
+| 2026-11-10 16:15 UTC | `plone/helm-charts` | [#41 Pack CronJob: inherit the backend's environment and placement, run at night](https://github.com/plone/helm-charts/issues/41) | `ericof` | `01 type: bug`, `13 prio: normal`, `41 lvl: easy`, `51 target: patch` |
+| 2026-11-10 16:14 UTC | `plone/helm-charts` | [#39 Split the backend probes, and add a frontend startup probe](https://github.com/plone/helm-charts/issues/39) | `ericof` | `01 type: bug`, `12 prio: high`, `41 lvl: easy` |
+| 2026-11-10 16:14 UTC | `plone/helm-charts` | [#35 Replace test.sh with Makefile targets that match CI](https://github.com/plone/helm-charts/issues/35) | `ericof` | `04 type: enhancement`, `13 prio: normal`, `41 lvl: easy` |
+| 2026-11-10 16:14 UTC | `plone/helm-charts` | [#33 Require a chart version bump on chart changes](https://github.com/plone/helm-charts/issues/33) | `ericof` | `04 type: enhancement`, `12 prio: high`, `41 lvl: easy` |
+| 2026-11-10 16:14 UTC | `plone/helm-charts` | [#27 Align appVersion with Plone 6.2.2.1 and document the image update policy](https://github.com/plone/helm-charts/issues/27) | `ericof` | `04 type: enhancement`, `12 prio: high`, `41 lvl: easy`, `51 target: patch` |
+| 2026-11-10 16:14 UTC | `plone/helm-charts` | [#25 Start a CHANGELOG at 0.3.0](https://github.com/plone/helm-charts/issues/25) | `ericof` | `04 type: enhancement`, `13 prio: normal`, `41 lvl: easy` |
+| 2026-11-10 16:14 UTC | `plone/helm-charts` | [#24 Update the maintainers in Chart.yaml](https://github.com/plone/helm-charts/issues/24) | `ericof` | `04 type: enhancement`, `13 prio: normal`, `41 lvl: easy`, `51 target: patch` |
+| 2026-11-10 16:14 UTC | `plone/helm-charts` | [#23 Add CONTRIBUTING, SECURITY, CODEOWNERS, and issue and PR templates](https://github.com/plone/helm-charts/issues/23) | `ericof` | `04 type: enhancement`, `13 prio: normal`, `41 lvl: easy` |
+| 2026-11-10 16:13 UTC | `plone/helm-charts` | [#22 Fix documentation drift: SITE_ID, stale CI comment, NOTES.txt link](https://github.com/plone/helm-charts/issues/22) | `ericof` | `01 type: bug`, `13 prio: normal`, `41 lvl: easy`, `51 target: patch` |
+| 2026-11-10 16:13 UTC | `plone/helm-charts` | [#21 Mark the chart as beta and list what it doesn't cover yet](https://github.com/plone/helm-charts/issues/21) | `ericof` | `04 type: enhancement`, `12 prio: high`, `41 lvl: easy` |
+| 2026-11-10 16:13 UTC | `plone/helm-charts` | [#20 Confirm what helm uninstall does to the PostgreSQL volumes, and warn about it](https://github.com/plone/helm-charts/issues/20) | `ericof` | `01 type: bug`, `12 prio: high`, `41 lvl: easy` |
 | 2026-11-05 06:17 UTC | `plone/volto` | [#7862 Docs : Missing react page in documentation for - 'contributing to volto'](https://github.com/plone/volto/issues/7862) | `boss6825` | `41 lvl: easy`, `99 tag: docs` |
 | 2026-10-29 08:27 UTC | `plone/volto` | [#8491 siteTitleFormat.titleAndSiteTitleSeparator is ignored: ContentMetadataTags reads the wrong settings key](https://github.com/plone/volto/issues/8491) | `jensens` | `01 type: bug`, `21 status: confirmed`, `41 lvl: easy`, `62 scope: viewer` |
 | 2026-10-28 13:55 UTC | `plone/volto` | [#27 Workflow comment and include contained items](https://github.com/plone/volto/issues/27) | `robgietema` | `04 type: enhancement`, `13 prio: normal`, `41 lvl: easy`, `26 status: blocked` |

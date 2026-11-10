@@ -1,0 +1,32 @@
+{
+  "version": 1,
+  "status": "success",
+  "generated_at": "2026-11-10T17:06:57Z",
+  "source_issue": {
+    "id": 6310893315,
+    "number": 40,
+    "title": "Restricted security contexts and a chart ServiceAccount",
+    "html_url": "https://github.com/plone/helm-charts/issues/40",
+    "repository_full_name": "plone/helm-charts",
+    "updated_at": "2026-11-10T16:15:00Z",
+    "labels": [
+      "04 type: enhancement",
+      "12 prio: high",
+      "42 lvl: moderate"
+    ],
+    "comments": 0
+  },
+  "ai": {
+    "provider": "openai",
+    "model": "gpt-4o-mini"
+  },
+  "summary_markdown": "## What this issue is about\nThis issue focuses on enhancing security in the Plone Helm charts by implementing a `restricted` security context for various components, ensuring better safety practices.\n\n## What needs to be done\n1. Apply restricted defaults for all pods and containers, including non-root execution, no privilege escalation, and dropping all capabilities.\n2. Create a ServiceAccount for the chart with `automountServiceAccountToken: false` to avoid unintended token exposure.\n3. Implement a Continuous Integration (CI) scenario in a namespace that enforces these `restricted` settings.\n\n## Helpful background\nCurrently, the ZEO server aligns with the `restricted` Pod Security profile, but some components lack defined security contexts. The goal is to consistently apply security measures across all pods to prevent any security vulnerabilities.\n\n## Good first steps\n- Familiarize yourself with Kubernetes security contexts, especially the `restricted` profile.\n- Review related issue #29 as it may provide context or dependencies for this work.\n- Analyze the current implementation to identify how images interact with the filesystem, particularly focusing on what they write outside of `/data`. This can be crucial for moving to a read-only root filesystem later. \n\nContributions to testing and documentation improvements will also be appreciated!",
+  "workflow": {
+    "repository": "syslabcom/activity-recognition",
+    "run_id": "42861276315",
+    "run_number": "4477",
+    "attempt": "1",
+    "url": "https://github.com/syslabcom/activity-recognition/actions/runs/42861276315",
+    "sha": "c81163be5603b4b0d1b5cfe3b20c661709d88f1d"
+  }
+}

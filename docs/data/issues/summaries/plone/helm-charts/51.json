@@ -1,0 +1,32 @@
+{
+  "version": 1,
+  "status": "success",
+  "generated_at": "2026-11-10T17:06:02Z",
+  "source_issue": {
+    "id": 6310905515,
+    "number": 51,
+    "title": "Autoscaling and an optional NetworkPolicy",
+    "html_url": "https://github.com/plone/helm-charts/issues/51",
+    "repository_full_name": "plone/helm-charts",
+    "updated_at": "2026-11-10T16:15:40Z",
+    "labels": [
+      "03 type: feature (plip)",
+      "13 prio: normal",
+      "42 lvl: moderate"
+    ],
+    "comments": 0
+  },
+  "ai": {
+    "provider": "openai",
+    "model": "gpt-4o-mini"
+  },
+  "summary_markdown": "```markdown\n## What this issue is about\nThis issue focuses on adding two key features to the Plone Helm charts: implementing a **HorizontalPodAutoscaler** for both the backend and frontend, and introducing an optional **NetworkPolicy** for traffic management. The NetworkPolicy would define rules for routing connections among the frontend, backend, Varnish, and the database or ZEO.\n\n## What needs to be done\n1. Implement the HorizontalPodAutoscaler for the backend service.\n2. Implement the HorizontalPodAutoscaler for the frontend service.\n3. Create an optional NetworkPolicy for traffic routing as described.\n\nNote: This task is dependent on issue #38, which may need to be considered before proceeding.\n\n## Helpful background\n- **HorizontalPodAutoscaler** automatically adjusts the number of pods in a deployment based on CPU usage or other select metrics.\n- **NetworkPolicy** helps define rules for how pods can communicate with each other, enhancing security and performance.\n\n## Good first steps\n1. Familiarize yourself with the current Plone Helm charts and Kubernetes concepts.\n2. Review the existing codebase for related components, especially focusing on similar features.\n3. Check issue #38 for any relevant updates or requirements.\n4. Reach out to the author or maintainers if you have questions or need clarification.\n```",
+  "workflow": {
+    "repository": "syslabcom/activity-recognition",
+    "run_id": "42861276315",
+    "run_number": "4477",
+    "attempt": "1",
+    "url": "https://github.com/syslabcom/activity-recognition/actions/runs/42861276315",
+    "sha": "c81163be5603b4b0d1b5cfe3b20c661709d88f1d"
+  }
+}

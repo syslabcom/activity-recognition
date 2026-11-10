@@ -1,7 +1,7 @@
 {
   "version": 1,
   "status": "success",
-  "generated_at": "2026-11-10T16:07:30Z",
+  "generated_at": "2026-11-10T17:05:28Z",
   "organization": "plone",
   "state": "open",
   "slug": "lvl-easy",
@@ -9,8 +9,397 @@
   "required_labels": [
     "41 lvl: easy"
   ],
-  "issue_count": 123,
+  "issue_count": 137,
   "issues": [
+    {
+      "id": 6310922515,
+      "number": 65,
+      "title": "Slim the root README to a portal",
+      "html_url": "https://github.com/plone/helm-charts/issues/65",
+      "repository_full_name": "plone/helm-charts",
+      "repository_url": "https://api.github.com/repos/plone/helm-charts",
+      "state": "open",
+      "created_at": "2026-11-10T16:16:33Z",
+      "updated_at": "2026-11-10T16:16:35Z",
+      "comments": 0,
+      "author": {
+        "login": "ericof",
+        "html_url": "https://github.com/ericof"
+      },
+      "assignees": [
+        "ericof"
+      ],
+      "labels": [
+        "04 type: enhancement",
+        "14 prio: low",
+        "41 lvl: easy"
+      ],
+      "contributor_summary": {
+        "status": "available",
+        "generated_at": "2026-11-10T17:05:39Z",
+        "source_issue_updated_at": "2026-11-10T16:16:35Z",
+        "model": "gpt-4o-mini",
+        "summary_markdown": "## What this issue is about\nThis issue focuses on simplifying the root README file of the Plone Helm Charts repository. The current README unnecessarily repeats sections found in the documentation, such as the Gateway API, ingress-nginx, and scenario details.\n\n## What needs to be done\nThe goal is to slim down the README to include only a brief description, a quick start guide, and relevant links. This will make the README more user-friendly and easier to navigate.\n\n## Helpful background\nA README (Read Me) file serves as an introduction to a project, offering guidance to new users and contributors. By removing redundant content, we can avoid confusion and provide clearer information.\n\n## Good first steps\n1. Review the current README to identify all repeated sections.\n2. Draft a shorter version that includes only essential information: a brief overview, quick start instructions, and links to detailed documentation.\n3. Share your draft for feedback, ensuring it meets clarity and usefulness goals.\n4. Be prepared for testing changes and possibly updating documentation related to the project post-modification. \n\nFeel free to reach out if you have questions or need assistance!",
+        "path": "data/issues/summaries/plone/helm-charts/65.json"
+      }
+    },
+    {
+      "id": 6310897472,
+      "number": 44,
+      "title": "Escape the RelStorage connection string, and add sslmode",
+      "html_url": "https://github.com/plone/helm-charts/issues/44",
+      "repository_full_name": "plone/helm-charts",
+      "repository_url": "https://api.github.com/repos/plone/helm-charts",
+      "state": "open",
+      "created_at": "2026-11-10T16:15:13Z",
+      "updated_at": "2026-11-10T16:15:14Z",
+      "comments": 0,
+      "author": {
+        "login": "ericof",
+        "html_url": "https://github.com/ericof"
+      },
+      "assignees": [
+        "ericof"
+      ],
+      "labels": [
+        "01 type: bug",
+        "13 prio: normal",
+        "41 lvl: easy",
+        "51 target: patch"
+      ],
+      "contributor_summary": {
+        "status": "available",
+        "generated_at": "2026-11-10T17:06:34Z",
+        "source_issue_updated_at": "2026-11-10T16:15:14Z",
+        "model": "gpt-4o-mini",
+        "summary_markdown": "## What this issue is about\nThis issue focuses on improving the `RELSTORAGE_DSN` connection string used for external PostgreSQL servers in the Plone Helm charts. Currently, if the password contains certain characters, it breaks the connection string. Additionally, there's no option to specify `sslmode`, which is important for secure connections.\n\n## What needs to be done\nThe goal is to:\n1. Escape special characters (like `'` or `\\\\`) in the password within the connection string.\n2. Include an option to set `sslmode` for enhanced security.\n3. Explore building the connection string from the `uri` key of the CloudNativePG secret.\n\n### Note\nThis issue depends on Issue #31, so review any related discussions there.\n\n## Helpful background\nUnderstanding how connection strings work and the importance of secure database connections is key. In this case, special characters in passwords can disrupt the string format.\n\n## Good first steps\n1. Familiarize yourself with the connection string format for RelStorage.\n2. Consider how escaping characters can be implemented.\n3. Review the code related to `RELSTORAGE_DSN` in the Helm charts.\n4. Check out Issue #31 for additional context or related changes.\n\nIf you have questions, feel free to ask for clarification!",
+        "path": "data/issues/summaries/plone/helm-charts/44.json"
+      }
+    },
+    {
+      "id": 6310895605,
+      "number": 42,
+      "title": "Run the documentation link check in CI, and check the published pages",
+      "html_url": "https://github.com/plone/helm-charts/issues/42",
+      "repository_full_name": "plone/helm-charts",
+      "repository_url": "https://api.github.com/repos/plone/helm-charts",
+      "state": "open",
+      "created_at": "2026-11-10T16:15:06Z",
+      "updated_at": "2026-11-10T16:15:07Z",
+      "comments": 0,
+      "author": {
+        "login": "ericof",
+        "html_url": "https://github.com/ericof"
+      },
+      "assignees": [
+        "ericof"
+      ],
+      "labels": [
+        "04 type: enhancement",
+        "13 prio: normal",
+        "41 lvl: easy"
+      ],
+      "contributor_summary": {
+        "status": "available",
+        "generated_at": "2026-11-10T17:06:48Z",
+        "source_issue_updated_at": "2026-11-10T16:15:07Z",
+        "model": "gpt-4o-mini",
+        "summary_markdown": "## What this issue is about\nThis issue is focused on enhancing the continuous integration (CI) process for the Plone Helm Charts repository. Specifically, it involves running a link check for the documentation to ensure all links are valid and that the published pages are accessible.\n\n## What needs to be done\n1. Integrate the existing command `make docs-linkcheck` into the CI workflow.\n2. Set this link check to run on pull requests and on a weekly schedule, without blocking the CI initially.\n3. After a deployment, check a selection of published pages to confirm they load correctly.\n\n## Helpful background\nRunning a link check helps catch broken links in documentation, which improves user experience. The CI (Continuous Integration) process automates testing and checks for code changes, making it easier to maintain quality.\n\n## Good first steps\n1. Familiarize yourself with the existing CI setup in the repository.\n2. Explore how to modify the CI configuration files to add the link check command.\n3. Consider how to set a schedule for the CI tasks, particularly for the weekly check.\n4. Begin a discussion in the issue comments if you have questions or need clarification on any points. \n\nWe encourage contributions, especially for those new to this part of Plone!",
+        "path": "data/issues/summaries/plone/helm-charts/42.json"
+      }
+    },
+    {
+      "id": 6310894512,
+      "number": 41,
+      "title": "Pack CronJob: inherit the backend's environment and placement, run at night",
+      "html_url": "https://github.com/plone/helm-charts/issues/41",
+      "repository_full_name": "plone/helm-charts",
+      "repository_url": "https://api.github.com/repos/plone/helm-charts",
+      "state": "open",
+      "created_at": "2026-11-10T16:15:03Z",
+      "updated_at": "2026-11-10T16:15:04Z",
+      "comments": 0,
+      "author": {
+        "login": "ericof",
+        "html_url": "https://github.com/ericof"
+      },
+      "assignees": [
+        "ericof"
+      ],
+      "labels": [
+        "01 type: bug",
+        "13 prio: normal",
+        "41 lvl: easy",
+        "51 target: patch"
+      ],
+      "contributor_summary": {
+        "status": "available",
+        "generated_at": "2026-11-10T17:06:52Z",
+        "source_issue_updated_at": "2026-11-10T16:15:04Z",
+        "model": "gpt-4o-mini",
+        "summary_markdown": "# Issue #41: Pack CronJob Enhancements\n\n## What this issue is about\nThis issue focuses on improving the Pack CronJob by ensuring it inherits crucial settings from the backend. It currently lacks the ability to use the backend's environment configurations like `env`, `nodeSelector`, `tolerations`, and `affinity`, which can lead to scheduling issues. Additionally, its default time is set to mid-morning in Europe.\n\n## What needs to be done\nWe need to update the Pack CronJob so that it:\n- Inherits environment variables and placement configurations from the backend.\n- Allows for `pack.*` overrides.\n- Adds a `timeZone` value and sets the default schedule to a night hour.\n\n## Helpful background\nCronJobs are scheduled tasks that run at specified times. The backend's environment settings are essential for proper execution. This issue is aimed at improving the scheduling reliability and flexibility of the CronJob.\n\n## Good first steps\n1. Check the existing CronJob configuration in the codebase.\n2. Review how the backend settings are currently defined.\n3. Write a proposal for implementing the inheritance and scheduling changes.\n4. Start with a small code change and run tests to verify functionality.\n\nDon't hesitate to ask questions if any part of the issue is unclear!",
+        "path": "data/issues/summaries/plone/helm-charts/41.json"
+      }
+    },
+    {
+      "id": 6310892195,
+      "number": 39,
+      "title": "Split the backend probes, and add a frontend startup probe",
+      "html_url": "https://github.com/plone/helm-charts/issues/39",
+      "repository_full_name": "plone/helm-charts",
+      "repository_url": "https://api.github.com/repos/plone/helm-charts",
+      "state": "open",
+      "created_at": "2026-11-10T16:14:55Z",
+      "updated_at": "2026-11-10T16:14:57Z",
+      "comments": 0,
+      "author": {
+        "login": "ericof",
+        "html_url": "https://github.com/ericof"
+      },
+      "assignees": [
+        "ericof"
+      ],
+      "labels": [
+        "01 type: bug",
+        "12 prio: high",
+        "41 lvl: easy"
+      ],
+      "contributor_summary": {
+        "status": "available",
+        "generated_at": "2026-11-10T17:07:04Z",
+        "source_issue_updated_at": "2026-11-10T16:14:57Z",
+        "model": "gpt-4o-mini",
+        "summary_markdown": "## What this issue is about\nThis issue addresses the need to improve the probes used in our backend and frontend services in Plone. Currently, the backend probes for startup, readiness, and liveness all make the same request, which can lead to failures if the database is slow, causing all pods to restart simultaneously. Additionally, the frontend service lacks a startup probe altogether.\n\n## What needs to be done\n1. Separate the backend probes to ensure better reliability:\n   - Implement a lightweight liveness check that doesn’t touch the database.\n   - Use the appropriate health view for the readiness probe.\n2. Add a startup probe for the frontend service to monitor its initialization process.\n\n## Helpful background\nIn Kubernetes, probes are essential for monitoring the health of services. Each type of probe has a specific role:\n- **Liveness Probe**: Determines if the application is running.\n- **Readiness Probe**: Checks if the application is ready to handle requests.\n- **Startup Probe**: Monitors the startup process, ensuring the app is ready before other checks.\n\n## Good first steps\n1. Familiarize yourself with the existing probe implementations in the project.\n2. Review the documentation on Kubernetes probes [here](https://kubernetes.io/docs/concepts/workloads/pods/pod-lifecycle/#container-probes).\n3. Consider how to implement separate checks for liveness and readiness.\n4. Plan the structure of a startup probe for the frontend.\n\nFeel free to reach out if you have questions or need guidance!",
+        "path": "data/issues/summaries/plone/helm-charts/39.json"
+      }
+    },
+    {
+      "id": 6310887836,
+      "number": 35,
+      "title": "Replace test.sh with Makefile targets that match CI",
+      "html_url": "https://github.com/plone/helm-charts/issues/35",
+      "repository_full_name": "plone/helm-charts",
+      "repository_url": "https://api.github.com/repos/plone/helm-charts",
+      "state": "open",
+      "created_at": "2026-11-10T16:14:42Z",
+      "updated_at": "2026-11-10T16:14:43Z",
+      "comments": 0,
+      "author": {
+        "login": "ericof",
+        "html_url": "https://github.com/ericof"
+      },
+      "assignees": [
+        "ericof"
+      ],
+      "labels": [
+        "04 type: enhancement",
+        "13 prio: normal",
+        "41 lvl: easy"
+      ],
+      "contributor_summary": {
+        "status": "available",
+        "generated_at": "2026-11-10T17:07:24Z",
+        "source_issue_updated_at": "2026-11-10T16:14:43Z",
+        "model": "gpt-4o-mini",
+        "summary_markdown": "## What this issue is about\nThis issue focuses on replacing the outdated `test.sh` script in the Plone Helm Charts repository. The script currently includes commands that are not aligned with the current CI (Continuous Integration) workflow, which can cause inconsistencies in testing.\n\n## What needs to be done\nYou need to create Makefile targets that replicate the commands in the CI workflow, ensuring they include the necessary updates, like the `--kube-version` flag. Additionally, you'll document these Makefile targets in the `CONTRIBUTING` guidelines.\n\n## Helpful background\nThe current `test.sh` script mentions `k3d` and `k8s-diagrams` but isn’t compatible with the latest CI processes. Understanding Makefiles (a tool that automates command execution) will help, as we’ll be replacing the script with Makefile targets.\n\n## Good first steps\n1. Review the existing `test.sh` script and the CI workflow to understand the commands used.\n2. Start familiarizing yourself with Makefiles if you're not already comfortable with them.\n3. Begin drafting your Makefile targets based on the CI commands.\n4. Discuss any uncertainties with the maintainer or team.\n5. Once you've created the targets, you can work on updating the `CONTRIBUTING` documentation accordingly.\n\nFeel free to reach out if you have any questions!",
+        "path": "data/issues/summaries/plone/helm-charts/35.json"
+      }
+    },
+    {
+      "id": 6310885906,
+      "number": 33,
+      "title": "Require a chart version bump on chart changes",
+      "html_url": "https://github.com/plone/helm-charts/issues/33",
+      "repository_full_name": "plone/helm-charts",
+      "repository_url": "https://api.github.com/repos/plone/helm-charts",
+      "state": "open",
+      "created_at": "2026-11-10T16:14:35Z",
+      "updated_at": "2026-11-10T16:14:36Z",
+      "comments": 0,
+      "author": {
+        "login": "ericof",
+        "html_url": "https://github.com/ericof"
+      },
+      "assignees": [
+        "ericof"
+      ],
+      "labels": [
+        "04 type: enhancement",
+        "12 prio: high",
+        "41 lvl: easy"
+      ]
+    },
+    {
+      "id": 6310879164,
+      "number": 27,
+      "title": "Align appVersion with Plone 6.2.2.1 and document the image update policy",
+      "html_url": "https://github.com/plone/helm-charts/issues/27",
+      "repository_full_name": "plone/helm-charts",
+      "repository_url": "https://api.github.com/repos/plone/helm-charts",
+      "state": "open",
+      "created_at": "2026-11-10T16:14:14Z",
+      "updated_at": "2026-11-10T16:14:14Z",
+      "comments": 0,
+      "author": {
+        "login": "ericof",
+        "html_url": "https://github.com/ericof"
+      },
+      "assignees": [
+        "ericof"
+      ],
+      "labels": [
+        "04 type: enhancement",
+        "12 prio: high",
+        "41 lvl: easy",
+        "51 target: patch"
+      ]
+    },
+    {
+      "id": 6310877250,
+      "number": 25,
+      "title": "Start a CHANGELOG at 0.3.0",
+      "html_url": "https://github.com/plone/helm-charts/issues/25",
+      "repository_full_name": "plone/helm-charts",
+      "repository_url": "https://api.github.com/repos/plone/helm-charts",
+      "state": "open",
+      "created_at": "2026-11-10T16:14:07Z",
+      "updated_at": "2026-11-10T16:14:08Z",
+      "comments": 0,
+      "author": {
+        "login": "ericof",
+        "html_url": "https://github.com/ericof"
+      },
+      "assignees": [
+        "ericof"
+      ],
+      "labels": [
+        "04 type: enhancement",
+        "13 prio: normal",
+        "41 lvl: easy"
+      ]
+    },
+    {
+      "id": 6310875923,
+      "number": 24,
+      "title": "Update the maintainers in Chart.yaml",
+      "html_url": "https://github.com/plone/helm-charts/issues/24",
+      "repository_full_name": "plone/helm-charts",
+      "repository_url": "https://api.github.com/repos/plone/helm-charts",
+      "state": "open",
+      "created_at": "2026-11-10T16:14:03Z",
+      "updated_at": "2026-11-10T16:14:04Z",
+      "comments": 0,
+      "author": {
+        "login": "ericof",
+        "html_url": "https://github.com/ericof"
+      },
+      "assignees": [
+        "ericof"
+      ],
+      "labels": [
+        "04 type: enhancement",
+        "13 prio: normal",
+        "41 lvl: easy",
+        "51 target: patch"
+      ]
+    },
+    {
+      "id": 6310874993,
+      "number": 23,
+      "title": "Add CONTRIBUTING, SECURITY, CODEOWNERS, and issue and PR templates",
+      "html_url": "https://github.com/plone/helm-charts/issues/23",
+      "repository_full_name": "plone/helm-charts",
+      "repository_url": "https://api.github.com/repos/plone/helm-charts",
+      "state": "open",
+      "created_at": "2026-11-10T16:14:00Z",
+      "updated_at": "2026-11-10T16:14:01Z",
+      "comments": 0,
+      "author": {
+        "login": "ericof",
+        "html_url": "https://github.com/ericof"
+      },
+      "assignees": [
+        "ericof"
+      ],
+      "labels": [
+        "04 type: enhancement",
+        "13 prio: normal",
+        "41 lvl: easy"
+      ]
+    },
+    {
+      "id": 6310874006,
+      "number": 22,
+      "title": "Fix documentation drift: SITE_ID, stale CI comment, NOTES.txt link",
+      "html_url": "https://github.com/plone/helm-charts/issues/22",
+      "repository_full_name": "plone/helm-charts",
+      "repository_url": "https://api.github.com/repos/plone/helm-charts",
+      "state": "open",
+      "created_at": "2026-11-10T16:13:57Z",
+      "updated_at": "2026-11-10T16:13:58Z",
+      "comments": 0,
+      "author": {
+        "login": "ericof",
+        "html_url": "https://github.com/ericof"
+      },
+      "assignees": [
+        "ericof"
+      ],
+      "labels": [
+        "01 type: bug",
+        "13 prio: normal",
+        "41 lvl: easy",
+        "51 target: patch"
+      ]
+    },
+    {
+      "id": 6310873051,
+      "number": 21,
+      "title": "Mark the chart as beta and list what it doesn't cover yet",
+      "html_url": "https://github.com/plone/helm-charts/issues/21",
+      "repository_full_name": "plone/helm-charts",
+      "repository_url": "https://api.github.com/repos/plone/helm-charts",
+      "state": "open",
+      "created_at": "2026-11-10T16:13:54Z",
+      "updated_at": "2026-11-10T16:13:55Z",
+      "comments": 0,
+      "author": {
+        "login": "ericof",
+        "html_url": "https://github.com/ericof"
+      },
+      "assignees": [
+        "ericof"
+      ],
+      "labels": [
+        "04 type: enhancement",
+        "12 prio: high",
+        "41 lvl: easy"
+      ]
+    },
+    {
+      "id": 6310871703,
+      "number": 20,
+      "title": "Confirm what helm uninstall does to the PostgreSQL volumes, and warn about it",
+      "html_url": "https://github.com/plone/helm-charts/issues/20",
+      "repository_full_name": "plone/helm-charts",
+      "repository_url": "https://api.github.com/repos/plone/helm-charts",
+      "state": "open",
+      "created_at": "2026-11-10T16:13:49Z",
+      "updated_at": "2026-11-10T16:13:51Z",
+      "comments": 0,
+      "author": {
+        "login": "ericof",
+        "html_url": "https://github.com/ericof"
+      },
+      "assignees": [
+        "ericof"
+      ],
+      "labels": [
+        "01 type: bug",
+        "12 prio: high",
+        "41 lvl: easy"
+      ]
+    },
     {
       "id": 3906863329,
       "number": 7862,
@@ -3821,10 +4210,10 @@
   "message": null,
   "workflow": {
     "repository": "syslabcom/activity-recognition",
-    "run_id": "42851379154",
-    "run_number": "4476",
+    "run_id": "42861276315",
+    "run_number": "4477",
     "attempt": "1",
-    "url": "https://github.com/syslabcom/activity-recognition/actions/runs/42851379154",
-    "sha": "b220c067b26cfe7b6e6bbe1ae9d5b2e861fb7ece"
+    "url": "https://github.com/syslabcom/activity-recognition/actions/runs/42861276315",
+    "sha": "c81163be5603b4b0d1b5cfe3b20c661709d88f1d"
   }
 }
