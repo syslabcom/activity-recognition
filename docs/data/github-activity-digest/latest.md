@@ -1,145 +1,103 @@
 # 📊 WEEKLY SUMMARY
-## 2026-11-02 to 2026-11-09
+2026-11-03 to 2026-11-10
 
-This week saw significant activity across the Plone ecosystem, with numerous updates and contributions from various developers. Key changes involved dependency updates, code fixes, and several enhancements related to Plone's functionality and infrastructure.
+This week in the Plone ecosystem has seen significant updates across various repositories, with noteworthy contributions focused on enhancing documentation, improving compatibility with newer Python versions, and addressing security vulnerabilities.
 
----
+## 📦 plone/plone.event
+[10 files changed, +43/-30 lines, 3 pull requests merged]
+Updates included a back to development change for version 3.0.2, preparations for the release of version 3.0.1, and dependency upgrades through dependabot.
 
-### 📦 plone/plone.event
-[14 files changed, +66/-53 lines, 2 pull requests merged]  
-Notable updates included pre-commit autoupdates and a new release version preparation. `Maurits van Rees` worked on maintaining updates, ensuring compatibility with recent changes in dependencies.  
+## 📦 plone/plone.formwidget.recurrence
+[2 files changed, +2/-2 lines, 1 pull request merged]
+Dependabot updated the dependency `astral-sh/setup-uv` from version 10.3.2 to 10.3.3.
 
-### 📦 plone/plone.formwidget.recurrence
-[2 files changed, +2/-2 lines, 1 pull request merged]  
-Dependabot updated the `astral-sh/setup-uv` dependency to version 10.3.3, ensuring continued compliance and security.
+## 📦 plone/plone.reload
+[1 file changed, +1/-1 lines, 1 pull request merged]
+Similarly, the `astral-sh/setup-uv` dependency was updated by dependabot.
 
-### 📦 plone/plone.reload
-[1 file changed, +1/-1 lines, 1 pull request merged]  
-A small update from Dependabot for `astral-sh/setup-uv` ensuring the dependency is current and secure.
+## 📦 plone/plone.app.multilingual
+[9 files changed, +31/-13 lines, 4 pull requests merged]
+This week saw several merged updates, including dependency bumps and preparations for back-to-development transitions by Maurits van Rees.
 
-### 📦 plone/plone.app.multilingual
-[10 files changed, +36/-18 lines, 2 pull requests merged]  
-Several dependency bumps were facilitated, with `Maurits van Rees` contributing to the ongoing improvements.
+## 📦 plone/plone.resource
+[1 file changed, +1/-1 lines, 1 pull request merged]
+The `astral-sh/setup-uv` was updated by dependabot.
 
-### 📦 plone/plone.resource
-[1 file changed, +1/-1 lines, 1 pull request merged]  
-A minor update by Dependabot for `astral-sh/setup-uv` to keep dependencies secure.
+## 📦 plone/plone.tiles
+[2 files changed, +2/-2 lines, 1 pull request merged]
+Again, we see a dependency upgrade with `astral-sh/setup-uv`.
 
-### 📦 plone/plone.tiles
-[2 files changed, +2/-2 lines, 1 pull request merged]  
-Managed a standard dependency update by Dependabot for the project.
+## 📦 plone/plone.app.querystring
+[21 files changed, +234/-40 lines, 6 pull requests merged]
+Significant refactoring occurred here, including enhancements for avoiding slow query filters. Updates were driven by various contributors including Maurits van Rees.
 
-### 📦 plone/plone.app.querystring
-[23 files changed, +240/-46 lines, 3 pull requests merged]  
-Major updates focusing on improving query filter performance by avoiding unnecessary slow queries. Contributions by `David Glick` led this improvement effort.
+## 📦 plone/plone.app.drafts
+[2 files changed, +2/-2 lines, 1 pull request merged]
+The update for dependabot's `astral-sh/setup-uv` was executed.
 
-### 📦 plone/plone.app.drafts
-[2 files changed, +2/-2 lines, 1 pull request merged]  
-Updating the `astral-sh/setup-uv` by Dependabot ensured the project remains secure.
+## 📦 plone/plone.app.workflow
+[1 file changed, +1/-1 lines, 1 pull request merged]
+As with others, the `astral-sh/setup-uv` dependency was updated.
 
-### 📦 plone/plone.app.blocks
-[1 file changed, +1/-1 lines, 1 pull request merged]  
-Responding to the dependency update requests, Dependabot updated the package.
+## 📦 plone/Products.PlonePAS
+[6 files changed, +6/-6 lines, 1 pull request merged]
+Updates were made to enhance the system interfaces, primarily through dependabot's maintenance efforts.
 
-### 📦 plone/plone.app.standardtiles
-[2 files changed, +2/-2 lines, 1 pull request merged]  
-Another routine dependency update by Dependabot.
+## 📦 plone/buildout.coredev
+[128 files changed, +2872/-1553 lines, 7 pull requests merged]
+Under Maurits van Rees’s leadership, the buildout was updated to address security issues, improve functionality, and keep it compatible with Python 3.11. This included several dependency bumps to maintain high standards of security.
 
-### 📦 plone/plone.subrequest
-[1 file changed, +1/-1 lines, 1 pull request merged]  
-Similar updates for `astral-sh/setup-uv` by Dependabot.
+## 📦 plone/pytest-plone
+[3 files changed, +5/-5 lines, 1 pull request merged]
+The `astral-sh/setup-uv` dependency was also updated here.
 
-### 📦 plone/five.intid
-[1 file changed, +1/-1 lines, 1 pull request merged]  
-Also updated by Dependabot for better maintainability.
+## 📦 plone/Products.CMFPlacefulWorkflow
+[1 file changed, +1/-1 lines, 1 pull request merged]
+Another routine update of the `astral-sh/setup-uv` dependency.
 
-### 📦 plone/plone.namedfile
-[7 files changed, +22/-9 lines, 3 pull requests merged]  
-Updates reflected security patches and dependency bumps, led by contributions from `Maurits van Rees`.
+## 📦 plone/plone-formwidget-recaptcha
+[43 files changed, +176/-188 lines, 3 pull requests merged]
+Contributions from ale-rt included a substantial update to the configurations, reflecting modern best practices across various files.
 
-### 📦 plone/plone.scale
-[9 files changed, +26/-19 lines, 3 pull requests merged]  
-Ongoing updates to dependencies were summarized, including several pre-commit adjustments from the automation tool.
+## 📦 plone/plone.i18n
+[12 files changed, +81/-16 lines, 5 pull requests merged]
+Notable improvements were contributed by Maurits van Rees which improved the backend structure and response of the internationalization features.
 
-### 📦 plone/plone.app.z3cform
-[1 file changed, +1/-1 lines, 1 pull request merged]  
-Maintained by Dependabot to ensure all packages are secure and current.
+## 📦 plone/plone.caching
+[2 files changed, +2/-2 lines, 1 pull request merged]
+A standard update for `astral-sh/setup-uv` was performed.
 
-### 📦 plone/plone.behavior
-[2 files changed, +2/-2 lines, 1 pull request merged]  
-Standard maintenance was performed by Dependabot.
+## 📦 plone/documentation
+[4 files changed, +7/-3 lines, 1 pull request merged]
+Piero Nicolli added a glossary entry for "toast", improving documentation quality.
 
-### 📦 plone/plone.app.versioningbehavior
-[1 file changed, +1/-1 lines, 1 pull request merged]  
-Routine updates for `astral-sh/setup-uv`, managed by Dependabot.
+## 📦 plone/plone-uuid
+[3 files changed, +2/-2 lines, 1 pull request merged]
+A routine dependency update for `astral-sh/setup-uv` was incorporated.
 
-### 📦 plone/plone.testing
-[1 file changed, +1/-1 lines, 1 pull request merged]  
-Another routine update from Dependabot for dependency management.
+## 📦 plone/plone.theme
+[2 files changed, +2/-2 lines, 1 pull request merged]
+Dependabot updated the `astral-sh/setup-uv` version.
 
-### 📦 plone/plone.volto
-[202 files changed, +2034/-868 lines, 18 pull requests merged]  
-A significant week for Volto with updates including changes to personal tools in the toolbar by `Érico Andrei`, improving user experience.
+## 📦 plone/Products.PlonePAS
+[5 files changed, +6/-6 lines, 1 pull request merged]
+Investigation into new features and functional improvements continued.
 
-### 📦 plone/documentation
-[4 files changed, +7/-3 lines, 1 pull request merged]  
-`Piero Nicolli` contributed to documentation updates, adding glossary terms for clarity.
+## 📦 plone/plone.obsobservations
+[8 files changed, +15/-10 lines, 1 pull request merged]
+Improves upon metrics logging and operational behavior maintenance in the long term.
 
-### 📦 plone/plone.restapi
-[11 files changed, +29/-11 lines, 1 pull request merged]  
-A new version was released along with various enhancements to the API, contributed by `David Glick` and automation tools.
+There were substantial efforts in enhancing the overall security and performance across many projects as we continue to progress through the week. The involvement of multiple contributors suggests a robust community engagement.
 
-### 📦 plone/Products.PlonePAS
-[5 files changed, +18/-5 lines, 2 direct commits]  
-Updates and preparations for new releases delivered by `Maurits van Rees`.
+## Contributors
+- Maurits van Rees (mauritsvanrees)
+- Piero Nicolli (pnicolli)
+- Ericof (ericof)
+- Victor Fernandez de Alba (sneridagh)
+- Peter Mathis (petschki)
+- David Glick (davisagli)
+- Jens Klein (jensens)
+- Mauro Amico (mamico)
+- Several dependabot updates from automated bots
 
-### 📦 plone/.github
-[2 files changed, +16/-0 lines, 1 pull request merged]  
-`Maurits van Rees` fixed the security email address in configurations for better compliance.
-
-### 📦 plone/mockup
-[7 files changed, +166/-47 lines, 2 pull requests merged]  
-Enhanced the Contentbrowser widget and updated dependencies for improved performance and security.
-
-### 📦 plone/plone.theme
-[2 files changed, +2/-2 lines, 1 pull request merged]  
-Dependabot updated `astral-sh/setup-uv` ensuring project security.
-
-### 📦 plone/Products.MimetypesRegistry
-[30 files changed, +83/-39 lines, 2 pull requests merged]  
-Mainly focused on making the project secure and current with the latest dependency updates, lead by `Maurits van Rees`.
-
-### 📦 plone/Products.CMFEditions
-[9 files changed, +88/-28 lines, 2 merged PRs, 1 direct commit]  
-Security updates led to changes and restructuring, contributing to code cleanliness and reliability.
-
-### 📦 plone/pytest-plone
-[6 files changed, +10/-10 lines, 1 pull request merged]  
-Routine updates facilitating the latest dependency versions.
-
-### 📦 plone/plone.ping
-[171 files changed, +339/-336 lines, 1 direct commit]
-Frequent updates on status summaries from `Upptime Bot`, maintaining an efficient monitoring framework.
-
-### 📦 plone/plone.remote
-[5 files changed, +1/-1 lines, 1 merged PR]  
-Updated by Dependabot to ensure security compliance.
-
-## Closing Notes
-Overall, the Plone organization made substantial advancements in maintaining security and updating dependencies across numerous repositories, unifying efforts toward improved functionality and responsiveness. Continued engagement and contributions from community members like `Maurits van Rees`, `David Glick`, and `Érico Andrei` illustrate a commitment to the ecosystem's robustness and sustainability.
-
----
-
-### Contributors:
-- Maurits van Rees
-- David Glick
-- Érico Andrei
-- Piero Nicolli
-- Victor Fernandez de Alba
-- Peter Mathis
-- Gil Forcada Codinachs
-- Jens Klein
-- Upptime Bot
-- Dependabot
-
-Automatically generated from 110 active repositories.
+Automatically generated from 115 active repositories.
