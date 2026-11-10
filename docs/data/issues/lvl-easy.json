@@ -1,7 +1,7 @@
 {
   "version": 1,
   "status": "success",
-  "generated_at": "2026-11-10T17:05:28Z",
+  "generated_at": "2026-11-10T18:06:58Z",
   "organization": "plone",
   "state": "open",
   "slug": "lvl-easy",
@@ -227,7 +227,15 @@
         "04 type: enhancement",
         "12 prio: high",
         "41 lvl: easy"
-      ]
+      ],
+      "contributor_summary": {
+        "status": "available",
+        "generated_at": "2026-11-10T18:07:04Z",
+        "source_issue_updated_at": "2026-11-10T16:14:36Z",
+        "model": "gpt-4o-mini",
+        "summary_markdown": "## What this issue is about\nThis issue addresses an enhancement needed for the Plone Helm charts. Currently, if changes are made to the chart without updating the version in `Chart.yaml`, the updates are not published—leading to confusion. The goal is to enforce a version bump whenever chart changes occur to ensure clarity and proper publishing.\n\n## What needs to be done\nWe need to modify the release workflow to require that any changes to the `charts/plone` directory also include a corresponding version update in `Chart.yaml`. This should fail any pull requests that don’t meet this requirement.\n\n## Helpful background\nHelm charts are packages of pre-configured Kubernetes resources. The `Chart.yaml` file holds metadata about the chart, including its version. Ensuring version updates helps maintain clear release processes and prevents silent failures in publishing.\n\n## Good first steps\n1. Familiarize yourself with the `Chart.yaml` file and its role in Helm charts.\n2. Review the current release workflow and identify where the version check can be implemented.\n3. Consider looking at other pull requests to see how similar changes were handled.\n4. Join discussions on this issue or explore related ones for additional context.\n\nFeel free to reach out if you have questions or need assistance!",
+        "path": "data/issues/summaries/plone/helm-charts/33.json"
+      }
     },
     {
       "id": 6310879164,
@@ -252,7 +260,15 @@
         "12 prio: high",
         "41 lvl: easy",
         "51 target: patch"
-      ]
+      ],
+      "contributor_summary": {
+        "status": "available",
+        "generated_at": "2026-11-10T18:07:30Z",
+        "source_issue_updated_at": "2026-11-10T16:14:14Z",
+        "model": "gpt-4o-mini",
+        "summary_markdown": "## What this issue is about\nThis issue focuses on updating the `appVersion` in our Helm charts to match the latest Plone release (6.2.2.1) and documenting our image update policy. This ensures that users are using the most secure version of the application.\n\n## What needs to be done\n1. Update the `appVersion` from 6.2.2 to 6.2.2.1 in the relevant files.\n2. Document the image update policy, detailing when to use `pullPolicy: Always` versus a specific digest.\n3. Explore optional `image.digest` values for better control over image versions.\n\n## Helpful background\nIn Kubernetes, `pullPolicy` determines whether an image is pulled from the registry or used from the local cache. The `appVersion` reflects the version of your application, while each Docker image can be uniquely identified using a digest.\n\n## Good first steps\n1. Fork the repository and check out a new branch.\n2. Locate the configuration file where `appVersion` is defined.\n3. Modify the version to match 6.2.2.1.\n4. Start drafting the documentation on the image update policy.\n5. Once ready, submit a pull request for review.",
+        "path": "data/issues/summaries/plone/helm-charts/27.json"
+      }
     },
     {
       "id": 6310877250,
@@ -276,7 +292,15 @@
         "04 type: enhancement",
         "13 prio: normal",
         "41 lvl: easy"
-      ]
+      ],
+      "contributor_summary": {
+        "status": "available",
+        "generated_at": "2026-11-10T18:07:38Z",
+        "source_issue_updated_at": "2026-11-10T16:14:08Z",
+        "model": "gpt-4o-mini",
+        "summary_markdown": "## What this issue is about\nThis issue proposes creating a CHANGELOG for the project starting with version 0.3.0. A CHANGELOG helps users track changes, including new features, improvements, and any breaking changes across releases. \n\n## What needs to be done\n- Begin the CHANGELOG at version 0.3.0.\n- Include the following for each release:\n  - Chart version\n  - Plone and Volto versions\n  - Any breaking changes and guidance on how to address them\n\n## Helpful background\nMaintaining a CHANGELOG is a common practice in software development. It improves transparency and makes it easier for users and contributors to understand the history and evolution of the project. Currently, the project lacks this documentation.\n\n## Good first steps\n1. Review existing versions of CHANGELOGs from similar projects for inspiration.\n2. Start drafting the CHANGELOG for version 0.3.0 using the outlined format.\n3. Check back regularly with the project maintainers (especially [ericof](https://github.com/ericof)) for feedback and ensure your changes align with project standards. \n4. After drafting, be ready to submit a pull request (PR) for review and further discussion.",
+        "path": "data/issues/summaries/plone/helm-charts/25.json"
+      }
     },
     {
       "id": 6310875923,
@@ -301,7 +325,15 @@
         "13 prio: normal",
         "41 lvl: easy",
         "51 target: patch"
-      ]
+      ],
+      "contributor_summary": {
+        "status": "available",
+        "generated_at": "2026-11-10T18:07:43Z",
+        "source_issue_updated_at": "2026-11-10T16:14:04Z",
+        "model": "gpt-4o-mini",
+        "summary_markdown": "## What this issue is about\nThis issue is focused on updating the `Chart.yaml` file in the Plone Helm Charts repository. Currently, the file lists four maintainers by name but does not include the authors of the significant 0.3.0 rewrite. The goal is to accurately represent the current maintainers of the project.\n\n## What needs to be done\nYou will need to update the `Chart.yaml` file to list the active maintainers, including an email address or URL for each. This helps maintain clarity in the project's governance and makes it easier for users to contact the maintainers if needed.\n\n## Helpful background\nHelm Charts are a way to manage Kubernetes applications. The `Chart.yaml` file contains metadata about the chart, including the maintainers. Having up-to-date contact information can facilitate project collaboration.\n\n## Good first steps\n1. **Check the current `Chart.yaml` file**: Look for the maintainer section to see who is currently listed.\n2. **Identify active maintainers**: Gather names and contact details (email or URL) for those who should be included.\n3. **Create a pull request (PR)**: Modify the `Chart.yaml` file with the updated information and submit your changes for review.\n\nIf you're unfamiliar with making a PR, check out GitHub's guide on it! Feel free to ask questions if you're unsure about anything.",
+        "path": "data/issues/summaries/plone/helm-charts/24.json"
+      }
     },
     {
       "id": 6310874993,
@@ -325,7 +357,15 @@
         "04 type: enhancement",
         "13 prio: normal",
         "41 lvl: easy"
-      ]
+      ],
+      "contributor_summary": {
+        "status": "available",
+        "generated_at": "2026-11-10T18:07:49Z",
+        "source_issue_updated_at": "2026-11-10T16:14:01Z",
+        "model": "gpt-4o-mini",
+        "summary_markdown": "## What this issue is about\nThis issue proposes enhancements to the repository by adding essential documents and templates that will help guide contributions. It aims to improve how contributors interact with the project by including a contributing guide, a security policy, CODEOWNERS, and templates for issues and pull requests.\n\n## What needs to be done\n- Create a **CONTRIBUTING** guide to explain how to run tests and build documentation.\n- Establish a **SECURITY** policy that includes a way to report vulnerabilities.\n- Add a **CODEOWNERS** file to designate individuals responsible for certain areas of the codebase.\n- Develop templates for **issues** and **pull requests** to standardize how contributions are submitted.\n\n## Helpful background\nCurrently, the repository lacks detailed guidelines and templates, making it challenging for new contributors to understand how to get involved. Implementing these features will not only support newcomers but also streamline contributions and maintain code quality.\n\n## Good first steps\n1. Review existing documentation in similar repositories for ideas.\n2. Draft the **CONTRIBUTING** guide, focusing on tests and documentation building.\n3. Outline an appropriate **SECURITY** policy.\n4. Start creating templates for issues and pull requests, considering common use cases.\n5. Coordinate with the assigned contributor, [ericof](https://github.com/ericof), for feedback and guidance.\n\nFeel free to reach out if you need clarification on any points!",
+        "path": "data/issues/summaries/plone/helm-charts/23.json"
+      }
     },
     {
       "id": 6310874006,
@@ -350,7 +390,15 @@
         "13 prio: normal",
         "41 lvl: easy",
         "51 target: patch"
-      ]
+      ],
+      "contributor_summary": {
+        "status": "available",
+        "generated_at": "2026-11-10T18:07:53Z",
+        "source_issue_updated_at": "2026-11-10T16:13:58Z",
+        "model": "gpt-4o-mini",
+        "summary_markdown": "## What this issue is about\nThis issue addresses inconsistencies in the documentation for the `plone/helm-charts` project. Specifically, we need to fix references to a `SITE` variable, update stale Continuous Integration (CI) comments, and correct a broken link in `NOTES.txt`.\n\n## What needs to be done\n1. Update `docs/reference/backend.md` to clarify that the site Job uses `SITE_ID` instead of the mentioned `SITE` variable.\n2. Modify the `.github/workflows/test.yml` file to reflect that the site Job creates the site at first start.\n3. Change the link in `NOTES.txt` that currently points to an orphan page. The link should lead to the published how-to documentation instead.\n4. Adjust the `fail` messages in `_helpers.tpl` to direct users to the appropriate published documentation rather than README anchors.\n\n## Helpful background\nDocumentation drift refers to discrepancies between what is coded and what is documented. In this case, fixings are needed to ensure users receive correct guidance.\n\n## Good first steps\n1. Familiarize yourself with the relevant files: `docs/reference/backend.md`, `.github/workflows/test.yml`, and `NOTES.txt`.\n2. Review the project's documentation to find and verify the updated links.\n3. Consider local testing to ensure your changes work as expected after updating any documentation.\n4. Submit your proposed changes for review, and don't hesitate to ask for guidance if you encounter anything unclear!",
+        "path": "data/issues/summaries/plone/helm-charts/22.json"
+      }
     },
     {
       "id": 6310873051,
@@ -374,7 +422,15 @@
         "04 type: enhancement",
         "12 prio: high",
         "41 lvl: easy"
-      ]
+      ],
+      "contributor_summary": {
+        "status": "available",
+        "generated_at": "2026-11-10T18:07:59Z",
+        "source_issue_updated_at": "2026-11-10T16:13:55Z",
+        "model": "gpt-4o-mini",
+        "summary_markdown": "## What this issue is about\nThis issue aims to mark the Helm chart as beta and provide clear communication about what features are lacking in its current state. The enhancements will help users understand its limitations.\n\n## What needs to be done\n1. Update the README, `Chart.yaml` description, and documentation home to indicate that the chart is in beta status.\n2. Provide a short list of features that are not yet implemented, including:\n   - Backup and restore\n   - Upgrades\n   - Hardened security contexts\n3. Link to the relevant issues tracking these missing features.\n\n## Helpful background\nThe Helm chart is currently at version 0.3.0 and features a minimal setup, which includes one PostgreSQL instance, one backend, and one frontend server. Clarifying its beta status and limitations helps set user expectations.\n\n## Good first steps\n1. Visit the repository and locate the `README` file and `Chart.yaml`.\n2. Draft the necessary updates to inform users about its beta status and limitations.\n3. Familiarize yourself with the existing issues related to backup, upgrades, and security contexts to create appropriate links. \n\nFeel free to reach out if you have questions or need assistance!",
+        "path": "data/issues/summaries/plone/helm-charts/21.json"
+      }
     },
     {
       "id": 6310871703,
@@ -398,7 +454,15 @@
         "01 type: bug",
         "12 prio: high",
         "41 lvl: easy"
-      ]
+      ],
+      "contributor_summary": {
+        "status": "available",
+        "generated_at": "2026-11-10T18:08:02Z",
+        "source_issue_updated_at": "2026-11-10T16:13:51Z",
+        "model": "gpt-4o-mini",
+        "summary_markdown": "## What this issue is about\nThis issue addresses the behavior of the `helm uninstall` command regarding PostgreSQL volumes in the Plone Helm Charts. It needs clarity on what happens to these volumes during uninstallation, specifically highlighting any potential data loss.\n\n## What needs to be done\n1. Confirm the current behavior of the `helm uninstall` command concerning the PostgreSQL `Cluster` and its Persistent Volume Claims (PVCs).\n2. Record the results after uninstalling the default scenario using `kubectl get pvc,cluster`.\n3. Add a warning about this behavior in related tutorials and installation guides.\n4. Investigate the possibility of keeping the cluster during uninstallation if the subchart supports it.\n\n## Helpful background\nThe PostgreSQL `Cluster` is part of the Helm `postgresql` subchart. When uninstalling, the standard procedure seems to remove both the cluster and its PVCs, potentially leading to data loss. The ZEO volume, however, remains intact. It’s important to carefully assess the implications of this behavior for users.\n\n## Good first steps\n1. Familiarize yourself with the `helm uninstall` command and how it interacts with Kubernetes PVCs.\n2. Set up a test environment to execute the uninstallation and observe the effects using `kubectl`.\n3. Engage with the community for any existing insights or past discussions about this issue. \n4. Prepare to document your findings clearly for the user guides. Feel free to reach out to the assignee [Ericof](https://github.com/ericof) for guidance!",
+        "path": "data/issues/summaries/plone/helm-charts/20.json"
+      }
     },
     {
       "id": 3906863329,
@@ -4210,10 +4274,10 @@
   "message": null,
   "workflow": {
     "repository": "syslabcom/activity-recognition",
-    "run_id": "42861276315",
-    "run_number": "4477",
+    "run_id": "42871838647",
+    "run_number": "4478",
     "attempt": "1",
-    "url": "https://github.com/syslabcom/activity-recognition/actions/runs/42861276315",
-    "sha": "c81163be5603b4b0d1b5cfe3b20c661709d88f1d"
+    "url": "https://github.com/syslabcom/activity-recognition/actions/runs/42871838647",
+    "sha": "50ca098b54c196b26a373fbfe4c9446c542e70c3"
   }
 }

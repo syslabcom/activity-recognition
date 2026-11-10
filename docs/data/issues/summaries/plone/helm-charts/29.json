@@ -1,0 +1,33 @@
+{
+  "version": 1,
+  "status": "success",
+  "generated_at": "2026-11-10T18:07:26Z",
+  "source_issue": {
+    "id": 6310881827,
+    "number": 29,
+    "title": "Functional tests through a real Gateway in kind",
+    "html_url": "https://github.com/plone/helm-charts/issues/29",
+    "repository_full_name": "plone/helm-charts",
+    "updated_at": "2026-11-10T16:14:23Z",
+    "labels": [
+      "04 type: enhancement",
+      "11 prio: blocker",
+      "34 needs: tests",
+      "43 lvl: complex"
+    ],
+    "comments": 0
+  },
+  "ai": {
+    "provider": "openai",
+    "model": "gpt-4o-mini"
+  },
+  "summary_markdown": "## What this issue is about\nThis issue focuses on enhancing our Continuous Integration (CI) process by enabling it to perform functional tests through a real Gateway in a Kubernetes cluster (kind). Currently, the CI setup installs the necessary components but does not send any actual HTTP requests, leading to untested configurations that have caused issues in the past.\n\n## What needs to be done\nYou will need to:\n1. Install a Gateway API implementation and a Gateway in the kind cluster.\n2. Set up an ingress-nginx controller for proper routing.\n3. After each installation, ensure that the site can be accessed, including testing specific endpoints for Volto and Varnish caching.\n\nThis task is important to prevent future bugs and ensure our configurations are working as expected.\n\n## Helpful background\nThe issue highlights a problem where routes remain unattached due to the absence of the CI Gateway (`ci`). Additionally, components related to Varnish caching have not been tested, leading to recent bugs. Familiarity with Kubernetes and CI processes will be helpful, but we're here to assist you!\n\n## Good first steps\n1. Familiarize yourself with how to set up a kind cluster and Gateway API.\n2. Review the CI setup in the repository to understand current limitations.\n3. Consider joining discussions or reaching out for help if you're unsure about any steps – collaboration is welcomed!",
+  "workflow": {
+    "repository": "syslabcom/activity-recognition",
+    "run_id": "42871838647",
+    "run_number": "4478",
+    "attempt": "1",
+    "url": "https://github.com/syslabcom/activity-recognition/actions/runs/42871838647",
+    "sha": "50ca098b54c196b26a373fbfe4c9446c542e70c3"
+  }
+}

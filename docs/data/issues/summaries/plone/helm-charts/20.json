@@ -1,0 +1,32 @@
+{
+  "version": 1,
+  "status": "success",
+  "generated_at": "2026-11-10T18:08:02Z",
+  "source_issue": {
+    "id": 6310871703,
+    "number": 20,
+    "title": "Confirm what helm uninstall does to the PostgreSQL volumes, and warn about it",
+    "html_url": "https://github.com/plone/helm-charts/issues/20",
+    "repository_full_name": "plone/helm-charts",
+    "updated_at": "2026-11-10T16:13:51Z",
+    "labels": [
+      "01 type: bug",
+      "12 prio: high",
+      "41 lvl: easy"
+    ],
+    "comments": 0
+  },
+  "ai": {
+    "provider": "openai",
+    "model": "gpt-4o-mini"
+  },
+  "summary_markdown": "## What this issue is about\nThis issue addresses the behavior of the `helm uninstall` command regarding PostgreSQL volumes in the Plone Helm Charts. It needs clarity on what happens to these volumes during uninstallation, specifically highlighting any potential data loss.\n\n## What needs to be done\n1. Confirm the current behavior of the `helm uninstall` command concerning the PostgreSQL `Cluster` and its Persistent Volume Claims (PVCs).\n2. Record the results after uninstalling the default scenario using `kubectl get pvc,cluster`.\n3. Add a warning about this behavior in related tutorials and installation guides.\n4. Investigate the possibility of keeping the cluster during uninstallation if the subchart supports it.\n\n## Helpful background\nThe PostgreSQL `Cluster` is part of the Helm `postgresql` subchart. When uninstalling, the standard procedure seems to remove both the cluster and its PVCs, potentially leading to data loss. The ZEO volume, however, remains intact. It’s important to carefully assess the implications of this behavior for users.\n\n## Good first steps\n1. Familiarize yourself with the `helm uninstall` command and how it interacts with Kubernetes PVCs.\n2. Set up a test environment to execute the uninstallation and observe the effects using `kubectl`.\n3. Engage with the community for any existing insights or past discussions about this issue. \n4. Prepare to document your findings clearly for the user guides. Feel free to reach out to the assignee [Ericof](https://github.com/ericof) for guidance!",
+  "workflow": {
+    "repository": "syslabcom/activity-recognition",
+    "run_id": "42871838647",
+    "run_number": "4478",
+    "attempt": "1",
+    "url": "https://github.com/syslabcom/activity-recognition/actions/runs/42871838647",
+    "sha": "50ca098b54c196b26a373fbfe4c9446c542e70c3"
+  }
+}

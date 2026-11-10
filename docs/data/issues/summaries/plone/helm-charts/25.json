@@ -1,0 +1,32 @@
+{
+  "version": 1,
+  "status": "success",
+  "generated_at": "2026-11-10T18:07:38Z",
+  "source_issue": {
+    "id": 6310877250,
+    "number": 25,
+    "title": "Start a CHANGELOG at 0.3.0",
+    "html_url": "https://github.com/plone/helm-charts/issues/25",
+    "repository_full_name": "plone/helm-charts",
+    "updated_at": "2026-11-10T16:14:08Z",
+    "labels": [
+      "04 type: enhancement",
+      "13 prio: normal",
+      "41 lvl: easy"
+    ],
+    "comments": 0
+  },
+  "ai": {
+    "provider": "openai",
+    "model": "gpt-4o-mini"
+  },
+  "summary_markdown": "## What this issue is about\nThis issue proposes creating a CHANGELOG for the project starting with version 0.3.0. A CHANGELOG helps users track changes, including new features, improvements, and any breaking changes across releases. \n\n## What needs to be done\n- Begin the CHANGELOG at version 0.3.0.\n- Include the following for each release:\n  - Chart version\n  - Plone and Volto versions\n  - Any breaking changes and guidance on how to address them\n\n## Helpful background\nMaintaining a CHANGELOG is a common practice in software development. It improves transparency and makes it easier for users and contributors to understand the history and evolution of the project. Currently, the project lacks this documentation.\n\n## Good first steps\n1. Review existing versions of CHANGELOGs from similar projects for inspiration.\n2. Start drafting the CHANGELOG for version 0.3.0 using the outlined format.\n3. Check back regularly with the project maintainers (especially [ericof](https://github.com/ericof)) for feedback and ensure your changes align with project standards. \n4. After drafting, be ready to submit a pull request (PR) for review and further discussion.",
+  "workflow": {
+    "repository": "syslabcom/activity-recognition",
+    "run_id": "42871838647",
+    "run_number": "4478",
+    "attempt": "1",
+    "url": "https://github.com/syslabcom/activity-recognition/actions/runs/42871838647",
+    "sha": "50ca098b54c196b26a373fbfe4c9446c542e70c3"
+  }
+}

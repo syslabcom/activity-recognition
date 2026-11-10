@@ -1,0 +1,33 @@
+{
+  "version": 1,
+  "status": "success",
+  "generated_at": "2026-11-10T18:07:09Z",
+  "source_issue": {
+    "id": 6310884876,
+    "number": 32,
+    "title": "Upgrade test from the last published release, with content checks",
+    "html_url": "https://github.com/plone/helm-charts/issues/32",
+    "repository_full_name": "plone/helm-charts",
+    "updated_at": "2026-11-10T16:14:33Z",
+    "labels": [
+      "04 type: enhancement",
+      "12 prio: high",
+      "34 needs: tests",
+      "42 lvl: moderate"
+    ],
+    "comments": 0
+  },
+  "ai": {
+    "provider": "openai",
+    "model": "gpt-4o-mini"
+  },
+  "summary_markdown": "## What this issue is about\nThis issue focuses on enhancing our testing process. It involves upgrading to the latest published `plone/plone` release and ensuring that content created before the upgrade remains accessible.\n\n## What needs to be done\n1. Install the latest published version of `plone/plone`.\n2. Create a webpage that includes an image.\n3. Perform a `helm upgrade` to apply the changes from the relevant pull request.\n4. Verify that the webpage and image are still functioning correctly after the upgrade. \n\n**Note:** This task depends on Issue #29 for context and prerequisites.\n\n## Helpful background\nHelm is a tool used for managing Kubernetes applications. In this case, it helps us upgrade our Plone application seamlessly. Understanding the basics of Helm and how to set up a Plone environment will be beneficial.\n\n## Good first steps\n1. Familiarize yourself with setting up Plone and Helm if you haven’t already.\n2. Check out the documentation for the latest `plone/plone` release to see any changes.\n3. Look at Issue #29 to grasp the dependencies and context.\n4. Start experimenting with creating a page in Plone and performing a Helm upgrade locally to practice those skills.  \n\nDon’t hesitate to ask questions if anything is unclear!",
+  "workflow": {
+    "repository": "syslabcom/activity-recognition",
+    "run_id": "42871838647",
+    "run_number": "4478",
+    "attempt": "1",
+    "url": "https://github.com/syslabcom/activity-recognition/actions/runs/42871838647",
+    "sha": "50ca098b54c196b26a373fbfe4c9446c542e70c3"
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "version": 1,
+  "status": "success",
+  "generated_at": "2026-11-10T18:07:22Z",
+  "source_issue": {
+    "id": 6310882872,
+    "number": 30,
+    "title": "Add a helm test hook with the smoke checks",
+    "html_url": "https://github.com/plone/helm-charts/issues/30",
+    "repository_full_name": "plone/helm-charts",
+    "updated_at": "2026-11-10T16:14:27Z",
+    "labels": [
+      "03 type: feature (plip)",
+      "12 prio: high",
+      "42 lvl: moderate"
+    ],
+    "comments": 0
+  },
+  "ai": {
+    "provider": "openai",
+    "model": "gpt-4o-mini"
+  },
+  "summary_markdown": "## What this issue is about\nThis issue focuses on enhancing the Helm charts in Plone by adding a test hook. This would allow users to run smoke checks to verify their installations easily.\n\n## What needs to be done\nThe main task is to implement a `helm test` hook that exposes the functional checks. This allows users to confirm that their deployments are working correctly. Note that this work is dependent on issue #29, which may contain relevant information.\n\n## Helpful background\nHelm is a package manager for Kubernetes applications. A \"test hook\" is a way to run tests after the deployment of your application, ensuring everything is functioning as expected. This issue currently has no comments from other contributors, making the discussion around the implementation somewhat limited.\n\n## Good first steps\n1. Familiarize yourself with the existing Helm charts in the Plone repository.\n2. Review the requirements of issue #29, as this will provide necessary context for your work.\n3. If you're new to Helm or Kubernetes, consider looking up tutorials or documentation to understand how `helm test` works.\n4. Once ready, start drafting a plan for implementing the hook, and don’t hesitate to ask for guidance from the community.",
+  "workflow": {
+    "repository": "syslabcom/activity-recognition",
+    "run_id": "42871838647",
+    "run_number": "4478",
+    "attempt": "1",
+    "url": "https://github.com/syslabcom/activity-recognition/actions/runs/42871838647",
+    "sha": "50ca098b54c196b26a373fbfe4c9446c542e70c3"
+  }
+}

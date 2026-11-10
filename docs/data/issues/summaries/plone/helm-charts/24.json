@@ -1,0 +1,33 @@
+{
+  "version": 1,
+  "status": "success",
+  "generated_at": "2026-11-10T18:07:43Z",
+  "source_issue": {
+    "id": 6310875923,
+    "number": 24,
+    "title": "Update the maintainers in Chart.yaml",
+    "html_url": "https://github.com/plone/helm-charts/issues/24",
+    "repository_full_name": "plone/helm-charts",
+    "updated_at": "2026-11-10T16:14:04Z",
+    "labels": [
+      "04 type: enhancement",
+      "13 prio: normal",
+      "41 lvl: easy",
+      "51 target: patch"
+    ],
+    "comments": 0
+  },
+  "ai": {
+    "provider": "openai",
+    "model": "gpt-4o-mini"
+  },
+  "summary_markdown": "## What this issue is about\nThis issue is focused on updating the `Chart.yaml` file in the Plone Helm Charts repository. Currently, the file lists four maintainers by name but does not include the authors of the significant 0.3.0 rewrite. The goal is to accurately represent the current maintainers of the project.\n\n## What needs to be done\nYou will need to update the `Chart.yaml` file to list the active maintainers, including an email address or URL for each. This helps maintain clarity in the project's governance and makes it easier for users to contact the maintainers if needed.\n\n## Helpful background\nHelm Charts are a way to manage Kubernetes applications. The `Chart.yaml` file contains metadata about the chart, including the maintainers. Having up-to-date contact information can facilitate project collaboration.\n\n## Good first steps\n1. **Check the current `Chart.yaml` file**: Look for the maintainer section to see who is currently listed.\n2. **Identify active maintainers**: Gather names and contact details (email or URL) for those who should be included.\n3. **Create a pull request (PR)**: Modify the `Chart.yaml` file with the updated information and submit your changes for review.\n\nIf you're unfamiliar with making a PR, check out GitHub's guide on it! Feel free to ask questions if you're unsure about anything.",
+  "workflow": {
+    "repository": "syslabcom/activity-recognition",
+    "run_id": "42871838647",
+    "run_number": "4478",
+    "attempt": "1",
+    "url": "https://github.com/syslabcom/activity-recognition/actions/runs/42871838647",
+    "sha": "50ca098b54c196b26a373fbfe4c9446c542e70c3"
+  }
+}

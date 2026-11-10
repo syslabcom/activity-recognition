@@ -1,0 +1,33 @@
+{
+  "version": 1,
+  "status": "success",
+  "generated_at": "2026-11-10T18:07:30Z",
+  "source_issue": {
+    "id": 6310879164,
+    "number": 27,
+    "title": "Align appVersion with Plone 6.2.2.1 and document the image update policy",
+    "html_url": "https://github.com/plone/helm-charts/issues/27",
+    "repository_full_name": "plone/helm-charts",
+    "updated_at": "2026-11-10T16:14:14Z",
+    "labels": [
+      "04 type: enhancement",
+      "12 prio: high",
+      "41 lvl: easy",
+      "51 target: patch"
+    ],
+    "comments": 0
+  },
+  "ai": {
+    "provider": "openai",
+    "model": "gpt-4o-mini"
+  },
+  "summary_markdown": "## What this issue is about\nThis issue focuses on updating the `appVersion` in our Helm charts to match the latest Plone release (6.2.2.1) and documenting our image update policy. This ensures that users are using the most secure version of the application.\n\n## What needs to be done\n1. Update the `appVersion` from 6.2.2 to 6.2.2.1 in the relevant files.\n2. Document the image update policy, detailing when to use `pullPolicy: Always` versus a specific digest.\n3. Explore optional `image.digest` values for better control over image versions.\n\n## Helpful background\nIn Kubernetes, `pullPolicy` determines whether an image is pulled from the registry or used from the local cache. The `appVersion` reflects the version of your application, while each Docker image can be uniquely identified using a digest.\n\n## Good first steps\n1. Fork the repository and check out a new branch.\n2. Locate the configuration file where `appVersion` is defined.\n3. Modify the version to match 6.2.2.1.\n4. Start drafting the documentation on the image update policy.\n5. Once ready, submit a pull request for review.",
+  "workflow": {
+    "repository": "syslabcom/activity-recognition",
+    "run_id": "42871838647",
+    "run_number": "4478",
+    "attempt": "1",
+    "url": "https://github.com/syslabcom/activity-recognition/actions/runs/42871838647",
+    "sha": "50ca098b54c196b26a373fbfe4c9446c542e70c3"
+  }
+}

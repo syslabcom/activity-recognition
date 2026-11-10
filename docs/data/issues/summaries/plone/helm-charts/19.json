@@ -1,0 +1,33 @@
+{
+  "version": 1,
+  "status": "success",
+  "generated_at": "2026-11-10T18:08:08Z",
+  "source_issue": {
+    "id": 6310870707,
+    "number": 19,
+    "title": "Set the admin password from a Secret, generated when not given",
+    "html_url": "https://github.com/plone/helm-charts/issues/19",
+    "repository_full_name": "plone/helm-charts",
+    "updated_at": "2026-11-10T16:13:47Z",
+    "labels": [
+      "03 type: feature (plip)",
+      "11 prio: blocker",
+      "43 lvl: complex",
+      "52 target: minor"
+    ],
+    "comments": 0
+  },
+  "ai": {
+    "provider": "openai",
+    "model": "gpt-4o-mini"
+  },
+  "summary_markdown": "## What this issue is about\nThis issue focuses on enhancing Plone’s Helm charts by allowing the admin password to be set through a generated Secret. The goal is to eliminate the need for manual password setup during a fresh install, making it more secure.\n\n## What needs to be done\n- Implement logic to create a password Secret (`<release>-admin`) if no existing Secret is provided.\n- Modify the installation process to automatically apply this password to the Zope user after installation and upgrades.\n- Ensure that fresh installations do not accept the default `admin`/`admin` combo.\n- Update `NOTES.txt` to include the command for retrieving the password.\n\n## Helpful background\nThis feature is labeled as a blocker with a complexity level of ‘complex’. It currently depends on another issue (#18), and there may be outdated discussions in previous comments, so be cautious and cross-reference with current project needs.\n\n## Good first steps\n1. Familiarize yourself with the Helm chart structure in Plone.\n2. Read through the existing code related to user authentication.\n3. Look into creating Secrets in Kubernetes if you’re new to that concept.\n4. Consider discussing your approach with the assignee, [ericof](https://github.com/ericof), for guidance or clarification.",
+  "workflow": {
+    "repository": "syslabcom/activity-recognition",
+    "run_id": "42871838647",
+    "run_number": "4478",
+    "attempt": "1",
+    "url": "https://github.com/syslabcom/activity-recognition/actions/runs/42871838647",
+    "sha": "50ca098b54c196b26a373fbfe4c9446c542e70c3"
+  }
+}

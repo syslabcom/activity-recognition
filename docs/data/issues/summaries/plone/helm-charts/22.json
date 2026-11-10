@@ -1,0 +1,33 @@
+{
+  "version": 1,
+  "status": "success",
+  "generated_at": "2026-11-10T18:07:53Z",
+  "source_issue": {
+    "id": 6310874006,
+    "number": 22,
+    "title": "Fix documentation drift: SITE_ID, stale CI comment, NOTES.txt link",
+    "html_url": "https://github.com/plone/helm-charts/issues/22",
+    "repository_full_name": "plone/helm-charts",
+    "updated_at": "2026-11-10T16:13:58Z",
+    "labels": [
+      "01 type: bug",
+      "13 prio: normal",
+      "41 lvl: easy",
+      "51 target: patch"
+    ],
+    "comments": 0
+  },
+  "ai": {
+    "provider": "openai",
+    "model": "gpt-4o-mini"
+  },
+  "summary_markdown": "## What this issue is about\nThis issue addresses inconsistencies in the documentation for the `plone/helm-charts` project. Specifically, we need to fix references to a `SITE` variable, update stale Continuous Integration (CI) comments, and correct a broken link in `NOTES.txt`.\n\n## What needs to be done\n1. Update `docs/reference/backend.md` to clarify that the site Job uses `SITE_ID` instead of the mentioned `SITE` variable.\n2. Modify the `.github/workflows/test.yml` file to reflect that the site Job creates the site at first start.\n3. Change the link in `NOTES.txt` that currently points to an orphan page. The link should lead to the published how-to documentation instead.\n4. Adjust the `fail` messages in `_helpers.tpl` to direct users to the appropriate published documentation rather than README anchors.\n\n## Helpful background\nDocumentation drift refers to discrepancies between what is coded and what is documented. In this case, fixings are needed to ensure users receive correct guidance.\n\n## Good first steps\n1. Familiarize yourself with the relevant files: `docs/reference/backend.md`, `.github/workflows/test.yml`, and `NOTES.txt`.\n2. Review the project's documentation to find and verify the updated links.\n3. Consider local testing to ensure your changes work as expected after updating any documentation.\n4. Submit your proposed changes for review, and don't hesitate to ask for guidance if you encounter anything unclear!",
+  "workflow": {
+    "repository": "syslabcom/activity-recognition",
+    "run_id": "42871838647",
+    "run_number": "4478",
+    "attempt": "1",
+    "url": "https://github.com/syslabcom/activity-recognition/actions/runs/42871838647",
+    "sha": "50ca098b54c196b26a373fbfe4c9446c542e70c3"
+  }
+}

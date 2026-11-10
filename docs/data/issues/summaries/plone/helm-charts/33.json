@@ -1,0 +1,32 @@
+{
+  "version": 1,
+  "status": "success",
+  "generated_at": "2026-11-10T18:07:04Z",
+  "source_issue": {
+    "id": 6310885906,
+    "number": 33,
+    "title": "Require a chart version bump on chart changes",
+    "html_url": "https://github.com/plone/helm-charts/issues/33",
+    "repository_full_name": "plone/helm-charts",
+    "updated_at": "2026-11-10T16:14:36Z",
+    "labels": [
+      "04 type: enhancement",
+      "12 prio: high",
+      "41 lvl: easy"
+    ],
+    "comments": 0
+  },
+  "ai": {
+    "provider": "openai",
+    "model": "gpt-4o-mini"
+  },
+  "summary_markdown": "## What this issue is about\nThis issue addresses an enhancement needed for the Plone Helm charts. Currently, if changes are made to the chart without updating the version in `Chart.yaml`, the updates are not published—leading to confusion. The goal is to enforce a version bump whenever chart changes occur to ensure clarity and proper publishing.\n\n## What needs to be done\nWe need to modify the release workflow to require that any changes to the `charts/plone` directory also include a corresponding version update in `Chart.yaml`. This should fail any pull requests that don’t meet this requirement.\n\n## Helpful background\nHelm charts are packages of pre-configured Kubernetes resources. The `Chart.yaml` file holds metadata about the chart, including its version. Ensuring version updates helps maintain clear release processes and prevents silent failures in publishing.\n\n## Good first steps\n1. Familiarize yourself with the `Chart.yaml` file and its role in Helm charts.\n2. Review the current release workflow and identify where the version check can be implemented.\n3. Consider looking at other pull requests to see how similar changes were handled.\n4. Join discussions on this issue or explore related ones for additional context.\n\nFeel free to reach out if you have questions or need assistance!",
+  "workflow": {
+    "repository": "syslabcom/activity-recognition",
+    "run_id": "42871838647",
+    "run_number": "4478",
+    "attempt": "1",
+    "url": "https://github.com/syslabcom/activity-recognition/actions/runs/42871838647",
+    "sha": "50ca098b54c196b26a373fbfe4c9446c542e70c3"
+  }
+}

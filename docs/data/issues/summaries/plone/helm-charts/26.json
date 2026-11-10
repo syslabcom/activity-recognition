@@ -1,0 +1,32 @@
+{
+  "version": 1,
+  "status": "success",
+  "generated_at": "2026-11-10T18:07:34Z",
+  "source_issue": {
+    "id": 6310878213,
+    "number": 26,
+    "title": "Fix Dependabot's Helm dependency updates",
+    "html_url": "https://github.com/plone/helm-charts/issues/26",
+    "repository_full_name": "plone/helm-charts",
+    "updated_at": "2026-11-10T16:14:11Z",
+    "labels": [
+      "01 type: bug",
+      "12 prio: high",
+      "42 lvl: moderate"
+    ],
+    "comments": 0
+  },
+  "ai": {
+    "provider": "openai",
+    "model": "gpt-4o-mini"
+  },
+  "summary_markdown": "## What this issue is about\nThis issue addresses failures in Dependabot's attempts to update our Helm dependencies. Currently, it encounters access issues with specific registries, preventing it from properly monitoring certain dependencies.\n\n## What needs to be done\nWe need to fix the error responses Dependabot receives, specifically the `403 Forbidden` and `UNAUTHORIZED` issues. This can be resolved by adding appropriate `registries:` entries for the `cluster` and `varnish-cache` dependencies in the `.github/dependabot.yml` file. Alternatively, we may consider moving these updates to Renovate.\n\n## Helpful background\nDependabot is a tool that helps keep dependencies up to date automatically. Helm is a package manager for Kubernetes applications. The errors indicate that Dependabot is unable to access the necessary resources to perform updates for specific packages.\n\n## Good first steps\n1. Check the `.github/dependabot.yml` file to see how current dependencies are managed.\n2. Investigate the `cluster` and `varnish-cache` dependencies for their registry URLs.\n3. Try adding the missing `registries:` entries as suggested, and run a manual \"Check for updates\" to see if it resolves the issue.\n4. If you run into uncertainties or additional challenges, feel free to ask questions in the comments!",
+  "workflow": {
+    "repository": "syslabcom/activity-recognition",
+    "run_id": "42871838647",
+    "run_number": "4478",
+    "attempt": "1",
+    "url": "https://github.com/syslabcom/activity-recognition/actions/runs/42871838647",
+    "sha": "50ca098b54c196b26a373fbfe4c9446c542e70c3"
+  }
+}

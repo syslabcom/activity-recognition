@@ -1,7 +1,7 @@
 {
   "version": 1,
   "status": "success",
-  "generated_at": "2026-11-10T17:05:28Z",
+  "generated_at": "2026-11-10T18:06:58Z",
   "organization": "plone",
   "state": "open",
   "slug": "lvl-complex",
@@ -100,7 +100,15 @@
         "11 prio: blocker",
         "34 needs: tests",
         "43 lvl: complex"
-      ]
+      ],
+      "contributor_summary": {
+        "status": "available",
+        "generated_at": "2026-11-10T18:07:26Z",
+        "source_issue_updated_at": "2026-11-10T16:14:23Z",
+        "model": "gpt-4o-mini",
+        "summary_markdown": "## What this issue is about\nThis issue focuses on enhancing our Continuous Integration (CI) process by enabling it to perform functional tests through a real Gateway in a Kubernetes cluster (kind). Currently, the CI setup installs the necessary components but does not send any actual HTTP requests, leading to untested configurations that have caused issues in the past.\n\n## What needs to be done\nYou will need to:\n1. Install a Gateway API implementation and a Gateway in the kind cluster.\n2. Set up an ingress-nginx controller for proper routing.\n3. After each installation, ensure that the site can be accessed, including testing specific endpoints for Volto and Varnish caching.\n\nThis task is important to prevent future bugs and ensure our configurations are working as expected.\n\n## Helpful background\nThe issue highlights a problem where routes remain unattached due to the absence of the CI Gateway (`ci`). Additionally, components related to Varnish caching have not been tested, leading to recent bugs. Familiarity with Kubernetes and CI processes will be helpful, but we're here to assist you!\n\n## Good first steps\n1. Familiarize yourself with how to set up a kind cluster and Gateway API.\n2. Review the CI setup in the repository to understand current limitations.\n3. Consider joining discussions or reaching out for help if you're unsure about any steps – collaboration is welcomed!",
+        "path": "data/issues/summaries/plone/helm-charts/29.json"
+      }
     },
     {
       "id": 6310870707,
@@ -125,7 +133,15 @@
         "11 prio: blocker",
         "43 lvl: complex",
         "52 target: minor"
-      ]
+      ],
+      "contributor_summary": {
+        "status": "available",
+        "generated_at": "2026-11-10T18:08:08Z",
+        "source_issue_updated_at": "2026-11-10T16:13:47Z",
+        "model": "gpt-4o-mini",
+        "summary_markdown": "## What this issue is about\nThis issue focuses on enhancing Plone’s Helm charts by allowing the admin password to be set through a generated Secret. The goal is to eliminate the need for manual password setup during a fresh install, making it more secure.\n\n## What needs to be done\n- Implement logic to create a password Secret (`<release>-admin`) if no existing Secret is provided.\n- Modify the installation process to automatically apply this password to the Zope user after installation and upgrades.\n- Ensure that fresh installations do not accept the default `admin`/`admin` combo.\n- Update `NOTES.txt` to include the command for retrieving the password.\n\n## Helpful background\nThis feature is labeled as a blocker with a complexity level of ‘complex’. It currently depends on another issue (#18), and there may be outdated discussions in previous comments, so be cautious and cross-reference with current project needs.\n\n## Good first steps\n1. Familiarize yourself with the Helm chart structure in Plone.\n2. Read through the existing code related to user authentication.\n3. Look into creating Secrets in Kubernetes if you’re new to that concept.\n4. Consider discussing your approach with the assignee, [ericof](https://github.com/ericof), for guidance or clarification.",
+        "path": "data/issues/summaries/plone/helm-charts/19.json"
+      }
     },
     {
       "id": 763844980,
@@ -1654,10 +1670,10 @@
   "message": null,
   "workflow": {
     "repository": "syslabcom/activity-recognition",
-    "run_id": "42861276315",
-    "run_number": "4477",
+    "run_id": "42871838647",
+    "run_number": "4478",
     "attempt": "1",
-    "url": "https://github.com/syslabcom/activity-recognition/actions/runs/42861276315",
-    "sha": "c81163be5603b4b0d1b5cfe3b20c661709d88f1d"
+    "url": "https://github.com/syslabcom/activity-recognition/actions/runs/42871838647",
+    "sha": "50ca098b54c196b26a373fbfe4c9446c542e70c3"
   }
 }

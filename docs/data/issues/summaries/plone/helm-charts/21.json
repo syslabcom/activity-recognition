@@ -1,0 +1,32 @@
+{
+  "version": 1,
+  "status": "success",
+  "generated_at": "2026-11-10T18:07:59Z",
+  "source_issue": {
+    "id": 6310873051,
+    "number": 21,
+    "title": "Mark the chart as beta and list what it doesn't cover yet",
+    "html_url": "https://github.com/plone/helm-charts/issues/21",
+    "repository_full_name": "plone/helm-charts",
+    "updated_at": "2026-11-10T16:13:55Z",
+    "labels": [
+      "04 type: enhancement",
+      "12 prio: high",
+      "41 lvl: easy"
+    ],
+    "comments": 0
+  },
+  "ai": {
+    "provider": "openai",
+    "model": "gpt-4o-mini"
+  },
+  "summary_markdown": "## What this issue is about\nThis issue aims to mark the Helm chart as beta and provide clear communication about what features are lacking in its current state. The enhancements will help users understand its limitations.\n\n## What needs to be done\n1. Update the README, `Chart.yaml` description, and documentation home to indicate that the chart is in beta status.\n2. Provide a short list of features that are not yet implemented, including:\n   - Backup and restore\n   - Upgrades\n   - Hardened security contexts\n3. Link to the relevant issues tracking these missing features.\n\n## Helpful background\nThe Helm chart is currently at version 0.3.0 and features a minimal setup, which includes one PostgreSQL instance, one backend, and one frontend server. Clarifying its beta status and limitations helps set user expectations.\n\n## Good first steps\n1. Visit the repository and locate the `README` file and `Chart.yaml`.\n2. Draft the necessary updates to inform users about its beta status and limitations.\n3. Familiarize yourself with the existing issues related to backup, upgrades, and security contexts to create appropriate links. \n\nFeel free to reach out if you have questions or need assistance!",
+  "workflow": {
+    "repository": "syslabcom/activity-recognition",
+    "run_id": "42871838647",
+    "run_number": "4478",
+    "attempt": "1",
+    "url": "https://github.com/syslabcom/activity-recognition/actions/runs/42871838647",
+    "sha": "50ca098b54c196b26a373fbfe4c9446c542e70c3"
+  }
+}

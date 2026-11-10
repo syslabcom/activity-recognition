@@ -1,0 +1,33 @@
+{
+  "version": 1,
+  "status": "success",
+  "generated_at": "2026-11-10T18:07:14Z",
+  "source_issue": {
+    "id": 6310883981,
+    "number": 31,
+    "title": "Unit tests with helm-unittest, and kubeconform across Kubernetes 1.29 to 1.37",
+    "html_url": "https://github.com/plone/helm-charts/issues/31",
+    "repository_full_name": "plone/helm-charts",
+    "updated_at": "2026-11-10T16:14:30Z",
+    "labels": [
+      "04 type: enhancement",
+      "12 prio: high",
+      "34 needs: tests",
+      "42 lvl: moderate"
+    ],
+    "comments": 0
+  },
+  "ai": {
+    "provider": "openai",
+    "model": "gpt-4o-mini"
+  },
+  "summary_markdown": "# Summary for Issue #31: Unit tests with helm-unittest, and kubeconform across Kubernetes 1.29 to 1.37\n\n## What this issue is about\nThis issue focuses on enhancing the Helm charts for Plone by adding unit tests using `helm-unittest` and validating Kubernetes manifests with `kubeconform`. There’s currently a lack of tests to ensure compatibility with Kubernetes versions 1.29 to 1.37.\n\n## What needs to be done\n1. Create unit tests for each `fail` rule defined in `plone.validate` for different routing and storage types using `helm-unittest`.\n2. Use `kubeconform` to validate the rendered manifests against Kubernetes versions 1.29, 1.33, and 1.37, making sure to pass `--kube-version` since Helm defaults to 1.20.\n3. Ensure CI is configured to accurately run against the specified Kubernetes versions.\n\n## Helpful background\nThe `Chart.yaml` indicates support for Kubernetes 1.29 and above, but the current Continuous Integration (CI) setup only runs on version 1.37. The tests will help confirm that the Helm charts work correctly across the specified versions.\n\n## Good first steps\n- Familiarize yourself with `helm-unittest` and `kubeconform`.\n- Start by setting up a local environment to test against Kubernetes versions 1.29 to 1.37.\n- Review existing tests to understand the structure and write a simple test for a `fail` rule. \n- Reach out in the comments for guidance or clarification if needed!",
+  "workflow": {
+    "repository": "syslabcom/activity-recognition",
+    "run_id": "42871838647",
+    "run_number": "4478",
+    "attempt": "1",
+    "url": "https://github.com/syslabcom/activity-recognition/actions/runs/42871838647",
+    "sha": "50ca098b54c196b26a373fbfe4c9446c542e70c3"
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "version": 1,
+  "status": "success",
+  "generated_at": "2026-11-10T18:07:49Z",
+  "source_issue": {
+    "id": 6310874993,
+    "number": 23,
+    "title": "Add CONTRIBUTING, SECURITY, CODEOWNERS, and issue and PR templates",
+    "html_url": "https://github.com/plone/helm-charts/issues/23",
+    "repository_full_name": "plone/helm-charts",
+    "updated_at": "2026-11-10T16:14:01Z",
+    "labels": [
+      "04 type: enhancement",
+      "13 prio: normal",
+      "41 lvl: easy"
+    ],
+    "comments": 0
+  },
+  "ai": {
+    "provider": "openai",
+    "model": "gpt-4o-mini"
+  },
+  "summary_markdown": "## What this issue is about\nThis issue proposes enhancements to the repository by adding essential documents and templates that will help guide contributions. It aims to improve how contributors interact with the project by including a contributing guide, a security policy, CODEOWNERS, and templates for issues and pull requests.\n\n## What needs to be done\n- Create a **CONTRIBUTING** guide to explain how to run tests and build documentation.\n- Establish a **SECURITY** policy that includes a way to report vulnerabilities.\n- Add a **CODEOWNERS** file to designate individuals responsible for certain areas of the codebase.\n- Develop templates for **issues** and **pull requests** to standardize how contributions are submitted.\n\n## Helpful background\nCurrently, the repository lacks detailed guidelines and templates, making it challenging for new contributors to understand how to get involved. Implementing these features will not only support newcomers but also streamline contributions and maintain code quality.\n\n## Good first steps\n1. Review existing documentation in similar repositories for ideas.\n2. Draft the **CONTRIBUTING** guide, focusing on tests and documentation building.\n3. Outline an appropriate **SECURITY** policy.\n4. Start creating templates for issues and pull requests, considering common use cases.\n5. Coordinate with the assigned contributor, [ericof](https://github.com/ericof), for feedback and guidance.\n\nFeel free to reach out if you need clarification on any points!",
+  "workflow": {
+    "repository": "syslabcom/activity-recognition",
+    "run_id": "42871838647",
+    "run_number": "4478",
+    "attempt": "1",
+    "url": "https://github.com/syslabcom/activity-recognition/actions/runs/42871838647",
+    "sha": "50ca098b54c196b26a373fbfe4c9446c542e70c3"
+  }
+}
