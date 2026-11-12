@@ -1,7 +1,7 @@
 ---
 title: "Plone issue list — Level: Easy"
 permalink: "/issues/lvl-easy/"
-generated_at: "2026-11-12T03:07:46Z"
+generated_at: "2026-11-12T04:07:34Z"
 organization: "plone"
 issue_count: 137
 required_labels:
@@ -10,7 +10,7 @@ required_labels:
 
 # Plone issue list — Level: Easy
 
-Generated: `2026-11-12T03:07:46Z`  
+Generated: `2026-11-12T04:07:34Z`  
 Organization: `plone`  
 Required label: `41 lvl: easy`  
 Issue count: `137`
@@ -19,6 +19,7 @@ Sorted by last updated date, newest first.
 
 | Updated | Repository | Issue | Author | Labels |
 | --- | --- | --- | --- | --- |
+| 2026-11-12 03:48 UTC | `plone/documentation` | [#2100 Upgrade to Vale 3.18.0 to support MyST, moar new features  🎉](https://github.com/plone/documentation/issues/2100) | `stevepiercy` | `31 needs: help`, `41 lvl: easy`, `99 tag: Plone 6.x`, `dependencies`, `99 tag: good first issue`, `99 tag: hacktoberfest` |
 | 2026-11-10 16:16 UTC | `plone/helm-charts` | [#65 Slim the root README to a portal](https://github.com/plone/helm-charts/issues/65) | `ericof` | `04 type: enhancement`, `14 prio: low`, `41 lvl: easy` |
 | 2026-11-10 16:15 UTC | `plone/helm-charts` | [#44 Escape the RelStorage connection string, and add sslmode](https://github.com/plone/helm-charts/issues/44) | `ericof` | `01 type: bug`, `13 prio: normal`, `41 lvl: easy`, `51 target: patch` |
 | 2026-11-10 16:15 UTC | `plone/helm-charts` | [#42 Run the documentation link check in CI, and check the published pages](https://github.com/plone/helm-charts/issues/42) | `ericof` | `04 type: enhancement`, `13 prio: normal`, `41 lvl: easy` |
@@ -87,7 +88,6 @@ Sorted by last updated date, newest first.
 | 2026-10-27 21:16 UTC | `plone/volto` | [#3438 Properly internationalize the When component in EventDatesInfo.jsx ](https://github.com/plone/volto/issues/3438) | `erral` | `01 type: bug`, `21 status: confirmed`, `41 lvl: easy`, `62 scope: viewer` |
 | 2026-10-27 21:16 UTC | `plone/volto` | [#2270 Outdated config registry docs in the official documentation](https://github.com/plone/volto/issues/2270) | `tiberiuichim` | `01 type: bug`, `33 needs: docs`, `41 lvl: easy` |
 | 2026-09-13 19:21 UTC | `plone/documentation` | [#2065 Add Plone documentation to sites that attract first-time contributors](https://github.com/plone/documentation/issues/2065) | `stevepiercy` | `33 needs: docs`, `41 lvl: easy`, `99 tag: good first issue`, `99 tag: hacktoberfest` |
-| 2026-08-20 21:49 UTC | `plone/documentation` | [#2100 Upgrade to Vale 3.18.0 to support MyST, moar new features  🎉](https://github.com/plone/documentation/issues/2100) | `stevepiercy` | `31 needs: help`, `41 lvl: easy`, `99 tag: Plone 6.x`, `dependencies`, `99 tag: good first issue`, `99 tag: hacktoberfest` |
 | 2026-08-15 18:00 UTC | `plone/aurora` | [#101 Polish documentation renames, and overall shape](https://github.com/plone/aurora/issues/101) | `sneridagh` | `31 needs: help`, `33 needs: docs`, `41 lvl: easy`, `99 tag: good first issue`, `99 tag: hacktoberfest` |
 | 2026-07-06 18:55 UTC | `plone/plone.app.contentrules` | [#133 The listing of the substitutions variables in the send e-mail action is missing in volto.](https://github.com/plone/plone.app.contentrules/issues/133) | `acsr` | `04 type: enhancement`, `33 needs: docs`, `41 lvl: easy` |
 | 2026-05-18 11:33 UTC | `plone/volto` | [#1603 Use Cypress to determine code coverage](https://github.com/plone/volto/issues/1603) | `tiberiuichim` | `04 type: enhancement`, `41 lvl: easy` |

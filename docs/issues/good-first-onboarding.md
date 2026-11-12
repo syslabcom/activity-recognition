@@ -1,7 +1,7 @@
 ---
 title: "Plone issue list — Good first issue onboarding"
 permalink: "/issues/good-first-onboarding/"
-generated_at: "2026-11-12T03:07:46Z"
+generated_at: "2026-11-12T04:07:34Z"
 organization: "plone"
 issue_count: 13
 required_labels:
@@ -10,7 +10,7 @@ required_labels:
 
 # Plone issue list — Good first issue onboarding
 
-Generated: `2026-11-12T03:07:46Z`  
+Generated: `2026-11-12T04:07:34Z`  
 Organization: `plone`  
 Required label: `99 tag: good first issue`  
 Issue count: `13`
@@ -19,9 +19,9 @@ Sorted by last updated date, newest first.
 
 | Updated | Repository | Issue | Author | Labels |
 | --- | --- | --- | --- | --- |
+| 2026-11-12 03:48 UTC | `plone/documentation` | [#2100 Upgrade to Vale 3.18.0 to support MyST, moar new features  🎉](https://github.com/plone/documentation/issues/2100) | `stevepiercy` | `31 needs: help`, `41 lvl: easy`, `99 tag: Plone 6.x`, `dependencies`, `99 tag: good first issue`, `99 tag: hacktoberfest` |
 | 2026-11-02 09:29 UTC | `plone/documentation` | [#2116 Improve backend/vocabularies documentation](https://github.com/plone/documentation/issues/2116) | `stevepiercy` | `31 needs: help`, `99 tag: good first issue` |
 | 2026-09-13 19:21 UTC | `plone/documentation` | [#2065 Add Plone documentation to sites that attract first-time contributors](https://github.com/plone/documentation/issues/2065) | `stevepiercy` | `33 needs: docs`, `41 lvl: easy`, `99 tag: good first issue`, `99 tag: hacktoberfest` |
-| 2026-08-20 21:49 UTC | `plone/documentation` | [#2100 Upgrade to Vale 3.18.0 to support MyST, moar new features  🎉](https://github.com/plone/documentation/issues/2100) | `stevepiercy` | `31 needs: help`, `41 lvl: easy`, `99 tag: Plone 6.x`, `dependencies`, `99 tag: good first issue`, `99 tag: hacktoberfest` |
 | 2026-08-15 18:00 UTC | `plone/aurora` | [#101 Polish documentation renames, and overall shape](https://github.com/plone/aurora/issues/101) | `sneridagh` | `31 needs: help`, `33 needs: docs`, `41 lvl: easy`, `99 tag: good first issue`, `99 tag: hacktoberfest` |
 | 2026-03-04 09:06 UTC | `plone/documentation` | [#2029 Create a GitHub App that detects first-time comments and responds with links to how to contribute](https://github.com/plone/documentation/issues/2029) | `stevepiercy` | `04 type: enhancement`, `31 needs: help`, `41 lvl: easy`, `99 tag: good first issue`, `99 tag: hacktoberfest` |
 | 2026-03-04 09:06 UTC | `plone/documentation` | [#1973 Add "Related content" as the final section in most pages](https://github.com/plone/documentation/issues/1973) | `stevepiercy` | `41 lvl: easy`, `99 tag: good first issue`, `99 tag: hacktoberfest` |
