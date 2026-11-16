@@ -1,130 +1,242 @@
+```markdown
 📊 WEEKLY SUMMARY  
-2026-11-08 to 2026-11-15  
+2026-11-09 to 2026-11-16
 
-This week in the Plone ecosystem saw substantial contributions led primarily by the **dependabot[bot]**, alongside noteworthy efforts from contributors like **Maurits van Rees**, **Peter Mathis**, and **Victor Fernandez de Alba**. A significant number of repositories focused on updating dependencies and performing maintenance work, notably around the **astral-sh/setup-uv** package. Overall, the organization maintained a strong collaborative workflow across an active set of repositories.
+This week in the Plone organization, contributors made significant updates across numerous repositories, focusing on dependency updates, bug fixes, and enhancements to documentation.
 
 📦 plone/plone.formwidget.recurrence  
 [1 file changed, +1/-1 lines, 1 pull request merged]  
-Dependabot updated the **astral-sh/setup-uv** dependency from version 10.3.2 to 10.3.3 to enhance project compatibility.
+The `astral-sh/setup-uv` dependency was bumped from version 10.3.2 to 10.3.3.
 
 📦 plone/plone.reload  
 [1 file changed, +1/-1 lines, 1 pull request merged]  
-Similar updates were made in this repository regarding **astral-sh/setup-uv**, ensuring up-to-date dependency management.
+Similar to other repositories, this also saw the `astral-sh/setup-uv` updated to version 10.3.3.
 
 📦 plone/plone.resource  
 [1 file changed, +1/-1 lines, 1 pull request merged]  
-The **astral-sh/setup-uv** dependency was also updated, maintaining alignment with best practices for dependency management.
+Updated `astral-sh/setup-uv` version to 10.3.3.
 
 📦 plone/plone.tiles  
 [1 file changed, +1/-1 lines, 1 pull request merged]  
-This repository received an update to the **astral-sh/setup-uv** package to the latest version, ensuring smoother operation.
+The `astral-sh/setup-uv` dependency was upgraded to version 10.3.3.
 
 📦 plone/plone.app.querystring  
-[15 files changed, +114/-16 lines, 1 pull request merged]  
-Contributors **David Glick** and **Peter Mathis** delivered significant path criteria fixes when the virtual root is above the portal, addressing a critical functionality issue affecting content access.
+[11 files changed, +102/-12 lines, 1 pull request merged]  
+Peter Mathis fixed path criteria issues related to the virtual root, improving query accuracy; this fix is a substantial step for better content management in Plone applications.
 
 📦 plone/plone.app.drafts  
 [1 file changed, +1/-1 lines, 1 pull request merged]  
-An update to **astral-sh/setup-uv** was included, following the dependency update trend across the organization.
+Updated `astral-sh/setup-uv` to version 10.3.3.
 
 📦 plone/plone.app.blocks  
 [1 file changed, +1/-1 lines, 1 pull request merged]  
-Like others, this repository received updates to its transit dependencies, specifically updating **astral-sh/setup-uv**.
+Dependency update for `astral-sh/setup-uv` to 10.3.3.
 
 📦 plone/plone.app.standardtiles  
 [1 file changed, +1/-1 lines, 1 pull request merged]  
-Standard maintenance was carried out with the version bump of **astral-sh/setup-uv**.
+Another update for `astral-sh/setup-uv`, now at version 10.3.3.
 
 📦 plone/plone.subrequest  
 [1 file changed, +1/-1 lines, 1 pull request merged]  
-Maintaining dependency hygiene, this update also reflects the latest version of **astral-sh/setup-uv**.
+The `astral-sh/setup-uv` was also bumped to 10.3.3 here.
 
 📦 plone/five.intid  
 [1 file changed, +1/-1 lines, 1 pull request merged]  
-No significant changes beyond the regular maintenance updates to **astral-sh/setup-uv**.
+Updated to `astral-sh/setup-uv` version 10.3.3.
 
 📦 plone/plone.namedfile  
 [1 file changed, +1/-1 lines, 1 pull request merged]  
-Updated to the new version of **astral-sh/setup-uv**.
+As with several others, bumped `astral-sh/setup-uv` to 10.3.3.
 
 📦 plone/plone.schemaeditor  
 [1 file changed, +1/-1 lines, 1 pull request merged]  
-Another alignment with the **astral-sh/setup-uv** dependency upgrades.
+Updated dependency for `astral-sh/setup-uv` to version 10.3.3.
 
 📦 plone/plone.testing  
 [1 file changed, +1/-1 lines, 1 pull request merged]  
-Ensured conformity with the latest **astral-sh/setup-uv** updates.
+Similar update received with `astral-sh/setup-uv` version 10.3.3.
+
+📦 plone/plone.formwidget.namedfile  
+[1 file changed, +1/-1 lines, 1 pull request merged]  
+The dependency `astral-sh/setup-uv` was updated to 10.3.3.
+
+📦 plone/plone.app.intid  
+[1 file changed, +1/-1 lines, 1 pull request merged]  
+Updated `astral-sh/setup-uv` to version 10.3.3.
+
+📦 plone/plone.app.lockingbehavior  
+[1 file changed, +1/-1 lines, 1 pull request merged]  
+The `astral-sh/setup-uv` dependency was also bumped to version 10.3.3 here.
+
+📦 plone/plone.dexterity  
+[1 file changed, +1/-1 lines, 1 pull request merged]  
+`astral-sh/setup-uv` version updated to 10.3.3.
+
+📦 plone/plone.app.dexterity  
+[1 file changed, +1/-1 lines, 1 pull request merged]  
+Detailed bump of `astral-sh/setup-uv` from 10.3.0 to 10.3.3 here.
 
 📦 plone/plone.autoform  
 [1 file changed, +1/-1 lines, 1 pull request merged]  
-Part of the routine maintenance rounds for **astral-sh/setup-uv** updates.
+Similar to prior updates, established `astral-sh/setup-uv` at 10.3.3.
 
 📦 plone/plone.folder  
 [1 file changed, +1/-1 lines, 1 pull request merged]  
-A similar dependency update for **astral-sh/setup-uv** was made.
+Updated `astral-sh/setup-uv` to version 10.3.3.
 
 📦 plone/plone.app.textfield  
 [1 file changed, +1/-1 lines, 1 pull request merged]  
-Included is the usual version bump for **astral-sh/setup-uv**.
+Bumped to `astral-sh/setup-uv` version 10.3.3.
 
 📦 plone/plone.app.relationfield  
 [1 file changed, +1/-1 lines, 1 pull request merged]  
-Another routine update to **astral-sh/setup-uv**.
+Updated `astral-sh/setup-uv` to version 10.3.3.
 
 📦 plone/plone.rfc822  
 [1 file changed, +1/-1 lines, 1 pull request merged]  
-Handling updates as per usual with **astral-sh/setup-uv**.
+Dependency updated for `astral-sh/setup-uv`, now at version 10.3.3.
 
 📦 plone/plone.app.versioningbehavior  
 [1 file changed, +1/-1 lines, 1 pull request merged]  
-Maintaining updated dependencies with the version bump of **astral-sh/setup-uv**.
+Updated `astral-sh/setup-uv` to 10.3.3.
 
 📦 plone/plone.app.z3cform  
 [1 file changed, +1/-1 lines, 1 pull request merged]  
-The routine version update for **astral-sh/setup-uv**.
+Updated `astral-sh/setup-uv` to version 10.3.3.
 
-📦 plone/plone.caching  
+📦 plone/plone.uuid  
 [1 file changed, +1/-1 lines, 1 pull request merged]  
-Standard maintenance included the update of **astral-sh/setup-uv**.
+Dependency updated for `astral-sh/setup-uv` to version 10.3.3.
 
-📦 plone/plone.app.upgrade  
-[6 files changed, +25/-4 lines, 0 pull requests merged]  
-Significant effort with multiple commits to prepare releases, keep in tune with recent updates, and create a smoother upgrade pathway for future versions.
+📦 plone/plone.alterego  
+[1 file changed, +1/-1 lines, 1 pull request merged]  
+Bumped `astral-sh/setup-uv` to 10.3.3.
 
-📦 plone/container-backend  
-[36 files changed, +161/-239 lines, 2 pull requests merged]  
-Both **Maurits van Rees** and **Érico Andrei** made updates aiming to support Python 3.11 and streamline configurations for upcoming releases.
+📦 plone/plone.behavior  
+[1 file changed, +1/-1 lines, 1 pull request merged]  
+Updated `astral-sh/setup-uv` to 10.3.3.
 
-📦 plone/mr.roboto  
-[3 files changed, +10/-0 lines, 1 pull request merged]  
-Updating changelogs and maintaining the project’s dependency management.
+📦 plone/borg.localrole  
+[1 file changed, +1/-1 lines, 1 pull request merged]  
+The dependency was updated to `astral-sh/setup-uv` version 10.3.3.
+
+📦 plone/plone.stringinterp  
+[1 file changed, +1/-1 lines, 1 pull request merged]  
+Updated `astral-sh/setup-uv` to version 10.3.3.
+
+📦 plone/plone.indexer  
+[1 file changed, +1/-1 lines, 1 pull request merged]  
+Bumped `astral-sh/setup-uv` to 10.3.3.
+
+📦 plone/plone.app.content  
+[1 file changed, +1/-1 lines, 1 pull request merged]  
+Updated `astral-sh/setup-uv` from 10.3.1 to 10.3.3.
+
+📦 plone/plone.app.contentmenu  
+[1 file changed, +1/-1 lines, 1 pull request merged]  
+Updated `astral-sh/setup-uv` to version 10.3.3.
+
+📦 plone/plone.app.uuid  
+[1 file changed, +1/-1 lines, 1 pull request merged]  
+Updated `astral-sh/setup-uv` with version bump to 10.3.3.
+
+📦 plone/plone.locking  
+[1 file changed, +1/-1 lines, 1 pull request merged]  
+Updated `astral-sh/setup-uv` to 10.3.3.
+
+📦 plone/collective.monkeypatcher  
+[1 file changed, +1/-1 lines, 1 pull request merged]  
+Updated `astral-sh/setup-uv` to version 10.3.3.
+
+📦 plone/plone.testing  
+[1 file changed, +1/-1 lines, 1 pull request merged]  
+Dependency updated for `astral-sh/setup-uv` to version 10.3.3.
+
+📦 plone/plone.app.workflow  
+[1 file changed, +1/-1 lines, 1 pull request merged]  
+Bumped `astral-sh/setup-uv` to version 10.3.3.
+
+📦 plone/plone.app.users  
+[1 file changed, +1/-1 lines, 1 pull request merged]  
+Updated `astral-sh/setup-uv` from version 10.3.0 to 10.3.3. 
+
+📦 plone/plone.memoize  
+[1 file changed, +1/-1 lines, 1 pull request merged]  
+Updated `astral-sh/setup-uv` to version 10.3.3.
+
+📦 plone/plone.app.layout  
+[1 file changed, +1/-1 lines, 1 pull request merged]  
+Updated `astral-sh/setup-uv` with a bump to 10.3.3.
+
+📦 plone/plone.app.viewletmanager  
+[1 file changed, +1/-1 lines, 1 pull request merged]  
+Updated `astral-sh/setup-uv` to version 10.3.3. 
+
+📦 plone/plone.app.customerize  
+[1 file changed, +1/-1 lines, 1 pull request merged]  
+Updated `astral-sh/setup-uv` to 10.3.3.
+
+📦 plone/plone.app.contenttypes  
+[1 file changed, +1/-1 lines, 1 pull request merged]  
+Updated `astral-sh/setup-uv` from 10.3.0 to 10.3.3.
 
 📦 plone/Products.CMFPlone  
 [55 files changed, +777/-125 lines, 4 pull requests merged]  
-Key contributions from **Maurits van Rees** and **Peter Mathis**, including various improvements and the addition of multiple tests to enhance coverage and stability.
+Significant updates for Plone that include splitting default page overlay tests and improving maintenance with various QA fixes.
 
-📦 plone/plone.observability  
-[104 files changed, +3058/-311 lines, 2 pull requests merged]  
-**Jens W. Klein** made several improvements addressing observability metrics crucial for performance and monitoring.
+📦 plone/plone.app.upgrade  
+[6 files changed, +25/-4 lines, 0 pull requests merged]  
+New upgrades added to keep the project current.
+
+📦 plone/plone.app.mosaic  
+[34 files changed, +182/-34 lines, 2 pull requests merged]  
+Enhanced support for TinyMCE within narrow columns and improvements on metadata sending for saving and deleting tiles.
 
 📦 plone/helm-charts  
-[329 files changed, +9979/-5664 lines, 1 pull request merged]  
-Excellent contributions from **Érico Andrei** and **Fabio Kaiser Rauber** led to the significant restructuring and enhancement of Helm chart documentation.
+[329 files changed, +9979/-5664 lines, 1 pull requests merged]  
+Added documentation for the Helm repository; major restructuring of how Plone is deployed on Kubernetes environments.
 
-In summary, the week reflected a continuous effort to maintain and enhance Plone with critical updates, ensuring dependencies are current and improving overall stability and performance. The active participation of contributors points to a vibrant and supportive ecosystem.
+📦 plone/plone.theme  
+[1 file changed, +1/-1 lines, 1 pull request merged]  
+Updated `astral-sh/setup-uv` to 10.3.3.
+
+📦 plone/Products.CMFEditions  
+[16 files changed, +503/-10 lines, 0 pull requests merged]  
+Enhancements made to ensure smooth operation.
+
+📦 plone/plone.app.users  
+[1 file changed, +1/-1 lines, 1 pull request merged]  
+Updated `astral-sh/setup-uv` from 10.3.0 to 10.3.3.
+
+📦 plone/guillotina_elasticsearch  
+[10 files changed,+255/-24 lines, 1 pull request merged]  
+Optimizations made to the automatic context path filter in Elasticsearch.
+
+📦 plone/mockup  
+[6 files changed, +146/-46 lines, 1 pull request merged]  
+Fixed issues with the upload form scrolling behavior.
+
+📦 plone/plone.cachepurging  
+[1 file changed, +1/-1 lines, 1 pull request merged]  
+Updated `astral-sh/setup-uv` to 10.3.3.
+
+--- 
+
+This week showcased strong community efforts in upgrading dependencies, fixing bugs, and maintaining the integrity of the Plone ecosystem. Special thanks to contributors for their continuous efforts in improving the platform's usability and performance.
 
 **Contributors this week:**  
-- dependabot[bot]  
 - Maurits van Rees  
 - Peter Mathis  
+- Sashank Bhamidi  
+- Ramon Navarro Bosch  
 - David Glick  
+- Jens W. Klein  
 - Victor Fernandez de Alba  
 - Érico Andrei  
-- Sashank Bhamidi  
 - Gil Forcada Codinachs  
-- Jens W. Klein  
-- Steve Piercy  
-- Georg Bernhard  
-- Wesley Barroso Lopes  
+- Xaver  
+- Upptime Bot  
+- MrTango  
 
-Automatically generated from 95 active repositories.
+Automatically generated from 97 active repositories.
+```

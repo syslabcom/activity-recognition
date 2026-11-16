@@ -1,0 +1,57 @@
+{
+  "version": 1,
+  "task": {
+    "slug": "github-activity-digest",
+    "title": "GitHub Activity Digest"
+  },
+  "status": "success",
+  "generated_at": "2026-11-16T07:32:32Z",
+  "message": null,
+  "period": {
+    "days": 7,
+    "start": "2026-11-09",
+    "end": "2026-11-16"
+  },
+  "source": {
+    "repository": "syslabcom/github-activity-digest",
+    "action_ref": null,
+    "config_path": "digest/config.json",
+    "mode": "organization",
+    "organization": "plone",
+    "user": "pilz",
+    "topics": [],
+    "repositories": []
+  },
+  "filters": {
+    "exclude_repos": [],
+    "include_repos": [],
+    "only_public": false,
+    "only_private": false,
+    "max_repos": 500
+  },
+  "counts": {
+    "repos_processed": 433,
+    "active_repos": 97
+  },
+  "ai": {
+    "provider": "openai",
+    "model": "gpt-4o-mini",
+    "language": "English",
+    "prompt_template": "prompt-template-activity-recognition.txt"
+  },
+  "summary": "```markdown\n📊 WEEKLY SUMMARY  \n2026-11-09 to 2026-11-16\n\nThis week in the Plone organization, contributors made significant updates across numerous repositories, focusing on dependency updates, bug fixes, and enhancements to documentation.\n\n📦 plone/plone.formwidget.recurrence  \n[1 file changed, +1/-1 lines, 1 pull request merged]  \nThe `astral-sh/setup-uv` dependency was bumped from version 10.3.2 to 10.3.3.\n\n📦 plone/plone.reload  \n[1 file changed, +1/-1 lines, 1 pull request merged]  \nSimilar to other repositories, this also saw the `astral-sh/setup-uv` updated to version 10.3.3.\n\n📦 plone/plone.resource  \n[1 file changed, +1/-1 lines, 1 pull request merged]  \nUpdated `astral-sh/setup-uv` version to 10.3.3.\n\n📦 plone/plone.tiles  \n[1 file changed, +1/-1 lines, 1 pull request merged]  \nThe `astral-sh/setup-uv` dependency was upgraded to version 10.3.3.\n\n📦 plone/plone.app.querystring  \n[11 files changed, +102/-12 lines, 1 pull request merged]  \nPeter Mathis fixed path criteria issues related to the virtual root, improving query accuracy; this fix is a substantial step for better content management in Plone applications.\n\n📦 plone/plone.app.drafts  \n[1 file changed, +1/-1 lines, 1 pull request merged]  \nUpdated `astral-sh/setup-uv` to version 10.3.3.\n\n📦 plone/plone.app.blocks  \n[1 file changed, +1/-1 lines, 1 pull request merged]  \nDependency update for `astral-sh/setup-uv` to 10.3.3.\n\n📦 plone/plone.app.standardtiles  \n[1 file changed, +1/-1 lines, 1 pull request merged]  \nAnother update for `astral-sh/setup-uv`, now at version 10.3.3.\n\n📦 plone/plone.subrequest  \n[1 file changed, +1/-1 lines, 1 pull request merged]  \nThe `astral-sh/setup-uv` was also bumped to 10.3.3 here.\n\n📦 plone/five.intid  \n[1 file changed, +1/-1 lines, 1 pull request merged]  \nUpdated to `astral-sh/setup-uv` version 10.3.3.\n\n📦 plone/plone.namedfile  \n[1 file changed, +1/-1 lines, 1 pull request merged]  \nAs with several others, bumped `astral-sh/setup-uv` to 10.3.3.\n\n📦 plone/plone.schemaeditor  \n[1 file changed, +1/-1 lines, 1 pull request merged]  \nUpdated dependency for `astral-sh/setup-uv` to version 10.3.3.\n\n📦 plone/plone.testing  \n[1 file changed, +1/-1 lines, 1 pull request merged]  \nSimilar update received with `astral-sh/setup-uv` version 10.3.3.\n\n📦 plone/plone.formwidget.namedfile  \n[1 file changed, +1/-1 lines, 1 pull request merged]  \nThe dependency `astral-sh/setup-uv` was updated to 10.3.3.\n\n📦 plone/plone.app.intid  \n[1 file changed, +1/-1 lines, 1 pull request merged]  \nUpdated `astral-sh/setup-uv` to version 10.3.3.\n\n📦 plone/plone.app.lockingbehavior  \n[1 file changed, +1/-1 lines, 1 pull request merged]  \nThe `astral-sh/setup-uv` dependency was also bumped to version 10.3.3 here.\n\n📦 plone/plone.dexterity  \n[1 file changed, +1/-1 lines, 1 pull request merged]  \n`astral-sh/setup-uv` version updated to 10.3.3.\n\n📦 plone/plone.app.dexterity  \n[1 file changed, +1/-1 lines, 1 pull request merged]  \nDetailed bump of `astral-sh/setup-uv` from 10.3.0 to 10.3.3 here.\n\n📦 plone/plone.autoform  \n[1 file changed, +1/-1 lines, 1 pull request merged]  \nSimilar to prior updates, established `astral-sh/setup-uv` at 10.3.3.\n\n📦 plone/plone.folder  \n[1 file changed, +1/-1 lines, 1 pull request merged]  \nUpdated `astral-sh/setup-uv` to version 10.3.3.\n\n📦 plone/plone.app.textfield  \n[1 file changed, +1/-1 lines, 1 pull request merged]  \nBumped to `astral-sh/setup-uv` version 10.3.3.\n\n📦 plone/plone.app.relationfield  \n[1 file changed, +1/-1 lines, 1 pull request merged]  \nUpdated `astral-sh/setup-uv` to version 10.3.3.\n\n📦 plone/plone.rfc822  \n[1 file changed, +1/-1 lines, 1 pull request merged]  \nDependency updated for `astral-sh/setup-uv`, now at version 10.3.3.\n\n📦 plone/plone.app.versioningbehavior  \n[1 file changed, +1/-1 lines, 1 pull request merged]  \nUpdated `astral-sh/setup-uv` to 10.3.3.\n\n📦 plone/plone.app.z3cform  \n[1 file changed, +1/-1 lines, 1 pull request merged]  \nUpdated `astral-sh/setup-uv` to version 10.3.3.\n\n📦 plone/plone.uuid  \n[1 file changed, +1/-1 lines, 1 pull request merged]  \nDependency updated for `astral-sh/setup-uv` to version 10.3.3.\n\n📦 plone/plone.alterego  \n[1 file changed, +1/-1 lines, 1 pull request merged]  \nBumped `astral-sh/setup-uv` to 10.3.3.\n\n📦 plone/plone.behavior  \n[1 file changed, +1/-1 lines, 1 pull request merged]  \nUpdated `astral-sh/setup-uv` to 10.3.3.\n\n📦 plone/borg.localrole  \n[1 file changed, +1/-1 lines, 1 pull request merged]  \nThe dependency was updated to `astral-sh/setup-uv` version 10.3.3.\n\n📦 plone/plone.stringinterp  \n[1 file changed, +1/-1 lines, 1 pull request merged]  \nUpdated `astral-sh/setup-uv` to version 10.3.3.\n\n📦 plone/plone.indexer  \n[1 file changed, +1/-1 lines, 1 pull request merged]  \nBumped `astral-sh/setup-uv` to 10.3.3.\n\n📦 plone/plone.app.content  \n[1 file changed, +1/-1 lines, 1 pull request merged]  \nUpdated `astral-sh/setup-uv` from 10.3.1 to 10.3.3.\n\n📦 plone/plone.app.contentmenu  \n[1 file changed, +1/-1 lines, 1 pull request merged]  \nUpdated `astral-sh/setup-uv` to version 10.3.3.\n\n📦 plone/plone.app.uuid  \n[1 file changed, +1/-1 lines, 1 pull request merged]  \nUpdated `astral-sh/setup-uv` with version bump to 10.3.3.\n\n📦 plone/plone.locking  \n[1 file changed, +1/-1 lines, 1 pull request merged]  \nUpdated `astral-sh/setup-uv` to 10.3.3.\n\n📦 plone/collective.monkeypatcher  \n[1 file changed, +1/-1 lines, 1 pull request merged]  \nUpdated `astral-sh/setup-uv` to version 10.3.3.\n\n📦 plone/plone.testing  \n[1 file changed, +1/-1 lines, 1 pull request merged]  \nDependency updated for `astral-sh/setup-uv` to version 10.3.3.\n\n📦 plone/plone.app.workflow  \n[1 file changed, +1/-1 lines, 1 pull request merged]  \nBumped `astral-sh/setup-uv` to version 10.3.3.\n\n📦 plone/plone.app.users  \n[1 file changed, +1/-1 lines, 1 pull request merged]  \nUpdated `astral-sh/setup-uv` from version 10.3.0 to 10.3.3. \n\n📦 plone/plone.memoize  \n[1 file changed, +1/-1 lines, 1 pull request merged]  \nUpdated `astral-sh/setup-uv` to version 10.3.3.\n\n📦 plone/plone.app.layout  \n[1 file changed, +1/-1 lines, 1 pull request merged]  \nUpdated `astral-sh/setup-uv` with a bump to 10.3.3.\n\n📦 plone/plone.app.viewletmanager  \n[1 file changed, +1/-1 lines, 1 pull request merged]  \nUpdated `astral-sh/setup-uv` to version 10.3.3. \n\n📦 plone/plone.app.customerize  \n[1 file changed, +1/-1 lines, 1 pull request merged]  \nUpdated `astral-sh/setup-uv` to 10.3.3.\n\n📦 plone/plone.app.contenttypes  \n[1 file changed, +1/-1 lines, 1 pull request merged]  \nUpdated `astral-sh/setup-uv` from 10.3.0 to 10.3.3.\n\n📦 plone/Products.CMFPlone  \n[55 files changed, +777/-125 lines, 4 pull requests merged]  \nSignificant updates for Plone that include splitting default page overlay tests and improving maintenance with various QA fixes.\n\n📦 plone/plone.app.upgrade  \n[6 files changed, +25/-4 lines, 0 pull requests merged]  \nNew upgrades added to keep the project current.\n\n📦 plone/plone.app.mosaic  \n[34 files changed, +182/-34 lines, 2 pull requests merged]  \nEnhanced support for TinyMCE within narrow columns and improvements on metadata sending for saving and deleting tiles.\n\n📦 plone/helm-charts  \n[329 files changed, +9979/-5664 lines, 1 pull requests merged]  \nAdded documentation for the Helm repository; major restructuring of how Plone is deployed on Kubernetes environments.\n\n📦 plone/plone.theme  \n[1 file changed, +1/-1 lines, 1 pull request merged]  \nUpdated `astral-sh/setup-uv` to 10.3.3.\n\n📦 plone/Products.CMFEditions  \n[16 files changed, +503/-10 lines, 0 pull requests merged]  \nEnhancements made to ensure smooth operation.\n\n📦 plone/plone.app.users  \n[1 file changed, +1/-1 lines, 1 pull request merged]  \nUpdated `astral-sh/setup-uv` from 10.3.0 to 10.3.3.\n\n📦 plone/guillotina_elasticsearch  \n[10 files changed,+255/-24 lines, 1 pull request merged]  \nOptimizations made to the automatic context path filter in Elasticsearch.\n\n📦 plone/mockup  \n[6 files changed, +146/-46 lines, 1 pull request merged]  \nFixed issues with the upload form scrolling behavior.\n\n📦 plone/plone.cachepurging  \n[1 file changed, +1/-1 lines, 1 pull request merged]  \nUpdated `astral-sh/setup-uv` to 10.3.3.\n\n--- \n\nThis week showcased strong community efforts in upgrading dependencies, fixing bugs, and maintaining the integrity of the Plone ecosystem. Special thanks to contributors for their continuous efforts in improving the platform's usability and performance.\n\n**Contributors this week:**  \n- Maurits van Rees  \n- Peter Mathis  \n- Sashank Bhamidi  \n- Ramon Navarro Bosch  \n- David Glick  \n- Jens W. Klein  \n- Victor Fernandez de Alba  \n- Érico Andrei  \n- Gil Forcada Codinachs  \n- Xaver  \n- Upptime Bot  \n- MrTango  \n\nAutomatically generated from 97 active repositories.\n```",
+  "artifacts": {
+    "latest_json_path": "data/github-activity-digest/latest.json",
+    "latest_markdown_path": "data/github-activity-digest/latest.md",
+    "run_json_path": "data/github-activity-digest/runs/2026-11-16T07-32-32Z.json",
+    "run_markdown_path": "data/github-activity-digest/runs/2026-11-16T07-32-32Z.md"
+  },
+  "workflow": {
+    "repository": "syslabcom/activity-recognition",
+    "run_id": "43823958335",
+    "run_number": "231",
+    "attempt": "1",
+    "url": "https://github.com/syslabcom/activity-recognition/actions/runs/43823958335",
+    "sha": "9fa41e8f7e67700cc581bf19654ea56731cdf9eb"
+  }
+}
