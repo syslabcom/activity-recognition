@@ -1,242 +1,73 @@
 ```markdown
 📊 WEEKLY SUMMARY  
-2026-11-09 to 2026-11-16
+2026-11-10 to 2026-11-17  
 
-This week in the Plone organization, contributors made significant updates across numerous repositories, focusing on dependency updates, bug fixes, and enhancements to documentation.
+This week in the Plone organization saw significant activity across various repositories, including infrastructure improvements, maintenance releases, and feature enhancements for the Plone ecosystem. Notably, contributors focused on updating dependencies, refining CI configurations, and improving user experience through various bug fixes and documentation updates.
 
-📦 plone/plone.formwidget.recurrence  
-[1 file changed, +1/-1 lines, 1 pull request merged]  
-The `astral-sh/setup-uv` dependency was bumped from version 10.3.2 to 10.3.3.
-
-📦 plone/plone.reload  
-[1 file changed, +1/-1 lines, 1 pull request merged]  
-Similar to other repositories, this also saw the `astral-sh/setup-uv` updated to version 10.3.3.
-
-📦 plone/plone.resource  
-[1 file changed, +1/-1 lines, 1 pull request merged]  
-Updated `astral-sh/setup-uv` version to 10.3.3.
-
-📦 plone/plone.tiles  
-[1 file changed, +1/-1 lines, 1 pull request merged]  
-The `astral-sh/setup-uv` dependency was upgraded to version 10.3.3.
+📦 plone/plone.app.multilingual  
+[3 files changed, +3/-3 lines, 1 pull request merged]  
+Updated CI configuration by bumping the `astral-sh/setup-uv` version to 10.3.3 and fixed the CI by using the latest `pipforester`. 
 
 📦 plone/plone.app.querystring  
 [11 files changed, +102/-12 lines, 1 pull request merged]  
-Peter Mathis fixed path criteria issues related to the virtual root, improving query accuracy; this fix is a substantial step for better content management in Plone applications.
-
-📦 plone/plone.app.drafts  
-[1 file changed, +1/-1 lines, 1 pull request merged]  
-Updated `astral-sh/setup-uv` to version 10.3.3.
-
-📦 plone/plone.app.blocks  
-[1 file changed, +1/-1 lines, 1 pull request merged]  
-Dependency update for `astral-sh/setup-uv` to 10.3.3.
-
-📦 plone/plone.app.standardtiles  
-[1 file changed, +1/-1 lines, 1 pull request merged]  
-Another update for `astral-sh/setup-uv`, now at version 10.3.3.
-
-📦 plone/plone.subrequest  
-[1 file changed, +1/-1 lines, 1 pull request merged]  
-The `astral-sh/setup-uv` was also bumped to 10.3.3 here.
-
-📦 plone/five.intid  
-[1 file changed, +1/-1 lines, 1 pull request merged]  
-Updated to `astral-sh/setup-uv` version 10.3.3.
-
-📦 plone/plone.namedfile  
-[1 file changed, +1/-1 lines, 1 pull request merged]  
-As with several others, bumped `astral-sh/setup-uv` to 10.3.3.
-
-📦 plone/plone.schemaeditor  
-[1 file changed, +1/-1 lines, 1 pull request merged]  
-Updated dependency for `astral-sh/setup-uv` to version 10.3.3.
-
-📦 plone/plone.testing  
-[1 file changed, +1/-1 lines, 1 pull request merged]  
-Similar update received with `astral-sh/setup-uv` version 10.3.3.
-
-📦 plone/plone.formwidget.namedfile  
-[1 file changed, +1/-1 lines, 1 pull request merged]  
-The dependency `astral-sh/setup-uv` was updated to 10.3.3.
-
-📦 plone/plone.app.intid  
-[1 file changed, +1/-1 lines, 1 pull request merged]  
-Updated `astral-sh/setup-uv` to version 10.3.3.
-
-📦 plone/plone.app.lockingbehavior  
-[1 file changed, +1/-1 lines, 1 pull request merged]  
-The `astral-sh/setup-uv` dependency was also bumped to version 10.3.3 here.
-
-📦 plone/plone.dexterity  
-[1 file changed, +1/-1 lines, 1 pull request merged]  
-`astral-sh/setup-uv` version updated to 10.3.3.
+Implemented a fix for path criteria when the virtual root is above the portal. Additional formatting adjustments were made alongside this fix.
 
 📦 plone/plone.app.dexterity  
-[1 file changed, +1/-1 lines, 1 pull request merged]  
-Detailed bump of `astral-sh/setup-uv` from 10.3.0 to 10.3.3 here.
-
-📦 plone/plone.autoform  
-[1 file changed, +1/-1 lines, 1 pull request merged]  
-Similar to prior updates, established `astral-sh/setup-uv` at 10.3.3.
-
-📦 plone/plone.folder  
-[1 file changed, +1/-1 lines, 1 pull request merged]  
-Updated `astral-sh/setup-uv` to version 10.3.3.
-
-📦 plone/plone.app.textfield  
-[1 file changed, +1/-1 lines, 1 pull request merged]  
-Bumped to `astral-sh/setup-uv` version 10.3.3.
-
-📦 plone/plone.app.relationfield  
-[1 file changed, +1/-1 lines, 1 pull request merged]  
-Updated `astral-sh/setup-uv` to version 10.3.3.
-
-📦 plone/plone.rfc822  
-[1 file changed, +1/-1 lines, 1 pull request merged]  
-Dependency updated for `astral-sh/setup-uv`, now at version 10.3.3.
-
-📦 plone/plone.app.versioningbehavior  
-[1 file changed, +1/-1 lines, 1 pull request merged]  
-Updated `astral-sh/setup-uv` to 10.3.3.
-
-📦 plone/plone.app.z3cform  
-[1 file changed, +1/-1 lines, 1 pull request merged]  
-Updated `astral-sh/setup-uv` to version 10.3.3.
-
-📦 plone/plone.uuid  
-[1 file changed, +1/-1 lines, 1 pull request merged]  
-Dependency updated for `astral-sh/setup-uv` to version 10.3.3.
-
-📦 plone/plone.alterego  
-[1 file changed, +1/-1 lines, 1 pull request merged]  
-Bumped `astral-sh/setup-uv` to 10.3.3.
-
-📦 plone/plone.behavior  
-[1 file changed, +1/-1 lines, 1 pull request merged]  
-Updated `astral-sh/setup-uv` to 10.3.3.
-
-📦 plone/borg.localrole  
-[1 file changed, +1/-1 lines, 1 pull request merged]  
-The dependency was updated to `astral-sh/setup-uv` version 10.3.3.
-
-📦 plone/plone.stringinterp  
-[1 file changed, +1/-1 lines, 1 pull request merged]  
-Updated `astral-sh/setup-uv` to version 10.3.3.
-
-📦 plone/plone.indexer  
-[1 file changed, +1/-1 lines, 1 pull request merged]  
-Bumped `astral-sh/setup-uv` to 10.3.3.
+[7 files changed, +25/-5 lines, 1 pull request merged]  
+Temporarily disabled a circular CI job to address the dependency cycle issue caused by the recent merge of portlets, and updated the `astral-sh/setup-uv` dependency.
 
 📦 plone/plone.app.content  
 [1 file changed, +1/-1 lines, 1 pull request merged]  
-Updated `astral-sh/setup-uv` from 10.3.1 to 10.3.3.
-
-📦 plone/plone.app.contentmenu  
-[1 file changed, +1/-1 lines, 1 pull request merged]  
-Updated `astral-sh/setup-uv` to version 10.3.3.
-
-📦 plone/plone.app.uuid  
-[1 file changed, +1/-1 lines, 1 pull request merged]  
-Updated `astral-sh/setup-uv` with version bump to 10.3.3.
-
-📦 plone/plone.locking  
-[1 file changed, +1/-1 lines, 1 pull request merged]  
-Updated `astral-sh/setup-uv` to 10.3.3.
-
-📦 plone/collective.monkeypatcher  
-[1 file changed, +1/-1 lines, 1 pull request merged]  
-Updated `astral-sh/setup-uv` to version 10.3.3.
-
-📦 plone/plone.testing  
-[1 file changed, +1/-1 lines, 1 pull request merged]  
-Dependency updated for `astral-sh/setup-uv` to version 10.3.3.
-
-📦 plone/plone.app.workflow  
-[1 file changed, +1/-1 lines, 1 pull request merged]  
-Bumped `astral-sh/setup-uv` to version 10.3.3.
-
-📦 plone/plone.app.users  
-[1 file changed, +1/-1 lines, 1 pull request merged]  
-Updated `astral-sh/setup-uv` from version 10.3.0 to 10.3.3. 
-
-📦 plone/plone.memoize  
-[1 file changed, +1/-1 lines, 1 pull request merged]  
-Updated `astral-sh/setup-uv` to version 10.3.3.
-
-📦 plone/plone.app.layout  
-[1 file changed, +1/-1 lines, 1 pull request merged]  
-Updated `astral-sh/setup-uv` with a bump to 10.3.3.
-
-📦 plone/plone.app.viewletmanager  
-[1 file changed, +1/-1 lines, 1 pull request merged]  
-Updated `astral-sh/setup-uv` to version 10.3.3. 
-
-📦 plone/plone.app.customerize  
-[1 file changed, +1/-1 lines, 1 pull request merged]  
-Updated `astral-sh/setup-uv` to 10.3.3.
-
-📦 plone/plone.app.contenttypes  
-[1 file changed, +1/-1 lines, 1 pull request merged]  
-Updated `astral-sh/setup-uv` from 10.3.0 to 10.3.3.
+Updated the version of `astral-sh/setup-uv` from 10.3.1 to 10.3.3.
 
 📦 plone/Products.CMFPlone  
-[55 files changed, +777/-125 lines, 4 pull requests merged]  
-Significant updates for Plone that include splitting default page overlay tests and improving maintenance with various QA fixes.
+[44 files changed, +309/-119 lines, 9 pull requests merged]  
+Introduced multiple enhancements including small QA fixes, a backport for robot tests related to default page overlays, and various code quality improvements to maintain compatibility with upcoming versions.
 
 📦 plone/plone.app.upgrade  
-[6 files changed, +25/-4 lines, 0 pull requests merged]  
-New upgrades added to keep the project current.
-
-📦 plone/plone.app.mosaic  
-[34 files changed, +182/-34 lines, 2 pull requests merged]  
-Enhanced support for TinyMCE within narrow columns and improvements on metadata sending for saving and deleting tiles.
-
-📦 plone/helm-charts  
-[329 files changed, +9979/-5664 lines, 1 pull requests merged]  
-Added documentation for the Helm repository; major restructuring of how Plone is deployed on Kubernetes environments.
-
-📦 plone/plone.theme  
-[1 file changed, +1/-1 lines, 1 pull request merged]  
-Updated `astral-sh/setup-uv` to 10.3.3.
-
-📦 plone/Products.CMFEditions  
-[16 files changed, +503/-10 lines, 0 pull requests merged]  
-Enhancements made to ensure smooth operation.
+[6 files changed, +25/-4 lines, 3 direct commits]  
+Focused on upgrades related to Plone 6.2.4 and preparations for the development of future releases.
 
 📦 plone/plone.app.users  
 [1 file changed, +1/-1 lines, 1 pull request merged]  
-Updated `astral-sh/setup-uv` from 10.3.0 to 10.3.3.
+Updated the `astral-sh/setup-uv` dependency from 10.3.0 to 10.3.3.
 
-📦 plone/guillotina_elasticsearch  
-[10 files changed,+255/-24 lines, 1 pull request merged]  
-Optimizations made to the automatic context path filter in Elasticsearch.
+📦 plone/plone.app.layout  
+[7 files changed, +25/-5 lines, 1 pull request merged]  
+Disabled the circular CI job temporarily, with a similar update to the Astral dependency.
 
-📦 plone/mockup  
-[6 files changed, +146/-46 lines, 1 pull request merged]  
-Fixed issues with the upload form scrolling behavior.
+📦 plone/buildout.coredev  
+[84 files changed, +1216/-1338 lines, 6 pull requests merged]  
+Upgraded to test against Python 3.11 and Zope 6.3, including various dependency adjustments and improvements in CI configurations.
 
-📦 plone/plone.cachepurging  
-[1 file changed, +1/-1 lines, 1 pull request merged]  
-Updated `astral-sh/setup-uv` to 10.3.3.
+📦 plone/Products.MimetypesRegistry  
+[7 files changed, +38/-6 lines, 3 direct commits]  
+Updated development versions and released 4.0.2, with minor fixes.
 
---- 
+📦 plone/plone.restapi  
+[31 files changed, +427/-131 lines, 2 pull requests merged]  
+Added support for the new plate block type for Plate regions, enhancing the unified Plate editor experience in Plone Aurora.
 
-This week showcased strong community efforts in upgrading dependencies, fixing bugs, and maintaining the integrity of the Plone ecosystem. Special thanks to contributors for their continuous efforts in improving the platform's usability and performance.
+📦 plone/plone.batching  
+[7 files changed, +69/-6 lines, 3 direct commits]  
+Continued development with the upcoming 3.0.4 release, focusing on cleanup and maintenance.
 
-**Contributors this week:**  
-- Maurits van Rees  
-- Peter Mathis  
-- Sashank Bhamidi  
-- Ramon Navarro Bosch  
-- David Glick  
-- Jens W. Klein  
-- Victor Fernandez de Alba  
-- Érico Andrei  
-- Gil Forcada Codinachs  
-- Xaver  
-- Upptime Bot  
-- MrTango  
+📦 plone/plone.app.mosaic  
+[28 files changed, +171/-26 lines, 2 pull requests merged]  
+Enhanced the usability of the TinyMCE toolbar and improved form rendering in the Mosaic editor.
 
-Automatically generated from 97 active repositories.
+📦 plone/plone.volto  
+[207 files changed, +5141/-606 lines, 3 pull requests merged]  
+Significant updates including a fix for dropdown clipping issues, enhancements to the Maps block, and the introduction of various new features related to content management.
+
+📦 plone/plone.ping  
+[169 files changed, +385/-384 lines, 1 direct commit]  
+Routine status updates and maintenance performed, including checks for server response.
+
+[An emphasis was placed on reducing code complexity and improving overall performance across many repositories this week, which reflects ongoing maintenance efforts to keep the Plone ecosystem robust and user-friendly.]
+
+**Contributors:**  
+Gil Forcada Codinachs, Maurits van Rees, Peter Mathis, Jens W. Klein, Victor Fernandez de Alba, Érico Andrei, David Glick, Dante Álvarez, and others.
+
+Automatically generated from 32 active repositories.
 ```
