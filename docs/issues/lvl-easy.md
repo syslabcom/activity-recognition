@@ -1,7 +1,7 @@
 ---
 title: "Plone issue list — Level: Easy"
 permalink: "/issues/lvl-easy/"
-generated_at: "2026-11-20T18:07:49Z"
+generated_at: "2026-11-20T19:05:14Z"
 organization: "plone"
 issue_count: 137
 required_labels:
@@ -10,7 +10,7 @@ required_labels:
 
 # Plone issue list — Level: Easy
 
-Generated: `2026-11-20T18:07:49Z`  
+Generated: `2026-11-20T19:05:14Z`  
 Organization: `plone`  
 Required label: `41 lvl: easy`  
 Issue count: `137`
@@ -19,6 +19,7 @@ Sorted by last updated date, newest first.
 
 | Updated | Repository | Issue | Author | Labels |
 | --- | --- | --- | --- | --- |
+| 2026-11-20 18:21 UTC | `plone/volto` | [#8490 ArrayWidget: long values overflow the field and their remove button is unreachable (regression from #8113)](https://github.com/plone/volto/issues/8490) | `jensens` | `02 type: regression`, `21 status: confirmed`, `41 lvl: easy`, `61 scope: editor` |
 | 2026-11-12 03:48 UTC | `plone/documentation` | [#2100 Upgrade to Vale 3.18.0 to support MyST, moar new features  🎉](https://github.com/plone/documentation/issues/2100) | `stevepiercy` | `31 needs: help`, `41 lvl: easy`, `99 tag: Plone 6.x`, `dependencies`, `99 tag: good first issue`, `99 tag: hacktoberfest` |
 | 2026-11-10 16:16 UTC | `plone/helm-charts` | [#65 Slim the root README to a portal](https://github.com/plone/helm-charts/issues/65) | `ericof` | `04 type: enhancement`, `14 prio: low`, `41 lvl: easy` |
 | 2026-11-10 16:15 UTC | `plone/helm-charts` | [#44 Escape the RelStorage connection string, and add sslmode](https://github.com/plone/helm-charts/issues/44) | `ericof` | `01 type: bug`, `13 prio: normal`, `41 lvl: easy`, `51 target: patch` |
@@ -52,7 +53,6 @@ Sorted by last updated date, newest first.
 | 2026-10-28 12:49 UTC | `plone/volto` | [#4580 It should be possible to open linked items in a new tab](https://github.com/plone/volto/issues/4580) | `tiberiuichim` | `04 type: enhancement`, `41 lvl: easy`, `61 scope: editor` |
 | 2026-10-28 12:49 UTC | `plone/volto` | [#1302 Volto add-ons naming convention](https://github.com/plone/volto/issues/1302) | `cekk` | `41 lvl: easy`, `99 tag: docs` |
 | 2026-10-28 12:46 UTC | `plone/volto` | [#1775 Auto-generated text-area form fields should have at least 10 lines by default and should increase size as the user types in text](https://github.com/plone/volto/issues/1775) | `tisto` | `04 type: enhancement`, `41 lvl: easy` |
-| 2026-10-28 08:08 UTC | `plone/volto` | [#8490 ArrayWidget: long values overflow the field and their remove button is unreachable (regression from #8113)](https://github.com/plone/volto/issues/8490) | `jensens` | `02 type: regression`, `21 status: confirmed`, `41 lvl: easy`, `61 scope: editor` |
 | 2026-10-28 00:54 UTC | `plone/volto` | [#5661 Checkbox label color not showing correctly](https://github.com/plone/volto/issues/5661) | `JanhaviAlekar` | `01 type: bug`, `21 status: confirmed`, `41 lvl: easy`, `61 scope: editor` |
 | 2026-10-28 00:54 UTC | `plone/volto` | [#4603 Table block: "minimalistic design" doesn't work together with "table color inverted"](https://github.com/plone/volto/issues/4603) | `tiberiuichim` | `01 type: bug`, `21 status: confirmed`, `41 lvl: easy`, `62 scope: viewer` |
 | 2026-10-28 00:54 UTC | `plone/volto` | [#2476 Simple text input labels are not aligned with the input content](https://github.com/plone/volto/issues/2476) | `tiberiuichim` | `01 type: bug`, `21 status: confirmed`, `41 lvl: easy`, `61 scope: editor` |

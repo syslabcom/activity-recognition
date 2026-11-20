@@ -1,7 +1,7 @@
 {
   "version": 1,
   "status": "success",
-  "generated_at": "2026-11-20T18:07:49Z",
+  "generated_at": "2026-11-20T19:05:14Z",
   "organization": "plone",
   "state": "open",
   "slug": "lvl-easy",
@@ -11,6 +11,37 @@
   ],
   "issue_count": 137,
   "issues": [
+    {
+      "id": 6075074700,
+      "number": 8490,
+      "title": "ArrayWidget: long values overflow the field and their remove button is unreachable (regression from #8113)",
+      "html_url": "https://github.com/plone/volto/issues/8490",
+      "repository_full_name": "plone/volto",
+      "repository_url": "https://api.github.com/repos/plone/volto",
+      "state": "open",
+      "created_at": "2026-10-28T08:08:05Z",
+      "updated_at": "2026-11-20T18:21:27Z",
+      "comments": 1,
+      "author": {
+        "login": "jensens",
+        "html_url": "https://github.com/jensens"
+      },
+      "assignees": [],
+      "labels": [
+        "02 type: regression",
+        "21 status: confirmed",
+        "41 lvl: easy",
+        "61 scope: editor"
+      ],
+      "contributor_summary": {
+        "status": "available",
+        "generated_at": "2026-11-20T19:05:22Z",
+        "source_issue_updated_at": "2026-11-20T18:21:27Z",
+        "model": "gpt-4o-mini",
+        "summary_markdown": "## What this issue is about\nThis issue addresses a problem with the **ArrayWidget**, specifically in fields like **Creators** and **Contributors** within the Ownership fieldset. Long values overflow the field and make the remove button unreachable, impacting usability.\n\n## What needs to be done\nThe goal is to modify the **SortableMultiValue** component by adding `min-width: 0` (and possibly `max-width: '100%'`) to the wrapper `<div>`. This should allow long values to be truncated with an ellipsis and ensure that the remove button remains visible.\n\n## Helpful background\nThis problem is a regression from a previous fix in issue #8113. It affects users on **Volto 19.5.1** and **Plone 6.2.2**. The previous behavior allowed long values to be displayed correctly.\n\n## Good first steps\n1. **Set Up**: If you haven't already, set up a local development environment for Volto.\n2. **Reproduce the Bug**: Follow the steps in the issue description to see the problem firsthand.\n3. **Make Changes**: Update the **SortableMultiValue** component by adding the required CSS properties.\n4. **Test Your Changes**: Check if the bug is fixed, ensuring that long values are truncated and the remove button is visible.\n5. **Open a PR**: Once ready, submit a pull request with your changes.\n\nFeel free to reach out if you have any questions or need guidance!",
+        "path": "data/issues/summaries/plone/volto/8490.json"
+      }
+    },
     {
       "id": 5208186791,
       "number": 2100,
@@ -1051,37 +1082,6 @@
         "model": "gpt-4o-mini",
         "summary_markdown": "```markdown\n## What this issue is about\nThis issue aims to enhance the text-area form fields in the Volto framework by ensuring they have at least 10 lines by default and can dynamically increase in size as users type. This will help users see all their text without scrolling.\n\n## What needs to be done\n1. Update the Textarea widget to have a default of 10 rows.\n2. Implement functionality to allow the textarea to resize as the user types.\n3. Possible integration of the `react-textarea-autosize` module may be required for this feature.\n\n## Helpful background\nThe discussions indicate a desire to improve user experience with text areas. Current implementations might be limited due to CSS restrictions from `semantic-ui-react`, so exploring alternatives like `react-textarea-autosize` could be beneficial. Note that the conversation includes references to contributing guidelines and requirements for first-time contributors.\n\n## Good first steps\n1. Familiarize yourself with the relevant part of the codebase, particularly the `src/components/manage/Widgets/TextareaWidget.jsx`.\n2. Explore the potential usage of the `react-textarea-autosize` module.\n3. Review the [Plone contributing guidelines](https://6.docs.plone.org/contributing/index.html) to understand the expectations for contributions.\n4. Test your changes to ensure they work as intended before submitting a pull request.\n```",
         "path": "data/issues/summaries/plone/volto/1775.json"
-      }
-    },
-    {
-      "id": 6075074700,
-      "number": 8490,
-      "title": "ArrayWidget: long values overflow the field and their remove button is unreachable (regression from #8113)",
-      "html_url": "https://github.com/plone/volto/issues/8490",
-      "repository_full_name": "plone/volto",
-      "repository_url": "https://api.github.com/repos/plone/volto",
-      "state": "open",
-      "created_at": "2026-10-28T08:08:05Z",
-      "updated_at": "2026-10-28T08:08:05Z",
-      "comments": 0,
-      "author": {
-        "login": "jensens",
-        "html_url": "https://github.com/jensens"
-      },
-      "assignees": [],
-      "labels": [
-        "02 type: regression",
-        "21 status: confirmed",
-        "41 lvl: easy",
-        "61 scope: editor"
-      ],
-      "contributor_summary": {
-        "status": "available",
-        "generated_at": "2026-10-28T08:10:47Z",
-        "source_issue_updated_at": "2026-10-28T08:08:05Z",
-        "model": "gpt-4o-mini",
-        "summary_markdown": "```markdown\n## What this issue is about\nThis issue addresses a regression involving the ArrayWidget in Volto. When long values are added to fields like \"Creators\" and \"Contributors,\" they overflow the field, making the remove button unreachable. This contrast with the \"Tags\" field, where long values are correctly truncated.\n\n## What needs to be done\nThe goal is to fix the overflow issue by ensuring that the ArrayWidget properly truncates long values with an ellipsis, allowing the remove button to stay visible. This can be achieved by modifying the relevant component to include `min-width: 0` (and preferably `max-width: '100%'`) for the wrapper div.\n\n## Helpful background\nThis regression stems from changes made in a previous issue (#8113) related to a new wrapper element introduced in the `SortableMultiValue`. This update interfered with the expected behavior of truncation in widgets.\n\n## Good first steps\n1. Familiarize yourself with the `SortableMultiValue` component in `packages/volto/src/components/manage/Widgets/SelectStyling.jsx`.\n2. Review the CSS styles affecting the widget to understand how the overflow is managed.\n3. Implement the changes by adding `min-width: 0` and `max-width: '100%'` as needed.\n4. Test the functionality to ensure that the remove button is accessible after making your changes. \n5. Prepare a pull request for review once your changes are ready.\n```",
-        "path": "data/issues/summaries/plone/volto/8490.json"
       }
     },
     {
@@ -4274,10 +4274,10 @@
   "message": null,
   "workflow": {
     "repository": "syslabcom/activity-recognition",
-    "run_id": "44789816499",
-    "run_number": "4718",
+    "run_id": "44798812399",
+    "run_number": "4719",
     "attempt": "1",
-    "url": "https://github.com/syslabcom/activity-recognition/actions/runs/44789816499",
-    "sha": "dbeafc9481f09d79cbea6744cd8f9126a85ff84d"
+    "url": "https://github.com/syslabcom/activity-recognition/actions/runs/44798812399",
+    "sha": "2a552e6fe5cd62a9e78585bef8a803abe6c4e71d"
   }
 }
