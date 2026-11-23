@@ -1,0 +1,57 @@
+{
+  "version": 1,
+  "task": {
+    "slug": "github-activity-digest",
+    "title": "GitHub Activity Digest"
+  },
+  "status": "success",
+  "generated_at": "2026-11-23T07:24:09Z",
+  "message": null,
+  "period": {
+    "days": 7,
+    "start": "2026-11-16",
+    "end": "2026-11-23"
+  },
+  "source": {
+    "repository": "syslabcom/github-activity-digest",
+    "action_ref": null,
+    "config_path": "digest/config.json",
+    "mode": "organization",
+    "organization": "plone",
+    "user": "pilz",
+    "topics": [],
+    "repositories": []
+  },
+  "filters": {
+    "exclude_repos": [],
+    "include_repos": [],
+    "only_public": false,
+    "only_private": false,
+    "max_repos": 500
+  },
+  "counts": {
+    "repos_processed": 433,
+    "active_repos": 93
+  },
+  "ai": {
+    "provider": "openai",
+    "model": "gpt-4o-mini",
+    "language": "English",
+    "prompt_template": "prompt-template-activity-recognition.txt"
+  },
+  "summary": "# 📊 WEEKLY SUMMARY\n**2026-11-16 to 2026-11-23**\n\nThis week in the Plone ecosystem saw substantial contributions across various repositories, with a significant focus on dependency upgrades and code refactoring. Maintainers enhanced multiple packages' configurations to align with modern practices, improving the overall development experience and security.\n\n## 📦 plone/plone.event\n[2 files changed, +2/-2 lines, 1 pull request merged]  \nUpdated dependencies were applied: the `astral-sh/setup-uv` package was bumped from version 10.3.3 to 10.4.0, introducing enhancements and bug fixes.\n\n## 📦 plone/plone.formwidget.recurrence\n[1 file changed, +5/-5 lines, 1 pull request merged]  \nAutomated updates were made to the pre-commit configuration.\n\n## 📦 plone/plone.reload\n[24 files changed, +220/-172 lines, 2 pull requests merged]  \nThe package metadata was moved from `setup.py` to `pyproject.toml` as part of broader efforts to modernize the package's configuration. Additionally, dependencies were updated.\n\n## 📦 plone/plone.app.multilingual\n[3 files changed, +3/-3 lines, 1 pull request merged]  \nAutomated dependency updates were executed, ensuring the package remains current.\n\n## 📦 plone/plone.resource\n[25 files changed, +211/-179 lines, 3 pull requests merged]  \nSimilar to `plone.reload`, metadata migration to `pyproject.toml` occurred and dependency updates were applied.\n\n## 📦 plone/plone.app.blocks\n[2 files changed, +2/-2 lines, 1 pull request merged]  \nUpdated the `astral-sh/setup-uv` dependency.\n\n## 📦 plone/plone.app.standardtiles\n[2 files changed, +6/-6 lines, 1 pull request merged]  \nThe pre-commit hooks were updated to the latest versions.\n\n## 📦 plone/plone.subrequest\n[1 file changed, +5/-5 lines, 1 pull request merged]  \nUpdated the pre-commit hooks as part of routine maintenance.\n\n## 📦 plone/five.intid\n[3 files changed, +7/-7 lines, 1 pull request merged]  \nRoutine dependency updates managed via pre-commit hooks.\n\n## 📦 plone/plone.scale\n[2 files changed, +2/-2 lines, 1 pull request merged]  \nAnother instance of updating the `astral-sh/setup-uv` dependency.\n\n## 📦 plone/plone.schemaeditor\n[3 files changed, +7/-7 lines, 1 pull request merged]  \nUpdates were focused on pre-commit configurations.\n\n## 📦 plone/plone.testing\n[3 files changed, +7/-7 lines, 1 pull request merged]  \nDependency management continued with updates to pre-commit hooks.\n\n## 📦 plone/plone.autoform\n[3 files changed, +7/-7 lines, 1 pull request merged]  \nAs with previous repositories, pre-commit hooks were automatically updated.\n\n## 📦 plone/plone.folder\n[20 files changed, +78/-66 lines, 1 pull request merged]  \nConfiguration changes focused on integrating with the `plone.meta` module.\n\n## 📦 plone/plone.app.textfield\n[1 file changed, +5/-5 lines, 1 pull request merged]  \nMaintenance updates to pre-commit hooks were conducted.\n\n## 📦 plone/plone.app.relationfield\n[1 file changed, +5/-5 lines, 1 pull request merged]  \nUpdated the pre-commit configuration.\n\n## 📦 plone/plone.rfc822\n[1 file changed, +5/-5 lines, 1 pull request merged]  \nMaintenance updates to pre-commit hooks were completed.\n\n## 📦 plone/plone.app.versioningbehavior\n[3 files changed, +7/-7 lines, 1 pull request merged]  \nContinued maintenance with pre-commit updates.\n\n## 📦 plone/plone.app.z3cform\n[3 files changed, +7/-7 lines, 1 pull request merged]  \nUpdates to the pre-commit configuration were implemented.\n\n## 📦 plone/plone.plone\n[9 files changed, +20/-8 lines, 1 pull request merged]  \nFurther regular maintenance focusing on dependencies.\n\n## 📦 plone/plone.app.themingplugins\n[62 files changed, +1129/-351 lines, 1 pull request merged]  \nSignificant reconfiguration for modernization, dropping support for Python 2 and older versions of Zope, while enhancing the overall package structure.\n\n## 📦 plone/plone.dexterity\n[3 files changed, +7/-7 lines, 1 pull request merged]  \nManaged automated updates through pre-commit hooks.\n\n## 📦 plone/plone.session\n[2 files changed, +2/-2 lines, 1 pull request merged]  \nRoutine dependency updates executed.\n\n## 📦 plone/plone.caching\n[1 file changed, +5/-5 lines, 1 pull request merged]  \nUpdates to the pre-commit hooks occurred.\n\n## 📦 plone/plone.app.classicui\n[2 files changed, +2/-2 lines, 1 pull request merged]  \nDependencies upgraded to the latest version.\n\n## 📦 plone/plone.recipe.zope2instance\n[30 files changed, +265/-317 lines, 1 pull request merged]  \nThe package made substantial updates to its structure and metadata, focusing on migration towards using `pyproject.toml`.\n\n## 📦 plone/plone.recipe.zeoserver\n[24 files changed, +204/-168 lines, 1 pull request merged]  \nSimilar to `plone.recipe.zope2instance` in its structural updates, this package also migrated metadata and dependencies.\n\n## 📦 plone/repoplone\n[14 files changed, +302/-6 lines, 1 pull request merged]  \nImproved authentication handling and overall functionality when `GITHUB_TOKEN` is missing.\n\n## 📦 plone/Products.PlonePAS\n[2 files changed, +2/-2 lines, 1 pull request merged]  \nThe dependency upgrade process was executed without issues.\n\n## 📦 plone/plone.app.i18n\n[18 files changed, +70/-58 lines, 1 pull request merged]  \nContinuing improvements on migration efforts with regard to configurations.\n\n## 📦 plone/plone.app.iterate\n[4 files changed, +8/-8 lines, 1 pull request merged]  \nManaged updates primarily concerning dependency management.\n\n## 📦 plone/plone.safehtml\n[1 file changed, +5/-5 lines, 1 pull request merged]  \nPre-commit hooks were updated as part of general maintenance.\n\n## 📦 plone/plone.outputfilters\n[2 files changed, +2/-2 lines, 1 pull request merged]  \nDependency updated to reflect current package versions.\n\n## 📦 plone/plone.app.contenttypes\n[14 files changed, +64/-58 lines, 1 pull request merged]  \nRevisions made under the `plone.meta` system led to the simplification of configurations.\n\n## 📦 plone/plone.legacy\n[6 files changed, +5/-5 lines, 1 pull request merged]  \nArchitectural improvements with pre-commits updates.\n\n## 📦 plone/plone.panels\n[6 files changed, +5/-5 lines, 1 pull request merged]  \nChanges focused on updating the repository's overall dependency structure.\n\n**Closing Note:** As we progress through the year, contributors are actively updating dependencies and enhancing configurations—ensuring Plone remains modern and efficient. \n\n**Contributors this week:**  \n- **Gil Forcada Codinachs** (gforcada)  \n- **Jens W. Klein** (jensens)  \n- **Victor Fernandez de Alba** (sneridagh)  \n- **David Glick** (davisagli)  \n- **Rémi Dubois** (remdub)  \n- **Benoît Suttor** (bsuttor)  \n- **Peter Mathis** (petschki)  \n- **Dante Álvarez** (danalvrz)  \n- **Érico Andrei** (ericof)  \n- **Rob Gietema** (robgietema)  \n- **Alessandro Pisa** (ale-rt)  \n- **Silviu Bogan** (silviubogan)  \n- **MrTango** (MrTango)  \n\nAutomatically generated from 93 active repositories.",
+  "artifacts": {
+    "latest_json_path": "data/github-activity-digest/latest.json",
+    "latest_markdown_path": "data/github-activity-digest/latest.md",
+    "run_json_path": "data/github-activity-digest/runs/2026-11-23T07-24-09Z.json",
+    "run_markdown_path": "data/github-activity-digest/runs/2026-11-23T07-24-09Z.md"
+  },
+  "workflow": {
+    "repository": "syslabcom/activity-recognition",
+    "run_id": "45130255587",
+    "run_number": "238",
+    "attempt": "1",
+    "url": "https://github.com/syslabcom/activity-recognition/actions/runs/45130255587",
+    "sha": "78c14bc3ef4c471e368349c0d141b13a98acd9a8"
+  }
+}
