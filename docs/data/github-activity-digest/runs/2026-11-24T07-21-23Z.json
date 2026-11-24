@@ -1,0 +1,57 @@
+{
+  "version": 1,
+  "task": {
+    "slug": "github-activity-digest",
+    "title": "GitHub Activity Digest"
+  },
+  "status": "success",
+  "generated_at": "2026-11-24T07:21:23Z",
+  "message": null,
+  "period": {
+    "days": 7,
+    "start": "2026-11-17",
+    "end": "2026-11-24"
+  },
+  "source": {
+    "repository": "syslabcom/github-activity-digest",
+    "action_ref": null,
+    "config_path": "digest/config.json",
+    "mode": "organization",
+    "organization": "plone",
+    "user": "pilz",
+    "topics": [],
+    "repositories": []
+  },
+  "filters": {
+    "exclude_repos": [],
+    "include_repos": [],
+    "only_public": false,
+    "only_private": false,
+    "max_repos": 500
+  },
+  "counts": {
+    "repos_processed": 433,
+    "active_repos": 96
+  },
+  "ai": {
+    "provider": "openai",
+    "model": "gpt-4o-mini",
+    "language": "English",
+    "prompt_template": "prompt-template-activity-recognition.txt"
+  },
+  "summary": "# 📊 WEEKLY SUMMARY\n2026-11-17 to 2026-11-24\n\nThis week saw significant updates across various repositories in the Plone organization, including numerous dependency updates, maintenance tasks, and enhancements to documentation and workflows. Notably, contributors focused on refining package configurations, updating dependencies, and improving user experience in several components, particularly around the Aurora project.\n\n## 📦 plone/plone.event\n[2 files changed, +2/-2 lines, 1 pull request merged]  \nDependabot updated the `astral-sh/setup-uv` dependency from version 10.3.3 to 10.4.0, incorporating new features like the `require-checksums` option.\n\n## 📦 plone/plone.formwidget.recurrence\n[1 file changed, +5/-5 lines, 1 pull request merged]  \nPre-commit CI automated the update of the project by updating several pre-commit hooks, ensuring adherence to the latest coding standards.\n\n## 📦 plone/plone.reload\n[24 files changed, +220/-172 lines, 2 pull requests merged]  \nGil Forcada Codinachs migrated metadata from `setup.py` to `pyproject.toml`, enhancing configuration management. Additionally, a dependencies update was conducted for `astral-sh/setup-uv`.\n\n## 📦 plone/plone.app.multilingual\n[3 files changed, +3/-3 lines, 1 pull request merged]  \nDependabot updated the `astral-sh/setup-uv` dependency from version 10.3.2 to 10.3.3, enhancing code reliability.\n\n## 📦 plone/plone.resource\n[25 files changed, +211/-179 lines, 3 pull requests merged]  \nSignificant progress was made with the migration of metadata to the `pyproject.toml` file, along with various updates throughout the codebase.\n\n## 📦 plone/plone.app.blocks\n[26 files changed, +272/-246 lines, 2 pull requests merged]  \nGil Forcada Codinachs configured the project with `plone.meta 2.13.1`, while also updating the `astral-sh/setup-uv` dependency.\n\n## 📦 plone/plone.app.standardtiles\n[2 files changed, +6/-6 lines, 1 pull request merged]  \nPre-commit CI streamlined the project by updating and fixing pre-commit hooks.\n\n## 📦 plone/plone.app.demand\n[3 files changed, +5/-5 lines, 1 pull request merged]  \nAutomated dependency updates were performed, ensuring the project maintains current standards.\n\n## 📦 plone/plone.session\n[2 files changed, +2/-2 lines, 1 pull request merged]  \nA security-focused dependency update was completed for `astral-sh/setup-uv`.\n\n## 📦 plone/plone.app.registry\n[18 files changed, +70/-58 lines, 1 pull request merged]  \nGil Forcada Codinachs facilitated configuration enhancements through `plone.meta`, improving overall package management.\n\n## 📦 plone/plone.locking\n[1 file changed, +5/-5 lines, 1 pull request merged]  \nUpdates to pre-commit hooks were automated for better code quality and consistency.\n\n## 📦 plone/Products.CMFPlacefulWorkflow\n[3 files changed, +7/-7 lines, 1 pull request merged]  \nDependabot updated the dependency on `astral-sh/setup-uv`.\n\n## [Additional Repositories]\nSimilar updates were made across many Plone repositories, with a notable focus on improving tooling through updates, maintenance, and dependency management.\n\nThroughout this week, contributors made strides in ensuring the robustness of the Plone ecosystem, addressing dependencies, migrating to modern configurations, and enhancing overall project stability.\n\n## Contributors\n- Gil Forcada Codinachs\n- dependabot[bot]\n- pre-commit-ci[bot]\n- Maurits van Rees\n- Peter Mathis\n- Victor Fernandez de Alba\n- Steve Piercy\n- David Glick\n- Rémi Dubois\n- Rob Gietema\n- iFlameing\n- nileshgulia1\n- ale-rt\n\nAutomatically generated from 96 active repositories.",
+  "artifacts": {
+    "latest_json_path": "data/github-activity-digest/latest.json",
+    "latest_markdown_path": "data/github-activity-digest/latest.md",
+    "run_json_path": "data/github-activity-digest/runs/2026-11-24T07-21-23Z.json",
+    "run_markdown_path": "data/github-activity-digest/runs/2026-11-24T07-21-23Z.md"
+  },
+  "workflow": {
+    "repository": "syslabcom/activity-recognition",
+    "run_id": "45346798065",
+    "run_number": "239",
+    "attempt": "1",
+    "url": "https://github.com/syslabcom/activity-recognition/actions/runs/45346798065",
+    "sha": "2d6bc018b9333c2c7e930e8e1c0b346851fc2ea7"
+  }
+}
