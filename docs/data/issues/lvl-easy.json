@@ -1,7 +1,7 @@
 {
   "version": 1,
   "status": "success",
-  "generated_at": "2026-11-24T23:05:13Z",
+  "generated_at": "2026-11-25T00:18:08Z",
   "organization": "plone",
   "state": "open",
   "slug": "lvl-easy",
@@ -20,8 +20,8 @@
       "repository_url": "https://api.github.com/repos/plone/volto",
       "state": "open",
       "created_at": "2026-10-28T08:08:05Z",
-      "updated_at": "2026-11-20T18:21:27Z",
-      "comments": 1,
+      "updated_at": "2026-11-24T23:58:02Z",
+      "comments": 2,
       "author": {
         "login": "jensens",
         "html_url": "https://github.com/jensens"
@@ -4274,10 +4274,10 @@
   "message": null,
   "workflow": {
     "repository": "syslabcom/activity-recognition",
-    "run_id": "45506836485",
-    "run_number": "4819",
+    "run_id": "45516999206",
+    "run_number": "4820",
     "attempt": "1",
-    "url": "https://github.com/syslabcom/activity-recognition/actions/runs/45506836485",
-    "sha": "272ba609f797c4d4919ed1be22c6ae7bb07834bd"
+    "url": "https://github.com/syslabcom/activity-recognition/actions/runs/45516999206",
+    "sha": "2512bd6e4df5f49236e87c8f767c4858961a5195"
   }
 }
