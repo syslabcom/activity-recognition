@@ -5,12 +5,12 @@
     "title": "GitHub Activity Digest"
   },
   "status": "success",
-  "generated_at": "2026-11-24T07:21:23Z",
+  "generated_at": "2026-11-25T07:21:30Z",
   "message": null,
   "period": {
     "days": 7,
-    "start": "2026-11-17",
-    "end": "2026-11-24"
+    "start": "2026-11-18",
+    "end": "2026-11-25"
   },
   "source": {
     "repository": "syslabcom/github-activity-digest",
@@ -31,7 +31,7 @@
   },
   "counts": {
     "repos_processed": 433,
-    "active_repos": 96
+    "active_repos": 104
   },
   "ai": {
     "provider": "openai",
@@ -39,19 +39,19 @@
     "language": "English",
     "prompt_template": "prompt-template-activity-recognition.txt"
   },
-  "summary": "# 📊 WEEKLY SUMMARY\n2026-11-17 to 2026-11-24\n\nThis week saw significant updates across various repositories in the Plone organization, including numerous dependency updates, maintenance tasks, and enhancements to documentation and workflows. Notably, contributors focused on refining package configurations, updating dependencies, and improving user experience in several components, particularly around the Aurora project.\n\n## 📦 plone/plone.event\n[2 files changed, +2/-2 lines, 1 pull request merged]  \nDependabot updated the `astral-sh/setup-uv` dependency from version 10.3.3 to 10.4.0, incorporating new features like the `require-checksums` option.\n\n## 📦 plone/plone.formwidget.recurrence\n[1 file changed, +5/-5 lines, 1 pull request merged]  \nPre-commit CI automated the update of the project by updating several pre-commit hooks, ensuring adherence to the latest coding standards.\n\n## 📦 plone/plone.reload\n[24 files changed, +220/-172 lines, 2 pull requests merged]  \nGil Forcada Codinachs migrated metadata from `setup.py` to `pyproject.toml`, enhancing configuration management. Additionally, a dependencies update was conducted for `astral-sh/setup-uv`.\n\n## 📦 plone/plone.app.multilingual\n[3 files changed, +3/-3 lines, 1 pull request merged]  \nDependabot updated the `astral-sh/setup-uv` dependency from version 10.3.2 to 10.3.3, enhancing code reliability.\n\n## 📦 plone/plone.resource\n[25 files changed, +211/-179 lines, 3 pull requests merged]  \nSignificant progress was made with the migration of metadata to the `pyproject.toml` file, along with various updates throughout the codebase.\n\n## 📦 plone/plone.app.blocks\n[26 files changed, +272/-246 lines, 2 pull requests merged]  \nGil Forcada Codinachs configured the project with `plone.meta 2.13.1`, while also updating the `astral-sh/setup-uv` dependency.\n\n## 📦 plone/plone.app.standardtiles\n[2 files changed, +6/-6 lines, 1 pull request merged]  \nPre-commit CI streamlined the project by updating and fixing pre-commit hooks.\n\n## 📦 plone/plone.app.demand\n[3 files changed, +5/-5 lines, 1 pull request merged]  \nAutomated dependency updates were performed, ensuring the project maintains current standards.\n\n## 📦 plone/plone.session\n[2 files changed, +2/-2 lines, 1 pull request merged]  \nA security-focused dependency update was completed for `astral-sh/setup-uv`.\n\n## 📦 plone/plone.app.registry\n[18 files changed, +70/-58 lines, 1 pull request merged]  \nGil Forcada Codinachs facilitated configuration enhancements through `plone.meta`, improving overall package management.\n\n## 📦 plone/plone.locking\n[1 file changed, +5/-5 lines, 1 pull request merged]  \nUpdates to pre-commit hooks were automated for better code quality and consistency.\n\n## 📦 plone/Products.CMFPlacefulWorkflow\n[3 files changed, +7/-7 lines, 1 pull request merged]  \nDependabot updated the dependency on `astral-sh/setup-uv`.\n\n## [Additional Repositories]\nSimilar updates were made across many Plone repositories, with a notable focus on improving tooling through updates, maintenance, and dependency management.\n\nThroughout this week, contributors made strides in ensuring the robustness of the Plone ecosystem, addressing dependencies, migrating to modern configurations, and enhancing overall project stability.\n\n## Contributors\n- Gil Forcada Codinachs\n- dependabot[bot]\n- pre-commit-ci[bot]\n- Maurits van Rees\n- Peter Mathis\n- Victor Fernandez de Alba\n- Steve Piercy\n- David Glick\n- Rémi Dubois\n- Rob Gietema\n- iFlameing\n- nileshgulia1\n- ale-rt\n\nAutomatically generated from 96 active repositories.",
+  "summary": "# 📊 WEEKLY SUMMARY  \n2026-11-18 to 2026-11-25\n\nThis week in the Plone open-source ecosystem saw a significant amount of activity across multiple repositories, with a focus on updating dependencies, improving configuration management, and enhancing overall functionality. Key contributors, particularly Gil Forcada Codinachs, played a pivotal role in delivering updates and improvements.\n\n## 📦 plone/plone.event  \n[2 files changed, +2/-2 lines, 1 pull request merged]  \nDependabot updated the `astral-sh/setup-uv` dependency from version 10.3.3 to 10.4.0, introducing the new `require-checksums` input along with general bug fixes.\n\n## 📦 plone/plone.formwidget.recurrence  \n[1 file changed, +5/-5 lines, 1 pull request merged]  \nThe pre-commit CI bot performed an auto-update, enhancing code quality checks by updating pre-commit dependencies.\n\n## 📦 plone/plone.reload  \n[24 files changed, +220/-172 lines, 2 pull requests merged]  \nGil Forcada moved package metadata from `setup.py` to `pyproject.toml` and updated dependencies. Additionally, Dependabot updated the `astral-sh/setup-uv` dependency.\n\n## 📦 plone/plone.app.event  \n[20 files changed, +104/-76 lines, 1 pull request merged]  \nGil Forcada configured the app with `plone.meta` 2.13.1, enhancing its metadata management and adapting to recent Plone updates.\n\n## 📦 plone/plone.app.multilingual  \n[20 files changed, +244/-240 lines, 1 pull request merged]  \nMetadata updates were coordinated under version 2.13.1 of `plone.meta`, while unifying project metadata alongside dependency enhancements.\n\n## 📦 plone/plone.resource  \n[25 files changed, +211/-179 lines, 3 pull requests merged]  \nSignificant enhancements were made, including migrating metadata management to `pyproject.toml` and updating various dependencies to latest versions.\n\n## 📦 plone/plone.app.querystring  \n[18 files changed, +86/-58 lines, 1 pull request merged]  \nA full configuration with `plone.meta` 2.13.1 was integrated to optimize query string management.\n\n## 📦 plone/plone.app.drafts  \n[16 files changed, +96/-72 lines, 1 pull request merged]  \nGil Forcada implemented metadata management via `plone.meta`, ensuring compliance with current Plone standards.\n\n## 📦 plone/plone.app.blocks  \n[26 files changed, +272/-246 lines, 2 pull requests merged]  \nThe application was configured with `plone.meta` 2.13.1, while Dependabot updated the `astral-sh/setup-uv` dependency.\n\n## 📦 plone/plone.testing  \n[3 files changed, +7/-7 lines, 2 pull requests merged]  \nUpdates to `astral-sh/setup-uv` were approved by Dependabot for improved testing processes.\n\n## 📦 plone/plone.patternslib  \n[28 files changed, +228/-218 lines, 1 pull request merged]  \nDependabot updated the `astral-sh/setup-uv` to ensure compliance with current security requirements.\n\n## 📦 plone/Products.PlonePAS  \n[2 files changed, +2/-2 lines, 1 pull request merged]  \nAn update was made to the `astral-sh/setup-uv` dependency, improving its functionality and reliability.\n\n## 📦 plone/Products.PloneGAB  \n[2 files changed, +2/-2 lines, 1 pull request merged]  \nDependabot updated the `astral-sh/setup-uv` dependency for better functionality within the project.\n\n## 📦 plone/volto  \n[166 files changed, +4048/-197 lines, 2 pull requests merged]  \nVolto development progressed with key improvements including a fix for stale actions and navigation after logout, alongside several enhancements to UI components.\n\n## 📦 plone/mockup  \n[53 files changed, +2192/-1078 lines, 4 pull requests merged]  \nThe repository focused on major dependency updates and restructuring to ensure compatibility with Plone's evolving requirements.\n\n## 📦 plone/plone.client  \n[165 files changed, +7159/-261 lines, 1 pull request merged]  \nA substantial addition of functionality centered on token handling improvements led by Érico Andrei.\n\nThis week signified a robust effort within the Plone community to enhance project standards through careful management of dependencies and active contributor engagement.\n\n### Contributors:\n- Gil Forcada Codinachs\n- dependabot[bot]\n- pre-commit-ci[bot]\n- Rob Gietema\n- David Glick\n- Victor Fernandez de Alba\n- Steve Piercy\n- Tishasoumya-02\n- ale-rt\n- MrTango\n- Nilesh Gulia\n\nAutomatically generated from 104 active repositories.",
   "artifacts": {
     "latest_json_path": "data/github-activity-digest/latest.json",
     "latest_markdown_path": "data/github-activity-digest/latest.md",
-    "run_json_path": "data/github-activity-digest/runs/2026-11-24T07-21-23Z.json",
-    "run_markdown_path": "data/github-activity-digest/runs/2026-11-24T07-21-23Z.md"
+    "run_json_path": "data/github-activity-digest/runs/2026-11-25T07-21-30Z.json",
+    "run_markdown_path": "data/github-activity-digest/runs/2026-11-25T07-21-30Z.md"
   },
   "workflow": {
     "repository": "syslabcom/activity-recognition",
-    "run_id": "45346798065",
-    "run_number": "239",
+    "run_id": "45566998373",
+    "run_number": "240",
     "attempt": "1",
-    "url": "https://github.com/syslabcom/activity-recognition/actions/runs/45346798065",
-    "sha": "2d6bc018b9333c2c7e930e8e1c0b346851fc2ea7"
+    "url": "https://github.com/syslabcom/activity-recognition/actions/runs/45566998373",
+    "sha": "8741576a80eca5b09d5ef789fb4c460be690b310"
   }
 }
