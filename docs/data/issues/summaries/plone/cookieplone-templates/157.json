@@ -1,33 +1,33 @@
 {
   "version": 1,
   "status": "success",
-  "generated_at": "2026-04-09T14:41:04Z",
+  "generated_at": "2026-11-26T22:06:23Z",
   "source_issue": {
     "id": 2853999327,
     "number": 157,
     "title": "varnish container build superfluos - use config feature",
     "html_url": "https://github.com/plone/cookieplone-templates/issues/157",
     "repository_full_name": "plone/cookieplone-templates",
-    "updated_at": "2025-02-28T11:14:40Z",
+    "updated_at": "2026-11-26T21:52:38Z",
     "labels": [
       "04 type: enhancement",
       "21 status: confirmed",
       "33 needs: docs",
       "42 lvl: moderate"
     ],
-    "comments": 4
+    "comments": 5
   },
   "ai": {
     "provider": "openai",
     "model": "gpt-4o-mini"
   },
-  "summary_markdown": "```markdown\n## What this issue is about\nThis issue discusses the possibility of simplifying the build process for the Varnish container in the `plone/cookieplone-templates` project by using Docker configs instead of creating a separate image. The current method may be unnecessarily complicated.\n\n## What needs to be done\nThe task involves updating the Docker configuration to utilize a config feature for Varnish. This can streamline deployment and reduce the need for image builds.\n\n## Helpful background\nDocker configs allow you to manage configuration files in a simpler way than building images each time. However, updating these configs can be a bit tricky, as they are immutable—meaning you need to change their name when updating. Some helpful practices, like using an environment variable for versioning, have been suggested but are not currently implemented.\n\n## Good first steps\n1. Review the existing Docker configuration to see how Varnish is currently set up.\n2. Experiment with Docker configs based on the suggested syntax.\n3. Collaborate with others in the issue comments to clarify any uncertainties, especially around updating configs and necessary documentation.\n4. Document your findings to help future contributors understand the updated setup better.\n```",
+  "summary_markdown": "```markdown\n## What this issue is about\nThis issue suggests simplifying the Varnish container setup by using Docker's config feature instead of building a new image every time. This approach aims to streamline the deployment process while considering the need for a well-configured caching server.\n\n## What needs to be done\nConvert the current Docker setup from building an image to utilizing Docker configs for handling the Varnish configuration file. This change is intended to make the system easier to maintain.\n\n## Helpful background\nDocker configs allow you to manage configuration files without rebuilding containers. However, a common concern is that updates require renaming the config, which can be cumbersome. Additionally, there is a consensus that usage of a stable config can enhance performance and security.\n\nSome contributors mention needing better documentation on managing these configs to assist new users.\n\n## Good first steps\n1. Review the current Docker setup to understand the existing processes.\n2. Familiarize yourself with Docker configs, especially regarding their immutability.\n3. Consider updating documentation or adding comments to guide others on using the new config feature effectively.\n4. Coordinate with others who have expressed interest in improving the Varnish setup for shared insights.\n```",
   "workflow": {
     "repository": "syslabcom/activity-recognition",
-    "run_id": "24196205718",
-    "run_number": "53",
+    "run_id": "45902571418",
+    "run_number": "4866",
     "attempt": "1",
-    "url": "https://github.com/syslabcom/activity-recognition/actions/runs/24196205718",
-    "sha": "4afa5437e3369368f43054c82fcd1ba9bed2967b"
+    "url": "https://github.com/syslabcom/activity-recognition/actions/runs/45902571418",
+    "sha": "e118aeccfce07f30f6ea6638971eed3f22b813ec"
   }
 }

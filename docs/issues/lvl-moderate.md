@@ -1,7 +1,7 @@
 ---
 title: "Plone issue list — Level: Moderate"
 permalink: "/issues/lvl-moderate/"
-generated_at: "2026-11-26T21:05:55Z"
+generated_at: "2026-11-26T22:06:17Z"
 organization: "plone"
 issue_count: 77
 required_labels:
@@ -10,7 +10,7 @@ required_labels:
 
 # Plone issue list — Level: Moderate
 
-Generated: `2026-11-26T21:05:55Z`  
+Generated: `2026-11-26T22:06:17Z`  
 Organization: `plone`  
 Required label: `42 lvl: moderate`  
 Issue count: `77`
@@ -19,6 +19,7 @@ Sorted by last updated date, newest first.
 
 | Updated | Repository | Issue | Author | Labels |
 | --- | --- | --- | --- | --- |
+| 2026-11-26 21:52 UTC | `plone/cookieplone-templates` | [#157 varnish container build superfluos - use config feature](https://github.com/plone/cookieplone-templates/issues/157) | `jensens` | `04 type: enhancement`, `21 status: confirmed`, `33 needs: docs`, `42 lvl: moderate` |
 | 2026-11-26 15:07 UTC | `plone/helm-charts` | [#60 Update the Plone image tags automatically](https://github.com/plone/helm-charts/issues/60) | `ericof` | `04 type: enhancement`, `13 prio: normal`, `42 lvl: moderate` |
 | 2026-11-26 15:07 UTC | `plone/helm-charts` | [#52 Several hostnames, a canonical host, and redirects](https://github.com/plone/helm-charts/issues/52) | `ericof` | `03 type: feature (plip)`, `13 prio: normal`, `42 lvl: moderate` |
 | 2026-11-26 15:07 UTC | `plone/helm-charts` | [#51 Autoscaling and an optional NetworkPolicy](https://github.com/plone/helm-charts/issues/51) | `ericof` | `03 type: feature (plip)`, `13 prio: normal`, `42 lvl: moderate` |
@@ -50,7 +51,6 @@ Sorted by last updated date, newest first.
 | 2025-12-19 03:04 UTC | `plone/documentation` | [#1309 Move the `plone.behavior` readme into `plone/documentation`](https://github.com/plone/documentation/issues/1309) | `stevepiercy` | `31 needs: help`, `33 needs: docs`, `42 lvl: moderate`, `99 tag: backend` |
 | 2025-03-08 22:21 UTC | `plone/volto` | [#5883 Create a page for Volto CI](https://github.com/plone/volto/issues/5883) | `stevepiercy` | `33 needs: docs`, `42 lvl: moderate` |
 | 2025-02-28 20:55 UTC | `plone/documentation` | [#931 Docs on setting the modification date](https://github.com/plone/documentation/issues/931) | `zopyx` | `31 needs: help`, `33 needs: docs`, `42 lvl: moderate`, `99 tag: Plone 6.x` |
-| 2025-02-28 11:14 UTC | `plone/cookieplone-templates` | [#157 varnish container build superfluos - use config feature](https://github.com/plone/cookieplone-templates/issues/157) | `jensens` | `04 type: enhancement`, `21 status: confirmed`, `33 needs: docs`, `42 lvl: moderate` |
 | 2025-01-24 06:48 UTC | `plone/buildout.coredev` | [#972 Improve README](https://github.com/plone/buildout.coredev/issues/972) | `ramiroluz` | `04 type: enhancement`, `14 prio: low`, `33 needs: docs`, `41 lvl: easy`, `42 lvl: moderate` |
 | 2024-11-24 08:35 UTC | `plone/documentation` | [#707 plone/content/creating.html outdated for dexterity content (folder restrictions)](https://github.com/plone/documentation/issues/707) | `zopyx` | `31 needs: help`, `33 needs: docs`, `42 lvl: moderate`, `99 tag: Plone 6.x` |
 | 2024-11-24 07:52 UTC | `plone/documentation` | [#1113 develop/plone/forms/files.rst](https://github.com/plone/documentation/issues/1113) | `frankar` | `31 needs: help`, `33 needs: docs`, `42 lvl: moderate`, `99 tag: Plone 6.x` |
