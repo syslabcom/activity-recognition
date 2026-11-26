@@ -1,7 +1,7 @@
 {
   "version": 1,
   "status": "success",
-  "generated_at": "2026-11-26T15:06:58Z",
+  "generated_at": "2026-11-26T16:07:18Z",
   "organization": "plone",
   "state": "open",
   "slug": "lvl-complex",
@@ -11,6 +11,39 @@
   ],
   "issue_count": 52,
   "issues": [
+    {
+      "id": 6310899823,
+      "number": 46,
+      "title": "Plone's recommended VCL as default, with purging from Plone",
+      "html_url": "https://github.com/plone/helm-charts/issues/46",
+      "repository_full_name": "plone/helm-charts",
+      "repository_url": "https://api.github.com/repos/plone/helm-charts",
+      "state": "open",
+      "created_at": "2026-11-10T16:15:20Z",
+      "updated_at": "2026-11-26T15:07:07Z",
+      "comments": 0,
+      "author": {
+        "login": "ericof",
+        "html_url": "https://github.com/ericof"
+      },
+      "assignees": [
+        "ericof"
+      ],
+      "labels": [
+        "03 type: feature (plip)",
+        "12 prio: high",
+        "43 lvl: complex",
+        "52 target: minor"
+      ],
+      "contributor_summary": {
+        "status": "available",
+        "generated_at": "2026-11-26T16:07:45Z",
+        "source_issue_updated_at": "2026-11-26T15:07:07Z",
+        "model": "gpt-4o-mini",
+        "summary_markdown": "## What this issue is about\nThis issue focuses on improving Plone's Varnish Configuration Language (VCL) to enhance caching efficiency. The current default VCL lacks vital features, such as purging and proper cookie management, which can lead to inefficient caching after edits.\n\n## What needs to be done\nWe need to create a new VCL based on Plone's documented configuration that includes:\n- **PURGE and BAN** handling\n- **Cookie normalization**\n- **Grace periods** for better cache behavior\n- **Backend probes** to ensure reliability\n\nThe goal is to ensure that changes made in Plone are correctly purged from all Varnish pods.\n\n## Helpful background\nVarnish is a web application accelerator that caches content to improve performance. Understanding VCL is key here, as it's how we instruct Varnish to handle requests and responses. This task involves integrating more complex functionalities into the existing cache system.\n\n## Good first steps\n1. Familiarize yourself with Varnish and its VCL syntax.\n2. Review Plone's existing documentation on VCL to understand the current configuration.\n3. Look into related issues (#45 and #29) for context.\n4. Consider setting up a local development environment to experiment with VCL changes.\n\nOnce you have a draft ready, you will need to write tests to ensure that the new configuration behaves as expected, especially regarding purging after edits.",
+        "path": "data/issues/summaries/plone/helm-charts/46.json"
+      }
+    },
     {
       "id": 6310901894,
       "number": 48,
@@ -42,39 +75,6 @@
         "model": "gpt-4o-mini",
         "summary_markdown": "## What this issue is about\nThis issue focuses on creating a backup configuration for CloudNativePG within the Plone Helm charts. Currently, there is no backup strategy or restore procedure documented, which is essential for maintaining data integrity.\n\n## What needs to be done\n1. Implement backup values such as:\n   - `backup.destination` (for S3-compatible storage)\n   - `backup.schedule`\n   - `backup.retention`\n2. Write a detailed guide on how to restore backups into a new release, including verification of content and files.\n3. Set up a CI job to automate the backup restoration process using MinIO.\n\n## Helpful background\nThe issue highlights that the default installation lacks backup capabilities and comprehensive restore documentation. The proposed changes are linked to issue #20, which may contain relevant details.\n\n## Good first steps\n1. Familiarize yourself with the existing configuration of CloudNativePG and the related Helm charts.\n2. Review any existing documentation on backups and restoration in the repository, noting ambiguities.\n3. Start drafting the backup values and restore guide based on your understanding and any relevant external resources.\nFeel free to reach out for clarification if needed!",
         "path": "data/issues/summaries/plone/helm-charts/48.json"
-      }
-    },
-    {
-      "id": 6310899823,
-      "number": 46,
-      "title": "Plone's recommended VCL as default, with purging from Plone",
-      "html_url": "https://github.com/plone/helm-charts/issues/46",
-      "repository_full_name": "plone/helm-charts",
-      "repository_url": "https://api.github.com/repos/plone/helm-charts",
-      "state": "open",
-      "created_at": "2026-11-10T16:15:20Z",
-      "updated_at": "2026-11-10T16:15:21Z",
-      "comments": 0,
-      "author": {
-        "login": "ericof",
-        "html_url": "https://github.com/ericof"
-      },
-      "assignees": [
-        "ericof"
-      ],
-      "labels": [
-        "03 type: feature (plip)",
-        "12 prio: high",
-        "43 lvl: complex",
-        "52 target: minor"
-      ],
-      "contributor_summary": {
-        "status": "available",
-        "generated_at": "2026-11-10T17:06:29Z",
-        "source_issue_updated_at": "2026-11-10T16:15:21Z",
-        "model": "gpt-4o-mini",
-        "summary_markdown": "## What this issue is about\nThis issue proposes updating Plone's default Varnish Configuration Language (VCL) to improve its functionality. Currently, the default VCL has limitations in handling cache purging, cookie normalization, and backend probes, which affects how Plone caches and serves content effectively.\n\n## What needs to be done\nWe need to create a new VCL based on Plone's documented configuration. This new version should include proper handling for cache purging, so changes in Plone can be reflected quickly. The implementation should ensure that all Varnish pods receive these purges and set appropriate Access Control Lists (ACLs).\n\n## Helpful background\nVCL is a scripting language for configuring Varnish, a web application accelerator. Effective use of VCL allows Plone to cache content smartly and handle purging correctly, which means reducing the server load and speeding up content delivery.\n\n## Good first steps\n1. Review the current default VCL and identify specific areas needing improvement.\n2. Familiarize yourself with Plone's documented Varnish configuration.\n3. Consider how purging works in caching systems; implementing this will involve functional tests to ensure pages are properly updated after edits.\n4. Keep in mind, this issue depends on related issues (#45 and #29), so checking those may provide extra context.",
-        "path": "data/issues/summaries/plone/helm-charts/46.json"
       }
     },
     {
@@ -1604,10 +1604,10 @@
   "message": null,
   "workflow": {
     "repository": "syslabcom/activity-recognition",
-    "run_id": "45845769218",
-    "run_number": "4859",
+    "run_id": "45855728077",
+    "run_number": "4860",
     "attempt": "1",
-    "url": "https://github.com/syslabcom/activity-recognition/actions/runs/45845769218",
-    "sha": "06f3230d678185593a7ecaa84679c559e74d9e60"
+    "url": "https://github.com/syslabcom/activity-recognition/actions/runs/45855728077",
+    "sha": "ba3d8768e039ae33980d17f26312d8034c4eaaed"
   }
 }

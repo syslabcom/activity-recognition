@@ -1,14 +1,14 @@
 {
   "version": 1,
   "status": "success",
-  "generated_at": "2026-11-10T17:06:40Z",
+  "generated_at": "2026-11-26T16:07:50Z",
   "source_issue": {
     "id": 6310896561,
     "number": 43,
     "title": "Publish to GHCR as OCI, sign with cosign, and list on Artifact Hub",
     "html_url": "https://github.com/plone/helm-charts/issues/43",
     "repository_full_name": "plone/helm-charts",
-    "updated_at": "2026-11-10T16:15:10Z",
+    "updated_at": "2026-11-26T15:07:06Z",
     "labels": [
       "04 type: enhancement",
       "13 prio: normal",
@@ -20,13 +20,13 @@
     "provider": "openai",
     "model": "gpt-4o-mini"
   },
-  "summary_markdown": "## What this issue is about\nThis issue focuses on enhancing the Plone Helm Charts by enabling them to be published to GitHub Container Registry (GHCR) as OCI (Open Container Initiative) images. Additionally, we want to sign these images with cosign and list the charts on Artifact Hub.\n\n## What needs to be done\n1. **Publish to GHCR**: Push each release to `oci://ghcr.io/plone/charts`.\n2. **Sign Images**: Use cosign to sign the published images.\n3. **Register on Artifact Hub**: Create a listing for the charts, including an icon and essential annotations in the `Chart.yaml` file.\n\n## Helpful background\nThe Plone Helm Charts are currently only available in the GitHub Pages repository. The enhancement aims to improve discoverability and security. Artifact Hub is a platform for finding and publishing Helm Charts, which is widely used in the Kubernetes community.\n\n## Good first steps\n1. Familiarize yourself with [Helm](https://helm.sh/docs/) as it is essential for managing Kubernetes applications.\n2. Review the already published charts in the GitHub repository to understand the current structure.\n3. Look into the documentation for [cosign](https://github.com/sigstore/cosign) regarding image signing practices.\n4. Consider exploring any dependencies mentioned in related issues, as they may provide additional insights or necessary tasks.\n\nFeel free to reach out for clarification on any part of the process!",
+  "summary_markdown": "## What this issue is about\nThis issue focuses on enhancing the Plone Helm Charts by publishing them to GitHub Container Registry (GHCR) as an OCI (Open Container Initiative) image, signing them with cosign, and listing them on Artifact Hub for better visibility.\n\n## What needs to be done\n1. Push each release to `oci://ghcr.io/plone/charts`.\n2. Sign releases using [cosign](https://github.com/sigstore/cosign) for security.\n3. Register the charts on [Artifact Hub](https://artifacthub.io/) and update `Chart.yaml` with required annotations and an icon.\n\n## Helpful background\nHelm Charts are packages of pre-configured Kubernetes resources, and signing them with cosign helps verify their authenticity. Artifact Hub is a platform for discovering and sharing Kubernetes packages, enhancing accessibility for users. This issue currently depends on [issue #25](https://github.com/plone/helm-charts/issues/25), so check that for any related information.\n\n## Good first steps\n1. Familiarize yourself with the process of pushing OCI images and using cosign for signing.\n2. Explore the Artifact Hub documentation for registration steps.\n3. Review the existing `Chart.yaml` to understand the structure and what annotations are needed.\n\nIf you have any questions or need further clarification, feel free to reach out!",
   "workflow": {
     "repository": "syslabcom/activity-recognition",
-    "run_id": "42861276315",
-    "run_number": "4477",
+    "run_id": "45855728077",
+    "run_number": "4860",
     "attempt": "1",
-    "url": "https://github.com/syslabcom/activity-recognition/actions/runs/42861276315",
-    "sha": "c81163be5603b4b0d1b5cfe3b20c661709d88f1d"
+    "url": "https://github.com/syslabcom/activity-recognition/actions/runs/45855728077",
+    "sha": "ba3d8768e039ae33980d17f26312d8034c4eaaed"
   }
 }

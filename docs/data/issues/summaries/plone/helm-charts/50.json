@@ -1,14 +1,14 @@
 {
   "version": 1,
   "status": "success",
-  "generated_at": "2026-11-10T17:06:08Z",
+  "generated_at": "2026-11-26T16:07:40Z",
   "source_issue": {
     "id": 6310904361,
     "number": 50,
     "title": "Extension points: extra volumes, init containers, sidecars, envFrom, labels, topology spread, priority class",
     "html_url": "https://github.com/plone/helm-charts/issues/50",
     "repository_full_name": "plone/helm-charts",
-    "updated_at": "2026-11-10T16:15:36Z",
+    "updated_at": "2026-11-26T15:07:09Z",
     "labels": [
       "03 type: feature (plip)",
       "13 prio: normal",
@@ -20,13 +20,13 @@
     "provider": "openai",
     "model": "gpt-4o-mini"
   },
-  "summary_markdown": "## What this issue is about\nThis issue addresses the need for adding various configuration options to workloads in our Helm charts, including extra volumes, init containers, sidecars, environment variables (`envFrom`), labels, topology spread constraints, priority classes, and service annotations.\n\n## What needs to be done\nWe want to extend our current workloads to support these features using the common key names found in similar Helm charts. These enhancements will improve the flexibility and usability of our deployments.\n\n## Helpful background\nCurrently, workloads lack the ability to add the mentioned configurations, which can limit deployment customization. The request is tied to a previous issue (#36), which may provide context for what needs to be improved.\n\n## Good first steps\n1. Familiarize yourself with Helm charts and the specific configurations we want to implement (you can check the official Helm documentation if you're new).\n2. Review issue #36 for additional context.\n3. Start by discussing potential implementation ideas with other contributors on this issue.\n4. Once you have a plan, consider drafting a proposal or starting to implement the features. Be prepared to document your changes and engage in code review.",
+  "summary_markdown": "## What this issue is about\nThis issue discusses enhancing the functionality of Plone Helm Charts by allowing additional features such as extra volumes, init containers, sidecars, environment variables (`envFrom`), labels, topology spread constraints, priority classes, and service annotations. These enhancements aim to make the workloads more flexible and versatile.\n\n## What needs to be done\nThe primary task is to implement support for the features mentioned above, using key names commonly found in other Helm charts. Additionally, this implementation is dependent on another issue (#36), which may need attention.\n\n## Helpful background\nHelm charts are templates used to deploy applications on Kubernetes. Understanding terms like \"volumes\" (storage elements), \"init containers\" (specific tasks before the main container starts), and \"sidecars\" (additional helper containers) will be beneficial. These features collectively enhance the deployment's capabilities.\n\n## Good first steps\n1. Familiarize yourself with the existing Helm chart structure and how workloads are currently defined.\n2. Review issue #36 to understand any dependencies that may affect your implementation.\n3. Consider starting with one feature at a time, like adding extra volumes or labels, to simplify the process.\n4. Engage with the team or the original author, [ericof](https://github.com/ericof), for any clarifications.",
   "workflow": {
     "repository": "syslabcom/activity-recognition",
-    "run_id": "42861276315",
-    "run_number": "4477",
+    "run_id": "45855728077",
+    "run_number": "4860",
     "attempt": "1",
-    "url": "https://github.com/syslabcom/activity-recognition/actions/runs/42861276315",
-    "sha": "c81163be5603b4b0d1b5cfe3b20c661709d88f1d"
+    "url": "https://github.com/syslabcom/activity-recognition/actions/runs/45855728077",
+    "sha": "ba3d8768e039ae33980d17f26312d8034c4eaaed"
   }
 }

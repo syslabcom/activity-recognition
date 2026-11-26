@@ -1,7 +1,7 @@
 ---
 title: "Plone issue list — Level: Moderate"
 permalink: "/issues/lvl-moderate/"
-generated_at: "2026-11-26T15:06:58Z"
+generated_at: "2026-11-26T16:07:18Z"
 organization: "plone"
 issue_count: 77
 required_labels:
@@ -10,7 +10,7 @@ required_labels:
 
 # Plone issue list — Level: Moderate
 
-Generated: `2026-11-26T15:06:58Z`  
+Generated: `2026-11-26T16:07:18Z`  
 Organization: `plone`  
 Required label: `42 lvl: moderate`  
 Issue count: `77`
@@ -19,13 +19,13 @@ Sorted by last updated date, newest first.
 
 | Updated | Repository | Issue | Author | Labels |
 | --- | --- | --- | --- | --- |
+| 2026-11-26 15:07 UTC | `plone/helm-charts` | [#60 Update the Plone image tags automatically](https://github.com/plone/helm-charts/issues/60) | `ericof` | `04 type: enhancement`, `13 prio: normal`, `42 lvl: moderate` |
+| 2026-11-26 15:07 UTC | `plone/helm-charts` | [#52 Several hostnames, a canonical host, and redirects](https://github.com/plone/helm-charts/issues/52) | `ericof` | `03 type: feature (plip)`, `13 prio: normal`, `42 lvl: moderate` |
+| 2026-11-26 15:07 UTC | `plone/helm-charts` | [#51 Autoscaling and an optional NetworkPolicy](https://github.com/plone/helm-charts/issues/51) | `ericof` | `03 type: feature (plip)`, `13 prio: normal`, `42 lvl: moderate` |
+| 2026-11-26 15:07 UTC | `plone/helm-charts` | [#50 Extension points: extra volumes, init containers, sidecars, envFrom, labels, topology spread, priority class](https://github.com/plone/helm-charts/issues/50) | `ericof` | `03 type: feature (plip)`, `13 prio: normal`, `42 lvl: moderate` |
+| 2026-11-26 15:07 UTC | `plone/helm-charts` | [#43 Publish to GHCR as OCI, sign with cosign, and list on Artifact Hub](https://github.com/plone/helm-charts/issues/43) | `ericof` | `04 type: enhancement`, `13 prio: normal`, `42 lvl: moderate` |
 | 2026-11-26 15:06 UTC | `plone/helm-charts` | [#53 Example values files for development and production](https://github.com/plone/helm-charts/issues/53) | `ericof` | `04 type: enhancement`, `12 prio: high`, `42 lvl: moderate` |
 | 2026-11-26 15:06 UTC | `plone/helm-charts` | [#49 ZEO backup and restore guide](https://github.com/plone/helm-charts/issues/49) | `ericof` | `04 type: enhancement`, `12 prio: high`, `33 needs: docs`, `42 lvl: moderate` |
-| 2026-11-10 16:16 UTC | `plone/helm-charts` | [#60 Update the Plone image tags automatically](https://github.com/plone/helm-charts/issues/60) | `ericof` | `04 type: enhancement`, `13 prio: normal`, `42 lvl: moderate` |
-| 2026-11-10 16:15 UTC | `plone/helm-charts` | [#52 Several hostnames, a canonical host, and redirects](https://github.com/plone/helm-charts/issues/52) | `ericof` | `03 type: feature (plip)`, `13 prio: normal`, `42 lvl: moderate` |
-| 2026-11-10 16:15 UTC | `plone/helm-charts` | [#51 Autoscaling and an optional NetworkPolicy](https://github.com/plone/helm-charts/issues/51) | `ericof` | `03 type: feature (plip)`, `13 prio: normal`, `42 lvl: moderate` |
-| 2026-11-10 16:15 UTC | `plone/helm-charts` | [#50 Extension points: extra volumes, init containers, sidecars, envFrom, labels, topology spread, priority class](https://github.com/plone/helm-charts/issues/50) | `ericof` | `03 type: feature (plip)`, `13 prio: normal`, `42 lvl: moderate` |
-| 2026-11-10 16:15 UTC | `plone/helm-charts` | [#43 Publish to GHCR as OCI, sign with cosign, and list on Artifact Hub](https://github.com/plone/helm-charts/issues/43) | `ericof` | `04 type: enhancement`, `13 prio: normal`, `42 lvl: moderate` |
 | 2026-11-10 16:14 UTC | `plone/helm-charts` | [#26 Fix Dependabot's Helm dependency updates](https://github.com/plone/helm-charts/issues/26) | `ericof` | `01 type: bug`, `12 prio: high`, `42 lvl: moderate` |
 | 2026-10-28 13:58 UTC | `plone/volto` | [#5630 Unify the use of the optional `preview_image_link` across Volto](https://github.com/plone/volto/issues/5630) | `sneridagh` | `04 type: enhancement`, `42 lvl: moderate` |
 | 2026-10-28 13:31 UTC | `plone/volto` | [#1459 Workflow Manager](https://github.com/plone/volto/issues/1459) | `tisto` | `04 type: enhancement`, `42 lvl: moderate`, `61 scope: editor` |

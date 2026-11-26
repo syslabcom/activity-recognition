@@ -1,7 +1,7 @@
 ---
 title: "Plone issue list — Level: Complex"
 permalink: "/issues/lvl-complex/"
-generated_at: "2026-11-26T15:06:58Z"
+generated_at: "2026-11-26T16:07:18Z"
 organization: "plone"
 issue_count: 52
 required_labels:
@@ -10,7 +10,7 @@ required_labels:
 
 # Plone issue list — Level: Complex
 
-Generated: `2026-11-26T15:06:58Z`  
+Generated: `2026-11-26T16:07:18Z`  
 Organization: `plone`  
 Required label: `43 lvl: complex`  
 Issue count: `52`
@@ -19,8 +19,8 @@ Sorted by last updated date, newest first.
 
 | Updated | Repository | Issue | Author | Labels |
 | --- | --- | --- | --- | --- |
+| 2026-11-26 15:07 UTC | `plone/helm-charts` | [#46 Plone's recommended VCL as default, with purging from Plone](https://github.com/plone/helm-charts/issues/46) | `ericof` | `03 type: feature (plip)`, `12 prio: high`, `43 lvl: complex`, `52 target: minor` |
 | 2026-11-26 15:06 UTC | `plone/helm-charts` | [#48 Backup values for CloudNativePG, and a tested restore guide](https://github.com/plone/helm-charts/issues/48) | `ericof` | `03 type: feature (plip)`, `11 prio: blocker`, `33 needs: docs`, `43 lvl: complex` |
-| 2026-11-10 16:15 UTC | `plone/helm-charts` | [#46 Plone's recommended VCL as default, with purging from Plone](https://github.com/plone/helm-charts/issues/46) | `ericof` | `03 type: feature (plip)`, `12 prio: high`, `43 lvl: complex`, `52 target: minor` |
 | 2026-10-28 13:34 UTC | `plone/volto` | [#2061 Copy&Paste feature overlaps with DX Layout restrictions](https://github.com/plone/volto/issues/2061) | `avoinea` | `02 type: regression`, `21 status: confirmed`, `43 lvl: complex`, `61 scope: editor` |
 | 2026-10-28 13:32 UTC | `plone/volto` | [#1516 Metadata block or easy way to insert document metadata inside text block](https://github.com/plone/volto/issues/1516) | `avoinea` | `04 type: enhancement`, `43 lvl: complex`, `99 tag: sprint`, `61 scope: editor` |
 | 2026-10-28 13:30 UTC | `plone/volto` | [#4232 Move new CSRF docs from Classic UI to Backend?](https://github.com/plone/volto/issues/4232) | `stevepiercy` | `04 type: enhancement`, `33 needs: docs`, `43 lvl: complex`, `99 tag: docs` |

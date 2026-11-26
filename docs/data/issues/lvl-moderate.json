@@ -1,7 +1,7 @@
 {
   "version": 1,
   "status": "success",
-  "generated_at": "2026-11-26T15:06:58Z",
+  "generated_at": "2026-11-26T16:07:18Z",
   "organization": "plone",
   "state": "open",
   "slug": "lvl-moderate",
@@ -11,6 +11,166 @@
   ],
   "issue_count": 77,
   "issues": [
+    {
+      "id": 6310916410,
+      "number": 60,
+      "title": "Update the Plone image tags automatically",
+      "html_url": "https://github.com/plone/helm-charts/issues/60",
+      "repository_full_name": "plone/helm-charts",
+      "repository_url": "https://api.github.com/repos/plone/helm-charts",
+      "state": "open",
+      "created_at": "2026-11-10T16:16:14Z",
+      "updated_at": "2026-11-26T15:07:13Z",
+      "comments": 0,
+      "author": {
+        "login": "ericof",
+        "html_url": "https://github.com/ericof"
+      },
+      "assignees": [
+        "ericof"
+      ],
+      "labels": [
+        "04 type: enhancement",
+        "13 prio: normal",
+        "42 lvl: moderate"
+      ],
+      "contributor_summary": {
+        "status": "available",
+        "generated_at": "2026-11-26T16:07:24Z",
+        "source_issue_updated_at": "2026-11-26T15:07:13Z",
+        "model": "gpt-4o-mini",
+        "summary_markdown": "## What this issue is about\nThis issue addresses the need to automatically update Plone image tags in `values.yaml` and `appVersion`. Currently, Dependabot does not handle these updates. The goal is to utilize Renovate or set up a scheduled workflow to create pull requests when a new release of `plone-backend`, `plone-frontend`, or `plone-zeo` occurs.\n\n## What needs to be done\n1. Choose between implementing Renovate or creating a scheduled workflow.\n2. Ensure that the updates to image tags in `values.yaml` and `appVersion` are automated.\n3. Follow the dependencies of this issue, specifically Issue #26.\n\n## Helpful background\nImage tags are labels that identify specific versions of software containers. They are crucial for maintaining compatibility in multi-component systems like Plone. Understanding how image tagging and pull requests work will be beneficial for this task.\n\n## Good first steps\n1. Familiarize yourself with the Plone repository, especially the `values.yaml` file and current workflows.\n2. Explore the documentation for Renovate and GitHub workflows to see how to implement automated updates.\n3. Engage with the community if you have questions—asking for clarification on any unclear points can provide valuable insights. \n\nFeel free to reach out to the issue author, [ericof](https://github.com/ericof), if you need guidance!",
+        "path": "data/issues/summaries/plone/helm-charts/60.json"
+      }
+    },
+    {
+      "id": 6310907133,
+      "number": 52,
+      "title": "Several hostnames, a canonical host, and redirects",
+      "html_url": "https://github.com/plone/helm-charts/issues/52",
+      "repository_full_name": "plone/helm-charts",
+      "repository_url": "https://api.github.com/repos/plone/helm-charts",
+      "state": "open",
+      "created_at": "2026-11-10T16:15:43Z",
+      "updated_at": "2026-11-26T15:07:11Z",
+      "comments": 0,
+      "author": {
+        "login": "ericof",
+        "html_url": "https://github.com/ericof"
+      },
+      "assignees": [
+        "ericof"
+      ],
+      "labels": [
+        "03 type: feature (plip)",
+        "13 prio: normal",
+        "42 lvl: moderate"
+      ],
+      "contributor_summary": {
+        "status": "available",
+        "generated_at": "2026-11-26T16:07:31Z",
+        "source_issue_updated_at": "2026-11-26T15:07:11Z",
+        "model": "gpt-4o-mini",
+        "summary_markdown": "## What this issue is about\nThis issue focuses on enhancing the routing functionality of the project. Currently, routes only accept a single hostname via `routing.hostname`, which is tied to virtual host rewrites. The aim is to allow for multiple hostnames, establish a canonical host, and implement optional redirects from `www` to non-`www` as well as from HTTP to HTTPS.\n\n## What needs to be done\n1. Modify the routing system to support multiple hostnames.\n2. Establish a canonical hostname that can be used consistently.\n3. Implement optional redirects for `www` to the canonical version.\n4. Set up redirects from HTTP to HTTPS using `RequestRedirect` filters within the Gateway API.\n\nPlease note this task depends on the completion of issue #29.\n\n## Helpful background\nUnderstanding how hostnames are currently managed in the system is essential. Familiarize yourself with the `routing.hostname` and the virtual host rewrite process. Additionally, learn about the Gateway API, especially `RequestRedirect` filters for managing redirects.\n\n## Good first steps\n1. Review existing code around hostnames and routing.\n2. Explore issue #29 to understand its relevance.\n3. Engage in discussions with maintainers for clarity on any ambiguous points or requirements.\n4. Consider setting up a local test environment to try changes and review potential redirect scenarios.",
+        "path": "data/issues/summaries/plone/helm-charts/52.json"
+      }
+    },
+    {
+      "id": 6310905515,
+      "number": 51,
+      "title": "Autoscaling and an optional NetworkPolicy",
+      "html_url": "https://github.com/plone/helm-charts/issues/51",
+      "repository_full_name": "plone/helm-charts",
+      "repository_url": "https://api.github.com/repos/plone/helm-charts",
+      "state": "open",
+      "created_at": "2026-11-10T16:15:38Z",
+      "updated_at": "2026-11-26T15:07:10Z",
+      "comments": 0,
+      "author": {
+        "login": "ericof",
+        "html_url": "https://github.com/ericof"
+      },
+      "assignees": [
+        "ericof"
+      ],
+      "labels": [
+        "03 type: feature (plip)",
+        "13 prio: normal",
+        "42 lvl: moderate"
+      ],
+      "contributor_summary": {
+        "status": "available",
+        "generated_at": "2026-11-26T16:07:36Z",
+        "source_issue_updated_at": "2026-11-26T15:07:10Z",
+        "model": "gpt-4o-mini",
+        "summary_markdown": "## What this issue is about\nThis issue addresses the implementation of autoscaling features and an optional NetworkPolicy for the Plone Helm charts. Specifically, it aims to create a **HorizontalPodAutoscaler** for both the backend and frontend services, as well as to establish routing through a NetworkPolicy for various components, including the frontend, backend, Varnish, and the database or ZEO.\n\n## What needs to be done\n1. Implement the HorizontalPodAutoscaler for:\n   - Backend\n   - Frontend\n2. Develop an optional NetworkPolicy for routing between:\n   - Frontend to Backend\n   - Backend to Database or ZEO\n\nPlease note that this issue depends on Issue #38.\n\n## Helpful background\n**HorizontalPodAutoscaler** automatically adjusts the number of pods (instances) running based on demand, improving resource efficiency. **NetworkPolicy** defines how pods communicate with each other, helping to secure your application.\n\n## Good first steps\n1. Familiarize yourself with the existing Helm chart structure in this repository.\n2. Review existing issues, especially Issue #38, for context.\n3. Explore Kubernetes documentation on HorizontalPodAutoscaler and NetworkPolicy to understand their configurations.\n4. Consider discussing implementation approaches or seeking clarification on any unclear aspects in this issue's comments or through the project's communication channels. \n\nHappy contributing!",
+        "path": "data/issues/summaries/plone/helm-charts/51.json"
+      }
+    },
+    {
+      "id": 6310904361,
+      "number": 50,
+      "title": "Extension points: extra volumes, init containers, sidecars, envFrom, labels, topology spread, priority class",
+      "html_url": "https://github.com/plone/helm-charts/issues/50",
+      "repository_full_name": "plone/helm-charts",
+      "repository_url": "https://api.github.com/repos/plone/helm-charts",
+      "state": "open",
+      "created_at": "2026-11-10T16:15:35Z",
+      "updated_at": "2026-11-26T15:07:09Z",
+      "comments": 0,
+      "author": {
+        "login": "ericof",
+        "html_url": "https://github.com/ericof"
+      },
+      "assignees": [
+        "ericof"
+      ],
+      "labels": [
+        "03 type: feature (plip)",
+        "13 prio: normal",
+        "42 lvl: moderate"
+      ],
+      "contributor_summary": {
+        "status": "available",
+        "generated_at": "2026-11-26T16:07:40Z",
+        "source_issue_updated_at": "2026-11-26T15:07:09Z",
+        "model": "gpt-4o-mini",
+        "summary_markdown": "## What this issue is about\nThis issue discusses enhancing the functionality of Plone Helm Charts by allowing additional features such as extra volumes, init containers, sidecars, environment variables (`envFrom`), labels, topology spread constraints, priority classes, and service annotations. These enhancements aim to make the workloads more flexible and versatile.\n\n## What needs to be done\nThe primary task is to implement support for the features mentioned above, using key names commonly found in other Helm charts. Additionally, this implementation is dependent on another issue (#36), which may need attention.\n\n## Helpful background\nHelm charts are templates used to deploy applications on Kubernetes. Understanding terms like \"volumes\" (storage elements), \"init containers\" (specific tasks before the main container starts), and \"sidecars\" (additional helper containers) will be beneficial. These features collectively enhance the deployment's capabilities.\n\n## Good first steps\n1. Familiarize yourself with the existing Helm chart structure and how workloads are currently defined.\n2. Review issue #36 to understand any dependencies that may affect your implementation.\n3. Consider starting with one feature at a time, like adding extra volumes or labels, to simplify the process.\n4. Engage with the team or the original author, [ericof](https://github.com/ericof), for any clarifications.",
+        "path": "data/issues/summaries/plone/helm-charts/50.json"
+      }
+    },
+    {
+      "id": 6310896561,
+      "number": 43,
+      "title": "Publish to GHCR as OCI, sign with cosign, and list on Artifact Hub",
+      "html_url": "https://github.com/plone/helm-charts/issues/43",
+      "repository_full_name": "plone/helm-charts",
+      "repository_url": "https://api.github.com/repos/plone/helm-charts",
+      "state": "open",
+      "created_at": "2026-11-10T16:15:09Z",
+      "updated_at": "2026-11-26T15:07:06Z",
+      "comments": 0,
+      "author": {
+        "login": "ericof",
+        "html_url": "https://github.com/ericof"
+      },
+      "assignees": [
+        "ericof"
+      ],
+      "labels": [
+        "04 type: enhancement",
+        "13 prio: normal",
+        "42 lvl: moderate"
+      ],
+      "contributor_summary": {
+        "status": "available",
+        "generated_at": "2026-11-26T16:07:50Z",
+        "source_issue_updated_at": "2026-11-26T15:07:06Z",
+        "model": "gpt-4o-mini",
+        "summary_markdown": "## What this issue is about\nThis issue focuses on enhancing the Plone Helm Charts by publishing them to GitHub Container Registry (GHCR) as an OCI (Open Container Initiative) image, signing them with cosign, and listing them on Artifact Hub for better visibility.\n\n## What needs to be done\n1. Push each release to `oci://ghcr.io/plone/charts`.\n2. Sign releases using [cosign](https://github.com/sigstore/cosign) for security.\n3. Register the charts on [Artifact Hub](https://artifacthub.io/) and update `Chart.yaml` with required annotations and an icon.\n\n## Helpful background\nHelm Charts are packages of pre-configured Kubernetes resources, and signing them with cosign helps verify their authenticity. Artifact Hub is a platform for discovering and sharing Kubernetes packages, enhancing accessibility for users. This issue currently depends on [issue #25](https://github.com/plone/helm-charts/issues/25), so check that for any related information.\n\n## Good first steps\n1. Familiarize yourself with the process of pushing OCI images and using cosign for signing.\n2. Explore the Artifact Hub documentation for registration steps.\n3. Review the existing `Chart.yaml` to understand the structure and what annotations are needed.\n\nIf you have any questions or need further clarification, feel free to reach out!",
+        "path": "data/issues/summaries/plone/helm-charts/43.json"
+      }
+    },
     {
       "id": 6310908040,
       "number": 53,
@@ -74,166 +234,6 @@
         "model": "gpt-4o-mini",
         "summary_markdown": "## What this issue is about\nThis issue focuses on creating a backup and restore guide for the Zope Enterprise Objects (ZEO) volume in Plone. Currently, there is no documentation outlining how to effectively back up or restore the essential `Data.fs` file and blobs.\n\n## What needs to be done\nYou need to write a clear procedure that explains how to back up and restore the ZEO volume. It's important to clarify that packing is a maintenance task and not a form of backup.\n\n## Helpful background\nZEO is a part of Plone that helps manage shared data storage. Understanding how to back up its components is crucial for maintaining data integrity and recovery processes. This task may involve intermediate knowledge, as indicated by the issue's moderate complexity level.\n\n## Good first steps\n1. Familiarize yourself with ZEO and its components (`Data.fs` and blobs).\n2. Research best practices for backups and restoration processes, especially for similar systems.\n3. Draft the backup and restore guide, ensuring clarity and simplicity.\n4. Consider reviewing existing documentation for quality and consistency.\n5. Once drafted, share your work for feedback and possible revisions.",
         "path": "data/issues/summaries/plone/helm-charts/49.json"
-      }
-    },
-    {
-      "id": 6310916410,
-      "number": 60,
-      "title": "Update the Plone image tags automatically",
-      "html_url": "https://github.com/plone/helm-charts/issues/60",
-      "repository_full_name": "plone/helm-charts",
-      "repository_url": "https://api.github.com/repos/plone/helm-charts",
-      "state": "open",
-      "created_at": "2026-11-10T16:16:14Z",
-      "updated_at": "2026-11-10T16:16:15Z",
-      "comments": 0,
-      "author": {
-        "login": "ericof",
-        "html_url": "https://github.com/ericof"
-      },
-      "assignees": [
-        "ericof"
-      ],
-      "labels": [
-        "04 type: enhancement",
-        "13 prio: normal",
-        "42 lvl: moderate"
-      ],
-      "contributor_summary": {
-        "status": "available",
-        "generated_at": "2026-11-10T17:05:44Z",
-        "source_issue_updated_at": "2026-11-10T16:16:15Z",
-        "model": "gpt-4o-mini",
-        "summary_markdown": "## What this issue is about\nThis issue focuses on improving how we manage the Plone image tags in our Helm charts. Currently, Dependabot does not monitor the tags specified in `values.yaml` and `appVersion`. The goal is to automate updates for these tags using Renovate or a scheduled workflow when there are new releases of Plone components (like plone-backend, plone-frontend, or plone-zeo).\n\n## What needs to be done\nWe need to implement a solution that automatically opens a pull request to update the image tags in the Helm charts whenever there is a new release of Plone components. Look into using Renovate or setting up a scheduled GitHub Actions workflow for this purpose.\n\n## Helpful background\nUnderstanding how Helm charts and image tags work in the context of Kubernetes will be beneficial. Image tags are used to specify versions of the Docker images that your application uses, ensuring consistent deployments.\n\n## Good first steps\n1. Familiarize yourself with the structure of `values.yaml` and the role of image tags in our project.\n2. Browse existing issues or discussions related to issue #26, as this is a dependency.\n3. Explore how to use Renovate and GitHub Actions if you're not familiar with them.\n4. Start drafting a plan for how to implement the scheduled updates or Renovate integration.",
-        "path": "data/issues/summaries/plone/helm-charts/60.json"
-      }
-    },
-    {
-      "id": 6310907133,
-      "number": 52,
-      "title": "Several hostnames, a canonical host, and redirects",
-      "html_url": "https://github.com/plone/helm-charts/issues/52",
-      "repository_full_name": "plone/helm-charts",
-      "repository_url": "https://api.github.com/repos/plone/helm-charts",
-      "state": "open",
-      "created_at": "2026-11-10T16:15:43Z",
-      "updated_at": "2026-11-10T16:15:44Z",
-      "comments": 0,
-      "author": {
-        "login": "ericof",
-        "html_url": "https://github.com/ericof"
-      },
-      "assignees": [
-        "ericof"
-      ],
-      "labels": [
-        "03 type: feature (plip)",
-        "13 prio: normal",
-        "42 lvl: moderate"
-      ],
-      "contributor_summary": {
-        "status": "available",
-        "generated_at": "2026-11-10T17:05:56Z",
-        "source_issue_updated_at": "2026-11-10T16:15:44Z",
-        "model": "gpt-4o-mini",
-        "summary_markdown": "## What this issue is about\nThis issue is focused on enhancing how hostnames are managed in the Plone Helm charts. Currently, routes only accept a single `routing.hostname`, which is used for virtual host rewriting. The goal is to support multiple hostnames along with a canonical hostname and set up optional redirects (like `www` to non-`www` and HTTP to HTTPS).\n\n## What needs to be done\nYou will need to implement a feature that allows multiple hostnames with a main canonical hostname. This includes configuring optional redirects using the `RequestRedirect` filters in the existing Gateway API. Note that this task depends on issue #29.\n\n## Helpful background\nUnderstanding how virtual hosts and redirects function within the Plone Helm charts will help you. Familiarize yourself with the concepts of canonical hostnames (the main, preferred address) and how to use the Gateway API for managing redirects. \n\n## Good first steps\n1. Review the current code and documentation related to `routing.hostname` and issue #29 for insights.\n2. Set up your development environment for the Plone Helm charts.\n3. Begin drafting ideas on how to implement the support for multiple hostnames and canonical redirects.\n4. Feel free to ask questions or seek clarification within the issue discussion; collaboration is encouraged!",
-        "path": "data/issues/summaries/plone/helm-charts/52.json"
-      }
-    },
-    {
-      "id": 6310905515,
-      "number": 51,
-      "title": "Autoscaling and an optional NetworkPolicy",
-      "html_url": "https://github.com/plone/helm-charts/issues/51",
-      "repository_full_name": "plone/helm-charts",
-      "repository_url": "https://api.github.com/repos/plone/helm-charts",
-      "state": "open",
-      "created_at": "2026-11-10T16:15:38Z",
-      "updated_at": "2026-11-10T16:15:40Z",
-      "comments": 0,
-      "author": {
-        "login": "ericof",
-        "html_url": "https://github.com/ericof"
-      },
-      "assignees": [
-        "ericof"
-      ],
-      "labels": [
-        "03 type: feature (plip)",
-        "13 prio: normal",
-        "42 lvl: moderate"
-      ],
-      "contributor_summary": {
-        "status": "available",
-        "generated_at": "2026-11-10T17:06:02Z",
-        "source_issue_updated_at": "2026-11-10T16:15:40Z",
-        "model": "gpt-4o-mini",
-        "summary_markdown": "```markdown\n## What this issue is about\nThis issue focuses on adding two key features to the Plone Helm charts: implementing a **HorizontalPodAutoscaler** for both the backend and frontend, and introducing an optional **NetworkPolicy** for traffic management. The NetworkPolicy would define rules for routing connections among the frontend, backend, Varnish, and the database or ZEO.\n\n## What needs to be done\n1. Implement the HorizontalPodAutoscaler for the backend service.\n2. Implement the HorizontalPodAutoscaler for the frontend service.\n3. Create an optional NetworkPolicy for traffic routing as described.\n\nNote: This task is dependent on issue #38, which may need to be considered before proceeding.\n\n## Helpful background\n- **HorizontalPodAutoscaler** automatically adjusts the number of pods in a deployment based on CPU usage or other select metrics.\n- **NetworkPolicy** helps define rules for how pods can communicate with each other, enhancing security and performance.\n\n## Good first steps\n1. Familiarize yourself with the current Plone Helm charts and Kubernetes concepts.\n2. Review the existing codebase for related components, especially focusing on similar features.\n3. Check issue #38 for any relevant updates or requirements.\n4. Reach out to the author or maintainers if you have questions or need clarification.\n```",
-        "path": "data/issues/summaries/plone/helm-charts/51.json"
-      }
-    },
-    {
-      "id": 6310904361,
-      "number": 50,
-      "title": "Extension points: extra volumes, init containers, sidecars, envFrom, labels, topology spread, priority class",
-      "html_url": "https://github.com/plone/helm-charts/issues/50",
-      "repository_full_name": "plone/helm-charts",
-      "repository_url": "https://api.github.com/repos/plone/helm-charts",
-      "state": "open",
-      "created_at": "2026-11-10T16:15:35Z",
-      "updated_at": "2026-11-10T16:15:36Z",
-      "comments": 0,
-      "author": {
-        "login": "ericof",
-        "html_url": "https://github.com/ericof"
-      },
-      "assignees": [
-        "ericof"
-      ],
-      "labels": [
-        "03 type: feature (plip)",
-        "13 prio: normal",
-        "42 lvl: moderate"
-      ],
-      "contributor_summary": {
-        "status": "available",
-        "generated_at": "2026-11-10T17:06:08Z",
-        "source_issue_updated_at": "2026-11-10T16:15:36Z",
-        "model": "gpt-4o-mini",
-        "summary_markdown": "## What this issue is about\nThis issue addresses the need for adding various configuration options to workloads in our Helm charts, including extra volumes, init containers, sidecars, environment variables (`envFrom`), labels, topology spread constraints, priority classes, and service annotations.\n\n## What needs to be done\nWe want to extend our current workloads to support these features using the common key names found in similar Helm charts. These enhancements will improve the flexibility and usability of our deployments.\n\n## Helpful background\nCurrently, workloads lack the ability to add the mentioned configurations, which can limit deployment customization. The request is tied to a previous issue (#36), which may provide context for what needs to be improved.\n\n## Good first steps\n1. Familiarize yourself with Helm charts and the specific configurations we want to implement (you can check the official Helm documentation if you're new).\n2. Review issue #36 for additional context.\n3. Start by discussing potential implementation ideas with other contributors on this issue.\n4. Once you have a plan, consider drafting a proposal or starting to implement the features. Be prepared to document your changes and engage in code review.",
-        "path": "data/issues/summaries/plone/helm-charts/50.json"
-      }
-    },
-    {
-      "id": 6310896561,
-      "number": 43,
-      "title": "Publish to GHCR as OCI, sign with cosign, and list on Artifact Hub",
-      "html_url": "https://github.com/plone/helm-charts/issues/43",
-      "repository_full_name": "plone/helm-charts",
-      "repository_url": "https://api.github.com/repos/plone/helm-charts",
-      "state": "open",
-      "created_at": "2026-11-10T16:15:09Z",
-      "updated_at": "2026-11-10T16:15:10Z",
-      "comments": 0,
-      "author": {
-        "login": "ericof",
-        "html_url": "https://github.com/ericof"
-      },
-      "assignees": [
-        "ericof"
-      ],
-      "labels": [
-        "04 type: enhancement",
-        "13 prio: normal",
-        "42 lvl: moderate"
-      ],
-      "contributor_summary": {
-        "status": "available",
-        "generated_at": "2026-11-10T17:06:40Z",
-        "source_issue_updated_at": "2026-11-10T16:15:10Z",
-        "model": "gpt-4o-mini",
-        "summary_markdown": "## What this issue is about\nThis issue focuses on enhancing the Plone Helm Charts by enabling them to be published to GitHub Container Registry (GHCR) as OCI (Open Container Initiative) images. Additionally, we want to sign these images with cosign and list the charts on Artifact Hub.\n\n## What needs to be done\n1. **Publish to GHCR**: Push each release to `oci://ghcr.io/plone/charts`.\n2. **Sign Images**: Use cosign to sign the published images.\n3. **Register on Artifact Hub**: Create a listing for the charts, including an icon and essential annotations in the `Chart.yaml` file.\n\n## Helpful background\nThe Plone Helm Charts are currently only available in the GitHub Pages repository. The enhancement aims to improve discoverability and security. Artifact Hub is a platform for finding and publishing Helm Charts, which is widely used in the Kubernetes community.\n\n## Good first steps\n1. Familiarize yourself with [Helm](https://helm.sh/docs/) as it is essential for managing Kubernetes applications.\n2. Review the already published charts in the GitHub repository to understand the current structure.\n3. Look into the documentation for [cosign](https://github.com/sigstore/cosign) regarding image signing practices.\n4. Consider exploring any dependencies mentioned in related issues, as they may provide additional insights or necessary tasks.\n\nFeel free to reach out for clarification on any part of the process!",
-        "path": "data/issues/summaries/plone/helm-charts/43.json"
       }
     },
     {
@@ -2416,10 +2416,10 @@
   "message": null,
   "workflow": {
     "repository": "syslabcom/activity-recognition",
-    "run_id": "45845769218",
-    "run_number": "4859",
+    "run_id": "45855728077",
+    "run_number": "4860",
     "attempt": "1",
-    "url": "https://github.com/syslabcom/activity-recognition/actions/runs/45845769218",
-    "sha": "06f3230d678185593a7ecaa84679c559e74d9e60"
+    "url": "https://github.com/syslabcom/activity-recognition/actions/runs/45855728077",
+    "sha": "ba3d8768e039ae33980d17f26312d8034c4eaaed"
   }
 }

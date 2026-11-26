@@ -1,14 +1,14 @@
 {
   "version": 1,
   "status": "success",
-  "generated_at": "2026-11-10T17:05:56Z",
+  "generated_at": "2026-11-26T16:07:31Z",
   "source_issue": {
     "id": 6310907133,
     "number": 52,
     "title": "Several hostnames, a canonical host, and redirects",
     "html_url": "https://github.com/plone/helm-charts/issues/52",
     "repository_full_name": "plone/helm-charts",
-    "updated_at": "2026-11-10T16:15:44Z",
+    "updated_at": "2026-11-26T15:07:11Z",
     "labels": [
       "03 type: feature (plip)",
       "13 prio: normal",
@@ -20,13 +20,13 @@
     "provider": "openai",
     "model": "gpt-4o-mini"
   },
-  "summary_markdown": "## What this issue is about\nThis issue is focused on enhancing how hostnames are managed in the Plone Helm charts. Currently, routes only accept a single `routing.hostname`, which is used for virtual host rewriting. The goal is to support multiple hostnames along with a canonical hostname and set up optional redirects (like `www` to non-`www` and HTTP to HTTPS).\n\n## What needs to be done\nYou will need to implement a feature that allows multiple hostnames with a main canonical hostname. This includes configuring optional redirects using the `RequestRedirect` filters in the existing Gateway API. Note that this task depends on issue #29.\n\n## Helpful background\nUnderstanding how virtual hosts and redirects function within the Plone Helm charts will help you. Familiarize yourself with the concepts of canonical hostnames (the main, preferred address) and how to use the Gateway API for managing redirects. \n\n## Good first steps\n1. Review the current code and documentation related to `routing.hostname` and issue #29 for insights.\n2. Set up your development environment for the Plone Helm charts.\n3. Begin drafting ideas on how to implement the support for multiple hostnames and canonical redirects.\n4. Feel free to ask questions or seek clarification within the issue discussion; collaboration is encouraged!",
+  "summary_markdown": "## What this issue is about\nThis issue focuses on enhancing the routing functionality of the project. Currently, routes only accept a single hostname via `routing.hostname`, which is tied to virtual host rewrites. The aim is to allow for multiple hostnames, establish a canonical host, and implement optional redirects from `www` to non-`www` as well as from HTTP to HTTPS.\n\n## What needs to be done\n1. Modify the routing system to support multiple hostnames.\n2. Establish a canonical hostname that can be used consistently.\n3. Implement optional redirects for `www` to the canonical version.\n4. Set up redirects from HTTP to HTTPS using `RequestRedirect` filters within the Gateway API.\n\nPlease note this task depends on the completion of issue #29.\n\n## Helpful background\nUnderstanding how hostnames are currently managed in the system is essential. Familiarize yourself with the `routing.hostname` and the virtual host rewrite process. Additionally, learn about the Gateway API, especially `RequestRedirect` filters for managing redirects.\n\n## Good first steps\n1. Review existing code around hostnames and routing.\n2. Explore issue #29 to understand its relevance.\n3. Engage in discussions with maintainers for clarity on any ambiguous points or requirements.\n4. Consider setting up a local test environment to try changes and review potential redirect scenarios.",
   "workflow": {
     "repository": "syslabcom/activity-recognition",
-    "run_id": "42861276315",
-    "run_number": "4477",
+    "run_id": "45855728077",
+    "run_number": "4860",
     "attempt": "1",
-    "url": "https://github.com/syslabcom/activity-recognition/actions/runs/42861276315",
-    "sha": "c81163be5603b4b0d1b5cfe3b20c661709d88f1d"
+    "url": "https://github.com/syslabcom/activity-recognition/actions/runs/45855728077",
+    "sha": "ba3d8768e039ae33980d17f26312d8034c4eaaed"
   }
 }

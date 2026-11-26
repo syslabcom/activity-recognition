@@ -1,14 +1,14 @@
 {
   "version": 1,
   "status": "success",
-  "generated_at": "2026-11-10T17:06:02Z",
+  "generated_at": "2026-11-26T16:07:36Z",
   "source_issue": {
     "id": 6310905515,
     "number": 51,
     "title": "Autoscaling and an optional NetworkPolicy",
     "html_url": "https://github.com/plone/helm-charts/issues/51",
     "repository_full_name": "plone/helm-charts",
-    "updated_at": "2026-11-10T16:15:40Z",
+    "updated_at": "2026-11-26T15:07:10Z",
     "labels": [
       "03 type: feature (plip)",
       "13 prio: normal",
@@ -20,13 +20,13 @@
     "provider": "openai",
     "model": "gpt-4o-mini"
   },
-  "summary_markdown": "```markdown\n## What this issue is about\nThis issue focuses on adding two key features to the Plone Helm charts: implementing a **HorizontalPodAutoscaler** for both the backend and frontend, and introducing an optional **NetworkPolicy** for traffic management. The NetworkPolicy would define rules for routing connections among the frontend, backend, Varnish, and the database or ZEO.\n\n## What needs to be done\n1. Implement the HorizontalPodAutoscaler for the backend service.\n2. Implement the HorizontalPodAutoscaler for the frontend service.\n3. Create an optional NetworkPolicy for traffic routing as described.\n\nNote: This task is dependent on issue #38, which may need to be considered before proceeding.\n\n## Helpful background\n- **HorizontalPodAutoscaler** automatically adjusts the number of pods in a deployment based on CPU usage or other select metrics.\n- **NetworkPolicy** helps define rules for how pods can communicate with each other, enhancing security and performance.\n\n## Good first steps\n1. Familiarize yourself with the current Plone Helm charts and Kubernetes concepts.\n2. Review the existing codebase for related components, especially focusing on similar features.\n3. Check issue #38 for any relevant updates or requirements.\n4. Reach out to the author or maintainers if you have questions or need clarification.\n```",
+  "summary_markdown": "## What this issue is about\nThis issue addresses the implementation of autoscaling features and an optional NetworkPolicy for the Plone Helm charts. Specifically, it aims to create a **HorizontalPodAutoscaler** for both the backend and frontend services, as well as to establish routing through a NetworkPolicy for various components, including the frontend, backend, Varnish, and the database or ZEO.\n\n## What needs to be done\n1. Implement the HorizontalPodAutoscaler for:\n   - Backend\n   - Frontend\n2. Develop an optional NetworkPolicy for routing between:\n   - Frontend to Backend\n   - Backend to Database or ZEO\n\nPlease note that this issue depends on Issue #38.\n\n## Helpful background\n**HorizontalPodAutoscaler** automatically adjusts the number of pods (instances) running based on demand, improving resource efficiency. **NetworkPolicy** defines how pods communicate with each other, helping to secure your application.\n\n## Good first steps\n1. Familiarize yourself with the existing Helm chart structure in this repository.\n2. Review existing issues, especially Issue #38, for context.\n3. Explore Kubernetes documentation on HorizontalPodAutoscaler and NetworkPolicy to understand their configurations.\n4. Consider discussing implementation approaches or seeking clarification on any unclear aspects in this issue's comments or through the project's communication channels. \n\nHappy contributing!",
   "workflow": {
     "repository": "syslabcom/activity-recognition",
-    "run_id": "42861276315",
-    "run_number": "4477",
+    "run_id": "45855728077",
+    "run_number": "4860",
     "attempt": "1",
-    "url": "https://github.com/syslabcom/activity-recognition/actions/runs/42861276315",
-    "sha": "c81163be5603b4b0d1b5cfe3b20c661709d88f1d"
+    "url": "https://github.com/syslabcom/activity-recognition/actions/runs/45855728077",
+    "sha": "ba3d8768e039ae33980d17f26312d8034c4eaaed"
   }
 }
