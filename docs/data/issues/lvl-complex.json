@@ -1,7 +1,7 @@
 {
   "version": 1,
   "status": "success",
-  "generated_at": "2026-11-26T14:07:16Z",
+  "generated_at": "2026-11-26T15:06:58Z",
   "organization": "plone",
   "state": "open",
   "slug": "lvl-complex",
@@ -9,7 +9,7 @@
   "required_labels": [
     "43 lvl: complex"
   ],
-  "issue_count": 54,
+  "issue_count": 52,
   "issues": [
     {
       "id": 6310901894,
@@ -20,7 +20,7 @@
       "repository_url": "https://api.github.com/repos/plone/helm-charts",
       "state": "open",
       "created_at": "2026-11-10T16:15:27Z",
-      "updated_at": "2026-11-10T16:15:29Z",
+      "updated_at": "2026-11-26T15:06:55Z",
       "comments": 0,
       "author": {
         "login": "ericof",
@@ -37,10 +37,10 @@
       ],
       "contributor_summary": {
         "status": "available",
-        "generated_at": "2026-11-10T17:06:17Z",
-        "source_issue_updated_at": "2026-11-10T16:15:29Z",
+        "generated_at": "2026-11-26T15:07:18Z",
+        "source_issue_updated_at": "2026-11-26T15:06:55Z",
         "model": "gpt-4o-mini",
-        "summary_markdown": "# Summary for Issue #48\n\n## What this issue is about\nThis issue focuses on enhancing the backup capabilities for the CloudNativePG installation within the Helm charts for Plone. Currently, there's no backup setup, nor documentation for restoring data.\n\n## What needs to be done\n1. **Implement Backup Values**: Define values such as `backup.destination` (for S3-compatible storage), `backup.schedule`, and `backup.retention` linked to the `cluster` chart.\n2. **Create Restore Guide**: Write a how-to guide for restoring data into a new release and verifying its content.\n3. **Set Up CI Job**: Develop a scheduled Continuous Integration (CI) job that tests the restore process using MinIO.\n\nPlease note: This issue depends on another issue (#20) that might need to be resolved first.\n\n## Helpful background\nThis task is labeled as complex and is considered a blocker for the project due to its importance for data integrity. Familiarity with Helm charts and CI practices will be beneficial.\n\n## Good first steps\n- Review existing documentation related to backup and restore processes.\n- Familiarize yourself with the relevant parts of the CloudNativePG chart.\n- Reach out in the comments for clarification or guidance, especially regarding dependencies or implementation details.",
+        "summary_markdown": "## What this issue is about\nThis issue focuses on creating a backup configuration for CloudNativePG within the Plone Helm charts. Currently, there is no backup strategy or restore procedure documented, which is essential for maintaining data integrity.\n\n## What needs to be done\n1. Implement backup values such as:\n   - `backup.destination` (for S3-compatible storage)\n   - `backup.schedule`\n   - `backup.retention`\n2. Write a detailed guide on how to restore backups into a new release, including verification of content and files.\n3. Set up a CI job to automate the backup restoration process using MinIO.\n\n## Helpful background\nThe issue highlights that the default installation lacks backup capabilities and comprehensive restore documentation. The proposed changes are linked to issue #20, which may contain relevant details.\n\n## Good first steps\n1. Familiarize yourself with the existing configuration of CloudNativePG and the related Helm charts.\n2. Review any existing documentation on backups and restoration in the repository, noting ambiguities.\n3. Start drafting the backup values and restore guide based on your understanding and any relevant external resources.\nFeel free to reach out for clarification if needed!",
         "path": "data/issues/summaries/plone/helm-charts/48.json"
       }
     },
@@ -75,72 +75,6 @@
         "model": "gpt-4o-mini",
         "summary_markdown": "## What this issue is about\nThis issue proposes updating Plone's default Varnish Configuration Language (VCL) to improve its functionality. Currently, the default VCL has limitations in handling cache purging, cookie normalization, and backend probes, which affects how Plone caches and serves content effectively.\n\n## What needs to be done\nWe need to create a new VCL based on Plone's documented configuration. This new version should include proper handling for cache purging, so changes in Plone can be reflected quickly. The implementation should ensure that all Varnish pods receive these purges and set appropriate Access Control Lists (ACLs).\n\n## Helpful background\nVCL is a scripting language for configuring Varnish, a web application accelerator. Effective use of VCL allows Plone to cache content smartly and handle purging correctly, which means reducing the server load and speeding up content delivery.\n\n## Good first steps\n1. Review the current default VCL and identify specific areas needing improvement.\n2. Familiarize yourself with Plone's documented Varnish configuration.\n3. Consider how purging works in caching systems; implementing this will involve functional tests to ensure pages are properly updated after edits.\n4. Keep in mind, this issue depends on related issues (#45 and #29), so checking those may provide extra context.",
         "path": "data/issues/summaries/plone/helm-charts/46.json"
-      }
-    },
-    {
-      "id": 6310881827,
-      "number": 29,
-      "title": "Functional tests through a real Gateway in kind",
-      "html_url": "https://github.com/plone/helm-charts/issues/29",
-      "repository_full_name": "plone/helm-charts",
-      "repository_url": "https://api.github.com/repos/plone/helm-charts",
-      "state": "open",
-      "created_at": "2026-11-10T16:14:22Z",
-      "updated_at": "2026-11-10T16:14:23Z",
-      "comments": 0,
-      "author": {
-        "login": "ericof",
-        "html_url": "https://github.com/ericof"
-      },
-      "assignees": [
-        "ericof"
-      ],
-      "labels": [
-        "04 type: enhancement",
-        "11 prio: blocker",
-        "34 needs: tests",
-        "43 lvl: complex"
-      ],
-      "contributor_summary": {
-        "status": "available",
-        "generated_at": "2026-11-10T18:07:26Z",
-        "source_issue_updated_at": "2026-11-10T16:14:23Z",
-        "model": "gpt-4o-mini",
-        "summary_markdown": "## What this issue is about\nThis issue focuses on enhancing our Continuous Integration (CI) process by enabling it to perform functional tests through a real Gateway in a Kubernetes cluster (kind). Currently, the CI setup installs the necessary components but does not send any actual HTTP requests, leading to untested configurations that have caused issues in the past.\n\n## What needs to be done\nYou will need to:\n1. Install a Gateway API implementation and a Gateway in the kind cluster.\n2. Set up an ingress-nginx controller for proper routing.\n3. After each installation, ensure that the site can be accessed, including testing specific endpoints for Volto and Varnish caching.\n\nThis task is important to prevent future bugs and ensure our configurations are working as expected.\n\n## Helpful background\nThe issue highlights a problem where routes remain unattached due to the absence of the CI Gateway (`ci`). Additionally, components related to Varnish caching have not been tested, leading to recent bugs. Familiarity with Kubernetes and CI processes will be helpful, but we're here to assist you!\n\n## Good first steps\n1. Familiarize yourself with how to set up a kind cluster and Gateway API.\n2. Review the CI setup in the repository to understand current limitations.\n3. Consider joining discussions or reaching out for help if you're unsure about any steps – collaboration is welcomed!",
-        "path": "data/issues/summaries/plone/helm-charts/29.json"
-      }
-    },
-    {
-      "id": 6310870707,
-      "number": 19,
-      "title": "Set the admin password from a Secret, generated when not given",
-      "html_url": "https://github.com/plone/helm-charts/issues/19",
-      "repository_full_name": "plone/helm-charts",
-      "repository_url": "https://api.github.com/repos/plone/helm-charts",
-      "state": "open",
-      "created_at": "2026-11-10T16:13:46Z",
-      "updated_at": "2026-11-10T16:13:47Z",
-      "comments": 0,
-      "author": {
-        "login": "ericof",
-        "html_url": "https://github.com/ericof"
-      },
-      "assignees": [
-        "ericof"
-      ],
-      "labels": [
-        "03 type: feature (plip)",
-        "11 prio: blocker",
-        "43 lvl: complex",
-        "52 target: minor"
-      ],
-      "contributor_summary": {
-        "status": "available",
-        "generated_at": "2026-11-10T18:08:08Z",
-        "source_issue_updated_at": "2026-11-10T16:13:47Z",
-        "model": "gpt-4o-mini",
-        "summary_markdown": "## What this issue is about\nThis issue focuses on enhancing Plone’s Helm charts by allowing the admin password to be set through a generated Secret. The goal is to eliminate the need for manual password setup during a fresh install, making it more secure.\n\n## What needs to be done\n- Implement logic to create a password Secret (`<release>-admin`) if no existing Secret is provided.\n- Modify the installation process to automatically apply this password to the Zope user after installation and upgrades.\n- Ensure that fresh installations do not accept the default `admin`/`admin` combo.\n- Update `NOTES.txt` to include the command for retrieving the password.\n\n## Helpful background\nThis feature is labeled as a blocker with a complexity level of ‘complex’. It currently depends on another issue (#18), and there may be outdated discussions in previous comments, so be cautious and cross-reference with current project needs.\n\n## Good first steps\n1. Familiarize yourself with the Helm chart structure in Plone.\n2. Read through the existing code related to user authentication.\n3. Look into creating Secrets in Kubernetes if you’re new to that concept.\n4. Consider discussing your approach with the assignee, [ericof](https://github.com/ericof), for guidance or clarification.",
-        "path": "data/issues/summaries/plone/helm-charts/19.json"
       }
     },
     {
@@ -1670,10 +1604,10 @@
   "message": null,
   "workflow": {
     "repository": "syslabcom/activity-recognition",
-    "run_id": "45835781835",
-    "run_number": "4858",
+    "run_id": "45845769218",
+    "run_number": "4859",
     "attempt": "1",
-    "url": "https://github.com/syslabcom/activity-recognition/actions/runs/45835781835",
-    "sha": "3d822dd108962981d1f5db54ece9099e8228f919"
+    "url": "https://github.com/syslabcom/activity-recognition/actions/runs/45845769218",
+    "sha": "06f3230d678185593a7ecaa84679c559e74d9e60"
   }
 }

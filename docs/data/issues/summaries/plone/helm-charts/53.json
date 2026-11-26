@@ -1,14 +1,14 @@
 {
   "version": 1,
   "status": "success",
-  "generated_at": "2026-11-10T17:05:50Z",
+  "generated_at": "2026-11-26T15:07:05Z",
   "source_issue": {
     "id": 6310908040,
     "number": 53,
     "title": "Example values files for development and production",
     "html_url": "https://github.com/plone/helm-charts/issues/53",
     "repository_full_name": "plone/helm-charts",
-    "updated_at": "2026-11-10T16:15:48Z",
+    "updated_at": "2026-11-26T15:06:57Z",
     "labels": [
       "04 type: enhancement",
       "12 prio: high",
@@ -20,13 +20,13 @@
     "provider": "openai",
     "model": "gpt-4o-mini"
   },
-  "summary_markdown": "## What this issue is about\nThis issue focuses on creating example values files for Plone Helm charts, specifically for development and production environments. The aim is to make it easier for users to set up a running Plone site with these configuration examples.\n\n## What needs to be done\nYou will need to develop two YAML files:\n- `values-development.yaml`: This file provides a simple setup for a running Plone site without certain components (like the CloudNativePG operator).\n- `values-production.yaml`: This should offer a more complex setup featuring PostgreSQL instances, backends, frontends, and includes security settings, backups, and HTTPS.\n\n## Helpful background\nThese values files help users deploy Plone in different environments. The development file is streamlined, while the production file is robust, suggesting a more secure and feature-rich environment. Note that this task is dependent on issues #40 and #48, which may need to be addressed first.\n\n## Good first steps\n1. Review existing values files in the repository for style and structure.\n2. Familiarize yourself with Helm charts if you're new; they are a way to manage Kubernetes applications.\n3. Start drafting the development YAML file based on the stated requirements. \n4. Discuss your initial ideas in the comments or ask for clarification if needed!",
+  "summary_markdown": "## What this issue is about\nThis issue focuses on creating example values files for both development (`values-development.yaml`) and production (`values-production.yaml`) environments in the Plone Helm Charts repository. The goal is to provide clear, practical templates for deploying Plone.\n\n## What needs to be done\nYou need to develop two YAML files:\n- **Development File:** A simple configuration that allows for a quick setup of a Plone site without advanced components like the CloudNativePG operator or routing.\n- **Production File:** A more complex setup that includes three PostgreSQL instances, multiple backend and frontend services, as well as necessary security and backup configurations.\n\n## Helpful background\nThe production example is currently integrated into the CI (Continuous Integration) process. This issue depends on two other issues (#40 and #48), which may provide additional context or requirements.\n\n## Good first steps\n1. Review the existing values files to understand their structure and components.\n2. Familiarize yourself with YAML syntax if you're not already comfortable with it.\n3. Check out the dependencies (#40 and #48) for any relevant details that could influence your work.\n4. Start drafting the development file first, as it will have a simpler structure.\n\nTesting and documentation will be important once your files are ready, so be prepared for that phase as well! If you have questions or need clarification, feel free to ask in the comments.",
   "workflow": {
     "repository": "syslabcom/activity-recognition",
-    "run_id": "42861276315",
-    "run_number": "4477",
+    "run_id": "45845769218",
+    "run_number": "4859",
     "attempt": "1",
-    "url": "https://github.com/syslabcom/activity-recognition/actions/runs/42861276315",
-    "sha": "c81163be5603b4b0d1b5cfe3b20c661709d88f1d"
+    "url": "https://github.com/syslabcom/activity-recognition/actions/runs/45845769218",
+    "sha": "06f3230d678185593a7ecaa84679c559e74d9e60"
   }
 }
