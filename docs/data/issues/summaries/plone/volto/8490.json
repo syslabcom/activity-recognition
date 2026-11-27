@@ -1,33 +1,33 @@
 {
   "version": 1,
   "status": "success",
-  "generated_at": "2026-11-20T19:05:22Z",
+  "generated_at": "2026-11-27T20:06:43Z",
   "source_issue": {
     "id": 6075074700,
     "number": 8490,
     "title": "ArrayWidget: long values overflow the field and their remove button is unreachable (regression from #8113)",
     "html_url": "https://github.com/plone/volto/issues/8490",
     "repository_full_name": "plone/volto",
-    "updated_at": "2026-11-20T18:21:27Z",
+    "updated_at": "2026-11-25T02:17:07Z",
     "labels": [
       "02 type: regression",
       "21 status: confirmed",
       "41 lvl: easy",
       "61 scope: editor"
     ],
-    "comments": 1
+    "comments": 3
   },
   "ai": {
     "provider": "openai",
     "model": "gpt-4o-mini"
   },
-  "summary_markdown": "## What this issue is about\nThis issue addresses a problem with the **ArrayWidget**, specifically in fields like **Creators** and **Contributors** within the Ownership fieldset. Long values overflow the field and make the remove button unreachable, impacting usability.\n\n## What needs to be done\nThe goal is to modify the **SortableMultiValue** component by adding `min-width: 0` (and possibly `max-width: '100%'`) to the wrapper `<div>`. This should allow long values to be truncated with an ellipsis and ensure that the remove button remains visible.\n\n## Helpful background\nThis problem is a regression from a previous fix in issue #8113. It affects users on **Volto 19.5.1** and **Plone 6.2.2**. The previous behavior allowed long values to be displayed correctly.\n\n## Good first steps\n1. **Set Up**: If you haven't already, set up a local development environment for Volto.\n2. **Reproduce the Bug**: Follow the steps in the issue description to see the problem firsthand.\n3. **Make Changes**: Update the **SortableMultiValue** component by adding the required CSS properties.\n4. **Test Your Changes**: Check if the bug is fixed, ensuring that long values are truncated and the remove button is visible.\n5. **Open a PR**: Once ready, submit a pull request with your changes.\n\nFeel free to reach out if you have any questions or need guidance!",
+  "summary_markdown": "```markdown\n## What this issue is about\nThis issue addresses a bug in the **ArrayWidget** of Volto, where long values overflow their fields, making the remove button unreachable. This problem affects fields like \"Creators\" and \"Contributors\" in the Ownership fieldset and is a regression from a previous update.\n\n## What needs to be done\nThe goal is to fix the layout so that long values are truncated with an ellipsis, and the remove button remains visible. This requires adjusting the CSS of the wrapper `div` in the `SortableMultiValue` component to include `min-width: 0` and potentially `max-width: '100%'`.\n\n## Helpful background\nThis issue is confirmed and is labeled as a regression. It is observed in Volto version 19.5.1. You can review the related code in `packages/volto/src/components/manage/Widgets/SelectStyling.jsx`. \n\n## Good first steps\n1. Set up Volto locally to replicate the issue.\n2. Review the relevant code and apply the necessary CSS changes.\n3. Check if the existing tests cover this change and run the `ArrayWidget.test.jsx`.\n4. If everything looks good, open a pull request with your fix for review. \n\nFeel free to ask for guidance if you encounter any challenges!\n```",
   "workflow": {
     "repository": "syslabcom/activity-recognition",
-    "run_id": "44798812399",
-    "run_number": "4719",
+    "run_id": "46061326532",
+    "run_number": "4888",
     "attempt": "1",
-    "url": "https://github.com/syslabcom/activity-recognition/actions/runs/44798812399",
-    "sha": "2a552e6fe5cd62a9e78585bef8a803abe6c4e71d"
+    "url": "https://github.com/syslabcom/activity-recognition/actions/runs/46061326532",
+    "sha": "d25d6a4bf093c5cbe7c239d27f906af652c08c5a"
   }
 }
