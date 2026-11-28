@@ -1,92 +1,71 @@
-# 📊 WEEKLY SUMMARY
-**2026-11-20 to 2026-11-27**
+📊 WEEKLY SUMMARY  
+2026-11-21 to 2026-11-28  
 
-This week in the Plone ecosystem saw significant contributions across multiple repositories, including updates to dependencies, improvements in documentation, and ongoing maintenance tasks. Notable efforts centered around adapting projects to support Python 3.11 and refining the integration of Plone components with better testing and documentation practices.
+This week in the Plone organization, we witnessed significant contributions aimed at improving dependencies, updating configurations, and making strides in development quality through various enhancements. Numerous repositories focused on updating the `astral-sh/setup-uv` dependency and aligning with the latest `plone.meta` version, ensuring smoother builds and better dependency management. 
 
-## 📦 plone/plone.event
+📦 plone/plone.event  
 [2 files changed, +2/-2 lines, 1 pull request merged]  
-Updated dependencies by bumping `astral-sh/setup-uv` from version 10.3.3 to 10.4.0.
+Dependabot updated the `astral-sh/setup-uv` dependency from version 10.3.3 to 10.4.0.
 
-## 📦 plone/plone.formwidget.recurrence
+📦 plone/plone.formwidget.recurrence  
 [16 files changed, +82/-60 lines, 2 pull requests merged]  
-Enhanced configuration with `plone.meta 2.13.1`, improving dependency management and adding support for updated settings.
+Key updates include configuration with `plone.meta` version 2.13.1 and a dependency bump led by Dependabot.
 
-## 📦 plone/plone.reload
+📦 plone/plone.reload  
 [24 files changed, +220/-172 lines, 2 pull requests merged]  
-Migrated metadata from `setup.py` to `pyproject.toml`, simplifying build configurations and enhancing dependency tracking.
+This repository moved metadata from `setup.py` to `pyproject.toml`, facilitating better packaging practices.
 
-## 📦 plone/plone.app.event
-[23 files changed, +111/-83 lines, 3 pull requests merged]  
-Updated configurations with `plone.meta 2.13.1` and improved pre-commit hooks for better automated code quality checks.
+📦 plone/plone.app.event  
+[23 files changed, +111/-83 lines, 4 pull requests merged]  
+Contributors updated the project configuration to `plone.meta` 2.13.1 and made several dependency bumps, improving overall stability and security.
 
-## 📦 plone/plone.app.multilingual
+📦 plone/plone.app.multilingual  
 [20 files changed, +244/-240 lines, 1 pull request merged]  
-Configured with `plone.meta 2.13.1`, streamlining dependency handling and project metadata.
+Configuration updates were made to align with `plone.meta` 2.13.1, enhancing multilingual support.
 
-## 📦 plone/plone.rfc822
-[20 files changed, +88/-60 lines, 2 pull requests merged]  
-Updated configurations to align with `plone.meta 2.13.1`, ensuring modernized project standards.
+📦 plone/plone.resource  
+[24 files changed, +206/-174 lines, 2 pull requests merged]  
+Movements of metadata from `setup.py` to `pyproject.toml` to streamline project dependencies were carried out.
 
-## 📦 plone/plone.rest
-[22 files changed, +225/-205 lines, 1 pull request merged]  
-Adjusted to move metadata management from `setup.py` to `pyproject.toml`, enhancing build processes and facilitating future upgrades.
+📦 plone/plone.tiles  
+[12 files changed, +31/-14 lines, 2 pull requests merged]  
+Updates were made to fix deprecation warnings and keep dependencies up-to-date.
 
-## 📦 plone/Products.PlonePAS
+📦 plone/plone.app.drafts  
+[16 files changed, +96/-72 lines, 1 pull request merged]  
+Configuration with `plone.meta` 2.13.1 was successfully implemented.
+
+📦 plone/pytest-plone  
+[6 files changed, +10/-10 lines, 1 pull request merged]  
+The repository received an update for the `astral-sh/setup-uv` dependency, ensuring compatibility with recent changes.
+
+📦 plone/plone.mcp  
+[77 files changed, +2809/-312 lines, 2 pull requests merged]  
+Notable features include new structures for tools and the addition of OAuth sign-in functionality.
+
+📦 plone/Products.CMFPlone  
 [2 files changed, +2/-2 lines, 1 pull request merged]  
-Updated `astral-sh/setup-uv` dependency to version 10.4.0, maintaining compatibility with latest features.
+Updated the `astral-sh/setup-uv` to ensure the project stays current with dependencies.
 
-## 📦 plone/Products.CMFPlone
+📦 plone/volto  
+[55 files changed, +1656/-94 lines, 2 pull requests merged]  
+Significant enhancements were made, including a fix for subpath prefixes in file download and display links.
+
+📦 plone/Products.CMFPlacefulWorkflow  
 [2 files changed, +2/-2 lines, 1 pull request merged]  
-Bumped `astral-sh/setup-uv` from 10.3.0 to 10.4.0, improving setup configurations.
+Updated the `astral-sh/setup-uv` dependency for consistency across projects.
 
-## 📦 plone/plone.app.caching
-[20 files changed, +112/-104 lines, 1 pull request merged]  
-Configured with `plone.meta 2.13.1`, enhancing project dependency management and build configurations.
+📦 Container repositories and various other Plone repositories saw similar enhancements related to dependency updates and configuration adjustments, reinforcing the ongoing commitment to maintaining an updated and robust ecosystem.
 
-## 📦 plone/Products.statusmessages
-[18 files changed, +86/-58 lines, 1 pull request merged]  
-Updated project configurations to work seamlessly with the latest version of `plone.meta`.
+In total, **107 active repositories**, with special thanks to contributors for their continuous improvement efforts:  
+- Gil Forcada Codinachs  
+- dependabot[bot]  
+- Érico Andrei  
+- Maurits van Rees  
+- Wesley Barroso Lopes  
+- Victor Fernandez de Alba  
+- Peter Mathis  
+- Johannes Raggam  
+- Tishasoumya  
 
-## 📦 plone/plone.base
-[2 files changed, +2/-2 lines, 1 pull request merged]  
-Revised dependencies to align with updates in `astral-sh/setup-uv`, maintaining current standards.
-
-## 📦 plone/repoplone
-[14 files changed, +302/-6 lines, 1 pull request merged]  
-Implemented a new authentication mechanism that falls back to the GitHub CLI for token management in absence of the `GITHUB_TOKEN`.
-
-## 📦 plone/plone.app.layout
-[14 files changed, +54/-48 lines, 1 pull request merged]  
-Enhanced project configurations aligning with the new `plone.meta` standards, ensuring future compatibility.
-
-## 📦 plone/plone.aurora
-[513 files changed, +26501/-2635 lines, 1 pull request merged]  
-Implemented a redesign of Quanta's menu and control panels, focusing on improved usability and integration.
-
-## 📦 plone/container-zeo
-[9 files changed, +28/-18 lines, 1 pull request merged]  
-Updated dependencies and documentation, improving the overall functionality of the container setup.
-
-## 📦 plone/Products.isurlinportal
-[2 files changed, +2/-2 lines, 1 pull request merged]  
-Upgraded `astral-sh/setup-uv` to enhance dependency management.
-
-[... additional repositories follow in similar format ...]
-
-## Contributors
-- **Gil Forcada Codinachs** (gforcada)
-- **Dependabot** (dependabot[bot])
-- **Maurits van Rees** (mauritsvanrees)
-- **Érico Andrei** (ericof)
-- **Victor Fernandez de Alba** (sneridagh)
-- **Ramon Navarro Bosch** (bloodbare)
-- **1letter** (1letter)
-- **Steve Piercy** (stevepiercy)
-- **Jean-Paul Ladage** (jladage)
-- **Julian Pollinger** (neferin12)
-- **Peter Mathis** (petschki)
-- **Johannes Raggam** (thet)
-- **Alok Kumar** (iFlameing)
-- **Nilesh Gulia** (nileshgulia1)
-
-Automatically generated from 108 active repositories.
+This week's contributions signify a robust collaboration effort within the Plone community to ensure a well-maintained and forward-looking open-source ecosystem.
