@@ -1,7 +1,7 @@
 ---
 title: "Plone issue list — Level: Easy"
 permalink: "/issues/lvl-easy/"
-generated_at: "2026-11-28T08:07:40Z"
+generated_at: "2026-11-28T09:06:49Z"
 organization: "plone"
 issue_count: 124
 required_labels:
@@ -10,7 +10,7 @@ required_labels:
 
 # Plone issue list — Level: Easy
 
-Generated: `2026-11-28T08:07:40Z`  
+Generated: `2026-11-28T09:06:49Z`  
 Organization: `plone`  
 Required label: `41 lvl: easy`  
 Issue count: `124`
@@ -19,7 +19,7 @@ Sorted by last updated date, newest first.
 
 | Updated | Repository | Issue | Author | Labels |
 | --- | --- | --- | --- | --- |
-| 2026-11-25 02:17 UTC | `plone/volto` | [#8490 ArrayWidget: long values overflow the field and their remove button is unreachable (regression from #8113)](https://github.com/plone/volto/issues/8490) | `jensens` | `02 type: regression`, `21 status: confirmed`, `41 lvl: easy`, `61 scope: editor` |
+| 2026-11-28 09:03 UTC | `plone/volto` | [#8490 ArrayWidget: long values overflow the field and their remove button is unreachable (regression from #8113)](https://github.com/plone/volto/issues/8490) | `jensens` | `02 type: regression`, `21 status: confirmed`, `41 lvl: easy`, `61 scope: editor` |
 | 2026-11-12 03:48 UTC | `plone/documentation` | [#2100 Upgrade to Vale 3.18.0 to support MyST, moar new features  🎉](https://github.com/plone/documentation/issues/2100) | `stevepiercy` | `31 needs: help`, `41 lvl: easy`, `99 tag: Plone 6.x`, `dependencies`, `99 tag: good first issue`, `99 tag: hacktoberfest` |
 | 2026-11-10 16:16 UTC | `plone/helm-charts` | [#65 Slim the root README to a portal](https://github.com/plone/helm-charts/issues/65) | `ericof` | `04 type: enhancement`, `14 prio: low`, `41 lvl: easy` |
 | 2026-11-05 06:17 UTC | `plone/volto` | [#7862 Docs : Missing react page in documentation for - 'contributing to volto'](https://github.com/plone/volto/issues/7862) | `boss6825` | `41 lvl: easy`, `99 tag: docs` |
